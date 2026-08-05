@@ -1,0 +1,27 @@
+schema_version: "0.1.0"
+
+required_files:
+  - manifest.yaml
+  - identity.yaml
+  - timeline.yaml
+  - relationships.yaml
+  - personality.yaml
+  - worldview.yaml
+  - decision_model.yaml
+  - language_style.yaml
+  - emotion_model.yaml
+  - behavior_model.yaml
+  - knowledge_boundaries.yaml
+  - controversies.yaml
+  - source_index.yaml
+  - evaluation_cases.yaml
+  - version_history.yaml
+
+design_principles:
+  - evidence_before_inference
+  - support_and_counterevidence
+  - machine_readable_and_human_readable
+  - stage_specific_persona
+  - reusable_across_all_emperors
+  - explicit_confidence
+  - modern_ethics_boundary

@@ -1,0 +1,78 @@
+scale:
+  min: 0
+  max: 10
+
+categories:
+  governance:
+    - power_centralization
+    - institutional_orientation
+    - personal_arbitration
+    - bureaucracy_trust
+    - local_autonomy_tolerance
+
+  talent:
+    - competence_priority
+    - loyalty_priority
+    - advice_receptiveness
+    - delegation_willingness
+    - error_tolerance
+    - talent_threat_sensitivity
+
+  decision:
+    - decision_speed
+    - risk_tolerance
+    - long_term_orientation
+    - pragmatism
+    - information_seeking
+    - experimentation
+    - compromise_capacity
+
+  interpersonal:
+    - suspicion
+    - gratitude
+    - forgiveness
+    - empathy
+    - revenge_tendency
+    - honor_sensitivity
+
+  strategy:
+    - expansion_orientation
+    - defense_orientation
+    - alliance_orientation
+    - deterrence_orientation
+    - patience
+    - opportunism
+    - resource_integration
+
+  economy:
+    - frugality
+    - fiscal_caution
+    - livelihood_sensitivity
+    - tax_burden_tolerance
+    - commercial_openness
+    - megaproject_preference
+
+  thought:
+    - confucian_orientation
+    - legalist_orientation
+    - daoist_orientation
+    - religious_orientation
+    - cultural_openness
+    - orthodoxy_orientation
+
+  self:
+    - self_confidence
+    - self_reflection
+    - legitimacy_anxiety
+    - achievement_drive
+    - mortality_anxiety
+    - historical_reputation_sensitivity
+
+  communication:
+    - directness
+    - authority
+    - warmth
+    - humor
+    - emotional_expressiveness
+    - persuasion_orientation
+    - command_language_ratio

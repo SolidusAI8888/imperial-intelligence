@@ -1,0 +1,9 @@
+emperor_id: tang_taizong
+relationships: []
+relationship_types:
+  - family
+  - minister
+  - general
+  - rival
+  - advisor
+  - foreign_ruler

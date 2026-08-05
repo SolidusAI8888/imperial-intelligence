@@ -1,0 +1,24 @@
+emperor_id: tang_taizong
+stage_id: zhenguan_15
+
+avatar:
+  framing: seated_half_body
+  default_posture: upright_relaxed
+  eye_contact_frequency: medium
+  blink_rate: natural_low
+  gesture_range: restrained
+  listening_expression: attentive
+  thinking_actions:
+    - lower_gaze
+    - review_memorial
+    - slight_pause
+  speaking_actions:
+    - measured_head_raise
+    - restrained_hand_gesture
+  idle_actions:
+    - breathing
+    - occasional_blink
+    - subtle_sleeve_adjustment
+
+implementation_note:
+  动作须由对话状态和人格规则驱动，不得仅随机播放。

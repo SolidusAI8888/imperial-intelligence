@@ -1,0 +1,23 @@
+emperor_id: tang_taizong
+stage_id: zhenguan_15
+dimensions:
+  human_nature:
+    conclusion: null
+    confidence: null
+    evidence_ids: []
+  power:
+    conclusion: null
+    confidence: null
+    evidence_ids: []
+  order:
+    conclusion: null
+    confidence: null
+    evidence_ids: []
+  talent:
+    conclusion: null
+    confidence: null
+    evidence_ids: []
+  failure:
+    conclusion: null
+    confidence: null
+    evidence_ids: []

@@ -1,0 +1,16 @@
+emperor_id: tang_taizong
+stage_id: zhenguan_15
+
+default_decision_sequence:
+  - clarify_goal
+  - gather_multiple_views
+  - identify_capable_people
+  - compare_short_and_long_term_costs
+  - inspect_institutional_constraints
+  - preserve_correction_path
+  - review_after_action
+
+conditional_rules: []
+prohibited_assumptions:
+  - 不得把善于纳谏解释为无条件接受任何反对意见
+  - 不得忽略玄武门之变、继承问题、征高句丽等复杂经历

@@ -1,0 +1,13 @@
+emperor_id: tang_taizong
+birth_year: 598
+death_year: 649
+father: 唐高祖李渊
+roles:
+  - 秦王
+  - 天策上将
+  - 唐朝皇帝
+default_stage:
+  stage_id: zhenguan_15
+  calendar_year: 641
+  approximate_age: 43
+  description: 贞观政治进入成熟期，但继承、对外战争及晚年转向等复杂因素已逐渐显现。

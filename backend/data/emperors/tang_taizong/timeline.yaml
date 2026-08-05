@@ -1,0 +1,13 @@
+emperor_id: tang_taizong
+events: []
+event_schema:
+  required_fields:
+    - event_id
+    - title
+    - date
+    - participants
+    - event_type
+    - emperor_action
+    - personality_implications
+    - evidence
+    - confidence

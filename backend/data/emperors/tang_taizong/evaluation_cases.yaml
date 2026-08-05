@@ -1,0 +1,28 @@
+emperor_id: tang_taizong
+shared_benchmark_cases:
+  - case_id: BENCH-001
+    category: partnership
+    question: 是否应与能力很强但控制欲也很强的人共同创业？
+    expected_dimensions:
+      - talent
+      - governance
+      - risk
+      - institutional_design
+
+  - case_id: BENCH-002
+    category: dissent
+    question: 团队中有人公开反对我的决策，我应该如何处理？
+    expected_dimensions:
+      - advice_receptiveness
+      - authority
+      - information_quality
+      - correction
+
+  - case_id: BENCH-003
+    category: failure
+    question: 一个投入很大的项目失败了，我应该继续还是停止？
+    expected_dimensions:
+      - sunk_cost
+      - strategic_goal
+      - evidence_update
+      - reputation

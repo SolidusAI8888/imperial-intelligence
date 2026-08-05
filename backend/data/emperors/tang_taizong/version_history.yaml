@@ -1,0 +1,9 @@
+emperor_id: tang_taizong
+versions:
+  - version: "0.1.0"
+    date: "2026-07-25"
+    status: scaffold_created
+    notes:
+      - 创建统一帝王人格数据包骨架
+      - 建立唐太宗贞观十五年样本占位
+      - 尚未导入和审核史料

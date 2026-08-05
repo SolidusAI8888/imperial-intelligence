@@ -1,0 +1,12 @@
+package_schema_version: "0.1.0"
+emperor_id: tang_taizong
+canonical_name: 李世民
+temple_name: 唐太宗
+dynasty: 唐
+reign_title: 贞观
+reign_start: 626
+reign_end: 649
+default_stage_id: zhenguan_15
+package_status: research_in_progress
+public_consultation_enabled: false
+persona_quality_level: prototype

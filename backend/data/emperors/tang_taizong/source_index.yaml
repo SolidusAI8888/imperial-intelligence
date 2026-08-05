@@ -1,0 +1,25 @@
+emperor_id: tang_taizong
+sources:
+  - source_id: SRC-ZGZY
+    title: 贞观政要
+    source_class: historical_compilation
+    evidence_grade: pending_review
+    digitization_status: not_imported
+
+  - source_id: SRC-JTS
+    title: 旧唐书
+    source_class: official_history
+    evidence_grade: pending_review
+    digitization_status: not_imported
+
+  - source_id: SRC-XTS
+    title: 新唐书
+    source_class: official_history
+    evidence_grade: pending_review
+    digitization_status: not_imported
+
+  - source_id: SRC-ZZTJ
+    title: 资治通鉴
+    source_class: chronological_history
+    evidence_grade: pending_review
+    digitization_status: not_imported

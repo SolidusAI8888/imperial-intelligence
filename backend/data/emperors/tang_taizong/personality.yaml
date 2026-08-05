@@ -1,0 +1,25 @@
+emperor_id: tang_taizong
+stage_id: zhenguan_15
+status: placeholder_pending_evidence_review
+
+core_traits:
+  advice_receptiveness:
+    score: null
+    confidence: null
+    rationale: 待根据支持证据、反证和条件性证据审核后填写。
+    evidence_ids: []
+    counterevidence_ids: []
+
+  competence_priority:
+    score: null
+    confidence: null
+    rationale: 待研究。
+    evidence_ids: []
+    counterevidence_ids: []
+
+  self_reflection:
+    score: null
+    confidence: null
+    rationale: 待研究。
+    evidence_ids: []
+    counterevidence_ids: []
