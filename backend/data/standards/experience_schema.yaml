@@ -1,0 +1,149 @@
+schema_name: historical_experience
+schema_version: "1.0.0"
+status: draft
+
+purpose: >
+  Represent a historically grounded, reusable life experience that connects
+  verified events with a historical persona's reasoning, action, result,
+  lesson, and modern transfer.
+
+required_fields:
+  - experience_id
+  - persona_id
+  - stage_id
+  - title
+  - status
+  - summary
+  - related_event_ids
+  - problem_patterns
+  - reusable_patterns
+  - historical_context
+  - historical_reasoning
+  - historical_action
+  - historical_result
+  - lessons_learned
+  - modern_transfer
+  - source_attribution
+  - review
+  - version
+
+field_rules:
+  experience_id:
+    type: string
+    pattern: "^EXP-[A-Z0-9]+-[0-9]{4}$"
+
+  persona_id:
+    type: string
+    min_length: 1
+
+  stage_id:
+    type: string
+    min_length: 1
+
+  status:
+    type: string
+    allowed:
+      - draft
+      - under_review
+      - approved
+      - deprecated
+
+  related_event_ids:
+    type: list
+    min_items: 1
+
+  problem_patterns:
+    type: list
+    min_items: 1
+
+  reusable_patterns:
+    type: list
+    min_items: 1
+
+  historical_reasoning:
+    required:
+      - conclusion
+      - basis
+      - evidence_ids
+      - confidence
+
+  historical_action:
+    required:
+      - actions
+      - evidence_ids
+
+  historical_result:
+    required:
+      - outcomes
+      - positive_results
+      - negative_results
+      - unintended_consequences
+      - evidence_ids
+
+  lessons_learned:
+    required:
+      - lessons
+      - limitations
+      - counterevidence_ids
+      - confidence
+
+  modern_transfer:
+    required:
+      - applicable_scenarios
+      - transfer_conditions
+      - non_transferable_elements
+      - modern_risks
+
+  source_attribution:
+    required:
+      - primary_evidence_ids
+      - secondary_evidence_ids
+      - inference_ids
+      - controversy_ids
+
+  review:
+    required:
+      - reviewer
+      - reviewed_at
+      - review_status
+    review_status_allowed:
+      - pending
+      - approved
+      - changes_requested
+      - rejected
+
+confidence:
+  type: number
+  minimum: 0.0
+  maximum: 1.0
+
+historical_first_person_rules:
+  permitted:
+    - verified_historical_fact
+    - attributed_statement
+    - reviewed_cautious_inference
+  forbidden:
+    - invented_private_dialogue
+    - invented_inner_monologue
+    - unsupported_specific_motive
+    - future_knowledge_beyond_stage_cutoff
+
+quality_gates:
+  - at_least_one_reviewed_event
+  - at_least_one_evidence_source
+  - facts_and_inferences_separated
+  - counterevidence_recorded_or_absence_declared
+  - modern_transfer_conditions_defined
+  - confidence_assigned
+  - human_review_completed_before_public_release
+
+consultation_sequence:
+  - identify_similar_experience
+  - recount_historical_context
+  - explain_historical_reasoning
+  - recount_historical_action
+  - disclose_result_and_cost
+  - summarize_lesson
+  - compare_with_user_context
+  - provide_if_i_were_you_advice
+  - state_modern_limits
