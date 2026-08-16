@@ -41,26 +41,35 @@ outcome:
   immediate: >-
     魏徵进入李世民新的政治团队，并获得正式任用。
   later: >-
-    李世民即位后继续提升魏徵，使其担任谏议大夫等重要职务；魏徵后来成为贞观时期最重要的谏臣之一。
+    李世民即位后继续提升魏徵，使其担任谏议大夫等重要职务；魏徵后来成为贞观时期最重要的谏臣之一。贞观十七年魏徵去世后，唐太宗公开把魏徵比作能够“明得失”的一面镜子，并再次要求群臣就政治得失直言无隐。
   costs_or_tradeoffs:
     - 接纳前敌对阵营人物意味着需要承担忠诚与政治信任风险。
     - 重用敢于直言者意味着君主必须容忍持续的反对意见和不舒适信息。
   support_ids:
     - CLM-WZ-0003
     - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
 
 later_reflection:
   summary: >-
-    本 HEU 当前只确认李世民持续重用魏徵这一事实。关于李世民后来如何总结这次最初任用决定，需要继续从《贞观政要》、魏徵传后段及相关记载中单独提取，当前不把后世常见的“以人为镜”等概括直接回填到此事件。
-  evidence_level: unavailable
-  support_ids: []
+    魏徵去世后，唐太宗公开将其称为能够帮助自己“明得失”的镜子，并明确说魏徵在世时经常指出自己的过失；魏徵去世后，他担心其他臣僚趋于顺从、不再直言，因此再次要求群臣有是非便直言无隐。这构成了唐太宗本人对魏徵长期作用的直接、后期反思。
+  evidence_level: direct_attributed_reflection
+  support_ids:
+    - ZGZY-V02-P-WZ-REF-001
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
+  caution: >-
+    该反思发生在魏徵去世后，能够高置信度说明唐太宗后来如何评价魏徵的价值，但不能反向证明武德九年最初任用魏徵时，唐太宗已经完整预见了这一长期价值。
 
 historical_insight:
   statement: >-
-    在高冲突之后选择人才时，过去站在哪一边并不必然比其能力、原则性和是否能为新的共同目标发挥作用更重要。
+    在高冲突之后选择人才时，过去站在哪一边并不必然比其能力、原则性和是否能为新的共同目标发挥作用更重要；对于掌握重大决策权的人而言，能够持续指出自己错误的人，可能具有难以替代的价值。
   derivation: >-
-    该洞察来自一个受到三种史料交叉支持的事实结构：魏徵曾为李建成谋划对付李世民；冲突结束后魏徵并未回避自己的旧立场；李世民仍加以任用并继续提升。洞察是对此结构的谨慎抽象，不是史书中的直接引语。
-  confidence: medium
+    第一部分来自三种史料交叉支持的任用事实结构：魏徵曾为李建成谋划对付李世民；冲突结束后魏徵并未回避自己的旧立场；李世民仍加以任用并继续提升。第二部分由贞观十七年唐太宗在魏徵去世后的直接公开反思支持。洞察是对这些历史结构的谨慎抽象，并非把现代管理语言冒充为史书原话。
+  confidence: high_medium
   supporting_event_ids:
     - EVT-TTZ-WZ-0001
   supporting_claim_ids:
@@ -68,6 +77,9 @@ historical_insight:
     - CLM-WZ-0002
     - CLM-WZ-0003
     - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
 
 modern_applicable_scenarios:
   - scenario: 是否任用或合作一个曾经属于竞争对手阵营、但能力突出的人
@@ -85,11 +97,16 @@ modern_applicable_scenarios:
       从旧冲突身份转向新合作目标的可能性。
     caution: >-
       不应直接迁移到涉及暴力、虐待、亲密关系背叛或持续安全风险的情境。
+  - scenario: 身处管理或决策岗位时，是否应主动保留敢于指出错误的反对声音
+    transferable_structure: >-
+      权力越集中，越需要可靠的纠错渠道。
+    caution: >-
+      现代组织中的异议机制还应依赖制度、流程与心理安全，而不能只依赖领导者个人气度。
 
 limitations:
   - 该经历不能简单推导出“所有敌人都值得原谅或重用”。
   - 政治阵营转换与现代亲密关系中的背叛不是同一种问题结构。
-  - 当前史料足以支持任用事实，但尚不足以高置信度重建李世民完整的内心推理过程。
+  - 史料支持魏徵长期具有纠错价值，但不能高置信度重建李世民最初任用时的完整内心推理过程。
   - 用户具体情境中的法律、伦理、安全和专业因素必须由现代层单独判断。
 
 evidence_chain:
@@ -97,22 +114,27 @@ evidence_chain:
     - SRC-JTS
     - SRC-XTS
     - SRC-ZZTJ
+    - SRC-ZGZY
   passage_ids:
     - JTS-V71-P001
     - XTS-V97-P001
     - ZZTJ-V191-P-WZ001
+    - ZGZY-V02-P-WZ-REF-001
   claim_ids:
     - CLM-WZ-0001
     - CLM-WZ-0002
     - CLM-WZ-0003
     - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
   event_ids:
     - EVT-TTZ-WZ-0001
 
 confidence:
   factual: high
   reasoning: medium
-  reflection: low
+  reflection: high
   transferability: medium
 
-review_status: draft
+review_status: draft_enriched
