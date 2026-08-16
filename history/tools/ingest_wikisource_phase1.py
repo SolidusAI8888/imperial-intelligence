@@ -18,20 +18,50 @@ MANIFEST = ROOT / "history/source_registry/phase1_sources.yaml"
 UA = "ImperialIntelligenceHistoricalCorpus/1.0 (research archival ingestion; GitHub project)"
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": UA})
+RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 
 def api(params: dict) -> dict:
-    params = {**params, "format": "json", "formatversion": 2}
-    for attempt in range(5):
+    """Call MediaWiki API with rate-limit-aware retry.
+
+    GitHub-hosted runners can share public egress IPs and Wikisource may throttle them.
+    A 429 must therefore pause and retry the same page, not be counted as a missing page.
+    """
+    params = {**params, "format": "json", "formatversion": 2, "maxlag": 5}
+    last_error: Exception | None = None
+    for attempt in range(12):
         try:
-            r = SESSION.get(API, params=params, timeout=60)
+            r = SESSION.get(API, params=params, timeout=90)
+            if r.status_code in RETRYABLE_STATUS:
+                retry_after = r.headers.get("Retry-After")
+                if retry_after and retry_after.isdigit():
+                    wait = max(5, int(retry_after))
+                elif r.status_code == 429:
+                    wait = min(900, 60 * (2 ** min(attempt, 4)))
+                else:
+                    wait = min(180, 5 * (2 ** min(attempt, 5)))
+                print(f"API throttled/status={r.status_code}; waiting {wait}s before retry {attempt + 1}/12")
+                time.sleep(wait)
+                continue
             r.raise_for_status()
-            return r.json()
-        except Exception:
-            if attempt == 4:
-                raise
-            time.sleep(2 ** attempt)
-    raise RuntimeError("unreachable")
+            data = r.json()
+            if "error" in data:
+                code = data["error"].get("code", "")
+                if code == "maxlag":
+                    wait = min(120, 10 * (attempt + 1))
+                    print(f"MediaWiki maxlag; waiting {wait}s")
+                    time.sleep(wait)
+                    continue
+                raise RuntimeError(f"MediaWiki API error: {data['error']}")
+            return data
+        except Exception as exc:
+            last_error = exc
+            if attempt == 11:
+                break
+            wait = min(120, 2 ** min(attempt, 6))
+            print(f"API request error: {exc}; waiting {wait}s before retry {attempt + 1}/12")
+            time.sleep(wait)
+    raise RuntimeError(f"MediaWiki API request failed after retries: {last_error}")
 
 
 def page_exists(title: str) -> bool:
@@ -64,23 +94,21 @@ def discover_volume_titles(root_page: str, vmin: int, vmax: int) -> list[str]:
             break
         plcontinue = cont.get("plcontinue")
 
-    # Some index pages do not link every leaf page. Probe missing volume numbers.
     by_num = {int(re.match(rf"^{re.escape(root_page)}/卷0*(\d+)", t).group(1)) for t in found}
     for n in range(vmin, vmax + 1):
         if n in by_num:
             continue
         candidates = [
             f"{root_page}/卷{n:03d}", f"{root_page}/卷{n:02d}", f"{root_page}/卷{n}",
-            f"{root_page}/卷{n:03d}上", f"{root_page}/卷{n:03d}下",
+            f"{root_page}/卷{n:03d}上", f"{root_page}/卷{n:03d}中", f"{root_page}/卷{n:03d}下",
         ]
         existing = [t for t in candidates if page_exists(t)]
-        # If upper/lower parts exist, preserve both instead of the unsuffixed index/redirect.
-        parts = [t for t in existing if t.endswith(("上", "下"))]
+        parts = [t for t in existing if t.endswith(("上", "中", "下"))]
         if parts:
             found.update(parts)
         elif existing:
             found.add(existing[0])
-        time.sleep(0.03)
+        time.sleep(0.15)
 
     def key(title: str):
         m = re.match(rf"^{re.escape(root_page)}/卷0*(\d+)(.*)$", title)
@@ -108,7 +136,6 @@ def clean_original_paragraphs(html: str) -> list[str]:
             node.decompose()
 
     paragraphs: list[str] = []
-    # Classical-history pages are primarily paragraph blocks; dd catches indented original text.
     for node in root.find_all(["p", "dd"], recursive=True):
         if node.find_parent(["table", "ol", "ul"]):
             continue
@@ -117,7 +144,6 @@ def clean_original_paragraphs(html: str) -> list[str]:
         text = re.sub(r"\s+", "", text)
         if not text:
             continue
-        # Drop obvious Wikisource navigation/editorial notices, not historical prose.
         if any(x in text for x in ["維基百科條目：", "维基百科条目：", "本文的各章節標題都是為便利閱讀所添加", "本文的各章节标题都是为便利阅读所添加"]):
             continue
         paragraphs.append(text)
@@ -126,8 +152,11 @@ def clean_original_paragraphs(html: str) -> list[str]:
 
 def suffix_code(title: str, root_page: str) -> tuple[int, str]:
     m = re.match(rf"^{re.escape(root_page)}/卷0*(\d+)(.*)$", title)
-    n = int(m.group(1)); suffix = m.group(2)
-    code = {"": "", "上": "a", "中": "b", "下": "c"}.get(suffix, "x" + hashlib.sha1(suffix.encode()).hexdigest()[:4])
+    n = int(m.group(1))
+    suffix = m.group(2)
+    code = {"": "", "上": "a", "中": "b", "下": "c"}.get(
+        suffix, "x" + hashlib.sha1(suffix.encode()).hexdigest()[:4]
+    )
     return n, code
 
 
@@ -137,15 +166,32 @@ def archive_source(src: dict) -> dict:
     root_page = src["root_page"]
     key = src["corpus_key"]
     base = ROOT / f"history/source_corpus/china/{dynasty}/{key}"
-    text_dir = base / "text"; prov_dir = base / "provenance"
-    text_dir.mkdir(parents=True, exist_ok=True); prov_dir.mkdir(parents=True, exist_ok=True)
+    text_dir = base / "text"
+    prov_dir = base / "provenance"
+    text_dir.mkdir(parents=True, exist_ok=True)
+    prov_dir.mkdir(parents=True, exist_ok=True)
 
     titles = discover_volume_titles(root_page, int(src["volume_min"]), int(src["volume_max"]))
-    report = {"source_id": source_id, "title": src["title"], "expected_range": [src["volume_min"], src["volume_max"]], "pages": [], "errors": []}
+    report = {
+        "source_id": source_id,
+        "title": src["title"],
+        "expected_range": [src["volume_min"], src["volume_max"]],
+        "pages": [],
+        "skipped_existing": [],
+        "errors": [],
+    }
 
     for idx, title in enumerate(titles, start=1):
         n, part = suffix_code(title, root_page)
         stem = f"{n:03d}{part}"
+        text_path = text_dir / f"{stem}.txt"
+        prov_path = prov_dir / f"{stem}.yaml"
+
+        if text_path.exists() and prov_path.exists():
+            report["skipped_existing"].append({"page": title, "file": f"{stem}.txt"})
+            print(f"[{source_id}] {idx}/{len(titles)} SKIP existing {title}", flush=True)
+            continue
+
         try:
             html, revid, displaytitle = fetch_rendered(title)
             paras = clean_original_paragraphs(html)
@@ -156,7 +202,7 @@ def archive_source(src: dict) -> dict:
                 cid = f"{source_id}-V{n:03d}{part.upper()}-P{i:04d}"
                 lines.append(f"[{cid}]\n{para}")
             body = "\n\n".join(lines) + "\n"
-            (text_dir / f"{stem}.txt").write_text(body, encoding="utf-8")
+            text_path.write_text(body, encoding="utf-8")
             sha256 = hashlib.sha256(body.encode("utf-8")).hexdigest()
             prov = {
                 "source_id": source_id,
@@ -171,14 +217,22 @@ def archive_source(src: dict) -> dict:
                 "rights": "Ancient work public domain; Wikisource editorial contributions reused under CC BY-SA 4.0; attribution retained in provenance.",
                 "extraction": "Rendered Wikisource text; navigation, references, tables, and obvious editorial notices removed; paragraph order preserved.",
             }
-            (prov_dir / f"{stem}.yaml").write_text(yaml.safe_dump(prov, allow_unicode=True, sort_keys=False), encoding="utf-8")
-            report["pages"].append({"page": title, "file": f"{stem}.txt", "paragraphs": len(paras), "revid": revid, "sha256": sha256})
+            prov_path.write_text(
+                yaml.safe_dump(prov, allow_unicode=True, sort_keys=False), encoding="utf-8"
+            )
+            report["pages"].append(
+                {"page": title, "file": f"{stem}.txt", "paragraphs": len(paras), "revid": revid, "sha256": sha256}
+            )
         except Exception as e:
-            report["errors"].append({"page": title, "error": str(e)})
-        print(f"[{source_id}] {idx}/{len(titles)} {title}")
-        time.sleep(0.12)
+            error = {"page": title, "error": str(e)}
+            report["errors"].append(error)
+            print(f"[{source_id}] ERROR {title}: {e}", flush=True)
+        print(f"[{source_id}] {idx}/{len(titles)} {title}", flush=True)
+        time.sleep(0.35)
 
-    (base / "ingestion_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    (base / "ingestion_report.json").write_text(
+        json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     return report
 
 
@@ -190,13 +244,22 @@ def main() -> None:
             all_reports.append(archive_source(src))
     summary = {
         "sources": len(all_reports),
-        "archived_pages": sum(len(r["pages"]) for r in all_reports),
+        "archived_pages_this_run": sum(len(r["pages"]) for r in all_reports),
+        "skipped_existing": sum(len(r["skipped_existing"]) for r in all_reports),
         "errors": sum(len(r["errors"]) for r in all_reports),
-        "reports": [{"source_id": r["source_id"], "pages": len(r["pages"]), "errors": len(r["errors"])} for r in all_reports],
+        "reports": [
+            {
+                "source_id": r["source_id"],
+                "archived_this_run": len(r["pages"]),
+                "skipped_existing": len(r["skipped_existing"]),
+                "errors": len(r["errors"]),
+            }
+            for r in all_reports
+        ],
     }
     out = ROOT / "history/source_corpus/PHASE1_INGESTION_SUMMARY.json"
     out.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
+    print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
     if summary["errors"]:
         raise SystemExit(2)
 
