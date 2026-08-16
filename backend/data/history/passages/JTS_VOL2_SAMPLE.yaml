@@ -1,0 +1,34 @@
+source_id: SRC-JTS
+volume: 2
+section: 本紀第二 太宗上
+status: sample_ingestion
+passages:
+  - passage_id: JTS-V02-P001
+    chronology: 武德七年
+    topic_hint: migration_of_capital_and_frontier_pressure
+    original_text: >-
+      有說高祖云：「只為府藏子女在京師，故突厥來，若燒卻長安而不都，則胡寇自止。」高祖乃遣中書侍郎宇文士及行山南可居之地，即欲移都。蕭瑀等皆以為非，然終不敢犯顏正諫。太宗獨曰：「霍去病，漢廷之將帥耳，猶且志滅匈奴。臣忝備籓維，尚使胡塵不息，遂令陛下議欲遷都，此臣之責也。幸乞聽臣一申微效，取彼頡利。若一兩年間不繫其頸，徐建移都之策，臣當不敢復言。」高祖怒，仍遣太宗將三十餘騎行刬。還日，固奏必不可移都，高祖遂止。
+    locator:
+      digital_witness: Wikisource 舊唐書/卷2
+      source_line_hint: 148
+    extraction_status: reviewed_for_sample
+
+  - passage_id: JTS-V02-P002
+    chronology: 武德九年六月
+    topic_hint: xuanwu_gate_and_power_transition
+    original_text: >-
+      九年，皇太子建成、齊王元吉謀害太宗。六月四日，太宗率長孫無忌、尉遲敬德、房玄齡、杜如晦、宇文士及、高士廉、侯君集、程知節、秦叔寶、段志玄、屈突通、張士貴等於玄武門誅之。甲子，立為皇太子，庶政皆斷決。太宗乃縱禁苑所養鷹犬，並停諸方所進珍異，政尚簡肅，天下大悅。又令百官各上封事，備陳安人理國之要。
+    locator:
+      digital_witness: Wikisource 舊唐書/卷2
+      source_line_hint: 153
+    extraction_status: reviewed_for_sample
+
+  - passage_id: JTS-V02-P003
+    chronology: 貞觀三年二月
+    topic_hint: appointment_of_fang_du_li_wei
+    original_text: >-
+      二月戊寅，中書令、邢國公房玄齡為尚書左僕射，兵部尚書、檢校侍中、蔡國公杜如晦為尚書右僕射，刑部尚書、檢校中書令、永康縣公李靖為兵部尚書，右丞魏徵為守秘書監，參預朝政。
+    locator:
+      digital_witness: Wikisource 舊唐書/卷2
+      source_line_hint: 196
+    extraction_status: reviewed_for_sample
