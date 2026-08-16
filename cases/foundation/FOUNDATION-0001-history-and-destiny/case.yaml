@@ -1,0 +1,58 @@
+case_id: FOUNDATION-0001
+slug: history-and-destiny
+case_type: foundation
+status: evidence_collection
+
+original_question: >-
+  面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？
+
+question_analysis:
+  question_type: worldview
+  core_tensions:
+    - history_vs_individual_agency
+    - structural_constraints_vs_choice
+    - chance_vs_preparation
+    - action_vs_acceptance
+  consultation_goal: >-
+    利用可追溯的历史经历帮助提问者理解时代力量与个人选择之间的关系，不预设宿命论或个人万能论结论。
+
+consultation_thesis:
+  status: working_hypothesis
+  statement: >-
+    历史与时代会规定一个人能够面对的机会、限制和风险，但不会替个人完成选择；个体命运通常由时代条件、偶然性、个人判断、行动以及对后果的持续承担共同塑造。
+  rule: >-
+    该命题必须由历史证据和候选 HEU 验证后才能升级为 approved_thesis；不得为了视频叙事而反向挑选史料证明预设结论。
+
+matching:
+  status: pending_evidence
+  selection_rule: >-
+    先检索与“时代巨变中的个人能动性”相关的 HEU，再比较经历完整性、史料强度、长期结果、本人反思和可迁移性，最后选择最合适的表达者。
+  selected_persona_id: null
+  selected_heu_ids: []
+  candidate_personas: []
+
+required_evidence_tracks:
+  - track_id: TTZ-SUI-COLLAPSE
+    topic: 隋末秩序崩解及李世民对隋亡原因的后期理解
+    status: pending
+  - track_id: TTZ-JINYANG-RISING
+    topic: 晋阳起兵及时代巨变中的行动选择
+    status: pending
+  - track_id: TTZ-POWER-RESPONSIBILITY
+    topic: 取得最高权力后的治理责任与持续修正
+    status: pending
+  - track_id: TTZ-LIFETIME-REFLECTION
+    topic: 唐太宗完整一生对兴亡、得失、君主行为与历史规律的反思
+    status: pending
+
+output_policy:
+  master_report_first: true
+  video_is_renderer: true
+  persona_must_begin_with_own_experience: true
+  complete_life_perspective: true
+  distinguish_event_time_knowledge_from_later_reflection: true
+  final_decision_owner: user
+
+notes:
+  - 唐太宗目前只是 Gold Standard 验证对象，不预设为本案例最终回答者。
+  - 若其他人物的 HEU 在问题结构、证据完整性和完整人生反思方面更匹配，应由匹配结果选择其他人物。
