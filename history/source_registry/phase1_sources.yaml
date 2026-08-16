@@ -1,0 +1,62 @@
+version: 1
+order:
+  - han
+  - tang
+  - song
+sources:
+  - source_id: CN-HAN-0001
+    dynasty_group: han
+    title: 史記
+    root_page: 史記
+    corpus_key: shiji
+    volume_min: 1
+    volume_max: 130
+  - source_id: CN-HAN-0002
+    dynasty_group: han
+    title: 漢書
+    root_page: 漢書
+    corpus_key: hanshu
+    volume_min: 1
+    volume_max: 100
+  - source_id: CN-HAN-0003
+    dynasty_group: han
+    title: 後漢書
+    root_page: 後漢書
+    corpus_key: houhanshu
+    volume_min: 1
+    volume_max: 120
+  - source_id: CN-TANG-0001
+    dynasty_group: tang
+    title: 舊唐書
+    root_page: 舊唐書
+    corpus_key: jiutangshu
+    volume_min: 1
+    volume_max: 200
+  - source_id: CN-TANG-0002
+    dynasty_group: tang
+    title: 新唐書
+    root_page: 新唐書
+    corpus_key: xintangshu
+    volume_min: 1
+    volume_max: 225
+  - source_id: CN-TANG-0003
+    dynasty_group: tang
+    title: 資治通鑑（唐紀）
+    root_page: 資治通鑑
+    corpus_key: zizhitongjian_tang
+    volume_min: 185
+    volume_max: 265
+  - source_id: CN-TANG-0004
+    dynasty_group: tang
+    title: 貞觀政要
+    root_page: 貞觀政要
+    corpus_key: zhenguanzhengyao
+    volume_min: 1
+    volume_max: 10
+  - source_id: CN-SONG-0001
+    dynasty_group: song
+    title: 宋史
+    root_page: 宋史
+    corpus_key: songshi
+    volume_min: 1
+    volume_max: 496
