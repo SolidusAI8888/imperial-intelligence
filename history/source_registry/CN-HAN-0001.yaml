@@ -1,0 +1,38 @@
+source_id: CN-HAN-0001
+canonical_title: 史记
+romanized_key: shiji
+historical_period_scope:
+  primary: 西汉
+  coverage_note: 记述自上古至汉武帝时期的历史
+source_class: first_tier_authoritative_history
+text_type: 正史
+compiler_author:
+  - 司马迁
+language: Classical Chinese
+corpus_path: history/source_corpus/china/han/shiji/
+corpus_requirement: full_original_text
+
+version_policy:
+  selected_base_text: pending
+  edition_metadata_required: true
+  multiple_versions_allowed: true
+  modern_punctuation_must_be_identified: true
+  textual_variants_must_be_traceable: true
+
+rights_policy:
+  public_domain_status_of_ancient_work: public_domain
+  digital_witness_rights_status: pending_review
+  rule: >-
+    A digital witness may be archived as full text only after its reuse status has been verified.
+    If a modern copyrighted edition is used for collation, its protected full text must not be copied
+    into the repository without authorization.
+
+ingestion:
+  status: registered_not_ingested
+  granularity: natural_paragraph
+  source_text_immutable_after_archive: true
+  provenance_required_for_changes: true
+
+notes:
+  - This registry record does not yet choose the definitive digital witness or modern edition.
+  - Full-text ingestion begins only after the base-text and reuse status are recorded.
