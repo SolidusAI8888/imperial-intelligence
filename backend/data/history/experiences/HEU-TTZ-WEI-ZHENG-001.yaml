@@ -1,0 +1,118 @@
+heu_id: HEU-TTZ-WEI-ZHENG-001
+persona_id: tang_taizong
+title: 任用曾属敌对阵营且敢于直言的人
+related_event_ids:
+  - EVT-TTZ-WZ-0001
+
+historical_question: >-
+  在刚经历激烈继承冲突之后，是否应当任用一个曾效力于对手、并曾建议对手及早对自己采取行动的人？
+
+historical_context: >-
+  魏徵曾任太子李建成属官，并曾劝李建成及早对秦王李世民采取行动。玄武门之变后，李建成败亡，魏徵被李世民召见并被当面质问。此时李世民正从夺取最高权力转入建立新的治理班底。
+
+options_considered:
+  - option: 惩处或排斥魏徵
+    evidence_level: uncertain
+    support_ids: []
+  - option: 不予重用，仅作一般安置
+    evidence_level: uncertain
+    support_ids: []
+  - option: 接纳并任用魏徵
+    evidence_level: direct
+    support_ids:
+      - CLM-WZ-0003
+      - CLM-WZ-0004
+
+chosen_action: >-
+  李世民选择礼遇并任用魏徵，先引为詹事主簿，随后在即位后继续提升其职务。
+
+reasoning:
+  summary: >-
+    现有史料一致表明李世民重视魏徵的某种个人价值，但不同来源分别强调其“才”“直”以及此前已有的器重。可以谨慎推断，李世民没有把“曾效力于敌对阵营”本身作为否决魏徵的充分理由，而更重视其可用于新政权的能力与直率。
+  evidence_level: supported_inference
+  support_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
+  caution: >-
+    不应把这一推断写成李世民明确说过的现代管理原则，也不能断言其任用动机只有“爱才”或“宽容”。
+
+outcome:
+  immediate: >-
+    魏徵进入李世民新的政治团队，并获得正式任用。
+  later: >-
+    李世民即位后继续提升魏徵，使其担任谏议大夫等重要职务；魏徵后来成为贞观时期最重要的谏臣之一。
+  costs_or_tradeoffs:
+    - 接纳前敌对阵营人物意味着需要承担忠诚与政治信任风险。
+    - 重用敢于直言者意味着君主必须容忍持续的反对意见和不舒适信息。
+  support_ids:
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+
+later_reflection:
+  summary: >-
+    本 HEU 当前只确认李世民持续重用魏徵这一事实。关于李世民后来如何总结这次最初任用决定，需要继续从《贞观政要》、魏徵传后段及相关记载中单独提取，当前不把后世常见的“以人为镜”等概括直接回填到此事件。
+  evidence_level: unavailable
+  support_ids: []
+
+historical_insight:
+  statement: >-
+    在高冲突之后选择人才时，过去站在哪一边并不必然比其能力、原则性和是否能为新的共同目标发挥作用更重要。
+  derivation: >-
+    该洞察来自一个受到三种史料交叉支持的事实结构：魏徵曾为李建成谋划对付李世民；冲突结束后魏徵并未回避自己的旧立场；李世民仍加以任用并继续提升。洞察是对此结构的谨慎抽象，不是史书中的直接引语。
+  confidence: medium
+  supporting_event_ids:
+    - EVT-TTZ-WZ-0001
+  supporting_claim_ids:
+    - CLM-WZ-0001
+    - CLM-WZ-0002
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+
+modern_applicable_scenarios:
+  - scenario: 是否任用或合作一个曾经属于竞争对手阵营、但能力突出的人
+    transferable_structure: >-
+      过去阵营关系与当前可贡献价值之间的权衡。
+    caution: >-
+      现代组织应额外评估合同义务、利益冲突、保密责任与治理机制。
+  - scenario: 是否继续使用一个曾公开反对自己、但能提供真实意见的团队成员
+    transferable_structure: >-
+      个人忠诚与建设性异议之间的权衡。
+    caution: >-
+      反对意见本身不等同于能力、诚信或对组织目标的忠诚。
+  - scenario: 经历严重冲突后是否可能与原对立方建立新的工作关系
+    transferable_structure: >-
+      从旧冲突身份转向新合作目标的可能性。
+    caution: >-
+      不应直接迁移到涉及暴力、虐待、亲密关系背叛或持续安全风险的情境。
+
+limitations:
+  - 该经历不能简单推导出“所有敌人都值得原谅或重用”。
+  - 政治阵营转换与现代亲密关系中的背叛不是同一种问题结构。
+  - 当前史料足以支持任用事实，但尚不足以高置信度重建李世民完整的内心推理过程。
+  - 用户具体情境中的法律、伦理、安全和专业因素必须由现代层单独判断。
+
+evidence_chain:
+  source_ids:
+    - SRC-JTS
+    - SRC-XTS
+    - SRC-ZZTJ
+  passage_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
+  claim_ids:
+    - CLM-WZ-0001
+    - CLM-WZ-0002
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+  event_ids:
+    - EVT-TTZ-WZ-0001
+
+confidence:
+  factual: high
+  reasoning: medium
+  reflection: low
+  transferability: medium
+
+review_status: draft
