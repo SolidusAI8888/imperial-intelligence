@@ -1,0 +1,56 @@
+{
+  "sources": 8,
+  "archived_pages_this_run": 1397,
+  "skipped_existing": 1,
+  "errors": 21,
+  "reports": [
+    {
+      "source_id": "CN-HAN-0001",
+      "archived_this_run": 129,
+      "skipped_existing": 1,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-HAN-0002",
+      "archived_this_run": 110,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-HAN-0003",
+      "archived_this_run": 130,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-TANG-0001",
+      "archived_this_run": 214,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-TANG-0002",
+      "archived_this_run": 248,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-TANG-0003",
+      "archived_this_run": 81,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-TANG-0004",
+      "archived_this_run": 10,
+      "skipped_existing": 0,
+      "errors": 0
+    },
+    {
+      "source_id": "CN-SONG-0001",
+      "archived_this_run": 475,
+      "skipped_existing": 0,
+      "errors": 21
+    }
+  ]
+}
