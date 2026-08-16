@@ -1,0 +1,44 @@
+status: cross_source_sample
+passages:
+  - passage_id: PSG-ZZTJ-0191-0001
+    source_id: SRC-ZZTJ
+    chapter: 卷191 唐纪七 武德七年
+    locator_note: 迁都议与秦王世民反对迁都
+    original_text_excerpt: >-
+      或说上曰，突厥所以屡寇关中者，以子女玉帛皆在长安故也……秦王世民谏曰，戎狄为患，自古有之……奈何以胡寇扰边，遽迁都以避之……愿假数年之期，请系颉利之颈，致之阙下。上曰善……上乃止。
+    public_reference: https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7191
+    evidence_use:
+      - verify_event_EVT-TTZ-0001
+      - preserve_decision_context
+
+  - passage_id: PSG-XTS-0002-0001
+    source_id: SRC-XTS
+    chapter: 卷002 太宗本纪
+    locator_note: 武德九年玄武门与即位
+    original_text_excerpt: >-
+      九年六月，太宗以兵入玄武门，杀太子建成及齐王元吉。高祖大惊，乃以太宗为皇太子。八月甲子，即皇帝位于东宫显德殿。
+    public_reference: https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7002
+    evidence_use:
+      - verify_event_EVT-TTZ-0002
+
+  - passage_id: PSG-ZZTJ-0191-0002
+    source_id: SRC-ZZTJ
+    chapter: 卷191 唐纪七 武德九年
+    locator_note: 玄武门冲突后政务移交
+    original_text_excerpt: >-
+      庚申，世民帅长孙无忌等入，伏兵于玄武门……癸亥，立世民为皇太子。又诏，自今军国庶事，无大小悉委太子处决，然后闻奏。
+    public_reference: https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7191
+    evidence_use:
+      - verify_event_EVT-TTZ-0002
+      - verify_governance_transfer
+
+  - passage_id: PSG-ZZTJ-0193-0001
+    source_id: SRC-ZZTJ
+    chapter: 卷193 唐纪九 贞观三年
+    locator_note: 贞观三年中枢任命
+    original_text_excerpt: >-
+      二月戊寅，以房玄龄为左仆射，杜如晦为右仆射，以尚书右丞魏征守秘书监，参预朝政。
+    public_reference: https://zh.wikisource.org/zh-hans/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91_%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B7193
+    evidence_use:
+      - verify_event_EVT-TTZ-0003
+      - verify_key_appointments
