@@ -1,0 +1,35 @@
+source_id: CN-HAN-0001
+volume: 001
+canonical_title: 五帝本紀第一
+digital_witness:
+  provider: Chinese Wikisource
+  page: https://zh.wikisource.org/wiki/史記/卷001
+  revision_permalink: https://zh.wikisource.org/w/index.php?title=史記/卷001&oldid=7903634
+  revision_id: 7903634
+  checked_on: 2026-08-16
+rights:
+  ancient_work: public_domain
+  site_text_notice: CC_BY_SA_4_0_with_possible_additional_terms
+  attribution_required: true
+editorial_handling:
+  included:
+    - historical_work_text
+    - punctuation_present_in_selected_digital_witness
+  excluded:
+    - Wikisource-added section headings
+    - navigation text
+    - collation notes
+    - footnote markers
+    - cross-wiki links
+  reason: >-
+    The Wikisource page itself states that its section headings are added for reading convenience
+    and that the collation-note section is later editorial material rather than the original work.
+canonicalization:
+  paragraph_count: 28
+  paragraph_id_pattern: CN-HAN-0001-V001-PNNN
+  order_preserved: true
+  silent_modernization_forbidden: true
+verification_status: first_pass_complete
+future_work:
+  - Compare against at least one independent public-domain or licensed scholarly witness.
+  - Record textual variants separately without silently altering archived text.
