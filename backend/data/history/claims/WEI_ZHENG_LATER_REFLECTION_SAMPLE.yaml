@@ -1,0 +1,22 @@
+status: reviewed_sample
+claims:
+  - claim_id: CLM-WZ-REF-0001
+    statement: 唐太宗在魏徵去世后公开把魏徵比作可以“明得失”的一面镜子。
+    claim_type: attributed_reflection
+    support_passage_ids:
+      - ZGZY-V02-P-WZ-REF-001
+    confidence: high
+
+  - claim_id: CLM-WZ-REF-0002
+    statement: 唐太宗认为魏徵在世时能够经常指出自己的过失，并在魏徵死后担忧群臣趋于顺从而不再直言。
+    claim_type: attributed_reflection
+    support_passage_ids:
+      - ZGZY-V02-P-WZ-REF-001
+    confidence: high
+
+  - claim_id: CLM-WZ-REF-0003
+    statement: 唐太宗在魏徵死后再次要求群臣就政治得失直言无隐。
+    claim_type: governance_response
+    support_passage_ids:
+      - ZGZY-V02-P-WZ-REF-001
+    confidence: high
