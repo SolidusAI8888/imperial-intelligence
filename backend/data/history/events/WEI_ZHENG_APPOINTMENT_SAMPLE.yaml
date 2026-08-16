@@ -1,0 +1,31 @@
+status: verified_sample
+events:
+  - event_id: EVT-TTZ-WZ-0001
+    title: 玄武门之变后任用魏徵
+    chronology: 武德九年六月至贞观初
+    participants:
+      - 李世民
+      - 魏徵
+      - 李建成
+    claim_ids:
+      - CLM-WZ-0001
+      - CLM-WZ-0002
+      - CLM-WZ-0003
+      - CLM-WZ-0004
+    source_ids:
+      - SRC-JTS
+      - SRC-XTS
+      - SRC-ZZTJ
+    event_type:
+      - former_opponent_management
+      - talent_selection
+      - reconciliation_after_conflict
+      - governance_team_building
+    factual_summary: >-
+      魏徵曾在李建成阵营任职，并劝其及早对李世民采取行动。李建成败亡后，李世民召见并质问魏徵；魏徵没有改口回避。李世民仍因其才干、直率或既有器重而加以礼遇和任用，后来继续提升其职务。
+    interpretation_status: verified_factual_core
+    cross_source_review_status: verified_core
+    cautions:
+      - 三部史书在措辞上分别强调“素器之”“器其直”“素重其才”，不能据此断言李世民仅出于单一动机任用魏徵。
+      - 不能把后世概括的“宽容敌人”直接当作李世民本人明确表达过的原则。
+      - 该事件可以支持“任用曾属敌对阵营的人才”这一经验结构，但不能自动等同于现代私人关系中的原谅或复合。
