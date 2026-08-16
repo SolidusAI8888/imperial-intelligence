@@ -1,0 +1,40 @@
+status: sample_ingestion
+passages:
+  - passage_id: JTS-V71-P001
+    source_id: SRC-JTS
+    volume: 71
+    section: 列傳第二十一 魏徵
+    chronology: 武德九年至貞觀初
+    topic_hint: appointing_former_opponent_wei_zheng
+    original_text: >-
+      隱太子聞其名，引直洗馬，甚禮之。徵見太宗勳業日隆，每勸建成早為之所。及敗，太宗使召之，謂曰：「汝離間我兄弟，何也？」徵曰：「皇太子若從徵言，必無今日之禍。」太宗素器之，引為詹事主簿。及踐祚，擢拜諫議大夫，封鉅鹿縣男，使安輯河北，許以便宜從事。
+    locator:
+      digital_witness: Wikisource 舊唐書/卷71
+      section_hint: 魏徵傳前段
+    extraction_status: reviewed_for_sample
+
+  - passage_id: XTS-V97-P001
+    source_id: SRC-XTS
+    volume: 97
+    section: 列傳第二十二 魏徵
+    chronology: 武德九年至貞觀初
+    topic_hint: appointing_former_opponent_wei_zheng
+    original_text: >-
+      隱太子引為洗馬。徵見秦王功高，陰勸太子早為計。太子敗，王責謂曰：「爾鬩吾兄弟，奈何？」答曰：「太子蚤從徵言，不死今日之禍。」王器其直，無恨意。即位，拜諫議大夫，封鉅鹿縣男。
+    locator:
+      digital_witness: Wikisource 新唐書/卷097
+      section_hint: 魏徵傳前段
+    extraction_status: reviewed_for_sample
+
+  - passage_id: ZZTJ-V191-P-WZ001
+    source_id: SRC-ZZTJ
+    volume: 191
+    section: 唐紀七
+    chronology: 武德九年六月
+    topic_hint: appointing_former_opponent_wei_zheng
+    original_text: >-
+      初，洗馬魏徵常勸太子建成早除秦王。及建成敗，世民召徵謂曰：「汝何為離間我兄弟！」眾為之危懼，徵舉止自若，對曰：「先太子早從徵言，必無今日之禍。」世民素重其才，改容禮之，引為詹事主簿。
+    locator:
+      digital_witness: Wikisource 資治通鑑/卷191
+      section_hint: 武德九年六月玄武門事後
+    extraction_status: reviewed_for_sample
