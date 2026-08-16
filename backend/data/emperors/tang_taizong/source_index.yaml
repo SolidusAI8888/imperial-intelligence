@@ -1,25 +1,91 @@
 emperor_id: tang_taizong
-sources:
-  - source_id: SRC-ZGZY
-    title: 贞观政要
-    source_class: historical_compilation
-    evidence_grade: pending_review
-    digitization_status: not_imported
+schema_version: "1.1"
+architecture: history_first
 
+sources:
   - source_id: SRC-JTS
     title: 旧唐书
     source_class: official_history
+    role: core_fact_source
+    evidence_tier: A
     evidence_grade: pending_review
     digitization_status: not_imported
+    priority_scope:
+      - 太宗本纪
+      - 魏征列传
+      - 房玄龄列传
+      - 杜如晦列传
+      - 长孙无忌列传
+      - 李靖列传
+      - 李勣列传
+      - 皇子与储位相关列传
+    cautions:
+      - 需区分本纪、列传与后世补叙
+      - 与新唐书存在材料继承关系时不得简单视为独立双重证据
 
   - source_id: SRC-XTS
     title: 新唐书
     source_class: official_history
+    role: corroboration_and_variants
+    evidence_tier: A
     evidence_grade: pending_review
     digitization_status: not_imported
+    priority_scope:
+      - 太宗本纪
+      - 相关功臣列传
+      - 皇室与储位材料
+      - 制度背景材料
+    cautions:
+      - 成书时代较晚
+      - 需记录与旧唐书的异同及潜在文本继承
 
   - source_id: SRC-ZZTJ
     title: 资治通鉴
     source_class: chronological_history
+    role: event_sequence_and_context
+    evidence_tier: B
     evidence_grade: pending_review
     digitization_status: not_imported
+    priority_scope:
+      - 唐高祖至唐太宗时期相关唐纪
+      - 贞观时期重大决策事件链
+      - 君臣互动与政策前因后果
+    cautions:
+      - 属后世编纂史书
+      - 司马光的叙事与判断不得直接等同于唐太宗本人认知
+      - 关键事件需尽量回溯或交叉核验更早材料
+
+  - source_id: SRC-ZGZY
+    title: 贞观政要
+    source_class: historical_compilation
+    role: sayings_governance_reflection
+    evidence_tier: B
+    evidence_grade: pending_review
+    digitization_status: not_imported
+    priority_scope:
+      - 君道
+      - 政体
+      - 任贤
+      - 求谏
+      - 纳谏
+      - 君臣鉴戒
+      - 择官
+    cautions:
+      - 需区分明确引语、叙事转述与编者总结
+      - 不自动视为逐字实录
+      - 关键第一人称内容需与其他史料交叉核验
+
+source_governance:
+  core_rule: >
+    任何 Gold Standard Experience 都必须能够回溯至具体史料位置；
+    不允许仅依据后世人格印象或现代总结生成经历与建议。
+  claim_types:
+    - fact
+    - attributed_statement
+    - compiler_interpretation
+    - modern_inference
+  conflict_policy: >
+    史料冲突必须同时记录不同来源、文本继承可能性、工作结论、理由与置信度，
+    不得静默选择单一版本。
+  first_person_policy: >
+    第一人称表达必须保留证据等级；谨慎推断、后世解释和现代迁移不得伪装成逐字史实。
