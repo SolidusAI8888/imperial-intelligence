@@ -1,0 +1,32 @@
+source_id: SRC-JTS
+title: 舊唐書
+canonical_title_simplified: 旧唐书
+source_type: official_history
+historical_period_covered: Tang dynasty
+compilers: 劉昫等
+compilation_period: Later Jin
+language: Classical Chinese
+status: active
+
+authority:
+  tier: A
+  role:
+    - dynastic_history_backbone
+    - biographical_and_chronological_facts
+  cautions:
+    - compiled after the Tang dynasty
+    - must be cross-checked for contested events and motives
+
+digital_witness:
+  provider: Wikisource
+  page_title: 舊唐書/卷2
+  url: https://zh.wikisource.org/zh-hans/%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B72
+  retrieved_at: 2026-08-16
+  license_note: digital transcription hosted under Wikisource terms; ancient work itself is public-domain historical text
+
+citation_policy:
+  cite_source_title: true
+  cite_volume: true
+  cite_section: true
+  preserve_original_text: true
+  store_modern_translation_separately: true
