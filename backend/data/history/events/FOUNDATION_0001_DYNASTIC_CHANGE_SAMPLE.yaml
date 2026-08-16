@@ -1,0 +1,44 @@
+case_id: FOUNDATION-0001-history-and-destiny
+status: draft_events
+events:
+  - event_id: EVT-FND-JINYANG-0001
+    title: 晋阳起兵前的机会识别与犹豫
+    chronology: 隋大业十三年（617）
+    participants:
+      - 李世民
+      - 李渊
+      - 刘文静
+      - 裴寂
+    claim_ids:
+      - CLM-FND-0001
+      - CLM-FND-0002
+    source_ids:
+      - SRC-ZZTJ
+    event_type:
+      - dynastic_transition
+      - strategic_decision
+      - personal_agency_under_uncertainty
+    factual_summary: >-
+      隋末秩序崩解时，李世民与刘文静讨论入关起兵方案并明确表示赞同，但又因担心李渊不接受而长期犹豫，随后才逐步推动相关部署。
+    interpretation_status: evidence_grounded
+    cross_source_review_status: pending
+
+  - event_id: EVT-FND-SUIFALL-0002
+    title: 贞观时期对隋亡原因的回顾
+    chronology: 贞观三年及其后
+    participants:
+      - 唐太宗
+      - 贞观群臣
+    claim_ids:
+      - CLM-FND-0003
+      - CLM-FND-0004
+    source_ids:
+      - SRC-ZGZY
+    event_type:
+      - retrospective_interpretation
+      - governance_reflection
+      - dynastic_failure_analysis
+    factual_summary: >-
+      唐太宗在贞观时期多次以隋朝灭亡为现实警戒，把君主失政、臣下失谏以及小错累积与国家危亡联系起来，并要求君臣持续纠错。
+    interpretation_status: direct_attributed_reflection
+    cross_source_review_status: pending
