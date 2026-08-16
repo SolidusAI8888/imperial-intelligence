@@ -1,13 +1,19 @@
-version: 1.0
+version: 2.0
 name: Historical Experience Unit
 abbreviation: HEU
 purpose: >-
   Represent a historically grounded life-experience unit that connects verified historical
-  evidence to later insight and modern problem matching without storing a final user answer.
+  evidence to historically supported interpretation, reflection, insight, and modern problem
+  matching without storing a final user-specific answer.
 
 principles:
   - history_first
   - experience_first
+  - interpretation_is_evidence_bound
+  - distinguish_event_from_interpretation
+  - distinguish_immediate_from_retrospective_reflection
+  - complete_life_perspective_by_default
+  - no_future_knowledge_at_event_time
   - insight_next
   - advice_last
   - no_fabricated_first_person
@@ -24,7 +30,8 @@ required_fields:
   - chosen_action
   - reasoning
   - outcome
-  - later_reflection
+  - historical_interpretation
+  - reflections
   - historical_insight
   - modern_applicable_scenarios
   - limitations
@@ -64,6 +71,9 @@ field_definitions:
       evidence_level: [direct, supported_inference, uncertain]
       support_ids: list[string]
       caution: string
+    description: >-
+      Reconstruction of why the historical actor may have acted as recorded. Later knowledge
+      must never be projected backward into this field.
   outcome:
     type: object
     fields:
@@ -71,12 +81,41 @@ field_definitions:
       later: string
       costs_or_tradeoffs: list[string]
       support_ids: list[string]
-  later_reflection:
+  historical_interpretation:
     type: object
+    required_fields:
+      summary
+      interpretation_type
+      evidence_strength
+      support_ids
+      caution
     fields:
+      summary: string
+      interpretation_type:
+        type: [self_interpretation, contemporary_interpretation, later_historical_interpretation, system_synthesis]
+      evidence_strength:
+        type: [strong, medium, tentative]
+      support_ids: list[string]
+      source_scope_note: string
+      caution: string
+    description: >-
+      A clearly labelled interpretation of the event and its meaning. Interpretation is not fact.
+      Self-interpretation from the historical actor should be preferred when available; later or
+      system interpretation must remain separately labelled.
+  reflections:
+    type: list[object]
+    min_items: 1
+    item_fields:
+      reflection_type: [immediate, retrospective, lifetime]
+      chronology: string
       summary: string
       evidence_level: [direct, supported_inference, later_interpretation, unavailable]
       support_ids: list[string]
+      hindsight_boundary: string
+    description: >-
+      Records what the persona thought or later concluded at different points in life. The default
+      consultation runtime may use the complete lifetime set, but must distinguish what was known
+      at the time from what was understood only later.
   historical_insight:
     type: object
     fields:
@@ -85,6 +124,7 @@ field_definitions:
       confidence: [low, medium, high]
       supporting_event_ids: list[string]
       supporting_claim_ids: list[string]
+      supporting_interpretation_ids: list[string]
   modern_applicable_scenarios:
     type: list[object]
     item_fields:
@@ -101,11 +141,13 @@ field_definitions:
       passage_ids: list[string]
       claim_ids: list[string]
       event_ids: list[string]
+      interpretation_ids: list[string]
   confidence:
     type: object
     fields:
       factual: [low, medium, high]
       reasoning: [low, medium, high]
+      interpretation: [low, medium, high]
       reflection: [low, medium, high]
       transferability: [low, medium, high]
   review_status:
@@ -114,6 +156,11 @@ field_definitions:
 runtime_rules:
   - A HEU may not contain a final user-specific recommendation.
   - A persona answer may use a HEU only after the evidence chain is resolved.
+  - Historical facts and historical interpretation must remain separate.
+  - Interpretation must identify whether it comes from the actor, a contemporary, a later historian, or system synthesis.
+  - First-person narration may state a reflection as the persona's own only when supported by actor-linked evidence.
+  - The default persona runtime uses complete_life perspective and may draw on retrospective and lifetime reflections.
+  - Complete-life perspective does not permit retroactive future knowledge: later reflection must never be presented as knowledge held at the time of the original event.
   - First-person narration must disclose uncertainty when reasoning or reflection is inferred.
   - If no sufficiently similar HEU exists, the runtime must not fabricate one.
   - Persona recommendation should rank HEUs first, then select the persona who owns the best-matching HEU.
