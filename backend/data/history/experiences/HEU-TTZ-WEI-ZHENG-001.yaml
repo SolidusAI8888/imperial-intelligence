@@ -28,14 +28,14 @@ chosen_action: >-
 
 reasoning:
   summary: >-
-    现有史料一致表明李世民重视魏徵的某种个人价值，但不同来源分别强调其“才”“直”以及此前已有的器重。可以谨慎推断，李世民没有把“曾效力于敌对阵营”本身作为否决魏徵的充分理由，而更重视其可用于新政权的能力与直率。
+    现有史料一致表明李世民重视魏徵的个人价值，但不同来源分别强调其“才”“直”以及此前已有的器重。可以谨慎推断，李世民没有把“曾效力于敌对阵营”本身作为否决魏徵的充分理由，而更重视其可用于新政权的能力与直率。
   evidence_level: supported_inference
   support_ids:
     - JTS-V71-P001
     - XTS-V97-P001
     - ZZTJ-V191-P-WZ001
   caution: >-
-    不应把这一推断写成李世民明确说过的现代管理原则，也不能断言其任用动机只有“爱才”或“宽容”。
+    这里重建的是最初任用阶段可能的判断逻辑。不能把魏徵后来二十余年的表现以及唐太宗贞观十七年的总结反向写成武德九年已经掌握的知识。
 
 outcome:
   immediate: >-
@@ -52,24 +52,64 @@ outcome:
     - CLM-WZ-REF-0002
     - CLM-WZ-REF-0003
 
-later_reflection:
+historical_interpretation:
   summary: >-
-    魏徵去世后，唐太宗公开将其称为能够帮助自己“明得失”的镜子，并明确说魏徵在世时经常指出自己的过失；魏徵去世后，他担心其他臣僚趋于顺从、不再直言，因此再次要求群臣有是非便直言无隐。这构成了唐太宗本人对魏徵长期作用的直接、后期反思。
-  evidence_level: direct_attributed_reflection
+    这段经历的意义不能只概括为“宽恕旧敌”。从可核实材料看，更稳妥的理解是：李世民在政权转换后把魏徵从旧阵营身份重新评价为可用于治理、能够直言纠错的人才；魏徵长期的政治作用随后又强化了这种判断的价值。
+  interpretation_type: system_synthesis
+  evidence_strength: medium
   support_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
     - ZGZY-V02-P-WZ-REF-001
-    - CLM-WZ-REF-0001
-    - CLM-WZ-REF-0002
-    - CLM-WZ-REF-0003
+  source_scope_note: >-
+    该解释综合正史、编年史和《贞观政要》中的直接记载，不把后世流行的“宽恕”“忠诚管理”等现代概念当作史料原话。
   caution: >-
-    该反思发生在魏徵去世后，能够高置信度说明唐太宗后来如何评价魏徵的价值，但不能反向证明武德九年最初任用魏徵时，唐太宗已经完整预见了这一长期价值。
+    史料足以证明任用事实和后期评价，但不足以完整重建武德九年李世民全部内心动机。
+
+reflections:
+  - reflection_type: immediate
+    chronology: 武德九年以后、初次任用阶段
+    summary: >-
+      现有材料只能支持李世民愿意接纳并任用魏徵，不能直接证明他当时已经形成了后来关于“以人为镜”的完整认识。
+    evidence_level: supported_inference
+    support_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+    hindsight_boundary: >-
+      不得把魏徵后来的长期表现、去世后的评价或贞观十七年的反思写成武德九年当时已经知道的结果。
+  - reflection_type: retrospective
+    chronology: 贞观十七年魏徵去世后
+    summary: >-
+      唐太宗公开将魏徵称为能够帮助自己“明得失”的镜子，并明确说魏徵在世时经常指出自己的过失；魏徵去世后，他担心其他臣僚趋于顺从、不再直言，因此再次要求群臣有是非便直言无隐。
+    evidence_level: direct
+    support_ids:
+      - ZGZY-V02-P-WZ-REF-001
+      - CLM-WZ-REF-0001
+      - CLM-WZ-REF-0002
+      - CLM-WZ-REF-0003
+    hindsight_boundary: >-
+      该反思能够说明唐太宗后来如何评价魏徵的价值，但不能反向证明他在最初任用魏徵时已经完整预见了这一长期价值。
+  - reflection_type: lifetime
+    chronology: complete_life_perspective
+    summary: >-
+      在完整人生视角下，这段经历可以同时包含最初接纳魏徵时的不确定性、长期共事产生的纠错价值，以及魏徵去世后唐太宗本人公开表达的失落与总结；咨询时必须保留这些时间层次，而不能把它们压缩成一个“当时就知道”的故事。
+    evidence_level: supported_inference
+    support_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+      - ZGZY-V02-P-WZ-REF-001
+    hindsight_boundary: >-
+      lifetime 视角允许综合一生经验进行回望，但只能以“后来我才看见/后来我才明白”的方式表达后见之明。
 
 historical_insight:
   statement: >-
     在高冲突之后选择人才时，过去站在哪一边并不必然比其能力、原则性和是否能为新的共同目标发挥作用更重要；对于掌握重大决策权的人而言，能够持续指出自己错误的人，可能具有难以替代的价值。
   derivation: >-
     第一部分来自三种史料交叉支持的任用事实结构：魏徵曾为李建成谋划对付李世民；冲突结束后魏徵并未回避自己的旧立场；李世民仍加以任用并继续提升。第二部分由贞观十七年唐太宗在魏徵去世后的直接公开反思支持。洞察是对这些历史结构的谨慎抽象，并非把现代管理语言冒充为史书原话。
-  confidence: high_medium
+  confidence: high
   supporting_event_ids:
     - EVT-TTZ-WZ-0001
   supporting_claim_ids:
@@ -80,6 +120,7 @@ historical_insight:
     - CLM-WZ-REF-0001
     - CLM-WZ-REF-0002
     - CLM-WZ-REF-0003
+  supporting_interpretation_ids: []
 
 modern_applicable_scenarios:
   - scenario: 是否任用或合作一个曾经属于竞争对手阵营、但能力突出的人
@@ -130,11 +171,13 @@ evidence_chain:
     - CLM-WZ-REF-0003
   event_ids:
     - EVT-TTZ-WZ-0001
+  interpretation_ids: []
 
 confidence:
   factual: high
   reasoning: medium
+  interpretation: medium
   reflection: high
   transferability: medium
 
-review_status: draft_enriched
+review_status: draft
