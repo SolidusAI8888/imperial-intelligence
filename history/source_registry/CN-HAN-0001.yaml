@@ -13,7 +13,16 @@ corpus_path: history/source_corpus/china/han/shiji/
 corpus_requirement: full_original_text
 
 version_policy:
-  selected_base_text: pending
+  selected_base_text:
+    provider: Chinese Wikisource
+    work_page: https://zh.wikisource.org/wiki/史記
+    selection_reason: >-
+      Provides the complete 130-volume work with stable per-volume pages and revision permalinks,
+      allowing full-text archival, paragraph-level canonical IDs, provenance, and later cross-edition collation.
+    editorial_boundary: >-
+      Corpus text stores the historical work text only. Wikisource-added section headings, navigation,
+      collation notes, footnote markers, and other editorial apparatus are excluded from the immutable source text
+      unless separately archived as editorial metadata.
   edition_metadata_required: true
   multiple_versions_allowed: true
   modern_punctuation_must_be_identified: true
@@ -21,18 +30,26 @@ version_policy:
 
 rights_policy:
   public_domain_status_of_ancient_work: public_domain
-  digital_witness_rights_status: pending_review
+  digital_witness_rights_status: usable_with_wikisource_attribution_and_license_notice
+  digital_witness_license_note: >-
+    The ancient work is public domain. Chinese Wikisource states that site text is provided under CC BY-SA 4.0,
+    with additional terms potentially applicable; user-supplied punctuation/editorial contributions may therefore
+    carry attribution/share-alike obligations. Preserve source attribution, revision permalink, and license notice.
   rule: >-
     A digital witness may be archived as full text only after its reuse status has been verified.
     If a modern copyrighted edition is used for collation, its protected full text must not be copied
     into the repository without authorization.
 
 ingestion:
-  status: registered_not_ingested
+  status: ingesting
+  order: volume_ascending
+  total_volumes_expected: 130
   granularity: natural_paragraph
   source_text_immutable_after_archive: true
   provenance_required_for_changes: true
+  first_ingested_volume: 001
 
 notes:
-  - This registry record does not yet choose the definitive digital witness or modern edition.
-  - Full-text ingestion begins only after the base-text and reuse status are recorded.
+  - Base digital witness selected on 2026-08-16 after verifying work completeness and rights notices.
+  - Full-text ingestion proceeds in canonical volume order from 卷001 through 卷130.
+  - Later scholarly editions may be used for collation and variant analysis without silently replacing this witness.
