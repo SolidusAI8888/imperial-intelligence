@@ -1,0 +1,65 @@
+status: cross_source_verification_sample
+verification_records:
+  - event_id: EVT-TTZ-0001
+    title: 反对因突厥压力迁都
+    source_support:
+      - source_id: SRC-JTS
+        role: initial_event_source
+      - source_id: SRC-ZZTJ
+        passage_ids:
+          - PSG-ZZTJ-0191-0001
+        role: independent_narrative_cross_check
+    agreement:
+      core_fact: supported
+      decision_context: supported
+      outcome: supported
+    discrepancies_or_limits:
+      - 当前样本尚未加入新唐书对应迁都记载；不能宣称三书一致。
+      - 资治通鉴包含更完整的对话与动机叙述，第一人称使用时应降低对具体措辞和内心动机的确定性。
+    verification_status: provisionally_verified
+    evidence_confidence: high_for_core_event_medium_for_reported_dialogue
+
+  - event_id: EVT-TTZ-0002
+    title: 玄武门之变后接掌政务
+    source_support:
+      - source_id: SRC-JTS
+        role: initial_event_source
+      - source_id: SRC-XTS
+        passage_ids:
+          - PSG-XTS-0002-0001
+        role: official_history_cross_check
+      - source_id: SRC-ZZTJ
+        passage_ids:
+          - PSG-ZZTJ-0191-0002
+        role: chronological_process_cross_check
+    agreement:
+      core_fact: strongly_supported
+      succession_transition: strongly_supported
+      governance_transfer: supported
+    discrepancies_or_limits:
+      - 旧唐书与新唐书同属后世正史传统，证据独立性有限。
+      - 对冲突前后的具体密谋、言辞及动机须逐条回到原始 Passage，不得从事件结论反推心理。
+    verification_status: verified_for_core_event
+    evidence_confidence: high_for_core_event
+
+  - event_id: EVT-TTZ-0003
+    title: 贞观三年中枢用人配置
+    source_support:
+      - source_id: SRC-JTS
+        role: initial_event_source
+      - source_id: SRC-ZZTJ
+        passage_ids:
+          - PSG-ZZTJ-0193-0001
+        role: appointment_cross_check
+    agreement:
+      core_fact: supported
+      key_appointments: supported
+    discrepancies_or_limits:
+      - 现阶段只核实房玄龄、杜如晦、魏征的关键任命；李靖在原事件摘要中的具体职位仍需逐条回查并单独建 Passage。
+      - 不应仅凭任命事实直接推导“互补团队”或“人才哲学”等 Experience。
+    verification_status: partially_verified
+    evidence_confidence: high_for_verified_appointments
+
+first_person_gate:
+  rule: >-
+    只有被 verification_records 标记为 supported/strongly_supported 的事实，才允许作为第一人称历史叙述的事实骨架；具体思想、动机、后见反思仍须另有直接言论或经审核推断支持。
