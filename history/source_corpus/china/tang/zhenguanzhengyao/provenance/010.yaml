@@ -5,9 +5,10 @@ wikisource_page: 貞觀政要/卷10
 revision_id: 857543
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B2%9E%E8%A7%80%E6%94%BF%E8%A6%81/%E5%8D%B710&oldid=857543
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">貞觀政要/卷10</span></span>
-paragraph_count: 38
-sha256: 50d010fd2a7a01f2820f53bd3c6db8ca43cf2c59491863be61fdadb683325195
+block_count: 42
+sha256: 7118b12b2bcf5b38b6591b679581538df3621b4657d8d8851428839fc0f1a34c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

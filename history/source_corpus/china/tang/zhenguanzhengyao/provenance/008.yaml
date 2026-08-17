@@ -5,9 +5,10 @@ wikisource_page: 貞觀政要/卷08
 revision_id: 1161778
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B2%9E%E8%A7%80%E6%94%BF%E8%A6%81/%E5%8D%B708&oldid=1161778
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">貞觀政要/卷08</span></span>
-paragraph_count: 36
-sha256: 0f1031cbc7d0e414a30580e651eae0e071a01f71aafd1fb132600ba7b184569a
+block_count: 42
+sha256: 688a7fbc52bf2e5906273886003649efcb275ce0c22432348d2631551820a22b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 貞觀政要/卷05
 revision_id: 1161907
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B2%9E%E8%A7%80%E6%94%BF%E8%A6%81/%E5%8D%B705&oldid=1161907
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">貞觀政要/卷05</span></span>
-paragraph_count: 53
-sha256: 563208f7f6d693b3f80743adf6bf42555d96e7383655d4a63eb51efad2bb3fcd
+block_count: 59
+sha256: 22c2204bb3c9407ffb82b01f597d41e7f05e9d66092ce8a890e6322541bd245f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
