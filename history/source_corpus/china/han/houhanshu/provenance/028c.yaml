@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷28下
 revision_id: 2643398
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B728%E4%B8%8B&oldid=2643398
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷28下</span></span>
-paragraph_count: 17
-sha256: c0ce86b13131e10329ea6efd7adfaf6c2b084732ba00ad3a33bc10bd8f52462c
+block_count: 15
+sha256: 255be49a561d68d754ce9dd7b44359c12c6b8d6f27ae1125798304293a4e3cf2
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

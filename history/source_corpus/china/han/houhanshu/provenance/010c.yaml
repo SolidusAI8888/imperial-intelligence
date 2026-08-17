@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷10下
 revision_id: 2457313
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B710%E4%B8%8B&oldid=2457313
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷10下</span></span>
-paragraph_count: 84
-sha256: f7590b0896f10ff414463bbd181d640d5cf84cfcb14d86e3e32bf72a5095b081
+block_count: 88
+sha256: 820cf8d14dc81101dc23c68ff580de37ccc818434bf5038e63d09d52322a72ea
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

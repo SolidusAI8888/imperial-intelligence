@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷58
 revision_id: 2121420
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B758&oldid=2121420
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷58</span></span>
-paragraph_count: 198
-sha256: 70b8e5894f7aaee073c0f8473d370c550c3a5fd65196f3dc6faad5259243a59c
+block_count: 202
+sha256: 3317b36f182ec5133905886055cec0390d8e710aa7c1c83961cd62d3a2ab2245
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

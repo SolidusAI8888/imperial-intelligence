@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷44
 revision_id: 1549785
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B744&oldid=1549785
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷44</span></span>
-paragraph_count: 68
-sha256: a1eacdaad9bc2807a0f84b5fa3bb28f907445537d5b333350c838ac05bb41aa1
+block_count: 72
+sha256: 4df10b759f347211bb3b3127ede6292b191c7d3a7c877bd0d9fa2ce21f9039f9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷75
 revision_id: 5979054
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B775&oldid=5979054
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷75</span></span>
-paragraph_count: 91
-sha256: ceb00e8fe26feb01a4c0c310440e5188be6746a721272b97fcd2f40ca15601e0
+block_count: 95
+sha256: 44835104602ab901ea70b20d8398ed67121c5e831ee63159bc844ec6d5b9479a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

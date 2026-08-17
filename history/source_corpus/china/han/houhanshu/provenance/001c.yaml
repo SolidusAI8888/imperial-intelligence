@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷1下
 revision_id: 2457360
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B71%E4%B8%8B&oldid=2457360
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷1下</span></span>
-paragraph_count: 246
-sha256: 5975533dfc3c534a7a454944edf2a645d16bf76d49b468fada0b82b3cf67de41
+block_count: 250
+sha256: d9f60120e639506177f9335692db2321f8172ba569d6661796cdadb4118ca2e5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

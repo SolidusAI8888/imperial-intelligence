@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷17
 revision_id: 2611590
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B717&oldid=2611590
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷17</span></span>
-paragraph_count: 52
-sha256: d0facb4ac6a24c8d79964ff126337bd5977b34010830c0c39a4cc1c6c9fbc91f
+block_count: 56
+sha256: 6d40c9c2273b5f1321f2b6b5bebdf2df3f6afce1810720f0ee773faa942d73ad
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

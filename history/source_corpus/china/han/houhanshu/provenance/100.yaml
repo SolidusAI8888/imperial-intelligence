@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷100
 revision_id: 1753568
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7100&oldid=1753568
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷100</span></span>
-paragraph_count: 63
-sha256: dcbcf3714389e7b0c4f038186b65e6a21a0b252498f6ac6f0cccfdc8f9004ad5
+block_count: 67
+sha256: 8558b97a2fd292105eca2b2db7fd87f2c0c321320b7931820f4b1205431a3152
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

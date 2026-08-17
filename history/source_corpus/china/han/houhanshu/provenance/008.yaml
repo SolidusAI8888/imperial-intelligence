@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷8
 revision_id: 2457393
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B78&oldid=2457393
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷8</span></span>
-paragraph_count: 293
-sha256: 43496d7f97a9ce3947d3257e00cd52ed7db121520ec8a59066ea90a27b696fa3
+block_count: 297
+sha256: 5d4b40b5428b34f4b25f43a02dd4d930f08be4af7a235f42e30b1b78a1988f20
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

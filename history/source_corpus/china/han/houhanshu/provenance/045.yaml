@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷45
 revision_id: 2191216
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B745&oldid=2191216
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷45</span></span>
-paragraph_count: 94
-sha256: 3a74e67bac7ae9d2439b7e7c3e91680b16d5f231ff2796a967c6a04a7d7b575c
+block_count: 96
+sha256: 3f2af765759f61eeb7376efa4a5645dbaeef8b5229315339d1801b3aba8fe826
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

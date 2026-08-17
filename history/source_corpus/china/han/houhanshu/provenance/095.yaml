@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷95
 revision_id: 7904551
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B795&oldid=7904551
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷95</span></span>
-paragraph_count: 167
-sha256: ab1b57d2cfa704151fd2e168994425f93abd8c03110b077b2bdfcbb520560081
+block_count: 171
+sha256: 9f4668f65f87e924dee746688d76fb2d9a731681b0977a38639eed873095693d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

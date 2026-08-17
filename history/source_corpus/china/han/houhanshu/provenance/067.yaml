@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷67
 revision_id: 2376441
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B767&oldid=2376441
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷67</span></span>
-paragraph_count: 163
-sha256: 1938640b6a8fc2418274bffe6702d63bcbccb02758c4e4176126391e515da162
+block_count: 167
+sha256: c668d50a218b10bc18d9f3e4a559a041384f80823b63d01f0a63d9e606b6d77d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

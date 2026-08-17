@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷110
 revision_id: 2605560
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7110&oldid=2605560
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷110</span></span>
-paragraph_count: 292
-sha256: 9ac9df95092edec3e3780aea2b18172b5a4f60767700209517a288b65af6848c
+block_count: 296
+sha256: 817a028705109d3132037f67258c92e14233b1ad4a755530f70bba618ea611fc
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷62
 revision_id: 1499342
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B762&oldid=1499342
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷62</span></span>
-paragraph_count: 57
-sha256: dd5fba40c69f6369306c0b2ac3593074af2c2f4e9a7fa7313c2955ab129f5714
+block_count: 60
+sha256: 65b99797939c9630168c5aab259fba23c1355f828d40df85036f2db67cad3c36
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

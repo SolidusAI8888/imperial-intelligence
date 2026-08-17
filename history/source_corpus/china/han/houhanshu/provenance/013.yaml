@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷13
 revision_id: 2347379
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B713&oldid=2347379
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷13</span></span>
-paragraph_count: 54
-sha256: 9bda2305614ddc64928e0e011dd63e2d4e28540976156e687f95d079504549ba
+block_count: 54
+sha256: f6eca93b048c5d5b59cd0c1bf1f55a6b864655e30ca1ba0c1d7b3ed0a5762f43
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷119
 revision_id: 1549535
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7119&oldid=1549535
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷119</span></span>
-paragraph_count: 26
-sha256: b6f6cfe218816aabfeaa8535f251505cf542f5cbcf5df9d85b9c7fd2e2451bd4
+block_count: 30
+sha256: 7215e2bf2d1c5d0339e77b300442ac3c1055e49ca55b84c2654aa00fc2bb7aa4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

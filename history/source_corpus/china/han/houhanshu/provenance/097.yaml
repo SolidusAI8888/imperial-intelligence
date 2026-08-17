@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷97
 revision_id: 1753578
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B797&oldid=1753578
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷97</span></span>
-paragraph_count: 14
-sha256: 9966d0826120a764fb0840f7136140668975f080e8ef5a10e589065a32c2267b
+block_count: 18
+sha256: bd959baf730236fec3bacaad690f27b8e9b6829b8991345cc1a408b9fe144a5c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

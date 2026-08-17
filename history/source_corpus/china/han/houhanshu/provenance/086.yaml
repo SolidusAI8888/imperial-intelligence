@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷86
 revision_id: 1523514
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B786&oldid=1523514
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷86</span></span>
-paragraph_count: 59
-sha256: e8da6c94559ad77f902e2383390ca20a9f3ec5aede0045432b6ed055ac37bea5
+block_count: 63
+sha256: bfc9b608867b8170983ed9ee3e668cd2b3c865a8ebbc5f379028e2a67370746a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷26
 revision_id: 2616538
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B726&oldid=2616538
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷26</span></span>
-paragraph_count: 72
-sha256: 6e3cdab510ed5df0dfe148e8613107c3e2fa696a84b4195f913b842849cccdb6
+block_count: 76
+sha256: eb9ac07b81572adf7a476c5d26dfae9a0919b64bd71c93d2f5e74adb36c2cd6c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

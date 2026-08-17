@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷61
 revision_id: 2676886
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B761&oldid=2676886
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷61</span></span>
-paragraph_count: 157
-sha256: dd63f1de63bd4daea842efe22b36eed29530b8050fae2ce8a7f431392b441537
+block_count: 161
+sha256: a264c667dd76b6efba38db26946c849d7cb1a622393cd2a7a209c75b59b80163
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

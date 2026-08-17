@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷80下
 revision_id: 2081355
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B780%E4%B8%8B&oldid=2081355
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷80下</span></span>
-paragraph_count: 58
-sha256: d6de46b4d95b5b28e188453976e7f2418f2f0f7812704d24b6b44c2be8ed5786
+block_count: 62
+sha256: 8877856f08dd5449337dab4c06931730aad97e9f7e98a632718610b2230f6569
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

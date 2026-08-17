@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷65
 revision_id: 2484579
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B765&oldid=2484579
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷65</span></span>
-paragraph_count: 100
-sha256: dcf83a1e124df85a25f2173b5465db0337429408f65a4b2d01a1abfaa5af7a81
+block_count: 104
+sha256: d6f6d228ee5ff58971b0a7a799483da189028d5412819cd308e2261e715ea9f3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

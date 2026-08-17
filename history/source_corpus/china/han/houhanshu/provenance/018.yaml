@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷18
 revision_id: 2180451
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B718&oldid=2180451
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷18</span></span>
-paragraph_count: 45
-sha256: 79ce3de41669955bb5005a05ed552328a0f673f92181efe6e9518dd470e427e1
+block_count: 49
+sha256: 678cd00eeab8ad3484814993dc0860e2289714a17c4f04a921503d8e4c81b728
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

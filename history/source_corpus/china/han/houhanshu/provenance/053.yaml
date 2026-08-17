@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷53
 revision_id: 1763620
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B753&oldid=1763620
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷53</span></span>
-paragraph_count: 142
-sha256: 54c5960ea8c55cfcb7b6711d94fbc244d4b5e00993789683613252794af3ab3b
+block_count: 146
+sha256: db466aa803a13ddac24113a406bbefd66be295ab93a0bf6f19ed4446251c104e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

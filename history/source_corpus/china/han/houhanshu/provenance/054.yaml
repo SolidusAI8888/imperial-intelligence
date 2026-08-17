@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷54
 revision_id: 2089604
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B754&oldid=2089604
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷54</span></span>
-paragraph_count: 255
-sha256: d8fc0edc7e55853234bf22296e7490f97fc827cb33253e7bb2d86f4063dfea19
+block_count: 257
+sha256: bbbdc30e40ca63eb143f83d58aba8bf49deca5a05d2d4d266549f9a54c3da774
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

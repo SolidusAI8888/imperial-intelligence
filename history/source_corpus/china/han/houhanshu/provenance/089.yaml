@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷89
 revision_id: 2421873
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B789&oldid=2421873
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷89</span></span>
-paragraph_count: 70
-sha256: 386733b2f8e112ad07c5902efd6feac72d9d322ce889e8c0b9980aab7a7631ad
+block_count: 74
+sha256: 206870d9396fce2d002265eb26aa3ae16f38d7c24ca8250abdddf23b5923c2d7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

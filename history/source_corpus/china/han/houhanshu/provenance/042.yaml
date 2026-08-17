@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷42
 revision_id: 1549947
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B742&oldid=1549947
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷42</span></span>
-paragraph_count: 134
-sha256: 368b97037a40ce6e7ae4af321d307e7ced9b06c4c6427bb3c706fca8ddfc02cf
+block_count: 138
+sha256: 27c6a2bd393ee8697836d03e6edc462a196f395ea3f93807640bddd4757f00df
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

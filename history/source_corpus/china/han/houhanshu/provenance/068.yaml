@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷68
 revision_id: 1495293
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B768&oldid=1495293
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷68</span></span>
-paragraph_count: 48
-sha256: 378fd87447f5cbf436ea63da3b248435b67046f92ede530cf9850084fa2b88f9
+block_count: 52
+sha256: fe7a2e9a975b9ebf2f0c976eef6f8dc3952bcfb2c8ab86467dcf58f131501d8e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

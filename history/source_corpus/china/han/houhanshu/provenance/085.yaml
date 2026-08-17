@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷85
 revision_id: 2638627
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B785&oldid=2638627
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷85</span></span>
-paragraph_count: 34
-sha256: b0241e19406cb169e2d3303ff23049c4dc331c3798c3ccc0a626b23d878853c3
+block_count: 38
+sha256: ca4cf923c854497c262a79641c810c86e13d3e95a7aeb050aba8909572060659
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

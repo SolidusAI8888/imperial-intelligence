@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷83
 revision_id: 1458140
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B783&oldid=1458140
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷83</span></span>
-paragraph_count: 51
-sha256: b4cee627d08a10de7db75815e4b6892d9e6bd04ec937d2afb63f3958b64c9bfb
+block_count: 55
+sha256: 99e14f49439d788e67a304c4b90547cf6a59504a86c9be8e5f24c25fc6b8e2aa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

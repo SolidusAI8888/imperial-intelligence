@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷33
 revision_id: 2643432
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B733&oldid=2643432
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷33</span></span>
-paragraph_count: 43
-sha256: ca0f513ec0b1c2d023fc554c65f88b1e2c3a1a370bb35e77e08936371caa3bfb
+block_count: 47
+sha256: 2f8ea7eaacdae05bf2f83eecfc82a401d1e3a08e2e2d8a83a39396c7e7c9aa12
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

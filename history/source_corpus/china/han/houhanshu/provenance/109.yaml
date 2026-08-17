@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷109
 revision_id: 2626663
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7109&oldid=2626663
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷109</span></span>
-paragraph_count: 236
-sha256: ca47baaa2500d24891bf99676257091f66ebafc629e1984aa4541648ac3cad29
+block_count: 240
+sha256: 887fd56d30b8f4eb5f18e0757a4456ee110168dacc89e7acbcdb2e806a4245e0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

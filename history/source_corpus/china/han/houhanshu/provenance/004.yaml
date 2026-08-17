@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷4
 revision_id: 2457366
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B74&oldid=2457366
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷4</span></span>
-paragraph_count: 207
-sha256: d496217dce5d1289443d642e7d9908ca748c21d5a59beaa9783d472307717548
+block_count: 211
+sha256: 026701c30bb51c5708de50483889e41179acc2d9f8d0a41643885fa533120929
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

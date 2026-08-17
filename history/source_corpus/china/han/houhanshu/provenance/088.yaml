@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷88
 revision_id: 2642024
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B788&oldid=2642024
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷88</span></span>
-paragraph_count: 72
-sha256: 4ee367e1547e129a5240b57c4255ebd6cd1ff1f7d30ee17c2b3daa57de756568
+block_count: 76
+sha256: 545bf0e8793a98663cf13cff3215dfbfe3b304d94821db30257afc3bb1975e14
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

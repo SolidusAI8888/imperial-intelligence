@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷60下
 revision_id: 2608284
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B760%E4%B8%8B&oldid=2608284
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷60下</span></span>
-paragraph_count: 45
-sha256: dd82c88cc88532d1a736d7774f60072e8527085a622556fabe6d4cc595f2ed74
+block_count: 35
+sha256: 60112a33ffd77980cb01abd5cd1739901c49b4e3b4103586ab8dfe9ab4bfe420
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

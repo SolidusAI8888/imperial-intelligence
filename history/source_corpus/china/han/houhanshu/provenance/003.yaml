@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷3
 revision_id: 2457363
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B73&oldid=2457363
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷3</span></span>
-paragraph_count: 117
-sha256: c8396b1766ef2acf25a34d5cf34746529edfc450bb8c97488ade33450d0fb3bc
+block_count: 121
+sha256: 561712e883b2d0042f678dd2dfe6d8f3da9e37dd5226b92595f35209a3683a57
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

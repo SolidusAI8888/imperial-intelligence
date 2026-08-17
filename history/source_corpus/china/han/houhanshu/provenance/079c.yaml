@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷79下
 revision_id: 2620486
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B779%E4%B8%8B&oldid=2620486
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷79下</span></span>
-paragraph_count: 71
-sha256: 1f41fa8b3c297ab948ec8272fdd7468411a1347db45689f514711abebb8d83a3
+block_count: 75
+sha256: 6f9953bf68a7b2943d52cd125a5eec984a3e1706b2747d3d11a1e72e56321ca3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

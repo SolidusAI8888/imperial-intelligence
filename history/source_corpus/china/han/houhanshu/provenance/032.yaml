@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷32
 revision_id: 1314279
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B732&oldid=1314279
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷32</span></span>
-paragraph_count: 39
-sha256: e21bfec8799733b55bd45075f70dcda878d79f52d58d15ed752f91eaf4fc15f5
+block_count: 40
+sha256: bd56a4c23bd50418c6251bc1714faf4dfa46ccfa92d2c6c82934a1b4db1c8d0b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

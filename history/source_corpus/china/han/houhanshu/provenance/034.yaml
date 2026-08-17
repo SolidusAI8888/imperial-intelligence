@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷34
 revision_id: 2422647
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B734&oldid=2422647
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷34</span></span>
-paragraph_count: 53
-sha256: b08802bcf326bdda54108cd868084e70a8311037147aa534ca5fa48d6eac9df6
+block_count: 53
+sha256: 87751f8f1c77f643e4ab284c273f8b6cb9617c44332d639a645988e06398aff5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

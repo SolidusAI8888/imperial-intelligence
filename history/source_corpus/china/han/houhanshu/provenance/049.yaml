@@ -5,9 +5,10 @@ wikisource_page: 後漢書/卷49
 revision_id: 2563716
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B749&oldid=2563716
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷49</span></span>
-paragraph_count: 133
-sha256: 0052ce3d93458b6e5539915fa0f329af018bdbd724ff376d939d79fa3faf07d9
+block_count: 92
+sha256: 5f5cb85e288d1ff4256d623a82d81568b469edc19a66eda126508f30e89c476e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
