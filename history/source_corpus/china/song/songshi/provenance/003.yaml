@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷003
 revision_id: 2285055
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7003&oldid=2285055
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷003</span></span>
-block_count: 77
-sha256: 434a4a7ebcead5e4599e5cbaf011bf7c21d60c478f897a1e53840edfb14de585
-extractor_version: 2
+block_count: 73
+sha256: b562cb127ea4c78504d49053086987e80ebde9ab1716ff31706c3f23df99a7ad
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

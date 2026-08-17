@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷148
 revision_id: 2610659
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7148&oldid=2610659
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷148</span></span>
-block_count: 58
-sha256: 4dcf0903de52283535f666a96cb4aa63dff342f1c30f5db0f7d98470fc63f595
-extractor_version: 2
+block_count: 54
+sha256: 43de5d63e41e958c49d05906cd6e5cd558d6509a4cf35acdd238966e1c3bc8f8
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

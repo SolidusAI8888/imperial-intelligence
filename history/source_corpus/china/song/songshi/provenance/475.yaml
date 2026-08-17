@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷475
 revision_id: 2004646
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7475&oldid=2004646
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷475</span></span>
-block_count: 96
-sha256: c3315e13f8b282ab87bfa82f9978b3be51620872527887f79436ed394d3b4a84
-extractor_version: 2
+block_count: 92
+sha256: ebf2cc0b9ec78daeb4293888fa6969c42aae32d4d2a91679ed4ce81fb07f82fc
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

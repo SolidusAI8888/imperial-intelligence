@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷444
 revision_id: 2292941
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7444&oldid=2292941
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷444</span></span>
-block_count: 60
-sha256: 2055664f4d47f406b646af2cf5c9c0f3ec8cf43c92d93dbb032410fa10268988
-extractor_version: 2
+block_count: 56
+sha256: 10192fd7d93628b8711e431a5b5fe77f27e717d29df745adb77fa423c86bd0eb
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

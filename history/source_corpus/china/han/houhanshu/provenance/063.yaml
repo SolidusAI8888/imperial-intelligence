@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷63
 revision_id: 7904703
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B763&oldid=7904703
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷63</span></span>
-block_count: 170
-sha256: 644ff1639170691354dcd077409faca1a56f72f19081bce22ff1c3de3fc3f1c8
-extractor_version: 2
+block_count: 166
+sha256: fe7afd691cbf1f9a2be1ecc369aa050df3f969af98c983cb82163e315c9ec5c3
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

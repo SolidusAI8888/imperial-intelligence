@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷412
 revision_id: 2004824
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7412&oldid=2004824
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷412</span></span>
-block_count: 66
-sha256: 7a7d9e12b7df929298e865abcb4abc75e3c8e94de629058bb0850e44bed15904
-extractor_version: 2
+block_count: 62
+sha256: 4ad73cb33a398e8caa7fdb5db3099f96a6c8bb390c242c41f90ebb5c74d48606
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

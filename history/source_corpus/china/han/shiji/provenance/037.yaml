@@ -5,10 +5,11 @@ wikisource_page: 史記/卷037
 revision_id: 5977124
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7037&oldid=5977124
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷037</span></span>
-block_count: 58
-sha256: dcbab44f3c2cb0c876c1f856da9b06b6d0a5f36ed44d1436d6ad8e8d674d96d0
-extractor_version: 2
+block_count: 54
+sha256: 798bb580d484161628673c466ff47a2d9ab4b3ac72250fa410910edc1e0bace0
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

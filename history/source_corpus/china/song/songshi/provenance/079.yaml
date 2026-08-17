@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷079
 revision_id: 2594127
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7079&oldid=2594127
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷079</span></span>
-block_count: 215
-sha256: 2fd1226f510ab5c65589dfa33acbc5c114442434940cf5ae12d1a3622fe01e17
-extractor_version: 2
+block_count: 211
+sha256: bca8c2bdd6de39dae5cc4babe3b7d958c66194ed46573a7f3da76fe5d25ee622
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

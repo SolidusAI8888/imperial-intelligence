@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷098
 revision_id: 2180641
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7098&oldid=2180641
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷098</span></span>
-block_count: 47
-sha256: a7413d5e491093c5d2342ede8fea61cbeb127ed47af0478580218376ce70ae56
-extractor_version: 2
+block_count: 43
+sha256: fdde15e93ae782c136c4a5705ca9bc4fd73798527a09cc0cd1de8d418e2b90aa
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

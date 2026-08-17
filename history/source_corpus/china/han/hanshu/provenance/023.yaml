@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷023
 revision_id: 7908643
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7023&oldid=7908643
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷023</span></span>
-block_count: 40
-sha256: 761608d8b0f20174173acc0450b3a5b7ce4be52fdcbfa272f2a3ead2b8bb3eda
-extractor_version: 2
+block_count: 36
+sha256: e5b5feb12ed697f41ff5820815e676af7b7c18e6b63e98ab5ce380f0f8ad66ce
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

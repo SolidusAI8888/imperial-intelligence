@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷90
 revision_id: 2580127
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B790&oldid=2580127
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷90</span></span>
-block_count: 59
-sha256: 293e972e8433f04ba1e0681a8d270c356960a58a70f90289d0a6586d934f04d7
-extractor_version: 2
+block_count: 55
+sha256: 785e5c9e7ce191fa988d39fa1def5851e3e1180ad6343b87ce601a25dc38f685
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

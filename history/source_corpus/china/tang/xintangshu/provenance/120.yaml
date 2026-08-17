@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷120
 revision_id: 7905445
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7120&oldid=7905445
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷120</span></span>
-block_count: 62
-sha256: 84a03db850e259379b3a0b1fee1fb5dba99d1c1af8e35f3c13a341f99d72789e
-extractor_version: 2
+block_count: 56
+sha256: 24b2f89f57da2dda741d6a514e9884f36458c5b79ac3117ddd9ccfb8805618a0
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

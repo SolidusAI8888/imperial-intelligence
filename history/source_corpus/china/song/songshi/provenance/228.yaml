@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷228
 revision_id: 2515828
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7228&oldid=2515828
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷228</span></span>
-block_count: 2479
-sha256: d703654ecece77e9fd199bc92129b858a645dabe7050e21b3df309096c527d59
-extractor_version: 2
+block_count: 2475
+sha256: c83eb9502f70c102946c2e1ed247542bd57be0e0d1cc8c949ed5639da58dd52a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

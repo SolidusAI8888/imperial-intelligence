@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷73
 revision_id: 2115635
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B773&oldid=2115635
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷73</span></span>
-block_count: 138
-sha256: 4408231e95e091a78e060eed28574cfe481b223a4502735e7f595508179907db
-extractor_version: 2
+block_count: 134
+sha256: 8816ff412e1b4a673d1a751d82b9291f14b98871de0bb7187edffee9dfd3fb73
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

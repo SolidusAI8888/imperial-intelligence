@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷59
 revision_id: 7904834
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B759&oldid=7904834
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷59</span></span>
-block_count: 137
-sha256: f429868901a365e5ed3ba15a58544e119b1929dbf35f01fb85c1a74b49268598
-extractor_version: 2
+block_count: 133
+sha256: 61b8f8ec2af68729b0dbc5fb70d03fd55521cd0f33194fbf16b5130c464e5765
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

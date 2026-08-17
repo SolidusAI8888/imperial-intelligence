@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷29
 revision_id: 2643409
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B729&oldid=2643409
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷29</span></span>
-block_count: 42
-sha256: 8c8af465ad44fb36533edcce11d91360b03de4ad3c43aa695b7924861a320a3a
-extractor_version: 2
+block_count: 38
+sha256: d938f027902349c7d4c67409e67235ca0922d30c3419d80bb7c84841578434e4
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷257
 revision_id: 1476822
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7257&oldid=1476822
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷257</span></span>
-block_count: 96
-sha256: 1056e895b9616e96622cd77d384ff3b7d0124109dacdaf57624257c560b41c3b
-extractor_version: 2
+block_count: 92
+sha256: 98919e36a99ac575f4950a2a786136cb1eae10ed2a248b2e0b385a5f27ece343
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

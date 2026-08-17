@@ -5,7 +5,7 @@
     1,
     10
   ],
-  "extractor_version": 2,
+  "extractor_version": 3,
   "expected_titles": [
     "貞觀政要/卷01",
     "貞觀政要/卷02",
@@ -22,75 +22,75 @@
     {
       "page": "貞觀政要/卷01",
       "file": "001.txt",
-      "blocks": 32,
+      "blocks": 28,
       "revid": 2692710,
-      "sha256": "31069654fa4ac36a381677c17d68b0d05d0f7b3e73cab2b4669fceeed9c70a41"
+      "sha256": "8aeae976baf5208876eb0d24299c837c485c83ced4bcba03782445d6ab9e7aea"
     },
     {
       "page": "貞觀政要/卷02",
       "file": "002.txt",
-      "blocks": 50,
+      "blocks": 44,
       "revid": 2144513,
-      "sha256": "384d20013425aad082fba5897ce18ff54d7c9671511039c2977c0648c7626863"
+      "sha256": "081410ef6594eae78c0328a83e189dbf72921de8dadb517a6e10604509bf6354"
     },
     {
       "page": "貞觀政要/卷03",
       "file": "003.txt",
-      "blocks": 45,
+      "blocks": 39,
       "revid": 802073,
-      "sha256": "6cb1a22f798e9d78da02a60aa1060be0f37e133037a21cb067afa6d86661aac7"
+      "sha256": "f221cdc4016b523f49fe3654ab51bb75058ed9ce5b8601486d5272fa87e593c0"
     },
     {
       "page": "貞觀政要/卷04",
       "file": "004.txt",
-      "blocks": 54,
+      "blocks": 48,
       "revid": 2358175,
-      "sha256": "d34b94cb784ff90d044b6f9baf6300d322d609be8f1ac0129e413d627a062c31"
+      "sha256": "f8d7fd9c840f18373f471648f2344237bbed7f3ae9f6022fd727b182da69fdb8"
     },
     {
       "page": "貞觀政要/卷05",
       "file": "005.txt",
-      "blocks": 59,
+      "blocks": 53,
       "revid": 1161907,
-      "sha256": "22c2204bb3c9407ffb82b01f597d41e7f05e9d66092ce8a890e6322541bd245f"
+      "sha256": "563208f7f6d693b3f80743adf6bf42555d96e7383655d4a63eb51efad2bb3fcd"
     },
     {
       "page": "貞觀政要/卷06",
       "file": "006.txt",
-      "blocks": 52,
+      "blocks": 46,
       "revid": 2358176,
-      "sha256": "4de1f46957c5b797d9f67631320a59b96bf78b969f402ffe75ac9e596ac4d17a"
+      "sha256": "780f89730af76a74987db710b66024d4f2a72f26d590159a99dbd09c1ca8a691"
     },
     {
       "page": "貞觀政要/卷07",
       "file": "007.txt",
-      "blocks": 33,
+      "blocks": 27,
       "revid": 802077,
-      "sha256": "6a205a11e9191235249adafde9d309ad83caaad71a14b0f0acc6fb5dcaed8b49"
+      "sha256": "4cba0232f45c798a0d22f6e7de65b91a6a640608665257d728337e2f1b14523f"
     },
     {
       "page": "貞觀政要/卷08",
       "file": "008.txt",
-      "blocks": 42,
+      "blocks": 36,
       "revid": 1161778,
-      "sha256": "688a7fbc52bf2e5906273886003649efcb275ce0c22432348d2631551820a22b"
+      "sha256": "0f1031cbc7d0e414a30580e651eae0e071a01f71aafd1fb132600ba7b184569a"
     },
     {
       "page": "貞觀政要/卷09",
       "file": "009.txt",
-      "blocks": 35,
+      "blocks": 29,
       "revid": 802090,
-      "sha256": "5a850641f0044a0721ec6d1261f564ef0a48bb7d09f8108a1f2603c5eb35d213"
+      "sha256": "0a09a3ae0b5ce4d6a7e0fba8e3d5d48d3dffbf7934e8e19a5bb0452b2463322e"
     },
     {
       "page": "貞觀政要/卷10",
       "file": "010.txt",
-      "blocks": 42,
+      "blocks": 38,
       "revid": 857543,
-      "sha256": "7118b12b2bcf5b38b6591b679581538df3621b4657d8d8851428839fc0f1a34c"
+      "sha256": "50d010fd2a7a01f2820f53bd3c6db8ca43cf2c59491863be61fdadb683325195"
     }
   ],
-  "skipped_v2": [],
+  "skipped_current": [],
   "errors": [],
   "archived_file_pairs": 10
 }

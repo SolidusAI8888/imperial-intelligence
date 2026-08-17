@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷419
 revision_id: 1488206
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7419&oldid=1488206
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷419</span></span>
-block_count: 70
-sha256: d46233e55e3593630431550abd7d381a3f0af9c8d2be2b6842b812ed0f8083b8
-extractor_version: 2
+block_count: 66
+sha256: a64dbcac545c7db45b456dce9b2c54980711cadc99c20eada77e7bb93d96f96a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷14
 revision_id: 2614135
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B714&oldid=2614135
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷14</span></span>
-block_count: 73
-sha256: 93c6881dba3a1b1d8d198358a2a85568373de90d2353bf16d1c4654f3e5f51fe
-extractor_version: 2
+block_count: 69
+sha256: 3a33e92b63136b9f56887a3269f871b87e7248a2ae919674041e4f83f60e14af
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

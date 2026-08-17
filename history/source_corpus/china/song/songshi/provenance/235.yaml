@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷235
 revision_id: 2551844
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7235&oldid=2551844
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷235</span></span>
-block_count: 969
-sha256: aa5d556920349538337c61531cdf8c8aba75bdb9d144104c858b46ef0805761c
-extractor_version: 2
+block_count: 965
+sha256: 2de59eff33d5bf2001bf559ee4ca633cdab20c1bc04a1473f17a60031af92545
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

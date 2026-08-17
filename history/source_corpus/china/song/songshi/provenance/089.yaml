@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷089
 revision_id: 1875817
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7089&oldid=1875817
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷089</span></span>
-block_count: 403
-sha256: 905b6eeac4096242e2f2fae0c5a07d93df5b663b4450c500606a9a289c60ad1c
-extractor_version: 2
+block_count: 399
+sha256: 55561fb07c186889b65f95cb8c7c1222bf46427c518fbf6ebc9b89e6feadce21
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

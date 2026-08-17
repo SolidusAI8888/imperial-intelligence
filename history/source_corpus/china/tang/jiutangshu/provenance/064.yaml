@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷64
 revision_id: 2573897
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B764&oldid=2573897
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷64</span></span>
-block_count: 38
-sha256: f480fbc12ec9c7a6f6ade671a569f10922754301f54688c84932a80f6453c0ad
-extractor_version: 2
+block_count: 34
+sha256: 82b80813cdff0cc8141393e69d6a1796bcc9b273c552db6e7d801ddd3a45c2df
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

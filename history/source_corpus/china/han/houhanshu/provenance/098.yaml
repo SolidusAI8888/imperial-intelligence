@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷98
 revision_id: 1510438
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B798&oldid=1510438
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷98</span></span>
-block_count: 18
-sha256: 1387ba0944d82a4416ca9adcf8619e4429a9498e560b78147dd001dec8b3b195
-extractor_version: 2
+block_count: 14
+sha256: 969a4261d32bb1d34ec59284776a6bbb9f5684f89c618d9a39a06df8743bcf05
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

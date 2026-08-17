@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷063
 revision_id: 1235271
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7063&oldid=1235271
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷063</span></span>
-block_count: 103
-sha256: 8ce4fc5cb8118df6c157baf29743b11caebe9558b898e9cadca88f228c7a3e98
-extractor_version: 2
+block_count: 99
+sha256: 764325c89ff2502a69d455f0a333926a6147ef7b16318bde99388eb439bfdd83
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

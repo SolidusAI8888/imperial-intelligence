@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷372
 revision_id: 1529411
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7372&oldid=1529411
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷372</span></span>
-block_count: 64
-sha256: c1b495579b3b40d1285d1ff39c75a350f34650fa01337292f42856dd4b2395ef
-extractor_version: 2
+block_count: 60
+sha256: 92806af227a93e8ed05b8ac70d2bcea3424322cec4f2ccc31597f7f91669f407
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

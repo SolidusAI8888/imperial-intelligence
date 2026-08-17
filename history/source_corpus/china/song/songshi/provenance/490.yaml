@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷490
 revision_id: 2292282
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7490&oldid=2292282
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷490</span></span>
-block_count: 81
-sha256: 3ee6a155bdf0c4290b5b8b46c3ea85f80eea3e275ddb8bd974e41b1f3ff506bc
-extractor_version: 2
+block_count: 75
+sha256: 1206bb5be5f8a4471c396896d5de8a3778c3feca6b654ac710a3ec03960a29bd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

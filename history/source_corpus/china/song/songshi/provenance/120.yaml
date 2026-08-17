@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷120
 revision_id: 1476674
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7120&oldid=1476674
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷120</span></span>
-block_count: 37
-sha256: de002b5d2955d1c3601f2800bd0b0e05924c4f7562815b41df03eafd1c11cb3d
-extractor_version: 2
+block_count: 33
+sha256: ccb0ab31acbaa0e1c57a8140996c6527d352a68ce8834fb4ea8d50bc2563cc86
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

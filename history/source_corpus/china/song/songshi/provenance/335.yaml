@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷335
 revision_id: 1439684
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7335&oldid=1439684
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷335</span></span>
-block_count: 49
-sha256: ec43db128bca3e8316576d65ee34270ae58b6262239c285df9c79215d30a324b
-extractor_version: 2
+block_count: 45
+sha256: e2831b40fd36cd6968b291e6f4f08a5ed6f1574cb19ec14fec4f4b575e005b89
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

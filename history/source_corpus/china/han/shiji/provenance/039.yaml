@@ -5,10 +5,11 @@ wikisource_page: 史記/卷039
 revision_id: 2588534
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7039&oldid=2588534
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷039</span></span>
-block_count: 147
-sha256: 56d14ff6c909bed4c3c183b46f9e1bce9be1e58b235a47a6cb65afa05e555a5b
-extractor_version: 2
+block_count: 143
+sha256: 2659c092cb650678c549854cae18da635578446c2644a33a7ca792769dd451f5
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

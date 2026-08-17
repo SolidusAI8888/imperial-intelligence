@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷124
 revision_id: 2615648
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7124&oldid=2615648
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷124</span></span>
-block_count: 43
-sha256: f9f6b95c06506e8f7969dde1580f416af217be706527b50fd6c98a1df4a5e2bc
-extractor_version: 2
+block_count: 37
+sha256: 8ed8c643675ded9733089a62cc2c22fc40fece518d7e21908dd920bff071e7c7
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

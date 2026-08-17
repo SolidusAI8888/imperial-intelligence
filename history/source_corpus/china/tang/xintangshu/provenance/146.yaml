@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷146
 revision_id: 1494711
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7146&oldid=1494711
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷146</span></span>
-block_count: 43
-sha256: 3bce3eac4236020fe8a095bcfdc2a70c62ed3621220bc71f2f9144e1fa49b000
-extractor_version: 2
+block_count: 37
+sha256: 9bee285a8cbf19081365b9059216d7ed6d53fd8581cb33f2df7bdf92dcba7520
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

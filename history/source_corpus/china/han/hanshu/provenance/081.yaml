@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷081
 revision_id: 2665897
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7081&oldid=2665897
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷081</span></span>
-block_count: 62
-sha256: a1f0f5c4e5b833892525441e28ed12935d3a87630c7ccc99aedd9ec7195a958f
-extractor_version: 2
+block_count: 58
+sha256: edb446c04ea11e51b9d9e72a38af4842677644cebabc98aa02f5cc5e6b608424
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

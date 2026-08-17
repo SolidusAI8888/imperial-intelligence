@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷231
 revision_id: 2551840
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7231&oldid=2551840
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷231</span></span>
-block_count: 2617
-sha256: d7d8db8a3079e403700002389061119112169b02c1a863a45394894f6d8523ff
-extractor_version: 2
+block_count: 2613
+sha256: bfb47c416153fcbfebe8320c4f0844d309ab5db53fa31d6fe0a4a512d98a6c0e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

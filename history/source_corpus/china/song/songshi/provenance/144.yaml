@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷144
 revision_id: 2610731
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7144&oldid=2610731
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷144</span></span>
-block_count: 29
-sha256: 00c790ae2dc32521cb7a0e130972c0d5c9f65ea68b54893043d98276b16c3040
-extractor_version: 2
+block_count: 25
+sha256: 61a2f97de1f771e12fa6cf42b85b1da1e9fca789c3aaa329debe1383c6cc6821
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

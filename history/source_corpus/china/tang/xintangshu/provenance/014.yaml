@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷014
 revision_id: 2017172
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7014&oldid=2017172
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷014</span></span>
-block_count: 47
-sha256: 73986f0e61b2863df373da2df17b2edcbecf1e3780a5a693b9a635cf464a9a0b
-extractor_version: 2
+block_count: 41
+sha256: 1b28c746570acfc8d4d9fb92c643a21197fbecef17b55afb86c5f29c76247738
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

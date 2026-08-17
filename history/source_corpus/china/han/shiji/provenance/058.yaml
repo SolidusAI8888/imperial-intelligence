@@ -5,10 +5,11 @@ wikisource_page: 史記/卷058
 revision_id: 366809
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7058&oldid=366809
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷058</span></span>
-block_count: 31
-sha256: 4872dbea0f992ea5e782fe0969cd7cb15c9be0aa412329b235d26a87ab961fbc
-extractor_version: 2
+block_count: 27
+sha256: 8474efc27e932c3581d0d6aa175165f5c067ef5135bb733e5accecdabd06d564
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

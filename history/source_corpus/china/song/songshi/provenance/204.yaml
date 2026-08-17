@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷204
 revision_id: 2631724
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7204&oldid=2631724
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷204</span></span>
-block_count: 281
-sha256: 39b8188fbeab2cb09a285ffd2d539b52fb0deadfb15030facc68df240b425f7a
-extractor_version: 2
+block_count: 277
+sha256: 22adb05f2bc29f98a58274c3a801d141f3c4e85406701a6661ec45b8d5f63fcf
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

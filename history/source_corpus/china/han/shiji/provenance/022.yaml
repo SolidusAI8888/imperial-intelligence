@@ -5,10 +5,11 @@ wikisource_page: 史記/卷022
 revision_id: 2607038
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7022&oldid=2607038
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷022</span></span>
-block_count: 795
-sha256: bf3afb77437c4b3913840e4985990651808584928e3266805424c561188db3ab
-extractor_version: 2
+block_count: 791
+sha256: f45362ed0ed07040a6d699fa389691a0fc2da5ef016409ebc75e70458fca462a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

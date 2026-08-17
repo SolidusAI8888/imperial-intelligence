@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷240
 revision_id: 2551849
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7240&oldid=2551849
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷240</span></span>
-block_count: 445
-sha256: 659d15ba9e138b0ce82a858f3a0811c99ce22a3c6f9edad048aac4ddcec98163
-extractor_version: 2
+block_count: 441
+sha256: 059569d5a26c88d04d9867f06ac686bd753f77b21487a56b6f4e86e6189be744
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷153
 revision_id: 2606048
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7153&oldid=2606048
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷153</span></span>
-block_count: 55
-sha256: 7c78179a203f986336ca0fae3f1374bdbf85c209ebb650c913a44559ca745c8e
-extractor_version: 2
+block_count: 51
+sha256: 851049fd86f4c28fd895b4682240100fb7a013490c6669b1341096a51a5342fd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

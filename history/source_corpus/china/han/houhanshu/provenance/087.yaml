@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷87
 revision_id: 2043788
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B787&oldid=2043788
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷87</span></span>
-block_count: 58
-sha256: 61ea851a6a23a3d414ac95e3146ad112388f07517f36eef2dc4efd4d9543c265
-extractor_version: 2
+block_count: 54
+sha256: 79bbd1f60342c7621a028ea38479377b713f398643f071ce36147307d84e3c7e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷77
 revision_id: 7911929
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B777&oldid=7911929
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷77</span></span>
-block_count: 42
-sha256: 942ce506049a840f508e9fefc87266451f755828ad64d9d6ba540c9b2bdeb1ee
-extractor_version: 2
+block_count: 38
+sha256: ff278d581f6371d25ae6a3b4f2861b5cb07dcac4ed9971276829452b256c1fd7
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

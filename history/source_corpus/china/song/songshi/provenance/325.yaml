@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷325
 revision_id: 1386910
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7325&oldid=1386910
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷325</span></span>
-block_count: 58
-sha256: d123042efbb02decc5cab9806f8df0a5967be8eff18c4e08469631a468f7eeee
-extractor_version: 2
+block_count: 54
+sha256: 0c35c779324d6e8702a646ccfc2ccca7ac2d7f63e4f2a640f655b98d835a9f7b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

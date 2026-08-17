@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷424
 revision_id: 1488845
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7424&oldid=1488845
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷424</span></span>
-block_count: 60
-sha256: 4588981dad59b67405dbf80873946c3fb0f60c54ef4a9599b446d4977d1c011d
-extractor_version: 2
+block_count: 56
+sha256: ee20f3a43a61a686828096bbe4ce960a717d739cbfcf9664e81b9217f3769237
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

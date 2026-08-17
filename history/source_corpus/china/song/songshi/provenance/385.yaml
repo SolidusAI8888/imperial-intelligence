@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷385
 revision_id: 1474121
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7385&oldid=1474121
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷385</span></span>
-block_count: 81
-sha256: 16d6413f0d17ec584cb64be1695d580bbfd2c218bb4a81c5cc6bb32cb76a8878
-extractor_version: 2
+block_count: 77
+sha256: 8bd6c3ede7c1f28f3bc36520f784f4577061a6a3b79b9e317c8b49431d6740b7
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

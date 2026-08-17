@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷115
 revision_id: 2020483
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7115&oldid=2020483
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷115</span></span>
-block_count: 23
-sha256: ff3e18ada89492f6717ac7954c293bbcf0851617b130b6681b49de65a40173f3
-extractor_version: 2
+block_count: 19
+sha256: fd04fbd8e4708bff6d5dc5dd8f5d9bc96bcbb93c18828149c022521a311d5a30
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

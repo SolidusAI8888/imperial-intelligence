@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷106
 revision_id: 7902172
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7106&oldid=7902172
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷106</span></span>
-block_count: 51
-sha256: 2ef9925e97ec6603d5ef165fef4b99d1a672f02b282263afffb9d6c46da2369d
-extractor_version: 2
+block_count: 47
+sha256: 2ab645c4dabdb183f4d2e9f26a7faecd57c830f105bdf9c81b59893d6e74b0fd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

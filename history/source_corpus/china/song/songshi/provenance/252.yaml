@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷252
 revision_id: 1476817
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7252&oldid=1476817
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷252</span></span>
-block_count: 59
-sha256: 7e0a62f61566baadb7cab486b14f4f4409e2196eb872200eb9d0f744fa9aec85
-extractor_version: 2
+block_count: 55
+sha256: 539c1766c97894345d46a1f1a928f00db8acb5df74c9b21a0996c5fdb1822fd9
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

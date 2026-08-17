@@ -5,10 +5,11 @@ wikisource_page: 史記/卷101
 revision_id: 368092
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7101&oldid=368092
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷101</span></span>
-block_count: 27
-sha256: 2817837d7c7a3d38fc5a8374b9095b3711d02be8ec9c301c9da5bbefbed55258
-extractor_version: 2
+block_count: 23
+sha256: cb6c07679d83e4088b6633e1a6a46d7941e78af548c69836102063020955eff1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

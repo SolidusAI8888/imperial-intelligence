@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷224下
 revision_id: 2019990
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7224%E4%B8%8B&oldid=2019990
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷224下</span></span>
-block_count: 69
-sha256: 3e1353af0106cf8da7cf0b178ef120727c189205216b51dcef7c6345f42e6d5a
-extractor_version: 2
+block_count: 63
+sha256: 711687975f14315af59d59844908ed9692fdc156a5d87e92e0a960f0387549c1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

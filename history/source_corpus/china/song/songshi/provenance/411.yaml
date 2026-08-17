@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷411
 revision_id: 1522657
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7411&oldid=1522657
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷411</span></span>
-block_count: 35
-sha256: 68bc27e4f4e64ed1873f5b85262adfd5e05703e01a973a45691698e2dad622c7
-extractor_version: 2
+block_count: 31
+sha256: edefa5befde74538270e083fe4ba87cd556ce814f93f19f9883b48c44786de92
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

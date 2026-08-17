@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷029
 revision_id: 2285125
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7029&oldid=2285125
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷029</span></span>
-block_count: 59
-sha256: fb80da77008fcd28aea23ce96d69e3c312c42149323b6b38531479d0d7aa1aba
-extractor_version: 2
+block_count: 55
+sha256: 93ec4a2b77684a3bb31916557ecfcc40d9c2d9e7d61daf5fde07e49eafe59bf8
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

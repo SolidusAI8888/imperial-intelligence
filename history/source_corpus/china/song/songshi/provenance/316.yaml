@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷316
 revision_id: 2094023
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7316&oldid=2094023
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷316</span></span>
-block_count: 51
-sha256: 35b97537695c7445120c007bf31005313240271e43f11cf132500b7ce8f7f1c4
-extractor_version: 2
+block_count: 47
+sha256: 59e4741fb505977b022d7c40966365f8f59a3c0b656e17c3cbcc55549c0f5eb2
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

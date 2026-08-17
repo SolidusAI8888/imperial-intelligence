@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷319
 revision_id: 1744467
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7319&oldid=1744467
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷319</span></span>
-block_count: 67
-sha256: 7e498547b2b14ca77876a5e43ec19dac4759c6346d8c1457a40f5507c9c28468
-extractor_version: 2
+block_count: 63
+sha256: 9143cf8dd35f1664cb01ca2164b77e6ccae03edf6810fc2d066d824fc81180fd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

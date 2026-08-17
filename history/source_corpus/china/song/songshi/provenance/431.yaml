@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷431
 revision_id: 2412325
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7431&oldid=2412325
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷431</span></span>
-block_count: 112
-sha256: 47f640f25eaaf9594704e5380e543a2a27be87206e467f7ecb80f414e6c94202
-extractor_version: 2
+block_count: 108
+sha256: 4dedbc0577672bc72535601b85a24027324e8b93571ec1f60b5e1d8d540e19fe
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

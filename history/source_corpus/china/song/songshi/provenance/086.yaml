@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷086
 revision_id: 2057390
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7086&oldid=2057390
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷086</span></span>
-block_count: 243
-sha256: ceb6bf8a8b417ac97f955aa94f87f29b0d02a2bede857e6b74e10bdc46e32867
-extractor_version: 2
+block_count: 239
+sha256: ca318576969733763a664c5deb4a46b945e23c41a191272ec87c5c0ead7962d6
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

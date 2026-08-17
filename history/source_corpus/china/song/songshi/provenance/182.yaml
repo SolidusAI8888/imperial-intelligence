@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷182
 revision_id: 2709538
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7182&oldid=2709538
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷182</span></span>
-block_count: 60
-sha256: ea3f38c50febc9b5cf545842068eb993bf15c6ae7207667a70d341b011bdb15f
-extractor_version: 2
+block_count: 56
+sha256: 30c266e4110a732adb12d9594f87ac1094531d3188482eaf7f2a1853a39bebb1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

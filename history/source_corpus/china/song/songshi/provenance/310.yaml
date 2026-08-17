@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷310
 revision_id: 1409438
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7310&oldid=1409438
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷310</span></span>
-block_count: 73
-sha256: 8ea3b8306a41afaf1809dddbebf050fd592f0aeefe8e712bc95505026d73c82b
-extractor_version: 2
+block_count: 69
+sha256: 2ccc2c5adf6734b187f56c1fa24b7246c2c63345dd85163f64120b6c409c6524
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

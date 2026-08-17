@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷070上
 revision_id: 2088474
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7070%E4%B8%8A&oldid=2088474
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷070上</span></span>
-block_count: 1041
-sha256: 70afc64369bb28487e1ea0f6b91c89ab539023a4bfe9bc03977c1829eb1bfa1c
-extractor_version: 2
+block_count: 1037
+sha256: 09f11eef422881f4ffb8dbe0d3fbdc2da355ca55bb0773854feda24077519952
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

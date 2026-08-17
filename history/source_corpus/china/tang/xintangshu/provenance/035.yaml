@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷035
 revision_id: 2017486
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7035&oldid=2017486
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷035</span></span>
-block_count: 269
-sha256: 7bf09cba7aacbe99c41e46009430e78a8ce957a8f0fd29babc50839ca30b3906
-extractor_version: 2
+block_count: 265
+sha256: 543a477c378ef3d23d0e79a8722cdbd060e8a60ad0fbffe8e54b8623a5b8175b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

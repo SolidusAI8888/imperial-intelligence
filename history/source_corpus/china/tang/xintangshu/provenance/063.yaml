@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷063
 revision_id: 2391880
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7063&oldid=2391880
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷063</span></span>
-block_count: 330
-sha256: 519cd1eb3f4144f10040be968459a7b6014e8182f44b7d76770cac318ddfc516
-extractor_version: 2
+block_count: 326
+sha256: 6f16f17ab8310a9e782e6514ecada825979905342c796799e808c2588878ba74
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

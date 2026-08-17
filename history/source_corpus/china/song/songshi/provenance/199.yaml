@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷199
 revision_id: 2607070
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7199&oldid=2607070
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷199</span></span>
-block_count: 48
-sha256: 5fe133c0b7a84fe6ba33874ec7fe0f3e3122920200f0459800127268c0d534c3
-extractor_version: 2
+block_count: 44
+sha256: 17d10e5736fb7b636c0714a12517b0d9441ec1d9e96ec471f6f268fc345fabcb
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

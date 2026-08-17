@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷155
 revision_id: 2293923
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7155&oldid=2293923
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷155</span></span>
-block_count: 65
-sha256: 793e52217fdf9aab2223cbd7dab754aa380fcf6e2dfe7da3d5b61cd87c2fe4d6
-extractor_version: 2
+block_count: 61
+sha256: d9e85a26b9130a4d39db343e3feaced5e171c6788076ffa738b867c5361d4348
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷234
 revision_id: 2551843
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7234&oldid=2551843
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷234</span></span>
-block_count: 2805
-sha256: e5f18a45851a5c17306bde83335aa63731ab9bfd6fa7addaf81a7410aed0b001
-extractor_version: 2
+block_count: 2801
+sha256: 90a392b4a6333fd392edce1689d33173066a996cae04c05e6c925a639bb2c32c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

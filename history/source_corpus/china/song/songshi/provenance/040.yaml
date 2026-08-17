@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷040
 revision_id: 7908413
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7040&oldid=7908413
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷040</span></span>
-block_count: 97
-sha256: 2ddfe67a5b7b6caab8df29496a23ed6b4c0837714fc1f0deadfe7c8e028c25e2
-extractor_version: 2
+block_count: 93
+sha256: 143c4eb517a580ba3966b076b173ff3b599e7f65e35ac87b6233bdb12a6b069f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

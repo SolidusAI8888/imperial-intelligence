@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷221
 revision_id: 2523716
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7221&oldid=2523716
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷221</span></span>
-block_count: 2188
-sha256: a48ce9bec8d2851d2dfa3265a29a7e90b31f463e461944a8c813c6af66628df0
-extractor_version: 2
+block_count: 2184
+sha256: 6c609f0313d038f2ca0bb8964f4fdec2e4e1544130e7f9d37fd5158396cb1f56
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

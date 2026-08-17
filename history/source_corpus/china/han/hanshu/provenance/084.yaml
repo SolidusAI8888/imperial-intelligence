@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷084
 revision_id: 1476462
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7084&oldid=1476462
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷084</span></span>
-block_count: 45
-sha256: 4e1fb2685767085ade66f126071a73b0198203fe1382e044d401081d7750e550
-extractor_version: 2
+block_count: 41
+sha256: 1e6ce8913f24fbf6d97857c03f9f1d4e1bec579ba936900c8646394268295854
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

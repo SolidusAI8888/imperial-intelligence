@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷148
 revision_id: 2401751
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7148&oldid=2401751
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷148</span></span>
-block_count: 79
-sha256: 08661070315023b2fab23d643357f8454b812ee13e9a650bb138284fb918876e
-extractor_version: 2
+block_count: 73
+sha256: f0d1a37d58c2dd18f427ac3468d4a101de2490123bfec57b8a0a134f6aee15c1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

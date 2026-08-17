@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷098
 revision_id: 845903
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7098&oldid=845903
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷098</span></span>
-block_count: 40
-sha256: a7c86029a38409ce6a0f8423eba7506f1f83b3eb212a1e4bf1cfe9f05f793bc9
-extractor_version: 2
+block_count: 36
+sha256: ac793d736b9f65430b7234723e46a299f71e14fde3d6cc3acefe258b8e36f939
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

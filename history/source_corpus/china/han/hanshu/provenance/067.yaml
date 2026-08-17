@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷067
 revision_id: 1471955
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7067&oldid=1471955
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷067</span></span>
-block_count: 34
-sha256: 5fade22c84f35f63cd2b873968aaa3c21d7a4c6ea6884633aeae2c6f72c8f1c8
-extractor_version: 2
+block_count: 30
+sha256: 21a5c21a5ef0c3b98ed922f8de03049ccf995ee225f4b46aae038f0e1ea3a361
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

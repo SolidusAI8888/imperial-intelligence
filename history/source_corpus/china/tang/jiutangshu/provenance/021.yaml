@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷21
 revision_id: 7904381
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B721&oldid=7904381
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷21</span></span>
-block_count: 80
-sha256: e19b140e6e8e35b4b783ae7c4fab85ec6f255e4ecf71d4473396beefcc6a0551
-extractor_version: 2
+block_count: 76
+sha256: ce9d7fc060283e1ae7fa6c247bb59d47e632e17fff602442b4fbcf481f90b383
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

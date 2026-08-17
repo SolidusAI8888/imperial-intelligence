@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷009
 revision_id: 7908328
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7009&oldid=7908328
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷009</span></span>
-block_count: 132
-sha256: d76dca72f771ef965e41b20ba31498dd1babd59d35659d69baf47903cc8a0b7c
-extractor_version: 2
+block_count: 128
+sha256: d2e136fe5d1062802f0739e46be996b4bac0180c075c799508b289f32fdc7c3c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

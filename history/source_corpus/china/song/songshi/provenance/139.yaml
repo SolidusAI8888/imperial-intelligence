@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷139
 revision_id: 1476694
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7139&oldid=1476694
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷139</span></span>
-block_count: 162
-sha256: 6adce5c73813cb5cc4acef3ee7a2585023fa86c5b0a619768ec5004710fdf662
-extractor_version: 2
+block_count: 158
+sha256: b377a1bc046faee8681108fa9b1c940c9dd3b07a3fb6f4f1306494d2abdafa78
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

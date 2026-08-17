@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷033
 revision_id: 7908408
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7033&oldid=7908408
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷033</span></span>
-block_count: 73
-sha256: f91de014962afd4e14bb7de69e954d08b0df629a04416ba11c4cd49c446abd93
-extractor_version: 2
+block_count: 69
+sha256: 2fb8b168e7030407ea0a9cbf12820b5bf02e3f16ffe17a5f8156b178456bd48a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

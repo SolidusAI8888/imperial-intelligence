@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷102
 revision_id: 7904578
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7102&oldid=7904578
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷102</span></span>
-block_count: 50
-sha256: c696ee50545b8e0b7c27599cf7b23cd41796b9d9b4ca6ced2930132055fae1b9
-extractor_version: 2
+block_count: 46
+sha256: f5ef2fd07037034d6de11178298e4b9524fc86f0bf2ce2bd6a0513b743d63c93
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

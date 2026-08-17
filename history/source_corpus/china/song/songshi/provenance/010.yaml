@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷010
 revision_id: 2285039
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7010&oldid=2285039
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷010</span></span>
-block_count: 121
-sha256: de9b5ebceba0a18447b13b4bea904165bc6766938acb4fab84d6f2f33f4436f7
-extractor_version: 2
+block_count: 117
+sha256: 954b1a7cdd22edd314edb57b6008363192d78d1d53d091b5438ca57a0f3feafa
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

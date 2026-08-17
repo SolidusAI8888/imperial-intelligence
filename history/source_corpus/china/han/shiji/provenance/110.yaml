@@ -5,10 +5,11 @@ wikisource_page: 史記/卷110
 revision_id: 1529156
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7110&oldid=1529156
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷110</span></span>
-block_count: 65
-sha256: f36133299ca29e936c713de59655f0ba6d2c92264d9c532daa0d9bb32cf0b7d8
-extractor_version: 2
+block_count: 61
+sha256: b2ce92ab5ee76900b400b56e6b4fb6216b264b155968574afe32600b427a4ef1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

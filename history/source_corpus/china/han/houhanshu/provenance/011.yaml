@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷11
 revision_id: 2457461
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B711&oldid=2457461
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷11</span></span>
-block_count: 66
-sha256: b052264f6992589c4d618adaf2dbe1c878041d9adfbfba9714a6e73cc3a1478b
-extractor_version: 2
+block_count: 62
+sha256: 1a7beb09d21afe6be049acd00db9491b595495c7fc3ee1d14129e8f2059df39c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

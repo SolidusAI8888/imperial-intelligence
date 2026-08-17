@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷347
 revision_id: 1457712
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7347&oldid=1457712
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷347</span></span>
-block_count: 96
-sha256: cea1ecc24e0ada4899d20f5a68c21681fcb374fdeda678eafabd7c3ac2b23e33
-extractor_version: 2
+block_count: 92
+sha256: f74f5aab7d7013fbe750621dd0f6d81854188bd955e825e438d3cd98b9fd0731
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

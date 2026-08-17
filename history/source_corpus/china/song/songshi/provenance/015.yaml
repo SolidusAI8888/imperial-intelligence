@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷015
 revision_id: 2285105
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7015&oldid=2285105
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷015</span></span>
-block_count: 135
-sha256: 2f7e53d79ff83d83407d165ef4a7c8724d584c6aa20b5150ed7fc35010e17460
-extractor_version: 2
+block_count: 131
+sha256: 374d8cee047183f84a0bd7db8fdc52f6df43d415cc3f20fef8c85f50c8b6ad91
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

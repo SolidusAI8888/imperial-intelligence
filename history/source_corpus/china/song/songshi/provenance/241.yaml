@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷241
 revision_id: 2551850
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7241&oldid=2551850
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷241</span></span>
-block_count: 1103
-sha256: d1783d716ccde8477657ebb8df6ce4d4cdd94ddff941dcc439cc517c55bee5df
-extractor_version: 2
+block_count: 1099
+sha256: ba10bc60c9add93cc99a34e39c0411b4458f89b2392ce8feea8d698ba1ce40d7
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

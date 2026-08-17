@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷092
 revision_id: 1502925
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7092&oldid=1502925
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷092</span></span>
-block_count: 71
-sha256: 570c491d2c27fec11187e516b0cee1018fa3f836d60d61796167a3a4e2a947d8
-extractor_version: 2
+block_count: 67
+sha256: eb23d821ed173c0f7df9594ea6580318279952e5c46d396f0b53c563e259178a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷242
 revision_id: 2258685
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7242&oldid=2258685
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷242</span></span>
-block_count: 85
-sha256: d3c6cad33de148a17819b68f4637fb22f17f00b12a3c7a3070dc675a8a6d94e4
-extractor_version: 2
+block_count: 81
+sha256: 43136856952c5c53905e8825fb27f1c3b4d9f9d42a20b359534974023e545b69
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷107
 revision_id: 1485116
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7107&oldid=1485116
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷107</span></span>
-block_count: 39
-sha256: aae793e5ae183167bb8cb1e2e2e0315eee41ab677600a5161b6a6734e4b705c4
-extractor_version: 2
+block_count: 35
+sha256: 6ca3f2668364499bf7358208297941cd83372fa78d55d3d2012a3baf6b2e0951
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

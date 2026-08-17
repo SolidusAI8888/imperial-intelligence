@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷117
 revision_id: 1476671
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7117&oldid=1476671
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷117</span></span>
-block_count: 38
-sha256: 7eb5e560a934d25a196de304bafeab5322e13d9150682b2ba4fadb2dcfdf09da
-extractor_version: 2
+block_count: 34
+sha256: cc6230d0699eaa65f18aa6c32fdbe935328d0e9e8d09c4f7c9feae242879074f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

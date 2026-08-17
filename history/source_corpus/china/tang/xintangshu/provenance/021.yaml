@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷021
 revision_id: 2017239
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7021&oldid=2017239
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷021</span></span>
-block_count: 49
-sha256: 36345a88fe55dff460c688afdf4f2d55b10c0569d5f1db26b64fea67d1a94b99
-extractor_version: 2
+block_count: 43
+sha256: 233de4899b47b9e0c0e1124ef404a3cb097e85ce8e7b6113f1f9838832a17339
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

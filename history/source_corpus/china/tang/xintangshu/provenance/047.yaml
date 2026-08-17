@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷047
 revision_id: 2024341
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7047&oldid=2024341
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷047</span></span>
-block_count: 116
-sha256: 0906110df9282417f857b4f6e31ebcfd56c5871f9ff60a7b5c41ec705fdc74b6
-extractor_version: 2
+block_count: 110
+sha256: 539dcc2f0164ffd3a14c620e9a47a89b02fa6ea74a6c5d31f4e9b5ee06de2d45
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

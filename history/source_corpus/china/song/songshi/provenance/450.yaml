@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷450
 revision_id: 1491269
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7450&oldid=1491269
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷450</span></span>
-block_count: 53
-sha256: 7061aa0e3ba43d15b07b36703bb53519ad4e2cd1225bf91964b1f391f15ff291
-extractor_version: 2
+block_count: 49
+sha256: a18cac972c0e62133a0f7e4dac217036a006ecc84c51074002f1c3c749838385
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

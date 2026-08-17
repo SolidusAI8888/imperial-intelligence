@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷116
 revision_id: 1476669
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7116&oldid=1476669
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷116</span></span>
-block_count: 46
-sha256: ffe437bcb0fab3844187f9699618374ae95c7b0ca37d3bddbb82f7d1c2499a6f
-extractor_version: 2
+block_count: 42
+sha256: 61adcde845c3ceb99b8fd5995bb06408567e131742f2bb3bf07e1ffa825bb836
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

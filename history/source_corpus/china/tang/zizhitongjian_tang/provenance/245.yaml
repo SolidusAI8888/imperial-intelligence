@@ -5,10 +5,11 @@ wikisource_page: 資治通鑑/卷245
 revision_id: 1553973
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7245&oldid=1553973
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷245</span></span>
-block_count: 117
-sha256: 407baa3b9cce4828d30bd6de0a811adf7d4b106ead84e884b3df49c6025b668e
-extractor_version: 2
+block_count: 113
+sha256: ded276beab6a2f5edab91bf34dd06f250b2740e807b9606f24c2484e84533d19
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

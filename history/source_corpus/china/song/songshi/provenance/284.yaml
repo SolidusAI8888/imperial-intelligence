@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷284
 revision_id: 1308304
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7284&oldid=1308304
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷284</span></span>
-block_count: 58
-sha256: e8c5c0c43d872b99177bb587ffc44f0f432ae64369cd1083369327f834c52451
-extractor_version: 2
+block_count: 54
+sha256: 98035d3241b1fc98bd33f3a0d3ee02f4405a08cec1a98c8a70d799b7d34419ed
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

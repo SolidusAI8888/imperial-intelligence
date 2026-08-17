@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷027
 revision_id: 2285123
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7027&oldid=2285123
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷027</span></span>
-block_count: 46
-sha256: 500462826bc6253a7efc4b2728c136ba2800f96117f13ccbb11249b84cd7a62f
-extractor_version: 2
+block_count: 42
+sha256: e81fa986d137c7f8ef332a4453cdcb5df78a5bce5b66fcdc6580bad106a9273b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

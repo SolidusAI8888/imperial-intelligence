@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷313
 revision_id: 1379907
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7313&oldid=1379907
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷313</span></span>
-block_count: 41
-sha256: 77cadb8227039e316ec6d6e84a135ef36e0f03d819cf422a9c47402227c3d0b8
-extractor_version: 2
+block_count: 37
+sha256: 2e857474d105c6423fb2c5cd86eee3a92eddaf531e736c0fd14bababddafc97f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

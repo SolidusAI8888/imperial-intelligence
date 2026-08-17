@@ -7,8 +7,9 @@ permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷016</span></span>
 block_count: 2
 sha256: de65f3b95bb513ff7e75157c848f84b790a058f1940d65d7f0fb2a90d010b045
-extractor_version: 2
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

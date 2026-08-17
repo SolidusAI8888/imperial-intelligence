@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷105
 revision_id: 1753456
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7105&oldid=1753456
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷105</span></span>
-block_count: 111
-sha256: 520493a2e0d787850a46f2fb26c07b8cd63afc3f195d7df92e42b7c855364f3f
-extractor_version: 2
+block_count: 107
+sha256: 4de8a1ae2e73680a94aba748bcc278a1ea3c4d1d5c0e667c49b28d9b757e42e1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

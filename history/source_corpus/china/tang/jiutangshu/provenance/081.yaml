@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷81
 revision_id: 2612094
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B781&oldid=2612094
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷81</span></span>
-block_count: 33
-sha256: 4bfbfe67e78fcd6a812845f4bf3cf8bc31f048bd7ff1f195a46884f42487fd3a
-extractor_version: 2
+block_count: 29
+sha256: 74ac25810a377540d5829fdf26d47b5df096db8cda034412954f140e2e38ab23
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

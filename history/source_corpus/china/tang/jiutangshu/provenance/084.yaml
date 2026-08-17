@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷84
 revision_id: 2632414
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B784&oldid=2632414
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷84</span></span>
-block_count: 23
-sha256: 5ce56a7a568c5228c4a6f943e60343a147a41266ea43e42f1aacffa0b4b5fd06
-extractor_version: 2
+block_count: 19
+sha256: f38963e4a3739d1be70fffd57a1a931913d3eb42aacb864d4c9c4bbe0791c483
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

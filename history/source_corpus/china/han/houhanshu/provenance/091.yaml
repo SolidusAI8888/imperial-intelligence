@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷91
 revision_id: 2138479
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B791&oldid=2138479
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷91</span></span>
-block_count: 212
-sha256: 690a49fedee8541398244f9b87dbbcf0261ee4d7f71ffbace50fb358ef3b7c17
-extractor_version: 2
+block_count: 208
+sha256: 010b89279f6a6100f6ae3fb771f8222b1cef3d1bbb14d8e2322cf1ccd5b41768
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

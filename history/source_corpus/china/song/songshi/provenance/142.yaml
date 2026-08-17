@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷142
 revision_id: 2632314
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7142&oldid=2632314
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷142</span></span>
-block_count: 92
-sha256: 625b0e15a940c5d5be16dd67cf17b390df10c824f4bd6e1be8e3621f9216c7e9
-extractor_version: 2
+block_count: 88
+sha256: 7d84ff507efba70df8f08e6ae7227ebefbafee2bdec4f82cfad4ef2dded524d5
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷305
 revision_id: 1339800
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7305&oldid=1339800
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷305</span></span>
-block_count: 39
-sha256: 1155f6e58e6c44abfaaa0e9751afe5640da34e442fc8e528376991848b051a83
-extractor_version: 2
+block_count: 35
+sha256: 120b10bd02d928d7f2726d31804ac28d31662c447a7c41e495462b9d0cb5994f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

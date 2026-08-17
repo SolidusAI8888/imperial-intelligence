@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷064上
 revision_id: 2036400
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7064%E4%B8%8A&oldid=2036400
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷064上</span></span>
-block_count: 57
-sha256: 9c7d6ad40df78176c79e61fac150a4ac7669eca5ba534f7f52b9b494f295e6f4
-extractor_version: 2
+block_count: 53
+sha256: 0091c553245c7a271de3de5bad1019d5c05cb8294f519687340d9182d58d7a84
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷399
 revision_id: 2305892
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7399&oldid=2305892
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷399</span></span>
-block_count: 63
-sha256: a18d639dc191da4c7c963ae1a59e37fb603bac69628ede3a406d200229363b30
-extractor_version: 2
+block_count: 59
+sha256: 8cd1012ec1276ee4021626fe673dcd5b305a356ba7e72c5da9b205e7f212ad6f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷377
 revision_id: 1458843
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7377&oldid=1458843
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷377</span></span>
-block_count: 80
-sha256: d59db2f13f64b8fceba16dd00aadb21efa9a52ef3210e904884039d56f87edcd
-extractor_version: 2
+block_count: 76
+sha256: ac9473af2c7d2a6c0642b220f25b4fac542634b828b723543244640653fa562a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

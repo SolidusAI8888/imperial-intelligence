@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷049
 revision_id: 1229412
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7049&oldid=1229412
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷049</span></span>
-block_count: 88
-sha256: cc135c703aaa7da5ac9ed49182f056337324668495e43813e7b4eade5cc40ae2
-extractor_version: 2
+block_count: 84
+sha256: a665db88d675b049922d983813cacc5e572d395c3e55a34bb0ea5796b222ff81
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

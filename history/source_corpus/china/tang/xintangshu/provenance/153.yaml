@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷153
 revision_id: 2602290
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7153&oldid=2602290
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷153</span></span>
-block_count: 51
-sha256: 4dfb1004c3309a2d1e17200f40eb2e5fa48c5fe45806c8c989b54122e4a92e15
-extractor_version: 2
+block_count: 45
+sha256: 13bfbd0018af5c4f0c7bebfeb0f917a101a3d2a75f54a0442ca50bb04ed450c6
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

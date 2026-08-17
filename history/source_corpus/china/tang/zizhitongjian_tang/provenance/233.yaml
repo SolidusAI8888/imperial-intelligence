@@ -5,10 +5,11 @@ wikisource_page: 資治通鑑/卷233
 revision_id: 1551296
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7233&oldid=1551296
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷233</span></span>
-block_count: 47
-sha256: bfd81a56ee6c92987cda26545a336d923f7beffe41c58aafe502bc1fe886f14f
-extractor_version: 2
+block_count: 43
+sha256: e5b20727f61be4d07fb0dca139e5e234b8f8b72a9cbaf8d31160c0f5dcd4d5aa
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

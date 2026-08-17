@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷343
 revision_id: 1456006
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7343&oldid=1456006
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷343</span></span>
-block_count: 70
-sha256: aaea97ea022d991f5269f8949fb578c2c6299a30e196dd28983b1700142361d6
-extractor_version: 2
+block_count: 66
+sha256: ee328c8439fba7058c7507939e72746f73419564126fdb15e7c2646bc84e8172
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

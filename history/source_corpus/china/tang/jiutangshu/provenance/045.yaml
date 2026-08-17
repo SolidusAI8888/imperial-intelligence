@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷45
 revision_id: 2376572
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B745&oldid=2376572
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷45</span></span>
-block_count: 97
-sha256: 47e2497a70d0a20a729f64af99072f40787599bc1b3d66e92beadab5aac679f4
-extractor_version: 2
+block_count: 93
+sha256: 45a22308b19591be116a85fc21c22f265059a5b2c556a7d0f95596bf55c71e33
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

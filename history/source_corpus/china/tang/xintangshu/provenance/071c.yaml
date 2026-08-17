@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷071下
 revision_id: 2405769
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7071%E4%B8%8B&oldid=2405769
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷071下</span></span>
-block_count: 1422
-sha256: 7c898cb7717a63796fd14c56f45a4ad607109c1a8e49a849d04f9181fb185c9f
-extractor_version: 2
+block_count: 1418
+sha256: e965b5c38f3602fe16e2b2bec767befad35c6d61ff04b89e8f17c0c755700e8a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷9
 revision_id: 2307860
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B79&oldid=2307860
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷9</span></span>
-block_count: 159
-sha256: ec1cd7d612da7ec986b418fb5bdaeaf56315bb722a25e9240a65d01609fcdf58
-extractor_version: 2
+block_count: 155
+sha256: 7249fca055e0f42880deea9be1ff63b0d4f7dbee8880820fa36859c29a319171
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

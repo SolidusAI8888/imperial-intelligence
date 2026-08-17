@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷008
 revision_id: 7908326
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7008&oldid=7908326
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷008</span></span>
-block_count: 155
-sha256: bff4d92f176cf618279e2a222353162bad7737d651172f9b3416a779fed08f17
-extractor_version: 2
+block_count: 151
+sha256: 5d1f0fc1d623f23a0c1a7e42412f5acccf09843306b814805d54c373e57ac6dd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

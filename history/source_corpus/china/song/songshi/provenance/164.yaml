@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷164
 revision_id: 2027709
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7164&oldid=2027709
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷164</span></span>
-block_count: 79
-sha256: db7673abfa62e92f36315d107f72a96d53057efacc13925fc7e70639e6d79dd9
-extractor_version: 2
+block_count: 75
+sha256: 125f98e382185b6a8f0799e2b6101d2e9605caeed5599452f558c4a9b3cd90e3
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

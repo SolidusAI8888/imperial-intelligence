@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷127
 revision_id: 2631721
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7127&oldid=2631721
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷127</span></span>
-block_count: 53
-sha256: 1c16786aa74c98e5c06d3793dd70015dcf9f785920d67a70d3e56f1f20cf012d
-extractor_version: 2
+block_count: 49
+sha256: 0f74bfaea2ccff5c84a824e04d84418cbef0472487a089bc949ebae79dfc34db
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷095
 revision_id: 2605468
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7095&oldid=2605468
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷095</span></span>
-block_count: 50
-sha256: 53f4998b0adc72590382b90f146fff4d3595f1dc058a1c66a595cb4bd5bbd364
-extractor_version: 2
+block_count: 46
+sha256: eadfc11d6530c944c0286fcbbe81f6c0e8fda1f4263b3d3681883ef27b670bd8
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷6
 revision_id: 2572969
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B76&oldid=2572969
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷6</span></span>
-block_count: 231
-sha256: 18a5032a4de8151daeeda60e34f6f91cdb5c47eb9a3f801865bdcc0a34405dcb
-extractor_version: 2
+block_count: 227
+sha256: 09cd0c59a753207c669f2245b96de638ee1ed65e928b9a718f98e802f07d2987
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

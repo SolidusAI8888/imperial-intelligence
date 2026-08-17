@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷050
 revision_id: 845853
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7050&oldid=845853
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷050</span></span>
-block_count: 149
-sha256: 8b3a45e9f222177505d8af56e2ed0d3813379cb90e7005e4167eb8d2d499b5ee
-extractor_version: 2
+block_count: 145
+sha256: 4fa06128bc8e31a224e90f733dac7650d4fd7bcb5805c0681cdfbcd931afae58
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

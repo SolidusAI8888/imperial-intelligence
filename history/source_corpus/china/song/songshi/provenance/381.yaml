@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷381
 revision_id: 2005104
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7381&oldid=2005104
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷381</span></span>
-block_count: 90
-sha256: c294080b2e72cc6b11dd6974c8d84a85597c3d0dfc6c1d57bf7caa731ee8d2fa
-extractor_version: 2
+block_count: 86
+sha256: e1249f10bfd30e2a0125bad120c5bbe0c77fff435b1bf678f10fcbe5ff301845
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

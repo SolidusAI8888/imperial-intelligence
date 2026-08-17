@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷48
 revision_id: 1549815
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B748&oldid=1549815
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷48</span></span>
-block_count: 95
-sha256: 3a0819e2742f5bec48f4232fd8873f5c73380d9bae2974d8c424c6b41864f8f1
-extractor_version: 2
+block_count: 91
+sha256: d7988e1c5189ea806cdc979e4e5afadc2bbc89652a9fe9a8804fc6afc7a135e8
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷423
 revision_id: 1776097
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7423&oldid=1776097
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷423</span></span>
-block_count: 62
-sha256: d3133cb3db15dd6342ec54196518dd0252d335f3c14f7a199552be2482d6ed1d
-extractor_version: 2
+block_count: 58
+sha256: c89e066f32baed94c9f2898345dea9dd27756b37b309feeded4dfd124eddadee
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

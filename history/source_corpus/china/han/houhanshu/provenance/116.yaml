@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷116
 revision_id: 1753439
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7116&oldid=1753439
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷116</span></span>
-block_count: 40
-sha256: 5cb53d13920558aa21d85f68b74af1663073390d9176342f8623d5175d23ed56
-extractor_version: 2
+block_count: 36
+sha256: 7d1d254fe1062ed3d0ff0c6c5600e355d1706cb5238a1f197c43bfe0451242ac
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

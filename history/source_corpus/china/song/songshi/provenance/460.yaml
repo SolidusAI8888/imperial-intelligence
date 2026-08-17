@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷460
 revision_id: 1492169
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7460&oldid=1492169
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷460</span></span>
-block_count: 61
-sha256: e66ded739393c110717ed45f867675e8db3ff2036f59b42fdb896e8e15eceeaa
-extractor_version: 2
+block_count: 57
+sha256: 2c2d3e1d308c81d35ef81f6fa2861ff26b8de5623bcd7be4fe0e866897bf979f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

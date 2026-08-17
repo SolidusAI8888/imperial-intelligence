@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷54
 revision_id: 2019961
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B754&oldid=2019961
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷54</span></span>
-block_count: 31
-sha256: 53ecc4522a2e55d5140791275c1e046827e719abda39eb61f920655c41ef813a
-extractor_version: 2
+block_count: 27
+sha256: c555d5ab505b9174c14e4bbac7217eceb4129eedaa06bd4169f460b589ed2b42
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

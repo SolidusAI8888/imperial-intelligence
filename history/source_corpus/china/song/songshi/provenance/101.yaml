@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷101
 revision_id: 7904466
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7101&oldid=7904466
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷101</span></span>
-block_count: 40
-sha256: b136c3a9bd4a4cd9db42b3da052becbdb9054b6e45c014f984e85fa05eb6f1ba
-extractor_version: 2
+block_count: 36
+sha256: 293e022877003d0794bd77f44cdf577d10e04aec67db3f1dd9d903da31d7cfcf
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷455
 revision_id: 2009340
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7455&oldid=2009340
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷455</span></span>
-block_count: 92
-sha256: bc2a07d6ca90608c64c1f26398fb45b88e18b117b36958a87d916b2c21613714
-extractor_version: 2
+block_count: 88
+sha256: dfde66ed61ab3c65a9a475210912d35ab7fae893c238b80fc6c17f18f443e4e6
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷087
 revision_id: 5978122
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7087&oldid=5978122
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷087</span></span>
-block_count: 84
-sha256: 8982dabeadc4875321bbc38ec0fa012dad8a3c9a2926cf8df54d3812fb874a85
-extractor_version: 2
+block_count: 80
+sha256: 4db31a2ab024fc32453a96c81cb8c517f9c11f388821431e13be2f81fb2af505
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

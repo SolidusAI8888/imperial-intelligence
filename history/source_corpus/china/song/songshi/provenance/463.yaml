@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷463
 revision_id: 2010754
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7463&oldid=2010754
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷463</span></span>
-block_count: 79
-sha256: c8e6c135db57c585d93767b4a3bd947e4c0faaac1a5ab3c46eb967766c4e1659
-extractor_version: 2
+block_count: 75
+sha256: c4b462dd3fbdd89e825a147fa3e7a429633ef09485f2d3b81844d3da7d44ec91
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

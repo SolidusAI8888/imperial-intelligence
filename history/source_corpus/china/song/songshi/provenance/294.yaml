@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷294
 revision_id: 1309136
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7294&oldid=1309136
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷294</span></span>
-block_count: 85
-sha256: 4113a9336b05c080905b2059b6346707d296bf4a2803ac099d677ea12ff11e74
-extractor_version: 2
+block_count: 81
+sha256: 36cb6474ac73d70cc34951ffa6a79f9eb3a3f8feeee9d77d0282db38d62f1f18
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

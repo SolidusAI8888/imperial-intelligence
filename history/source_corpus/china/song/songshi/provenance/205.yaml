@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷205
 revision_id: 2568734
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7205&oldid=2568734
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷205</span></span>
-block_count: 324
-sha256: 76487c4efab52067a93beb8d410612a6fd0dad6a3263ba38f34f8d1d9b3991a8
-extractor_version: 2
+block_count: 320
+sha256: 3d06a57f039530e81a4bfea8081cc54b28bf457b5350c08fbdc7bc858f39199b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷185
 revision_id: 2020346
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7185&oldid=2020346
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷185</span></span>
-block_count: 41
-sha256: 999746bba20136730d3f294860edbf2442c7056110a7881b39472c7677e047b3
-extractor_version: 2
+block_count: 35
+sha256: ddd4aab85d3c46c09c6e125435c7f4cdb4fa117ada8a10bff7e4dfe15adbc90e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷031
 revision_id: 2285127
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7031&oldid=2285127
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷031</span></span>
-block_count: 110
-sha256: 51cf2b5009da6592a9f339ffb3529a0e9dc8a33345264afc767a57ef424e4129
-extractor_version: 2
+block_count: 106
+sha256: 9e571ea36608ee6817fb9c75763ab09d346a5b56516f4bab4d00163b6e075f7a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

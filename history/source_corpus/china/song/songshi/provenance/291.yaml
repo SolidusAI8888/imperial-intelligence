@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷291
 revision_id: 1427191
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7291&oldid=1427191
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷291</span></span>
-block_count: 87
-sha256: 20a6483dde2fef1ce0d8dc74f04a7721424a2a4eb47042cfa7e80c6ffce8dc3f
-extractor_version: 2
+block_count: 83
+sha256: d21fa562f3e2a0f53bbc226b603fc36a299fbae5d9e3c9d3919987c9e2af6a3c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

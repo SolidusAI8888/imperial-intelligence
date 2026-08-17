@@ -5,10 +5,11 @@ wikisource_page: 史記/卷107
 revision_id: 2540571
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7107&oldid=2540571
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷107</span></span>
-block_count: 32
-sha256: 52231c461d125340cfe50633a1ae8de4badeee189ef0697cf0249a51399737b6
-extractor_version: 2
+block_count: 28
+sha256: e36308488734932e667d6f331051bfd5bf91a6932a356e564ad108b53c307696
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷437
 revision_id: 1490230
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7437&oldid=1490230
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷437</span></span>
-block_count: 71
-sha256: dc2a5dc42deb1255e73835590382027dbfa7124f0b1b1703346b379f188024d1
-extractor_version: 2
+block_count: 67
+sha256: 0fff1a227e8489529626cb6933c79dd63eb2c8935ebad67b437407d6732d4686
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

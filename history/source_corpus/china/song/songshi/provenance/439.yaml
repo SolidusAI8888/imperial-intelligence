@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷439
 revision_id: 1490414
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7439&oldid=1490414
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷439</span></span>
-block_count: 83
-sha256: a509faf7a1394f06d7bea8a79f57f93265a739c0b3dba30c48b4c3f97e1bd086
-extractor_version: 2
+block_count: 79
+sha256: 805f68a56f568957cd9b24246770cecb4d74b0104180db227853f62881702400
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

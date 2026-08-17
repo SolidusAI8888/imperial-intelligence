@@ -7,8 +7,9 @@ permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷189</span></span>
 block_count: 711
 sha256: c14d266c98db416b327a5cef363f628f4e92bdf56e8d637f2edcd915c5010985
-extractor_version: 2
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

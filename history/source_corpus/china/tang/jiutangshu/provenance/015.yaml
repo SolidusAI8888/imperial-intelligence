@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷15
 revision_id: 2348866
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B715&oldid=2348866
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷15</span></span>
-block_count: 96
-sha256: 675434cf4ca36f64a4f31d2dc300fb984266706227a18d660e3f2c6ca5c6386f
-extractor_version: 2
+block_count: 92
+sha256: 13d3490faa8b18ebe7e8f76ef2046c91b7e987ad8da2b839c4bd667bfe94bf3c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

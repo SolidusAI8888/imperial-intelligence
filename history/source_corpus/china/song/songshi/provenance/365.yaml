@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷365
 revision_id: 2016348
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7365&oldid=2016348
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷365</span></span>
-block_count: 73
-sha256: ad9cc866c8f7ef6cd88b17d038aca76c72cc61b8ef5975134f264f03edd2249c
-extractor_version: 2
+block_count: 69
+sha256: cee80a97209afbf95a274f069f0a2ed0b50379a7966842800d7f7a9753f1e64c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

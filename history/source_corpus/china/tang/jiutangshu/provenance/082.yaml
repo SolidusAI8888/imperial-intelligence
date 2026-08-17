@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷82
 revision_id: 491120
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B782&oldid=491120
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷82</span></span>
-block_count: 20
-sha256: 23e2ebb89bfa5c607303d113438d496fdd7f9b314bcd375e39d8e6bd2a368cfc
-extractor_version: 2
+block_count: 14
+sha256: 2ef4d7b2aa84b39de99598e1d40aed754fadf61c32e49bb1d347ffe552536338
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

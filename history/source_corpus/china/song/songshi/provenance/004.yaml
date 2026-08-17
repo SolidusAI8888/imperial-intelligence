@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷004
 revision_id: 2448003
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7004&oldid=2448003
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷004</span></span>
-block_count: 112
-sha256: 255d42cc0e85382cd9044d161a9e0cd23172e84f87dfdd2df995b2ce38253333
-extractor_version: 2
+block_count: 108
+sha256: 91f8f84940c5eb2cf9226d8cf9136d8bd1b80712c73fcf821dfcfea9e84712d8
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

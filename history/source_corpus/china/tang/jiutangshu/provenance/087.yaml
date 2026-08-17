@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷87
 revision_id: 2406720
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B787&oldid=2406720
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷87</span></span>
-block_count: 38
-sha256: 3b0b63f9a8d0fe67c1d9ffa3bee7abaa926eb336f5d84b3427ced3bfd62cd190
-extractor_version: 2
+block_count: 34
+sha256: c379e27a58cc044a508820b67bafc8f43929dd67fd3d54a8990ff963901f7531
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

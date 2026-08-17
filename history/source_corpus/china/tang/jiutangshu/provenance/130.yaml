@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷130
 revision_id: 2612679
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7130&oldid=2612679
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷130</span></span>
-block_count: 30
-sha256: 8fc0b7ca60c75979b4436550b7cef2628d86a02a641d2615b1c6a32ae08315ee
-extractor_version: 2
+block_count: 26
+sha256: dd22d0fe749ad1f382d46406f177ae8cb94b4d1a33aaf28826c24ce903c89511
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

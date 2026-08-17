@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷286
 revision_id: 1476845
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7286&oldid=1476845
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷286</span></span>
-block_count: 35
-sha256: bc101926df7a55d444d25486baa1685d9b401c3e56807c88bce5810a2d9a84f4
-extractor_version: 2
+block_count: 31
+sha256: e9b269152dd174231e6707793ae4454ca760583c4c37bcd5eafff42d8fab71e4
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

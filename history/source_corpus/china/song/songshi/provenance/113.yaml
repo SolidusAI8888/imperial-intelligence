@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷113
 revision_id: 1476666
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7113&oldid=1476666
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷113</span></span>
-block_count: 58
-sha256: 3d1019ace0bed9efc7afd782c1af6f70c9e836118aefbc103128d419fa9e6abe
-extractor_version: 2
+block_count: 54
+sha256: f9a6133d4dc557ed4ed0869f2c863b79b8498ecfa93cdd2d9357cf5ae0881333
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷24
 revision_id: 7904773
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B724&oldid=7904773
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷24</span></span>
-block_count: 61
-sha256: 09e0c5953783f38437b6e3bab166c56f83ae2a348663fa81d179f0b0bab4fdd8
-extractor_version: 2
+block_count: 57
+sha256: 7907c1410c5db8c37acb8becf4ed358dd3cc5061019a3b09feac2326c7b5e148
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷054
 revision_id: 2017604
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7054&oldid=2017604
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷054</span></span>
-block_count: 53
-sha256: e779ffba490df6cb666be95e0a43be87c319317baec2e26e4c8807bb94d2255d
-extractor_version: 2
+block_count: 47
+sha256: e7ec2906e580d1786a452b8c7a4b934d25a9edf0f6dc542651a32f80d3196403
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

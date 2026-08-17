@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷223
 revision_id: 2523717
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7223&oldid=2523717
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷223</span></span>
-block_count: 1146
-sha256: d39538fe10e335477ab3ca65973025de285467ce8358f76c9d5986e1bf12264b
-extractor_version: 2
+block_count: 1142
+sha256: 0b7f9ee3bee6716a412d5a7c68a59deb60caa9dea0cc28e927acc9d843484d00
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

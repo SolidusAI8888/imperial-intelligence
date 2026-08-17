@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷028
 revision_id: 2605705
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7028&oldid=2605705
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷028</span></span>
-block_count: 202
-sha256: 15c5be3aa3e03244bc793d1069cf79200df827d5e85b60c6fd896477aab20f35
-extractor_version: 2
+block_count: 198
+sha256: 6edf644595de7561feb3d768abb23655a1aa47a443de65515fda19db62b2807b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

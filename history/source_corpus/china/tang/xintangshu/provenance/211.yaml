@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷211
 revision_id: 2493235
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7211&oldid=2493235
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷211</span></span>
-block_count: 62
-sha256: e58a16a0f516379a80a066f411111d5b25ff2a2cb8a90cc9fb5b39da29cd02ff
-extractor_version: 2
+block_count: 56
+sha256: 75bccd5361716c701b22730967562ee11113d480dcac62f5b88af4aac3bd1e7f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

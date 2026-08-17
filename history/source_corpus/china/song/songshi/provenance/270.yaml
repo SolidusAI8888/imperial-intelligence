@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷270
 revision_id: 1476833
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7270&oldid=1476833
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷270</span></span>
-block_count: 87
-sha256: 5f6bb0b106be2e05f18673b64fb848152f1f25afd3d664ce20557343f0e4a2cc
-extractor_version: 2
+block_count: 83
+sha256: 1dd744355ae9b3e7106b3433b6ba46391a4a7189b431c01c7975a6b52d57ac90
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷075上
 revision_id: 2345738
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7075%E4%B8%8A&oldid=2345738
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷075上</span></span>
-block_count: 1463
-sha256: 64fd5ca54d7777932d62c3c853b5a4a6f03e94066cb1d62bad28c308be6d343d
-extractor_version: 2
+block_count: 1459
+sha256: 62a1d3bf842de8c25531e0027ff07003c8dbb6392f27e6b80a86b69eb83b9c66
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

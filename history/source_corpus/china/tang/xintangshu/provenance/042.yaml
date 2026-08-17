@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷042
 revision_id: 2478606
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7042&oldid=2478606
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷042</span></span>
-block_count: 51
-sha256: 18aa5d69e97accfbcedacf9294af202b88d69afbc34250abe36fcc180f734fe3
-extractor_version: 2
+block_count: 45
+sha256: 86a5f0393b40366089ca3182a9a25c5397d1638ab8c345420478a43b07ac2010
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

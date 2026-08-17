@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷030
 revision_id: 7908197
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7030&oldid=7908197
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷030</span></span>
-block_count: 228
-sha256: b632c41af172f436b84ef146af8690e2c461fcf9ae6377b29770a582a03bf568
-extractor_version: 2
+block_count: 224
+sha256: 54094107c4c4126bd072e13f3513ebe0226c6b6af81bdce790f3681256fd6ddf
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

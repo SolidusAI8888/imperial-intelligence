@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷5
 revision_id: 2457367
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B75&oldid=2457367
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷5</span></span>
-block_count: 320
-sha256: 66f1cfcb532088862d9dc9d40ba00fa04137db5e482d5c9b1604c97c24e4b46e
-extractor_version: 2
+block_count: 316
+sha256: 909ac04194abcba91d0e87bd842291e83b51236fd12d90393365dd12c04d79af
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

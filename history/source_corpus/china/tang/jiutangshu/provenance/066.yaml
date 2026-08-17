@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷66
 revision_id: 2034579
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B766&oldid=2034579
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷66</span></span>
-block_count: 42
-sha256: 1a49f2d8ae994f96e1c2263c3c40df064af6f45796dbff52a0b41b566f96e8f7
-extractor_version: 2
+block_count: 38
+sha256: 63c7f3d4ecb560e2c6a76ca80157b1a58777d5b8a14b7a0075799d0f0a6550fd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

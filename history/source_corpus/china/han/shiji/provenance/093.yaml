@@ -5,10 +5,11 @@ wikisource_page: 史記/卷093
 revision_id: 368019
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7093&oldid=368019
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷093</span></span>
-block_count: 25
-sha256: 6e77f7b2d41329d631c8488f974278e25c2182f326cf52c324a338c58898a6ca
-extractor_version: 2
+block_count: 21
+sha256: 4a0b4519730fa30a7311d2dc85e2a1ca631fd097f710a227673c0e31d6b83fbe
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

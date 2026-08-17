@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷174
 revision_id: 1476731
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7174&oldid=1476731
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷174</span></span>
-block_count: 83
-sha256: 483ed8a80602ce5e9adb8f2f4a28ce557f4e5b47780f8d3ad5641e8563a3a16c
-extractor_version: 2
+block_count: 79
+sha256: bee3501e6b00e4155459fc4f78f2e746d0eac5e8aa56b0e2c6aca44ae48d1c6d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

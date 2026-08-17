@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷49
 revision_id: 2557914
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B749&oldid=2557914
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷49</span></span>
-block_count: 30
-sha256: 6f3ac1128f08196a7a1ad5efa6b6f5291e523a9a3ce76f54c21cc0fe37c808ea
-extractor_version: 2
+block_count: 26
+sha256: 1253e31e1907dfc64369f584f5bfb29b72ce3edf742c97c7c2b877ff2783c438
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

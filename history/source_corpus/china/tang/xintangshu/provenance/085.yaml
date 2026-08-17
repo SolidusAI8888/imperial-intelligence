@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷085
 revision_id: 7905176
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7085&oldid=7905176
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷085</span></span>
-block_count: 47
-sha256: bec0d7a34211cfeede7470f1ad08901a88e70193bb414a72be3871999f55f378
-extractor_version: 2
+block_count: 41
+sha256: 15ff7df20c5708d57c737e30a364db38df96163188c92a94988c7065b89fb63d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

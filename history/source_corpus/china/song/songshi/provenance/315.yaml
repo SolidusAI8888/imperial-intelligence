@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷315
 revision_id: 2453637
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7315&oldid=2453637
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷315</span></span>
-block_count: 54
-sha256: c72ee352a6c2f2f490266d1d4c7a0e8e9ae00a989f7ba28224798f19bd14b87a
-extractor_version: 2
+block_count: 50
+sha256: f6c6fec4ae6b4a914bea72d5a3f207d3447f445bf24fa2a575a11a6ee88f639b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

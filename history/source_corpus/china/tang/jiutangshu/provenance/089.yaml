@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷89
 revision_id: 2589393
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B789&oldid=2589393
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷89</span></span>
-block_count: 50
-sha256: d952215a5a8ab8df1f0613bf17edb6b71fc8772efdae71789a8be23a522b79fe
-extractor_version: 2
+block_count: 46
+sha256: ecbef73b3b837ab99992225c1e94f1446548f896d7a7fed1e91005310273ce97
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

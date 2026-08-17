@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷420
 revision_id: 1488388
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7420&oldid=1488388
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷420</span></span>
-block_count: 51
-sha256: ed5d6310ea070af42e3ac14ef0bcdfad6ce6dcb99a7c4cf38f310569ed51595a
-extractor_version: 2
+block_count: 47
+sha256: f0ad755eba91646bf074894b05b3858db4b84e665f51a9f3aeba53395030dab7
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

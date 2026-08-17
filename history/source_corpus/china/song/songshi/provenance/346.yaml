@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷346
 revision_id: 2004882
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7346&oldid=2004882
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷346</span></span>
-block_count: 84
-sha256: 5b96353231138b05233f8b5d16eb34e9995aeee9d5988997eb89d4acbdc2603d
-extractor_version: 2
+block_count: 80
+sha256: 23bbd96ca343a1118e7955a5dc87fcd1fef3bff259de68e045762602e6c1a41c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

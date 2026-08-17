@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷361
 revision_id: 1476863
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7361&oldid=1476863
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷361</span></span>
-block_count: 55
-sha256: dd6c06b90418e41a0b2f1096eb1b932691711890d1d07b733cda152e9a262790
-extractor_version: 2
+block_count: 51
+sha256: 21937c3e7fee5fba2a15a246d396b9eca8bb7b8333ec94edded497ba3da9445a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

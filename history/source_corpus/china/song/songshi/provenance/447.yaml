@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷447
 revision_id: 2004542
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7447&oldid=2004542
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷447</span></span>
-block_count: 66
-sha256: 2363de06765c77f55beec9a3b78e5ba19dba65e67bed91121e045785778dce87
-extractor_version: 2
+block_count: 62
+sha256: ef1a66fcde145ff0fd52232c431384199ce335ffef97af3a1745c04d0028a2eb
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

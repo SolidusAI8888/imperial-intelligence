@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷117
 revision_id: 3825695
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7117&oldid=3825695
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷117</span></span>
-block_count: 41
-sha256: 035851d116c868a92741cdb636a907c4e20ebd380c8a6963c20b3655c6c58afd
-extractor_version: 2
+block_count: 35
+sha256: 30dba04a528f9876ae5aeb42ddbc15d6e248681bb2d6137acdeb765cd5b4ba03
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷058
 revision_id: 2392813
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7058&oldid=2392813
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷058</span></span>
-block_count: 42
-sha256: 3247c7505c58a4011a354826b8908050ba12027c1cacc801f93325fe987c0db9
-extractor_version: 2
+block_count: 38
+sha256: 862ff2a3c436816882e099a3329171bd2c435d33f591a8c72e58f317a8f37e87
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

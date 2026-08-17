@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷071
 revision_id: 1324980
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7071&oldid=1324980
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷071</span></span>
-block_count: 85
-sha256: b854445ba2c6a5ea9d903ad47ad1c87bc7227a0c9a40cfabc196a668e882c7e0
-extractor_version: 2
+block_count: 81
+sha256: 9e40ec505269f1821979845e9fa615e40b6154ae0d46b6337c1f62227cdc8b51
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

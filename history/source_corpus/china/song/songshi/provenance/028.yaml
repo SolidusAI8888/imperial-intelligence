@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷028
 revision_id: 2285124
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7028&oldid=2285124
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷028</span></span>
-block_count: 47
-sha256: f31e5a4e8b1a231deb9b604a89df0417ada92d40e9a6e0d34662569031af534c
-extractor_version: 2
+block_count: 43
+sha256: 80dcd9b0431b14792815943e1050af5cf9b6922a277b06de36f4f772442398be
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

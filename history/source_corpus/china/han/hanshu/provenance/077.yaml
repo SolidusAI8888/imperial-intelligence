@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷077
 revision_id: 2199053
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7077&oldid=2199053
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷077</span></span>
-block_count: 39
-sha256: afb05e1982d18a71563364feedead3e894576fb9b687f48b629cb109001e220b
-extractor_version: 2
+block_count: 35
+sha256: 42f55eda72b0ffd9f240b4854fb3726ba8a35b51b142aa9daadea94d6a18e0b0
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

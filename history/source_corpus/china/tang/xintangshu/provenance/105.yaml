@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷105
 revision_id: 1313076
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7105&oldid=1313076
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷105</span></span>
-block_count: 57
-sha256: 66ba8171fa984e7036129027089fd2463a08bf446cffd44404510172dc1d153d
-extractor_version: 2
+block_count: 51
+sha256: 0671324fdcd53e297f0d1ff9441b56bcbed59fbef6bb948755b9c833486f3557
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

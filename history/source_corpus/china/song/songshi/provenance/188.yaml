@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷188
 revision_id: 2709733
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7188&oldid=2709733
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷188</span></span>
-block_count: 230
-sha256: 3c6841959c0d17e24186665f3d2613403a2e98118a3a0cc87a896c605a64f352
-extractor_version: 2
+block_count: 226
+sha256: 02a2c478f216f6ee7e6f7137ec1d89e510c5c0a44adf36c70546e85bc8785e02
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

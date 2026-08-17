@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷224
 revision_id: 1501798
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7224&oldid=1501798
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷224</span></span>
-block_count: 2709
-sha256: 3bf80180695b5beb9a575e8fbf90cf0feeb0c70794faaf313a925b61ad00737f
-extractor_version: 2
+block_count: 2705
+sha256: f78ff46efb35041fcd94f418ad4d2171507cced967ee7d516113e9906e9b92bb
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

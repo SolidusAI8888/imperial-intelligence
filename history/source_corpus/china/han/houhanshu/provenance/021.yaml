@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷21
 revision_id: 2180455
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B721&oldid=2180455
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷21</span></span>
-block_count: 41
-sha256: c9bed2590d76a53678801d5f048834f0043c81caf1c1c6b2b50a883d7e1444b6
-extractor_version: 2
+block_count: 37
+sha256: 979cd9407d5334f79db9374b649f1babbab43e0f12725ee1959fe74cbcf58c3d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷493
 revision_id: 2292415
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7493&oldid=2292415
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷493</span></span>
-block_count: 41
-sha256: 4a580cd19cde76ae0204c658591f8428c32c3bf6fcd95b1161c6893076139b3d
-extractor_version: 2
+block_count: 35
+sha256: 1c03c4a777513a3afd13a3e108668e35b91047be407cf2deab94db95961d506c
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

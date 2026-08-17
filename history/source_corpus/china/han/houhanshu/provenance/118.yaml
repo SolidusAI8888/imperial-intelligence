@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷118
 revision_id: 2026925
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B7118&oldid=2026925
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷118</span></span>
-block_count: 28
-sha256: 99626529e78e0fd867b2091bb0658a424f57387be9197efa00d7850e2a264eba
-extractor_version: 2
+block_count: 24
+sha256: efd9c5a96ef758c205d31dc6661bf3fa1777056a7935c0815cc32aae93456013
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

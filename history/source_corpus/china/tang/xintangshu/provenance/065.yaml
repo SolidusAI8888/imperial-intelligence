@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷065
 revision_id: 2391821
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7065&oldid=2391821
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷065</span></span>
-block_count: 522
-sha256: f506757daaf15e6461c3b494031de789b5caf1bbda3cec157d62715e013aae44
-extractor_version: 2
+block_count: 518
+sha256: cfabeb4ee4b81f832bfb736899814336cf2de3f28ae571c95004c7c4eeaa5783
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

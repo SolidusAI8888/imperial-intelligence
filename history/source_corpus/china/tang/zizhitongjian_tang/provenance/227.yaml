@@ -5,10 +5,11 @@ wikisource_page: 資治通鑑/卷227
 revision_id: 2377157
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7227&oldid=2377157
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷227</span></span>
-block_count: 87
-sha256: f11730d1fa490b7e9bbdfda767ef03b8928e167a8952b576cb68a53e8082b5ff
-extractor_version: 2
+block_count: 83
+sha256: b2d34780d38378b7856e9bbaf97946a50a8cf3e66d6a524968c7943c190f844f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

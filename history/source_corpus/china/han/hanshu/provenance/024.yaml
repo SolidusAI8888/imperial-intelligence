@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷024
 revision_id: 7498330
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7024&oldid=7498330
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷024</span></span>
-block_count: 93
-sha256: c1cc9610a4db434982df17cca5c08c39afb66bb13f7d3bdb764c72590a10cb56
-extractor_version: 2
+block_count: 88
+sha256: c1cdaae381771bbb0cb9380641a93df478f6756d37484c190cadc25385d7bc87
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

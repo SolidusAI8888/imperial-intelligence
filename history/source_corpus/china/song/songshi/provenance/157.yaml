@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷157
 revision_id: 1965176
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7157&oldid=1965176
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷157</span></span>
-block_count: 90
-sha256: acbf6743d9841a547c5b14ab2683a1c628a449ae9ecc26df92ff933441a6905d
-extractor_version: 2
+block_count: 86
+sha256: 2bc82cc92647f618c89d9bf87e7e86a5a63b5979a79bd1e281af728d076c8c53
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

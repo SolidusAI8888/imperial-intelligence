@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷138
 revision_id: 1513220
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7138&oldid=1513220
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷138</span></span>
-block_count: 142
-sha256: fa9cff1edd0ccf77f3240df8df96ab5b5cc6c005356f4424fffee53e9d1985b9
-extractor_version: 2
+block_count: 138
+sha256: 8ca85212a2d7a92c66d305c4971c4b3c67a3992efea585ed556865b67d7e37a4
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

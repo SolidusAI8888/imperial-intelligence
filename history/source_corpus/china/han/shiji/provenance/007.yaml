@@ -5,10 +5,11 @@ wikisource_page: 史記/卷007
 revision_id: 5978360
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7007&oldid=5978360
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷007</span></span>
-block_count: 50
-sha256: a262bf9d3a4b1d5c707931058072263c2694023095565dde5d949bb5d8bd772a
-extractor_version: 2
+block_count: 46
+sha256: fbf6db2b9134d77ca2bad3e684b98177d0f0f1b925c99ae6768a15862e5a4181
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

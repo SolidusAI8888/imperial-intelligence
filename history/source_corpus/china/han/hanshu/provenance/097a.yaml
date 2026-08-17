@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷097上
 revision_id: 2610736
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7097%E4%B8%8A&oldid=2610736
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷097上</span></span>
-block_count: 68
-sha256: faf525772b9466c38107923a62dbf4ecc4468d48ddb326c210c9724ffeba1b07
-extractor_version: 2
+block_count: 64
+sha256: da5d4d26653b37032a828126e8ad0aaea5c46983818bb2f3e8bd6163446a691b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

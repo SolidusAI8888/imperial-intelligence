@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷379
 revision_id: 1463081
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7379&oldid=1463081
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷379</span></span>
-block_count: 81
-sha256: 4ad72d6b23822bfe01ec50ae6100a16fa4d565535116581006cc477e7c117a08
-extractor_version: 2
+block_count: 77
+sha256: cb7db5bf37a66d3842708b97af435ef4f325b103a339ff3ecb58e98fd4ca37b0
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

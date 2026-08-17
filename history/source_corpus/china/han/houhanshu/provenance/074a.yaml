@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷74上
 revision_id: 2410960
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B774%E4%B8%8A&oldid=2410960
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷74上</span></span>
-block_count: 252
-sha256: 8340da1d9c44ea6489994e65a6cb1c74a18f5c250bb3fde9ce3f4a321e6a0fb0
-extractor_version: 2
+block_count: 248
+sha256: d53490645fd31ac8fe3384f4cca7d701e29254baf18050a10eb274bcedce87fd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

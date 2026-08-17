@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷428
 revision_id: 1769896
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7428&oldid=1769896
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷428</span></span>
-block_count: 67
-sha256: 45cff31f321b598577e7a3cc3057ff4638835ed6147d443c468e7754242dcc22
-extractor_version: 2
+block_count: 63
+sha256: 8555902d6ce6f42bb5bfe4e65c2d5903a43c6714f1bcafd00a6c74491d732e97
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

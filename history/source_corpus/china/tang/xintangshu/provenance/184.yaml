@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷184
 revision_id: 1490664
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7184&oldid=1490664
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷184</span></span>
-block_count: 38
-sha256: e0c503470c3caeee06d56f3a64261eed77305f6ebdb05478cf498882e8110e1c
-extractor_version: 2
+block_count: 32
+sha256: b763ea8dbdbd3688c2c77f59f410e9beb72c8533a78788e3d3b961d302f1b54d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

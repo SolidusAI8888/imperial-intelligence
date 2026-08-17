@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷086
 revision_id: 1490066
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7086&oldid=1490066
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷086</span></span>
-block_count: 37
-sha256: d4521d7200ca879574fd03707ec07da416c306a015c411221d6f975d1555cbdd
-extractor_version: 2
+block_count: 31
+sha256: 5532aaff760f811872cf4417f2e41223048be984380b00e178480cd34fce327f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

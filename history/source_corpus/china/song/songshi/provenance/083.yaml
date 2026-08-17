@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷083
 revision_id: 845888
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7083&oldid=845888
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷083</span></span>
-block_count: 110
-sha256: a8f7b99d326d05421abed094c4bce579ce73dafb90a79e1b12ddc34abb0c1b01
-extractor_version: 2
+block_count: 106
+sha256: a64d8cf0a8b0b749e4b2a02b2d34ffbfe6750fbc15e78b0d3702fecd38257169
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

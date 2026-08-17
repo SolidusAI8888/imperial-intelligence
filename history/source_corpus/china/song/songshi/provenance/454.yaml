@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷454
 revision_id: 1491615
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7454&oldid=1491615
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷454</span></span>
-block_count: 61
-sha256: c797d3d74b54001401ee412c633a6d553280b707a6579fc586226af073b9d3e1
-extractor_version: 2
+block_count: 57
+sha256: 85e83bac2d321fc0063f6809d3372cd2e6e25fb46e7fc4faf8424f243cf816b9
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

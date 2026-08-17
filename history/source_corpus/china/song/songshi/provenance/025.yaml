@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷025
 revision_id: 2285120
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7025&oldid=2285120
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷025</span></span>
-block_count: 32
-sha256: fe85f12435fbc7b5c2a7a18eb5ff3900d31aa500ad86a67b77b0451779add3e9
-extractor_version: 2
+block_count: 28
+sha256: 48c2bdc58baf1e759a7b58e9a6004bffca601ad0b4e9f43f107980241395ab51
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

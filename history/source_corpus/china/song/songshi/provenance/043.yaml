@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷043
 revision_id: 2604056
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7043&oldid=2604056
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷043</span></span>
-block_count: 121
-sha256: cd205d28f404dc2c2cb737ad3b6e424fc43e58304a812756f54b094381c2a5c9
-extractor_version: 2
+block_count: 117
+sha256: 4d9f26505d117f9f9cefa61948ecd142288577ca0dfa81784a92a20bbe14270e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

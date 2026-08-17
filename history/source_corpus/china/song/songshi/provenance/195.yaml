@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷195
 revision_id: 2632937
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7195&oldid=2632937
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷195</span></span>
-block_count: 79
-sha256: 27e17710cb6cfa484bf904e40a6b9e9c0312049b2800c9b409438efba13d18e1
-extractor_version: 2
+block_count: 75
+sha256: b99b684bb618f6a4adc778955aac2af1cc9c20bdcdb1993edf23e0f7df7d7831
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

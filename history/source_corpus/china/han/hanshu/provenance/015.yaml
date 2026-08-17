@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷015
 revision_id: 2605965
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7015&oldid=2605965
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷015</span></span>
-block_count: 1001
-sha256: 328cba855a0363557a1d0fa68070122e4f2e8b933c8a52ff82d2fd11ae40f22e
-extractor_version: 2
+block_count: 997
+sha256: 070b0cf34f3d57f83ef44c22201ec433109e32d41a2607f6a37759fe7f1dbaa6
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

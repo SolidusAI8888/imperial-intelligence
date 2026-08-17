@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷352
 revision_id: 2004866
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7352&oldid=2004866
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷352</span></span>
-block_count: 58
-sha256: 6689b27b1e23d982f1f4b73b9880564fa27e46079a68255d28734117580146e6
-extractor_version: 2
+block_count: 54
+sha256: c26d91d0c9d778a98d7ed467c08e297cd8c276e88f6d01e744c57c1909015e72
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

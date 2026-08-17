@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷442
 revision_id: 1490616
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7442&oldid=1490616
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷442</span></span>
-block_count: 75
-sha256: 93da883d5e3667933c40c1bed2b81accb05cfc3aca555dfda6152d7ec40308cb
-extractor_version: 2
+block_count: 71
+sha256: 26ac2e51715caa676a10e3ee0239776676e80ddc8e815af9842af9706f76306e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

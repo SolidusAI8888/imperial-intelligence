@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷034
 revision_id: 2285148
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7034&oldid=2285148
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷034</span></span>
-block_count: 150
-sha256: 1771963a7df47b05de35339e8acbdde11fd6f10d380fb11082668ddb77035fc2
-extractor_version: 2
+block_count: 146
+sha256: 762772241537f30403e6f865769d9a90a718446f088105822bf315c2a710016b
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

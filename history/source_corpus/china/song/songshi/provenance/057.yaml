@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷057
 revision_id: 845860
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7057&oldid=845860
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷057</span></span>
-block_count: 37
-sha256: 7fce8547d9836efe4152696edc2e7b82e14f408dba02a05271f4d55b66c98c5e
-extractor_version: 2
+block_count: 33
+sha256: 44d256894aa50ac97d7837402ce78593b030cfe2768a5c62774f7070fb3b8ae4
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

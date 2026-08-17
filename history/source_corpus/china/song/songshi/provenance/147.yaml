@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷147
 revision_id: 1476703
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7147&oldid=1476703
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷147</span></span>
-block_count: 80
-sha256: c481be0b78fe5f8187e4f41760cea71f3cd490ade00850c8d88570583867d632
-extractor_version: 2
+block_count: 76
+sha256: 4a78eb5d049fcb579f013b2353ed02a4f5ebf1739de987218c51b37a4dedd34a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

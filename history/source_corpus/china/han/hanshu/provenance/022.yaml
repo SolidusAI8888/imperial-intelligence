@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷022
 revision_id: 7908617
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7022&oldid=7908617
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷022</span></span>
-block_count: 35
-sha256: 57ce316f792efc446c0043d145adb0fa5e4f291c8719c9fba294d7fd1d421cf6
-extractor_version: 2
+block_count: 29
+sha256: 625bcb16ff5546671c451b6e1509b00deab3e88671f52eb39ad37ebaf67d00ad
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

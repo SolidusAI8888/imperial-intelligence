@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷145
 revision_id: 1476701
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7145&oldid=1476701
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷145</span></span>
-block_count: 67
-sha256: d385ba02a823a04971f6d0bc215ef29478bbb6539d8fca1ec29b674154ed66a3
-extractor_version: 2
+block_count: 63
+sha256: c8538f23d2744d5e99c6e02ade533017bb0888189bf579c0bf4e3b32185486e1
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

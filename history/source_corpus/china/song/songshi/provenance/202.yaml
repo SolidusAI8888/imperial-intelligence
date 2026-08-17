@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷202
 revision_id: 2632938
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7202&oldid=2632938
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷202</span></span>
-block_count: 955
-sha256: 628303aef2cb1fab1f84d28904a1f99581031784cdddbfcb9ce4191c17b78ecf
-extractor_version: 2
+block_count: 951
+sha256: 6c9b3f4807b2591a767df6f91ce09ce55f1fcde019e7da5c889b41aa1ed9351d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

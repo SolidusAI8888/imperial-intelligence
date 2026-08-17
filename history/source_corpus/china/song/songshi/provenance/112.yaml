@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷112
 revision_id: 1476665
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7112&oldid=1476665
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷112</span></span>
-block_count: 29
-sha256: 91a880eacb87d4f7e47e0cb9d4b482f08b28c3d5429713c238d16e3c5e1a5bff
-extractor_version: 2
+block_count: 25
+sha256: 5253778876dd92cd34313ac9acba1df88fcffab36839cad3b1d110f0eaa46280
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

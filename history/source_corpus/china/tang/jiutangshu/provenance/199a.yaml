@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷199上
 revision_id: 2638645
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7199%E4%B8%8A&oldid=2638645
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷199上</span></span>
-block_count: 82
-sha256: 52126972ce93e687360ce320618c870bab26f4e78b7c37edb986d3e7c52c4120
-extractor_version: 2
+block_count: 78
+sha256: 1d59ae686578cb4c89a641c953f8feb6bf3223fe36f69b0afbac542e3a618f69
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

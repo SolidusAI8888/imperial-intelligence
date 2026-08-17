@@ -5,10 +5,11 @@ wikisource_page: 舊唐書/卷67
 revision_id: 2296327
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B767&oldid=2296327
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷67</span></span>
-block_count: 37
-sha256: e5eed06d23ded3550018360ca9db5029ac2680233512caa7adf906f6d4f8fc5b
-extractor_version: 2
+block_count: 33
+sha256: 25b6f150e854eec8b413b3a6bb7b6c4cd0310d017b90be9f2d4f06252c4d4bcd
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

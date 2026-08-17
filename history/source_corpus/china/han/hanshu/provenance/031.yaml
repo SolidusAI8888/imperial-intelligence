@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷031
 revision_id: 2605936
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7031&oldid=2605936
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷031</span></span>
-block_count: 57
-sha256: 46175fdd690a6e104a23a54580a31bb7c8db010db988f5d68b24895e4e5a07ee
-extractor_version: 2
+block_count: 53
+sha256: 6bd6a298d3e280288928524f9ba9d18394119328d2f5c0919ecafe107268a0fc
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

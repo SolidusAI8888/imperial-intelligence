@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷081
 revision_id: 2263184
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7081&oldid=2263184
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷081</span></span>
-block_count: 49
-sha256: ffbc2ce13166254c27dbea40b744fe0bfcf15a8a1997736851a4bd97803a4c68
-extractor_version: 2
+block_count: 43
+sha256: 0d6d1ee08d805563f94f92bc5034739b0a50e6f30ffc27a2b9e8b45d96186f07
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

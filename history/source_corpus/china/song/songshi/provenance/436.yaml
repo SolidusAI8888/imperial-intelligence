@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷436
 revision_id: 1490216
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7436&oldid=1490216
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷436</span></span>
-block_count: 59
-sha256: 7f1c68fdbe91b2f7b85f94ff2fb93ac830e553eda749a5255c1fb352f7354407
-extractor_version: 2
+block_count: 55
+sha256: a3f9d61e49c0bc507d402e846a437effc6eb0cf6d73eaad51923bd927c1193ba
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷039
 revision_id: 1754484
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7039&oldid=1754484
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷039</span></span>
-block_count: 33
-sha256: a127659f14b55fc8b8bf637ba399d00c79d1d71b6096022924fab3786dda9e03
-extractor_version: 2
+block_count: 29
+sha256: f1ee47ca374e865c39821ee210059b36fe9603771891614dce6c8ae4e464070e
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

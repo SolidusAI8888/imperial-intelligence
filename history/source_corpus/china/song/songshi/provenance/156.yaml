@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷156
 revision_id: 1965103
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7156&oldid=1965103
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷156</span></span>
-block_count: 72
-sha256: 50579ec3ce1b50c71e24e6b7465ac7aa1a3090b72ffc099263e7c702b64e277e
-extractor_version: 2
+block_count: 68
+sha256: 24cbf317c22fc6b0cd8e046ff99b153a7cc2b422858cc1a18edd7f9ec26310b2
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

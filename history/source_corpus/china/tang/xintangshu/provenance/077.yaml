@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷077
 revision_id: 2199455
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7077&oldid=2199455
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷077</span></span>
-block_count: 62
-sha256: f816cc9d2d12e046b9e067da33ceacccc7be641a890fbb912a9d0b9ee6a489bf
-extractor_version: 2
+block_count: 56
+sha256: 0de5cb451b130a9439f369365ab773118f9a7d848da299392fb3127751c73e48
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

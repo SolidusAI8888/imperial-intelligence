@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷222
 revision_id: 1501754
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7222&oldid=1501754
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷222</span></span>
-block_count: 2186
-sha256: 530e3403527dfa82f86ca04d1742741250a213ae5396414f68912af436bc4f87
-extractor_version: 2
+block_count: 2182
+sha256: 525792c4b4517830eb25df2e6d355747b3ca1b1592406144e8f323a49f6cfd0a
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

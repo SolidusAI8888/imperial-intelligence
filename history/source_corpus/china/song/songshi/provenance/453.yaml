@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷453
 revision_id: 1491541
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7453&oldid=1491541
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷453</span></span>
-block_count: 93
-sha256: d355b9c097b4681b0945fc850928a1584b1f82c83f2ddf7c4099cd666c24823c
-extractor_version: 2
+block_count: 89
+sha256: 5000084bb9672e9f8aa8a5f1c7d5f9937f45855a81932612bd98f33f8de5ebeb
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

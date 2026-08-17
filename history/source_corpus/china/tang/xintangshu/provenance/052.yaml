@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷052
 revision_id: 2017601
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7052&oldid=2017601
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷052</span></span>
-block_count: 43
-sha256: caa86ac84c2e6649318c49f829fc33d618f7804e0adf3df7314d9bde18d3b417
-extractor_version: 2
+block_count: 37
+sha256: fc57c122edd72739db57188c63de6821e1efb96e1c9936dbc967076f8b61a0f6
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

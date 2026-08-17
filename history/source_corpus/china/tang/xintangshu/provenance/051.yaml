@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷051
 revision_id: 2017600
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7051&oldid=2017600
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷051</span></span>
-block_count: 34
-sha256: 6de5f9b5f50bde1e8d6c54436116d715da4df60a1382b81381f0efd9ea5fe0ec
-extractor_version: 2
+block_count: 28
+sha256: 530c01f4cb54937ad877aeaecbcd75ca7edac2eac80471560461f97a565fdc5f
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

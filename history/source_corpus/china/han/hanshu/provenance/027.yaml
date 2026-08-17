@@ -5,10 +5,11 @@ wikisource_page: 漢書/卷027
 revision_id: 5977220
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7027&oldid=5977220
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷027</span></span>
-block_count: 425
-sha256: c171a83700248957913c2c24c2c4d7d2caf7cb9429ea042ee45cf584d1faf1a0
-extractor_version: 2
+block_count: 421
+sha256: 4266190d3f7f9be51b30d173fc4d2a928dccc3c3916e933abc7a3025bf838c37
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

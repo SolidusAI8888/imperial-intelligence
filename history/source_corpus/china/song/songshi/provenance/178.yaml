@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷178
 revision_id: 2632858
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7178&oldid=2632858
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷178</span></span>
-block_count: 69
-sha256: 7bb6a82bb43dc188e2be3fb01c76155d2906b7b54fc4bda194232e724632dc79
-extractor_version: 2
+block_count: 65
+sha256: dcfd3d6c5143d83123284f54128aa7735c78046251ad79365a16fb29c1325def
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

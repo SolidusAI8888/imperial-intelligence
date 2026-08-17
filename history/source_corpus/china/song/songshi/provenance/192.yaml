@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷192
 revision_id: 2709750
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7192&oldid=2709750
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷192</span></span>
-block_count: 106
-sha256: 4c54e94bb9168c8aeb4aff61b2e837becd565e473a2f34763a5d76a574f09219
-extractor_version: 2
+block_count: 102
+sha256: 208d8fa0bb3cf969b803d76aad1ccd5fc1a6e1901ac17bfb5819f345e3fc681d
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

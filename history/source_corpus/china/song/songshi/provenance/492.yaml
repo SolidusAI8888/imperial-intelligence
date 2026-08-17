@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷492
 revision_id: 2292230
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7492&oldid=2292230
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷492</span></span>
-block_count: 51
-sha256: 336abe0a31f79a2f1a883eb79846291e181332553164c40db25fe2d8fbd188e2
-extractor_version: 2
+block_count: 45
+sha256: ff1991c8b705d6df3cfcf1e574fd05c8a4f76fec68d8c77bfb6cc4312598a7bc
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

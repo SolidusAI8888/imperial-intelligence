@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷248
 revision_id: 2258700
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7248&oldid=2258700
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷248</span></span>
-block_count: 72
-sha256: 1a53ccf1839d34c85d05ea6fae125528afdba804a520dc231d85011c8de6516f
-extractor_version: 2
+block_count: 68
+sha256: 67c4de7d39644de5cba5ec7747350c9f20448a9b2a1ff1983b1a9f92356ce673
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

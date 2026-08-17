@@ -5,10 +5,11 @@ wikisource_page: 新唐書/卷004
 revision_id: 2585369
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7004&oldid=2585369
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷004</span></span>
-block_count: 269
-sha256: e52b0b4237f3286a7218f20b19168bc3a7f2eced59c4171e913a19feb5ff4008
-extractor_version: 2
+block_count: 265
+sha256: be6e98ec83ff7ec865fc93fa371fee106fa90c8742ec02b4287314566bf83fec
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

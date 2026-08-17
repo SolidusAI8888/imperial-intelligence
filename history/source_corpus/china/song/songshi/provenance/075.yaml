@@ -5,10 +5,11 @@ wikisource_page: 宋史/卷075
 revision_id: 873441
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7075&oldid=873441
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷075</span></span>
-block_count: 187
-sha256: e39bfb857b46d0d0b83b91734c6e0a3dd86f453e840b40295bb064d935fed3a5
-extractor_version: 2
+block_count: 183
+sha256: 7473149dc61c5870cf4299d42ea9a95361df1457f41c2932b3b9ef6f7091a9ef
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.

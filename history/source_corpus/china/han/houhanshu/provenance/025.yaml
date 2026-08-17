@@ -5,10 +5,11 @@ wikisource_page: 後漢書/卷25
 revision_id: 2008493
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%BE%8C%E6%BC%A2%E6%9B%B8/%E5%8D%B725&oldid=2008493
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">後漢書/卷25</span></span>
-block_count: 50
-sha256: 3f6f436e0484011a02300df09d600e2515eb12f82a75fff1cb5d24708bddc5e8
-extractor_version: 2
+block_count: 46
+sha256: 76d0ebd2704c03cc8ec861172e90170f1bb340a6e343b989621ee188011c9443
+extractor_version: 3
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource source text; editorial/navigation containers removed;
-  paragraph/list/blockquote and historical table-cell text preserved in document order.
+extraction: Rendered Wikisource source text; Wikisource navigation/editorial chrome
+  removed; paragraph/list/blockquote and historical table-cell text preserved in document
+  order.
