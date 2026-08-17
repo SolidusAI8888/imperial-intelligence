@@ -1,0 +1,91 @@
+problem_id: Q-FATE-AGENCY-001
+mode: bootstrap_recall
+note: >-
+  These are revisable retrieval cues for candidate recall only. They are not a taxonomy,
+  not conclusions, and must not be used to select a historical respondent directly.
+lexical_cues:
+  fate_and_heaven:
+    - 命
+    - 天命
+    - 命運
+    - 命运
+    - 天數
+    - 天数
+  time_and_structure:
+    - 時
+    - 时
+    - 勢
+    - 势
+    - 世變
+    - 世变
+    - 亂
+    - 乱
+    - 治
+    - 興亡
+    - 兴亡
+  agency_and_choice:
+    - 自
+    - 志
+    - 決
+    - 决
+    - 擇
+    - 择
+    - 謀
+    - 谋
+    - 行
+    - 為
+    - 为
+  contingency:
+    - 幸
+    - 不幸
+    - 遇
+    - 偶
+    - 機
+    - 机
+  adaptation:
+    - 因時
+    - 因时
+    - 乘勢
+    - 乘势
+    - 變
+    - 变
+    - 權
+    - 权
+    - 從
+    - 从
+  reflection:
+    - 悔
+    - 恨
+    - 後悔
+    - 后悔
+    - 自省
+    - 鑒
+    - 鉴
+    - 戒
+phrase_boosts:
+  - 人事
+  - 盡人事
+  - 尽人事
+  - 知命
+  - 安命
+  - 應時
+  - 应时
+  - 順時
+  - 顺时
+  - 失時
+  - 失时
+  - 得時
+  - 得时
+  - 時勢
+  - 时势
+negative_or_limit_cues:
+  - 不可
+  - 不能
+  - 不得
+  - 無奈
+  - 无奈
+  - 敗
+  - 败
+  - 亡
+context_window_paragraphs: 2
+candidate_limit_per_source: 80
