@@ -6,6 +6,7 @@ on:
       - feature/source-corpus-v1
     paths:
       - 'history/tools/ingest_wikisource_phase1.py'
+      - 'history/tools/audit_phase1_corpus.py'
       - 'history/source_registry/phase1_sources.yaml'
       - '.github/workflows/ingest-phase1-history.yml'
   workflow_dispatch:
@@ -27,24 +28,53 @@ jobs:
           python-version: '3.12'
       - name: Install ingestion dependencies
         run: python -m pip install requests beautifulsoup4 pyyaml
-      - name: Ingest full phase 1 corpus
+
+      - name: Re-archive phase 1 sources with extractor V2
         id: ingest
+        shell: bash
+        run: |
+          set +e
+          STATUS=0
+          SOURCES=(
+            CN-HAN-0001 CN-HAN-0002 CN-HAN-0003
+            CN-TANG-0001 CN-TANG-0002 CN-TANG-0003 CN-TANG-0004
+            CN-SONG-0001
+          )
+          for SRC in "${SOURCES[@]}"; do
+            echo "=== $SRC ==="
+            python history/tools/ingest_wikisource_phase1.py --source-id "$SRC"
+            RC=$?
+            if [ $RC -ne 0 ]; then STATUS=1; fi
+
+            git config user.name 'imperial-intelligence-bot'
+            git config user.email 'actions@users.noreply.github.com'
+            git add history/source_corpus
+            if ! git diff --cached --quiet; then
+              git commit -m "Archive $SRC source corpus extractor v2 checkpoint"
+              git push origin HEAD:feature/source-corpus-v1
+            fi
+          done
+          echo "status=$STATUS" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Audit complete phase 1 corpus
+        id: audit
         continue-on-error: true
-        run: python history/tools/ingest_wikisource_phase1.py
-      - name: Commit archived corpus
+        run: python history/tools/audit_phase1_corpus.py
+
+      - name: Commit final audit summary
         if: always()
         run: |
           git config user.name 'imperial-intelligence-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add history/source_corpus
-          if git diff --cached --quiet; then
-            echo 'No corpus changes.'
-          else
-            git commit -m 'Archive Han Tang Song phase 1 source corpus checkpoint'
+          git add history/source_corpus/PHASE1_INGESTION_SUMMARY.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Audit Han Tang Song phase 1 source corpus'
             git push origin HEAD:feature/source-corpus-v1
           fi
-      - name: Fail workflow if ingestion still has errors
-        if: steps.ingest.outcome == 'failure'
+
+      - name: Fail if corpus remains incomplete
+        if: steps.audit.outcome == 'failure' || steps.ingest.outputs.status != '0'
         run: |
-          echo 'Corpus checkpoint was preserved, but unresolved ingestion errors remain. Re-run safely; existing archived pages will be skipped.'
+          echo 'Phase 1 corpus is not yet complete. Successful source checkpoints were preserved; rerun will skip extractor-v2-complete units.'
           exit 1
