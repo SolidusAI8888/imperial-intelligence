@@ -1,0 +1,107 @@
+schema_version: 1
+object: historical_experience_unit
+required:
+  - heu_id
+  - title
+  - context
+  - challenge
+  - decision_or_action
+  - outcome
+  - evidence
+  - role_links
+properties:
+  heu_id:
+    type: string
+    pattern: '^HEU-[A-Z0-9-]+$'
+  title:
+    type: string
+  summary:
+    type: string
+  context:
+    type: object
+    fields:
+      time:
+        type: string
+        nullable: true
+      place:
+        type: string
+        nullable: true
+      structural_conditions:
+        type: list[string]
+      immediate_situation:
+        type: string
+  challenge:
+    type: string
+  decision_or_action:
+    type: list[string]
+  constraints:
+    type: list[string]
+  alternatives_visible_in_sources:
+    type: list[string]
+  outcome:
+    type: object
+    fields:
+      immediate:
+        type: list[string]
+      longer_term:
+        type: list[string]
+      costs_and_tradeoffs:
+        type: list[string]
+      uncertainty:
+        type: list[string]
+  reflection:
+    type: object
+    fields:
+      present:
+        type: boolean
+      content:
+        type: list[string]
+      evidence_ids:
+        type: list[string]
+  evidence:
+    type: list[object]
+    item_fields:
+      source_id:
+        type: string
+      canonical_ids:
+        type: list[string]
+      evidence_role:
+        type: enum
+        values: [event, action, outcome, reflection, context, contradiction]
+      note:
+        type: string
+        nullable: true
+  role_links:
+    type: list[object]
+    item_fields:
+      person_id:
+        type: string
+      relation:
+        type: enum
+        values: [experience_owner, decision_maker, witness, participant, affected_party, chronicler]
+      firsthand_strength:
+        type: enum
+        values: [direct, strong, indirect, uncertain]
+  derived_tags:
+    type: list[string]
+    note: 'Descriptive only; tags must not determine whether an HEU exists.'
+  confidence:
+    type: object
+    fields:
+      factual_grounding:
+        type: number
+        range: [0, 1]
+      causal_interpretation:
+        type: number
+        range: [0, 1]
+      reflection_attribution:
+        type: number
+        range: [0, 1]
+  status:
+    type: enum
+    values: [draft, reviewed, accepted, deprecated]
+validation_rules:
+  - 'No HEU may exist without at least one Source Corpus canonical ID.'
+  - 'Reflection must be false/empty when the source contains no later self-evaluation or attributable reflection.'
+  - 'Do not infer a counterfactual alternative unless supported by sources; otherwise omit it.'
+  - 'Outcome must distinguish observed result from later interpretation.'
