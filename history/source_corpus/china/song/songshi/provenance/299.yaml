@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷299
 revision_id: 1442571
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7299&oldid=1442571
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷299</span></span>
-paragraph_count: 80
-sha256: 52a45bcff22477e525cd279370c17c9cde1874ca1a74463371725a7f677f6a60
+block_count: 84
+sha256: 1246a07233a2cf34d8e03a566abc1dca32c992658d8d89538a9e61a4cd227408
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

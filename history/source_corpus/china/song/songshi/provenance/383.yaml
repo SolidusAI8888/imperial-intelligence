@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷383
 revision_id: 1473804
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7383&oldid=1473804
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷383</span></span>
-paragraph_count: 76
-sha256: a2315f43bf4b364376e490534361bbb33fe5f9433b8d7d252b87795619a46003
+block_count: 83
+sha256: 0fe68fa5170dac207dd65b30a793df7ef3a33bb86fc4144744eda7ee5b166872
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷039
 revision_id: 7908412
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7039&oldid=7908412
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷039</span></span>
-paragraph_count: 116
-sha256: c3c87768f1ee238857c5807aaeb6ae6db329f7ba3ab47c52bbba3dc94b227832
+block_count: 123
+sha256: febc38a47934530ebdf0a2c1a5b39418e089611713f12d614869b833244a84f9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

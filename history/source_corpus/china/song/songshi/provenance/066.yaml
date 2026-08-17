@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷066
 revision_id: 2610484
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7066&oldid=2610484
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷066</span></span>
-paragraph_count: 144
-sha256: 5d5cfbb3568f9ab01c3d9531574cff161694b318e6bb2550357b7c0091823003
+block_count: 151
+sha256: 74a4b00bae377f88e0b9a28e526d426f9e380b848e7b7fb9d01888c55b36c216
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷337
 revision_id: 1440864
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7337&oldid=1440864
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷337</span></span>
-paragraph_count: 51
-sha256: 9c110dbfbcbb6b3f5ad7ffc1d93270d75c18d6c9b90fddabf51b799a49b8d83a
+block_count: 55
+sha256: b035e6b89209aaafc5e5bb230b7e66c013cf08e79df4277500e16e8b7f0b82bb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

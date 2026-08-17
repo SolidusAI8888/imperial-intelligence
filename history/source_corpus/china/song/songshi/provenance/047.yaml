@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷047
 revision_id: 2642866
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7047&oldid=2642866
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷047</span></span>
-paragraph_count: 60
-sha256: 1b5ddf9d4eac10b9edfe02081a6b3546c3cd2e320855e4c29c5ec1cfa57a9012
+block_count: 67
+sha256: a119e61fef0ea6db58970965a647095b11ef7a2409f78563171bf6623cec128b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

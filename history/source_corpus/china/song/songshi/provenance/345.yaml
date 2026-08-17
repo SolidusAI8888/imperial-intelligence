@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷345
 revision_id: 1456977
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7345&oldid=1456977
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷345</span></span>
-paragraph_count: 56
-sha256: e3fa2f219fb85dd13e5a49c3510950b66785e6519f7000c7bb33eca833d19574
+block_count: 60
+sha256: 42407c348946782b0f9f08ae3f838379ffe6d992eab762bdd7278b352f025de8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

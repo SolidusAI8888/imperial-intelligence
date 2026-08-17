@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷130
 revision_id: 7915598
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7130&oldid=7915598
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷130</span></span>
-paragraph_count: 40
-sha256: 2623264194e691fa67f791c6425a3ae7e5f5436325a142f1e066b0d4aa77bef1
+block_count: 44
+sha256: 02dd4cfcd84404d35a74193d4cd936a9dd3c53ca135394df82c74bd7cabf65ce
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

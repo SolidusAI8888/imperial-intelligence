@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷054
 revision_id: 7908405
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7054&oldid=7908405
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷054</span></span>
-paragraph_count: 49
-sha256: 932d3b9194b6de9144536df8be1c14b97d3ec7c9289f209e9fc0c82c9daab825
+block_count: 56
+sha256: 18e5463b5153248ba7337a626ac5407357eb355e9b447f6597048d878ca8024a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷181
 revision_id: 2706555
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7181&oldid=2706555
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷181</span></span>
-paragraph_count: 60
-sha256: f72f4fd7cdbf74fb108cbc5176290787cbf14680089b2875799ecbbea407eadf
+block_count: 64
+sha256: ef6ff39d3af31c4bfc14479fca4be0b60dfdfc25dfe6eeba3d568c224512e663
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

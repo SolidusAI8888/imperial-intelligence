@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷061
 revision_id: 2604102
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7061&oldid=2604102
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷061</span></span>
-paragraph_count: 63
-sha256: 25d7b3c1d77fba01acb41c8285e4a62c306a08e751ac4c269429694ee708cc7b
+block_count: 70
+sha256: bc38eeb265e791a7afcab3f567bd15ee4f94457b56dbf6c2cfb01c9ff2c9d213
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷072
 revision_id: 845876
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7072&oldid=845876
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷072</span></span>
-paragraph_count: 155
-sha256: 8d84f979b12b2ed6ada78224402512b3b51569de538c0fa472bd29d2a88a8b3c
+block_count: 162
+sha256: 86da5b7c494f0c4ff88ece9e6218a9baf986ba0c92290aee9351d5cd6cd36836
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

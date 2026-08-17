@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷082
 revision_id: 845887
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7082&oldid=845887
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷082</span></span>
-paragraph_count: 57
-sha256: 5d648c7cf53253e86e058cce51f536929206eee949199a51b2b5a065904c54f0
+block_count: 64
+sha256: 5ed8807f87894eb5858ed20ff2e0e6764d317731d0e7748a0945cb5aa7df0d0d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

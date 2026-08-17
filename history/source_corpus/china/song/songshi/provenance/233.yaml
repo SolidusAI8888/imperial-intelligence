@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷233
 revision_id: 2551842
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7233&oldid=2551842
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷233</span></span>
-paragraph_count: 1
-sha256: 4e0e5b6d649c357c41f3dbe02a9fa246484e44d2b39d5fd9c140f2ed4c7c57a2
+block_count: 929
+sha256: 52b9369d1ecaa969d2d8bce5ed115d98ccdfde7f27f5ef9714ce7eab11a37fe4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

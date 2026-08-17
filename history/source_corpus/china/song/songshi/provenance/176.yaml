@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷176
 revision_id: 2709723
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7176&oldid=2709723
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷176</span></span>
-paragraph_count: 66
-sha256: 6cd123f2f1e67bc7d074e9fd8a2ace030dbe558675496391bbfad86079ec082d
+block_count: 70
+sha256: 354c90087ec517d4649ffeac06bc9daf6e14f67f1ba9087ced533a7e352871d7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

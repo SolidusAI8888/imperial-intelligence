@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷426
 revision_id: 1489162
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7426&oldid=1489162
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷426</span></span>
-paragraph_count: 55
-sha256: 1748f2f9f56d382f1691834492ec105a0e7d8a5f735433a084ff0250a3aa0a15
+block_count: 59
+sha256: 0c7e01b5fbdff22440c6dda52be9cc001e5229e9f508185f0d74dcba3ca92feb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

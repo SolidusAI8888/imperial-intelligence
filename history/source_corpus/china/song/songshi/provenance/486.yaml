@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷486
 revision_id: 2325721
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7486&oldid=2325721
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷486</span></span>
-paragraph_count: 93
-sha256: 1f9704096521b6a8c9c12f3604f0d35b20ea06bf097d52b1cad3661ac031c0a3
+block_count: 102
+sha256: 0ff2de575c994c82ea51ba15a671597e688e0e70e6ba367079dc781fd34b749d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

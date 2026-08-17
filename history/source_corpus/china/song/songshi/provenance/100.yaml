@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷100
 revision_id: 7904512
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7100&oldid=7904512
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷100</span></span>
-paragraph_count: 37
-sha256: edf56fa861cb8e32e66d9400e515544a4191c52021ef5d9e357c12fb237da1fb
+block_count: 44
+sha256: 03883d3cf417bef5c55f7581970470e26c38952fd353c3d7c85db52ea42ebc67
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

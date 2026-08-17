@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷334
 revision_id: 2632893
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7334&oldid=2632893
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷334</span></span>
-paragraph_count: 56
-sha256: aa76f74f264f6a011b3047818c8a2e6873f3bbb20fce3afd668827ace8253bb7
+block_count: 60
+sha256: 5c1aa6fc4e30dbc8a950d9e3f56edce56d4c55736a3e10c6d5527d1432bc423e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

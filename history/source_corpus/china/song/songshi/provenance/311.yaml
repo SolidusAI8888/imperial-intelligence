@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷311
 revision_id: 1557004
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7311&oldid=1557004
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷311</span></span>
-paragraph_count: 74
-sha256: ffdbad7fbc61e3e19decdb1a511b3892d1e7d72d93ef3ff285e05a322ad8f16c
+block_count: 78
+sha256: 121fa9439b156de341eda388cfcb84873660e9e860de4df5375a7f4f921eb43a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

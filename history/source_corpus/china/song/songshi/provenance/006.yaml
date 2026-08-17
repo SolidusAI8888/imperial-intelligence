@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷006
 revision_id: 2285027
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7006&oldid=2285027
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷006</span></span>
-paragraph_count: 82
-sha256: 253624a53644e644a5a0ee0184a76f702eaffc3e78c73775398d1d2f886460eb
+block_count: 89
+sha256: 404b24303c3ff72f5c339d1b9b81ac5da0a3b7a12e35feef0856049ce0204151
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

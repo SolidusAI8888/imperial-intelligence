@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷298
 revision_id: 2004584
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7298&oldid=2004584
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷298</span></span>
-paragraph_count: 81
-sha256: 7278e38fab8cbd5486762af95f93552cb61d330419cf6247b04948032a08830b
+block_count: 85
+sha256: 3321437b2e429a244a74f86e04533e588fe9ac7980cdd84c9c59e306cd3d7e02
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

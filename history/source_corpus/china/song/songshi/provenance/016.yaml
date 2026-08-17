@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷016
 revision_id: 2285107
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7016&oldid=2285107
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷016</span></span>
-paragraph_count: 69
-sha256: 2d38f99226fb0efddb1e325b8e8aad3057d477b165f8918c19f70e4e989487dc
+block_count: 76
+sha256: c04a7fa9d8d98f183a6b23b589b3afb904a6796ef8702646287e082da7529cca
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

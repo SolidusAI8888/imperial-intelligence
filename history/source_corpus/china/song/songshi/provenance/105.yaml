@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷105
 revision_id: 2631989
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7105&oldid=2631989
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷105</span></span>
-paragraph_count: 35
-sha256: d0ce69c478447a79fa194936c952798122a32a6ccd2cc04135caed4f748eab0b
+block_count: 42
+sha256: 76ec040179c2e578fe5394f199b544a5d117fb970493cb3fe3aec92cf1b5abd4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

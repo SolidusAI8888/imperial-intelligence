@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷097
 revision_id: 1502902
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7097&oldid=1502902
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷097</span></span>
-paragraph_count: 74
-sha256: 072bbd1b8d64ae744a2c2a07d3dde48709236ee682da7dc86f9bdc9b1709bb9e
+block_count: 81
+sha256: 4fa4684ed0207981d322dc6ccb2ddc438d5159d61e725cbac1a8481c494f37b5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

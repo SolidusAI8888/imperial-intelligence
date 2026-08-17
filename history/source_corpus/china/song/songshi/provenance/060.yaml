@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷060
 revision_id: 1324978
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7060&oldid=1324978
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷060</span></span>
-paragraph_count: 85
-sha256: 12f48e73ba0a9fb984f8cc4855e4c80d128f321e4bdcf1ee507e8ece622040b6
+block_count: 92
+sha256: 59508c7c4095f5ffac0f348390df48d55d65101576ec8fd73f692d5ccaa149a9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

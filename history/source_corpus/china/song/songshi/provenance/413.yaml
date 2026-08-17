@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷413
 revision_id: 1486845
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7413&oldid=1486845
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷413</span></span>
-paragraph_count: 58
-sha256: a19ad3c9a175523a5a07c1c05e9f645a0e24306d01dd5dd0626c742d31fa1bcd
+block_count: 62
+sha256: 7dcd8f1dca63503e415af64ff39dc6c830677a3ed4de43452cb3094c013af841
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷384
 revision_id: 1473803
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7384&oldid=1473803
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷384</span></span>
-paragraph_count: 71
-sha256: ca25808801cb6adc62f0578cee9ec0f017c22bbfaacde77aa1290bd40a3317c2
+block_count: 75
+sha256: 62ac824e2d4d95807adfbaddc040356b4e659c7d10523eecc74fd4e86f281773
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

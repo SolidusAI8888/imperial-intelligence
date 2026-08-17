@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷421
 revision_id: 2606333
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7421&oldid=2606333
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷421</span></span>
-paragraph_count: 41
-sha256: fe3a381fd9c82d9234612f2d4348a4111c0a65f9e822d2b721d959b25744b5ef
+block_count: 45
+sha256: 157c2ffaba704a127495fad1be8c5da453bbdfcfd1abc4503220cc2234096402
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

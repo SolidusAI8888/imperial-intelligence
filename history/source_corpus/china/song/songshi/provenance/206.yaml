@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷206
 revision_id: 1520298
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7206&oldid=1520298
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷206</span></span>
-paragraph_count: 359
-sha256: b881d0d4b87d4179b5d2bebc2fae42b18b2b2bca020f25d2e1328674e4b8fd16
+block_count: 359
+sha256: a3ef9eced2eb6d869efce399ca863a18deb533a474c0d7350345398293b327be
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

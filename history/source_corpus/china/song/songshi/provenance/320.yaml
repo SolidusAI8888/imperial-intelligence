@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷320
 revision_id: 1545775
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7320&oldid=1545775
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷320</span></span>
-paragraph_count: 64
-sha256: cee14690e34fe9a68998bfa9974ef70bc983ea523fe4582c99a3749285220ca9
+block_count: 68
+sha256: ea2f15ec448de14ffb1daf3d0010f30ecb33ba1153f86ea5d68a48ceba370a7f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

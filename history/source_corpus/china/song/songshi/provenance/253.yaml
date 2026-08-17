@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷253
 revision_id: 2607058
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7253&oldid=2607058
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷253</span></span>
-paragraph_count: 50
-sha256: 7dc7f8e678ca76f1fde5bbd393cab68965397c42d64e5e16b34a77b6ef00ee7a
+block_count: 54
+sha256: 6c915e98f173c93c6aa2153b22d8242db9f35c9c6a65adf300242c98cb8184e0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

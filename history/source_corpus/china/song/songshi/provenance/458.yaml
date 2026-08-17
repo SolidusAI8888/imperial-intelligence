@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷458
 revision_id: 1491994
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7458&oldid=1491994
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷458</span></span>
-paragraph_count: 45
-sha256: dd96100ed090edd23014010a3cd5a7f597c6cf505001e8d59b3010beda873b56
+block_count: 49
+sha256: b4b704638411614ed89274656616e52924ab0f764b4d8a49149514d658a7e9fa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

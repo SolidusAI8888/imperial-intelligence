@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷035
 revision_id: 7908410
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7035&oldid=7908410
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷035</span></span>
-paragraph_count: 149
-sha256: c745cdcfba96c08048bc531517a6c14018a50dd93ef4c88a3a3fbbf59195f037
+block_count: 156
+sha256: 603e7643e9a481191607e596cb898e9177486327a4a0200852fd4a36683f593e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

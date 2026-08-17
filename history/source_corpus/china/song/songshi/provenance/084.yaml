@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷084
 revision_id: 1476658
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7084&oldid=1476658
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷084</span></span>
-paragraph_count: 3
-sha256: 9d4f9676908eaa27ed525a09611dadc40c80859d753ec1cc2fffb6f11f458d78
+block_count: 7
+sha256: edbb5813306c1f13d345f31bb55f4f11ac12ce7cfb62e5c1af05affb89ce69cb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

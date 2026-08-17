@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷137
 revision_id: 7904356
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7137&oldid=7904356
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷137</span></span>
-paragraph_count: 191
-sha256: 9f5a174bb5b9fc3d8e879db6ab16afff89de37ca6196b0388772e2b49796444e
+block_count: 195
+sha256: 6a00dca5fad13308af28939d6d9d26c91da909f37dca5213c6757e8a54a1d216
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷180
 revision_id: 1476737
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7180&oldid=1476737
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷180</span></span>
-paragraph_count: 75
-sha256: 7a46ecda3019505eaf155a220d664731088827dbb9ffa39da23201a87b9df01c
+block_count: 79
+sha256: 30ecce194ce1fcb5fbb36e4abbd60fcca71ba13491004042db81e42c70e22e41
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

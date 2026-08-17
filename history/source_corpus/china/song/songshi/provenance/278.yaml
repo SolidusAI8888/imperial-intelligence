@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷278
 revision_id: 2019977
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7278&oldid=2019977
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷278</span></span>
-paragraph_count: 61
-sha256: 1c35617a8e76d036747146ec3078b2702e460fbcdd2798ac19a39d816e8c5411
+block_count: 65
+sha256: ed768ef19eb975cd97037348ef15f733774c7ea26cd4a907abea3a7504069bb5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷317
 revision_id: 2635430
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7317&oldid=2635430
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷317</span></span>
-paragraph_count: 53
-sha256: 0e323934deaeb96cc7d5909545d30e22b41239b7c3cb71cdb576e3a14cdb1dd3
+block_count: 57
+sha256: 6950c110fe3ae0da660d9e2f0a7cc93ec5f944c0bbcede0c75ce0fe6a207fdb0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

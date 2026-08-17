@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷256
 revision_id: 1476821
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7256&oldid=1476821
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷256</span></span>
-paragraph_count: 50
-sha256: 315bcaf59723cadf27b7885d598b75a0b8679c0bcf46832e6288d3f6a0ccb816
+block_count: 48
+sha256: b2f786219ef8c67d24cd94a6d7075ad3ce3bf2f77220fc09fb413a12ef89583e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

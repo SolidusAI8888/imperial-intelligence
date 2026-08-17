@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷013
 revision_id: 2285057
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7013&oldid=2285057
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷013</span></span>
-paragraph_count: 56
-sha256: dca072a490f3dd837dd20e70240b0eafed8f68a053430d0f161c22e1b1933ae2
+block_count: 63
+sha256: 138c95f88abb395ede4541148cf0d5177f05d9ec98131ded585377b8105f34aa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

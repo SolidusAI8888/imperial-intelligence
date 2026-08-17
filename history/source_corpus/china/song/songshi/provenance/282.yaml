@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷282
 revision_id: 1532598
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7282&oldid=1532598
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷282</span></span>
-paragraph_count: 55
-sha256: 254cc7832068b0daabfba40fba678da273d95aa3de2e65256d1407a838be46c6
+block_count: 59
+sha256: fdae5c476ec3d7f9ea693b873da0d9f33566d84790c34a7572956f07e4b60a1a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

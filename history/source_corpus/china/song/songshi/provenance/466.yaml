@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷466
 revision_id: 1494698
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7466&oldid=1494698
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷466</span></span>
-paragraph_count: 100
-sha256: f82080bd87fa0e9723fdb4596b4c53f74a187f0f750a81f30a3f9d3875039bd9
+block_count: 104
+sha256: a66395c6ab69db233a0af0197b3254c57ada33cc1888febea5e7076d551a9d23
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

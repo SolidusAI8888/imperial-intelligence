@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷135
 revision_id: 1513203
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7135&oldid=1513203
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷135</span></span>
-paragraph_count: 112
-sha256: 73b9fa11e78d7a023412f5867b888a7c966dc32aae4f9593524f20a504ce068c
+block_count: 116
+sha256: 3915357f7d0c926909b1601c8866d345407d4cefea92705ada2a382ba3d1bd3a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

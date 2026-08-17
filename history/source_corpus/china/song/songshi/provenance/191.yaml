@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷191
 revision_id: 2709746
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7191&oldid=2709746
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷191</span></span>
-paragraph_count: 84
-sha256: a580ed5c042fc250b3756e7b1b8d13d4d535d9cadcee1c71eca0a13f80c538ad
+block_count: 86
+sha256: 8de4b22aab7691d5ff66f7032ce88ece173506effd48225d9b762e82b7d3b5a4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

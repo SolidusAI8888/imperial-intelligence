@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷076
 revision_id: 845881
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7076&oldid=845881
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷076</span></span>
-paragraph_count: 143
-sha256: 6f155c5d03eca3b25a3f4e93f3df9ca01d76445c49aebfc67ebcc7f7f307d25d
+block_count: 150
+sha256: 4be632bf768d80fff382505c3809f1b42cfae2954485cf1417658ffdf2be0128
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷055
 revision_id: 7908406
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7055&oldid=7908406
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷055</span></span>
-paragraph_count: 220
-sha256: b92571f001b731f5a5501e025d8d3eea27714371bd8dc44345e409a12b9d076a
+block_count: 227
+sha256: 08738d346dd9f0fcc27f688c76552eeb83b5ef4dd6fe2c83db3ae615934a79ee
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

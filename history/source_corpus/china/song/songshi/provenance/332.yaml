@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷332
 revision_id: 1554452
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7332&oldid=1554452
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷332</span></span>
-paragraph_count: 61
-sha256: ceee1ce8c959dd6518628eada9fca6fe4e416f660d674779b15a608aa7076ec3
+block_count: 65
+sha256: 2f36e651dec5290d99bd52c06109770aae9fc8935182b85cbb24d170241d29c4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

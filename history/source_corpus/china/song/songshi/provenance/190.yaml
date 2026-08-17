@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷190
 revision_id: 2602366
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7190&oldid=2602366
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷190</span></span>
-paragraph_count: 74
-sha256: da733379f600d6dec4892a332b9b439f357b8afde07f800fc36d9978c526b940
+block_count: 81
+sha256: ce41d5a1614796f09e0944ad180dae1b76a4b9e73e6d48202bedcf451029307f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

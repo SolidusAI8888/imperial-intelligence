@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷166
 revision_id: 2081146
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7166&oldid=2081146
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷166</span></span>
-paragraph_count: 53
-sha256: aa603e1704b72a90963649c0b6520a8a7cd390be9a7cbb61b5dae836b76a4d7b
+block_count: 57
+sha256: 4a015d9c06123f9532a152d628e328d7aa9c94b10eeab7468f77f59aedd978b0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

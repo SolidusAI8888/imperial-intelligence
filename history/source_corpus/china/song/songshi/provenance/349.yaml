@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷349
 revision_id: 1476855
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7349&oldid=1476855
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷349</span></span>
-paragraph_count: 46
-sha256: 0e959643e3010bc401ccfe2f3984f888da30540077f187bc9e825a7447e2051e
+block_count: 50
+sha256: e0610e1ae3b13f098203af6e8d74aa82072bf9f841f159fcb4f767431076fdc4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

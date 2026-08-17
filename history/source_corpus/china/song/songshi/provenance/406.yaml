@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷406
 revision_id: 1484142
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7406&oldid=1484142
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷406</span></span>
-paragraph_count: 60
-sha256: 3f24b5315202acee091acce187cd9c79c4391a57d3811910845764a8e8974b88
+block_count: 64
+sha256: c68645b898e810185892c64d5dac40e6f135f87c3f59393d3519dc09f1096408
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

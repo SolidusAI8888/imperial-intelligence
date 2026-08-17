@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷019
 revision_id: 2521137
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7019&oldid=2521137
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷019</span></span>
-paragraph_count: 67
-sha256: 460be6b72173161c96c3939a59ab3ae62d584b6846e0a652767ab169f0ee43ce
+block_count: 74
+sha256: 10a9c3a010397a83800a99fa6a90c0b660ff69728f7723951d71fd0e8912f0cb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

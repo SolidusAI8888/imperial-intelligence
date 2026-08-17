@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷193
 revision_id: 2632559
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7193&oldid=2632559
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷193</span></span>
-paragraph_count: 91
-sha256: a6f44c00ada24e85663db5c812ed2a1c5b2fcef8095d40c6e805db81f9907151
+block_count: 95
+sha256: 8f1c7b40955eccac54ee9f9db8f4b84a137971ed63d867d7f98ba79b22161960
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

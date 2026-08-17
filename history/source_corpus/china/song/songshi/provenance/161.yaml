@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷161
 revision_id: 2531655
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7161&oldid=2531655
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷161</span></span>
-paragraph_count: 66
-sha256: cb343177abf3bd6573f5d38cc6649b8fe5aae049cc3a4a514ee7712398b5cfdf
+block_count: 70
+sha256: 40327d5a3642384bb23dbda1d2b2e63efaeb93a4cd1ef23b23ccb6cf2e3ffe99
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

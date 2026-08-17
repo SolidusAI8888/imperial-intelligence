@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷159
 revision_id: 1965388
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7159&oldid=1965388
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷159</span></span>
-paragraph_count: 35
-sha256: 132515f60d0a806b0a603cfe8ae3a3f369623bf766a3b0b0cfe64d15b1003d9d
+block_count: 39
+sha256: b453a84a2de86e603b24d4c974044486c8d44e37967330b31d32b3ec91bce707
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

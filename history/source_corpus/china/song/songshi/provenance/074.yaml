@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷074
 revision_id: 845878
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7074&oldid=845878
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷074</span></span>
-paragraph_count: 268
-sha256: 5f05959560becbd7066b99b32e48f3fa518c61a4b0d1102c125c85d98273f3a6
+block_count: 275
+sha256: 1c414146250b23162c9675f19a2da70632d7824347c94964df24da1b3b5c5ec7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

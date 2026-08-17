@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷026
 revision_id: 2285122
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7026&oldid=2285122
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷026</span></span>
-paragraph_count: 28
-sha256: 819b34f4de34a503be4e5dce251949df72def0208bd25a1aba6d9822fc615295
+block_count: 32
+sha256: 2c8131b45a52a0e25c2e38c831bd1eec3c7879f882b200345b686d1cf5f15bee
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

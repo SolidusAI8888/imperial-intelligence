@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷417
 revision_id: 1487770
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7417&oldid=1487770
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷417</span></span>
-paragraph_count: 63
-sha256: d75299c46989347efbd36b11c7dbc99eb5a866009f3498e3618c113e877c40df
+block_count: 67
+sha256: 010793df0ae965b2d71e7d1275b94d4edb91f6a332aa4bbdb8738a76a83842a5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

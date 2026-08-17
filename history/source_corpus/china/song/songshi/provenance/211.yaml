@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷211
 revision_id: 1476771
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7211&oldid=1476771
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷211</span></span>
-paragraph_count: 2
-sha256: b24e9a475f94571b0624d60fa91b9fda2cd0977c641c22ccb635b2f8a016e444
+block_count: 278
+sha256: 106d318c35b05df74d6df53c09df7516e7cf0761b61da9203723cfef66a0a6ff
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷476
 revision_id: 2611662
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7476&oldid=2611662
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷476</span></span>
-paragraph_count: 33
-sha256: a54eed8cc44693c500e31fa6eb60b6bfedc684f6d84a9e4e5241d0f33586a61c
+block_count: 37
+sha256: 14cdd7df2250aad33833913d2e13e4f913a5e5e7155f3e079baf190ce5062f54
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

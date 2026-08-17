@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷478
 revision_id: 1744332
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7478&oldid=1744332
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷478</span></span>
-paragraph_count: 56
-sha256: fdb5e4fa38c09a7bd69f0c3aa2b378c9ceb2101e1cb5fab6778446d5c448530f
+block_count: 60
+sha256: 48b26180b69c81ec25fc3fd2a150a51cd671e27d298f085e9b54fbd48139f939
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

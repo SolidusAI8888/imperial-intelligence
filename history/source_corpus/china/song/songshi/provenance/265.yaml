@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷265
 revision_id: 1769083
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7265&oldid=1769083
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷265</span></span>
-paragraph_count: 102
-sha256: 523fb07693750377f672e344b14d815a71425dc14442a7c091f8a1d8556d653c
+block_count: 104
+sha256: 50546a7aa2c02e2922c368d4d41c93ca8415bf69af6af2fbcf2bdbdcafac0fd3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

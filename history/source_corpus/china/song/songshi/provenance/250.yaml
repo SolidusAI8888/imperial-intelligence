@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷250
 revision_id: 1476815
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7250&oldid=1476815
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷250</span></span>
-paragraph_count: 83
-sha256: b472498d882e072499c3db0d42291886076a4fce9429cafeb5e1791f5fc1a593
+block_count: 87
+sha256: a71d171abad8d8fdbac2e770e74782ffc67031f82911f1f745d88038444c6f5a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

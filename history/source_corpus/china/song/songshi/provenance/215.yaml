@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷215
 revision_id: 2665866
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7215&oldid=2665866
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷215</span></span>
-paragraph_count: 5
-sha256: 3eb0b0fe1dc3756a9424d5cc7eb7e2b1b81da0a6c5e42687f5b7878b23330dac
+block_count: 12
+sha256: c4f59dfa773ade6b8cb1f23169add1ea417ef4acd365c50adf9c55bdb2228a99
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

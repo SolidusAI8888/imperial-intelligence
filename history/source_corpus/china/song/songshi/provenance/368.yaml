@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷368
 revision_id: 2370541
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7368&oldid=2370541
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷368</span></span>
-paragraph_count: 74
-sha256: 4db640ab45e8e0a8775acff64f2abbbdbdd2427ee23a38a1303a08a43cfd59ea
+block_count: 81
+sha256: edded39422faab28afee9cc09816316a86ad6864ee1fbdd294ee49aa04c96265
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

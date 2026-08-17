@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷469
 revision_id: 1510181
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7469&oldid=1510181
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷469</span></span>
-paragraph_count: 33
-sha256: 12945582e087289fbb947c27451a05f6565cd4b83f6f57dd3cd4fb50f03a5f4f
+block_count: 37
+sha256: 5f0480541037c94fc2224fb9f50fef7d0d5b3fdcef61e8bfa2d3943aa79aaf86
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷373
 revision_id: 1741956
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7373&oldid=1741956
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷373</span></span>
-paragraph_count: 70
-sha256: 6ded2f8ae4ab03141e0a9b07692a476afa4c4e0bc9ccc46e11a57dc4d5ea266a
+block_count: 74
+sha256: 580c7e426baca0b2981b5c2714d96fdb67b1d95f4222408191f14c7585a4ce02
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

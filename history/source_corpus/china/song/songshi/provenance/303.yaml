@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷303
 revision_id: 2024506
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7303&oldid=2024506
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷303</span></span>
-paragraph_count: 58
-sha256: 0d4df84d5b46fef8c7b32c79a04097dc55921af46ef40bfb72e44281ff308dd8
+block_count: 62
+sha256: 540269834facaf99e5f631f58c2336bd2117f77428a585aa8cb4827c08eb2199
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷090
 revision_id: 2619985
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7090&oldid=2619985
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷090</span></span>
-paragraph_count: 229
-sha256: 4368e05ea8e0c2fb5383d53f45d3f4eaf511b1f66b4055eb5d342baf8f515ca6
+block_count: 236
+sha256: d868be1ca1e71426a0064a04152839e5ac233189f2e7647385ebad0c6ca17d63
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

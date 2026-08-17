@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷280
 revision_id: 1476842
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7280&oldid=1476842
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷280</span></span>
-paragraph_count: 56
-sha256: e241cf90466e0cfede299a283621060f600fafe10ef5d7247a297f3ef9338a82
+block_count: 60
+sha256: acc2b325569bed665e2e2b00cec78314921fc79740d361f5ecacd7fa5f5b1a07
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

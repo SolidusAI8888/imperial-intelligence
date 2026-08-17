@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷363
 revision_id: 1502832
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7363&oldid=1502832
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷363</span></span>
-paragraph_count: 55
-sha256: eac25c64d493522447e1b796a08e32930c680e66fc28d3d414c183cdcd4ff95e
+block_count: 62
+sha256: bc0d6891374765c3a7cc76deabf41e4240419c5e45805cf1008feb899271cad7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

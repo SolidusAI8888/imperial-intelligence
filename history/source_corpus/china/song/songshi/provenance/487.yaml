@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷487
 revision_id: 2292384
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7487&oldid=2292384
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷487</span></span>
-paragraph_count: 86
-sha256: d82b193908240dc630d76d2ed1c9d83c78db96e9c2fce69eb03c642c0b2c1a3f
+block_count: 92
+sha256: 61e0f9e163f9dc1e2f7f7b2b9353207f9af03267b04c339b3da3f6e9817575e0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

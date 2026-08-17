@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷353
 revision_id: 2067929
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7353&oldid=2067929
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷353</span></span>
-paragraph_count: 63
-sha256: f49522101beb7c9e8ff6fbb6adb2a2c4af1f653137a30dc0e9754eafc5afdabc
+block_count: 70
+sha256: b4f6dda1d2d952fcbfca3a50ba1b482e4a056f9e0bab6dd7f5c9a9920cf7187f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

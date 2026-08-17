@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷208
 revision_id: 2632044
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7208&oldid=2632044
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷208</span></span>
-paragraph_count: 442
-sha256: ac06bff2d2c95a2a1e970bac343ca3a355787672e495b96a7033bc908d3c834f
+block_count: 444
+sha256: 87574dcb49f5044e0df066c1ea56cc57c12733d747aa13e71ea477d5dcca9ab4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

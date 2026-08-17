@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷189
 revision_id: 2709738
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7189&oldid=2709738
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷189</span></span>
-paragraph_count: 708
-sha256: d57686baa1ab3f87e5f94c0e63d5753cc74891567acd22ff416691d605e519af
+block_count: 711
+sha256: c14d266c98db416b327a5cef363f628f4e92bdf56e8d637f2edcd915c5010985
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

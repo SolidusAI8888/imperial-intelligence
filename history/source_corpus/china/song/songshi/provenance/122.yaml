@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷122
 revision_id: 2606269
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7122&oldid=2606269
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷122</span></span>
-paragraph_count: 51
-sha256: a68848b90431da20180be46a1e2be6c372722bb69b2f389c6dd6cc85dcb9b2d9
+block_count: 58
+sha256: 76c58e952c7e55f6364b8b62c6d88aa8bffdb733936cae3246658c7fd47e7a7f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

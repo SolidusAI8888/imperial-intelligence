@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷380
 revision_id: 1465748
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7380&oldid=1465748
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷380</span></span>
-paragraph_count: 80
-sha256: b77a18c0909785c61fd1fbf19a1fb7402b0d4f41416e8d714be19547bb0bf2e8
+block_count: 84
+sha256: bb1246aa375cd42d7d1a25075cb51d1557b7d14ff280ed6b4fb5831b5403b50b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

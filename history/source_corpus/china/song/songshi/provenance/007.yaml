@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷007
 revision_id: 7908329
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7007&oldid=7908329
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷007</span></span>
-paragraph_count: 109
-sha256: f5600f832b2b75ddec9ca138f8bcbc5d51d8c8d609b53c9011a4509f809dbc2b
+block_count: 116
+sha256: 6093615eb681c1165ee142bd38fee81cdfb6824055cb85ee96a440de617b5346
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

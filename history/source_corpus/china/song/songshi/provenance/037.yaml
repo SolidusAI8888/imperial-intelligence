@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷037
 revision_id: 2483734
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7037&oldid=2483734
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷037</span></span>
-paragraph_count: 85
-sha256: 67a9e025f46a4f8e2d5209a7fbc47ea844e9d7ba6e3719bdbcafa53f6452a785
+block_count: 92
+sha256: 83c0a6c8bd96f6209982063bf6984a97cc58bca0313cab446ddb08bd10dd00d8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

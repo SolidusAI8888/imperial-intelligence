@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷131
 revision_id: 7915600
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7131&oldid=7915600
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷131</span></span>
-paragraph_count: 51
-sha256: 23b0bceb79e216d1ee8437817d97fc6263f7e7166ea477105b32fa9ef2c97505
+block_count: 55
+sha256: f6388373e446d19b8c45c1547989bc1b9d3b2138a4baf2bb7be245f2c69b5a20
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

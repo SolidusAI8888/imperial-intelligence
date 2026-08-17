@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷429
 revision_id: 1525603
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7429&oldid=1525603
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷429</span></span>
-paragraph_count: 67
-sha256: 9e4a5905430b4aeb973ba86557441af7557815f29ce2d04c1f3d09bac6a7f413
+block_count: 71
+sha256: 56cac42de9bea7c6548bc5eea6dc1352c17b9d8688c7ab5e3f9cc439f32b3231
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

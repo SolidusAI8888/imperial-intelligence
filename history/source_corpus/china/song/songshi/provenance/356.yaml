@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷356
 revision_id: 1458375
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7356&oldid=1458375
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷356</span></span>
-paragraph_count: 78
-sha256: c59ee466f68ba61cfc7576f4af3f02886f12131f1908a0682e68529cff5c9e49
+block_count: 82
+sha256: 36d41b152528702989b6982b36f06653b640150d6827755b1ad8a9e092cae955
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

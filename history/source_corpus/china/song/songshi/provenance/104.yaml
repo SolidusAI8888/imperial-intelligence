@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷104
 revision_id: 2604672
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7104&oldid=2604672
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷104</span></span>
-paragraph_count: 44
-sha256: 2ec73592ff7ae5147edae32c19f72cf135e24941b8027fb068611dd6ebea4d28
+block_count: 51
+sha256: 74f71b6204adda1fbde2ab342656b2426f098d9fedd3e7f0b83a19e1bc1e4b06
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

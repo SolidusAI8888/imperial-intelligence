@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷088
 revision_id: 1873924
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7088&oldid=1873924
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷088</span></span>
-paragraph_count: 488
-sha256: a921b304eba7ec3d232d2ebc8c3b408bf441874aa9e6f30bf71ad89047c55b21
+block_count: 495
+sha256: 59fab2345ec93b447bdc98d45924fb99888e5d23949c912c16e1b46e7b849b0b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

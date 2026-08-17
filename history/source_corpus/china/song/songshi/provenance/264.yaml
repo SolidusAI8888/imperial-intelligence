@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷264
 revision_id: 1476827
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7264&oldid=1476827
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷264</span></span>
-paragraph_count: 86
-sha256: a6ba5923375c908284c1fd6c23a1ba8efeb68d16beaa4ef6a7301620ccb70a18
+block_count: 90
+sha256: 9416356c7cda009ed84f3f965a037e40ab7a6d6ca08d0f0eee094b1c31d11c76
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

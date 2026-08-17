@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷107
 revision_id: 7904627
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7107&oldid=7904627
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷107</span></span>
-paragraph_count: 28
-sha256: cfb7ed13d9ababa9b94400719513f009437b4ac5afa233c1afec1d5ed0462523
+block_count: 35
+sha256: c69465d09eed1f447d96b4e84b30f4e47695687de73f0eb3971f2e0deb2b7560
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

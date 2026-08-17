@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷125
 revision_id: 2606558
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7125&oldid=2606558
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷125</span></span>
-paragraph_count: 43
-sha256: b6f04a85677ae9863a4bf8906b2fdb8da6ec66f311f46ea1c46f1e5cc3ccca31
+block_count: 47
+sha256: 1a9d4f6e32028660a152344190c765b76815072f9cae1205368268ffa88dba74
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷018
 revision_id: 7908324
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7018&oldid=7908324
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷018</span></span>
-paragraph_count: 83
-sha256: 6c0d57477f52e3a922a3fda98e69946a2265edf5822047f59b4e311f6cba68e8
+block_count: 90
+sha256: 21ef366ab17e2705ed16ada2e276896df266c63974ef33953d6d92798953e0f2
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

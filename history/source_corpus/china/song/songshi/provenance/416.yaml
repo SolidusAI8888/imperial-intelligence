@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷416
 revision_id: 1490026
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7416&oldid=1490026
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷416</span></span>
-paragraph_count: 59
-sha256: 9a4f6ff6028f9930184a30d1345b800ed97ea33f24b63f3b1098b7661f043fbd
+block_count: 63
+sha256: db30fcb370d012ab89111cee0a1efcda3d697e4cda9fabe0f25663fcaae063a9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷457
 revision_id: 1492410
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7457&oldid=1492410
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷457</span></span>
-paragraph_count: 66
-sha256: 0715f089ad269047b56a2b547664c0ed0f3b504e9b8a7871553a5071db688a67
+block_count: 70
+sha256: df5a98e0e61f9ff3e6d5d29791d106066d1f0b38e93a549e35796b261f401838
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

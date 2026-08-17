@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷430
 revision_id: 1527718
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7430&oldid=1527718
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷430</span></span>
-paragraph_count: 47
-sha256: a385b5aeaa5cf2bbeef22cdd6735f0ec17180874180f131e52bcfb86e986d36a
+block_count: 51
+sha256: 458aa9296633f2f01fb70516638ea709d03b3d768865b68aaf14a8e2c7a6a075
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

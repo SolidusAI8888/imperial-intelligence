@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷374
 revision_id: 2573597
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7374&oldid=2573597
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷374</span></span>
-paragraph_count: 89
-sha256: 09971ef7360c3cff729e5ec387221bb1add8fb98b1d640d23126a862f03768c6
+block_count: 93
+sha256: 5065e762a4855fc3f81eb34bc1d4d03f454b299ece65e8af590c1938e41a8a10
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

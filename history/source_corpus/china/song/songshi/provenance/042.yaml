@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷042
 revision_id: 7908414
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7042&oldid=7908414
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷042</span></span>
-paragraph_count: 111
-sha256: 90f27e90778a3bc79af77dcd5e4554390f6df9dbd1814c90eb6221c208ed2d97
+block_count: 118
+sha256: 8bc88163b3cd6d0c4afa8d071f6051f19bb314a336b083ea3ae5b123dfd188d1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

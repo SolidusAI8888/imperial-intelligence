@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷046
 revision_id: 2630084
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7046&oldid=2630084
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷046</span></span>
-paragraph_count: 124
-sha256: d88c7c6a990197f492c42fd3e1700840185af13a9583468c1261d2e82c6be5e5
+block_count: 131
+sha256: 15cfb54167bae133161ead8b67437128631129200247937a021c9030bee8e6f9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

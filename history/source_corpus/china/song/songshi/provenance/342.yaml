@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷342
 revision_id: 1521827
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7342&oldid=1521827
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷342</span></span>
-paragraph_count: 53
-sha256: 3ca5af9a81ce7d6a9eb4c1e799b54e7cbb1603f021fef59684852599370db5a3
+block_count: 57
+sha256: 7ae04b2051247ab57e0c827c5a745b2aa4e2243fd0465924bcbdcf6334d871fe
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

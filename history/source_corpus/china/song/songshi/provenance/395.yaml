@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷395
 revision_id: 1478042
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7395&oldid=1478042
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷395</span></span>
-paragraph_count: 70
-sha256: 1bebc778899626e786df6d5359eae7e1cbe21fd5f69bda673580511dc65bc46d
+block_count: 74
+sha256: c2e947c0ae89d1c485cad12d1e0666b4a311484237a3b188ea85d70659c6fa9b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

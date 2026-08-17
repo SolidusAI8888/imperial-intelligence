@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷449
 revision_id: 1491153
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7449&oldid=1491153
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷449</span></span>
-paragraph_count: 81
-sha256: 08e56d6aaa6bef7f326321218327a8865135eb74cccce03814ecd8bad306b21a
+block_count: 85
+sha256: e95631dbcc53ded560207c994d10638c7d6817c9759442cb52305103e3efdfee
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

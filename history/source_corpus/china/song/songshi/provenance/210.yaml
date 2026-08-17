@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷210
 revision_id: 1476769
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7210&oldid=1476769
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷210</span></span>
-paragraph_count: 7
-sha256: 49488ea67bc3ffd54bbedfc134116f8f79ea14a2960ccc768172334e09c5b786
+block_count: 351
+sha256: c6ba568e543e8bfca429bb9e581b65d44a71f70f4dcbe78d8bfd307526326d55
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

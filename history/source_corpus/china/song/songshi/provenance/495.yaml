@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷495
 revision_id: 2292673
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7495&oldid=2292673
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷495</span></span>
-paragraph_count: 45
-sha256: d731571ba95530889625d643769e417ad4c25de1b6c0639b7877c21822e42e79
+block_count: 51
+sha256: 2f53aa7f6cd490c7f21a408c70be42753734a04bc433dca5d3599dc3d3f39f70
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷306
 revision_id: 1418212
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7306&oldid=1418212
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷306</span></span>
-paragraph_count: 65
-sha256: 8293a10096730ce94632bb1b37b7a4b402f6a0f2561a1b05c613df88dfaedf4b
+block_count: 69
+sha256: cba2996701ab7f1d473b2fa46a72f55a71c03502ac8f4cf9fd7fe48d89865ac4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

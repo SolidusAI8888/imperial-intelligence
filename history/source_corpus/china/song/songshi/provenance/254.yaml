@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷254
 revision_id: 1741803
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7254&oldid=1741803
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷254</span></span>
-paragraph_count: 83
-sha256: 8cb9c3df13ca8f5e6cd9c0e3432b8e9414fb59ca95a77f2c96eaba7a503cd765
+block_count: 87
+sha256: 23e9a45671e24d43b41268f1dee967b0f965e9e62a04ffb97c50ab07ad8b6b96
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

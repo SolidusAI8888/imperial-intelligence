@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷011
 revision_id: 2285045
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7011&oldid=2285045
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷011</span></span>
-paragraph_count: 116
-sha256: d109208717f35ba59f93443a0ccb91fccddaa016bf435a2ee93ed0a85ce35ab8
+block_count: 123
+sha256: bb4928e242a129f755da0ac8579b1a01ac04e4f569d10d6ea607669ab424a9d4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

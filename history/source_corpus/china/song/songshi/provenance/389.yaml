@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷389
 revision_id: 1518395
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7389&oldid=1518395
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷389</span></span>
-paragraph_count: 88
-sha256: c4ee4a08045d8acc4997e3b12c3e2d0b483bed08d4dbb3899e21c50614042b6f
+block_count: 95
+sha256: 99891c1a2edc8624e310c165f1e1cdec94b42f676852ffc46c717d098854a47c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

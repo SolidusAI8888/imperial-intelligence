@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷194
 revision_id: 1476753
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7194&oldid=1476753
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷194</span></span>
-paragraph_count: 99
-sha256: 570494a16dcd492b1a68922d0931fa941108f2b7f32c6cd22642ff5910db195b
+block_count: 103
+sha256: 5ad5f7ff2cb927fddca190b8aa3bbee354b860f3217e88bf8ac6b7b0c4c179b6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

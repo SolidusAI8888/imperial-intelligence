@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷041
 revision_id: 2602329
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7041&oldid=2602329
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷041</span></span>
-paragraph_count: 120
-sha256: 0f5d8474a7fdc531bd4cd2213a10e3c72c039ee6b1be762f74e99c882a9efdd2
+block_count: 127
+sha256: bd1b1b62016d1276fdca072b23a995086f20c6bfa67da2ebcec0e1c41cf50b3f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷301
 revision_id: 1343007
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7301&oldid=1343007
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷301</span></span>
-paragraph_count: 80
-sha256: 5aa5fde1f71fdd32bd0b0341717e20495d2556b274229f2a4cfbd78d6cf353b4
+block_count: 84
+sha256: 6d201a4b6aecc40ecb33c8b1f0aadb804663f439b94bf328d2cff809a0825e82
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷022
 revision_id: 2315056
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7022&oldid=2315056
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷022</span></span>
-paragraph_count: 99
-sha256: 928699b2bc9a0c36dd36391cb042618c2c4448cdc8bc5c13b465456358de8ea9
+block_count: 103
+sha256: 81e5cf7b2784f410e513d36724d5daf3290dc435b2c22c34be07bd9486533e79
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

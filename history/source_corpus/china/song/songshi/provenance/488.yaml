@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷488
 revision_id: 2033276
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7488&oldid=2033276
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷488</span></span>
-paragraph_count: 31
-sha256: bb70f49ef2242e6680bb1bb82d36afefac12543221011e3b581c59a9c8a17dc2
+block_count: 37
+sha256: 6ca3327ad877a3315aceeedf5f9a542aa63deda73fbc472ba826c5acc9b3cde4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

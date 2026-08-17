@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷445
 revision_id: 1490767
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7445&oldid=1490767
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷445</span></span>
-paragraph_count: 56
-sha256: 7015c7538bb5540d7830e9f7db789973222fe16d356357bc735617a775d95b7e
+block_count: 60
+sha256: f1498d1d518c74499614d5bf64617686d82dad640713f02ad40601830adb0419
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

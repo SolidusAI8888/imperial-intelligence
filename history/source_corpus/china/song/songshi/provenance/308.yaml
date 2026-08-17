@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷308
 revision_id: 1476848
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7308&oldid=1476848
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷308</span></span>
-paragraph_count: 45
-sha256: b19accd478f023d1112bc78e055dfa928599b52bd453cb6993eb29baa5dbeb18
+block_count: 53
+sha256: 90e254402a9744ed6324d2fe265bcd7c464bb5f26762cd0b634af27f5a75a467
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

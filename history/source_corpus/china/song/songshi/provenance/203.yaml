@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷203
 revision_id: 1520278
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7203&oldid=1520278
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷203</span></span>
-paragraph_count: 310
-sha256: 45672bfea5b73658c9d23d4136f50088450fb6fba5a1f7bee3f406711d40822a
+block_count: 307
+sha256: 8c47ecce38381718d025d4c1cd8b09ce5abfbfd0903a558f2d3f7b4ba83e75cb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

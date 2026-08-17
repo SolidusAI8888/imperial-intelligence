@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷096
 revision_id: 845901
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7096&oldid=845901
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷096</span></span>
-paragraph_count: 55
-sha256: e46a79f19440b1ee1066a034996b0082aa347f6e2e497bbe3315701a1c2f7c5e
+block_count: 62
+sha256: 05d21770f5b34aeeab188065678c693c12fad962ec14bfba2aa670d9d3edadab
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

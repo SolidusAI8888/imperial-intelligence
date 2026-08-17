@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷163
 revision_id: 2027688
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7163&oldid=2027688
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷163</span></span>
-paragraph_count: 81
-sha256: 8f1d365c84db15d21c25581842965c88eb7ef74aa24c08f584b7c983a506f6ee
+block_count: 85
+sha256: b89b6e47d877cd7be83e514607a5826a909d3daeae1782714a5551ce1c3698f1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

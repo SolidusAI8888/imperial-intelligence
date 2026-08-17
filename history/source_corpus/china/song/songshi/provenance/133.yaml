@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷133
 revision_id: 2132543
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7133&oldid=2132543
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷133</span></span>
-paragraph_count: 156
-sha256: 12971951591eb20a1f54bb5fa8c38057f1c36b49d5144263428b4bd76bfb9bca
+block_count: 160
+sha256: 10f6c1a4bab4819fcb47564e1fe125037478e1888fb990a30964ba22b0ea65f6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

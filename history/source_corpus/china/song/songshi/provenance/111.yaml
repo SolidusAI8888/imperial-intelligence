@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷111
 revision_id: 2632869
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7111&oldid=2632869
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷111</span></span>
-paragraph_count: 53
-sha256: d0a476bd01acca49fa8f420abc9ca71c77e86cc2f5ed4836e9440af7c2151378
+block_count: 57
+sha256: 9e680a8528739b03964b15f3e3a233b5e0133a3b79b8fd2037f55cd2ec7b04f0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

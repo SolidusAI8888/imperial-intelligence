@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷064
 revision_id: 1324979
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7064&oldid=1324979
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷064</span></span>
-paragraph_count: 69
-sha256: 17dc35251fb816ab3dac118cd995669e4a77880df47e505b406a63605cb34e3f
+block_count: 76
+sha256: 334a4bf253ea8556493155ac4a0565b247ee410c59ecd850782e4d4d1f32930d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

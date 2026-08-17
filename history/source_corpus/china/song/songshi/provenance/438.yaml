@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷438
 revision_id: 1503192
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7438&oldid=1503192
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷438</span></span>
-paragraph_count: 74
-sha256: 15b0515d253ae18526b47adad2fa7197cbf87337286840770f6bc4297d38ae32
+block_count: 78
+sha256: f40c635c61dc34ff225228fdbbd18ae7ab8abbcf86e9554809ded4543ce926c7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

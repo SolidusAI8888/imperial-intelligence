@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷415
 revision_id: 1486986
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7415&oldid=1486986
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷415</span></span>
-paragraph_count: 65
-sha256: 2bc9e94cf2026bdb0b7bfb6dfd458f4eb05b45c31f79a16cfe8ed1fffaa1edbb
+block_count: 69
+sha256: 358d588d19846e6819e2fbed2830a9f4cd0b99971e7312968e7a5f2819e6de01
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

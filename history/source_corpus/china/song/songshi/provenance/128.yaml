@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷128
 revision_id: 7915594
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7128&oldid=7915594
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷128</span></span>
-paragraph_count: 57
-sha256: e30d135dff633b10d2b9c4ea33028c8a70173eadc1cf471d3df793f5d9712900
+block_count: 61
+sha256: ac583b87679012a6234877b5dfe50cd750a97ff2a8bbfe8afe1defa953467763
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

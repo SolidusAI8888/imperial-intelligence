@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷491
 revision_id: 2638641
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7491&oldid=2638641
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷491</span></span>
-paragraph_count: 53
-sha256: c76c1bbda521bf016425d19e5f52fb16591d03588696a97f834cfd24d5d74af8
+block_count: 59
+sha256: d823390b0f544260d02c31a7ed01a68e1bc1cf662fb8f4b1598fa024154f5e17
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

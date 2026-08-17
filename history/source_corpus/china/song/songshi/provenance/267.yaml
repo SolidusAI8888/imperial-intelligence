@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷267
 revision_id: 1513786
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7267&oldid=1513786
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷267</span></span>
-paragraph_count: 79
-sha256: 02a1b12134430d650d639737e1b1e830740291628768c60b2dace0f9f5c2863a
+block_count: 81
+sha256: d357fc67ae072e8e23c554b15631bc67137dd5ea5ae37d03df5eaf52b11f0e4b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

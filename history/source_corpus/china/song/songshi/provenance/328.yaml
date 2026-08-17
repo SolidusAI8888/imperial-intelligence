@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷328
 revision_id: 2632973
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7328&oldid=2632973
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷328</span></span>
-paragraph_count: 107
-sha256: 0b6816ab57a4e66fed5616fc2e2c4b8e4a925bf8cbeb48bb155aefed83aeb5af
+block_count: 111
+sha256: 402674d11028690d8acd31ae69e409fb5b1e356a6c0374acbdc55402be66e4f7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷433
 revision_id: 1489433
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7433&oldid=1489433
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷433</span></span>
-paragraph_count: 60
-sha256: 6ea57e0bfc97da1e3b3bddacd5c779892c30ff24438b8e89e086383e26fbe98f
+block_count: 64
+sha256: 5a46a08253918c7444b8d3c7beb4e5cfd1f7381793041cb10c920f52d6e9a73d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

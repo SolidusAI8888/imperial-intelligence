@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷167
 revision_id: 2029201
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7167&oldid=2029201
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷167</span></span>
-paragraph_count: 65
-sha256: a2a6228b5702ffc210f42ee0359cc661ea3bb02e6b4f9fb828f9c45347a8f28f
+block_count: 69
+sha256: ad6a81b87bedbcff8abef70e2d4ab5270bf6b5699a803dab51759b76e5733847
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

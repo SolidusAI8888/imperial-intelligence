@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷172
 revision_id: 1768079
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7172&oldid=1768079
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷172</span></span>
-paragraph_count: 94
-sha256: b80245901e88faaabc5bdff99229c8e89907be449d751d23c6cf48d15c216a6c
+block_count: 98
+sha256: 0507f39dfdf8a01d3a670114418caa6da432d8022172680b4e4e4a9b5a5146c9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

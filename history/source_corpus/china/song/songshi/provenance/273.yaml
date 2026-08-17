@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷273
 revision_id: 1476836
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7273&oldid=1476836
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷273</span></span>
-paragraph_count: 65
-sha256: 34c77cb95f516bf4d3814e7d2e79192c1858d1dfc58d5fd268ef8e0a57b6ed49
+block_count: 66
+sha256: 26e553d4b83152694fb4166ac62b078378323ccf4810f62cca30e29a42678427
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

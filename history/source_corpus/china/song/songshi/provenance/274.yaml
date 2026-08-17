@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷274
 revision_id: 1476837
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7274&oldid=1476837
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷274</span></span>
-paragraph_count: 56
-sha256: 40acda066fab3b0826d13383671514a56effdf5a64a7a8502a7f11ebcbe23ce2
+block_count: 60
+sha256: cda6bcf72469e174226335b7a7df5c1d1563497e3d10f5faceeb8389c6e5015a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

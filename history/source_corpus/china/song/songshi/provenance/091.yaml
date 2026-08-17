@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷091
 revision_id: 2169846
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7091&oldid=2169846
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷091</span></span>
-paragraph_count: 72
-sha256: b6bc0a85c6e44ac6f07a3b7e9b7bf93a70aa367604d38571a0d9d43dc94e3ab2
+block_count: 79
+sha256: 9bf4ddc382c5b55243c212fc2b53df5ccd376929c1e39232c837d4a7b55e9dfd
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

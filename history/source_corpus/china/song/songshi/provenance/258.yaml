@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷258
 revision_id: 2434314
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7258&oldid=2434314
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷258</span></span>
-paragraph_count: 53
-sha256: 54664b9b2c83f9407d86bddd66d911a2fea5a52179a7ef6c3547d34e1e7abd2f
+block_count: 57
+sha256: 57290f024edae5c4aace4828247c01355d3e5eb57b85140137dcbd329a0ac983
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

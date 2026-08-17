@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷213
 revision_id: 2201267
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7213&oldid=2201267
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷213</span></span>
-paragraph_count: 2
-sha256: ecf3aadf8bd48b33aeae081aea33533312d6fb130cce5e13ab6426b0a1b3a767
+block_count: 484
+sha256: 96ff88d00176b1be3ae1b0bd25c304b2e67601547c24e4adf3974875dc0989dc
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷296
 revision_id: 1328950
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7296&oldid=1328950
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷296</span></span>
-paragraph_count: 80
-sha256: 36ea48b7b1765fd39ec2e3cec33637621c26112c441773d76c65a31a04c00cc5
+block_count: 84
+sha256: 1cf181e11afd19829c24bc729a8b4f342c68b1fb754d52084c6816160b49ad93
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

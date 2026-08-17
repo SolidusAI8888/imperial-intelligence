@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷340
 revision_id: 1455672
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7340&oldid=1455672
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷340</span></span>
-paragraph_count: 86
-sha256: 85285e9c8586c529f5b953a4ae05223492aa62f614238c8fc7fbf668fdaafd24
+block_count: 90
+sha256: f577bfc6aba500d1c6302ddda18feb281bea9cfab67fb44f18858c887b64037c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

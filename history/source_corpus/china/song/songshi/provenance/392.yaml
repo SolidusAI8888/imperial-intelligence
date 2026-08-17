@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷392
 revision_id: 1767030
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7392&oldid=1767030
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷392</span></span>
-paragraph_count: 34
-sha256: dd0f940886abddfd4b742805dbfba730f0bea6450498c5d15dc22c497af7e6fe
+block_count: 41
+sha256: bbf54652a2ddd1eb4b970c3d71b82deafcf85c038eb9999c0acd22bb5c23d24f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

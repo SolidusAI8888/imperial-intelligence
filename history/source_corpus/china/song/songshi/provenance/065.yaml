@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷065
 revision_id: 1476662
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7065&oldid=1476662
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷065</span></span>
-paragraph_count: 119
-sha256: 0a00a5034fa498a4c7abd7faa08db967ca01bee4c4869796ef34717f1103d260
+block_count: 126
+sha256: b0f254d6d0bc581a7994f9e9ba5797eb75a381af9c3f59fdff8ba81bd6d96a75
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

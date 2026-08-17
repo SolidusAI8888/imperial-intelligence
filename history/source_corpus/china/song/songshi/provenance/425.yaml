@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷425
 revision_id: 1488948
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7425&oldid=1488948
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷425</span></span>
-paragraph_count: 58
-sha256: 668033a342d2c9ecb7168538ee25dc0782025d3e3f1f5e4d4c620323c54d73e2
+block_count: 62
+sha256: 078c878e56d547169e99b11341bf121eacdb509ff50758bfc2bf80f58dd33f9d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷275
 revision_id: 1476838
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7275&oldid=1476838
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷275</span></span>
-paragraph_count: 51
-sha256: 9c113e23b35876571d04aa6e1beb751916b0b06d54faaa2a32e8de9e85d58b63
+block_count: 55
+sha256: d7a7ec7815c1170229b4ea494a5f556d98a85dcbb7f15c437821bece92a28e1a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

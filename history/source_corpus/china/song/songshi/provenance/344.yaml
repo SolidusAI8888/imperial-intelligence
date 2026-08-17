@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷344
 revision_id: 1456866
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7344&oldid=1456866
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷344</span></span>
-paragraph_count: 83
-sha256: 90603d76df1daa281e5c350b3384f2ceaa787185ca5314988aa531ae79ec8808
+block_count: 87
+sha256: db04925fb2b88df6f35cc56cf0ac3e05c515b4dfa4d93b7f881997673244fd83
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

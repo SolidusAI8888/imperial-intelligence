@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷197
 revision_id: 2615660
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7197&oldid=2615660
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷197</span></span>
-paragraph_count: 67
-sha256: f7057e84604219ce03483ebe38e1396e1a45f933a62d81617ef8aa59036d41fa
+block_count: 71
+sha256: 3e9defba5b0ae15e53cc28b61655bd736f5198ec49e29b87eff0239016419a8a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

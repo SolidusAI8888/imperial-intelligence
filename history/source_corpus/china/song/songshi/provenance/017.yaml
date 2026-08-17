@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷017
 revision_id: 7908323
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7017&oldid=7908323
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷017</span></span>
-paragraph_count: 119
-sha256: d6f326902161fc82ae89eade992a7e316cc6035c5846fad08f9d0ce7228a8797
+block_count: 126
+sha256: 8c8edbd66939eef53efdf441c2e32f2ad5f9dac5917f5ed580031258838a0fbd
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

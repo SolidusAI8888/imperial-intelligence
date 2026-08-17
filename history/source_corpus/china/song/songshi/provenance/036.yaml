@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷036
 revision_id: 2285197
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7036&oldid=2285197
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷036</span></span>
-paragraph_count: 76
-sha256: b3120e4f4848cb52c87b26a17f638c6a6005cbcb8bdce3162e224c7a1cef99e6
+block_count: 83
+sha256: 2b035bb790c1d95f4160f8d99ee57f2645c7d0ddf07eef3c0ede422561afebf7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

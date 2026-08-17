@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷201
 revision_id: 2607071
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7201&oldid=2607071
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷201</span></span>
-paragraph_count: 45
-sha256: 9ca6fa86e8b0b1950d69bc067ac97cf8a377f31571c7bb69959708238a58a877
+block_count: 49
+sha256: ce432e81d9a6c79d86e7ac24a68b5ceb9754237ae811730e1626c32f364e9879
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

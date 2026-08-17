@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷085
 revision_id: 2618630
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7085&oldid=2618630
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷085</span></span>
-paragraph_count: 321
-sha256: 50256df1f5e834c6f3ffd72a861ba06fc8414fd8d6d56204042a9ab87c0478b2
+block_count: 328
+sha256: 19dd791d15b7353cdadd3b45e4d43485d86a4d2b67c71853b0bd2cec41cf3eeb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

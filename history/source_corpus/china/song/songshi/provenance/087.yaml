@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷087
 revision_id: 2599839
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7087&oldid=2599839
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷087</span></span>
-paragraph_count: 374
-sha256: d0151dfa7e2faca15c13ee96544ba8a2f4d2e2871686dc075917dc72632c30aa
+block_count: 381
+sha256: 454786beca9a666bede2e52b37ce0b82c06da8a7e9cbfbb5aa94a2b3e07689d6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

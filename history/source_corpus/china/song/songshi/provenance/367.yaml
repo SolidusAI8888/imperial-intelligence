@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷367
 revision_id: 1531662
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7367&oldid=1531662
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷367</span></span>
-paragraph_count: 62
-sha256: 76e1f030778bda88aa9f96f25df2c88ef1bd72336ed76e947b7ae379102a6188
+block_count: 69
+sha256: 94236368c3d0af4bb29a88299a5b490f32156b92638bbe415d8b79c18eb33599
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

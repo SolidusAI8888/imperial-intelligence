@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷360
 revision_id: 1961631
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7360&oldid=1961631
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷360</span></span>
-paragraph_count: 64
-sha256: e4d5ab1b4400fafab2d03456ad851d9d382d71565b40ea106d0ee36bfb1b6698
+block_count: 68
+sha256: 1e4c920b42be040727da0a89e84382ea5d89336a7224aa4e9367488be147e82b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

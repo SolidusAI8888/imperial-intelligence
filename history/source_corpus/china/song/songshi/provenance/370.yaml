@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷370
 revision_id: 1529753
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7370&oldid=1529753
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷370</span></span>
-paragraph_count: 65
-sha256: 7d2ea2af1a5ee3909c76e0287992fc6076f3828d2fb1d09a88d9aba642789cd0
+block_count: 69
+sha256: c025669ffa96db1e73b2dc96ac155abb70cade51110bcd3a18af0b27053a53c0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

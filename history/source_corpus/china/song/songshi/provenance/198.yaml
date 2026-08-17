@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷198
 revision_id: 1376766
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7198&oldid=1376766
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷198</span></span>
-paragraph_count: 108
-sha256: 257354ba3ce09dd5fbd61ca6fe8a213979d5d7335521d017f3ec1fcfdc8ee337
+block_count: 112
+sha256: 43c1a89e6d6af410d999ff42e4f7a307a34f83a485a4cc93a3adcc9bf62bb2c0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

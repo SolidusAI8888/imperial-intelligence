@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷110
 revision_id: 2632730
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7110&oldid=2632730
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷110</span></span>
-paragraph_count: 32
-sha256: dfdc141aded6fcafc6fc0cb6446c0d3a619e6756ee78971e0349177a28413bd6
+block_count: 36
+sha256: 210a52e985cadd10e1101858f97045369587d586903828c94b4ee5dd9a297e28
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

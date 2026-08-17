@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷244
 revision_id: 2627233
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7244&oldid=2627233
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷244</span></span>
-paragraph_count: 82
-sha256: 7806af62bc1a6dd0d58e6130fb3bb16bda8e96b818d8ac717b390aa9d5495f3c
+block_count: 86
+sha256: eecde7324c60681f23463c98456c67d9cd602eb51988a8068a8520bd7a78e009
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

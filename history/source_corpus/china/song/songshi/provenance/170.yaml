@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷170
 revision_id: 2610837
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7170&oldid=2610837
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷170</span></span>
-paragraph_count: 64
-sha256: 4bdf97a69c8513ff6be8e44c2dcc9afd3dbbe6935bc90db14547eeb698d6df8d
+block_count: 68
+sha256: 54df494791a0ef5eb2ae2d5bfa9029ff2462ff98960e1162a9d015ebb3974832
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

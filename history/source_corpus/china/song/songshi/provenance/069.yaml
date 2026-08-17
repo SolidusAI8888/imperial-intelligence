@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷069
 revision_id: 845873
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7069&oldid=845873
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷069</span></span>
-paragraph_count: 113
-sha256: c373cfd611cfff4a551227af4385f331e966916c9322ab4ddfbb53fd662bff4a
+block_count: 120
+sha256: 1cf38ebb41d726cbf2217c43220554ee27735bd22fc13f4a06728f18576fe19d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

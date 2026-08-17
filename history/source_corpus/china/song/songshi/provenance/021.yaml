@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷021
 revision_id: 2285116
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7021&oldid=2285116
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷021</span></span>
-paragraph_count: 96
-sha256: 82f6d76926f1d5293fa39d868ddc3e06502ba25ca2f8cf5a8652b0e48480469f
+block_count: 100
+sha256: 37c400ea568cb2e0401edc05a5d254989f452728a12de97c3a29b414beb24208
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

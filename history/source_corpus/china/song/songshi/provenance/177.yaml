@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷177
 revision_id: 1476734
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7177&oldid=1476734
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷177</span></span>
-paragraph_count: 68
-sha256: 52c6a72c9a76e6095c05ae5e4b95e8a0d4b143d90e28c329429a45ea63b4e346
+block_count: 72
+sha256: 85e99f60dfc4483ebcc872284357e4b582711f7d2fa792890d1aeac622d91876
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

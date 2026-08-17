@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷418
 revision_id: 2606176
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7418&oldid=2606176
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷418</span></span>
-paragraph_count: 71
-sha256: 461c301b06c95685a85f71d83f34d6e9c561a5c022023acf4cf975cb7eb19670
+block_count: 75
+sha256: ffac65e27bca9e8c5ef309d503e903e36d4c3508bc4bd14875a1687bb0bde518
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

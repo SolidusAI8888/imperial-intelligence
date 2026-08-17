@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷400
 revision_id: 2367163
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7400&oldid=2367163
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷400</span></span>
-paragraph_count: 76
-sha256: 45a0b6712c134ddc203d361df8015d9603be527af793553dc2a4f1c555903734
+block_count: 80
+sha256: bf948ae49ce83e831b52f112430bfbd0dbf13e200c62e1569ec76e87e3f5913a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷023
 revision_id: 2630041
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7023&oldid=2630041
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷023</span></span>
-paragraph_count: 23
-sha256: f3541a8bb6cf6cda826ad65972bcd13bda9fb96182818282f693921f94dac964
+block_count: 27
+sha256: 72fe0ade84408a9d1fdf27d13b2f9f7d1d8f27ac210d8a5f3d03949a239d9e88
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

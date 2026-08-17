@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷048
 revision_id: 2619813
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7048&oldid=2619813
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷048</span></span>
-paragraph_count: 59
-sha256: 3c4996e6c7b0dbd6232fffdd01f173dd599ba667fa1f93aec968f8d1966d75d5
+block_count: 66
+sha256: ff3fedc539c67cb548dd34ff3aa8b83f7a711bc22fced313278aa08de9f1cc28
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

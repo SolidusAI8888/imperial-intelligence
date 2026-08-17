@@ -5,9 +5,10 @@ wikisource_page: 宋史/卷052
 revision_id: 7908404
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%AE%8B%E5%8F%B2/%E5%8D%B7052&oldid=7908404
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">宋史/卷052</span></span>
-paragraph_count: 195
-sha256: 1cb19aca081291b86ff61ac33b29635c7bb178931780b7e72f32c409b22c74e0
+block_count: 202
+sha256: 3617436d41b0880c4eee060eaa24c01b3c9f9a3891e57d902ad675d8e5a074fa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
