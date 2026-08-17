@@ -1,12 +1,12 @@
 source_id: CN-HAN-0002
-volume: 16
-part: null
-wikisource_page: 漢書/卷016
-revision_id: 2180274
-permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7016&oldid=2180274
-display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷016</span></span>
+volume: 19
+part: b
+wikisource_page: 漢書/卷019b
+revision_id: 5963077
+permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7019b&oldid=5963077
+display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷019b</span></span>
 block_count: 2
-sha256: de65f3b95bb513ff7e75157c848f84b790a058f1940d65d7f0fb2a90d010b045
+sha256: 3d0443627eacb334567245f20cb01f26a08a918063914223fc7753be2446ada0
 extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.

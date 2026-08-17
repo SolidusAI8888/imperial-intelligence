@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷073
 revision_id: 2645024
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7073&oldid=2645024
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷073</span></span>
-paragraph_count: 39
-sha256: be9a1a4917e0e682b0ee3cf66779f7983fadc9fc03e6bc3b771172aee8a2a58c
+block_count: 35
+sha256: db2d392573aa195ce81a5cc6933b35ccbc868480d3d8be48ba7be9844e91eb14
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

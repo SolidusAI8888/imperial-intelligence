@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷048
 revision_id: 2605401
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7048&oldid=2605401
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷048</span></span>
-paragraph_count: 44
-sha256: eb19e2f047971a05ed23886cf821151bc16345571579bb42195e02a37ccdd23a
+block_count: 28
+sha256: febdb834a815a702e9e3386b73123e377481b298c455a7271778d65589b8b0aa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

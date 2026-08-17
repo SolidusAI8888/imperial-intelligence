@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷014
 revision_id: 2605964
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7014&oldid=2605964
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷014</span></span>
-paragraph_count: 13
-sha256: 438674b6fb9a107d1282970a6877d402c1d72d7657279524983c124b6b90aca6
+block_count: 301
+sha256: 1baba5059c3131671031ab1fcfd9f5a020a027095c5c91361f18e6e6a27522a3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

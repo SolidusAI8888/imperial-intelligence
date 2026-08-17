@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷021
 revision_id: 1373695
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7021&oldid=1373695
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷021</span></span>
-paragraph_count: 251
-sha256: ac3a1415ceb5cfdce8db4d73d4583d72b80c418a70520e8ede0aaf51a718e4dd
+block_count: 255
+sha256: 91e75b7127b44ae780ca905a341e95562cb34674f0ba162dee05d53610937816
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

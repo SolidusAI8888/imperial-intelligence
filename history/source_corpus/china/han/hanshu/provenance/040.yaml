@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷040
 revision_id: 2583161
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7040&oldid=2583161
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷040</span></span>
-paragraph_count: 86
-sha256: 9235eb50c0ecafa2eef0ea96eed73cc37818deb921a2c59a339208b79d9452b9
+block_count: 90
+sha256: a243cda132c58e7d30bfc0e17a9b2e7558eeeb6556331fa9881799d55d04aade
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

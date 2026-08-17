@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷042
 revision_id: 2581397
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7042&oldid=2581397
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷042</span></span>
-paragraph_count: 25
-sha256: cc27b1ee911bfb035059d5b93d63bb4068dcf53f796b4191e0f639b07e1def9f
+block_count: 29
+sha256: 218854a229104376da5ed925b8f192b354a06c79bb5aff1ed533b57d67002872
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

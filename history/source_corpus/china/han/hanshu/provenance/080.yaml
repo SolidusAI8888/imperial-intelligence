@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷080
 revision_id: 2605657
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7080&oldid=2605657
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷080</span></span>
-paragraph_count: 29
-sha256: 5f5618d115ad193ecb02a7b1b03c37db3295211bd25e47a92b020a38e8756027
+block_count: 33
+sha256: caafea6e6c5d728321d8d606cfaff2313e1ef5f7d34d1cd567f30568b41e5094
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

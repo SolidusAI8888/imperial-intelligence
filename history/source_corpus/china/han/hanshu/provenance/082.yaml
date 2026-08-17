@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷082
 revision_id: 1570129
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7082&oldid=1570129
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷082</span></span>
-paragraph_count: 22
-sha256: 696cb2743ed56e5ec2a332ab54ab7d8f481b7614537118bea17f98d75da313ed
+block_count: 26
+sha256: a66fc375cea9045a54c9473611613dfd128814aefe5fcd42317b353b3df3712a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

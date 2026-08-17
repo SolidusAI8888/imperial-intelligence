@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷005
 revision_id: 2610753
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7005&oldid=2610753
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷005</span></span>
-paragraph_count: 74
-sha256: c31afaecea2871ab25c0c60bf110cabe4d3190288cec482392f0fd678d3fc362
+block_count: 78
+sha256: dcb4d2115c6ef23b166e3133fdab6d760f5423c59e7738ae1f433d8b15793716
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

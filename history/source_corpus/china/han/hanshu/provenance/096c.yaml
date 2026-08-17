@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷096下
 revision_id: 2605487
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7096%E4%B8%8B&oldid=2605487
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷096下</span></span>
-paragraph_count: 69
-sha256: 7bf9cb5606d164745527d378ae607981470d61de5799ff54de9f36c65d77ca5c
+block_count: 72
+sha256: cef52368da3c3aa9e6104f69899f8a09cb707ed48ddfd5e4bf94033ce56b7373
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

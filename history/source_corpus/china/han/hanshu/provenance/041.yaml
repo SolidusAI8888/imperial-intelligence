@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷041
 revision_id: 2342290
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7041&oldid=2342290
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷041</span></span>
-paragraph_count: 47
-sha256: 7c55e066d26bbc8f04c9521cc48b05175b56a6a6b453a6ddfe0e948c22a118d7
+block_count: 51
+sha256: 540c910a8e88e2f5f79f1996d0a76c47b8bb107346178f95823eecd7dd94757a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

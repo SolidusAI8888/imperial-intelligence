@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷013
 revision_id: 2605953
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7013&oldid=2605953
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷013</span></span>
-paragraph_count: 4
-sha256: 71ac120d3535062df6e99ca6bf6e9ef4a2b0e929ded80b736882d2ecd6cda563
+block_count: 664
+sha256: 80416b8b9743a32070efbf2dbf68a1f5d4f12d46ec12ac4e88445e3934b0d3a6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷032
 revision_id: 2405477
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7032&oldid=2405477
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷032</span></span>
-paragraph_count: 26
-sha256: 093a4b25fdd5956f317a7b5797fa10fc21a6e2129e0b7ce7930a1d71f273e455
+block_count: 30
+sha256: f6816a09fd11a04b1940df3d891ff86a1acd5395eb0041f7203171e0ea3a89d7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

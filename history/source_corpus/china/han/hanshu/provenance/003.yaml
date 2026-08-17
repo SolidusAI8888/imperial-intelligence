@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷003
 revision_id: 2644501
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7003&oldid=2644501
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷003</span></span>
-paragraph_count: 27
-sha256: 97a950472c67fc84108ca72c47b40da33f54c2e7178e9948157d2ba2063cf0bc
+block_count: 31
+sha256: 14f622fcc913e5586f6e0e0cf0ae252d8a3121e3c421bf8afdf63379b60533db
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

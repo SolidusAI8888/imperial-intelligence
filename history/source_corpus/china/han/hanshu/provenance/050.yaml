@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷050
 revision_id: 2101579
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7050&oldid=2101579
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷050</span></span>
-paragraph_count: 41
-sha256: bf78a6a7895d5b100acda30697cfc740bc204f3a627f1281868995284fc69ef8
+block_count: 45
+sha256: a9603ccfd87baf1bab70604a35c70f3e8eb5a614d7f4ac329331b183508e84e8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

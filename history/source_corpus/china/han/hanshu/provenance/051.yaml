@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷051
 revision_id: 1748700
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7051&oldid=1748700
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷051</span></span>
-paragraph_count: 64
-sha256: dae800deeabb40324d0589ce370d25e36cfccd0abc4f75e40dcfeff3c790974b
+block_count: 68
+sha256: 960c04ed808c8e8dd2ab5abb053459030c7fe53bce21951562ca7df48cbf31c1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

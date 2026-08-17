@@ -1,12 +1,12 @@
 source_id: CN-HAN-0002
 volume: 15
-part: null
-wikisource_page: 漢書/卷015
-revision_id: 2605965
-permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7015&oldid=2605965
-display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷015</span></span>
-block_count: 1001
-sha256: 328cba855a0363557a1d0fa68070122e4f2e8b933c8a52ff82d2fd11ae40f22e
+part: b
+wikisource_page: 漢書/卷015b
+revision_id: 2270658
+permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7015b&oldid=2270658
+display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷015b</span></span>
+block_count: 991
+sha256: 21287b7dd7aab80f42d58a3ca543ec320d4a6e280ac36c52c48bb11031d38e9b
 extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.

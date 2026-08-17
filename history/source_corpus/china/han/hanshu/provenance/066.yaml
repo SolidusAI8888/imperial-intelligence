@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷066
 revision_id: 5979001
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7066&oldid=5979001
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷066</span></span>
-paragraph_count: 46
-sha256: 949505bbc470f05aa8820e0b42635c03b280001415d34b5bef7a8e0300b4fa4a
+block_count: 50
+sha256: 87009089e158ed4e450d1a8d6a3c7d56bcc918574a6022317e18b31b8d199016
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷020
 revision_id: 2117895
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7020&oldid=2117895
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷020</span></span>
-paragraph_count: 5
-sha256: 0e504d4772bff234b0518e7e1adb1bcab447899e6e419433b46923b4b446d2db
+block_count: 1971
+sha256: c3abe8c842e0d1663eafe9dedafedaebef0ea2ce7ad9f7c4cc7560b035eb14a9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

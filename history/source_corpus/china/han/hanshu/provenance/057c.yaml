@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷057下
 revision_id: 5979051
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7057%E4%B8%8B&oldid=5979051
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷057下</span></span>
-paragraph_count: 1
-sha256: 15cc68926c0fe11451be7138a6f44f5202e265d464e9c835bd362319094172e5
+block_count: 2
+sha256: 3180b8c6a23c7996847df670a35441948c7557d1c4429861729fd185f1231be1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

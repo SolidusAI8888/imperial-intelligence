@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷037
 revision_id: 500263
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7037&oldid=500263
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷037</span></span>
-paragraph_count: 18
-sha256: fd81288f93b280d2f8d1f0fa9275745deca25c18b54aee815b58946fd9100342
+block_count: 22
+sha256: 1028205ad67dd391fafa87d43ee37c516ab3b8389e07640117630a888f41b32b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

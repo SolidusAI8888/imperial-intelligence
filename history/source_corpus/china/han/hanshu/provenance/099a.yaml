@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷099上
 revision_id: 2318364
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7099%E4%B8%8A&oldid=2318364
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷099上</span></span>
-paragraph_count: 81
-sha256: 29c5feedead5d7ff357cc83fe0cf7dba5a6bc19adf560dc2ce8f62d2a9e75ae4
+block_count: 85
+sha256: b4f10d249da3d48c1b20089a59b4d3d145a6daa93255055dd500872471827b42
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

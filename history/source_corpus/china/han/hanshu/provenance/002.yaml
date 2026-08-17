@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷002
 revision_id: 2567279
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7002&oldid=2567279
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷002</span></span>
-paragraph_count: 28
-sha256: cceb09e2d5666a64743ce7369b7df0e63a6ca08fb5d0a6c60cf2f0fd6177b74d
+block_count: 32
+sha256: 41728c255d423ce57a6f998a8015eca5c77cee292035bf56182e94f296c4f823
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

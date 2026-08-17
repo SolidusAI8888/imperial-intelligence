@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷045
 revision_id: 2606009
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7045&oldid=2606009
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷045</span></span>
-paragraph_count: 41
-sha256: c5d4a2e0c9043c914299ba2761264d2cba8f6117c5469bd72bfe9056dc86bc9c
+block_count: 45
+sha256: c02cd617d074baf011056b9056b389cd49024fb615b4f6aca7f836bcd428f4a6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

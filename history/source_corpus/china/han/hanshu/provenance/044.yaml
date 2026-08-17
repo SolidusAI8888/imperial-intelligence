@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷044
 revision_id: 1748694
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7044&oldid=1748694
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷044</span></span>
-paragraph_count: 33
-sha256: caf961a6221a173cd42b23cae9a0a67faf78aeb55149651fb7a90018c5d8b0af
+block_count: 37
+sha256: cbd886876a75e9f052b513f4bee93f3c80842911f0883ef91ee1167eb1f89a5a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

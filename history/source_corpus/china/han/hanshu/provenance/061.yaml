@@ -5,9 +5,10 @@ wikisource_page: 漢書/卷061
 revision_id: 2605403
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7061&oldid=2605403
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">漢書/卷061</span></span>
-paragraph_count: 25
-sha256: c0db4d53a76270e9a23cd5de46d521d8c3788573d4682a29189cb3120756810a
+block_count: 29
+sha256: 0552b4b08d8bd00a4a3d556e9fd3d8ceb6bdd65394c23c07db6f41a83b115c23
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
