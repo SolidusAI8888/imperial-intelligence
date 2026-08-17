@@ -1,0 +1,41 @@
+schema_version: 1
+object: experience_graph
+required:
+  - graph_id
+  - person_id
+  - heu_nodes
+  - edges
+properties:
+  graph_id:
+    type: string
+    pattern: '^XG-[A-Z0-9-]+$'
+  person_id:
+    type: string
+  scope:
+    type: string
+  heu_nodes:
+    type: list[string]
+  edges:
+    type: list[object]
+    item_fields:
+      from_heu:
+        type: string
+      to_heu:
+        type: string
+      relation:
+        type: enum
+        values: [precondition, consequence, learning, reversal, reinforcement, contradiction, later_reflection]
+      evidence_ids:
+        type: list[string]
+      confidence:
+        type: number
+        range: [0, 1]
+  longitudinal_interpretation:
+    type: string
+  status:
+    type: enum
+    values: [draft, reviewed, accepted, deprecated]
+validation_rules:
+  - 'Edges must not assert psychological causation solely from chronology.'
+  - 'Learning/reflection edges require explicit or strongly attributable historical support.'
+  - 'The graph supplements HEUs; it never replaces the underlying evidence chain.'
