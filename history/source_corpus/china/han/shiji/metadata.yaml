@@ -1,0 +1,37 @@
+source_id: CN-HAN-0001
+title: 史记
+corpus_key: shiji
+archive_status: registered_not_ingested
+
+base_text:
+  edition_or_witness: pending
+  provider_or_repository: pending
+  source_url_or_identifier: pending
+  access_date: pending
+  rights_status: pending_review
+  checksum: pending
+
+text_policy:
+  preserve_full_original_text: true
+  storage_unit: natural_paragraph
+  preserve_volume_structure: true
+  preserve_section_titles: true
+  preserve_original_characters: true
+  punctuation_policy: >-
+    If modern punctuation is present in the selected digital witness, record that fact explicitly.
+    Do not silently convert an unpunctuated source into a punctuated canonical text.
+  normalization_policy: >-
+    No silent normalization. Character normalization, variant resolution, or corrections must be
+    represented as derived annotations or provenance-tracked archival revisions.
+
+canonical_id_policy:
+  source_prefix: CN-HAN-0001
+  paragraph_id_pattern: CN-HAN-0001-V{volume:03d}-P{paragraph:05d}
+  stability_rule: >-
+    Once a paragraph canonical ID is published and referenced by downstream knowledge objects,
+    it must not be reassigned to different source content.
+
+content:
+  full_text_present: false
+  volumes_archived: 0
+  paragraphs_archived: 0
