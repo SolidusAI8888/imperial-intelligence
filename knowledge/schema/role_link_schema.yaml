@@ -1,0 +1,34 @@
+schema_version: 1
+object: role_link
+required:
+  - person_id
+  - heu_id
+  - relation
+  - responder_eligibility
+properties:
+  person_id:
+    type: string
+  heu_id:
+    type: string
+  relation:
+    type: enum
+    values: [experience_owner, decision_maker, witness, participant, affected_party, chronicler]
+  responder_eligibility:
+    type: object
+    fields:
+      eligible:
+        type: boolean
+      reason:
+        type: string
+      personal_experience_strength:
+        type: enum
+        values: [none, weak, medium, strong, primary]
+  life_course_rule:
+    type: enum
+    values: [full_lifetime]
+  source_support:
+    type: list[string]
+validation_rules:
+  - 'A responder must have personally relevant experience; mere chroniclers or distant witnesses are not sufficient unless the product explicitly requests their analytical viewpoint.'
+  - 'Role selection occurs after HEU retrieval, never before.'
+  - 'Eligible responders are interpreted using their complete lifetime experience, including later reflection where historically supported.'
