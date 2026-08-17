@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷026
 revision_id: 2017320
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7026&oldid=2017320
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷026</span></span>
-paragraph_count: 94
-sha256: 6bf2447affdb047a0b11e11eb3627c513ef4f72bc6f4b6f3905a15451730e019
+block_count: 466
+sha256: 5583f031d43cbe44a2dd3e78df67c3afc31183b519663cb8b2f7d776e51a1045
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

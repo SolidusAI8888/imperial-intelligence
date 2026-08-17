@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷136
 revision_id: 2603077
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7136&oldid=2603077
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷136</span></span>
-paragraph_count: 31
-sha256: 40eaed0c684070a1a5ffcccf7d40d58c272524b44a3dcf6299f0deacc820530f
+block_count: 37
+sha256: b4fcbd50c589501761931448ebc9ea1f59d98119b277b4addb5eb583c275dcab
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

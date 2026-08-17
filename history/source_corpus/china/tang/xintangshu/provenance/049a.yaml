@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷049上
 revision_id: 2026356
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7049%E4%B8%8A&oldid=2026356
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷049上</span></span>
-paragraph_count: 96
-sha256: a6d6ef62787d47e48d216aedd17f6010c2b017e59f1d2faeb42bf04dd0b43ae3
+block_count: 102
+sha256: 780c9024c471183b1fac23031de7c29484378d6152dc503ba082445da5d1527b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

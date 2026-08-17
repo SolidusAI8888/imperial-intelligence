@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷223下
 revision_id: 2081033
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7223%E4%B8%8B&oldid=2081033
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷223下</span></span>
-paragraph_count: 30
-sha256: ef27d4f26d8238249e5adf9662e5f4f25104256c64cfc0bf840e543722bd48da
+block_count: 36
+sha256: 7c2c4b6d909bbead3884a7897e34b9dd9a9b8a4e8a904e19d515c13033c1d922
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

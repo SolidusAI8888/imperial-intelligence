@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷172
 revision_id: 1490643
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7172&oldid=1490643
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷172</span></span>
-paragraph_count: 39
-sha256: 01e86ff5211735ba4018c28942b92eab0d787b70fa3931dce7cdb1c50f15a2c9
+block_count: 45
+sha256: 4f2f99ae73c6bf79401fc99fc6f5e02ef46c00e6cf64ff8968714825d9a2d800
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

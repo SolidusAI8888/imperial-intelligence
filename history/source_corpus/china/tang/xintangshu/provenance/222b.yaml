@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷222中
 revision_id: 2615667
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7222%E4%B8%AD&oldid=2615667
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷222中</span></span>
-paragraph_count: 41
-sha256: c8e228aa16c6d8f857575dd6c04eb1c0b39ebcb0bf77320f0cbe7481d4cc8ca4
+block_count: 47
+sha256: 1f742f5609e1cf6f388204151840a09ae85d4528f88bb22ebca4d87bbc139507
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷097
 revision_id: 2693693
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7097&oldid=2693693
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷097</span></span>
-paragraph_count: 52
-sha256: e50194602fc6c99cbff803b74e7e0092e7c107b97c0269f5b03154f52989531c
+block_count: 52
+sha256: f75a73d71ae485c0b23fb60d9799c48e481e74402c7d0c41e0a21a61824d289b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

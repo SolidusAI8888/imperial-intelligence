@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷005
 revision_id: 2017326
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7005&oldid=2017326
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷005</span></span>
-paragraph_count: 353
-sha256: d52ad3131a12cbc4d7d2c28a491284a684dc811c5dbe3eec55d2ea90c2613753
+block_count: 357
+sha256: d73510a5e910138ed867fb67c734bde04b36d9c58fad1c7772286add6a061bc3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

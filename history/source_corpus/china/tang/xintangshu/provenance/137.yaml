@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷137
 revision_id: 982743
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7137&oldid=982743
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷137</span></span>
-paragraph_count: 34
-sha256: 4b5ddb7eca51bca9063940313969ea4a8d8cf852b7f644e89cf6ae16557b652b
+block_count: 40
+sha256: 34b5e9f8dc9b71bcdf718e4f80fece83b161a4a4b8d559e389074d13004b66fe
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

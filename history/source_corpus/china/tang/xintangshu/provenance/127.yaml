@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷127
 revision_id: 1754379
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7127&oldid=1754379
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷127</span></span>
-paragraph_count: 53
-sha256: d06ee97ba5994ccb8de4209793283a85c7b82a9c85cf87f63bfb01f5b72ec65c
+block_count: 59
+sha256: 4a0464c849d1f6fd23e8d05f25b853afece6d776112e215d9be1709179aec547
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

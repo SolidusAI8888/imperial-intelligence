@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷067
 revision_id: 2391823
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7067&oldid=2391823
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷067</span></span>
-paragraph_count: 2
-sha256: 69a8bdadb0ecf03192133b2aa838ab8b0cc15d1390222cbf858116914dd266e1
+block_count: 510
+sha256: cf9e07308a8ab8d1fb7fdfce140e86a498f4dd9b16af71373ecce2a39fa9fa91
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

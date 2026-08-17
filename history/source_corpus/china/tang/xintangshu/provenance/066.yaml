@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷066
 revision_id: 2391822
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7066&oldid=2391822
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷066</span></span>
-paragraph_count: 2
-sha256: 646e2b2181117b4b562177ecaa0caa6e542574f567fa32d6d6a44a4e97b33530
+block_count: 492
+sha256: e9ae2842105d4dbf6954737e0519f0a366776faafcff33e4d88e6a3b0a753030
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

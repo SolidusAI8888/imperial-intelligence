@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷219
 revision_id: 2543104
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7219&oldid=2543104
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷219</span></span>
-paragraph_count: 44
-sha256: 9c82aa935d54ddfacbf0c1d6be331b5140f731f514bdd31a809cfb9fb6ad0e7a
+block_count: 53
+sha256: d7cc7e4dff35c479743cf53ee82fb1f8c153aea4e2adb0f96c4d81d06c2bb36c
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

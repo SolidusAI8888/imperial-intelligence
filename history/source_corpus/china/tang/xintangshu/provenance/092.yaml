@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷092
 revision_id: 2610535
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7092&oldid=2610535
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷092</span></span>
-paragraph_count: 34
-sha256: 09a79982b3d96238ec563bb1730d5ddb602e1625ef96e811aac54dd525278ab3
+block_count: 40
+sha256: 848bbf1f0dd721bff6fc3363c81ceb74dc7da104ee06ad402f0f5fa0dfa87b23
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

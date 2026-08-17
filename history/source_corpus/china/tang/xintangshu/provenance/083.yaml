@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷083
 revision_id: 2605952
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7083&oldid=2605952
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷083</span></span>
-paragraph_count: 242
-sha256: 584e2cf9e2ea776376dcbc55fe7bf82a364c5d0d2c0efd73ef880c3ffa31c1a4
+block_count: 248
+sha256: d5eb828737bb2a9786a2201197faef6b39b1bedfab5521698c4757ffac9fe5ef
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

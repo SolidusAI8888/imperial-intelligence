@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷162
 revision_id: 2609311
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7162&oldid=2609311
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷162</span></span>
-paragraph_count: 55
-sha256: 25dd4a9fd8793518efaa67c32fee67c8880a79f0797837a56a740d11ade732b8
+block_count: 61
+sha256: f1bee1fc5118df13d13423b6eb9ea878984e9570939819411136afc09f552223
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

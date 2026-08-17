@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷036
 revision_id: 2691831
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7036&oldid=2691831
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷036</span></span>
-paragraph_count: 256
-sha256: 07d144d5babfb2c2fa1fd71aa84f3c20b8f75d4138510886941ac8688e2ef29a
+block_count: 262
+sha256: e60c2439de025b24b43fcc6b5557182bdbf4f5e9c2415aff558aa232cfce6470
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

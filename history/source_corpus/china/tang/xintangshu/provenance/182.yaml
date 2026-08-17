@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷182
 revision_id: 2020347
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7182&oldid=2020347
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷182</span></span>
-paragraph_count: 78
-sha256: 1820a9cde090906a7b1df423c76161b53418f906b978468b17dcaf6aecfc53c1
+block_count: 84
+sha256: 2fab462ec1031123263bf183fb08a7a2980d2b8ee1c7ef6aba343971a82385e1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

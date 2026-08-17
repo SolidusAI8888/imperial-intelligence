@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷150
 revision_id: 1502709
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7150&oldid=1502709
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷150</span></span>
-paragraph_count: 32
-sha256: 6cef7805c4e433eeb180c23bee8b886c3878297df4cbd0ae3fb7ac0479099eac
+block_count: 38
+sha256: 46973fa4b4cd57e62deadd5227684f9091286c498cf8360c84e070a7ac77ae43
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

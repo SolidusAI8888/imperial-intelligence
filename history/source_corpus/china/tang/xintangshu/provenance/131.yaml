@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷131
 revision_id: 1519706
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7131&oldid=1519706
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷131</span></span>
-paragraph_count: 46
-sha256: 1e47deccdfdea6ddb9873a9d2b563b990455c86f800af8dd54f895c948639bf8
+block_count: 52
+sha256: 81f77d13201bd103123308f6f05e0df784abd827407e277d1142cba941f71c50
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

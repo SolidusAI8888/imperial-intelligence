@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷181
 revision_id: 2605299
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7181&oldid=2605299
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷181</span></span>
-paragraph_count: 28
-sha256: e9f766bd1ef908d349dfd11ae1f45f36cdc44fe97e0f905d045f682c1f788537
+block_count: 34
+sha256: 3170762d493cf962f00be672bce19c0e4124b2c079bd6542ca7c3ef07007ab08
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

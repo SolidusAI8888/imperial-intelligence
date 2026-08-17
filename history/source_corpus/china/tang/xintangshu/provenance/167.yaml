@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷167
 revision_id: 2020353
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7167&oldid=2020353
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷167</span></span>
-paragraph_count: 52
-sha256: c8a006c04241482c5364215d6b96498ade4423d027c835008fab3ade9005808b
+block_count: 58
+sha256: 80bbef2f34cfb83abb9641534b360bbb0aabc7ee714f3ab0bbe54629adf53288
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

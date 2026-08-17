@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷039
 revision_id: 2691805
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7039&oldid=2691805
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷039</span></span>
-paragraph_count: 59
-sha256: a6879ae455a7d1849e0efbc2f1a4ce18e2a07404e6d34f9b14960345c14916a8
+block_count: 65
+sha256: 9ad4679a1a0eadb37a1b42f0daac7a6abfb18d7d08076866b848e9265a9764c0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

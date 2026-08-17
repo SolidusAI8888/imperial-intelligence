@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷022
 revision_id: 2017240
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7022&oldid=2017240
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷022</span></span>
-paragraph_count: 32
-sha256: f68f42c43dc89e6f2b54a0bf9ac5599bbf729ecb1b52cd3b337d23aebb5f1715
+block_count: 38
+sha256: cd563e50cdd22f9b8469ab1ccf7d83edf85de1de1d20dce94995a02e71a9b01f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

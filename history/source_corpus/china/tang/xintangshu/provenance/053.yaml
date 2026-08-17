@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷053
 revision_id: 2017602
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7053&oldid=2017602
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷053</span></span>
-paragraph_count: 26
-sha256: 52f31a10fff4984d6dcbecfd2627ab118b3b28afc486d71a7ae2e938ed26c773
+block_count: 32
+sha256: a60247e690111052cd3bbdb83e3fdf720a0f92a7848ef3c21d8616cd2093c659
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

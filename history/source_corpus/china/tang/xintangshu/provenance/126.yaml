@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷126
 revision_id: 7904672
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7126&oldid=7904672
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷126</span></span>
-paragraph_count: 70
-sha256: 13abfe55ef08b8c295470d2378b9eca26b75178b6134c17dea43004968e08051
+block_count: 76
+sha256: d73129dff4e40fbc557dde11507abc932600f5b5208e54c896ac954f1f95ac42
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷012
 revision_id: 2017170
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7012&oldid=2017170
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷012</span></span>
-paragraph_count: 17
-sha256: 1cefb99648abcd85a1976fe998f892c2fb9509fc157d5868cf572113c1f32e5a
+block_count: 23
+sha256: 2f1a115580f31448cbaa09436b882b19ba7fed842d6b89436629ab2dd7007cc0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

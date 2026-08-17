@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷198
 revision_id: 7904528
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7198&oldid=7904528
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷198</span></span>
-paragraph_count: 84
-sha256: 3772532c079c49c010975dadcc35798244ba61454daf93207867eeb2e2e0bb10
+block_count: 90
+sha256: 34025e6bf6081a23451b9395bc378a053aa0419cea8b39d54a9a33c8a3a6d3ce
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷221下
 revision_id: 7905166
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7221%E4%B8%8B&oldid=7905166
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷221下</span></span>
-paragraph_count: 78
-sha256: 39d772c3bd33569a93ebafaaf951f0f8ffa2b19f04e1b0c49fe2c90637d14fba
+block_count: 84
+sha256: 6dd9ce1488f2e197b7885ca1ac5a666e7b46b19b56946228128ebc53901c8615
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

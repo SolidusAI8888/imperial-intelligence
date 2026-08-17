@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷095
 revision_id: 2693690
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7095&oldid=2693690
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷095</span></span>
-paragraph_count: 35
-sha256: acd6fc31bdd73418c85f1594cc39e06d4940e9722b8e3f6be6fd97cda5db3416
+block_count: 41
+sha256: 87365d3e994e7ffe414d4b308dec66dae8e530582fa18321487e9e4d671398a3
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

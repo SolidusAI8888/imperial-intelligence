@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷216上
 revision_id: 2693560
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7216%E4%B8%8A&oldid=2693560
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷216上</span></span>
-paragraph_count: 46
-sha256: 7060d31f6dcee454dfe003599c26dc0cd03ce489a8ea79778d738e1e82e3454d
+block_count: 52
+sha256: 511b5a396eda59a210f71213178c7e606c50ca43089884cfbe8a6f77f952c961
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

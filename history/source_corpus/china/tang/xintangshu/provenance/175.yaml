@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷175
 revision_id: 2293922
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7175&oldid=2293922
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷175</span></span>
-paragraph_count: 32
-sha256: 774d21544d9d4cc25d3beb9f8ebe0e4c4cd2b5db5a96194129631447641db2f4
+block_count: 38
+sha256: 1f21a45dd3695f13de3823ca0d9871e567a5f0e72601b1b21c52403b8972ca88
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

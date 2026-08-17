@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷134
 revision_id: 2574526
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7134&oldid=2574526
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷134</span></span>
-paragraph_count: 27
-sha256: db1ed0dec953881ed72c12f63fccd7320dbfd1f46f5f61ce4c51b4f71f525d2a
+block_count: 33
+sha256: d90fa99278d1714c2aca6bdddf9084f0b8d26d68d2b2dbb4d93028399fb2e94a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

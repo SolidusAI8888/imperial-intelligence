@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷215上
 revision_id: 2693552
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7215%E4%B8%8A&oldid=2693552
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷215上</span></span>
-paragraph_count: 58
-sha256: 93925d4e660fec9c95b024a451d51cefb0e4803e0139f46c17b6de6d5cb1da5f
+block_count: 64
+sha256: 4a567f04079ee5a94f0ad2ba030abda09d66c79e6cc52031feb2009378578745
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

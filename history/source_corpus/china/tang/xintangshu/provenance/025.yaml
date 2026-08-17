@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷025
 revision_id: 2017310
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7025&oldid=2017310
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷025</span></span>
-paragraph_count: 82
-sha256: e9a234192e97c58036b5b8f93e65d121aeb37be7daaea713f1a93fd431310be6
+block_count: 279
+sha256: 89c6b0afbf46709bcadec1abc0a6bbeb556cad0ea440a00880136b443ce1dedc
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

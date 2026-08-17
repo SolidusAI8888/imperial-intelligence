@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷119
 revision_id: 3827258
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7119&oldid=3827258
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷119</span></span>
-paragraph_count: 36
-sha256: 85f7e864db1b02b1534e8d97e8e65e0aaf32efd0109eb5c7c0a375a059081568
+block_count: 42
+sha256: d3c1dd06edcbc18689881e0e7816e380f03de3607515e68d72c3eb9676e7c4ae
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

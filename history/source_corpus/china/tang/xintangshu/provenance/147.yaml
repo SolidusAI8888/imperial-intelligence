@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷147
 revision_id: 2020354
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7147&oldid=2020354
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷147</span></span>
-paragraph_count: 51
-sha256: c0e383d154497c99b8b8cc8b41e040025721a911cc09e4d28afd391ef3333d71
+block_count: 57
+sha256: d39be45bfc12baf4351a75e30db98577ab0df86b73d4690b9f2e046f000d8c80
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

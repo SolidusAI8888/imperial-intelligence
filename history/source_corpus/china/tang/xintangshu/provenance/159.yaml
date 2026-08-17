@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷159
 revision_id: 2604410
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7159&oldid=2604410
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷159</span></span>
-paragraph_count: 46
-sha256: ed8c7f63391b615c586bdbee7b7187fe0d353f58cac1d361ec386b89b373064f
+block_count: 52
+sha256: 460dd07133c791a715e8c6ccfb4579e73d9f6f26780bd2f3c6c12bbc4ccc5c9f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

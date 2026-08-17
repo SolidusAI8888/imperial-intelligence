@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷008
 revision_id: 2017152
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7008&oldid=2017152
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷008</span></span>
-paragraph_count: 313
-sha256: 334f7e3c4bd5538313df07aafc69a34096a8b7dbcd4cc66cf544fe53ba563c77
+block_count: 319
+sha256: 71b9df46268764a6917007d1d1d3d60766ccad96b45feb97a2cee2a48c811c8e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷114
 revision_id: 1553946
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7114&oldid=1553946
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷114</span></span>
-paragraph_count: 36
-sha256: de64a768f9513a67e4b572029f99558a7dafa8c9936a8aac19fcaa71aa20afbd
+block_count: 42
+sha256: 423bdffb05e61cd08daf03c0ae10c1422fd9556070c9288f76338da394c9d8f0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

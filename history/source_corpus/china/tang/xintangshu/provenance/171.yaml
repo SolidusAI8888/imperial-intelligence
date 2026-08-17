@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷171
 revision_id: 2610729
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7171&oldid=2610729
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷171</span></span>
-paragraph_count: 45
-sha256: e84f26f9e810ad52af9dde8cb9a8af71a6e2b24fbb629496d68f86db50412de7
+block_count: 51
+sha256: d0e7c4c44a08af3dc914d6b603c4f425360bdb1f75e95848c1e6ef77c058a5b0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

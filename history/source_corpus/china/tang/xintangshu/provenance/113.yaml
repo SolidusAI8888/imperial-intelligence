@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷113
 revision_id: 2310274
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7113&oldid=2310274
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷113</span></span>
-paragraph_count: 35
-sha256: d437a070150149d5222b905e1ca625eb302b9e2a5d67a5e23c3a0c26fbae0335
+block_count: 41
+sha256: 4e92535ed07b1fec7e971d298a5990da20a35aa44dcd2c5b5f95d064dfd5b06b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

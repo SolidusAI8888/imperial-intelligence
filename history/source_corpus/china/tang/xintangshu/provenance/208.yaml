@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷208
 revision_id: 2693529
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7208&oldid=2693529
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷208</span></span>
-paragraph_count: 52
-sha256: e9f73ef2eca925a2005500f8a06676bed6f9a33409062df622fe93d3e4117d57
+block_count: 58
+sha256: ade447de35750d40384eeb088a1cae03377ce50b876e7af11b6154e02b3015e1
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

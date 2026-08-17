@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷093
 revision_id: 2175677
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7093&oldid=2175677
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷093</span></span>
-paragraph_count: 41
-sha256: 47ce52b61a388001c4ae0d2cf6292cdbae9e673da887b31e2aee094721f1f28e
+block_count: 47
+sha256: 4ad13120bed598a6d804e545073c948a366a101da989107a400ab85e96d1a509
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

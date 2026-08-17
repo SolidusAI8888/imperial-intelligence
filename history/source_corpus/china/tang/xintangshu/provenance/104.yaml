@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷104
 revision_id: 857494
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7104&oldid=857494
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷104</span></span>
-paragraph_count: 36
-sha256: 9967c5fad36083d4a3d31bed0b36943ee454ab60edf7fd451b9a9695f929d3a2
+block_count: 42
+sha256: 5cdc28fe9abb44a8fa046c76481c021019c11415dde1a60dce00211af551b4dc
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

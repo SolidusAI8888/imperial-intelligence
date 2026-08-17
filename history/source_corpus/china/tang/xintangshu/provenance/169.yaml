@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷169
 revision_id: 2606372
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7169&oldid=2606372
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷169</span></span>
-paragraph_count: 50
-sha256: 09ac02fd56dc4700a83a136ae48f40c8600ce52a2589c8f02dfeaf3dedd30b0a
+block_count: 56
+sha256: 22c82eae9f50f9e78f270ba82348e6949106a64cbfe201b231d2ac70c49b01d4
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

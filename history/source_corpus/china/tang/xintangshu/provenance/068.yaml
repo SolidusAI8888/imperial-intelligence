@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷068
 revision_id: 2391824
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7068&oldid=2391824
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷068</span></span>
-paragraph_count: 2
-sha256: ca0e38d101d4f88ad252882d9755fca7be2061cee009d263ebbd93c0faba3ea3
+block_count: 513
+sha256: e92468088c453bfaa5e41a9f1c6ea3f290b936338015753b377e8aca3330d1fd
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

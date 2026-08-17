@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷062
 revision_id: 2391819
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7062&oldid=2391819
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷062</span></span>
-paragraph_count: 2
-sha256: 9843abae5e204f44104b13531067ac69f153c03a40e8b6dd97dce9c1dcfe023e
+block_count: 341
+sha256: fd27e8cfa7bf5c3ea7152262b358cbd1e8d0d4048a32bbb56aee1e1406e23e50
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

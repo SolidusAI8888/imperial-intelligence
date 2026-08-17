@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷220
 revision_id: 2638640
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7220&oldid=2638640
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷220</span></span>
-paragraph_count: 54
-sha256: 57a2312fdcf2642767a07363d4b1cea7cf39871ec7bba4de02a92ba68c4d53aa
+block_count: 63
+sha256: 063ed2bda67326cabf77ad07895f4d1233ebdf3cd7a2409073925f92eab6d386
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

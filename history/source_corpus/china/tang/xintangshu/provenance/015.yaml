@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷015
 revision_id: 2017173
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7015&oldid=2017173
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷015</span></span>
-paragraph_count: 27
-sha256: 485266e2ddb615e1c7d9985bf1271b75da3c6e9d98bfc9d3cb9af426a7f23076
+block_count: 33
+sha256: 34513beec71bb2ab80c1ff09e31850cfb57e6009c20a8aa0add96d49498f0c63
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

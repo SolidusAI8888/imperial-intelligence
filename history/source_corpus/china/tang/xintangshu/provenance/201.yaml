@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷201
 revision_id: 2446706
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7201&oldid=2446706
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷201</span></span>
-paragraph_count: 72
-sha256: 09fdf22eb243e8f96de60373580e59f55942758f2c7e498ad0e8934ec455a5d7
+block_count: 78
+sha256: 9e3a1f820f51dbdc9e9677a64c6a2101ee09fe44e82361d64a315453821c3633
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

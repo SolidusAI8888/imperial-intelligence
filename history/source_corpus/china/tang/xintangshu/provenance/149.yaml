@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷149
 revision_id: 1490597
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7149&oldid=1490597
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷149</span></span>
-paragraph_count: 39
-sha256: a55f0007aa6e05f422e5ec26dab4b2e6a224c5bc999521c0c684cb53ae5b1f26
+block_count: 45
+sha256: 6e267d1fb2c1e3b69c639b0a18786b6391f1e591cc0900e1cc05c6274fad2f62
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

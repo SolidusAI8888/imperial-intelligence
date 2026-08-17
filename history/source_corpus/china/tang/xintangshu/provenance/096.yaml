@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷096
 revision_id: 2693692
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7096&oldid=2693692
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷096</span></span>
-paragraph_count: 38
-sha256: e733768d3ac1ec197951b7c2dfe96c1203202c7bbd60fb40bb156b97a9f3a6d7
+block_count: 43
+sha256: 3789218f1fc73043209a100a5236f59c7e1ed6883dabab44523599b105317e54
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

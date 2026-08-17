@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷082
 revision_id: 2629998
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7082&oldid=2629998
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷082</span></span>
-paragraph_count: 172
-sha256: 7678620b0308e561d717c2cfd4b6561fa4638c10e27437508424d1f1677c475c
+block_count: 178
+sha256: b44e6ce64b1f66dea72fdece095bad6f5fd42387165abc1fffd2d06f6768cb02
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

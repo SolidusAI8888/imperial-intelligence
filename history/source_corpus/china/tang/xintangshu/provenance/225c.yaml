@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷225下
 revision_id: 2358937
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7225%E4%B8%8B&oldid=2358937
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷225下</span></span>
-paragraph_count: 55
-sha256: 0bd784addc12177a5c1c657d0db412c9d219801059967ef0a42c9c448a092fdd
+block_count: 61
+sha256: 637f0ed07607eb8fa71e21d33c76d076617d5312cebd31a1f0f3ad73e3783c08
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

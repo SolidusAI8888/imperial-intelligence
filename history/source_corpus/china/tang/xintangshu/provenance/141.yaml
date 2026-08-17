@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷141
 revision_id: 1752289
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7141&oldid=1752289
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷141</span></span>
-paragraph_count: 22
-sha256: 10b78781d034ad707d480c6dc7ec3b6cab2309577a2c88e4b1217863117475a2
+block_count: 28
+sha256: d2e049d420ddd1ec667777eea77a6c4754934aeffdab3bb89e6fe4b21ab159d7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

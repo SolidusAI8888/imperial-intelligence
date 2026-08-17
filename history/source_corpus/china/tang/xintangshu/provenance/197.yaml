@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷197
 revision_id: 7904736
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7197&oldid=7904736
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷197</span></span>
-paragraph_count: 52
-sha256: 7a06973245d2401da56bda1b30ea440fdbfabb2d31054454205c1246365d2872
+block_count: 58
+sha256: ce8d57aa3bdc5be6a1739b49c22ee5d0482d6d70c49235faa0470bb53e395d58
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

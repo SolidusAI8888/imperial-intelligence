@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷099
 revision_id: 2693697
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7099&oldid=2693697
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷099</span></span>
-paragraph_count: 41
-sha256: 460a8914debce14118cdabee4680c3cf8e86da10db535169098ecfa3e07bb6bd
+block_count: 47
+sha256: 6b494e3dcdf8c917ff3349936493869c994c8758f0d272e66ed38d74f254a464
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

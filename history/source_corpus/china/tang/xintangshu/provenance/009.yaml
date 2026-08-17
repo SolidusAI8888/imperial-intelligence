@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷009
 revision_id: 2017158
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7009&oldid=2017158
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷009</span></span>
-paragraph_count: 255
-sha256: f7a604f95dadb901cdf664a445bd20964c2d209511fa15c0f71ca9cd66bca6b6
+block_count: 261
+sha256: 3f534f37be8c989a776d70af8aa93ee36f529dfdc8054167517f66f758af2bca
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

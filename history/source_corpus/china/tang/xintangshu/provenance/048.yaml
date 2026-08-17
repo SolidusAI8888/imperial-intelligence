@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷048
 revision_id: 2451349
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7048&oldid=2451349
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷048</span></span>
-paragraph_count: 140
-sha256: 4e29eeeccc3d02768e306c3d9525bb9cc2f5151778636fc43249d84410413622
+block_count: 146
+sha256: d4af2a315c0f6e716ed5751731b92f2ca8eabe1539eb5ee8b3cca3da5b1f0b55
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷060
 revision_id: 2017626
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7060&oldid=2017626
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷060</span></span>
-paragraph_count: 1443
-sha256: 962b16521e07d59ed0cf5f14dd8fb03cc29d8421bb431cd0ac92c5c51a9ffded
+block_count: 1449
+sha256: 8e33699aa3da20899d8f4d197d45825f39f3d9e56a70cb27df65c0da42dcceca
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

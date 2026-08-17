@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷073上
 revision_id: 1519178
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7073%E4%B8%8A&oldid=1519178
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷073上</span></span>
-paragraph_count: 21
-sha256: cc780cebd26fe04444ee86c8511a8be47d67764f6e82fdaaca91480b1e69a8e6
+block_count: 1342
+sha256: ad4ef93bc5e841e452566e86e5037e68e757b23d447b0642f655bba55406d1e6
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

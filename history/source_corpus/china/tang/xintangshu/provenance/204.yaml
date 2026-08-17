@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷204
 revision_id: 1461667
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7204&oldid=1461667
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷204</span></span>
-paragraph_count: 46
-sha256: f567bea1cedeceb98e960e5b15e19b20abfefa2d9139b177bf38179e5464157c
+block_count: 52
+sha256: 0450d0a84362f50cfef63ecec34c3bd775ac08086f89caa011077711b2f4972a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

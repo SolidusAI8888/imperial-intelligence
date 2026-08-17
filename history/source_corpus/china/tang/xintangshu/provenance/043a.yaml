@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷043上
 revision_id: 2474644
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7043%E4%B8%8A&oldid=2474644
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷043上</span></span>
-paragraph_count: 81
-sha256: ed8f6585848906796388c55ce3aebecc1136e09976a66d291d7279cfcbc131f5
+block_count: 87
+sha256: 0f826a4e7b5682403f4f0c07503a6400b9aa48cf9f2c01bc93d9eafbef3fab08
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

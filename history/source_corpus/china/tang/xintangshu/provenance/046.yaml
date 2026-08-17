@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷046
 revision_id: 2024340
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7046&oldid=2024340
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷046</span></span>
-paragraph_count: 51
-sha256: 8d95be7a16ec65e4a99a3cc7ea0fc40d18c41737ba08f0203b033547c5cd385c
+block_count: 57
+sha256: 5fc33df6818fe770a30df1dfd2ef539b72916a148fd7a552c0c7f21a68fbfc48
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷027上
 revision_id: 2017321
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7027%E4%B8%8A&oldid=2017321
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷027上</span></span>
-paragraph_count: 83
-sha256: 683b0d7dc7a09f9d99902d449f596ae883688ee5e04d0a0b56720a0ce656c83c
+block_count: 89
+sha256: b1e1c138c2a75da1f65aee25ef240c4196792f36e09591d1d289d6cd743dd527
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

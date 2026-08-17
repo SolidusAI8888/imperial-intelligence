@@ -5,9 +5,10 @@ wikisource_page: 新唐書/卷142
 revision_id: 2020484
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7142&oldid=2020484
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">新唐書/卷142</span></span>
-paragraph_count: 34
-sha256: 0029d7a3a9abf4d171429846215d9ba60a657212e88c9e1bc7eaa8ebff52fec5
+block_count: 40
+sha256: f1a6ad829e8108643b31c2a5fb86288963c9b00b58395b8fb104cc61e1a5e0e0
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
