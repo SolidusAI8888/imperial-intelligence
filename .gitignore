@@ -3,5 +3,28 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+venv/
+
+# Local environment and secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Local databases / runtime state
+*.sqlite
 *.sqlite3
+*.db
+
+# IDE / editor state
+.vscode/
+.idea/
+
+# Local logs and temporary files
+*.log
+.tmp/
+tmp/
