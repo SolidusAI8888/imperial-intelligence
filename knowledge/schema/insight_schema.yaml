@@ -1,0 +1,53 @@
+schema_version: 1
+object: insight
+required:
+  - insight_id
+  - statement
+  - derived_from_heus
+  - scope
+properties:
+  insight_id:
+    type: string
+    pattern: '^INS-[A-Z0-9-]+$'
+  statement:
+    type: string
+  explanation:
+    type: string
+  derived_from_heus:
+    type: list[string]
+  supporting_evidence_ids:
+    type: list[string]
+  scope:
+    type: object
+    fields:
+      applies_when:
+        type: list[string]
+      does_not_apply_when:
+        type: list[string]
+      structural_conditions:
+        type: list[string]
+  tensions_and_counterexamples:
+    type: list[object]
+    item_fields:
+      heu_id:
+        type: string
+      note:
+        type: string
+  transferability:
+    type: object
+    fields:
+      level:
+        type: enum
+        values: [low, medium, high]
+      rationale:
+        type: string
+  confidence:
+    type: number
+    range: [0, 1]
+  status:
+    type: enum
+    values: [draft, reviewed, accepted, deprecated]
+validation_rules:
+  - 'Every insight must derive from at least one HEU.'
+  - 'Insight wording must distinguish historical inference from directly recorded historical fact.'
+  - 'Insights must state limits or uncertainty when transfer to modern life is conditional.'
