@@ -1,0 +1,98 @@
+schema_version: 1
+object: historical_event_unit
+required:
+  - event_id
+  - title
+  - event_summary
+  - participants
+  - evidence
+  - status
+properties:
+  event_id:
+    type: string
+    pattern: '^EVT-[A-Z0-9-]+$'
+  title:
+    type: string
+  event_summary:
+    type: string
+    note: 'Factual description only. No transferable lesson or psychological interpretation.'
+  time:
+    type: object
+    fields:
+      start:
+        type: string
+        nullable: true
+      end:
+        type: string
+        nullable: true
+      precision:
+        type: enum
+        values: [exact, approximate, reign_period, relative, unknown]
+  place:
+    type: list[string]
+  structural_context:
+    type: list[string]
+    note: 'Only context supported by sources or clearly linked evidence.'
+  participants:
+    type: list[object]
+    item_fields:
+      person_id:
+        type: string
+      role_in_event:
+        type: string
+      source_support:
+        type: list[string]
+  actions:
+    type: list[object]
+    item_fields:
+      actor_person_id:
+        type: string
+        nullable: true
+      description:
+        type: string
+      evidence_ids:
+        type: list[string]
+  observed_outcomes:
+    type: list[object]
+    item_fields:
+      description:
+        type: string
+      horizon:
+        type: enum
+        values: [immediate, short_term, longer_term]
+      evidence_ids:
+        type: list[string]
+  uncertainty:
+    type: list[string]
+  contradictions:
+    type: list[object]
+    item_fields:
+      description:
+        type: string
+      evidence_ids:
+        type: list[string]
+  evidence:
+    type: list[object]
+    item_fields:
+      source_id:
+        type: string
+      canonical_ids:
+        type: list[string]
+      evidence_role:
+        type: enum
+        values: [context, participant, action, outcome, chronology, contradiction]
+      note:
+        type: string
+        nullable: true
+  derived_from_candidate_evidence_ids:
+    type: list[string]
+  status:
+    type: enum
+    values: [draft, reviewed, accepted, deprecated]
+validation_rules:
+  - 'Every event must link to at least one Source Corpus canonical ID.'
+  - 'Event units record what happened, not what the event means for modern life.'
+  - 'Do not infer motives, lessons, emotions, or causal psychology unless explicitly supported; such interpretation belongs in Historical Experience Units and must remain auditable.'
+  - 'Observed outcomes must be separated from later historical interpretation.'
+  - 'Contradictory source evidence must be retained rather than silently resolved.'
+  - 'One event may support multiple Historical Experience Units for different experience owners.'
