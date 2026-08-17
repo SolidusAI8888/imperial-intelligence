@@ -5,9 +5,10 @@ wikisource_page: 史記/卷091
 revision_id: 2509940
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7091&oldid=2509940
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷091</span></span>
-paragraph_count: 20
-sha256: acba7a9659446e2dbf09de3e2a5ae6f7ba9bfbf6cf1e56aa947250e9e34105ec
+block_count: 24
+sha256: 26fbdda467c7d942301d285606b335ea26b7589fb213eb83bff5f38075a8900f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

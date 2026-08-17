@@ -5,9 +5,10 @@ wikisource_page: 史記/卷129
 revision_id: 7904128
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7129&oldid=7904128
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷129</span></span>
-paragraph_count: 43
-sha256: 6100e1542c3d86ac509db3a592fab6e317e4581c8435420258bd604204f6de60
+block_count: 47
+sha256: 6e577a082a564dd59b89e4c5025ec04e5fa6066d98c0e4d4ac63580b5aae36ae
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

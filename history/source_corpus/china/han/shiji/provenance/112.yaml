@@ -5,9 +5,10 @@ wikisource_page: 史記/卷112
 revision_id: 2089420
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7112&oldid=2089420
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷112</span></span>
-paragraph_count: 31
-sha256: 31963811afa4cbffd036781a0d450e2b45c31b9e0154f31ecb9edec22326bbda
+block_count: 35
+sha256: 915e43c0fa17e58adc9f798aa6c0a66a1abb968a9ef084fa5b5244fd99fa6dfb
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

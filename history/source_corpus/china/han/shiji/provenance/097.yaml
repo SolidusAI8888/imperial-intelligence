@@ -5,9 +5,10 @@ wikisource_page: 史記/卷097
 revision_id: 1383195
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7097&oldid=1383195
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷097</span></span>
-paragraph_count: 25
-sha256: 9a57328c8f132fefaf1d6c99e17d083451fcda1d351c7cacb4882bb68ad5cf46
+block_count: 29
+sha256: acdb4e083951fbb66db3cffb6fa0141106c50ce4239ca3d009171122029a8d9a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

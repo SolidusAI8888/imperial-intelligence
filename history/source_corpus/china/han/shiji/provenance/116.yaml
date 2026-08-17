@@ -5,9 +5,10 @@ wikisource_page: 史記/卷116
 revision_id: 7903636
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7116&oldid=7903636
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷116</span></span>
-paragraph_count: 12
-sha256: 5e2247d9b4ccbd7bd9acb78b6b37284bdf5970154b0180ddf17a088c749c75e5
+block_count: 16
+sha256: c59df4a133c26dee37435c71772ab61759460b8de972c9f24ad06400cd76dfc7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

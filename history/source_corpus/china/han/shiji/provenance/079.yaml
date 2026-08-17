@@ -5,9 +5,10 @@ wikisource_page: 史記/卷079
 revision_id: 2549307
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7079&oldid=2549307
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷079</span></span>
-paragraph_count: 38
-sha256: 0297a03c999c2dd5c5d1bc8c1de2394b1f38d0cd4cf4b4fef59a5c0a46e7057f
+block_count: 41
+sha256: fb1f18afd68760a021dcc4a438e4296d1e634ca20727316803d6e015805f28cf
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

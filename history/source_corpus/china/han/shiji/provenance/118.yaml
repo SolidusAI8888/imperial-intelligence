@@ -5,9 +5,10 @@ wikisource_page: 史記/卷118
 revision_id: 7904122
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7118&oldid=7904122
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷118</span></span>
-paragraph_count: 31
-sha256: ec6b22a7cf5ef8010344bd58583f4cf1b67b36e3344e9229f721e79822bd146c
+block_count: 35
+sha256: 979ca958e9844ff8ce23dbc097cb3f3a56997925f30ef637fc99040830b90f81
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

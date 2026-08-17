@@ -5,9 +5,10 @@ wikisource_page: 史記/卷087
 revision_id: 2364605
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7087&oldid=2364605
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷087</span></span>
-paragraph_count: 41
-sha256: 56d207701809b65d0c44cd82d48d0c8b74455c16a0cf467f3da1b474af241360
+block_count: 44
+sha256: c9571e38c89d452bc8bd400d63a47adc48f76e91e7a684d4fcaf7c206b8d76ec
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

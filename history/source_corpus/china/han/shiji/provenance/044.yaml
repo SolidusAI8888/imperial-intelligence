@@ -5,9 +5,10 @@ wikisource_page: 史記/卷044
 revision_id: 7903606
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7044&oldid=7903606
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷044</span></span>
-paragraph_count: 72
-sha256: 2b6b5e469cc05c242d8decddcdbc36046ff3fcb9ab38946c94062eb7d1cc8966
+block_count: 76
+sha256: b83888d458fcc604a5a28561f50ab17d3d875a3f1321af0a44721ef8544ae24f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

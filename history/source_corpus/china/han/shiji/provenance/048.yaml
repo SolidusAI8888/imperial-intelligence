@@ -5,9 +5,10 @@ wikisource_page: 史記/卷048
 revision_id: 2531218
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7048&oldid=2531218
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷048</span></span>
-paragraph_count: 26
-sha256: b046d700b36125be70a424eac8406636fdf718d44fd68f5ec3f86dc3de0344a5
+block_count: 26
+sha256: 281e0aef0591ca4d51838ba6367506cdc94a13ae5ebf635d8ea828c4373464e7
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

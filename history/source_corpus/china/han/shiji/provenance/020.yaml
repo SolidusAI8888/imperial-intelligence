@@ -5,9 +5,10 @@ wikisource_page: 史記/卷020
 revision_id: 2607036
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E5%8F%B2%E8%A8%98/%E5%8D%B7020&oldid=2607036
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">史記/卷020</span></span>
-paragraph_count: 7
-sha256: 3e706cd09c758197bad85045aeb16ee97998088a2531a3a46b3d8133a6a149d3
+block_count: 439
+sha256: 5b4851cc3bea203be3cca8f3b93e914dd678b576224aeda1b654627a3911f966
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
