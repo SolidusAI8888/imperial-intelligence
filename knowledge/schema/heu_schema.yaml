@@ -1,12 +1,13 @@
-schema_version: 1
+schema_version: 2
 object: historical_experience_unit
 required:
   - heu_id
   - title
-  - context
+  - experience_owner
+  - event_links
   - challenge
-  - decision_or_action
-  - outcome
+  - response_or_choice
+  - experienced_outcome
   - evidence
   - role_links
 properties:
@@ -17,6 +18,13 @@ properties:
     type: string
   summary:
     type: string
+  experience_owner:
+    type: string
+    note: 'The historical person whose lived experience this HEU represents.'
+  event_links:
+    type: list[string]
+    item_pattern: '^EVT-[A-Z0-9-]+$'
+    note: 'One HEU may synthesize one or more factual Historical Event Units.'
   context:
     type: object
     fields:
@@ -32,13 +40,15 @@ properties:
         type: string
   challenge:
     type: string
-  decision_or_action:
+    note: 'What problem, pressure, uncertainty, constraint, or conflict the experience owner faced.'
+  response_or_choice:
     type: list[string]
+    note: 'What the experience owner actually did, chose, endured, changed, or refused to change.'
   constraints:
     type: list[string]
   alternatives_visible_in_sources:
     type: list[string]
-  outcome:
+  experienced_outcome:
     type: object
     fields:
       immediate:
@@ -49,7 +59,8 @@ properties:
         type: list[string]
       uncertainty:
         type: list[string]
-  reflection:
+    note: 'Outcome as experienced by or attributable to the owner; factual event outcome remains in Event Units.'
+  learning_or_reflection:
     type: object
     fields:
       present:
@@ -58,6 +69,12 @@ properties:
         type: list[string]
       evidence_ids:
         type: list[string]
+      attribution_strength:
+        type: enum
+        values: [explicit, strong, indirect, uncertain]
+  experience_interpretation:
+    type: list[string]
+    note: 'Auditable interpretation of what changed, was reinforced, or was learned. It is not yet a general Insight.'
   evidence:
     type: list[object]
     item_fields:
@@ -65,9 +82,11 @@ properties:
         type: string
       canonical_ids:
         type: list[string]
+      event_ids:
+        type: list[string]
       evidence_role:
         type: enum
-        values: [event, action, outcome, reflection, context, contradiction]
+        values: [context, challenge, response, outcome, reflection, contradiction]
       note:
         type: string
         nullable: true
@@ -82,6 +101,9 @@ properties:
       firsthand_strength:
         type: enum
         values: [direct, strong, indirect, uncertain]
+  problem_relevance_hypotheses:
+    type: list[string]
+    note: 'Provisional only. These hypotheses do not determine retrieval or role selection.'
   derived_tags:
     type: list[string]
     note: 'Descriptive only; tags must not determine whether an HEU exists.'
@@ -89,6 +111,9 @@ properties:
     type: object
     fields:
       factual_grounding:
+        type: number
+        range: [0, 1]
+      experience_attribution:
         type: number
         range: [0, 1]
       causal_interpretation:
@@ -101,7 +126,11 @@ properties:
     type: enum
     values: [draft, reviewed, accepted, deprecated]
 validation_rules:
-  - 'No HEU may exist without at least one Source Corpus canonical ID.'
-  - 'Reflection must be false/empty when the source contains no later self-evaluation or attributable reflection.'
+  - 'No HEU may exist without at least one linked Historical Event Unit and at least one Source Corpus canonical ID.'
+  - 'The experience owner must have personally lived, decided, endured, or been directly affected by the represented experience.'
+  - 'Historical Event Units contain factual event reconstruction; HEUs contain person-centered lived experience and attributable learning.'
+  - 'A single event may produce different HEUs for different people, but each HEU must separately justify its experience owner and evidence.'
+  - 'One HEU may link multiple events when an experience developed across time.'
+  - 'Learning/reflection must be false or empty when the source contains no later self-evaluation or strongly attributable reflection.'
   - 'Do not infer a counterfactual alternative unless supported by sources; otherwise omit it.'
-  - 'Outcome must distinguish observed result from later interpretation.'
+  - 'Do not promote an HEU interpretation directly into a general Insight without comparison, scope limits, and evidence review.'
