@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷143
 revision_id: 2020239
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7143&oldid=2020239
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷143</span></span>
-paragraph_count: 34
-sha256: 750c634d0a8a57eb9a84a3f0325829eca2e037010c19d23f60f445bba61be07e
+block_count: 38
+sha256: d67cd0e91d3d99e9f45dc4ed9f9cb401ed07e66792bed1aa03cee7ec4ec33591
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

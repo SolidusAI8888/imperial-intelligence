@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷170
 revision_id: 2579122
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7170&oldid=2579122
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷170</span></span>
-paragraph_count: 66
-sha256: 5a57efc2ca64c4c38dc01957bbbb178e0a71e7b96b500060422d72b8727c6292
+block_count: 67
+sha256: 9f5ab5d948c40eb6968e4b5c5ba3c8261d130a042b5f49a7914d2e34cbdc14ed
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

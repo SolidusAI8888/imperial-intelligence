@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷91
 revision_id: 1756968
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B791&oldid=1756968
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷91</span></span>
-paragraph_count: 47
-sha256: 94d883add0f1684551ae823dc86067a4a9eacb325437bcb42f9864dc12c981a5
+block_count: 51
+sha256: a9cb08281579d293e4ad9f11e01337bc60848b47ea4de255a33ea87bc36117a5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

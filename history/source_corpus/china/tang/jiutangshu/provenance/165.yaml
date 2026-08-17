@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷165
 revision_id: 2588778
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7165&oldid=2588778
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷165</span></span>
-paragraph_count: 95
-sha256: 8c741506e645faee86bd490752b78c9ce60caec7df0ac9f630dc162602b38d96
+block_count: 96
+sha256: 3d511ce2281fbfbd8bdf25a99945d3990b4daeb2595fae72f31e8fe7001f0ad2
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷110
 revision_id: 2690613
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7110&oldid=2690613
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷110</span></span>
-paragraph_count: 23
-sha256: afdfb6b6c4699cdca640de4d304a4849049c13adde4b7124d4febad59b20e852
+block_count: 27
+sha256: aa0f83eabcb579350477bec25ec995f961a6497e82c3d7151d59d96679e43923
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

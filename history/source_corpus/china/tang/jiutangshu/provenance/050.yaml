@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷50
 revision_id: 1461339
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B750&oldid=1461339
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷50</span></span>
-paragraph_count: 41
-sha256: 0ada17e129657c2f549c2d0b6f2a3ffe4a36f663229d23c0ac55fb048e466cb8
+block_count: 45
+sha256: c6ce9179c224cf5b89a8bc2864cf84c2fe7326b470668e001a1e8a61531b752e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

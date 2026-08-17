@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷3
 revision_id: 2488779
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B73&oldid=2488779
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷3</span></span>
-paragraph_count: 170
-sha256: 23f3e91313112d0ddc2fc06f46054f4be16467ac9f5393bf8bab0ad2416928a6
+block_count: 174
+sha256: e4c71586e34e874e009d3ed6fac304fb1af9dc83af789eab58cab671c787d769
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

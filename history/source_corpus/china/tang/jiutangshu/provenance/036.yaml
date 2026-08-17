@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷36
 revision_id: 2552332
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B736&oldid=2552332
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷36</span></span>
-paragraph_count: 32
-sha256: 26feceb4f90bf794d8e56b611eef057491b1d92ad2b9727c14b4cb7570cd76c1
+block_count: 36
+sha256: 9643ffb2fa4ab29100e8cf0d4e51ae4028960e10ac6ad81adce3c6289923a2c2
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

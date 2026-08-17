@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷146
 revision_id: 2528370
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7146&oldid=2528370
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷146</span></span>
-paragraph_count: 37
-sha256: 9817383fb378a5e8a7ce720b0557c588bd0b397f37823b725f44231b616f6c78
+block_count: 41
+sha256: 49d23809ae7a9a0736e5e766e86d8aed720b3f07fec7711b3759c55d856f954d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

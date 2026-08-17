@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷23
 revision_id: 2485097
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B723&oldid=2485097
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷23</span></span>
-paragraph_count: 57
-sha256: 2c751efe6c5842514e0606d00592d4ee14555a0b126311419c2d0e68d0fa004b
+block_count: 61
+sha256: 7a0bc42d76a15a59bc54336a17c25e3ec99b56f7e601919071f4a9fed9ea916a
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

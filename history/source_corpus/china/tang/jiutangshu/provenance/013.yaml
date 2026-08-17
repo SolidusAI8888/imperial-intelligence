@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷13
 revision_id: 2189021
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B713&oldid=2189021
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷13</span></span>
-paragraph_count: 118
-sha256: b56aace7ed076b4cbb81605673bd091b67625faeaf4150efaaa5474418ff8f93
+block_count: 122
+sha256: 80aa1be94c9d3b50478507b299d938bfb3ed3e0c025615d67c7a8e3ebd8e6938
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

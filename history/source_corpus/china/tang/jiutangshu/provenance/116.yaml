@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷116
 revision_id: 2269188
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7116&oldid=2269188
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷116</span></span>
-paragraph_count: 53
-sha256: cd4a22a37a6c64a01ea3c4bea3c705fe7c2ddca5e5b348b6b3bd54bdfc52c02f
+block_count: 57
+sha256: 67f4035ffa28761953ae65991e6ec61de96981dfe2b6de98b5c456a2ff8a58ed
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

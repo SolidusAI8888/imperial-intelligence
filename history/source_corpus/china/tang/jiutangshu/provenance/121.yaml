@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷121
 revision_id: 2579120
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7121&oldid=2579120
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷121</span></span>
-paragraph_count: 31
-sha256: 803b7f946bcda469ae9c9603065f24533ab07b377da5df82fe4ce6b986f25d05
+block_count: 30
+sha256: 16f74cadb09a5223546c71465866d13fd10b7dd634a55559ad66a18019534771
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

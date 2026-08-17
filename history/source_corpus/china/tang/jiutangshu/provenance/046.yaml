@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷46
 revision_id: 2081123
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B746&oldid=2081123
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷46</span></span>
-paragraph_count: 1448
-sha256: b0d80b93a1f39e31b920f89c74412f8a06439039da6a7d5804d893ca349c4f16
+block_count: 1433
+sha256: e69ebfc73820b006c75ff6125ff1c43519eec0a204c635206730f933ff265a00
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

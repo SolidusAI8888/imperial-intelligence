@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷189上
 revision_id: 1521196
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7189%E4%B8%8A&oldid=1521196
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷189上</span></span>
-paragraph_count: 69
-sha256: ff58a7cb48bc3a3605dfe0287c7e3ea7d7f8f10c4ce0b1e0f074bd1dd7abd3b3
+block_count: 73
+sha256: dd4ac00fb4feeca361a75a87e7f44d5118ba1eadac660c8f87b488e13cf815c2
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷93
 revision_id: 2588711
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B793&oldid=2588711
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷93</span></span>
-paragraph_count: 40
-sha256: 148ba1242b3661efd860cd52a8a8d58be24bfe2bc4ea39bf4669f65088fde3e8
+block_count: 40
+sha256: 3272fb0de30e4b300dd4ee4e1b695cd98019b978d596986b084e397e7cbd1020
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

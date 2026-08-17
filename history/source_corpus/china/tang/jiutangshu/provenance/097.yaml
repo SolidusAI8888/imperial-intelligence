@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷97
 revision_id: 2690614
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B797&oldid=2690614
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷97</span></span>
-paragraph_count: 56
-sha256: 1c3907aa4ec2d352dbbb67ac50ce345b051e7fa0635b2223181c0a4d05d05fa1
+block_count: 50
+sha256: e0729fc6ce2f6348d644104145c51fa8b1e1e6eb837b0d885fb3085d1899db08
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

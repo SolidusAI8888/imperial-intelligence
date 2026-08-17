@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷47
 revision_id: 2602744
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B747&oldid=2602744
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷47</span></span>
-paragraph_count: 70
-sha256: dc912248dc9fee003d288de3a1c12e6d79acf4751405e7a539321c0d2f916c3b
+block_count: 56
+sha256: 080f4fe94c29796e6fc2fe9b8a3fa507778c501a15490c2be414d4ab18ffe389
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

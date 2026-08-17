@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷22
 revision_id: 1461315
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B722&oldid=1461315
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷22</span></span>
-paragraph_count: 50
-sha256: 6b1ea38373d4c67c3a573d9fdc8f20da9236f3d664c72406c077ea0b31673d42
+block_count: 54
+sha256: 2ed3b6a510753adcbe22a48257da9b9a803ebfc1d6c6de1fd65e584d2711cb0d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

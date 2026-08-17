@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷44
 revision_id: 2560963
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B744&oldid=2560963
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷44</span></span>
-paragraph_count: 268
-sha256: c1eee45589ccc51c219b78128ebd8a3c1d383394a5943640eb83aaead7aab066
+block_count: 272
+sha256: 5d6f751e866a2ee9b87388ae0760b57e8cebe2e45063f57aa3efd0e97d279ee8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

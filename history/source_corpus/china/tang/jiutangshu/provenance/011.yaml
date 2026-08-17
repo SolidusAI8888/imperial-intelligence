@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷11
 revision_id: 2332579
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B711&oldid=2332579
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷11</span></span>
-paragraph_count: 219
-sha256: e000c380c28308294ed2438c2dcb678a32c00519f554303db75ca860d89c3055
+block_count: 221
+sha256: 26c17df6a8403b7c2ab6348592b91c9aa67e5762ec1df0c1e879a6eaa0f31e4e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷35
 revision_id: 2552341
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B735&oldid=2552341
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷35</span></span>
-paragraph_count: 33
-sha256: d64bdca14c2dfd83dd0e4998d599882c32bc76896dc1323e3b612b96ed6fd36c
+block_count: 34
+sha256: 64e520ca77f10124bed2798ce9f1454b41031c3abbf795d8fc52809f60ab8bad
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

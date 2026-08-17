@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷132
 revision_id: 2610642
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7132&oldid=2610642
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷132</span></span>
-paragraph_count: 32
-sha256: 355086923f1b9a93df77a32125626be65ec2763b11fd2427faf6f5f65a0b9ad9
+block_count: 36
+sha256: 40693301ea206cea979aa0a30cc91935c0c3a1ce09a949d22af99684cfe21b49
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

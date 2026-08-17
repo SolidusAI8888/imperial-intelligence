@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷41
 revision_id: 2690053
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B741&oldid=2690053
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷41</span></span>
-paragraph_count: 690
-sha256: 32c6a4c48c4aa7f40919fd2e7dc09d3c216658335f094f95974103369dbb6834
+block_count: 694
+sha256: 26a48c11ca07231c6a140d6a1c8647febdd72ad1479e0f040b6c438f34529bb8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

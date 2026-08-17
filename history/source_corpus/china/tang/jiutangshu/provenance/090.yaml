@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷90
 revision_id: 2079418
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B790&oldid=2079418
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷90</span></span>
-paragraph_count: 44
-sha256: 0a7652540bae4d2509022f24123d8cb8efcf7975a1bb222fd4922adcfbc3cbb2
+block_count: 43
+sha256: 1045f0256f5dd2b7dc2bdcf891e8439239a92a1645d5f3a0bcc1507043925cc9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

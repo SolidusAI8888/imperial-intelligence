@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷133
 revision_id: 2626075
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7133&oldid=2626075
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷133</span></span>
-paragraph_count: 47
-sha256: 202acb39b24c99bb3ca91059f15e8d418fc7b378e7f1f8eb958905b6b3cbc5ee
+block_count: 51
+sha256: ad27914156bfae074a329cf68101ed8836ded912dfc70fa9c67a765a89936b6f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

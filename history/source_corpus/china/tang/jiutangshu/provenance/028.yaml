@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷28
 revision_id: 2552361
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B728&oldid=2552361
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷28</span></span>
-paragraph_count: 29
-sha256: ca9a7d78a352e9c14c05350e60e0def97a19a3f93b209a07c10c02046ceba9fc
+block_count: 24
+sha256: 0a0bd1403ec332381c48f839f8c31ac386c1fe83f676ddcdbb6aa343663422ab
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

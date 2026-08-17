@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷188
 revision_id: 2256159
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7188&oldid=2256159
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷188</span></span>
-paragraph_count: 77
-sha256: 3865f02e5b1848c135e74af41f04a6b6951f470d3cf959f138b93fce5e60ed06
+block_count: 81
+sha256: 69eb20f3bff2f733fa9b5601105ef9e81bb524e58a668894cd20f430f3853373
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

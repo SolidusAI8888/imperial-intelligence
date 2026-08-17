@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷178
 revision_id: 2626378
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7178&oldid=2626378
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷178</span></span>
-paragraph_count: 76
-sha256: 29b4ee72e9dbcaa3f5efc018615ae6064cf7b1a739d2874e64c13cd616273ded
+block_count: 72
+sha256: 9a0ef6a9f91435bf496317ed6711211b389033ceebc0356b4edac588ee808742
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

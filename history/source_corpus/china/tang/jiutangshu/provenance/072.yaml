@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷72
 revision_id: 2588719
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B772&oldid=2588719
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷72</span></span>
-paragraph_count: 23
-sha256: 2685ff8b61b4c013e8b8dab53695124ca38f3f2b55dce941257e1eb999791a33
+block_count: 27
+sha256: a7e8d579d2d15d549335898e64b77a258b6fb4e1f1cc80306c23007d5d4908bc
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

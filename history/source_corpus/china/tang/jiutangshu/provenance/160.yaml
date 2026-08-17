@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷160
 revision_id: 2689841
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7160&oldid=2689841
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷160</span></span>
-paragraph_count: 61
-sha256: 1e166d7ba0243a5fe033727b00ac50bacdaa0ef4e9dd94e477f8c9603f5c8e35
+block_count: 59
+sha256: 3d0d79eb15e4b2d312dfa4b3982c75db2571df0f96fbc3b5098c2b1d2c86b12f
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

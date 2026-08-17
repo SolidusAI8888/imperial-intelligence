@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷4
 revision_id: 2312023
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B74&oldid=2312023
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷4</span></span>
-paragraph_count: 147
-sha256: df485376866fdc7b25fb8495210034645c7d0c3d08fe9712bb0857fe16f26164
+block_count: 151
+sha256: 167ba1eed5d8dd80fb2c52afb1a3594042279c77b1ad973fa4c035790dc0bac5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

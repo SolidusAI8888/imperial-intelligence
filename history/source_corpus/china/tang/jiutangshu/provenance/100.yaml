@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷100
 revision_id: 2080143
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7100&oldid=2080143
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷100</span></span>
-paragraph_count: 71
-sha256: de4315c76415886e17c642f3afdfa7e8dd0dc92bf32cbcc22322234e3b620fee
+block_count: 64
+sha256: 747902a90feda5ee4f91c1b2835b14915d6bf13e91aee62042720b456f1724b9
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

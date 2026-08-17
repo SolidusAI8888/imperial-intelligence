@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷156
 revision_id: 1490648
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7156&oldid=1490648
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷156</span></span>
-paragraph_count: 45
-sha256: 114724f3595a93d928daefeda5c9316ff2f5b7ce1f57f1ed6518585ffc950f21
+block_count: 49
+sha256: 391e81133c5b8d8d9a1621674f440d6b361170b13c2b7d5bade4ed779404a3da
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷102
 revision_id: 2606543
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7102&oldid=2606543
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷102</span></span>
-paragraph_count: 68
-sha256: 27ea6676db2015ea8f8f44f3fa5fae7aa2cc6c15574ea5561a0b6573257c5986
+block_count: 57
+sha256: 2ffa9890e85486a1befd5f18dac436386ec26ca86198b9b1c68d46ec5bc43942
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

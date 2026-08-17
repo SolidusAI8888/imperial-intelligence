@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷83
 revision_id: 2632780
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B783&oldid=2632780
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷83</span></span>
-paragraph_count: 19
-sha256: 8f92e9ed923300970011649b5d034a507e4d13d26bb3e487242e3da33860d79b
+block_count: 23
+sha256: 5f2c55922f175bae5a38052d1caf8dc866ca07eee51ca2f7c43ba0d6b15c91c5
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

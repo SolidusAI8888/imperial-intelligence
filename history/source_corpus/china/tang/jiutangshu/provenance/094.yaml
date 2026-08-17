@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷94
 revision_id: 2588712
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B794&oldid=2588712
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷94</span></span>
-paragraph_count: 46
-sha256: 793677abb65f0a8305726cccb6583e6efbf2b57cd9b99c8a8947a876eeaa0d94
+block_count: 38
+sha256: 96e154f2a79c2a21f93d819d5e62f0470baa35e58cd6c1b47feecf524dcc92e8
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

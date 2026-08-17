@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷177
 revision_id: 2626842
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7177&oldid=2626842
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷177</span></span>
-paragraph_count: 162
-sha256: f7fb4c3abb11f369881704a6e047899a0df86ec64a5b74a1bf23bc4cec71850d
+block_count: 157
+sha256: 7b81970e4e030553839853448ec505cea5f0ad336de4c5bf284ee2f631ddf1aa
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

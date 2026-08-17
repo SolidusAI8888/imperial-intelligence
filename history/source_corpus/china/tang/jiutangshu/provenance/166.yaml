@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷166
 revision_id: 2588799
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7166&oldid=2588799
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷166</span></span>
-paragraph_count: 103
-sha256: d12d82f2564381ee379caf801c669e4e3103267f9b30e8a89a75a1ed420f315f
+block_count: 66
+sha256: 86d72ab7ce0b9223a1ecda34844c9e172d07b69616e169fe84e7e2598d9ccf03
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

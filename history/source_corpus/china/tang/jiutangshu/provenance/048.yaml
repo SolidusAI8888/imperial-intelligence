@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷48
 revision_id: 1461337
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B748&oldid=1461337
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷48</span></span>
-paragraph_count: 43
-sha256: a8584bf80e47611a3239dc539049c2041ec0fe71e46c3212227b06ffac686c40
+block_count: 47
+sha256: 34ddf46c7d1afef044d088be7674f0acb642266f48955ab07629929e869f2d29
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

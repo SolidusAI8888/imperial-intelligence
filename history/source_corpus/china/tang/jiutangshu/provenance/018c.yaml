@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷18下
 revision_id: 2693010
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B718%E4%B8%8B&oldid=2693010
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷18下</span></span>
-paragraph_count: 122
-sha256: 6c561e31fa30c478a667f8c90dd069f853c964f206d070490d9d863e5753907b
+block_count: 123
+sha256: b0073061de63fd806ee8f261d08c1bfb1fa498db8ddfc6a59281b207a8cadf76
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷190中
 revision_id: 2027718
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7190%E4%B8%AD&oldid=2027718
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷190中</span></span>
-paragraph_count: 148
-sha256: 5d20c638309c0eb680d9bdeec89dc39eafd957de553cae7dcf763446e8229669
+block_count: 135
+sha256: 8912171a8fc76c1fd8ca6886774f37f57cede1f2c8231ae4c87380568426cdab
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

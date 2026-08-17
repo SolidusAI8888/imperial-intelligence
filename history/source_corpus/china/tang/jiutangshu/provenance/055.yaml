@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷55
 revision_id: 2037164
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B755&oldid=2037164
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷55</span></span>
-paragraph_count: 27
-sha256: ec9f29982b384d3ec1132a2e0ba459592f37772761f65f2ea3f4c05ccb5b3978
+block_count: 31
+sha256: bf2c32ea9460b72746de01a8e148f6fda3be4b5f33023f0b9838834b83d666ea
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

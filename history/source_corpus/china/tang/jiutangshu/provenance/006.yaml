@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷6
 revision_id: 2585366
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B76&oldid=2585366
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷6</span></span>
-paragraph_count: 135
-sha256: 5b27a6cc12d3055a11cafb333f32302e5868e5897b3a094d6668829f1dce2e9c
+block_count: 139
+sha256: 7fe07f18e885a8d92d1bea5d4251b558656ea6ccbd35ecdd52d67f2a438711cd
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

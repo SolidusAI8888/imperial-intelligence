@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷128
 revision_id: 2511028
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7128&oldid=2511028
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷128</span></span>
-paragraph_count: 29
-sha256: 30a572962bf6c765b5eebb1ff81b9267d2bc6aef279f4964338906f0b1b97cd2
+block_count: 33
+sha256: 7a7c95a6ea9a417b3df44e2bd6bff92abd65e8e0f2079ead005cedfd096dce9b
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

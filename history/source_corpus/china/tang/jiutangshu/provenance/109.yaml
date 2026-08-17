@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷109
 revision_id: 2413358
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7109&oldid=2413358
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷109</span></span>
-paragraph_count: 32
-sha256: 98d22cf4205559138de3e16d9d05116ada71eaa812a5c371e6c4063dbeff3572
+block_count: 36
+sha256: 529fddde1f890ade229281db527785e2d0a109d644286b916ebfd43287af5b88
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

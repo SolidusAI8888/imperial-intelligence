@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷101
 revision_id: 2585441
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B7101&oldid=2585441
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷101</span></span>
-paragraph_count: 60
-sha256: 6cdb88d260b59e4316522e109e066ed5ebc2e4bab0315bf79d8812c8a75774d9
+block_count: 45
+sha256: ceb10078d369d3fbc8b0f9a2a444196fb728c7ad6ee9d2d18daf9eed55c4b060
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

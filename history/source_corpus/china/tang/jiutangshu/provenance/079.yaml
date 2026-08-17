@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷79
 revision_id: 2067655
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B779&oldid=2067655
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷79</span></span>
-paragraph_count: 33
-sha256: e67f7159d5248153e6f41e7348921270e5489bdcbb7745a8d3fabb3e73e27ed6
+block_count: 37
+sha256: 54158bb10ea85a5c4edb61aefbc2573a2aa1ba3f2a1ef913f716439214999268
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

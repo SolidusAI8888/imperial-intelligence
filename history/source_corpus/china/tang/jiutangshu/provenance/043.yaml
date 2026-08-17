@@ -5,9 +5,10 @@ wikisource_page: 舊唐書/卷43
 revision_id: 2289844
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B743&oldid=2289844
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">舊唐書/卷43</span></span>
-paragraph_count: 77
-sha256: 722d14889b44f7d7c553a796a426e0f546e004bd04a2562c31bce647ec66b6bc
+block_count: 81
+sha256: 509818961099afc0766be28636d115b3fd59575ac533d4cf79949f53e84d84ee
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
