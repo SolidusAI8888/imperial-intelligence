@@ -5,9 +5,10 @@ wikisource_page: 資治通鑑/卷239
 revision_id: 2536891
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7239&oldid=2536891
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷239</span></span>
-paragraph_count: 127
-sha256: d71b818bcf01994d70b8d05d3698e75f67596dd72d2c67b7b9b2d26103bc0a97
+block_count: 131
+sha256: 9994576f495a0e1137e53acf37b8dd2358d5a88f268105eac5a6acfaca01ad01
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

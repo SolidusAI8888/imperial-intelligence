@@ -5,9 +5,10 @@ wikisource_page: 資治通鑑/卷201
 revision_id: 1502953
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7201&oldid=1502953
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷201</span></span>
-paragraph_count: 146
-sha256: 50d17c6681c56e376919c3bc2726f5cb4f0428ef01cde3b0835d5f349645da32
+block_count: 150
+sha256: 236818320eafeafc709d270d47cf987194199035cabce1d3f8854dee8a1b9494
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

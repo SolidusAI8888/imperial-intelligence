@@ -5,9 +5,10 @@ wikisource_page: 資治通鑑/卷249
 revision_id: 2693114
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7249&oldid=2693114
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷249</span></span>
-paragraph_count: 164
-sha256: 62213759ca8925c472b18ebbe66116f551af9f1e8fbbaad6313df8eae3b69dfe
+block_count: 168
+sha256: 8ea7a56164262a3714040bba23950825a2ffe61f2b02584893e83a1c40f0b80d
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.

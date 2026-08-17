@@ -5,9 +5,10 @@ wikisource_page: 資治通鑑/卷192
 revision_id: 2510432
 permanent_url: https://zh.wikisource.org/w/index.php?title=%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7192&oldid=2510432
 display_title: <span lang="zh" dir="ltr"><span class="mw-page-title-main">資治通鑑/卷192</span></span>
-paragraph_count: 6
-sha256: a31efd6f93b762f8289abb4eded4635832499a60560ce132fbdd4a4c6e58ff15
+block_count: 10
+sha256: 4d557d4e01f3866491aea665c3903d1dba648398f830e4e37c4d504fc89ee03e
+extractor_version: 2
 rights: Ancient work public domain; Wikisource editorial contributions reused under
   CC BY-SA 4.0; attribution retained in provenance.
-extraction: Rendered Wikisource text; navigation, references, tables, and obvious
-  editorial notices removed; paragraph order preserved.
+extraction: Rendered Wikisource source text; editorial/navigation containers removed;
+  paragraph/list/blockquote and historical table-cell text preserved in document order.
