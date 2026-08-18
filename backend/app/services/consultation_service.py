@@ -17,6 +17,10 @@ class ConsultationService:
         normalized = "".join(question.split())
         return "命运" in normalized and ("主宰" in normalized or "谁决定" in normalized)
 
+    @staticmethod
+    def _source_id_from_canonical(canonical_id: str) -> str:
+        return canonical_id.split("-V", 1)[0]
+
     def consult(
         self,
         emperor_id: str,
@@ -34,24 +38,26 @@ class ConsultationService:
                 imperial_advice=grounded.answer,
                 reasoning=grounded.reasoning,
                 historical_analogy=(
-                    "本回答以唐太宗在贞观时期关于草创与守成、兼听与偏信、"
-                    "纳谏与克终风险的已审核历史记录为经验基础。"
+                    "本回答以《旧唐书》《新唐书》所载隋末至武德初经历，"
+                    "以及《贞观政要》所载草创与守成、兼听与偏信、纳谏与克终风险等"
+                    "已审核记录共同构成人物经验基础。"
                 ),
                 modern_translation=(
-                    "无法控制全部时代条件时，仍可通过持续选择、获取真实反馈、"
-                    "修正错误和在成功后保持警惕来扩大自己能够影响的部分。"
+                    "【现代转译】外部环境会限制可选路径，但个人仍可管理其中一部分："
+                    "重新判断处境、主动获取反对意见、在发现错误后调整，并在成功后继续防止信息失真。"
+                    "这是从唐太宗经验中抽取的现代可迁移表达，不是史料原话。"
                 ),
                 cautions=grounded.cautions,
                 evidence=[
                     EvidenceReference(
                         evidence_id=canonical_id,
-                        source_id="CN-TANG-0004",
+                        source_id=self._source_id_from_canonical(canonical_id),
                         summary=f"{FIRST_PROBLEM_ID} grounded canonical evidence",
                         confidence=0.95,
                     )
                     for canonical_id in grounded.evidence_ids
                 ],
-                overall_confidence=0.88,
+                overall_confidence=0.9,
                 avatar_directive=AvatarDirective(
                     listening_state="attentive_still",
                     thinking_action="lower_gaze_review_memorial",

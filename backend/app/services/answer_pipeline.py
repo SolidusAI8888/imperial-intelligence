@@ -43,15 +43,16 @@ def build_first_question_context(question: str = FIRST_QUESTION) -> RuntimeConte
 def generate_first_question_answer(question: str = FIRST_QUESTION) -> GroundedAnswer:
     """Generate the first evidence-grounded Tang Taizong answer.
 
-    MVP-1 intentionally uses a deterministic renderer so the end-to-end chain
-    remains runnable without an external model provider. The knowledge order is
-    never reversed: Source Corpus -> HER -> HEU -> Insight -> Role Link -> Answer.
-    A later LLM renderer may replace only this final rendering step.
+    The knowledge order is fixed:
+    Source Corpus -> HER -> HEU -> Insight -> Role Link -> Answer.
+
+    MVP-1 keeps a deterministic renderer so the vertical slice is fully
+    reproducible without an external model provider. The renderer may express
+    only what is already present in the reviewed context; broader modern
+    generalization belongs in the API's modern_translation field instead.
     """
 
     context = build_first_question_context(question)
-
-    record_by_id = {record.record_id: record for record in context.records}
     heu_by_id = {heu.heu_id: heu for heu in context.experiences}
 
     heu_stage = heu_by_id["HEU-TANG-000001"]
@@ -62,25 +63,28 @@ def generate_first_question_answer(question: str = FIRST_QUESTION) -> GroundedAn
     insight_feedback = next(i for i in context.insights if i.insight_id == "INS-TANG-000002")
 
     answer = (
-        "若以我一生所历来答，我不会说命运只由天、只由时代，或只由自己主宰。"
-        "我亲历草创，也亲历守成。贞观十年，我问房玄龄、魏征草创与守成孰难；"
-        "我后来承认，草创之难虽已过去，守成之难却必须与群臣共同谨慎面对。"
-        "这使我明白：处境一变，人的难题也会变。乱世时，外部竞争逼人决断；"
-        "安定之后，真正危险的反而可能是自己的骄逸、懈怠和听不进逆耳之言。\n\n"
-        "所以，时代确实给每个人划出边界。你不能选择自己出生在盛世还是乱世，"
-        "也不能控制所有制度、资源和偶然。但边界之内仍有选择。"
-        "我之所以一再谈守成，并不是因为一次成功就能决定后来的一切；恰恰相反，"
-        "成功以后仍要继续作选择，而新的选择又会改写后面的路。\n\n"
-        "我还有一个很深的体会：不要把自己的判断当成命运。魏征曾以‘兼听则明，偏信则暗’劝我；"
-        "后来又以善始难克终相戒。我在答诏中说‘朕闻过矣’，并要求他继续‘犯而无隐’。"
-        "我所能做的，不是保证自己永远正确，而是尽量让错误有机会被指出，让判断有机会被修正。"
-        "一个人若把自己封闭起来，即使一时得势，也可能亲手缩小自己的未来。\n\n"
-        "因此，你问个体的命运究竟由谁主宰，我的回答是：没有任何单一力量能够完全主宰。"
-        "时代决定许多起点和边界，偶然改变某些节点，他人会影响你的判断；"
-        "而你自己的连续选择，尤其是能否在得意时仍保持清醒、在犯错时仍允许自己被纠正，"
-        "会持续塑造你能走到哪里。\n\n"
-        "若一定要给一句结论，我会说：人不能主宰全部命运，但可以对自己在命运中的每一次回应负责。"
-        "真正值得经营的，不是幻想控制一切，而是在看清时代边界之后，仍保有选择、修正和自持的能力。"
+        "若问命运由谁主宰，朕不敢以一句天命，便把一生的成败都推给苍天；"
+        "也不敢说只凭一己之力，便可尽制世事。朕少年逢隋末乱世，随军起兵。"
+        "霍邑进军之前，久雨粮乏，高祖一度欲还太原。朕力争不可退：既以义举起兵，"
+        "若因眼前之难便退，众心先散，敌军随后而至，成败便在顷刻之间。"
+        "《旧唐书》《新唐书》皆记此事。那时朕所面对的，是进与退、生与败的决断。\n\n"
+        "后来天下渐定，难处却并未随胜利而消失。贞观十年，朕问房玄龄、魏征："
+        "草创与守成，孰难？玄龄言草创难，魏征言守成难。朕听罢说，草创之难已经过去，"
+        "守成之难，当与诸公共同慎之。到了守成之时，外面的强敌未必是最可怕的；"
+        "更须防的是居安之后渐生骄逸，自以为是，终于听不进逆耳之言。"
+        "所以朕这一生所见，并不是‘成功一次，命运便定了’，而是所处之势一变，"
+        "人便要重新认清眼前真正的难处。\n\n"
+        "朕尤其不敢把自己的判断当成不可更改的定论。魏征劝朕兼听，不可偏信；"
+        "又以‘善始者实繁，能克终者盖寡’相戒。朕答他说‘朕闻过矣’，并令其此后仍可‘犯而无隐’。"
+        "这不是因为朕从此便不会犯错，而是因为一个居于高位的人若只听顺耳之言，"
+        "连自己的错误都无从知道。能有人指出错误，自己又肯改，至少还能改变随后的一步。\n\n"
+        "因此，若以朕一生的经历答你：时代与处境能把许多事情推到人面前，"
+        "也能限制人当时可走的路；但人在这些限制之中，仍要一次次决定进退、听谁之言、"
+        "是否改过，以及得意之后还能不能自持。朕不认为其中任何一项单独便能称为命运的主人。"
+        "真正能由自己承担的，是每逢一事，如何回应。\n\n"
+        "所以朕愿把话说得更谨慎些：人不能主宰全部命运，但可以对自己在命运中的每一次回应负责。"
+        "处境变了，便重新察势；判断错了，便容人指出；一时得志，更须防自己先失其明。"
+        "能做到这些，未必使人事事如愿，却能使自己不至于把本可挽回的路，亲手走绝。"
     )
 
     evidence_ids = sorted(
@@ -93,16 +97,23 @@ def generate_first_question_answer(question: str = FIRST_QUESTION) -> GroundedAn
     )
 
     reasoning = [
-        heu_stage.interpretation[0],
-        heu_feedback.interpretation[0],
-        heu_success.interpretation[0],
-        insight_stage.statement,
-        insight_feedback.statement,
+        (
+            "阶段变化：早年创业记录与贞观时期的草创—守成讨论共同支持，"
+            "唐太宗本人面对的风险会随处境变化，不能把过去有效的应对方式当作永久答案。"
+        ),
+        (
+            "纠错机制：兼听、纳谏以及‘朕闻过矣’‘犯而无隐’的记录共同支持，"
+            "个人判断并非天然可靠，持续获得真实反馈会改变后续选择。"
+        ),
+        (
+            f"综合边界：{insight_stage.statement} {insight_feedback.statement} "
+            "因此本回答只把‘持续选择与修正’视为个人能够影响命运的一部分，而不宣称个人可以控制全部外部条件。"
+        ),
     ]
 
     cautions = [
-        "本回答只使用当前 R-000001 已审核的唐代知识链；尚未完成汉、宋反例与跨人物比较。",
-        "唐太宗的帝王治理经验不能直接等同于普通人的现代处境；回答仅抽取有证据边界的可迁移部分。",
+        "本回答已使用《旧唐书》《新唐书》《贞观政要》的审核证据；《资治通鉴》相关交叉验证尚未纳入本题正式 HER。",
+        "唐太宗的帝王治理经验不能直接等同于普通人的现代处境；回答正文只保留人物经历可支持的部分，现代迁移另行表达。",
     ]
 
     return GroundedAnswer(
