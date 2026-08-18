@@ -1,0 +1,28 @@
+heu_id: HEU-TANG-000002
+research_id: R-000001
+title: "通过兼听与直谏维持纠错能力"
+experience_owner: tang_taizong
+record_links:
+  - HER-TANG-000002
+  - HER-TANG-000003
+  - HER-TANG-000005
+challenge: >-
+  君主在取得成功和权力稳定之后，容易因信息闭塞、偏信、安乐与自满而失去纠错能力。
+response_or_choice:
+  - "认可魏征关于兼听则明、偏信则暗的判断。"
+  - "面对魏征关于善始难克终的进谏，明确表示已经听到自己的过失。"
+  - "要求魏征继续直言，允许其‘犯而无隐’，把外部纠错保留在决策过程之中。"
+experienced_outcome:
+  - "唐太宗把纳谏、兼听与允许臣下直言作为持续治理的一部分，而不是只依赖个人判断。"
+explicit_reflection:
+  - "朕闻过矣。"
+  - "迟复嘉谋，犯而无隐。"
+interpretation:
+  - "这组记录支持：唐太宗的重要经验之一，是主动保留来自他人的纠错通道，以降低权力与成功带来的信息失真。"
+source_references:
+  - source_id: CN-TANG-0004
+    canonical_ids:
+      - CN-TANG-0004-V001-P0002
+      - CN-TANG-0004-V001-P0010
+      - CN-TANG-0004-V001-P0013
+status: reviewed
