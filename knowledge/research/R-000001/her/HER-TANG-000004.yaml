@@ -1,0 +1,49 @@
+schema_version: 1
+record_id: HER-TANG-000004
+research_id: R-000001
+status: verified
+record_type: discussion
+
+title: "贞观十五年：唐太宗与魏征再论守天下之难"
+
+time:
+  dynasty: Tang
+  reign: 贞观
+  year: 15
+  precision: exact_reign_year
+
+participants:
+  - person_id: tang_taizong
+    name: 唐太宗
+    role_in_record: questioner
+  - person_id: wei_zheng
+    name: 魏征
+    role_in_record: respondent
+
+sources:
+  - source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0014
+    evidence_role: primary
+
+historical_record: >-
+  贞观十五年，唐太宗问侍臣守天下难易。魏征回答“甚难”。唐太宗提出，
+  任贤能、受谏诤即可，何以仍称困难。魏征则以历代帝王在忧危时能够任贤受谏，
+  到安乐时容易宽怠作为回答的开端，强调守成阶段仍存在持续失守的风险。
+
+supported_claims:
+  - 贞观十五年唐太宗再次主动询问守天下的难易。
+  - 唐太宗把任贤与受谏视为守天下的重要条件。
+  - 魏征认为进入安乐状态后仍可能因宽怠而使任贤受谏难以持续。
+
+unsupported_claims:
+  - 该段能够证明唐太宗此后完全接受了魏征的全部判断。
+  - 该段能够证明唐太宗晚年所有失误都源自宽怠。
+  - 该段可以单独证明守成必然比创业困难。
+
+derived_from_candidate_evidence_ids: []
+
+review:
+  evidence_status: accepted
+  interpretation_in_record: forbidden
