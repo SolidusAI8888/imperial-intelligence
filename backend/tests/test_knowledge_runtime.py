@@ -1,14 +1,14 @@
 import pytest
 from pydantic import ValidationError
 
-from backend.app.models.knowledge import (
+from app.models.knowledge import (
     HistoricalExperienceUnit,
     HistoricalRecord,
     Insight,
     RoleExperienceLink,
     SourceReference,
 )
-from backend.app.services.knowledge_runtime import build_runtime_context, render_grounded_context
+from app.services.knowledge_runtime import build_runtime_context, render_grounded_context
 
 
 def _record(record_id: str = "HER-TANG-000001") -> HistoricalRecord:
