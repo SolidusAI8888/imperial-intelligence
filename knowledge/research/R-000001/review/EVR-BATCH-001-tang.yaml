@@ -1,0 +1,76 @@
+schema_version: 1
+research_id: R-000001
+problem_id: Q-FATE-AGENCY-001
+review_id: EVR-BATCH-001
+review_stage: evidence_review
+source_batch: CAND-BATCH-001
+status: complete
+
+review_rule: >-
+  本阶段只判断候选材料是否真实存在于 Source Corpus、是否可追溯、是否与研究问题
+  有足够直接的事实或思想关联，因而值得进入 Verified Evidence。这里不判断其是否已经
+  足以形成 HER、HEU、Insight，也不据此选择最终回答角色。
+
+decisions:
+  - candidate_id: CAND-R000001-0001
+    decision: accept
+    evidence_strength: strong
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+    reasons:
+      - 原文直接保存在已归档《贞观政要》中，canonical ID 可追溯。
+      - 同一段同时保存房玄龄、魏征与唐太宗对“草创/守成”的不同经验判断。
+      - 材料明确涉及乱世机会、个人行动、成功后约束变化，和本研究的“结构与能动性”张力直接相关。
+    limitations:
+      - 讨论对象是帝王事业，不能未经验证直接推广为普通个体人生规律。
+      - 该段包含经验判断与政治论述，后续 HER 必须把可观察事件与解释性陈述分开。
+    next_stage_eligibility:
+      verified_evidence: true
+      her_direct: partial
+      heu_direct: false
+
+  - candidate_id: CAND-R000001-0002
+    decision: accept
+    evidence_strength: moderate
+    canonical_ids:
+      - CN-TANG-0004-V001-P0010
+    reasons:
+      - 原文可追溯，且“善始者实繁，能克终者盖寡”“在殷忧/既得志”的对照与研究问题高度相关。
+      - 它直接提出处境变化会改变人的行为选择，进而改变长期结果，能够作为后续研究的重要解释性证据。
+    limitations:
+      - 这是魏征的规范性政治劝谏，不是一个独立、完整、可观察的 Historical Event Record。
+      - 必须另找具体人物、行动与结果的史料来验证其经验含义，不能单独生成成熟 HEU。
+    next_stage_eligibility:
+      verified_evidence: true
+      her_direct: false
+      heu_direct: false
+
+  - candidate_id: CAND-R000001-0003
+    decision: accept
+    evidence_strength: strong
+    canonical_ids:
+      - CN-TANG-0004-V001-P0013
+    reasons:
+      - 原文直接记录唐太宗对魏征进谏的回应，不是后人替其推测心理。
+      - 其中“朕闻过矣”“犯而无隐”等表述可作为人物自陈的反思/意向证据。
+      - 与“个人能否通过反馈与修正改变后续路径”这一研究维度直接相关。
+    limitations:
+      - 语言上的接受与后续长期行为之间不能画等号。
+      - 后续必须用其他事件和结果证据检验这一意向是否持续、如何变化，避免把一次表态写成人格定论。
+    next_stage_eligibility:
+      verified_evidence: true
+      her_direct: partial
+      heu_direct: false
+
+summary:
+  reviewed: 3
+  accepted: 3
+  rejected: 0
+  held: 0
+  verified_evidence_ready: 3
+  her_direct_ready: 0
+  her_partial_ready: 2
+  note: >-
+    三条均通过 Evidence Review，但没有任何一条被允许直接跳到 HEU。
+    下一步应先把通过审查的证据复制为 Verified Evidence 记录，再从其中识别可观察事件，
+    同时继续补充汉、宋以及唐代反例/失败/受限材料。
