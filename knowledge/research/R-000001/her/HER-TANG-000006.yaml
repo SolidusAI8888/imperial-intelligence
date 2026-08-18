@@ -1,0 +1,30 @@
+record_id: HER-TANG-000006
+research_id: R-000001
+title: "隋末至武德初：李世民在乱世中的主动判断与行动"
+record_type: event
+dynasty: Tang
+time_label: "隋末至武德初"
+participants:
+  - tang_taizong
+historical_record: >-
+  隋末天下动乱时，李世民参与救援雁门、太原起兵与霍邑进军等关键行动。
+  《旧唐书》记载高祖一度因久雨粮尽准备还太原，李世民反对退兵，认为既以大义起兵，
+  若遇小敌即返，追随者将离散；《新唐书》亦记载同一事件，称李世民坚持应直入咸阳、
+  号令天下，并以退兵将导致众散敌乘说明其判断。两书均记录高祖最终改变决定，继续进军。
+sources:
+  - source_id: CN-TANG-0001
+    canonical_ids:
+      - CN-TANG-0001-V002-P0004
+  - source_id: CN-TANG-0002
+    canonical_ids:
+      - CN-TANG-0002-V002-P0004
+supported_claims:
+  - "李世民在隋末与唐初的战争环境中亲历高不确定性的创业阶段。"
+  - "在霍邑进军前，高祖曾考虑退还太原，李世民明确反对，并说明退兵可能导致军心离散和后方受敌。"
+  - "《旧唐书》《新唐书》对这一关键判断及高祖最终继续进军均有相互印证的记载。"
+unsupported_claims:
+  - "李世民在青年时期已经形成了后来完整的守成思想。"
+  - "这次判断足以证明李世民此后所有重大决策均正确。"
+  - "乱世中的个人选择可以消除时代、资源和结构条件的限制。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
