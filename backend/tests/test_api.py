@@ -39,4 +39,10 @@ def test_first_question_returns_evidence_grounded_answer() -> None:
     assert data["status"] == "evidence_grounded"
     assert data["emperor_stage_id"] == "full_lifetime"
     assert "人不能主宰全部命运" in data["imperial_advice"]
-    assert any(item["evidence_id"] == "CN-TANG-0004-V001-P0003" for item in data["evidence"])
+    assert len(data["reasoning"]) == 3
+    assert data["modern_translation"].startswith("【现代转译】")
+
+    evidence = {item["evidence_id"]: item["source_id"] for item in data["evidence"]}
+    assert evidence["CN-TANG-0001-V002-P0004"] == "CN-TANG-0001"
+    assert evidence["CN-TANG-0002-V002-P0004"] == "CN-TANG-0002"
+    assert evidence["CN-TANG-0004-V001-P0003"] == "CN-TANG-0004"
