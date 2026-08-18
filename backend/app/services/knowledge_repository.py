@@ -14,6 +14,17 @@ from app.models.knowledge import (
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 RESEARCH_ROOT = PROJECT_ROOT / "knowledge" / "research" / "R-000001"
+_ALLOWED_RECORD_TYPES = {
+    "discussion",
+    "memorial",
+    "edict",
+    "event",
+    "appointment",
+    "battle",
+    "institution",
+    "reflection",
+    "other",
+}
 
 
 def _load_yaml(path: Path) -> dict:
@@ -48,6 +59,9 @@ def _normalize_record(raw: dict) -> dict:
 
     if data.get("status") == "verified":
         data["status"] = "reviewed"
+
+    if data.get("record_type") not in _ALLOWED_RECORD_TYPES:
+        data["record_type"] = "other"
 
     return data
 
