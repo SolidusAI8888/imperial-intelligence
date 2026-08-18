@@ -1,0 +1,50 @@
+schema_version: 1
+record_id: HER-TANG-000005
+research_id: R-000001
+status: verified
+record_type: discussion
+
+title: "贞观二年：唐太宗问明君暗君与兼听偏信"
+
+time:
+  dynasty: Tang
+  reign: 贞观
+  year: 2
+  precision: exact_reign_year
+
+participants:
+  - person_id: tang_taizong
+    name: 唐太宗
+    role_in_record: questioner
+  - person_id: wei_zheng
+    name: 魏征
+    role_in_record: respondent
+
+sources:
+  - source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0002
+    evidence_role: primary
+
+historical_record: >-
+  贞观二年，唐太宗问魏征何谓明君与暗君。魏征回答，君主之所以明在于兼听，
+  之所以暗在于偏信，并举秦二世、梁武帝、隋炀帝等例说明偏信会造成信息壅蔽，
+  使君主在局势恶化时不能及时得知实情。唐太宗对这一回答表示赞同。
+
+supported_claims:
+  - 唐太宗主动询问明君与暗君的区别。
+  - 魏征明确提出“兼听”与“偏信”的对比。
+  - 魏征把偏信与信息被壅蔽联系起来。
+  - 唐太宗对该回答表示赞同。
+
+unsupported_claims:
+  - 唐太宗此后始终做到了全面兼听。
+  - 兼听可以保证所有重大决策正确。
+  - 该段能够证明唐太宗形成了现代意义上的制度化决策理论。
+
+derived_from_candidate_evidence_ids: []
+
+review:
+  evidence_status: accepted
+  interpretation_in_record: forbidden
