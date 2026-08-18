@@ -24,10 +24,38 @@ def _load_yaml(path: Path) -> dict:
     return data
 
 
+def _normalize_record(raw: dict) -> dict:
+    data = dict(raw)
+
+    if "dynasty" not in data:
+        time = data.get("time") or {}
+        data["dynasty"] = time.get("dynasty", "Unknown")
+        reign = time.get("reign")
+        year = time.get("year")
+        if "time_label" not in data:
+            if reign and year is not None:
+                data["time_label"] = f"{reign}{year}年"
+            elif reign:
+                data["time_label"] = str(reign)
+
+    participants = data.get("participants", [])
+    if participants and isinstance(participants[0], dict):
+        data["participants"] = [
+            item.get("person_id") or item.get("name")
+            for item in participants
+            if item.get("person_id") or item.get("name")
+        ]
+
+    if data.get("status") == "verified":
+        data["status"] = "reviewed"
+
+    return data
+
+
 def load_first_question_records() -> list[HistoricalRecord]:
     her_dir = RESEARCH_ROOT / "her"
     return [
-        HistoricalRecord.model_validate(_load_yaml(path))
+        HistoricalRecord.model_validate(_normalize_record(_load_yaml(path)))
         for path in sorted(her_dir.glob("HER-TANG-*.yaml"))
     ]
 
