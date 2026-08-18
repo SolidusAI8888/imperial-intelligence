@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from backend.app.models.knowledge import (
+from app.models.knowledge import (
     HistoricalExperienceUnit,
     HistoricalRecord,
     Insight,
@@ -43,10 +43,10 @@ def build_runtime_context(
 
 
 def render_grounded_context(context: RuntimeContext) -> str:
-    """Render a compact, auditable context for the LLM/persona layer.
+    """Render a compact, auditable context for the persona layer.
 
     Historical facts, lived experience, and transferable insights remain
-    explicitly separated so the prompt layer cannot silently collapse them.
+    explicitly separated so the final answer step cannot silently collapse them.
     """
 
     lines: list[str] = [
