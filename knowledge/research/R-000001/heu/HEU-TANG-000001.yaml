@@ -1,0 +1,25 @@
+heu_id: HEU-TANG-000001
+research_id: R-000001
+title: "从草创到守成：不同阶段的约束与选择会变化"
+experience_owner: tang_taizong
+record_links:
+  - HER-TANG-000001
+  - HER-TANG-000004
+challenge: >-
+  唐太宗先后经历创业与守成两个阶段。创业时期面对外部竞争与统一战争，
+  守成时期则面对安乐之后可能出现的懈怠、骄逸与政治判断弱化。
+response_or_choice:
+  - "在贞观十年主动与房玄龄、魏征讨论草创与守成之难，并明确把注意力转向守成风险。"
+  - "在贞观十五年再次追问守天下之难，并继续把任贤、纳谏与警惕安乐后的宽怠作为治理重点。"
+experienced_outcome:
+  - "唐太宗形成了对创业与守成阶段差异的明确认识，并持续把守成风险作为需要处理的问题。"
+explicit_reflection:
+  - "草创之难已经过去，守成之难应与群臣共同谨慎应对。"
+interpretation:
+  - "这组记录支持：对唐太宗本人而言，成功并未终结困难，而是把困难从外部竞争转化为内部自我约束与持续治理。"
+source_references:
+  - source_id: CN-TANG-0004
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+      - CN-TANG-0004-V001-P0014
+status: reviewed
