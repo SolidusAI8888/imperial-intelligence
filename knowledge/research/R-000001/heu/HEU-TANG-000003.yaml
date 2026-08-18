@@ -1,0 +1,28 @@
+heu_id: HEU-TANG-000003
+research_id: R-000001
+title: "成功之后更需要防止自满与懈怠"
+experience_owner: tang_taizong
+record_links:
+  - HER-TANG-000001
+  - HER-TANG-000002
+  - HER-TANG-000004
+challenge: >-
+  唐太宗面对的是一个从乱世创业转向天下安定后的长期问题：外部威胁下降后，
+  君主本人更容易因安乐、骄逸与习惯性成功而降低警惕。
+response_or_choice:
+  - "接受魏征关于‘善始者实繁，能克终者盖寡’的警告。"
+  - "把守成阶段的主要风险明确指向安乐后的宽怠、骄逸与不能持续纳谏。"
+  - "多次重提守成难题，而不是把既有成功视为最终完成。"
+experienced_outcome:
+  - "唐太宗在贞观中后期持续把成功之后的自我约束视为需要反复处理的问题。"
+explicit_reflection:
+  - "今草创之难，既已往矣，守成之难者，当思与公等慎之。"
+interpretation:
+  - "这组记录支持：对唐太宗而言，成功本身会改变风险结构，后续命运仍取决于是否继续保持警惕、纳谏与自我约束。"
+source_references:
+  - source_id: CN-TANG-0004
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+      - CN-TANG-0004-V001-P0010
+      - CN-TANG-0004-V001-P0014
+status: reviewed
