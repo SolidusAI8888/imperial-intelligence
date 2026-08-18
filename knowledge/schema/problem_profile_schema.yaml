@@ -1,0 +1,47 @@
+schema_version: 1
+object: problem_profile
+required:
+  - problem_id
+  - raw_question
+  - core_tensions
+  - retrieval_dimensions
+properties:
+  problem_id:
+    type: string
+    pattern: '^Q-[A-Z0-9-]+$'
+  raw_question:
+    type: string
+  normalized_question:
+    type: string
+  core_tensions:
+    type: list[string]
+  retrieval_dimensions:
+    type: list[string]
+    note: 'Open-ended retrieval cues, not a fixed taxonomy.'
+  temporal_horizon:
+    type: enum
+    values: [immediate, medium_term, life_course, existential, mixed]
+  agency_structure:
+    type: object
+    fields:
+      individual_agency:
+        type: number
+        range: [0, 1]
+      structural_forces:
+        type: number
+        range: [0, 1]
+      contingency_or_luck:
+        type: number
+        range: [0, 1]
+      interpersonal_forces:
+        type: number
+        range: [0, 1]
+    note: 'Analytical weights, not a conclusion about the answer.'
+  desired_answer_mode:
+    type: list[string]
+  exclusions:
+    type: list[string]
+validation_rules:
+  - 'Problem profiles must not preassign a historical person.'
+  - 'Retrieval dimensions must remain revisable after evidence retrieval.'
+  - 'Weights guide search only and must not predetermine the final insight.'

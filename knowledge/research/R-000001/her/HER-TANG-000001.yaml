@@ -1,0 +1,32 @@
+record_id: HER-TANG-000001
+research_id: R-000001
+title: "贞观十年：唐太宗与房玄龄、魏征论草创与守成"
+record_type: discussion
+dynasty: Tang
+time_label: "贞观十年"
+participants:
+  - tang_taizong
+  - fang_xuanling
+  - wei_zheng
+historical_record: >-
+  贞观十年，唐太宗问侍臣“帝王之业，草创与守成孰难”。房玄龄以天下草昧、
+  群雄竞起、攻破战胜说明草创之难；魏征则指出帝王之起多承衰乱，而既得天下后
+  容易骄逸、徭役与侈务不息，国家衰弊常由此而起，因此守成更难。唐太宗总结说，
+  房玄龄昔日随自己定天下，亲见草创之难；魏征与自己安天下，所虑在骄逸危亡，
+  所以见守成之难。草创之难已经过去，今后应与群臣慎守成。
+sources:
+  - source_id: CN-TANG-0004
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+supported_claims:
+  - "唐太宗主动提出草创与守成孰难的问题。"
+  - "房玄龄认为草创更难。"
+  - "魏征认为守成更难。"
+  - "唐太宗区分二人判断所依据的不同历史阶段，并明确表示今后应慎守成。"
+unsupported_claims:
+  - "唐太宗因此彻底改变了人格或人生观。"
+  - "唐太宗此后始终能够做到慎守成。"
+  - "这一次讨论足以单独证明唐太宗形成了完整的终身人生经验。"
+derived_from_candidate_evidence_ids:
+  - CAND-R000001-0001
+status: reviewed

@@ -1,0 +1,23 @@
+person_id: tang_taizong
+research_id: R-000001
+life_course_rule: full_lifetime
+links:
+  - heu_id: HEU-TANG-000001
+    relation: experience_owner
+    responder_eligible: true
+    personal_experience_strength: primary
+  - heu_id: HEU-TANG-000002
+    relation: experience_owner
+    responder_eligible: true
+    personal_experience_strength: primary
+  - heu_id: HEU-TANG-000003
+    relation: experience_owner
+    responder_eligible: true
+    personal_experience_strength: primary
+source_support:
+  - CN-TANG-0004-V001-P0002
+  - CN-TANG-0004-V001-P0003
+  - CN-TANG-0004-V001-P0010
+  - CN-TANG-0004-V001-P0013
+  - CN-TANG-0004-V001-P0014
+status: reviewed

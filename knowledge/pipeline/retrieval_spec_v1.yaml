@@ -1,0 +1,44 @@
+version: 1
+name: evidence_retrieval_contract
+purpose: >-
+  Retrieve candidate Source Corpus passages for a problem profile before any person is selected
+  and before any HEU or insight is generated.
+inputs:
+  - problem_profile
+  - source_corpus
+outputs:
+  - candidate_evidence_set
+hard_rules:
+  - Retrieval must not preassign a historical person.
+  - Retrieval may use lexical, semantic, structural, and comparative cues, but no single cue is authoritative.
+  - Candidate evidence must retain exact Source Corpus canonical IDs.
+  - Retrieval is recall-oriented; acceptance into an HEU requires later evidence review.
+  - Passages supporting limits on agency or contradicting an emerging thesis must be retained.
+  - Final candidate ranking must not be based on fame, imperial status, or pre-existing persona availability.
+  - A candidate passage cannot become an insight directly; it must first support one or more HEUs.
+stages:
+  - stage: broad_recall
+    description: Scan the complete eligible Source Corpus using open-ended cues derived from the problem profile.
+  - stage: context_expansion
+    description: Expand each hit to nearby canonical paragraphs so actions and outcomes are not separated from context.
+  - stage: entity_resolution
+    description: Identify persons, events, institutions, places, and time references without selecting a respondent.
+  - stage: comparative_grouping
+    description: Group potentially comparable experiences, including contrasting outcomes under similar conditions.
+  - stage: contradiction_pass
+    description: Search explicitly for evidence that weakens simple agency-only or structure-only explanations.
+  - stage: evidence_ranking
+    description: Rank evidence for HEU construction using relevance, completeness, evidentiary strength, and diversity.
+ranking_dimensions:
+  problem_relevance: 0.30
+  experience_completeness: 0.25
+  evidentiary_specificity: 0.20
+  comparative_value: 0.10
+  reflection_value: 0.10
+  diversity_contribution: 0.05
+anti_bias_rules:
+  - Do not reward a passage because the person is already modeled as a persona.
+  - Do not reward a passage simply because the person is an emperor or famous figure.
+  - Do not discard failed actions; failure and constraint evidence are essential.
+  - Do not treat retrospective success as proof that the original decision was predictably correct.
+  - Preserve evidence from different dynasties when relevance is comparable.

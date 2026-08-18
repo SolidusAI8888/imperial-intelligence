@@ -27,3 +27,16 @@ def test_consultation_prototype() -> None:
     assert data["emperor_id"] == "tang_taizong"
     assert data["status"] == "prototype"
     assert "avatar_directive" in data
+
+
+def test_first_question_returns_evidence_grounded_answer() -> None:
+    response = client.post(
+        "/emperors/tang_taizong/consult",
+        json={"question": "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"},
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] == "evidence_grounded"
+    assert data["emperor_stage_id"] == "full_lifetime"
+    assert "人不能主宰全部命运" in data["imperial_advice"]
+    assert any(item["evidence_id"] == "CN-TANG-0004-V001-P0003" for item in data["evidence"])

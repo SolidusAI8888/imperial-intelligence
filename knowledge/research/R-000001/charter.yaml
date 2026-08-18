@@ -1,0 +1,97 @@
+schema_version: 1
+
+research_id: R-000001
+problem_id: Q-FATE-AGENCY-001
+
+title: >-
+  面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？
+
+research_type: fundamental
+status: drafting
+
+research_value: >-
+  帮助现代人在面对时代变化、职业变化、社会变化与身份变化时，
+  从可追溯的历史经验中理解时代结构、个人选择、能力、人际关系、
+  制度约束与偶然因素如何共同影响人生，避免把复杂结果简单归因于
+  “命运”“天命”或“个人努力”。
+
+objective: >-
+  在已归档的汉、唐、宋一级权威史料中，寻找并验证能够说明个体在
+  剧烈时代变化中如何受到结构性条件影响、又如何通过选择与行动改变
+  自身处境的历史证据，并保留失败、受限、偶然和反例经验。
+
+scope:
+  dynasties:
+    - Han
+    - Tang
+    - Song
+  source_policy:
+    primary_authoritative_sources_only: true
+    source_corpus_required: true
+    canonical_id_required: true
+  initial_role_bias:
+    forbidden: true
+  initial_person_selection:
+    forbidden: true
+
+research_hypotheses:
+  - id: H1
+    statement: 时代结构与制度条件会显著限制个体可选择的行动空间。
+    status: untested
+  - id: H2
+    statement: 在相似结构条件下，个体的判断、选择、能力与关系网络仍会改变人生路径。
+    status: untested
+  - id: H3
+    statement: 偶然事件与不可控因素可能在关键节点改变个体命运，且不能被事后成功叙事抹去。
+    status: untested
+  - id: H4
+    statement: 对“命运”的历史解释应允许时代、个人、制度、关系与偶然因素共同作用，而不是预设单一决定论。
+    status: untested
+
+required_evidence_balance:
+  must_include:
+    - success
+    - failure
+    - constrained_agency
+    - changed_outcome_after_choice
+    - counterexample
+    - contingency
+  avoid:
+    - emperor_or_fame_bias
+    - success_only_selection
+    - hindsight_determinism
+    - unsupported_psychology
+    - modern_moralization_without_evidence
+
+review_pipeline:
+  stages:
+    - candidate_evidence
+    - verified_evidence
+    - historical_event_record
+    - historical_experience_unit
+    - insight
+    - role_link
+    - runtime_validation
+  no_stage_skipping: true
+
+initial_exit_criteria:
+  verified_candidates_minimum: 15
+  dynasties_represented_minimum: 3
+  persons_represented_minimum: 5
+  her_minimum: 8
+  heu_minimum: 5
+  insight_minimum: 3
+  role_links_minimum: 3
+  evidence_traceable: true
+  unsupported_psychology_forbidden: true
+  contradictory_evidence_preserved: true
+
+lifecycle:
+  current_stage: charter
+  charter_status: frozen_for_stage_1
+  gold_status: not_eligible
+
+notes:
+  - Gold is a review status, not a directory or a claim made at research start.
+  - Question matching precedes role selection; Tang Taizong is not preselected by this charter.
+  - A respondent may later use full-lifecycle experience, but only experiences supported by evidence may enter HEU or runtime knowledge.

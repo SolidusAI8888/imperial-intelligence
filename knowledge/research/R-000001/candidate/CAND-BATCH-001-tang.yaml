@@ -1,0 +1,101 @@
+schema_version: 1
+research_id: R-000001
+problem_id: Q-FATE-AGENCY-001
+batch_id: CAND-BATCH-001
+status: candidate_only
+review_status: pending
+
+purpose: >-
+  第一批人工候选证据。该批次只验证 Candidate Evidence 工作流，
+  不代表唐太宗已被选为最终回答角色，也不构成 HER、HEU 或 Insight。
+
+selection_note: >-
+  本批先从《贞观政要》选取三段可直接追溯的材料，测试“时代结构—个人选择—
+  长期结果”这一研究问题的证据表达方式。后续批次必须继续覆盖汉、唐、宋，
+  并纳入失败、受限、偶然与反例材料。
+
+candidates:
+  - candidate_id: CAND-R000001-0001
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+    evidence_excerpt: >-
+      贞观十年，太宗问“帝王之业，草创与守成孰难”。房玄龄以群雄竞起、
+      战胜克敌说明草创之难；魏征则指出创业往往承衰乱而起，而取得天下后
+      骄逸、徭役不休、侈务不息，国家衰弊常由此而起。太宗据此区分自己与
+      房玄龄亲历的“草创之难”和魏征所警示的“守成之难”，并表示今后当慎守成。
+    why_selected: >-
+      这段材料同时呈现时代乱局提供的机会结构、个人在乱世中的行动能力，以及
+      成功之后环境改变导致的新风险。它可以检验“命运并非由单一因素决定，
+      同一人物在不同历史阶段面对的约束与可选择空间会变化”这一方向。
+    possible_counter_reading: >-
+      该段核心议题是帝王创业与守成，不直接讨论普通个体的人生命运；
+      若无法抽象出不依赖帝王身份的可迁移经验，应在 Problem Fit 阶段降级或拒绝。
+    dimensions:
+      - structural_opportunity
+      - agency
+      - changing_constraints
+      - success_risk
+    evidence_review: pending
+    experience_review: pending
+    problem_fit_review: pending
+
+  - candidate_id: CAND-R000001-0002
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0010
+    evidence_excerpt: >-
+      魏征论“善始者实繁，能克终者盖寡”，指出人在忧危时往往竭诚待下，
+      得志之后却容易纵情傲物；前者能使原本疏远的人合作，后者甚至使骨肉离心。
+      他并以“载舟覆舟”警告权力者，长期结果会因取得成功后的行为变化而逆转。
+    why_selected: >-
+      该段非常适合检验“外部局势并不自动决定结局；人在处境改善之后的持续选择
+      仍然会重新塑造未来”这一问题，同时提供了成功并非终局的反事后决定论材料。
+    possible_counter_reading: >-
+      这是魏征的规范性政治劝谏，不是对某一具体事件的完整叙述。
+      它可作为 Candidate Evidence，但未必能单独形成 HER；后续必须寻找具体事件
+      与结果来验证其经验含义。
+    dimensions:
+      - sustained_agency
+      - post_success_choice
+      - relationships
+      - reversal_risk
+    evidence_review: pending
+    experience_review: pending
+    problem_fit_review: pending
+
+  - candidate_id: CAND-R000001-0003
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0013
+    evidence_excerpt: >-
+      唐太宗答魏征奏疏时，以晋武帝平吴后骄奢、何曾退而议论却不当面进谏为例，
+      认为臣下应“进思尽忠，退思补过”，并明确表示自己已经听到过失，愿将魏征
+      所陈置于案头警戒自己，要求其今后继续“犯而无隐”。
+    why_selected: >-
+      这段材料不是单纯记录“接受意见”，而是保存了唐太宗对他人劝谏如何影响自身
+      后续选择的明确回应，可用于检验人的命运路径是否会通过主动建立反馈机制而改变。
+    possible_counter_reading: >-
+      表态愿意接受劝谏不等于后来始终做到；若缺少后续行为和结果证据，不能据此推断
+      唐太宗已经形成稳定人格或完成认知转变，也不能直接生成成熟 HEU。
+    dimensions:
+      - feedback
+      - corrective_choice
+      - relational_agency
+      - self_governance
+    evidence_review: pending
+    experience_review: pending
+    problem_fit_review: pending
+
+batch_acceptance:
+  candidate_count: 3
+  canonical_traceability_required: true
+  unsupported_psychology_forbidden: true
+  no_role_selection_from_this_batch: true
+  next_action: manual_evidence_review

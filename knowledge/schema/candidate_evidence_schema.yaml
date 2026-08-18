@@ -1,0 +1,51 @@
+schema_version: 1
+object: candidate_evidence_set
+required:
+  - problem_id
+  - retrieval_version
+  - candidates
+properties:
+  problem_id:
+    type: string
+  retrieval_version:
+    type: string
+  generated_from:
+    type: list[string]
+  corpus_scope:
+    type: list[string]
+  candidates:
+    type: list[object]
+    item_fields:
+      candidate_id:
+        type: string
+      source_id:
+        type: string
+      source_title:
+        type: string
+      file:
+        type: string
+      anchor_canonical_id:
+        type: string
+      context_canonical_ids:
+        type: list[string]
+      text:
+        type: string
+      matched_cues:
+        type: list[string]
+      cue_groups:
+        type: list[string]
+      lexical_score:
+        type: number
+      has_limit_or_failure_signal:
+        type: boolean
+      review_status:
+        type: enum
+        values: [unreviewed, keep, reject, needs_context]
+      review_note:
+        type: string
+        nullable: true
+validation_rules:
+  - 'Every candidate must point to an exact Source Corpus canonical ID.'
+  - 'Candidate evidence is recall output only and must not be treated as an HEU or insight.'
+  - 'No candidate may receive a ranking boost because of fame, imperial status, or persona availability.'
+  - 'Contradictory, failure, and structural-limit evidence must remain eligible for review.'

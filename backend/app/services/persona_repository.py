@@ -5,7 +5,7 @@ import yaml
 class PersonaRepository:
     def __init__(self, data_root: Path | None = None) -> None:
         self.data_root = data_root or (
-            Path(__file__).resolve().parents[3] / "data" / "emperors"
+            Path(__file__).resolve().parents[2] / "data" / "emperors"
         )
 
     def list_emperors(self) -> list[dict]:

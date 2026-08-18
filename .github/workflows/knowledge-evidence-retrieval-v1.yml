@@ -1,0 +1,41 @@
+name: Knowledge Evidence Retrieval V1
+
+on:
+  push:
+    branches:
+      - feature/knowledge-layer-v1
+    paths:
+      - '.github/workflows/knowledge-evidence-retrieval-v1.yml'
+      - 'knowledge/pipeline/retrieve_evidence.py'
+      - 'knowledge/problems/Q-FATE-AGENCY-001.yaml'
+      - 'knowledge/problems/Q-FATE-AGENCY-001.retrieval.yaml'
+      - 'knowledge/schema/candidate_evidence_schema.yaml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/knowledge-layer-v1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: python -m pip install pyyaml
+      - name: Retrieve candidate evidence
+        run: python knowledge/pipeline/retrieve_evidence.py --problem-id Q-FATE-AGENCY-001
+      - name: Commit candidate evidence
+        run: |
+          git config user.name 'imperial-intelligence-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add knowledge/evidence/Q-FATE-AGENCY-001.candidates.yaml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Generate candidate evidence for Q-FATE-AGENCY-001'
+            git push origin HEAD:feature/knowledge-layer-v1
+          fi

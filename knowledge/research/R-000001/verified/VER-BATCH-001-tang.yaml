@@ -1,0 +1,74 @@
+schema_version: 1
+research_id: R-000001
+problem_id: Q-FATE-AGENCY-001
+verified_batch_id: VER-BATCH-001
+source_candidate_batch: CAND-BATCH-001
+source_review: EVR-BATCH-001
+status: verified_evidence
+
+records:
+  - verified_id: VER-R000001-0001
+    candidate_id: CAND-R000001-0001
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0003
+    verified_use: >-
+      用于研究乱世中的结构性机会、个人行动能力，以及成功后约束条件发生变化这一组关系。
+    evidence_class:
+      - actor_reflection
+      - comparative_judgment
+      - political_experience
+    restrictions:
+      - 不得直接推广为普通个体人生规律。
+      - 不得直接生成 HEU。
+      - HER 建模时必须区分事实叙述与参与者评价。
+
+  - verified_id: VER-R000001-0002
+    candidate_id: CAND-R000001-0002
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0010
+    verified_use: >-
+      用于研究处境由危转安、由未得志转为得志后，持续选择如何影响长期结果。
+    evidence_class:
+      - normative_admonition
+      - historical_generalization
+    restrictions:
+      - 不能单独构成 HER。
+      - 必须与具体事件、行动和结果证据配对后，才可进入 HEU 推导。
+
+  - verified_id: VER-R000001-0003
+    candidate_id: CAND-R000001-0003
+    dynasty: Tang
+    source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0013
+    verified_use: >-
+      用于研究人物是否主动建立纠错机制，以及明确的自我反思/受谏表态如何进入后续经验演化研究。
+    evidence_class:
+      - first_person_response
+      - reflective_statement
+      - corrective_intent
+    restrictions:
+      - 不得把表态等同于长期行为。
+      - 必须寻找后续行为、结果及晚年反思以判断其经验是否成熟或发生变化。
+      - 不得据此推断未被史料明示的心理活动。
+
+batch_summary:
+  verified_count: 3
+  dynasty_coverage:
+    Tang: 3
+  ready_for_her_identification: true
+  ready_for_heu_generation: false
+  role_selection_allowed: false
+  next_required_balance:
+    - Han evidence
+    - Song evidence
+    - Tang failure_or_counterexample
+    - constrained_agency
+    - contingency

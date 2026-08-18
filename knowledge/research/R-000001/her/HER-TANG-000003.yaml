@@ -1,0 +1,50 @@
+schema_version: 1
+record_id: HER-TANG-000003
+research_id: R-000001
+status: verified
+record_type: imperial_reply
+
+title: "贞观十一年：唐太宗答魏征并要求继续直谏"
+
+time:
+  dynasty: Tang
+  reign: 贞观
+  year: 11
+  precision: exact_reign_year
+
+participants:
+  - person_id: tang_taizong
+    name: 唐太宗
+    role_in_record: imperial_responder
+  - person_id: wei_zheng
+    name: 魏征
+    role_in_record: remonstrating_minister
+
+sources:
+  - source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0013
+    evidence_role: primary
+
+historical_record: >-
+  唐太宗在答复魏征奏疏时，批评何曾只在退朝后议论晋武帝而未当廷进谏，
+  强调臣下应当“进思尽忠，退思补过”。他明确表示“公之所陈，朕闻过矣”，
+  并称将把魏征所陈置于几案以自警，要求魏征今后继续“犯而无隐”。
+
+supported_claims:
+  - 唐太宗明确承认已经听到魏征指出的过失。
+  - 唐太宗明确要求魏征继续直言进谏。
+  - 唐太宗把臣下当面纠正君主过失视为臣职的一部分。
+
+unsupported_claims:
+  - 唐太宗此后所有重大决策都充分采纳了反对意见。
+  - 这次答复证明唐太宗已经彻底克服自负或偏见。
+  - 魏征的进谏必然导致了某一具体政策结果。
+
+derived_from_candidate_evidence_ids:
+  - CAND-R000001-0003
+
+review:
+  evidence_status: accepted
+  interpretation_in_record: forbidden
