@@ -1,0 +1,50 @@
+schema_version: 1
+record_id: HER-TANG-000002
+research_id: R-000001
+status: verified
+record_type: memorial
+
+title: "贞观十一年：魏征上疏论善始与克终"
+
+time:
+  dynasty: Tang
+  reign: 贞观
+  year: 11
+  precision: exact_reign_year
+
+participants:
+  - person_id: wei_zheng
+    name: 魏征
+    role_in_record: memorial_author
+  - person_id: tang_taizong
+    name: 唐太宗
+    role_in_record: recipient
+
+sources:
+  - source_id: CN-TANG-0004
+    source_title: 贞观政要
+    canonical_ids:
+      - CN-TANG-0004-V001-P0010
+    evidence_role: primary
+
+historical_record: >-
+  贞观十一年，魏征上疏论述历代君主在忧危时往往能够竭诚待下，
+  而在得志、安乐之后容易纵情傲物。他以“善始者实繁，能克终者盖寡”
+  概括这种由忧危到安乐后行为改变的风险，并以“载舟覆舟”警示人主慎终。
+
+supported_claims:
+  - 魏征明确提出“善始者实繁，能克终者盖寡”。
+  - 魏征把忧危时的竭诚待下与得志后的纵情傲物作对比。
+  - 该上疏直接向唐太宗提出慎终与防止成功后懈怠的警告。
+
+unsupported_claims:
+  - 唐太宗自此以后始终依照该建议行事。
+  - 该奏疏本身能够证明唐太宗已经形成稳定的晚年反思。
+  - 该奏疏能够单独证明所有成功者都会在成功后失败。
+
+derived_from_candidate_evidence_ids:
+  - CAND-R000001-0002
+
+review:
+  evidence_status: accepted
+  interpretation_in_record: forbidden
