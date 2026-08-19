@@ -109,7 +109,7 @@ def test_followup_can_clarify_core_term_without_restarting_answer() -> None:
     assert "它不是‘我想怎样，世界就怎样’" in data["imperial_advice"]
 
 
-def test_auto_consult_compares_three_dynasties_and_selects_best_grounded_role() -> None:
+def test_auto_consult_screens_all_emperors_and_selects_best_grounded_role() -> None:
     response = client.post(
         "/consult/auto",
         json={"question": "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"},
@@ -117,6 +117,11 @@ def test_auto_consult_compares_three_dynasties_and_selects_best_grounded_role() 
     assert response.status_code == 200
     data = response.json()
     assert data["selected_emperor_id"] == "tang_taizong"
+    assert len(data["screened_emperors"]) == 69
+    assert sum(1 for item in data["screened_emperors"] if item["eligible"]) == 3
+    assert any(item["emperor_id"] == "han_wudi" for item in data["screened_emperors"])
+    assert any(item["emperor_id"] == "tang_xuanzong" for item in data["screened_emperors"])
+    assert any(item["emperor_id"] == "song_renzong" for item in data["screened_emperors"])
     assert [item["dynasty"] for item in data["rankings"]] == ["tang", "han", "song"]
     assert data["rankings"][0]["score"] > data["rankings"][1]["score"]
     assert data["rankings"][1]["score"] > data["rankings"][2]["score"]
