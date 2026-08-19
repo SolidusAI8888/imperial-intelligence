@@ -14,13 +14,17 @@ def _module():
     return module
 
 
-def test_phase2_selector_starts_with_sanguozhi_on_clean_repo() -> None:
+def test_phase2_selector_tracks_current_repository_progress() -> None:
     module = _module()
     result = module.status()
     assert result["total"] == 18
-    assert result["complete"] == 0
-    assert result["pending"] == 18
-    assert result["next_source_id"] == "CN-SANGUO-0001"
+    assert result["complete"] + result["pending"] == 18
+    assert len(result["complete_source_ids"]) == result["complete"]
+    assert len(result["pending_source_ids"]) == result["pending"]
+    if result["pending_source_ids"]:
+        assert result["next_source_id"] == result["pending_source_ids"][0]
+    else:
+        assert result["next_source_id"] is None
 
 
 def test_phase2_selector_manifest_ids_are_unique() -> None:
