@@ -1,0 +1,536 @@
+{
+  "source_id": "CN-SANGUO-0001",
+  "title": "三國志",
+  "expected_range": [
+    1,
+    65
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "三國志/卷01",
+    "三國志/卷02",
+    "三國志/卷03",
+    "三國志/卷04",
+    "三國志/卷05",
+    "三國志/卷06",
+    "三國志/卷07",
+    "三國志/卷08",
+    "三國志/卷09",
+    "三國志/卷10",
+    "三國志/卷11",
+    "三國志/卷12",
+    "三國志/卷13",
+    "三國志/卷14",
+    "三國志/卷15",
+    "三國志/卷16",
+    "三國志/卷17",
+    "三國志/卷18",
+    "三國志/卷19",
+    "三國志/卷20",
+    "三國志/卷21",
+    "三國志/卷22",
+    "三國志/卷23",
+    "三國志/卷24",
+    "三國志/卷25",
+    "三國志/卷26",
+    "三國志/卷27",
+    "三國志/卷28",
+    "三國志/卷29",
+    "三國志/卷30",
+    "三國志/卷31",
+    "三國志/卷32",
+    "三國志/卷33",
+    "三國志/卷34",
+    "三國志/卷35",
+    "三國志/卷36",
+    "三國志/卷37",
+    "三國志/卷38",
+    "三國志/卷39",
+    "三國志/卷40",
+    "三國志/卷41",
+    "三國志/卷42",
+    "三國志/卷43",
+    "三國志/卷44",
+    "三國志/卷45",
+    "三國志/卷46",
+    "三國志/卷47",
+    "三國志/卷48",
+    "三國志/卷49",
+    "三國志/卷50",
+    "三國志/卷51",
+    "三國志/卷52",
+    "三國志/卷53",
+    "三國志/卷54",
+    "三國志/卷55",
+    "三國志/卷56",
+    "三國志/卷57",
+    "三國志/卷58",
+    "三國志/卷59",
+    "三國志/卷60",
+    "三國志/卷61",
+    "三國志/卷62",
+    "三國志/卷63",
+    "三國志/卷64",
+    "三國志/卷65"
+  ],
+  "pages": [
+    {
+      "page": "三國志/卷01",
+      "file": "001.txt",
+      "blocks": 130,
+      "revid": 2585429,
+      "sha256": "0c6fbef45e8dcea646bc4a92941348668d624df64775fa5ede3525d960064a49"
+    },
+    {
+      "page": "三國志/卷02",
+      "file": "002.txt",
+      "blocks": 41,
+      "revid": 7913642,
+      "sha256": "6fd862a443e7f88826328ac5b0e9553b2753836736600cd1238f32b251bad824"
+    },
+    {
+      "page": "三國志/卷03",
+      "file": "003.txt",
+      "blocks": 45,
+      "revid": 2085053,
+      "sha256": "4812bcefaba0f2bc3bf9fd39e9b982a183f14715af52add059e4f412c8c21b48"
+    },
+    {
+      "page": "三國志/卷04",
+      "file": "004.txt",
+      "blocks": 84,
+      "revid": 2085051,
+      "sha256": "b9c98f74cffb69ddab3c36c7c4e25af8cd73b38670c02e5a8338185d3be7d149"
+    },
+    {
+      "page": "三國志/卷05",
+      "file": "005.txt",
+      "blocks": 23,
+      "revid": 2086290,
+      "sha256": "0b0d9ae4beb750def3ec21b280b332d6ea05589e6d3c66f9a84d28ca9896e35a"
+    },
+    {
+      "page": "三國志/卷06",
+      "file": "006.txt",
+      "blocks": 38,
+      "revid": 2132349,
+      "sha256": "9547eee7333ec768f9dd330088c910840792c157074a03f41209017ea4f3e987"
+    },
+    {
+      "page": "三國志/卷07",
+      "file": "007.txt",
+      "blocks": 24,
+      "revid": 2452141,
+      "sha256": "995ca02d042fec5b7fa04c319cd1cc5ad85b7eec834a02c4af7bdfa4a7bfc197"
+    },
+    {
+      "page": "三國志/卷08",
+      "file": "008.txt",
+      "blocks": 44,
+      "revid": 2086403,
+      "sha256": "82baab257999336bbd4f33c394e11a034694c9c4af6e9ab54aca72bf829f257c"
+    },
+    {
+      "page": "三國志/卷09",
+      "file": "009.txt",
+      "blocks": 42,
+      "revid": 2274283,
+      "sha256": "9ca22b8c86078eca6d5b2445cc65e60963768fb4ce65bbf189412188cdb2a3a2"
+    },
+    {
+      "page": "三國志/卷10",
+      "file": "010.txt",
+      "blocks": 43,
+      "revid": 2274279,
+      "sha256": "3a6b77f10e08d3f7be43ee58a82610936981e4931a897b1db5faf28e42d69845"
+    },
+    {
+      "page": "三國志/卷11",
+      "file": "011.txt",
+      "blocks": 39,
+      "revid": 2373044,
+      "sha256": "b8407dd0cc44dad0780ab382a771130cc6550e70300f97a1f75e7a612fd758d1"
+    },
+    {
+      "page": "三國志/卷12",
+      "file": "012.txt",
+      "blocks": 51,
+      "revid": 2085067,
+      "sha256": "f4aab25ae2dc0a22921b8fc04a7e1d6bfeb96e80d45b4d0f26f31766206e4d66"
+    },
+    {
+      "page": "三國志/卷13",
+      "file": "013.txt",
+      "blocks": 30,
+      "revid": 2331498,
+      "sha256": "4868000594b92757b54950bf02a385d2757ccbf3a37300895331ce8e2b2eef1f"
+    },
+    {
+      "page": "三國志/卷14",
+      "file": "014.txt",
+      "blocks": 95,
+      "revid": 2374427,
+      "sha256": "f4064947c5a6f24d0fccedfbc4f6f2a9837091678a8326ebb3787a4849abf4fe"
+    },
+    {
+      "page": "三國志/卷15",
+      "file": "015.txt",
+      "blocks": 36,
+      "revid": 2085075,
+      "sha256": "d1937874a1157bb286d6bbb0aaf8dbc1bd8b9675ef4c83d6bf609812b7d642f8"
+    },
+    {
+      "page": "三國志/卷16",
+      "file": "016.txt",
+      "blocks": 37,
+      "revid": 2610840,
+      "sha256": "32aee18339e3dd9b5e9902e35e58567142a8a4a842e8eb088d5c8da1489ebdf4"
+    },
+    {
+      "page": "三國志/卷17",
+      "file": "017.txt",
+      "blocks": 21,
+      "revid": 2390639,
+      "sha256": "e70c893de07ed77527eacd7418f856e6425b052ae8282aeade40243326e924f8"
+    },
+    {
+      "page": "三國志/卷18",
+      "file": "018.txt",
+      "blocks": 33,
+      "revid": 2579680,
+      "sha256": "a0e611deeb7cd7630e39db0213fbb69217b0ac537b469bf038a0b6f6ef6ab657"
+    },
+    {
+      "page": "三國志/卷19",
+      "file": "019.txt",
+      "blocks": 35,
+      "revid": 2347417,
+      "sha256": "930760cf3fb0561d5b08b090a63f156a0aec2605d29c7c9d5e6247a551f36263"
+    },
+    {
+      "page": "三國志/卷20",
+      "file": "020.txt",
+      "blocks": 42,
+      "revid": 2393407,
+      "sha256": "a09370413526799047560e45fdef85f2e7fb5cb48631d89c643cbf18d7576cf5"
+    },
+    {
+      "page": "三國志/卷21",
+      "file": "021.txt",
+      "blocks": 41,
+      "revid": 2333888,
+      "sha256": "cba0920a8c2d5ec0143a5df4649fd29cab562760ec11285bdfbed9aea2e313aa"
+    },
+    {
+      "page": "三國志/卷22",
+      "file": "022.txt",
+      "blocks": 55,
+      "revid": 2085105,
+      "sha256": "5a9981db2204bf3d01a2ea10b46715c33ae1ac032cdddc8b0a418945c24a85f7"
+    },
+    {
+      "page": "三國志/卷23",
+      "file": "023.txt",
+      "blocks": 29,
+      "revid": 2376966,
+      "sha256": "39991dc0c180b175f81153dad32b16e1198fe26c63cfcd0485d9638d97ae3fba"
+    },
+    {
+      "page": "三國志/卷24",
+      "file": "024.txt",
+      "blocks": 35,
+      "revid": 2590758,
+      "sha256": "3a7c13f4f1b702bdd6ed80e44d9d708bacede571dcd7b78ece6c59d531099c85"
+    },
+    {
+      "page": "三國志/卷25",
+      "file": "025.txt",
+      "blocks": 45,
+      "revid": 2074129,
+      "sha256": "27d42fb4c101fa85a9e59bbd0b855284eb640bcda1490fee216eada7dd3ff623"
+    },
+    {
+      "page": "三國志/卷26",
+      "file": "026.txt",
+      "blocks": 32,
+      "revid": 2085108,
+      "sha256": "9f5abf394d41de6f0c0ad3cdb49524133615159b274c605a7264cedb61bcc69c"
+    },
+    {
+      "page": "三國志/卷27",
+      "file": "027.txt",
+      "blocks": 28,
+      "revid": 2085110,
+      "sha256": "68afe06a1fe48a7270bea86084535d8b1a4ede8bedc676cfa5750ab189a5e143"
+    },
+    {
+      "page": "三國志/卷28",
+      "file": "028.txt",
+      "blocks": 65,
+      "revid": 2386518,
+      "sha256": "4e75a1f9697cc6c9a8f75414fd5d855c6629adccb547a6e8793629c1240e9adc"
+    },
+    {
+      "page": "三國志/卷29",
+      "file": "029.txt",
+      "blocks": 52,
+      "revid": 2179101,
+      "sha256": "3ade574a5cbbe53e04643beab0635af9965c20301948679582ffbfd10d0f6f1e"
+    },
+    {
+      "page": "三國志/卷30",
+      "file": "030.txt",
+      "blocks": 44,
+      "revid": 2690100,
+      "sha256": "4e6b0b37299666b70d773197e12a264d5aa816be57749b7ee59c52db3a05f5e2"
+    },
+    {
+      "page": "三國志/卷31",
+      "file": "031.txt",
+      "blocks": 11,
+      "revid": 2471750,
+      "sha256": "e142914220e791e3789cca56a8895c66b9125742104d0a4e7ade9f63fe2ec2f7"
+    },
+    {
+      "page": "三國志/卷32",
+      "file": "032.txt",
+      "blocks": 42,
+      "revid": 2583378,
+      "sha256": "6177ed55aa094eced56af554ae4eb60baba2124ce6d82e03522c88e63f41d12c"
+    },
+    {
+      "page": "三國志/卷33",
+      "file": "033.txt",
+      "blocks": 49,
+      "revid": 2583379,
+      "sha256": "e84d2b11bd9d9c6acee9010422cb773397030e68d1d96a5d74c66ac926bcf052"
+    },
+    {
+      "page": "三國志/卷34",
+      "file": "034.txt",
+      "blocks": 11,
+      "revid": 2085118,
+      "sha256": "65f86cc1eea5221f9468ddc4842d1db832bf774f2cb406f6431f84359f1cf23c"
+    },
+    {
+      "page": "三國志/卷35",
+      "file": "035.txt",
+      "blocks": 43,
+      "revid": 2115776,
+      "sha256": "01ec3bbb303d8ff4b47cbd3abe88daea02d62ee20c85ac43f16415cfcb5ea710"
+    },
+    {
+      "page": "三國志/卷36",
+      "file": "036.txt",
+      "blocks": 19,
+      "revid": 2583383,
+      "sha256": "3b9c202a9818915ff7b13a28b43e42cd17cbc4c8bbc93dbb41fd4de581475390"
+    },
+    {
+      "page": "三國志/卷37",
+      "file": "037.txt",
+      "blocks": 10,
+      "revid": 2583384,
+      "sha256": "21ae9386bfec688b313af7f3e70ecb27bf44ec7092a5d331c51033de933bba38"
+    },
+    {
+      "page": "三國志/卷38",
+      "file": "038.txt",
+      "blocks": 24,
+      "revid": 2583387,
+      "sha256": "84368e74e0977d588484006ea902e0137606f4d602926c0e8843eba0ba350200"
+    },
+    {
+      "page": "三國志/卷39",
+      "file": "039.txt",
+      "blocks": 21,
+      "revid": 2583389,
+      "sha256": "ebc6a690df59342287e50b4619623690eef57e9ab6a8a7d636cc2ca84f0e5e21"
+    },
+    {
+      "page": "三國志/卷40",
+      "file": "040.txt",
+      "blocks": 29,
+      "revid": 2583390,
+      "sha256": "ff9d2f7883efd38949fab6aee8577ced73e9e27ba41a499461f622ae05192828"
+    },
+    {
+      "page": "三國志/卷41",
+      "file": "041.txt",
+      "blocks": 20,
+      "revid": 2085129,
+      "sha256": "96c9f303b804623179a4113321a048d5387ad55954c7cd3fc54543a96dcb7bee"
+    },
+    {
+      "page": "三國志/卷42",
+      "file": "042.txt",
+      "blocks": 44,
+      "revid": 2589674,
+      "sha256": "c311ce21e23c445db79bedb42306f3f57307b55300a70b3f30f5da1fdd0da301"
+    },
+    {
+      "page": "三國志/卷43",
+      "file": "043.txt",
+      "blocks": 30,
+      "revid": 2085132,
+      "sha256": "37f347b7bfaff7cef077e0073d71882b9bdcc08a15f67304f44c8440161abe0b"
+    },
+    {
+      "page": "三國志/卷44",
+      "file": "044.txt",
+      "blocks": 25,
+      "revid": 2583397,
+      "sha256": "9dcbf027d99b227d71b4334dec670c6ca3323510d6eed72edae1d6564516c7b9"
+    },
+    {
+      "page": "三國志/卷45",
+      "file": "045.txt",
+      "blocks": 144,
+      "revid": 2085136,
+      "sha256": "48475985a5a432146d9e27cc408cf8b25502926f6b14302cf5e1eae1e2ee66c8"
+    },
+    {
+      "page": "三國志/卷46",
+      "file": "046.txt",
+      "blocks": 21,
+      "revid": 2629010,
+      "sha256": "873f8231222b9193e2b0da50c77837a063d4e6849cd491c79234819618c90cf6"
+    },
+    {
+      "page": "三國志/卷47",
+      "file": "047.txt",
+      "blocks": 65,
+      "revid": 2602668,
+      "sha256": "65b2de03ea20f57dc2e0852657ba2b470c9f81de7b347e64e659e597d410a288"
+    },
+    {
+      "page": "三國志/卷48",
+      "file": "048.txt",
+      "blocks": 48,
+      "revid": 2085142,
+      "sha256": "c219f5fb88cfaaa57467e96aaaa0623d8618e7f5f59d30885d4ffd15370243ce"
+    },
+    {
+      "page": "三國志/卷49",
+      "file": "049.txt",
+      "blocks": 20,
+      "revid": 2075209,
+      "sha256": "93bbbce26998ee00842db65ac74b869adec5e098a55b0ce2b2349ab3fb097246"
+    },
+    {
+      "page": "三國志/卷50",
+      "file": "050.txt",
+      "blocks": 21,
+      "revid": 2085144,
+      "sha256": "4fb441131004b0aac5ef7ded2c95331ec8c9c5cb16b71a08ded7ba0c4f0db4bb"
+    },
+    {
+      "page": "三國志/卷51",
+      "file": "051.txt",
+      "blocks": 20,
+      "revid": 2457446,
+      "sha256": "3976bf1d9c395912b88f1da2d1704e7c24bdf0c1e82a8eddda092357162a82d6"
+    },
+    {
+      "page": "三國志/卷52",
+      "file": "052.txt",
+      "blocks": 42,
+      "revid": 2085149,
+      "sha256": "76a7b95befdd18c19e80c227aa87c1291b5d999a5afb097a5ab107725e9d23c8"
+    },
+    {
+      "page": "三國志/卷53",
+      "file": "053.txt",
+      "blocks": 26,
+      "revid": 2086397,
+      "sha256": "66c6e9b2ab00755b4770732c7acf3d4ce1ce27b6596adff159ed267a5fb7a6e6"
+    },
+    {
+      "page": "三國志/卷54",
+      "file": "054.txt",
+      "blocks": 42,
+      "revid": 2387393,
+      "sha256": "3bc0c012c7b02add8969ad01a8351650c705eff2e124cb3456dc7d69550d18f2"
+    },
+    {
+      "page": "三國志/卷55",
+      "file": "055.txt",
+      "blocks": 61,
+      "revid": 2603286,
+      "sha256": "44dbc68c9cc7758988e6f6a8249b396a4292227e191ea07952059c452905cc10"
+    },
+    {
+      "page": "三國志/卷56",
+      "file": "056.txt",
+      "blocks": 29,
+      "revid": 2627183,
+      "sha256": "872846f0f53cdae85a2d9781ca431ce0e5abe12b3addf6cbb75eb0625b09d3cb"
+    },
+    {
+      "page": "三國志/卷57",
+      "file": "057.txt",
+      "blocks": 45,
+      "revid": 2638131,
+      "sha256": "05d47f0aab95474c748ee60e5cae096f582eb8c92613c0021b0840700e03f5cc"
+    },
+    {
+      "page": "三國志/卷58",
+      "file": "058.txt",
+      "blocks": 49,
+      "revid": 2131313,
+      "sha256": "6de80b4310a8fbcd406f9ee45740244a7ea5e53518ad41869c2824c039c2023d"
+    },
+    {
+      "page": "三國志/卷59",
+      "file": "059.txt",
+      "blocks": 20,
+      "revid": 2085159,
+      "sha256": "7f21d23fca11444ef2a6a6e2d5923d0457d44c038065b607aee49ce87bb15c6f"
+    },
+    {
+      "page": "三國志/卷60",
+      "file": "060.txt",
+      "blocks": 41,
+      "revid": 2120830,
+      "sha256": "67448109240a283d3a8eec7fb41ef7e295d5a1601dc754cbe8fbbb7de66d3150"
+    },
+    {
+      "page": "三國志/卷61",
+      "file": "061.txt",
+      "blocks": 25,
+      "revid": 2085162,
+      "sha256": "f8ff54d3e98bf64c7166c2adcdf3a64d270c9cb59a8fc736ebec6b3fb08afdcb"
+    },
+    {
+      "page": "三國志/卷62",
+      "file": "062.txt",
+      "blocks": 18,
+      "revid": 2623289,
+      "sha256": "ad4e2948c77754e3dd64ad168034c11d7fe5c7482880a47a07cc003905180f06"
+    },
+    {
+      "page": "三國志/卷63",
+      "file": "063.txt",
+      "blocks": 18,
+      "revid": 2188657,
+      "sha256": "401c084ee2ca7aa932497b1375889b71fd23cbb62516dcb5f5620dd82a8c6eb4"
+    },
+    {
+      "page": "三國志/卷64",
+      "file": "064.txt",
+      "blocks": 45,
+      "revid": 2263487,
+      "sha256": "1d533fde3583e4dc3109dc97ae8bbe88c407957c57dd9e69840e6ac4e9f1ee37"
+    },
+    {
+      "page": "三國志/卷65",
+      "file": "065.txt",
+      "blocks": 31,
+      "revid": 2589669,
+      "sha256": "58bb816ae023618e79ee406e32df80504a723a3d8756bf77860edf4662b75131"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 65
+}
