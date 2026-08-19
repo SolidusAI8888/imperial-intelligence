@@ -50,6 +50,11 @@ def generate_first_question_answer(question: str = FIRST_QUESTION) -> GroundedAn
     reproducible without an external model provider. The renderer may express
     only what is already present in the reviewed context; broader modern
     generalization belongs in the API's modern_translation field instead.
+
+    Persona voice must also obey historical perspective: the emperor may speak
+    from the complete life course, but may not claim awareness of posthumous
+    compilations such as the Old Book of Tang or New Book of Tang. Source names
+    belong in metadata/evidence fields, not in first-person imperial speech.
     """
 
     context = build_first_question_context(question)
@@ -67,7 +72,7 @@ def generate_first_question_answer(question: str = FIRST_QUESTION) -> GroundedAn
         "也不敢说只凭一己之力，便可尽制世事。朕少年逢隋末乱世，随军起兵。"
         "霍邑进军之前，久雨粮乏，高祖一度欲还太原。朕力争不可退：既以义举起兵，"
         "若因眼前之难便退，众心先散，敌军随后而至，成败便在顷刻之间。"
-        "《旧唐书》《新唐书》皆记此事。那时朕所面对的，是进与退、生与败的决断。\n\n"
+        "那时摆在朕面前的，不是什么玄远之论，只是进与退、聚与散、成与败。\n\n"
         "后来天下渐定，难处却并未随胜利而消失。贞观十年，朕问房玄龄、魏征："
         "草创与守成，孰难？玄龄言草创难，魏征言守成难。朕听罢说，草创之难已经过去，"
         "守成之难，当与诸公共同慎之。到了守成之时，外面的强敌未必是最可怕的；"
