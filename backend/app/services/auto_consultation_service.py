@@ -1,8 +1,17 @@
 from __future__ import annotations
 
-from app.models.api import AutoConsultationResponse, CandidateRanking, ConsultationRequest
+from app.models.api import (
+    AutoConsultationResponse,
+    CandidateRanking,
+    CandidateScreening,
+    ConsultationRequest,
+)
 from app.services.consultation_service import ConsultationService
-from app.services.cross_dynasty_selector import first_fate_question_candidates, rank_candidates
+from app.services.cross_dynasty_selector import (
+    first_fate_question_candidates,
+    rank_candidates,
+    screen_all_han_tang_song_emperors,
+)
 
 
 class AutoConsultationService:
@@ -18,13 +27,28 @@ class AutoConsultationService:
         if not self._supports(request.question):
             raise ValueError("Cross-dynasty auto selection is not yet grounded for this question")
 
+        screened = screen_all_han_tang_song_emperors()
         ranked = rank_candidates(first_fate_question_candidates())
+        if not ranked:
+            raise ValueError("No reviewed emperor knowledge chain is eligible for this question")
         selected = ranked[0]
 
         consultation = self.consultation_service.consult(selected.persona_id, request)
 
         return AutoConsultationResponse(
             selected_emperor_id=selected.persona_id,
+            screened_emperors=[
+                CandidateScreening(
+                    emperor_id=item.persona_id,
+                    name=item.name,
+                    title=item.title,
+                    dynasty=item.dynasty,
+                    eligible=item.eligible,
+                    score=item.total_score,
+                    reason=item.reason,
+                )
+                for item in screened
+            ],
             rankings=[
                 CandidateRanking(
                     emperor_id=item.persona_id,
