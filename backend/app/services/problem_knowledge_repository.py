@@ -34,6 +34,26 @@ def problem_manifest_path(problem_id: str) -> Path:
     return PROBLEM_ROOT / f"{problem_id}.yaml"
 
 
+def validate_registered_problem_manifest(raw: dict) -> None:
+    """Enforce the boundary between research drafts and registered Problems."""
+    problem_id = str(raw.get("problem_id", "<unknown>"))
+    status = str(raw.get("status", "draft"))
+    candidate_profile = str(raw.get("candidate_profile", ""))
+
+    if problem_id.startswith("Q-RESEARCH-"):
+        raise ValueError(
+            f"Problem {problem_id} is a provisional research ID and cannot be loaded as registered"
+        )
+    if status.startswith("draft") or status.startswith("research_"):
+        raise ValueError(
+            f"Problem {problem_id} has non-registered status '{status}'"
+        )
+    if candidate_profile.startswith("knowledge/problem_drafts/"):
+        raise ValueError(
+            f"Problem {problem_id} candidate profile points to the non-authoritative draft area"
+        )
+
+
 def load_problem_spec(problem_id: str) -> ProblemKnowledgeSpec:
     path = problem_manifest_path(problem_id)
     if not path.exists():
@@ -42,6 +62,8 @@ def load_problem_spec(problem_id: str) -> ProblemKnowledgeSpec:
     raw = _load_yaml(path)
     if raw.get("problem_id") != problem_id:
         raise ValueError(f"Problem manifest ID mismatch: {path}")
+
+    validate_registered_problem_manifest(raw)
 
     policy = raw.get("knowledge_policy") or {}
     reusable = tuple(policy.get("reusable_layers") or ())
