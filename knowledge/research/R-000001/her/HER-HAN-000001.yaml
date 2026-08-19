@@ -1,0 +1,26 @@
+record_id: HER-HAN-000001
+research_id: R-000001
+title: "秦二世元年：刘邦由亡命群体进入沛县起事"
+record_type: event
+dynasty: Han
+time_label: "秦二世元年"
+participants:
+  - liu_bang
+historical_record: >-
+  陈胜起事后，各郡县多有响应。沛令起初欲响应陈涉，后又反悔并关闭城门。
+  萧何、曹参出城投奔刘邦。刘邦以帛书射入城中，劝沛中父老诛令自立；
+  父老随后杀沛令、开城迎刘邦，并推举刘邦为首。刘邦数次推让后被立为沛公。
+sources:
+  - source_id: CN-HAN-0001
+    canonical_ids:
+      - CN-HAN-0001-V008-P0009
+      - CN-HAN-0001-V008-P0010
+supported_claims:
+  - "刘邦在秦末政治秩序快速崩解时，由亭长与亡命者身份进入地方起事领导位置。"
+  - "沛县局势、萧何曹参的行动、父老选择与刘邦自身决断共同作用于其身份跃迁。"
+unsupported_claims:
+  - "刘邦在起事前已经预知自己必然称帝。"
+  - "时代动乱本身足以决定刘邦最终成功。"
+  - "个人意志可以脱离地方社会与追随者支持单独决定结果。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
