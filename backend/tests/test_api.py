@@ -85,3 +85,27 @@ def test_followup_reframes_for_ordinary_job_seeker() -> None:
     assert "确实答非所问" in data["imperial_advice"]
     assert "先不要拿‘守成’要求自己" in data["imperial_advice"]
     assert "并不是人人都要先成功再守成" in data["imperial_advice"]
+
+
+def test_auto_consult_compares_three_dynasties_and_selects_best_grounded_role() -> None:
+    response = client.post(
+        "/consult/auto",
+        json={"question": "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"},
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["selected_emperor_id"] == "tang_taizong"
+    assert [item["dynasty"] for item in data["rankings"]] == ["tang", "han", "song"]
+    assert data["rankings"][0]["score"] > data["rankings"][1]["score"]
+    assert data["rankings"][1]["score"] > data["rankings"][2]["score"]
+    assert all(item["rationale"] for item in data["rankings"])
+    assert data["consultation"]["status"] == "evidence_grounded"
+    assert data["consultation"]["emperor_id"] == "tang_taizong"
+
+
+def test_auto_consult_rejects_question_without_reviewed_cross_dynasty_chain() -> None:
+    response = client.post(
+        "/consult/auto",
+        json={"question": "我是否应该与别人合伙创业？"},
+    )
+    assert response.status_code == 422
