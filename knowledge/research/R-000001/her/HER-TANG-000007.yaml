@@ -1,0 +1,28 @@
+record_id: HER-TANG-000007
+research_id: R-000001
+title: "隋末危局中：李渊由隋臣转入起兵"
+record_type: event
+dynasty: Tang
+time_label: "隋大业九年至十三年"
+participants:
+  - tang_gaozu
+historical_record: >-
+  李渊在隋朝长期任职，并在隋炀帝猜忌加深时因被召而称疾未见，随后以纵酒等方式掩饰自保。
+  大业十三年任太原留守时，天下群盗并起，李世民、刘文静等劝其举兵。李渊先募集兵众、处置王威和高君雅，
+  随后正式起兵。西进途中又因久雨粮乏一度下令还师，经李世民力谏后改变决定，继续进军并攻下霍邑。
+sources:
+  - source_id: CN-TANG-0001
+    canonical_ids:
+      - CN-TANG-0001-V001-P0002
+      - CN-TANG-0001-V001-P0003
+      - CN-TANG-0001-V001-P0004
+supported_claims:
+  - "李渊的人生路径从隋臣转为起兵首领，与隋末政治秩序恶化和地方危机直接相关。"
+  - "李渊在高压与不确定环境中先采取自保，再在局势变化后选择起兵。"
+  - "霍邑进军前李渊曾因现实困难准备退兵，并在接受李世民劝谏后改变决定。"
+unsupported_claims:
+  - "李渊从任隋官时起就已确定要建立唐朝。"
+  - "隋末动乱自动决定了李渊最终成功。"
+  - "听从一次正确劝谏即可保证后续事业成功。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
