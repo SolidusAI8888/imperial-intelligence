@@ -1,0 +1,85 @@
+version: 1
+scope: han_tang_song_all_emperors
+policy: >-
+  Cross-dynasty selection must begin from the complete registered emperor roster for the covered dynasties,
+  not from a hand-picked famous-person shortlist. A responder may win only after a reviewed knowledge chain
+  exists for the current problem; emperors without a reviewed chain remain visible as screened-but-not-yet-eligible.
+dynasties:
+  han:
+    display_name: 漢
+    emperors:
+      - {persona_id: han_gaozu, name: 劉邦, temple_or_posthumous: 漢高祖}
+      - {persona_id: han_huidi, name: 劉盈, temple_or_posthumous: 漢惠帝}
+      - {persona_id: han_qianshaodi, name: 劉恭, temple_or_posthumous: 前少帝}
+      - {persona_id: han_houshaodi, name: 劉弘, temple_or_posthumous: 後少帝}
+      - {persona_id: han_wendi, name: 劉恆, temple_or_posthumous: 漢文帝}
+      - {persona_id: han_jingdi, name: 劉啟, temple_or_posthumous: 漢景帝}
+      - {persona_id: han_wudi, name: 劉徹, temple_or_posthumous: 漢武帝}
+      - {persona_id: han_zhaodi, name: 劉弗陵, temple_or_posthumous: 漢昭帝}
+      - {persona_id: han_changyi_wang, name: 劉賀, temple_or_posthumous: 昌邑王, legitimacy_status: deposed_emperor}
+      - {persona_id: han_xuandi, name: 劉詢, temple_or_posthumous: 漢宣帝}
+      - {persona_id: han_yuandi, name: 劉奭, temple_or_posthumous: 漢元帝}
+      - {persona_id: han_chengdi, name: 劉驁, temple_or_posthumous: 漢成帝}
+      - {persona_id: han_aidi, name: 劉欣, temple_or_posthumous: 漢哀帝}
+      - {persona_id: han_pingdi, name: 劉衎, temple_or_posthumous: 漢平帝}
+      - {persona_id: han_gengshidi, name: 劉玄, temple_or_posthumous: 更始帝, legitimacy_status: transitional_han}
+      - {persona_id: han_guangwudi, name: 劉秀, temple_or_posthumous: 漢光武帝}
+      - {persona_id: han_mingdi, name: 劉莊, temple_or_posthumous: 漢明帝}
+      - {persona_id: han_zhangdi, name: 劉炟, temple_or_posthumous: 漢章帝}
+      - {persona_id: han_hedi, name: 劉肇, temple_or_posthumous: 漢和帝}
+      - {persona_id: han_shangdi, name: 劉隆, temple_or_posthumous: 漢殤帝}
+      - {persona_id: han_andi, name: 劉祜, temple_or_posthumous: 漢安帝}
+      - {persona_id: han_beixianghou, name: 劉懿, temple_or_posthumous: 北鄉侯, legitimacy_status: brief_reign}
+      - {persona_id: han_shundi, name: 劉保, temple_or_posthumous: 漢順帝}
+      - {persona_id: han_chongdi, name: 劉炳, temple_or_posthumous: 漢沖帝}
+      - {persona_id: han_zhidi, name: 劉纘, temple_or_posthumous: 漢質帝}
+      - {persona_id: han_huandi, name: 劉志, temple_or_posthumous: 漢桓帝}
+      - {persona_id: han_lingdi, name: 劉宏, temple_or_posthumous: 漢靈帝}
+      - {persona_id: han_shaodi_liubian, name: 劉辯, temple_or_posthumous: 漢少帝}
+      - {persona_id: han_xiandi, name: 劉協, temple_or_posthumous: 漢獻帝}
+  tang:
+    display_name: 唐
+    emperors:
+      - {persona_id: tang_gaozu, name: 李淵, temple_or_posthumous: 唐高祖}
+      - {persona_id: tang_taizong, name: 李世民, temple_or_posthumous: 唐太宗}
+      - {persona_id: tang_gaozong, name: 李治, temple_or_posthumous: 唐高宗}
+      - {persona_id: tang_zhongzong, name: 李顯, temple_or_posthumous: 唐中宗}
+      - {persona_id: tang_ruizong, name: 李旦, temple_or_posthumous: 唐睿宗}
+      - {persona_id: wu_zetian, name: 武曌, temple_or_posthumous: 武則天, legitimacy_status: zhou_interregnum}
+      - {persona_id: tang_shangdi, name: 李重茂, temple_or_posthumous: 唐殤帝, legitimacy_status: brief_reign}
+      - {persona_id: tang_xuanzong, name: 李隆基, temple_or_posthumous: 唐玄宗}
+      - {persona_id: tang_suzong, name: 李亨, temple_or_posthumous: 唐肅宗}
+      - {persona_id: tang_daizong, name: 李豫, temple_or_posthumous: 唐代宗}
+      - {persona_id: tang_dezong, name: 李适, temple_or_posthumous: 唐德宗}
+      - {persona_id: tang_shunzong, name: 李誦, temple_or_posthumous: 唐順宗}
+      - {persona_id: tang_xianzong, name: 李純, temple_or_posthumous: 唐憲宗}
+      - {persona_id: tang_muzong, name: 李恆, temple_or_posthumous: 唐穆宗}
+      - {persona_id: tang_jingzong, name: 李湛, temple_or_posthumous: 唐敬宗}
+      - {persona_id: tang_wenzong, name: 李昂, temple_or_posthumous: 唐文宗}
+      - {persona_id: tang_wuzong, name: 李炎, temple_or_posthumous: 唐武宗}
+      - {persona_id: tang_xuanzong_lichen, name: 李忱, temple_or_posthumous: 唐宣宗}
+      - {persona_id: tang_yizong, name: 李漼, temple_or_posthumous: 唐懿宗}
+      - {persona_id: tang_xizong, name: 李儇, temple_or_posthumous: 唐僖宗}
+      - {persona_id: tang_zhaozong, name: 李曄, temple_or_posthumous: 唐昭宗}
+      - {persona_id: tang_aidi, name: 李柷, temple_or_posthumous: 唐哀帝}
+  song:
+    display_name: 宋
+    emperors:
+      - {persona_id: song_taizu, name: 趙匡胤, temple_or_posthumous: 宋太祖}
+      - {persona_id: song_taizong, name: 趙光義, temple_or_posthumous: 宋太宗}
+      - {persona_id: song_zhenzong, name: 趙恆, temple_or_posthumous: 宋真宗}
+      - {persona_id: song_renzong, name: 趙禎, temple_or_posthumous: 宋仁宗}
+      - {persona_id: song_yingzong, name: 趙曙, temple_or_posthumous: 宋英宗}
+      - {persona_id: song_shenzong, name: 趙頊, temple_or_posthumous: 宋神宗}
+      - {persona_id: song_zhezong, name: 趙煦, temple_or_posthumous: 宋哲宗}
+      - {persona_id: song_huizong, name: 趙佶, temple_or_posthumous: 宋徽宗}
+      - {persona_id: song_qinzong, name: 趙桓, temple_or_posthumous: 宋欽宗}
+      - {persona_id: song_gaozong, name: 趙構, temple_or_posthumous: 宋高宗}
+      - {persona_id: song_xiaozong, name: 趙昚, temple_or_posthumous: 宋孝宗}
+      - {persona_id: song_guangzong, name: 趙惇, temple_or_posthumous: 宋光宗}
+      - {persona_id: song_ningzong, name: 趙擴, temple_or_posthumous: 宋寧宗}
+      - {persona_id: song_lizong, name: 趙昀, temple_or_posthumous: 宋理宗}
+      - {persona_id: song_duzong, name: 趙禥, temple_or_posthumous: 宋度宗}
+      - {persona_id: song_gongdi, name: 趙㬎, temple_or_posthumous: 宋恭帝}
+      - {persona_id: song_duanzong, name: 趙昰, temple_or_posthumous: 宋端宗}
+      - {persona_id: song_bingdi, name: 趙昺, temple_or_posthumous: 宋帝昺}
