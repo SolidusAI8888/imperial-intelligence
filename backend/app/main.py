@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 
-from app.models.api import ConsultationRequest, ConsultationResponse
+from app.models.api import AutoConsultationResponse, ConsultationRequest, ConsultationResponse
+from app.services.auto_consultation_service import AutoConsultationService
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
 
@@ -12,6 +13,7 @@ app = FastAPI(
 
 repository = PersonaRepository()
 consultation_service = ConsultationService(repository)
+auto_consultation_service = AutoConsultationService(consultation_service)
 
 
 @app.get("/")
@@ -54,3 +56,11 @@ def consult(emperor_id: str, request: ConsultationRequest) -> ConsultationRespon
     if repository.get_manifest(emperor_id) is None:
         raise HTTPException(status_code=404, detail="Emperor not found")
     return consultation_service.consult(emperor_id, request)
+
+
+@app.post("/consult/auto", response_model=AutoConsultationResponse)
+def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse:
+    try:
+        return auto_consultation_service.consult(request)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
