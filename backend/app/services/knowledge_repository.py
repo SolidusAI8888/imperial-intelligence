@@ -25,6 +25,16 @@ _ALLOWED_RECORD_TYPES = {
     "reflection",
     "other",
 }
+_PERSON_PREFIX = {
+    "liu_bang": "HAN",
+    "tang_taizong": "TANG",
+    "song_taizu": "SONG",
+}
+_ROLE_FILE = {
+    "liu_bang": "ROLE-LIU-BANG.yaml",
+    "tang_taizong": "ROLE-TANG-TAIZONG.yaml",
+    "song_taizu": "ROLE-SONG-TAIZU.yaml",
+}
 
 
 def _load_yaml(path: Path) -> dict:
@@ -66,44 +76,69 @@ def _normalize_record(raw: dict) -> dict:
     return data
 
 
-def load_first_question_records() -> list[HistoricalRecord]:
-    her_dir = RESEARCH_ROOT / "her"
+def _person_prefix(person_id: str) -> str:
+    try:
+        return _PERSON_PREFIX[person_id]
+    except KeyError as exc:
+        raise ValueError(f"Unsupported first-question candidate: {person_id}") from exc
+
+
+def load_person_records(person_id: str) -> list[HistoricalRecord]:
+    prefix = _person_prefix(person_id)
     return [
         HistoricalRecord.model_validate(_normalize_record(_load_yaml(path)))
-        for path in sorted(her_dir.glob("HER-TANG-*.yaml"))
+        for path in sorted((RESEARCH_ROOT / "her").glob(f"HER-{prefix}-*.yaml"))
     ]
+
+
+def load_person_experiences(person_id: str) -> list[HistoricalExperienceUnit]:
+    prefix = _person_prefix(person_id)
+    return [
+        HistoricalExperienceUnit.model_validate(_load_yaml(path))
+        for path in sorted((RESEARCH_ROOT / "heu").glob(f"HEU-{prefix}-*.yaml"))
+    ]
+
+
+def load_person_insights(person_id: str) -> list[Insight]:
+    prefix = _person_prefix(person_id)
+    return [
+        Insight.model_validate(_load_yaml(path))
+        for path in sorted((RESEARCH_ROOT / "insight").glob(f"INS-{prefix}-*.yaml"))
+    ]
+
+
+def load_person_role_links(person_id: str) -> list[RoleExperienceLink]:
+    try:
+        filename = _ROLE_FILE[person_id]
+    except KeyError as exc:
+        raise ValueError(f"Unsupported first-question candidate: {person_id}") from exc
+
+    data = _load_yaml(RESEARCH_ROOT / "role_links" / filename)
+    life_course_rule = data.get("life_course_rule", "full_lifetime")
+    return [
+        RoleExperienceLink(
+            person_id=data["person_id"],
+            heu_id=raw["heu_id"],
+            relation=raw["relation"],
+            responder_eligible=raw["responder_eligible"],
+            personal_experience_strength=raw["personal_experience_strength"],
+            life_course_rule=life_course_rule,
+        )
+        for raw in data["links"]
+    ]
+
+
+def load_first_question_records() -> list[HistoricalRecord]:
+    return load_person_records("tang_taizong")
 
 
 def load_first_question_experiences() -> list[HistoricalExperienceUnit]:
-    heu_dir = RESEARCH_ROOT / "heu"
-    return [
-        HistoricalExperienceUnit.model_validate(_load_yaml(path))
-        for path in sorted(heu_dir.glob("HEU-TANG-*.yaml"))
-    ]
+    return load_person_experiences("tang_taizong")
 
 
 def load_first_question_insights() -> list[Insight]:
-    insight_dir = RESEARCH_ROOT / "insight"
-    return [
-        Insight.model_validate(_load_yaml(path))
-        for path in sorted(insight_dir.glob("INS-TANG-*.yaml"))
-    ]
+    return load_person_insights("tang_taizong")
 
 
 def load_first_question_role_links() -> list[RoleExperienceLink]:
-    data = _load_yaml(RESEARCH_ROOT / "role_links" / "ROLE-TANG-TAIZONG.yaml")
-    person_id = data["person_id"]
-    life_course_rule = data.get("life_course_rule", "full_lifetime")
-    links = []
-    for raw in data["links"]:
-        links.append(
-            RoleExperienceLink(
-                person_id=person_id,
-                heu_id=raw["heu_id"],
-                relation=raw["relation"],
-                responder_eligible=raw["responder_eligible"],
-                personal_experience_strength=raw["personal_experience_strength"],
-                life_course_rule=life_course_rule,
-            )
-        )
-    return links
+    return load_person_role_links("tang_taizong")
