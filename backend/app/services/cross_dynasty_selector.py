@@ -13,20 +13,15 @@ from app.services.knowledge_repository import (
     load_person_role_links,
 )
 from app.services.knowledge_runtime import build_runtime_context
+from app.services.problem_knowledge_repository import (
+    load_problem_candidate_profile,
+    load_problem_spec,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
-PROFILE_PATH = (
-    PROJECT_ROOT
-    / "knowledge"
-    / "research"
-    / "R-000001"
-    / "candidate"
-    / "FATE-AGENCY-CANDIDATES.yaml"
-)
 ROSTER_PATH = PROJECT_ROOT / "knowledge" / "personas" / "han_tang_song_emperor_registry.yaml"
 FIRST_PROBLEM_ID = "Q-FATE-AGENCY-001"
-FIRST_QUESTION = "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"
 
 
 @dataclass(frozen=True)
@@ -111,14 +106,7 @@ def _load_yaml(path: Path) -> dict:
     return data
 
 
-def _load_profile() -> dict:
-    data = _load_yaml(PROFILE_PATH)
-    if data.get("problem_id") != FIRST_PROBLEM_ID:
-        raise ValueError("Invalid first-question candidate profile")
-    return data
-
-
-def _reviewed_candidate(raw: dict) -> CandidateExperience:
+def _reviewed_candidate(*, problem_id: str, question: str, raw: dict) -> CandidateExperience:
     person_id = raw["persona_id"]
     requested_heus = set(raw["heu_ids"])
     requested_insights = set(raw["insight_ids"])
@@ -150,8 +138,8 @@ def _reviewed_candidate(raw: dict) -> CandidateExperience:
         raise ValueError(f"Candidate {person_id} contains unreviewed knowledge")
 
     build_runtime_context(
-        problem_id=FIRST_PROBLEM_ID,
-        question=FIRST_QUESTION,
+        problem_id=problem_id,
+        question=question,
         person_id=person_id,
         records=records,
         experiences=experiences,
@@ -185,23 +173,34 @@ def _reviewed_candidate(raw: dict) -> CandidateExperience:
     )
 
 
-def first_fate_question_candidates() -> list[CandidateExperience]:
-    """Return reviewed responders after screening begins from the complete emperor roster."""
+def problem_candidates(problem_id: str) -> list[CandidateExperience]:
+    """Load reviewed responders for any registered problem.
 
-    profile = _load_profile()
-    return [_reviewed_candidate(raw) for raw in profile["candidates"]]
-
-
-def screen_all_han_tang_song_emperors() -> list[EmperorScreening]:
-    """Screen every registered Han, Tang and Song emperor for this question.
-
-    All emperors are considered. Only emperors with a reviewed HER -> HEU -> Insight -> Role Link
-    chain may receive a non-null score or win selection. This prevents fame-based preselection while
-    preserving the project's evidence gate.
+    HER and HEU remain person-owned reusable knowledge. The problem manifest decides
+    which HEUs/Insights are relevant, who is responder-eligible for that problem,
+    and the problem-specific candidate scores.
     """
+    spec = load_problem_spec(problem_id)
+    profile = load_problem_candidate_profile(problem_id)
+    return [
+        _reviewed_candidate(problem_id=problem_id, question=spec.raw_question, raw=raw)
+        for raw in profile["candidates"]
+    ]
 
+
+def first_fate_question_candidates() -> list[CandidateExperience]:
+    """Backward-compatible wrapper for the first benchmark question."""
+    return problem_candidates(FIRST_PROBLEM_ID)
+
+
+def screen_all_han_tang_song_emperors(problem_id: str = FIRST_PROBLEM_ID) -> list[EmperorScreening]:
+    """Screen every registered Han, Tang and Song emperor for one problem.
+
+    Every emperor is in the roster. Only people with a reviewed problem-specific
+    application of reusable historical experience may receive a score or answer.
+    """
     roster = _load_yaml(ROSTER_PATH)
-    ranked = {item.persona_id: item for item in rank_candidates(first_fate_question_candidates())}
+    ranked = {item.persona_id: item for item in rank_candidates(problem_candidates(problem_id))}
     screened: list[EmperorScreening] = []
 
     for dynasty, dynasty_data in roster["dynasties"].items():
@@ -230,8 +229,8 @@ def screen_all_han_tang_song_emperors() -> list[EmperorScreening]:
                         eligible=False,
                         total_score=None,
                         reason=(
-                            "已进入本题全皇帝筛选池，但尚未建立并审核本题所需的 "
-                            "HER → HEU → Insight → Role Link 完整知识链，因此当前不能胜出或回答。"
+                            f"已进入 {problem_id} 的全皇帝筛选池，但尚未完成该问题所需的 "
+                            "问题相关 Insight 选择、候选评分与回答资格审核；人物既有 HER/HEU 可继续复用。"
                         ),
                     )
                 )
