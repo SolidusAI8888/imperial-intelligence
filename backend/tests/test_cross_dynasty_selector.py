@@ -1,5 +1,6 @@
 from app.services.cross_dynasty_selector import (
     first_fate_question_candidates,
+    problem_candidates,
     rank_candidates,
     screen_all_han_tang_song_emperors,
     select_best_candidate,
@@ -33,6 +34,14 @@ def test_first_fate_question_compares_han_tang_song() -> None:
     assert all(candidate.evidence_ids for candidate in candidates)
 
 
+def test_generic_problem_loader_preserves_first_question_behavior() -> None:
+    generic = problem_candidates("Q-FATE-AGENCY-001")
+    legacy = first_fate_question_candidates()
+    assert [candidate.persona_id for candidate in generic] == [
+        candidate.persona_id for candidate in legacy
+    ]
+
+
 def test_complete_han_tang_song_roster_is_screened_before_selection() -> None:
     screened = screen_all_han_tang_song_emperors()
     assert len(screened) == 69
@@ -43,7 +52,8 @@ def test_complete_han_tang_song_roster_is_screened_before_selection() -> None:
     eligible = {item.persona_id for item in screened if item.eligible}
     assert eligible == ELIGIBLE_IDS
     assert all(item.total_score is None for item in screened if not item.eligible)
-    assert all("完整知识链" in item.reason for item in screened if not item.eligible)
+    assert all("问题相关 Insight" in item.reason for item in screened if not item.eligible)
+    assert all("HER/HEU 可继续复用" in item.reason for item in screened if not item.eligible)
 
 
 def test_every_ranked_candidate_has_runtime_valid_reviewed_chain() -> None:

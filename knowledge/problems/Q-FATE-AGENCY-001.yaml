@@ -37,4 +37,17 @@ exclusions:
   - 不以最终成功者样本单独证明个人能动性
   - 不因人物身份高低而预设经验相关性
   - 不用后世评价替代当事人的真实经历与同期史料
+knowledge_policy:
+  reusable_layers:
+    - HER
+    - HEU
+  problem_specific_layers:
+    - insight_selection
+    - candidate_scoring
+    - responder_eligibility
+  rule: >-
+    HER 与 HEU 是人物通用历史知识，不因某一道现代问题而复制。
+    新问题应优先复用既有 HER/HEU，只在证据确有缺口时新增历史记录或经验单元。
+    Insight 的选择、候选评分与回答资格属于 Problem 层，必须按具体问题重新判断。
+candidate_profile: knowledge/research/R-000001/candidate/FATE-AGENCY-CANDIDATES.yaml
 status: retrieval_ready
