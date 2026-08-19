@@ -1,0 +1,656 @@
+{
+  "source_id": "CN-NANSHI-0001",
+  "title": "南史",
+  "expected_range": [
+    1,
+    80
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "南史/卷01",
+    "南史/卷02",
+    "南史/卷03",
+    "南史/卷04",
+    "南史/卷05",
+    "南史/卷06",
+    "南史/卷07",
+    "南史/卷08",
+    "南史/卷09",
+    "南史/卷10",
+    "南史/卷11",
+    "南史/卷12",
+    "南史/卷13",
+    "南史/卷14",
+    "南史/卷15",
+    "南史/卷16",
+    "南史/卷17",
+    "南史/卷18",
+    "南史/卷19",
+    "南史/卷20",
+    "南史/卷21",
+    "南史/卷22",
+    "南史/卷23",
+    "南史/卷24",
+    "南史/卷25",
+    "南史/卷26",
+    "南史/卷27",
+    "南史/卷28",
+    "南史/卷29",
+    "南史/卷30",
+    "南史/卷31",
+    "南史/卷32",
+    "南史/卷33",
+    "南史/卷34",
+    "南史/卷35",
+    "南史/卷36",
+    "南史/卷37",
+    "南史/卷38",
+    "南史/卷39",
+    "南史/卷40",
+    "南史/卷41",
+    "南史/卷42",
+    "南史/卷43",
+    "南史/卷44",
+    "南史/卷45",
+    "南史/卷46",
+    "南史/卷47",
+    "南史/卷48",
+    "南史/卷49",
+    "南史/卷50",
+    "南史/卷51",
+    "南史/卷52",
+    "南史/卷53",
+    "南史/卷54",
+    "南史/卷55",
+    "南史/卷56",
+    "南史/卷57",
+    "南史/卷58",
+    "南史/卷59",
+    "南史/卷60",
+    "南史/卷61",
+    "南史/卷62",
+    "南史/卷63",
+    "南史/卷64",
+    "南史/卷65",
+    "南史/卷66",
+    "南史/卷67",
+    "南史/卷68",
+    "南史/卷69",
+    "南史/卷70",
+    "南史/卷71",
+    "南史/卷72",
+    "南史/卷73",
+    "南史/卷74",
+    "南史/卷75",
+    "南史/卷76",
+    "南史/卷77",
+    "南史/卷78",
+    "南史/卷79",
+    "南史/卷80"
+  ],
+  "pages": [
+    {
+      "page": "南史/卷01",
+      "file": "001.txt",
+      "blocks": 105,
+      "revid": 1561312,
+      "sha256": "3cc48f21edaee6c19dc5797016ffb8a580cf6bd43d96d3bab84dfbbe508cc515"
+    },
+    {
+      "page": "南史/卷02",
+      "file": "002.txt",
+      "blocks": 292,
+      "revid": 1561232,
+      "sha256": "32141b10842ad6ecfbacaa20a619bdb94a8c785e42990c95c11b8fadede9ac19"
+    },
+    {
+      "page": "南史/卷03",
+      "file": "003.txt",
+      "blocks": 111,
+      "revid": 1561241,
+      "sha256": "ae9ee66d607f710284882fc6f21f9d65981f846bc81ff1597abccb0575514b4f"
+    },
+    {
+      "page": "南史/卷04",
+      "file": "004.txt",
+      "blocks": 130,
+      "revid": 1561627,
+      "sha256": "c4872dc84cd09c72ab6b3f7adc4ac64f2bdadcb1b9c0f9e272c5fce4812ed6a0"
+    },
+    {
+      "page": "南史/卷05",
+      "file": "005.txt",
+      "blocks": 125,
+      "revid": 2027696,
+      "sha256": "a4c40ab4030ec5ff7e602b8f8262564ced0a0482e28ffe05516813c419261e6c"
+    },
+    {
+      "page": "南史/卷06",
+      "file": "006.txt",
+      "blocks": 164,
+      "revid": 2598818,
+      "sha256": "413bb9c0c990be67bfeaefd5831b235ef58d84551d3ed2247b649a20b7ebcf07"
+    },
+    {
+      "page": "南史/卷07",
+      "file": "007.txt",
+      "blocks": 215,
+      "revid": 1561816,
+      "sha256": "f0818e97aaf705b5921680917e52677c42203bb136dce0e3b11d25b12e5ead5a"
+    },
+    {
+      "page": "南史/卷08",
+      "file": "008.txt",
+      "blocks": 120,
+      "revid": 1562229,
+      "sha256": "a524b29c82e6d90fd8ea5c040c5622627dc7c7827df74cff7a1987364fddda85"
+    },
+    {
+      "page": "南史/卷09",
+      "file": "009.txt",
+      "blocks": 143,
+      "revid": 2563133,
+      "sha256": "7f1fe0ee1fea3862d498dc53d13ddd27abae4585c7192e5aff17e3457824ceef"
+    },
+    {
+      "page": "南史/卷10",
+      "file": "010.txt",
+      "blocks": 149,
+      "revid": 1562656,
+      "sha256": "fa7703273cd660aa620a51d13a2ed962e5fa4c216ffabe52e83a54ef36858b6b"
+    },
+    {
+      "page": "南史/卷11",
+      "file": "011.txt",
+      "blocks": 56,
+      "revid": 2288359,
+      "sha256": "0a33bfa1c257751cf3fbc2298edca2ec315efe5b1646e7063a5afda8ffc637b6"
+    },
+    {
+      "page": "南史/卷12",
+      "file": "012.txt",
+      "blocks": 41,
+      "revid": 2060595,
+      "sha256": "4d0997c0f7105f470e210b10daeb0dd337c983a8874fea86c26f2f425ec0c87e"
+    },
+    {
+      "page": "南史/卷13",
+      "file": "013.txt",
+      "blocks": 84,
+      "revid": 2268660,
+      "sha256": "18df913dbbd290db9c4eb6b684faf5ad4c487d11a82b65514044ec2a3bde1719"
+    },
+    {
+      "page": "南史/卷14",
+      "file": "014.txt",
+      "blocks": 105,
+      "revid": 2577537,
+      "sha256": "916a0202a654ef5c03b90c78e19cdb90ce8955d9b4fb59e1b4f64a8db2a713b4"
+    },
+    {
+      "page": "南史/卷15",
+      "file": "015.txt",
+      "blocks": 98,
+      "revid": 1659582,
+      "sha256": "cd851ca4f3b07cb38d63f84deec206725f6e5bb8fdd34c4bb2199ebed8f0bfeb"
+    },
+    {
+      "page": "南史/卷16",
+      "file": "016.txt",
+      "blocks": 64,
+      "revid": 1963381,
+      "sha256": "a449566ef1eb992d803c676f0b584e9b6829bd4703c819946e1003460879e277"
+    },
+    {
+      "page": "南史/卷17",
+      "file": "017.txt",
+      "blocks": 65,
+      "revid": 2190531,
+      "sha256": "1a330dc61a0ed0ce5c1c7f8d31ad5ae2fd258f3248ec6d49b34ae27e366227aa"
+    },
+    {
+      "page": "南史/卷18",
+      "file": "018.txt",
+      "blocks": 99,
+      "revid": 7904750,
+      "sha256": "2ad7a76435e091bcbb932a2d9a24556c3d8cb1689f407dda559da559405f0f05"
+    },
+    {
+      "page": "南史/卷19",
+      "file": "019.txt",
+      "blocks": 85,
+      "revid": 1531762,
+      "sha256": "cda15d80c53cd8013f03b18a5219698ed5e371575904fbd5ee2f587257ef318e"
+    },
+    {
+      "page": "南史/卷20",
+      "file": "020.txt",
+      "blocks": 66,
+      "revid": 513423,
+      "sha256": "07e9779e88c6ad4bc4d6c03361e1ddcc1685f1c0c06ad5369de55ad4921c2ccd"
+    },
+    {
+      "page": "南史/卷21",
+      "file": "021.txt",
+      "blocks": 53,
+      "revid": 1752646,
+      "sha256": "2a2deba4ac04106a1e07e2a04bc1068daf660cca314e549680c8446ba2296589"
+    },
+    {
+      "page": "南史/卷22",
+      "file": "022.txt",
+      "blocks": 77,
+      "revid": 1477957,
+      "sha256": "2105994107a3c63ed04076a707ffb1216ca9b4509be9c5fee18a58c5ada1c8b6"
+    },
+    {
+      "page": "南史/卷23",
+      "file": "023.txt",
+      "blocks": 94,
+      "revid": 2478204,
+      "sha256": "80096dd23c9e266ad82f372531b4d4f5b413b8db61428442be262f43b5d0296c"
+    },
+    {
+      "page": "南史/卷24",
+      "file": "024.txt",
+      "blocks": 72,
+      "revid": 1765279,
+      "sha256": "9515b81100458852b726439bc50df0e44333f960cd08bfbc2493e6abc9866173"
+    },
+    {
+      "page": "南史/卷25",
+      "file": "025.txt",
+      "blocks": 75,
+      "revid": 1775305,
+      "sha256": "b0113f506e720ad015e2b0ac686a8d340d628b2016b481f861a3e73c5cfa65df"
+    },
+    {
+      "page": "南史/卷26",
+      "file": "026.txt",
+      "blocks": 95,
+      "revid": 1477359,
+      "sha256": "38e2f10f803b7a04f8b6c3cc1cd887d7e967fc2f890626b1e1803e93c22d7f1b"
+    },
+    {
+      "page": "南史/卷27",
+      "file": "027.txt",
+      "blocks": 65,
+      "revid": 1611067,
+      "sha256": "6ddea6d314d719fb7432bf0e0c914420d05f0315f6523f22cca1b6da9a90e50a"
+    },
+    {
+      "page": "南史/卷28",
+      "file": "028.txt",
+      "blocks": 68,
+      "revid": 1511857,
+      "sha256": "83186eca3bf0ec2f1084fb2ea4f9fc4a2ef747dd64af57526569a6d9253e117e"
+    },
+    {
+      "page": "南史/卷29",
+      "file": "029.txt",
+      "blocks": 59,
+      "revid": 516218,
+      "sha256": "fd138ce909b46f5e351c8848829cef543c3d37f5ad653fc7db1607045f5fd72a"
+    },
+    {
+      "page": "南史/卷30",
+      "file": "030.txt",
+      "blocks": 84,
+      "revid": 1752309,
+      "sha256": "6c485c7f746904aa0845069b00eb5a3b4823fad02298222f2f5a09895df8c16c"
+    },
+    {
+      "page": "南史/卷31",
+      "file": "031.txt",
+      "blocks": 82,
+      "revid": 8730255,
+      "sha256": "48339cfdaf0ecc49a89ef5a0067ac533f35bb75cd6f4f5a6246cb50d50be166d"
+    },
+    {
+      "page": "南史/卷32",
+      "file": "032.txt",
+      "blocks": 69,
+      "revid": 1494939,
+      "sha256": "82f066753948c4d0afb4b0ebc85155dbdee8f4cc61caff60278321e629437622"
+    },
+    {
+      "page": "南史/卷33",
+      "file": "033.txt",
+      "blocks": 104,
+      "revid": 1554233,
+      "sha256": "01bcc8ee82eacbb7fd7345796516d18685419b87c1c942656360de2bcc3d27ef"
+    },
+    {
+      "page": "南史/卷34",
+      "file": "034.txt",
+      "blocks": 101,
+      "revid": 1760497,
+      "sha256": "88a872433bb56c527eaa02b5e71c382991613729fe596eb7b1b0692fbfd2f206"
+    },
+    {
+      "page": "南史/卷35",
+      "file": "035.txt",
+      "blocks": 64,
+      "revid": 1748974,
+      "sha256": "8185e341c0a598c2101700d405bf731fe433f57604aea04b1d5d68c5c44e31eb"
+    },
+    {
+      "page": "南史/卷36",
+      "file": "036.txt",
+      "blocks": 89,
+      "revid": 1489333,
+      "sha256": "90a5426be5a1b42d3bb507d4e77b2c0fadbbc928ad541da1254a54f4c640dfd2"
+    },
+    {
+      "page": "南史/卷37",
+      "file": "037.txt",
+      "blocks": 79,
+      "revid": 1956596,
+      "sha256": "d0c0241ef517b6eb34ff4a3c0401ff80142cd4a649f476985ecb6081845d726b"
+    },
+    {
+      "page": "南史/卷38",
+      "file": "038.txt",
+      "blocks": 82,
+      "revid": 1569807,
+      "sha256": "4e8ddc331b605bbddb640d6112151c085731c513ac0021ffcfabf292c3107993"
+    },
+    {
+      "page": "南史/卷39",
+      "file": "039.txt",
+      "blocks": 68,
+      "revid": 2283946,
+      "sha256": "3a21561956319b11801ad29e531bbe4aa3187cd0cefe8c67faa709d73cd0e602"
+    },
+    {
+      "page": "南史/卷40",
+      "file": "040.txt",
+      "blocks": 59,
+      "revid": 1303840,
+      "sha256": "a5912a2f22054ebf0a9a69c0cf2dca5bd1be0878477e87204b3005064e3e22d6"
+    },
+    {
+      "page": "南史/卷41",
+      "file": "041.txt",
+      "blocks": 82,
+      "revid": 1552313,
+      "sha256": "1fe7dcc3997d057da824296e792a83a8758d5135326a19e3618d4e49ebbf354d"
+    },
+    {
+      "page": "南史/卷42",
+      "file": "042.txt",
+      "blocks": 67,
+      "revid": 1570320,
+      "sha256": "093446c0be6a8470fe549d24757a3c579daa68058f7a21e50528182cf35c58ab"
+    },
+    {
+      "page": "南史/卷43",
+      "file": "043.txt",
+      "blocks": 57,
+      "revid": 2033637,
+      "sha256": "3ba3c1ba394b7280f78d0df52abec5b9ff4300eb43461f176904bd967adb7fc4"
+    },
+    {
+      "page": "南史/卷44",
+      "file": "044.txt",
+      "blocks": 101,
+      "revid": 2027785,
+      "sha256": "2f174cd66a84683a590d8aa78b1ec89c4bed2f84d91e7c4be205787996d79368"
+    },
+    {
+      "page": "南史/卷45",
+      "file": "045.txt",
+      "blocks": 62,
+      "revid": 817980,
+      "sha256": "c8b2d2619f148b2b9550fc7c44bdc4edec22e65988bd1fe9fc7ed3d4633aa8cc"
+    },
+    {
+      "page": "南史/卷46",
+      "file": "046.txt",
+      "blocks": 61,
+      "revid": 1748881,
+      "sha256": "91bdcf6cd65a358ddf84fad7765437a7f2a9850c8505d9bc8dad6bea0273feed"
+    },
+    {
+      "page": "南史/卷47",
+      "file": "047.txt",
+      "blocks": 68,
+      "revid": 2598501,
+      "sha256": "ef329450bcc6032fe4acb09f67b49f3df05df28981eadf36e64119c038e41d8e"
+    },
+    {
+      "page": "南史/卷48",
+      "file": "048.txt",
+      "blocks": 81,
+      "revid": 2493997,
+      "sha256": "61a55b196f0013c2b91d9147f6e07707577fe8ac24894dc64f556b50c10a972f"
+    },
+    {
+      "page": "南史/卷49",
+      "file": "049.txt",
+      "blocks": 90,
+      "revid": 1964351,
+      "sha256": "3f83142dfd2b3d68bf839322e98f64d19bbbe3e8e951c60a8969355cd5919622"
+    },
+    {
+      "page": "南史/卷50",
+      "file": "050.txt",
+      "blocks": 80,
+      "revid": 1748892,
+      "sha256": "d3b5c4a3d60688d0c3a02d0b75b67bbb9c5ae15fa5e3ddb6805e364bc2525e5f"
+    },
+    {
+      "page": "南史/卷51",
+      "file": "051.txt",
+      "blocks": 83,
+      "revid": 2027179,
+      "sha256": "5ab5ebf632d1bdda850a627a4139dc56c73bd21131909ec284299e1fdb5d5df5"
+    },
+    {
+      "page": "南史/卷52",
+      "file": "052.txt",
+      "blocks": 57,
+      "revid": 1749412,
+      "sha256": "8f09231506e09f438bd4676340689267137238e9a3cebfd7a245dd3da22db26e"
+    },
+    {
+      "page": "南史/卷53",
+      "file": "053.txt",
+      "blocks": 79,
+      "revid": 1518868,
+      "sha256": "5f28c03071b7d2fd663719b6b31f88740c6482fbb3604e288c7b6a045d4aada7"
+    },
+    {
+      "page": "南史/卷54",
+      "file": "054.txt",
+      "blocks": 35,
+      "revid": 2063857,
+      "sha256": "2dceab5efbbca3e89f7076a4d066499ca02ac1f0268925bfe53e54f3613b2b8a"
+    },
+    {
+      "page": "南史/卷55",
+      "file": "055.txt",
+      "blocks": 91,
+      "revid": 1748893,
+      "sha256": "dca033d676bc98ba7c3a69d57a56a6d270295886907064fc59b7761eb044c88b"
+    },
+    {
+      "page": "南史/卷56",
+      "file": "056.txt",
+      "blocks": 61,
+      "revid": 1524795,
+      "sha256": "e3c978a6a27ef110c313773d77043e78437583ee21f190a245e6b7d89d3ef289"
+    },
+    {
+      "page": "南史/卷57",
+      "file": "057.txt",
+      "blocks": 58,
+      "revid": 1484916,
+      "sha256": "83195b05caf5e2635e44a232211b9f3a995069e4fd84a99b8180b2b5c856544b"
+    },
+    {
+      "page": "南史/卷58",
+      "file": "058.txt",
+      "blocks": 67,
+      "revid": 513461,
+      "sha256": "d86882f6b3cc0546dc41b4492fdd03a6dcb2f5ea1d172f616aa60c8268d8b381"
+    },
+    {
+      "page": "南史/卷59",
+      "file": "059.txt",
+      "blocks": 49,
+      "revid": 1553912,
+      "sha256": "84699caccc7d4e8243a35ac56aa5442a387d61a419cf46c99750b3158c019986"
+    },
+    {
+      "page": "南史/卷60",
+      "file": "060.txt",
+      "blocks": 75,
+      "revid": 1495505,
+      "sha256": "cb7098c158f84e92806b9ce713ea067b90fe7013713372b45890f92d8cd33b70"
+    },
+    {
+      "page": "南史/卷61",
+      "file": "061.txt",
+      "blocks": 45,
+      "revid": 1462439,
+      "sha256": "315290afb4db595784172a4b37f04b8146019087da4cc16bb006469836e48716"
+    },
+    {
+      "page": "南史/卷62",
+      "file": "062.txt",
+      "blocks": 78,
+      "revid": 2642929,
+      "sha256": "988560789c191ceaed981f4a02280adb2f09d64a1f517a3ac2f2af0c78fd1b06"
+    },
+    {
+      "page": "南史/卷63",
+      "file": "063.txt",
+      "blocks": 48,
+      "revid": 1537225,
+      "sha256": "167b70074626e07f9caabd29ea5f2e428329d1f154e494582b802300b7db0461"
+    },
+    {
+      "page": "南史/卷64",
+      "file": "064.txt",
+      "blocks": 50,
+      "revid": 1748895,
+      "sha256": "c078496035902b8ac7eaa013cf9e06f07319bc66d07504ba6e9b54dc63a66198"
+    },
+    {
+      "page": "南史/卷65",
+      "file": "065.txt",
+      "blocks": 95,
+      "revid": 2359936,
+      "sha256": "3e1735d49d3515e652541e091b6a38509a4be55c52974c588df76d853b52e1a9"
+    },
+    {
+      "page": "南史/卷66",
+      "file": "066.txt",
+      "blocks": 87,
+      "revid": 1748897,
+      "sha256": "cbea009d23348e6c7eb1f4747474ee0fca7f070647247bcb06eda3744abd0940"
+    },
+    {
+      "page": "南史/卷67",
+      "file": "067.txt",
+      "blocks": 112,
+      "revid": 2191252,
+      "sha256": "e199485e1562321bce61bd872583db68173cb5fb6266e360588493ca1f435213"
+    },
+    {
+      "page": "南史/卷68",
+      "file": "068.txt",
+      "blocks": 65,
+      "revid": 2118478,
+      "sha256": "4a46a4c0c59bd7606295ca4790c179a6cfe03fa6ed2c12a002c31fc6e5fe412e"
+    },
+    {
+      "page": "南史/卷69",
+      "file": "069.txt",
+      "blocks": 52,
+      "revid": 1748898,
+      "sha256": "9ea8f714e64ca1e6c5b26197aa9b527445e2c12c5851cb2f08f01c91766299c9"
+    },
+    {
+      "page": "南史/卷70",
+      "file": "070.txt",
+      "blocks": 95,
+      "revid": 1748901,
+      "sha256": "f1752ef4cb2bff5c184eea576790a4d1f8bbb210feaace13d20c3ec7b382727d"
+    },
+    {
+      "page": "南史/卷71",
+      "file": "071.txt",
+      "blocks": 99,
+      "revid": 1532354,
+      "sha256": "2e858534b5134e3d72afeae0228c1e1c43efceea813385688971ad39413cc90b"
+    },
+    {
+      "page": "南史/卷72",
+      "file": "072.txt",
+      "blocks": 130,
+      "revid": 1749825,
+      "sha256": "dc18cd56eb6def135d5063962e80fa762e5f8574dd96d6755f76c068254e9013"
+    },
+    {
+      "page": "南史/卷73",
+      "file": "073.txt",
+      "blocks": 103,
+      "revid": 1554284,
+      "sha256": "edbdb78a0f385094e40665051cdb822b7eaeb35fb8d4a8c5b2853cfbe9368280"
+    },
+    {
+      "page": "南史/卷74",
+      "file": "074.txt",
+      "blocks": 51,
+      "revid": 1532368,
+      "sha256": "4262f3c66d26c19e8c0bbd2fb01ab32972aaa933994ea1483329a73abd3816ce"
+    },
+    {
+      "page": "南史/卷75",
+      "file": "075.txt",
+      "blocks": 93,
+      "revid": 1532382,
+      "sha256": "5e0d824104b3ff7b3728ada9e2c3fbebd1b69ad6a1c1d888291a37fe25bdcbc8"
+    },
+    {
+      "page": "南史/卷76",
+      "file": "076.txt",
+      "blocks": 77,
+      "revid": 1532396,
+      "sha256": "eb7d7297da684686c818c34975b44a9d83f628a4fdb08068bdea3111d58a8ff9"
+    },
+    {
+      "page": "南史/卷77",
+      "file": "077.txt",
+      "blocks": 87,
+      "revid": 2124272,
+      "sha256": "657c18932303f6efb37ef30b2ff198e60787b33aa78a047ddf3bb5df4b7f216a"
+    },
+    {
+      "page": "南史/卷78",
+      "file": "078.txt",
+      "blocks": 51,
+      "revid": 2642033,
+      "sha256": "7eb01cfb7fa2ddf5e9b5888a91fafeb7f2809589f893c4953ac8ac585153324e"
+    },
+    {
+      "page": "南史/卷79",
+      "file": "079.txt",
+      "blocks": 56,
+      "revid": 2638633,
+      "sha256": "5d850034b309dda81d55dccf2ef0ab270d4a4e3db44256f7877e0f230e20cebb"
+    },
+    {
+      "page": "南史/卷80",
+      "file": "080.txt",
+      "blocks": 91,
+      "revid": 2296332,
+      "sha256": "59ff2c040705bb129b131b6be74747ec77d2888fcdb79601cb034dbdb04ff322"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 80
+}
