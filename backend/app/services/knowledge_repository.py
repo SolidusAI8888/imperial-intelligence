@@ -87,6 +87,16 @@ def _all_insights() -> list[Insight]:
     ]
 
 
+def load_all_records() -> list[HistoricalRecord]:
+    """Return the reusable factual historical-record inventory."""
+    return _all_records()
+
+
+def load_all_experiences() -> list[HistoricalExperienceUnit]:
+    """Return person-owned HEUs without applying any problem-specific eligibility gate."""
+    return _all_experiences()
+
+
 def load_person_records(person_id: str) -> list[HistoricalRecord]:
     """Load only HERs in which the requested person is an explicit participant."""
     return [record for record in _all_records() if person_id in record.participants]
