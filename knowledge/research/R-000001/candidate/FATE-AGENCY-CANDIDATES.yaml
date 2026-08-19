@@ -39,6 +39,24 @@ candidates:
       汉文帝的皇位机会来自诸吕之乱后的外部重组；他面对突发机会时听取相反意见、核实局势并多次辞让后接受，
       很适合说明外部条件与个人判断共同塑造人生转折。
 
+  - persona_id: han_jingdi
+    dynasty: han
+    evidence_ids:
+      - CN-HAN-0002-V005-P0015
+      - CN-HAN-0002-V005-P0017
+    heu_ids: [HEU-HAN-000004]
+    insight_ids: [INS-HAN-000004]
+    scores:
+      experience_similarity: 0.78
+      evidence_strength: 0.86
+      stage_relevance: 0.84
+      lesson_clarity: 0.82
+      transferability: 0.82
+      counterevidence_quality: 0.74
+    rationale: >-
+      七国之乱中，景帝既出兵又斩晁错，但叛乱没有因单项政治让步自动结束；
+      这组材料直接说明个人可以影响复杂局势，却不能单方面控制其他参与者及最终结果。
+
   - persona_id: han_wudi
     dynasty: han
     evidence_ids:
