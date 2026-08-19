@@ -12,7 +12,7 @@ def test_tang_taizong_has_discoverable_canonical_evidence() -> None:
 
 
 def test_liu_bang_has_discoverable_canonical_evidence() -> None:
-    hits = discover_emperor_evidence("han_gaozu", limit=10)
+    hits = discover_emperor_evidence("liu_bang", limit=10)
     assert hits
     assert all(hit.canonical_id.startswith("CN-HAN-") for hit in hits)
 
