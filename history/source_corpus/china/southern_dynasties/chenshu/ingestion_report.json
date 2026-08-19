@@ -1,0 +1,304 @@
+{
+  "source_id": "CN-CHEN-0001",
+  "title": "陳書",
+  "expected_range": [
+    1,
+    36
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "陳書/卷1",
+    "陳書/卷2",
+    "陳書/卷3",
+    "陳書/卷4",
+    "陳書/卷5",
+    "陳書/卷6",
+    "陳書/卷7",
+    "陳書/卷8",
+    "陳書/卷9",
+    "陳書/卷10",
+    "陳書/卷11",
+    "陳書/卷12",
+    "陳書/卷13",
+    "陳書/卷14",
+    "陳書/卷15",
+    "陳書/卷16",
+    "陳書/卷17",
+    "陳書/卷18",
+    "陳書/卷19",
+    "陳書/卷20",
+    "陳書/卷21",
+    "陳書/卷22",
+    "陳書/卷23",
+    "陳書/卷24",
+    "陳書/卷25",
+    "陳書/卷26",
+    "陳書/卷27",
+    "陳書/卷28",
+    "陳書/卷29",
+    "陳書/卷30",
+    "陳書/卷31",
+    "陳書/卷32",
+    "陳書/卷33",
+    "陳書/卷34",
+    "陳書/卷35",
+    "陳書/卷36"
+  ],
+  "pages": [
+    {
+      "page": "陳書/卷1",
+      "file": "001.txt",
+      "blocks": 40,
+      "revid": 2576168,
+      "sha256": "bc2d198d719682c6f44018e1eab8fc9e8366429ec0d5f51db441edca2749cdf3"
+    },
+    {
+      "page": "陳書/卷2",
+      "file": "002.txt",
+      "blocks": 27,
+      "revid": 2360700,
+      "sha256": "553a8624d0e0d4f173a5df9d4d25c52bdbe74f7e0a46cae63127d40c430bd028"
+    },
+    {
+      "page": "陳書/卷3",
+      "file": "003.txt",
+      "blocks": 74,
+      "revid": 2361318,
+      "sha256": "512668182cc0c6f4b3eac4bbca0e9407db23480e4befa0b2992ea01edc5e1c6b"
+    },
+    {
+      "page": "陳書/卷4",
+      "file": "004.txt",
+      "blocks": 34,
+      "revid": 8231316,
+      "sha256": "14c21c71fa79d998134195342b953b8107badbdc8e166f7edf0f87057f51c2f3"
+    },
+    {
+      "page": "陳書/卷5",
+      "file": "005.txt",
+      "blocks": 132,
+      "revid": 2374950,
+      "sha256": "29bd3b315e4f6c12c63cb85d6a4c9374c7dc48b9f146ac622e822d1ce89b0345"
+    },
+    {
+      "page": "陳書/卷6",
+      "file": "006.txt",
+      "blocks": 55,
+      "revid": 2312453,
+      "sha256": "77c8a0317360e5bb04d8b722236b80a7b0ff2b3a09df1ceab92746e542c223df"
+    },
+    {
+      "page": "陳書/卷7",
+      "file": "007.txt",
+      "blocks": 24,
+      "revid": 2015446,
+      "sha256": "07eba70b49eec7a8e871b24049cd1bcbfad850e773050dccf366b6c0985a4783"
+    },
+    {
+      "page": "陳書/卷8",
+      "file": "008.txt",
+      "blocks": 41,
+      "revid": 1750028,
+      "sha256": "28621c83893916074dad9e6276f450edb4e4c8ebc31a58d93c6e6575a7456c47"
+    },
+    {
+      "page": "陳書/卷9",
+      "file": "009.txt",
+      "blocks": 42,
+      "revid": 1488469,
+      "sha256": "12fab3fd6c3b9358b6c4fea2504195e5b332d213e25b08fa5fdcf90bf023121f"
+    },
+    {
+      "page": "陳書/卷10",
+      "file": "010.txt",
+      "blocks": 25,
+      "revid": 1488471,
+      "sha256": "8628e96878af7fc09e8e9c7e63eb5d721618340a47878fe14ee81bc8890c701a"
+    },
+    {
+      "page": "陳書/卷11",
+      "file": "011.txt",
+      "blocks": 31,
+      "revid": 1488472,
+      "sha256": "82841a4aadd5bb3b100ef5838e4bc07978526326ba2dd9b8067affaa24c4a470"
+    },
+    {
+      "page": "陳書/卷12",
+      "file": "012.txt",
+      "blocks": 29,
+      "revid": 1514500,
+      "sha256": "1b9b8b4d33ea7da6d966a948eadb4f4ca7fb5e106978ecc4643825d8e8bd78d0"
+    },
+    {
+      "page": "陳書/卷13",
+      "file": "013.txt",
+      "blocks": 34,
+      "revid": 1511906,
+      "sha256": "dd396666c845b4b8f4d83deadb87b296385d34bb756a706a7b3edda72fd60214"
+    },
+    {
+      "page": "陳書/卷14",
+      "file": "014.txt",
+      "blocks": 24,
+      "revid": 2262003,
+      "sha256": "225d8dab0b74a6f4d9295a721137a74230612b264c950210f4b708b385d08c2f"
+    },
+    {
+      "page": "陳書/卷15",
+      "file": "015.txt",
+      "blocks": 9,
+      "revid": 1530888,
+      "sha256": "e826fe360de42688d4c1b7ba919db1973c589b11faedd9db4c0463bbbccb2a5a"
+    },
+    {
+      "page": "陳書/卷16",
+      "file": "016.txt",
+      "blocks": 28,
+      "revid": 2261985,
+      "sha256": "b88809d620862c2fdec2958e11fc65d83d20a80de32384dd31c6a3a4f24e9904"
+    },
+    {
+      "page": "陳書/卷17",
+      "file": "017.txt",
+      "blocks": 25,
+      "revid": 1544244,
+      "sha256": "b481b5593c16cd829a217d0b7e9f1978a10b3185ff4bed38ebf9b11ff71fd740"
+    },
+    {
+      "page": "陳書/卷18",
+      "file": "018.txt",
+      "blocks": 36,
+      "revid": 2132778,
+      "sha256": "3e5dba91074eae3552340bf4ee2cf476f3bbf535b227f4bff86f8e4d78d5c873"
+    },
+    {
+      "page": "陳書/卷19",
+      "file": "019.txt",
+      "blocks": 35,
+      "revid": 2132781,
+      "sha256": "f19fb8bd928df8384d5f341c75eafb4398e3694279fe87d83099b38ecba5a5fd"
+    },
+    {
+      "page": "陳書/卷20",
+      "file": "020.txt",
+      "blocks": 20,
+      "revid": 1514499,
+      "sha256": "fdc57ba65499a3fb0ba4a3d4f4e346658ea3e8ffab6778412b8012159cb597cb"
+    },
+    {
+      "page": "陳書/卷21",
+      "file": "021.txt",
+      "blocks": 50,
+      "revid": 1511909,
+      "sha256": "15fa8348e15da96bb14b31fd62ee422631431af23750c311053e06f1f6df2656"
+    },
+    {
+      "page": "陳書/卷22",
+      "file": "022.txt",
+      "blocks": 19,
+      "revid": 1508518,
+      "sha256": "bf4c4b3757f3eb02d13fd04aebcc3925ef3ee324db557b6e59faf1822109aa79"
+    },
+    {
+      "page": "陳書/卷23",
+      "file": "023.txt",
+      "blocks": 19,
+      "revid": 1514496,
+      "sha256": "e69a3bf20b0bcad0f4a2370f38c44c68674b9412efcbf62163a5e092fd37cd48"
+    },
+    {
+      "page": "陳書/卷24",
+      "file": "024.txt",
+      "blocks": 37,
+      "revid": 1494985,
+      "sha256": "dd51f37b05bb972375985e9d2893d5376caee36da692eee762627961b7db4d07"
+    },
+    {
+      "page": "陳書/卷25",
+      "file": "025.txt",
+      "blocks": 26,
+      "revid": 2063242,
+      "sha256": "0ce843c8a2d211ad042f555c690e0cce28d1820e4c10f72b727599324633708a"
+    },
+    {
+      "page": "陳書/卷26",
+      "file": "026.txt",
+      "blocks": 62,
+      "revid": 2132678,
+      "sha256": "7233c05d11c68d418c3d745c6e9f7b194e3807634c441db27e189a15dc53d593"
+    },
+    {
+      "page": "陳書/卷27",
+      "file": "027.txt",
+      "blocks": 55,
+      "revid": 1463644,
+      "sha256": "ad2086d7611c4c0253e83ec4644927b6729f15df4fc3295f4f05a4c68dc489a7"
+    },
+    {
+      "page": "陳書/卷28",
+      "file": "028.txt",
+      "blocks": 108,
+      "revid": 2581394,
+      "sha256": "8a4ee8e80580125f9d972d19e7a393508442283ce34e55f64504af7a166896bd"
+    },
+    {
+      "page": "陳書/卷29",
+      "file": "029.txt",
+      "blocks": 33,
+      "revid": 1511159,
+      "sha256": "2ce9146cdc373d23e8887b7b08b61ac9fe04d045d7674b0ba6df6ab3abd8166b"
+    },
+    {
+      "page": "陳書/卷30",
+      "file": "030.txt",
+      "blocks": 29,
+      "revid": 1511158,
+      "sha256": "fc95c38d36217ea2bfcb1b063963990a45a559e73a4da59f5f84c10589877179"
+    },
+    {
+      "page": "陳書/卷31",
+      "file": "031.txt",
+      "blocks": 51,
+      "revid": 2149203,
+      "sha256": "992cf8990cbeb9fad73edbfc5820bca0ad7cd54392a4f99ba36cd01e37f5daa9"
+    },
+    {
+      "page": "陳書/卷32",
+      "file": "032.txt",
+      "blocks": 25,
+      "revid": 1514501,
+      "sha256": "111492903c699ed45da817806525670b1c414a549ee1a0bd30405ea9c4e5c979"
+    },
+    {
+      "page": "陳書/卷33",
+      "file": "033.txt",
+      "blocks": 80,
+      "revid": 2261988,
+      "sha256": "f5671cb35280448901e7eaeb353bcc5c3f0475e5d960e2cb465fe55499156a90"
+    },
+    {
+      "page": "陳書/卷34",
+      "file": "034.txt",
+      "blocks": 95,
+      "revid": 2132783,
+      "sha256": "235984d64fcdf3900e25740f376ef388436a8c262bb20a0ad5a200d216be7303"
+    },
+    {
+      "page": "陳書/卷35",
+      "file": "035.txt",
+      "blocks": 39,
+      "revid": 1512989,
+      "sha256": "9284fc7dcfae6c3f8a9377ac84b5b2be3c2f00ba2c0c9612588c8734b12a81f5"
+    },
+    {
+      "page": "陳書/卷36",
+      "file": "036.txt",
+      "blocks": 17,
+      "revid": 1530928,
+      "sha256": "a9b3cd5285aa8cbd1dd14e7977c45956fee6d00f15b0c740d7403b6190fba963"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 36
+}
