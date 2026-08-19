@@ -6,6 +6,16 @@ from pathlib import Path
 import yaml
 
 
+_REQUIRED_SCORE_KEYS = {
+    "experience_similarity",
+    "evidence_strength",
+    "stage_relevance",
+    "lesson_clarity",
+    "transferability",
+    "counterevidence_quality",
+}
+
+
 @dataclass(frozen=True)
 class PromotionReadiness:
     problem_id: str
@@ -22,12 +32,41 @@ def _load_yaml(path: Path) -> dict:
     return data
 
 
+def _validate_registration_candidate(row: dict, blockers: list[str]) -> None:
+    person_id = str(row.get("person_id", "unknown"))
+    payload = row.get("registration_candidate")
+    if not isinstance(payload, dict):
+        blockers.append(f"eligible_candidate_missing_registration_payload:{person_id}")
+        return
+
+    if not payload.get("dynasty"):
+        blockers.append(f"eligible_candidate_missing_dynasty:{person_id}")
+    if not payload.get("heu_ids"):
+        blockers.append(f"eligible_candidate_missing_registration_heus:{person_id}")
+    if not payload.get("insight_ids"):
+        blockers.append(f"eligible_candidate_missing_registration_insights:{person_id}")
+    if not payload.get("rationale"):
+        blockers.append(f"eligible_candidate_missing_rationale:{person_id}")
+
+    scores = payload.get("scores")
+    if not isinstance(scores, dict) or not _REQUIRED_SCORE_KEYS.issubset(scores):
+        blockers.append(f"eligible_candidate_missing_score_dimensions:{person_id}")
+    elif any(scores.get(key) is None for key in _REQUIRED_SCORE_KEYS):
+        blockers.append(f"eligible_candidate_incomplete_score_dimensions:{person_id}")
+
+    selected = set(row.get("selected_insight_ids") or ())
+    registered = set(payload.get("insight_ids") or ())
+    if selected and registered != selected:
+        blockers.append(f"eligible_candidate_insight_selection_mismatch:{person_id}")
+
+
 def assess_problem_draft_promotion(manifest_path: Path, candidate_profile_path: Path) -> PromotionReadiness:
     """Assess whether a reviewed draft is structurally ready for explicit registration.
 
     This function never promotes files and never grants answer permission. It only
     verifies that humans have explicitly recorded the problem-specific review gates
-    required by the architecture before a later promotion action may be attempted.
+    and the full runtime candidate payload required before a later registration
+    artifact may be generated.
     """
     manifest = _load_yaml(manifest_path)
     profile = _load_yaml(candidate_profile_path)
@@ -38,6 +77,8 @@ def assess_problem_draft_promotion(manifest_path: Path, candidate_profile_path: 
         blockers.append("manifest_missing_problem_id")
     if profile.get("problem_id") != problem_id:
         blockers.append("candidate_profile_problem_id_mismatch")
+    if not manifest.get("retrieval_dimensions"):
+        blockers.append("retrieval_dimensions_not_reviewed")
 
     review = manifest.get("review_gate") or {}
     approval = profile.get("approval_gate") or {}
@@ -69,6 +110,7 @@ def assess_problem_draft_promotion(manifest_path: Path, candidate_profile_path: 
                 blockers.append(
                     f"eligible_candidate_missing_score:{row.get('person_id', 'unknown')}"
                 )
+            _validate_registration_candidate(row, blockers)
 
     blockers = list(dict.fromkeys(blockers))
     ready = not blockers
