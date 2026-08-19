@@ -10,27 +10,27 @@ source_groups:
     - {source_key: shiji, title: 史記, coverage: 先秦至漢初, existing_source_id: CN-HAN-0001}
     - {source_key: hanshu, title: 漢書, coverage: 西漢, existing_source_id: CN-HAN-0002}
     - {source_key: houhanshu, title: 後漢書, coverage: 東漢, existing_source_id: CN-HAN-0003}
-    - {source_key: sanguozhi, title: 三國志, coverage: 三國}
-    - {source_key: jinshu, title: 晉書, coverage: 晉}
-    - {source_key: songshu, title: 宋書, coverage: 劉宋}
-    - {source_key: nanqishu, title: 南齊書, coverage: 南齊}
-    - {source_key: liangshu, title: 梁書, coverage: 梁}
-    - {source_key: chenshu, title: 陳書, coverage: 陳}
-    - {source_key: weishu, title: 魏書, coverage: 北魏}
-    - {source_key: beinqishu, title: 北齊書, coverage: 北齊}
-    - {source_key: zhoushu, title: 周書, coverage: 北周}
-    - {source_key: suishu, title: 隋書, coverage: 隋}
-    - {source_key: nanshi, title: 南史, coverage: 南朝}
-    - {source_key: beishi, title: 北史, coverage: 北朝}
+    - {source_key: sanguozhi, title: 三國志, coverage: 三國, source_id: CN-SANGUO-0001}
+    - {source_key: jinshu, title: 晉書, coverage: 晉, source_id: CN-JIN-0001}
+    - {source_key: songshu, title: 宋書, coverage: 劉宋, source_id: CN-LIUSONG-0001}
+    - {source_key: nanqishu, title: 南齊書, coverage: 南齊, source_id: CN-NANQI-0001}
+    - {source_key: liangshu, title: 梁書, coverage: 梁, source_id: CN-LIANG-0001}
+    - {source_key: chenshu, title: 陳書, coverage: 陳, source_id: CN-CHEN-0001}
+    - {source_key: weishu, title: 魏書, coverage: 北魏, source_id: CN-BEIWEI-0001}
+    - {source_key: beinqishu, title: 北齊書, coverage: 北齊, source_id: CN-BEIQI-0001}
+    - {source_key: zhoushu, title: 周書, coverage: 北周, source_id: CN-BEIZHOU-0001}
+    - {source_key: suishu, title: 隋書, coverage: 隋, source_id: CN-SUI-0001}
+    - {source_key: nanshi, title: 南史, coverage: 南朝, source_id: CN-NANSHI-0001}
+    - {source_key: beishi, title: 北史, coverage: 北朝, source_id: CN-BEISHI-0001}
     - {source_key: jiutangshu, title: 舊唐書, coverage: 唐, existing_source_id: CN-TANG-0001}
     - {source_key: xintangshu, title: 新唐書, coverage: 唐, existing_source_id: CN-TANG-0002}
-    - {source_key: jiuwudaishi, title: 舊五代史, coverage: 五代}
-    - {source_key: xinwudaishi, title: 新五代史, coverage: 五代}
+    - {source_key: jiuwudaishi, title: 舊五代史, coverage: 五代, source_id: CN-WUDAI-0001}
+    - {source_key: xinwudaishi, title: 新五代史, coverage: 五代, source_id: CN-WUDAI-0002}
     - {source_key: songshi, title: 宋史, coverage: 宋, existing_source_id: CN-SONG-0001}
-    - {source_key: liaoshi, title: 遼史, coverage: 遼}
-    - {source_key: jinshi, title: 金史, coverage: 金}
-    - {source_key: yuanshi, title: 元史, coverage: 元}
-    - {source_key: mingshi, title: 明史, coverage: 明}
+    - {source_key: liaoshi, title: 遼史, coverage: 遼, source_id: CN-LIAO-0001}
+    - {source_key: jinshi, title: 金史, coverage: 金, source_id: CN-JINJURCHEN-0001}
+    - {source_key: yuanshi, title: 元史, coverage: 元, source_id: CN-YUAN-0001}
+    - {source_key: mingshi, title: 明史, coverage: 明, source_id: CN-MING-0001}
   chronological_and_governance_corpora:
     - {source_key: zizhitongjian, title: 資治通鑑, coverage: 戰國至五代, existing_partial_source_id: CN-TANG-0003}
     - {source_key: zhenguanzhengyao, title: 貞觀政要, coverage: 唐太宗, existing_source_id: CN-TANG-0004}
