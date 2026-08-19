@@ -1,0 +1,29 @@
+record_id: HER-SONG-000004
+research_id: R-000001
+title: "少年即位与亲政：宋仁宗能动空间随阶段变化"
+record_type: event
+dynasty: Song
+time_label: "乾兴元年至明道二年"
+participants:
+  - song_renzong
+historical_record: >-
+  赵祯少年即位后，真宗遗诏由皇太后权处军国事，朝廷实行垂帘。此后相当时期内，皇太后与皇帝共同出御听政。
+  明道二年皇太后去世后，赵祯始知自己的生母为李宸妃，并开始亲政；随后裁抑请托、召还部分旧臣，调整多名执政大臣。
+sources:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V009-P0001
+      - CN-SONG-0001-V009-P0002
+      - CN-SONG-0001-V009-P0003
+      - CN-SONG-0001-V010-P0015
+      - CN-SONG-0001-V010-P0016
+supported_claims:
+  - "宋仁宗即位初期的实际政治能动空间受到年龄、遗诏与皇太后临朝制度的明显限制。"
+  - "皇太后去世后，宋仁宗开始亲政，其可直接作出的人事与政治选择显著增加。"
+  - "同一个人的可控空间会随人生阶段与制度条件变化。"
+unsupported_claims:
+  - "宋仁宗少年时期完全没有任何自主判断。"
+  - "亲政之后宋仁宗即可完全控制朝廷与外部局势。"
+  - "制度限制必然会随着年龄增长自然消失。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
