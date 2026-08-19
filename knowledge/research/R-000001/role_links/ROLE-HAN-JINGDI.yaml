@@ -1,0 +1,12 @@
+person_id: han_jingdi
+research_id: R-000001
+life_course_rule: full_lifetime
+links:
+  - heu_id: HEU-HAN-000004
+    relation: experience_owner
+    responder_eligible: true
+    personal_experience_strength: primary
+source_support:
+  - CN-HAN-0002-V005-P0015
+  - CN-HAN-0002-V005-P0017
+status: reviewed

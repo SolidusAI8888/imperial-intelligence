@@ -1,0 +1,23 @@
+heu_id: HEU-HAN-000004
+research_id: R-000001
+title: "危机中的单项决策不能控制所有参与者"
+experience_owner: han_jingdi
+record_links:
+  - HER-HAN-000005
+challenge: >-
+  七国同时起兵后，景帝面对的是多方参与、信息不完全且快速变化的重大危机。朝廷既出兵又斩晁错，
+  试图通过不同手段改变局势，但叛军并没有因为一项政治让步就自动停止行动。
+response_or_choice:
+  - "下令遣周亚夫、窦婴等率军平叛。"
+  - "斩晁错以谢七国，尝试改变叛乱的政治理由与局势。"
+experienced_outcome:
+  - "七国之乱最终仍依赖后续军事行动而结束，说明重大结果并非由单一决定直接锁定。"
+explicit_reflection: []
+interpretation:
+  - "这段经历支持：人在危机中可以作出影响局势的选择，但无法单方面决定其他参与者的行为，更不能把一个决定等同于最终结果。"
+source_references:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V005-P0015
+      - CN-HAN-0002-V005-P0017
+status: reviewed
