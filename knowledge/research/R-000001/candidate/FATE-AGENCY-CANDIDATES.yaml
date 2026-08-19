@@ -39,6 +39,25 @@ candidates:
       汉文帝的皇位机会来自诸吕之乱后的外部重组；他面对突发机会时听取相反意见、核实局势并多次辞让后接受，
       很适合说明外部条件与个人判断共同塑造人生转折。
 
+  - persona_id: han_wudi
+    dynasty: han
+    evidence_ids:
+      - CN-HAN-0002-V006-P0001
+      - CN-HAN-0002-V006-P0002
+      - CN-HAN-0002-V006-P0009
+    heu_ids: [HEU-HAN-000003]
+    insight_ids: [INS-HAN-000003]
+    scores:
+      experience_similarity: 0.82
+      evidence_strength: 0.88
+      stage_relevance: 0.87
+      lesson_clarity: 0.82
+      transferability: 0.86
+      counterevidence_quality: 0.76
+    rationale: >-
+      汉武帝少年即位后已拥有最高名义身份，但建元初年仍受到太皇太后与既有宫廷权力结构的现实约束；
+      这组材料很适合说明“身份地位”与“实际可控制空间”并不是同一件事。
+
   - persona_id: tang_gaozu
     dynasty: tang
     evidence_ids:
