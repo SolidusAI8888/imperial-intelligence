@@ -17,6 +17,7 @@ QUESTION = "面对浩瀚的历史和剧烈的时代变革，个体的命运到�
 ELIGIBLE_IDS = {
     "liu_bang",
     "han_wendi",
+    "han_wudi",
     "tang_gaozu",
     "tang_taizong",
     "song_taizu",
@@ -75,9 +76,11 @@ def test_every_ranked_candidate_has_runtime_valid_reviewed_chain() -> None:
 def test_new_batch_candidates_have_real_canonical_evidence() -> None:
     candidates = {candidate.persona_id: candidate for candidate in first_fate_question_candidates()}
     assert "CN-HAN-0002-V004-P0004" in candidates["han_wendi"].evidence_ids
+    assert "CN-HAN-0002-V006-P0009" in candidates["han_wudi"].evidence_ids
     assert "CN-TANG-0001-V001-P0004" in candidates["tang_gaozu"].evidence_ids
     assert "CN-SONG-0001-V010-P0016" in candidates["song_renzong"].evidence_ids
     assert load_person_experiences("han_wendi")[0].heu_id == "HEU-HAN-000002"
+    assert load_person_experiences("han_wudi")[0].heu_id == "HEU-HAN-000003"
     assert load_person_experiences("tang_gaozu")[0].heu_id == "HEU-TANG-000004"
     assert load_person_experiences("song_renzong")[0].heu_id == "HEU-SONG-000002"
 
@@ -96,7 +99,7 @@ def test_first_fate_question_selects_tang_taizong_from_scores() -> None:
 
 def test_ranking_is_explainable_and_bounded() -> None:
     ranked = rank_candidates(first_fate_question_candidates())
-    assert len(ranked) == 6
+    assert len(ranked) == 7
     assert all(0 <= candidate.total_score <= 1 for candidate in ranked)
     assert all(candidate.rationale for candidate in ranked)
 
