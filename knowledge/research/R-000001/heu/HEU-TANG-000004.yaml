@@ -1,0 +1,25 @@
+heu_id: HEU-TANG-000004
+research_id: R-000001
+title: "秩序恶化中的路径转换与可修正决断"
+experience_owner: tang_gaozu
+record_links:
+  - HER-TANG-000007
+challenge: >-
+  李渊原本身处隋朝官僚体系，却在皇帝猜忌、地方叛乱和中央秩序崩解中逐渐失去原有路径的稳定性；
+  起兵后又立即面对粮运不足和是否退兵的选择。
+response_or_choice:
+  - "面对隋炀帝猜忌时先采取掩饰与自保，而非立即公开对抗。"
+  - "太原局势变化后转而募集兵众并正式起兵。"
+  - "西进遇久雨粮乏时一度决定撤退，后听取李世民劝谏而改变决定。"
+experienced_outcome:
+  - "李渊从隋臣转为起兵首领，并通过对局势与意见的重新判断继续西进。"
+explicit_reflection: []
+interpretation:
+  - "这组经历支持：时代变化会使原有路径失效，个人的作用不只体现在第一次选择，也体现在是否能根据新信息修正已经作出的决定。"
+source_references:
+  - source_id: CN-TANG-0001
+    canonical_ids:
+      - CN-TANG-0001-V001-P0002
+      - CN-TANG-0001-V001-P0003
+      - CN-TANG-0001-V001-P0004
+status: reviewed

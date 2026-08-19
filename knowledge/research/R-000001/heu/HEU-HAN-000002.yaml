@@ -1,0 +1,26 @@
+heu_id: HEU-HAN-000002
+research_id: R-000001
+title: "突发权力机会中的审慎判断与接受"
+experience_owner: han_wendi
+record_links:
+  - HER-HAN-000003
+challenge: >-
+  刘恒原为代王，诸吕被诛后突然被京师大臣迎请入朝即帝位；这一机会来自他不能预先控制的政治剧变，
+  同时伴随对京师局势和迎立动机是否可信的现实风险。
+response_or_choice:
+  - "听取张武、宋昌等相反判断，没有立即把迎立视为当然结果。"
+  - "先遣薄昭核实，再令宋昌先行观察京师情况。"
+  - "在群臣反复请求与局势逐步确认后接受帝位。"
+experienced_outcome:
+  - "刘恒由代王成为皇帝，其身份跃迁同时依赖外部政治重组、他人的拥立以及本人对风险的判断与接受。"
+explicit_reflection: []
+interpretation:
+  - "这组经历支持：重大人生机会可能由外部变化突然打开，而个人能够影响的是如何辨别信息、评估风险并决定是否进入这条新路径。"
+source_references:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V004-P0001
+      - CN-HAN-0002-V004-P0002
+      - CN-HAN-0002-V004-P0003
+      - CN-HAN-0002-V004-P0004
+status: reviewed

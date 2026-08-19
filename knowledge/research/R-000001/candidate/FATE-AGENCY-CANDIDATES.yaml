@@ -6,10 +6,8 @@ candidates:
       - CN-HAN-0001-V008-P0009
       - CN-HAN-0001-V008-P0010
       - CN-HAN-0001-V008-P0011
-    heu_ids:
-      - HEU-HAN-000001
-    insight_ids:
-      - INS-HAN-000001
+    heu_ids: [HEU-HAN-000001]
+    insight_ids: [INS-HAN-000001]
     scores:
       experience_similarity: 0.88
       evidence_strength: 0.86
@@ -20,6 +18,46 @@ candidates:
     rationale: >-
       刘邦从基层地方身份进入秦末起事，并在叛变与失利后重新聚兵，直接经历时代断裂、身份跃迁与失败后的重组；
       但当前审核材料中的明确自我反思少于唐太宗。
+
+  - persona_id: han_wendi
+    dynasty: han
+    evidence_ids:
+      - CN-HAN-0002-V004-P0001
+      - CN-HAN-0002-V004-P0002
+      - CN-HAN-0002-V004-P0003
+      - CN-HAN-0002-V004-P0004
+    heu_ids: [HEU-HAN-000002]
+    insight_ids: [INS-HAN-000002]
+    scores:
+      experience_similarity: 0.86
+      evidence_strength: 0.90
+      stage_relevance: 0.89
+      lesson_clarity: 0.84
+      transferability: 0.84
+      counterevidence_quality: 0.78
+    rationale: >-
+      汉文帝的皇位机会来自诸吕之乱后的外部重组；他面对突发机会时听取相反意见、核实局势并多次辞让后接受，
+      很适合说明外部条件与个人判断共同塑造人生转折。
+
+  - persona_id: tang_gaozu
+    dynasty: tang
+    evidence_ids:
+      - CN-TANG-0001-V001-P0002
+      - CN-TANG-0001-V001-P0003
+      - CN-TANG-0001-V001-P0004
+    heu_ids: [HEU-TANG-000004]
+    insight_ids: [INS-TANG-000003]
+    scores:
+      experience_similarity: 0.90
+      evidence_strength: 0.90
+      stage_relevance: 0.92
+      lesson_clarity: 0.82
+      transferability: 0.80
+      counterevidence_quality: 0.72
+    rationale: >-
+      唐高祖从隋臣到起兵首领的路径变化直接发生在隋末秩序崩解中，并有霍邑前撤退决定经劝谏后被修正的记录；
+      但当前材料中的系统性反思少于唐太宗。
+
   - persona_id: tang_taizong
     dynasty: tang
     evidence_ids:
@@ -45,16 +83,15 @@ candidates:
       counterevidence_quality: 0.82
     rationale: >-
       唐太宗既有隋末创业期亲历，又有贞观时期对草创守成、兼听、克终的明确反思，当前证据链同时覆盖处境变化、持续选择与纠错。
+
   - persona_id: song_taizu
     dynasty: song
     evidence_ids:
       - CN-SONG-0001-V001-P0004
       - CN-SONG-0001-V001-P0005
       - CN-SONG-0001-V001-P0010
-    heu_ids:
-      - HEU-SONG-000001
-    insight_ids:
-      - INS-SONG-000001
+    heu_ids: [HEU-SONG-000001]
+    insight_ids: [INS-SONG-000001]
     scores:
       experience_similarity: 0.87
       evidence_strength: 0.84
@@ -64,3 +101,24 @@ candidates:
       counterevidence_quality: 0.62
     rationale: >-
       赵匡胤从漫游无所遇到从军建功，再到陈桥身份突变，人生阶段变化显著；但当前正式知识层中的反思型材料少于唐太宗。
+
+  - persona_id: song_renzong
+    dynasty: song
+    evidence_ids:
+      - CN-SONG-0001-V009-P0001
+      - CN-SONG-0001-V009-P0002
+      - CN-SONG-0001-V009-P0003
+      - CN-SONG-0001-V010-P0015
+      - CN-SONG-0001-V010-P0016
+    heu_ids: [HEU-SONG-000002]
+    insight_ids: [INS-SONG-000002]
+    scores:
+      experience_similarity: 0.89
+      evidence_strength: 0.91
+      stage_relevance: 0.94
+      lesson_clarity: 0.86
+      transferability: 0.88
+      counterevidence_quality: 0.78
+    rationale: >-
+      宋仁宗少年即位后长期处于皇太后垂帘制度下，随后进入亲政阶段，同一人的实际能动空间随年龄与制度条件显著变化；
+      对“个人究竟能控制多少命运”具有很强的阶段性对照价值。

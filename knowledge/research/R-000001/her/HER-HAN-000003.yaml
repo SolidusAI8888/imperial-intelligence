@@ -1,0 +1,29 @@
+record_id: HER-HAN-000003
+research_id: R-000001
+title: "诸吕之乱后：代王刘恒被迎立为帝"
+record_type: event
+dynasty: Han
+time_label: "高后二十七年末至汉文帝即位"
+participants:
+  - han_wendi
+historical_record: >-
+  吕后死后，陈平、周勃等诛诸吕并谋迎代王刘恒入长安。刘恒身边群臣对是否赴京意见不一：
+  张武等担心京师大臣不可尽信，宋昌则认为刘氏基础与天下人心足以支撑迎立。刘恒先遣薄昭核实情况，
+  又令宋昌先入长安观察。群臣奉上天子玺后，刘恒仍多次辞让，最终在宗室、将相反复请求下即帝位。
+sources:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V004-P0001
+      - CN-HAN-0002-V004-P0002
+      - CN-HAN-0002-V004-P0003
+      - CN-HAN-0002-V004-P0004
+supported_claims:
+  - "刘恒即位机会来自诸吕被诛后的政治重组，并非由他主动制造这一外部局势。"
+  - "面对突然而来的最高权位，刘恒曾听取相反意见、派人核实并逐步确认京师局势。"
+  - "刘恒在群臣多次请求后接受帝位，显示外部机会与个人判断共同构成这一人生转折。"
+unsupported_claims:
+  - "卜兆足以证明刘恒称帝属于不可改变的天命。"
+  - "刘恒仅凭个人意志决定了诸吕之乱后的政治结果。"
+  - "谨慎核实可以保证任何重大选择都获得成功。"
+derived_from_candidate_evidence_ids: []
+status: reviewed

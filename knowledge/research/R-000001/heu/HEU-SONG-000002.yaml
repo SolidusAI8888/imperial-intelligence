@@ -1,0 +1,25 @@
+heu_id: HEU-SONG-000002
+research_id: R-000001
+title: "同一人生中能动空间的扩张与限制"
+experience_owner: song_renzong
+record_links:
+  - HER-SONG-000004
+challenge: >-
+  赵祯少年即位时，皇太后依遗诏处置军国大事；他的身份虽是皇帝，但其实际可控空间受到年龄、制度安排与既有权力结构限制。
+response_or_choice:
+  - "在垂帘阶段处于制度性受限的皇帝位置。"
+  - "皇太后去世后开始亲政，并通过裁抑请托、召还旧臣和调整执政班子扩大自主治理。"
+experienced_outcome:
+  - "赵祯在同一身份之下经历了实际决策空间从受限到扩大的阶段变化。"
+explicit_reflection: []
+interpretation:
+  - "这组经历支持：个人能动性不是固定常量；相同的人在不同年龄、制度与权力条件下，能够直接影响的范围可能明显不同。"
+source_references:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V009-P0001
+      - CN-SONG-0001-V009-P0002
+      - CN-SONG-0001-V009-P0003
+      - CN-SONG-0001-V010-P0015
+      - CN-SONG-0001-V010-P0016
+status: reviewed

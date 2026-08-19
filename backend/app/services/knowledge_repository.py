@@ -25,16 +25,6 @@ _ALLOWED_RECORD_TYPES = {
     "reflection",
     "other",
 }
-_PERSON_PREFIX = {
-    "liu_bang": "HAN",
-    "tang_taizong": "TANG",
-    "song_taizu": "SONG",
-}
-_ROLE_FILE = {
-    "liu_bang": "ROLE-LIU-BANG.yaml",
-    "tang_taizong": "ROLE-TANG-TAIZONG.yaml",
-    "song_taizu": "ROLE-SONG-TAIZU.yaml",
-}
 
 
 def _load_yaml(path: Path) -> dict:
@@ -76,44 +66,70 @@ def _normalize_record(raw: dict) -> dict:
     return data
 
 
-def _person_prefix(person_id: str) -> str:
-    try:
-        return _PERSON_PREFIX[person_id]
-    except KeyError as exc:
-        raise ValueError(f"Unsupported first-question candidate: {person_id}") from exc
+def _all_records() -> list[HistoricalRecord]:
+    return [
+        HistoricalRecord.model_validate(_normalize_record(_load_yaml(path)))
+        for path in sorted((RESEARCH_ROOT / "her").glob("HER-*.yaml"))
+    ]
+
+
+def _all_experiences() -> list[HistoricalExperienceUnit]:
+    return [
+        HistoricalExperienceUnit.model_validate(_load_yaml(path))
+        for path in sorted((RESEARCH_ROOT / "heu").glob("HEU-*.yaml"))
+    ]
+
+
+def _all_insights() -> list[Insight]:
+    return [
+        Insight.model_validate(_load_yaml(path))
+        for path in sorted((RESEARCH_ROOT / "insight").glob("INS-*.yaml"))
+    ]
 
 
 def load_person_records(person_id: str) -> list[HistoricalRecord]:
-    prefix = _person_prefix(person_id)
-    return [
-        HistoricalRecord.model_validate(_normalize_record(_load_yaml(path)))
-        for path in sorted((RESEARCH_ROOT / "her").glob(f"HER-{prefix}-*.yaml"))
-    ]
+    """Load only HERs in which the requested person is an explicit participant."""
+    return [record for record in _all_records() if person_id in record.participants]
 
 
 def load_person_experiences(person_id: str) -> list[HistoricalExperienceUnit]:
-    prefix = _person_prefix(person_id)
-    return [
-        HistoricalExperienceUnit.model_validate(_load_yaml(path))
-        for path in sorted((RESEARCH_ROOT / "heu").glob(f"HEU-{prefix}-*.yaml"))
-    ]
+    """Load only experience units explicitly owned by the requested person."""
+    return [heu for heu in _all_experiences() if heu.experience_owner == person_id]
 
 
 def load_person_insights(person_id: str) -> list[Insight]:
-    prefix = _person_prefix(person_id)
+    """Load insights derived exclusively from this person's HEU set.
+
+    Insight files deliberately do not duplicate a person_id. Ownership is
+    therefore derived from the reviewed HEU links rather than from dynasty
+    filename prefixes. This prevents one emperor from inheriting another
+    emperor's insight merely because both belong to the same dynasty.
+    """
+    owned_heu_ids = {heu.heu_id for heu in load_person_experiences(person_id)}
+    if not owned_heu_ids:
+        return []
     return [
-        Insight.model_validate(_load_yaml(path))
-        for path in sorted((RESEARCH_ROOT / "insight").glob(f"INS-{prefix}-*.yaml"))
+        insight
+        for insight in _all_insights()
+        if insight.derived_from_heus
+        and set(insight.derived_from_heus).issubset(owned_heu_ids)
     ]
 
 
 def load_person_role_links(person_id: str) -> list[RoleExperienceLink]:
-    try:
-        filename = _ROLE_FILE[person_id]
-    except KeyError as exc:
-        raise ValueError(f"Unsupported first-question candidate: {person_id}") from exc
+    """Load role links by the person_id stored inside each role-link file."""
+    matches: list[dict] = []
+    for path in sorted((RESEARCH_ROOT / "role_links").glob("ROLE-*.yaml")):
+        data = _load_yaml(path)
+        if data.get("person_id") == person_id:
+            matches.append(data)
 
-    data = _load_yaml(RESEARCH_ROOT / "role_links" / filename)
+    if not matches:
+        return []
+    if len(matches) > 1:
+        raise ValueError(f"Multiple role-link files found for person: {person_id}")
+
+    data = matches[0]
     life_course_rule = data.get("life_course_rule", "full_lifetime")
     return [
         RoleExperienceLink(
