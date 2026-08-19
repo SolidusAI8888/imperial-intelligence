@@ -1,0 +1,25 @@
+record_id: HER-HAN-000002
+research_id: R-000001
+title: "秦二世二年：丰地叛变后刘邦失利并重新聚兵"
+record_type: event
+dynasty: Han
+time_label: "秦二世二年"
+participants:
+  - liu_bang
+historical_record: >-
+  刘邦令雍齿守丰后，雍齿转而降魏。刘邦回军攻丰不能取，且一度因病返回沛县。
+  随后他转往从景驹求兵，并在萧西作战失利；之后重新收兵，攻取砀、下邑，
+  又前往项梁处获得增兵，再次回军攻丰。
+sources:
+  - source_id: CN-HAN-0001
+    canonical_ids:
+      - CN-HAN-0001-V008-P0011
+supported_claims:
+  - "刘邦起事后曾遭遇部属叛变、攻城失败与战斗不利。"
+  - "在连续受挫后，刘邦通过重新聚兵、攻取据点和寻求外部增援继续行动。"
+unsupported_claims:
+  - "刘邦每次失败后都能准确预判下一步结果。"
+  - "受挫必然会转化为成功。"
+  - "该事件可以证明所有个人都能凭坚持克服结构性劣势。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
