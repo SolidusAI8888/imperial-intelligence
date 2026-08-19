@@ -1,0 +1,416 @@
+{
+  "source_id": "CN-BEIQI-0001",
+  "title": "北齊書",
+  "expected_range": [
+    1,
+    50
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "北齊書/卷1",
+    "北齊書/卷2",
+    "北齊書/卷3",
+    "北齊書/卷4",
+    "北齊書/卷5",
+    "北齊書/卷6",
+    "北齊書/卷7",
+    "北齊書/卷8",
+    "北齊書/卷9",
+    "北齊書/卷10",
+    "北齊書/卷11",
+    "北齊書/卷12",
+    "北齊書/卷13",
+    "北齊書/卷14",
+    "北齊書/卷15",
+    "北齊書/卷16",
+    "北齊書/卷17",
+    "北齊書/卷18",
+    "北齊書/卷19",
+    "北齊書/卷20",
+    "北齊書/卷21",
+    "北齊書/卷22",
+    "北齊書/卷23",
+    "北齊書/卷24",
+    "北齊書/卷25",
+    "北齊書/卷26",
+    "北齊書/卷27",
+    "北齊書/卷28",
+    "北齊書/卷29",
+    "北齊書/卷30",
+    "北齊書/卷31",
+    "北齊書/卷32",
+    "北齊書/卷33",
+    "北齊書/卷34",
+    "北齊書/卷35",
+    "北齊書/卷36",
+    "北齊書/卷37",
+    "北齊書/卷38",
+    "北齊書/卷39",
+    "北齊書/卷40",
+    "北齊書/卷41",
+    "北齊書/卷42",
+    "北齊書/卷43",
+    "北齊書/卷44",
+    "北齊書/卷45",
+    "北齊書/卷46",
+    "北齊書/卷47",
+    "北齊書/卷48",
+    "北齊書/卷49",
+    "北齊書/卷50"
+  ],
+  "pages": [
+    {
+      "page": "北齊書/卷1",
+      "file": "001.txt",
+      "blocks": 13,
+      "revid": 2432532,
+      "sha256": "6bcab14971a265ce7670af57166fc561eedad1d932234e7f9dec3cdebe434845"
+    },
+    {
+      "page": "北齊書/卷2",
+      "file": "002.txt",
+      "blocks": 55,
+      "revid": 2432493,
+      "sha256": "25c464786667d63dfabffa60351d3ca93317254d43d4e73684adda32e9575f55"
+    },
+    {
+      "page": "北齊書/卷3",
+      "file": "003.txt",
+      "blocks": 18,
+      "revid": 2432489,
+      "sha256": "dc8bf606c1e5c3604fadffef1d445f8ef9b4ec26ba58461a55cd97d350eb0706"
+    },
+    {
+      "page": "北齊書/卷4",
+      "file": "004.txt",
+      "blocks": 37,
+      "revid": 2576166,
+      "sha256": "594967e67f688f2682bb8e96d4f9a584a329302141ba7d48e6016464ce754494"
+    },
+    {
+      "page": "北齊書/卷5",
+      "file": "005.txt",
+      "blocks": 16,
+      "revid": 2432487,
+      "sha256": "392185757935465add1cb0e0c0a70f4c43351166563331cadd6812b7b4637c53"
+    },
+    {
+      "page": "北齊書/卷6",
+      "file": "006.txt",
+      "blocks": 19,
+      "revid": 2432485,
+      "sha256": "e2191e7a09bf044649b0ea3dc035729f72241f2606bf09f507dc11e83ec18ff2"
+    },
+    {
+      "page": "北齊書/卷7",
+      "file": "007.txt",
+      "blocks": 35,
+      "revid": 2432494,
+      "sha256": "4bb0c2aeeadf489e1356b364ebc2b0a0cb9532815be998faf1fa7a1bf5f1c4ad"
+    },
+    {
+      "page": "北齊書/卷8",
+      "file": "008.txt",
+      "blocks": 119,
+      "revid": 2576076,
+      "sha256": "3b04fe79fe1e2abc62dae3873ef1f89eb9f0fa0e023957ba11015cb0191daf64"
+    },
+    {
+      "page": "北齊書/卷9",
+      "file": "009.txt",
+      "blocks": 12,
+      "revid": 2432521,
+      "sha256": "b8b6cd373cda779001db6d2674782f6056b5b4a8b4b74dfcb81384e4b38041f6"
+    },
+    {
+      "page": "北齊書/卷10",
+      "file": "010.txt",
+      "blocks": 23,
+      "revid": 2432497,
+      "sha256": "66e73ba6c348d35d8645ba494a45fd641bddd1110248424b150f112036b98f71"
+    },
+    {
+      "page": "北齊書/卷11",
+      "file": "011.txt",
+      "blocks": 18,
+      "revid": 2546237,
+      "sha256": "689d40139f605d2d1b894b94f3116b4a8e1c54cffa3bb3a7f2cc4be1c39e874c"
+    },
+    {
+      "page": "北齊書/卷12",
+      "file": "012.txt",
+      "blocks": 25,
+      "revid": 2432517,
+      "sha256": "36c3d32a4d8adf23d36cfb3f92255ef1e2641ff396c726d993f2bdc41d98b23d"
+    },
+    {
+      "page": "北齊書/卷13",
+      "file": "013.txt",
+      "blocks": 19,
+      "revid": 2432528,
+      "sha256": "16fab871fa8f5d60c67f01f632fda471e18f47673accd51146ee120e969573de"
+    },
+    {
+      "page": "北齊書/卷14",
+      "file": "014.txt",
+      "blocks": 23,
+      "revid": 2432514,
+      "sha256": "4ae1baa4983e49afeccb110341f0d70b2bf246335c751f6695a135c606006539"
+    },
+    {
+      "page": "北齊書/卷15",
+      "file": "015.txt",
+      "blocks": 18,
+      "revid": 2432498,
+      "sha256": "716472bf52d1e6f4ab08849785894b085183a071ac0e70bd06cd62a6930ed516"
+    },
+    {
+      "page": "北齊書/卷16",
+      "file": "016.txt",
+      "blocks": 27,
+      "revid": 2432502,
+      "sha256": "b01d14dee62bc300167472c6a905662fec70fcf80b8a540e0e01f5cad0b87886"
+    },
+    {
+      "page": "北齊書/卷17",
+      "file": "017.txt",
+      "blocks": 24,
+      "revid": 2432510,
+      "sha256": "df4c6dfb809cf1d0e6f48506b73ece5556ef36b79b63a56773ace9356d8604fe"
+    },
+    {
+      "page": "北齊書/卷18",
+      "file": "018.txt",
+      "blocks": 23,
+      "revid": 2432504,
+      "sha256": "c11befce221eaf28d05c9a243cad1a2adcd7d72fc89bfe734f9fffc195efeb8c"
+    },
+    {
+      "page": "北齊書/卷19",
+      "file": "019.txt",
+      "blocks": 52,
+      "revid": 2432511,
+      "sha256": "47f206ad4ad90b2828c1a401e085de306489dcfa7f7bc53a1a26d3365e524458"
+    },
+    {
+      "page": "北齊書/卷20",
+      "file": "020.txt",
+      "blocks": 54,
+      "revid": 2432524,
+      "sha256": "fb2848c1fa6004fb1909d8155bb13d1a969c297fa021790cc8e62be24e41014f"
+    },
+    {
+      "page": "北齊書/卷21",
+      "file": "021.txt",
+      "blocks": 51,
+      "revid": 2014234,
+      "sha256": "2307cb0fc79cddf8997758fa8e52af2d91afc5825543e45bb8bc21fe1a5794b9"
+    },
+    {
+      "page": "北齊書/卷22",
+      "file": "022.txt",
+      "blocks": 32,
+      "revid": 2432533,
+      "sha256": "6055420c462ecb8c5eeb447bbeb72fc0e2cd482477499713fa8ed1d7f9e63616"
+    },
+    {
+      "page": "北齊書/卷23",
+      "file": "023.txt",
+      "blocks": 29,
+      "revid": 2432525,
+      "sha256": "e2182227ec309ff6868af33246c90dc6f11d94abd5e28e309ba6817ed1bece48"
+    },
+    {
+      "page": "北齊書/卷24",
+      "file": "024.txt",
+      "blocks": 31,
+      "revid": 2432516,
+      "sha256": "00e9c96755eaf62fcab20359b3e53997693e5a78a99e84de5d89d5397e4b8ef3"
+    },
+    {
+      "page": "北齊書/卷25",
+      "file": "025.txt",
+      "blocks": 27,
+      "revid": 1516139,
+      "sha256": "61e76e71b69804ecf951a0f9a8bc0066b42f9600a1b0c1b9a88ace43523c7d44"
+    },
+    {
+      "page": "北齊書/卷26",
+      "file": "026.txt",
+      "blocks": 12,
+      "revid": 2432505,
+      "sha256": "a7247cd717870c9ab1747138398d58d0cca48313c291b5e916eac495fadbe1bc"
+    },
+    {
+      "page": "北齊書/卷27",
+      "file": "027.txt",
+      "blocks": 12,
+      "revid": 2432513,
+      "sha256": "779c5bf4b380d0b63f323579e916f0f5b9495d8eb19d55a5472f0be3707f22ca"
+    },
+    {
+      "page": "北齊書/卷28",
+      "file": "028.txt",
+      "blocks": 20,
+      "revid": 2432518,
+      "sha256": "3853b2dd62ee37528df390472cead571f253fa626145228ed041039620ad104c"
+    },
+    {
+      "page": "北齊書/卷29",
+      "file": "029.txt",
+      "blocks": 20,
+      "revid": 2432501,
+      "sha256": "65484e352033521702bfd87dc9ff1e576ed2e180d39d571f872077a18469bc03"
+    },
+    {
+      "page": "北齊書/卷30",
+      "file": "030.txt",
+      "blocks": 24,
+      "revid": 2432523,
+      "sha256": "56e2b6e4113f93c5c82b75e4bdfed4f4c2c88a3e574c51d9d40bf2334da11954"
+    },
+    {
+      "page": "北齊書/卷31",
+      "file": "031.txt",
+      "blocks": 20,
+      "revid": 2609274,
+      "sha256": "9d82d891019b7f17e45c86318e240dc4577a3e194a436d8b905dac57559a2df2"
+    },
+    {
+      "page": "北齊書/卷32",
+      "file": "032.txt",
+      "blocks": 23,
+      "revid": 2432509,
+      "sha256": "8f3e05c492fe2c0ee50d81ef4dc67695348f5052b1442279fa3b65f97b763dcf"
+    },
+    {
+      "page": "北齊書/卷33",
+      "file": "033.txt",
+      "blocks": 20,
+      "revid": 2611185,
+      "sha256": "e6df7633189438683311b7d10b33f3266dee366e1dcf225d69d225e39abbd002"
+    },
+    {
+      "page": "北齊書/卷34",
+      "file": "034.txt",
+      "blocks": 21,
+      "revid": 2432527,
+      "sha256": "c60865e7a97652793ae6afc50592d8c860c54e26cc2b2098241aa635b6c58f62"
+    },
+    {
+      "page": "北齊書/卷35",
+      "file": "035.txt",
+      "blocks": 16,
+      "revid": 2432526,
+      "sha256": "c5910ef88c45b65c6e105f4723b5b07a4454f7ac8dcad11239f6258a7c426aef"
+    },
+    {
+      "page": "北齊書/卷36",
+      "file": "036.txt",
+      "blocks": 12,
+      "revid": 2432515,
+      "sha256": "83e6ee7c835dbdda68405e9d27bece1c987ae761353bd41bfa25e621d12d1196"
+    },
+    {
+      "page": "北齊書/卷37",
+      "file": "037.txt",
+      "blocks": 27,
+      "revid": 2432496,
+      "sha256": "20a47df75bd266b293c90b766a0c8d8b1aafac24c6eed6f8f145d9dd3d562fa9"
+    },
+    {
+      "page": "北齊書/卷38",
+      "file": "038.txt",
+      "blocks": 17,
+      "revid": 2432512,
+      "sha256": "0fdd38652dbd6295a360b1d995b845bd9f743d7e651df599497ba58709739068"
+    },
+    {
+      "page": "北齊書/卷39",
+      "file": "039.txt",
+      "blocks": 23,
+      "revid": 2432531,
+      "sha256": "949a83738dac5f607b8a01a29162612b1a4c3e2f505a0b4bcaf178688c1a8138"
+    },
+    {
+      "page": "北齊書/卷40",
+      "file": "040.txt",
+      "blocks": 16,
+      "revid": 2432522,
+      "sha256": "11eff69dfe366afb317f2fb36c5226c4abe001210e05f33f3a64ce1c26c3044e"
+    },
+    {
+      "page": "北齊書/卷41",
+      "file": "041.txt",
+      "blocks": 38,
+      "revid": 2432508,
+      "sha256": "4f179540c6e05980c74b9c656ed4663157eda71964012977ff0db84077be72da"
+    },
+    {
+      "page": "北齊書/卷42",
+      "file": "042.txt",
+      "blocks": 42,
+      "revid": 2432500,
+      "sha256": "7d79b3a70df7e9e9efe2d8f25f6af5493f4d81e777dbc1d2501c8d6dd07968f5"
+    },
+    {
+      "page": "北齊書/卷43",
+      "file": "043.txt",
+      "blocks": 27,
+      "revid": 2432507,
+      "sha256": "118a02af34411bbaab8285e316f87996c9d9f9630282efcf469f5568663de2fc"
+    },
+    {
+      "page": "北齊書/卷44",
+      "file": "044.txt",
+      "blocks": 49,
+      "revid": 2432529,
+      "sha256": "e32585d9f683068fb5650d3af206d132777a49f7aa1ba4be74d313216ad5d3bd"
+    },
+    {
+      "page": "北齊書/卷45",
+      "file": "045.txt",
+      "blocks": 64,
+      "revid": 2432486,
+      "sha256": "7b992910a014e3dfabbe1ebe66a241a814d194e68a30dbe540d148be14bbb1b2"
+    },
+    {
+      "page": "北齊書/卷46",
+      "file": "046.txt",
+      "blocks": 21,
+      "revid": 2432499,
+      "sha256": "682478fe83a2e599caf9e0bc9f0846f32f93966a6fef2018d1553a5920832428"
+    },
+    {
+      "page": "北齊書/卷47",
+      "file": "047.txt",
+      "blocks": 19,
+      "revid": 2432506,
+      "sha256": "a60f9bd1d1068a61fb736f5bac8256442e3b6243dbaae12631adebd9e961c331"
+    },
+    {
+      "page": "北齊書/卷48",
+      "file": "048.txt",
+      "blocks": 12,
+      "revid": 2432519,
+      "sha256": "44f8f9df1743392c615825c5881bf586ef9f70089076268ea4f8309bce6a387f"
+    },
+    {
+      "page": "北齊書/卷49",
+      "file": "049.txt",
+      "blocks": 22,
+      "revid": 2432491,
+      "sha256": "019ac43e311f6423939a09968a876a30b79ac641f78269c42887f8628ce52d55"
+    },
+    {
+      "page": "北齊書/卷50",
+      "file": "050.txt",
+      "blocks": 23,
+      "revid": 2432503,
+      "sha256": "e668b524ada5a3794a3c8e696727ad73c1201b63dde1705c94ea05083306f026"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 50
+}
