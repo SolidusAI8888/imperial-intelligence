@@ -1,7 +1,13 @@
 from fastapi import FastAPI, HTTPException
 
-from app.models.api import AutoConsultationResponse, ConsultationRequest, ConsultationResponse
+from app.models.api import (
+    AutoConsultationResponse,
+    ConsultationRequest,
+    ConsultationResponse,
+    ProblemGroundedAnswerResponse,
+)
 from app.services.auto_consultation_service import AutoConsultationService
+from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
 
@@ -62,5 +68,23 @@ def consult(emperor_id: str, request: ConsultationRequest) -> ConsultationRespon
 def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse:
     try:
         return auto_consultation_service.consult(request)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get("/problems/{problem_id}/answer", response_model=ProblemGroundedAnswerResponse)
+def grounded_problem_answer(problem_id: str) -> ProblemGroundedAnswerResponse:
+    """Render only a registered problem that has passed the evidence/eligibility gates.
+
+    The endpoint intentionally does not accept an arbitrary question override. A new
+    user question must first become its own reviewed Problem manifest/profile rather
+    than borrowing another problem's approval and responder eligibility.
+    """
+    try:
+        return ProblemGroundedAnswerResponse.model_validate(
+            render_grounded_answer(problem_id).__dict__
+        )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
