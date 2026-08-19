@@ -1,0 +1,24 @@
+record_id: HER-SONG-000003
+research_id: R-000001
+title: "后周显德七年：陈桥兵变中赵匡胤受拥立并约束军纪"
+record_type: event
+dynasty: Song
+time_label: "后周显德七年"
+participants:
+  - song_taizu
+historical_record: >-
+  北汉与契丹入寇后，赵匡胤率军出征至陈桥驿。军士聚集拥立赵匡胤为天子。
+  《宋史》记载其受拥立后向诸将提出不得惊犯太后与主上、不得侵凌大臣、不得侵掠府库与士庶之家等约束，诸将随后整队入京。
+sources:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V001-P0010
+supported_claims:
+  - "陈桥事件同时包含军中集体行动、政治结构失衡与赵匡胤个人接受并约束后续行动。"
+  - "赵匡胤在身份突变后立即试图通过明确军纪控制风险。"
+unsupported_claims:
+  - "陈桥兵变完全由赵匡胤预先设计。"
+  - "军士拥立意味着赵匡胤对整个过程拥有完全控制。"
+  - "身份跃迁之后的约束措施足以证明其所有后续选择正确。"
+derived_from_candidate_evidence_ids: []
+status: reviewed

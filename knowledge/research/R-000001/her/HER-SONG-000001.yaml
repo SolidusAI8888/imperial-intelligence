@@ -1,0 +1,24 @@
+record_id: HER-SONG-000001
+research_id: R-000001
+title: "后汉初：赵匡胤漫游无所遇后应募从军"
+record_type: event
+dynasty: Song
+time_label: "后汉初至后周广顺初"
+participants:
+  - song_taizu
+historical_record: >-
+  《宋史》记载赵匡胤在后汉初曾漫游而无所遇，后在襄阳寺中得到老僧资助并劝其北行。
+  适逢郭威以枢密使征李守真，赵匡胤应募进入军中；后周广顺初，他由军中职务逐步升迁。
+sources:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V001-P0004
+supported_claims:
+  - "赵匡胤早年曾经历漫游无所遇的阶段。"
+  - "其后因外部军事机会应募从军，人生路径由此发生明显变化。"
+unsupported_claims:
+  - "赵匡胤在漫游时期已能确定自己将成为皇帝。"
+  - "一次偶遇或建议单独决定了其后命运。"
+  - "所有处于失意期的人只要等待机会就必然出现转机。"
+derived_from_candidate_evidence_ids: []
+status: reviewed

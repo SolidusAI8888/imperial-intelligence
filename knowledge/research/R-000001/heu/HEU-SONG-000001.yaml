@@ -1,0 +1,26 @@
+heu_id: HEU-SONG-000001
+research_id: R-000001
+title: "从无所遇到军功与身份突变：机会、行动与约束并存"
+experience_owner: song_taizu
+record_links:
+  - HER-SONG-000001
+  - HER-SONG-000002
+  - HER-SONG-000003
+challenge: >-
+  赵匡胤早年经历漫游无所遇，随后因军事机会进入军中；此后在高平危局中建功，并在陈桥事件中遭遇极端身份跃迁。
+response_or_choice:
+  - "在没有稳定出路时接受新的军事机会进入军中。"
+  - "在高平军势危急时选择继续进击。"
+  - "身份突变后立即提出军纪约束，试图控制军队入京可能造成的风险。"
+experienced_outcome:
+  - "赵匡胤的人生路径从失意漫游转向军旅升迁，最终进入最高权力位置；其变化既包含时代机会与他人行动，也包含本人在关键节点的选择。"
+explicit_reflection: []
+interpretation:
+  - "这组记录支持：个人命运的重大转折既可能来自外部机会和集体行动，也取决于人在节点上是否行动，以及身份变化后能否迅速应对新的风险。"
+source_references:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V001-P0004
+      - CN-SONG-0001-V001-P0005
+      - CN-SONG-0001-V001-P0010
+status: reviewed

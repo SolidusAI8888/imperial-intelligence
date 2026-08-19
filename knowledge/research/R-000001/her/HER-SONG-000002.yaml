@@ -1,0 +1,24 @@
+record_id: HER-SONG-000002
+research_id: R-000001
+title: "后周显德元年：高平之战危局中赵匡胤突击建功"
+record_type: battle
+dynasty: Song
+time_label: "后周显德元年"
+participants:
+  - song_taizu
+historical_record: >-
+  后周世宗即位后，北汉来攻，高平之战中樊爱能等先遁，军势危急。
+  《宋史》记载赵匡胤率同列驰马冲击敌锋，北汉军大溃；其后继续参与攻河东并因功升迁。
+sources:
+  - source_id: CN-SONG-0001
+    canonical_ids:
+      - CN-SONG-0001-V001-P0005
+supported_claims:
+  - "赵匡胤在军势不利时选择继续突击，并因此取得战功与后续升迁。"
+  - "其个人行动发生在既有军队、君主与战争结构之内。"
+unsupported_claims:
+  - "赵匡胤个人一人决定了整场高平之战的全部结果。"
+  - "冒险突击在任何环境下都是正确选择。"
+  - "该战功足以单独解释其后来称帝。"
+derived_from_candidate_evidence_ids: []
+status: reviewed

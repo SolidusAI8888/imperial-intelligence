@@ -1,0 +1,24 @@
+heu_id: HEU-HAN-000001
+research_id: R-000001
+title: "秩序崩解中的身份跃迁与受挫后的重新聚合"
+experience_owner: liu_bang
+record_links:
+  - HER-HAN-000001
+  - HER-HAN-000002
+challenge: >-
+  刘邦所处的秦末环境快速失序，使原有地方身份与政治边界发生变化；进入起事后，他又立即面对叛变、失利与资源不足。
+response_or_choice:
+  - "在沛县局势反复时参与动员父老与地方力量，并接受被推举为沛公。"
+  - "丰地叛变与作战失利后，没有把一次失败视为终局，而是重新聚兵、寻找盟援并继续行动。"
+experienced_outcome:
+  - "刘邦从基层地方身份进入起事领导位置，并在早期失败后维持了继续竞争的行动能力。"
+explicit_reflection: []
+interpretation:
+  - "这组记录支持：时代断裂会改变个人可进入的行动空间，但后续走向仍受到个人选择、组织动员、盟友与失败后的重新组织共同影响。"
+source_references:
+  - source_id: CN-HAN-0001
+    canonical_ids:
+      - CN-HAN-0001-V008-P0009
+      - CN-HAN-0001-V008-P0010
+      - CN-HAN-0001-V008-P0011
+status: reviewed

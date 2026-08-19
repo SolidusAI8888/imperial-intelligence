@@ -1,0 +1,66 @@
+problem_id: Q-FATE-AGENCY-001
+candidates:
+  - persona_id: liu_bang
+    dynasty: han
+    evidence_ids:
+      - CN-HAN-0001-V008-P0009
+      - CN-HAN-0001-V008-P0010
+      - CN-HAN-0001-V008-P0011
+    heu_ids:
+      - HEU-HAN-000001
+    insight_ids:
+      - INS-HAN-000001
+    scores:
+      experience_similarity: 0.88
+      evidence_strength: 0.86
+      stage_relevance: 0.90
+      lesson_clarity: 0.76
+      transferability: 0.78
+      counterevidence_quality: 0.65
+    rationale: >-
+      刘邦从基层地方身份进入秦末起事，并在叛变与失利后重新聚兵，直接经历时代断裂、身份跃迁与失败后的重组；
+      但当前审核材料中的明确自我反思少于唐太宗。
+  - persona_id: tang_taizong
+    dynasty: tang
+    evidence_ids:
+      - CN-TANG-0001-V002-P0004
+      - CN-TANG-0002-V002-P0004
+      - CN-TANG-0004-V001-P0003
+      - CN-TANG-0004-V001-P0010
+      - CN-TANG-0004-V001-P0013
+      - CN-TANG-0004-V001-P0014
+    heu_ids:
+      - HEU-TANG-000001
+      - HEU-TANG-000002
+      - HEU-TANG-000003
+    insight_ids:
+      - INS-TANG-000001
+      - INS-TANG-000002
+    scores:
+      experience_similarity: 0.94
+      evidence_strength: 0.95
+      stage_relevance: 0.95
+      lesson_clarity: 0.96
+      transferability: 0.89
+      counterevidence_quality: 0.82
+    rationale: >-
+      唐太宗既有隋末创业期亲历，又有贞观时期对草创守成、兼听、克终的明确反思，当前证据链同时覆盖处境变化、持续选择与纠错。
+  - persona_id: song_taizu
+    dynasty: song
+    evidence_ids:
+      - CN-SONG-0001-V001-P0004
+      - CN-SONG-0001-V001-P0005
+      - CN-SONG-0001-V001-P0010
+    heu_ids:
+      - HEU-SONG-000001
+    insight_ids:
+      - INS-SONG-000001
+    scores:
+      experience_similarity: 0.87
+      evidence_strength: 0.84
+      stage_relevance: 0.91
+      lesson_clarity: 0.72
+      transferability: 0.76
+      counterevidence_quality: 0.62
+    rationale: >-
+      赵匡胤从漫游无所遇到从军建功，再到陈桥身份突变，人生阶段变化显著；但当前正式知识层中的反思型材料少于唐太宗。
