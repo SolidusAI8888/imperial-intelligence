@@ -1,3 +1,5 @@
+from dataclasses import asdict
+
 from fastapi import FastAPI, HTTPException
 
 from app.models.api import (
@@ -5,11 +7,14 @@ from app.models.api import (
     ConsultationRequest,
     ConsultationResponse,
     ProblemGroundedAnswerResponse,
+    ProblemResearchPackageResponse,
+    ProblemResearchRequest,
 )
 from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
+from app.services.problem_research_package import build_problem_research_package
 
 app = FastAPI(
     title="帝王智库 API",
@@ -68,6 +73,25 @@ def consult(emperor_id: str, request: ConsultationRequest) -> ConsultationRespon
 def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse:
     try:
         return auto_consultation_service.consult(request)
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/research", response_model=ProblemResearchPackageResponse)
+def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPackageResponse:
+    """Build a research-only package for an arbitrary new user question.
+
+    The result is deliberately non-persistent and non-answerable. It may recall
+    already reviewed HER/HEU experience and prioritize people for review, but it
+    cannot register a Problem, approve an Insight, grant responder eligibility, or
+    render a historical-persona answer.
+    """
+    try:
+        package = build_problem_research_package(
+            request.question,
+            candidate_limit=request.candidate_limit,
+        )
+        return ProblemResearchPackageResponse.model_validate(asdict(package))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
