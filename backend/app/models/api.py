@@ -78,3 +78,27 @@ class ProblemGroundedAnswerResponse(BaseModel):
     evidence_ids: list[str]
     insight_ids: list[str]
     status: Literal["rendered_from_reviewed_grounded_bundle"]
+
+
+class ProblemResearchRequest(BaseModel):
+    question: str = Field(min_length=2, max_length=4000)
+    candidate_limit: int = Field(default=20, ge=1, le=50)
+
+
+class ProblemResearchCandidateResponse(BaseModel):
+    person_id: str
+    heu_ids: list[str]
+    retrieval_score: float = Field(ge=0, le=1)
+    review_priority: int = Field(ge=1)
+    status: Literal["research_candidate_requires_problem_specific_review"]
+    responder_eligible: Literal[False]
+
+
+class ProblemResearchPackageResponse(BaseModel):
+    proposed_problem_id: str
+    raw_question: str
+    normalized_question: str
+    candidates: list[ProblemResearchCandidateResponse]
+    status: Literal["research_package_requires_human_review"]
+    can_render_answer: Literal[False]
+    required_next_gate: str
