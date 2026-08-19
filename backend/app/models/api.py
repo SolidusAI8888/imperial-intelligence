@@ -51,7 +51,18 @@ class CandidateRanking(BaseModel):
     evidence_ids: list[str]
 
 
+class CandidateScreening(BaseModel):
+    emperor_id: str
+    name: str
+    title: str
+    dynasty: Literal["han", "tang", "song"]
+    eligible: bool
+    score: float | None = Field(default=None, ge=0, le=1)
+    reason: str
+
+
 class AutoConsultationResponse(BaseModel):
     selected_emperor_id: str
+    screened_emperors: list[CandidateScreening]
     rankings: list[CandidateRanking]
     consultation: ConsultationResponse
