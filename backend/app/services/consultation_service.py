@@ -4,7 +4,8 @@ from app.models.api import (
     ConsultationResponse,
     EvidenceReference,
 )
-from app.services.answer_pipeline import FIRST_PROBLEM_ID, generate_first_question_answer
+from app.services.answer_pipeline import FIRST_PROBLEM_ID, GroundedAnswer, generate_first_question_answer
+from app.services.conversation_pipeline import generate_first_question_followup, is_first_question_followup
 from app.services.persona_repository import PersonaRepository
 
 
@@ -21,6 +22,50 @@ class ConsultationService:
     def _source_id_from_canonical(canonical_id: str) -> str:
         return canonical_id.split("-V", 1)[0]
 
+    def _grounded_response(
+        self,
+        emperor_id: str,
+        grounded: GroundedAnswer,
+        *,
+        followup: bool = False,
+    ) -> ConsultationResponse:
+        return ConsultationResponse(
+            emperor_id=emperor_id,
+            emperor_stage_id="full_lifetime",
+            imperial_advice=grounded.answer,
+            reasoning=grounded.reasoning,
+            historical_analogy=(
+                "本回答以《旧唐书》《新唐书》所载隋末至武德初经历，"
+                "以及《贞观政要》所载草创与守成、兼听与偏信、纳谏与克终风险等"
+                "已审核记录共同构成人物经验基础。"
+            ),
+            modern_translation=(
+                "【连续对话现代转译】本轮根据追问重新判断类比是否成立，并在不扩大史料边界的前提下调整回答。"
+                if followup
+                else "【现代转译】外部环境会限制可选路径，但个人仍可管理其中一部分："
+                "重新判断处境、主动获取反对意见、在发现错误后调整，并在成功后继续防止信息失真。"
+                "这是从唐太宗经验中抽取的现代可迁移表达，不是史料原话。"
+            ),
+            cautions=grounded.cautions,
+            evidence=[
+                EvidenceReference(
+                    evidence_id=canonical_id,
+                    source_id=self._source_id_from_canonical(canonical_id),
+                    summary=f"{FIRST_PROBLEM_ID} grounded canonical evidence",
+                    confidence=0.95,
+                )
+                for canonical_id in grounded.evidence_ids
+            ],
+            overall_confidence=0.9,
+            avatar_directive=AvatarDirective(
+                listening_state="attentive_still",
+                thinking_action="lower_gaze_review_memorial",
+                speaking_style="calm_measured_authoritative",
+                emotion="reflective_composed",
+            ),
+            status="evidence_grounded",
+        )
+
     def consult(
         self,
         emperor_id: str,
@@ -30,42 +75,17 @@ class ConsultationService:
         manifest = package.get("manifest", {})
         default_stage = manifest.get("default_stage_id", "unknown")
 
+        if emperor_id == "tang_taizong" and is_first_question_followup(
+            request.question, request.conversation_history
+        ):
+            grounded = generate_first_question_followup(
+                request.question, request.conversation_history
+            )
+            return self._grounded_response(emperor_id, grounded, followup=True)
+
         if emperor_id == "tang_taizong" and self._is_first_fate_question(request.question):
             grounded = generate_first_question_answer(request.question)
-            return ConsultationResponse(
-                emperor_id=emperor_id,
-                emperor_stage_id="full_lifetime",
-                imperial_advice=grounded.answer,
-                reasoning=grounded.reasoning,
-                historical_analogy=(
-                    "本回答以《旧唐书》《新唐书》所载隋末至武德初经历，"
-                    "以及《贞观政要》所载草创与守成、兼听与偏信、纳谏与克终风险等"
-                    "已审核记录共同构成人物经验基础。"
-                ),
-                modern_translation=(
-                    "【现代转译】外部环境会限制可选路径，但个人仍可管理其中一部分："
-                    "重新判断处境、主动获取反对意见、在发现错误后调整，并在成功后继续防止信息失真。"
-                    "这是从唐太宗经验中抽取的现代可迁移表达，不是史料原话。"
-                ),
-                cautions=grounded.cautions,
-                evidence=[
-                    EvidenceReference(
-                        evidence_id=canonical_id,
-                        source_id=self._source_id_from_canonical(canonical_id),
-                        summary=f"{FIRST_PROBLEM_ID} grounded canonical evidence",
-                        confidence=0.95,
-                    )
-                    for canonical_id in grounded.evidence_ids
-                ],
-                overall_confidence=0.9,
-                avatar_directive=AvatarDirective(
-                    listening_state="attentive_still",
-                    thinking_action="lower_gaze_review_memorial",
-                    speaking_style="calm_measured_authoritative",
-                    emotion="reflective_composed",
-                ),
-                status="evidence_grounded",
-            )
+            return self._grounded_response(emperor_id, grounded)
 
         # Prototype fallback for questions not yet connected to reviewed knowledge.
         return ConsultationResponse(
