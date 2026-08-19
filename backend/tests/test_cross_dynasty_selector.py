@@ -1,6 +1,7 @@
 from app.services.cross_dynasty_selector import (
     first_fate_question_candidates,
     rank_candidates,
+    screen_all_han_tang_song_emperors,
     select_best_candidate,
 )
 from app.services.knowledge_repository import (
@@ -24,6 +25,19 @@ def test_first_fate_question_compares_han_tang_song() -> None:
         "song_taizu",
     }
     assert all(candidate.evidence_ids for candidate in candidates)
+
+
+def test_complete_han_tang_song_roster_is_screened_before_selection() -> None:
+    screened = screen_all_han_tang_song_emperors()
+    assert len(screened) == 69
+    assert {item.dynasty for item in screened} == {"han", "tang", "song"}
+    ids = {item.persona_id for item in screened}
+    assert {"liu_bang", "han_wudi", "han_guangwudi", "tang_gaozu", "tang_taizong", "tang_xuanzong", "song_taizu", "song_renzong", "song_gaozong", "song_bingdi"}.issubset(ids)
+
+    eligible = {item.persona_id for item in screened if item.eligible}
+    assert eligible == {"liu_bang", "tang_taizong", "song_taizu"}
+    assert all(item.total_score is None for item in screened if not item.eligible)
+    assert all("完整知识链" in item.reason for item in screened if not item.eligible)
 
 
 def test_every_ranked_candidate_has_runtime_valid_reviewed_chain() -> None:

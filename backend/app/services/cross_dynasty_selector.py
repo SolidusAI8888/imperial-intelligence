@@ -24,6 +24,7 @@ PROFILE_PATH = (
     / "candidate"
     / "FATE-AGENCY-CANDIDATES.yaml"
 )
+ROSTER_PATH = PROJECT_ROOT / "knowledge" / "personas" / "han_tang_song_emperor_registry.yaml"
 FIRST_PROBLEM_ID = "Q-FATE-AGENCY-001"
 FIRST_QUESTION = "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"
 
@@ -49,6 +50,17 @@ class CandidateScore:
     total_score: float
     evidence_ids: tuple[str, ...]
     rationale: str
+
+
+@dataclass(frozen=True)
+class EmperorScreening:
+    persona_id: str
+    name: str
+    title: str
+    dynasty: str
+    eligible: bool
+    total_score: float | None
+    reason: str
 
 
 _WEIGHTS = {
@@ -91,10 +103,17 @@ def select_best_candidate(candidates: Iterable[CandidateExperience]) -> Candidat
     return ranked[0]
 
 
-def _load_profile() -> dict:
-    with PROFILE_PATH.open("r", encoding="utf-8") as handle:
+def _load_yaml(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle)
-    if not isinstance(data, dict) or data.get("problem_id") != FIRST_PROBLEM_ID:
+    if not isinstance(data, dict):
+        raise ValueError(f"Invalid YAML mapping: {path}")
+    return data
+
+
+def _load_profile() -> dict:
+    data = _load_yaml(PROFILE_PATH)
+    if data.get("problem_id") != FIRST_PROBLEM_ID:
         raise ValueError("Invalid first-question candidate profile")
     return data
 
@@ -130,8 +149,6 @@ def _reviewed_candidate(raw: dict) -> CandidateExperience:
     if any(item.status not in {"reviewed", "accepted"} for item in reviewed_objects):
         raise ValueError(f"Candidate {person_id} contains unreviewed knowledge")
 
-    # RuntimeContext is the final eligibility gate: a candidate cannot enter
-    # ranking unless HER -> HEU -> Insight -> Role Link is internally valid.
     build_runtime_context(
         problem_id=FIRST_PROBLEM_ID,
         question=FIRST_QUESTION,
@@ -169,7 +186,54 @@ def _reviewed_candidate(raw: dict) -> CandidateExperience:
 
 
 def first_fate_question_candidates() -> list[CandidateExperience]:
-    """Return only candidates backed by a reviewed, runtime-valid knowledge chain."""
+    """Return reviewed responders after screening begins from the complete emperor roster."""
 
     profile = _load_profile()
     return [_reviewed_candidate(raw) for raw in profile["candidates"]]
+
+
+def screen_all_han_tang_song_emperors() -> list[EmperorScreening]:
+    """Screen every registered Han, Tang and Song emperor for this question.
+
+    All emperors are considered. Only emperors with a reviewed HER -> HEU -> Insight -> Role Link
+    chain may receive a non-null score or win selection. This prevents fame-based preselection while
+    preserving the project's evidence gate.
+    """
+
+    roster = _load_yaml(ROSTER_PATH)
+    ranked = {item.persona_id: item for item in rank_candidates(first_fate_question_candidates())}
+    screened: list[EmperorScreening] = []
+
+    for dynasty, dynasty_data in roster["dynasties"].items():
+        for emperor in dynasty_data["emperors"]:
+            persona_id = emperor["persona_id"]
+            eligible = ranked.get(persona_id)
+            if eligible is not None:
+                screened.append(
+                    EmperorScreening(
+                        persona_id=persona_id,
+                        name=emperor["name"],
+                        title=emperor["temple_or_posthumous"],
+                        dynasty=dynasty,
+                        eligible=True,
+                        total_score=eligible.total_score,
+                        reason=eligible.rationale,
+                    )
+                )
+            else:
+                screened.append(
+                    EmperorScreening(
+                        persona_id=persona_id,
+                        name=emperor["name"],
+                        title=emperor["temple_or_posthumous"],
+                        dynasty=dynasty,
+                        eligible=False,
+                        total_score=None,
+                        reason=(
+                            "已进入本题全皇帝筛选池，但尚未建立并审核本题所需的 "
+                            "HER → HEU → Insight → Role Link 完整知识链，因此当前不能胜出或回答。"
+                        ),
+                    )
+                )
+
+    return screened
