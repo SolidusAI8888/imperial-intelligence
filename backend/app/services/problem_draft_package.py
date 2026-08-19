@@ -71,6 +71,8 @@ def build_problem_draft_package(
         "candidate_profile": profile_rel,
         "review_gate": {
             "required": True,
+            "problem_definition_reviewed": False,
+            "insight_selection_reviewed": False,
             "can_render_answer": False,
             "responder_eligibility_locked": True,
             "next_step": research.required_next_gate,
@@ -86,6 +88,8 @@ def build_problem_draft_package(
                 "recalled_heu_ids": list(candidate.heu_ids),
                 "retrieval_score": candidate.retrieval_score,
                 "review_priority": candidate.review_priority,
+                "selected_insight_ids": [],
+                "candidate_score": None,
                 "status": "requires_problem_specific_review",
                 "responder_eligible": False,
             }
