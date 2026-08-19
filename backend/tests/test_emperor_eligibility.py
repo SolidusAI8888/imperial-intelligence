@@ -8,6 +8,7 @@ from app.services.emperor_eligibility import (
 ELIGIBLE_IDS = {
     "liu_bang",
     "han_wendi",
+    "han_wudi",
     "tang_gaozu",
     "tang_taizong",
     "song_taizu",
@@ -32,10 +33,10 @@ def test_current_first_question_eligibility_is_explicit() -> None:
 def test_eligibility_summary_tracks_remaining_work() -> None:
     summary = eligibility_summary()
     assert summary["registered"] == 69
-    assert summary["eligible"] == 6
-    assert summary["remaining"] == 63
+    assert summary["eligible"] == 7
+    assert summary["remaining"] == 62
     assert sum(item["registered"] for item in summary["by_dynasty"].values()) == 69
-    assert sum(item["eligible"] for item in summary["by_dynasty"].values()) == 6
+    assert sum(item["eligible"] for item in summary["by_dynasty"].values()) == 7
 
 
 def test_candidate_registry_consistency() -> None:

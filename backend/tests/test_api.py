@@ -118,10 +118,10 @@ def test_auto_consult_screens_all_emperors_and_selects_best_grounded_role() -> N
     data = response.json()
     assert data["selected_emperor_id"] == "tang_taizong"
     assert len(data["screened_emperors"]) == 69
-    assert sum(1 for item in data["screened_emperors"] if item["eligible"]) == 6
+    assert sum(1 for item in data["screened_emperors"] if item["eligible"]) == 7
     eligible_ids = {item["emperor_id"] for item in data["screened_emperors"] if item["eligible"]}
-    assert {"liu_bang", "han_wendi", "tang_gaozu", "tang_taizong", "song_taizu", "song_renzong"} == eligible_ids
-    assert len(data["rankings"]) == 6
+    assert {"liu_bang", "han_wendi", "han_wudi", "tang_gaozu", "tang_taizong", "song_taizu", "song_renzong"} == eligible_ids
+    assert len(data["rankings"]) == 7
     assert [item["emperor_id"] for item in data["rankings"][:4]] == [
         "tang_taizong",
         "song_renzong",

@@ -1,0 +1,29 @@
+record_id: HER-HAN-000004
+research_id: R-000001
+title: "建元初年：少年即位与太皇太后权力约束"
+record_type: event
+dynasty: Han
+time_label: "汉武帝建元初年"
+participants:
+  - han_wudi
+historical_record: >-
+  刘彻十六岁即皇帝位。建元初年，朝廷开始征举贤良、推动新的政治主张；到建元二年，
+  御史大夫赵绾因请求政事不再奏请太皇太后，郎中令王臧亦受牵连，二人下狱自杀，
+  丞相窦婴、太尉田蚡也被免职。该阶段显示，皇帝名义上的最高身份并不等于现实中不存在
+  宗室、外戚与既有宫廷权力结构的约束。
+sources:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V006-P0001
+      - CN-HAN-0002-V006-P0002
+      - CN-HAN-0002-V006-P0009
+supported_claims:
+  - "刘彻在少年时期继承皇位，其起点首先由继承制度与宫廷结构决定，而非由个人自主选择。"
+  - "建元二年的赵绾、王臧事件说明，少年皇帝即位后仍受到太皇太后及既有政治力量的现实约束。"
+  - "身份、制度位置与实际可行动空间并不完全相同。"
+unsupported_claims:
+  - "太皇太后能够完全决定汉武帝此后全部政治选择。"
+  - "汉武帝早期受约束足以证明个人努力对人生毫无作用。"
+  - "赵绾、王臧事件可以单独解释汉武帝一生的政治方向。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
