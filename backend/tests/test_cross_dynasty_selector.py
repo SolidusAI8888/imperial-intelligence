@@ -14,16 +14,20 @@ from app.services.knowledge_runtime import build_runtime_context
 
 
 QUESTION = "面对浩瀚的历史和剧烈的时代变革，个体的命运到底由谁主宰？"
+ELIGIBLE_IDS = {
+    "liu_bang",
+    "han_wendi",
+    "tang_gaozu",
+    "tang_taizong",
+    "song_taizu",
+    "song_renzong",
+}
 
 
 def test_first_fate_question_compares_han_tang_song() -> None:
     candidates = first_fate_question_candidates()
     assert {candidate.dynasty for candidate in candidates} == {"han", "tang", "song"}
-    assert {candidate.persona_id for candidate in candidates} == {
-        "liu_bang",
-        "tang_taizong",
-        "song_taizu",
-    }
+    assert {candidate.persona_id for candidate in candidates} == ELIGIBLE_IDS
     assert all(candidate.evidence_ids for candidate in candidates)
 
 
@@ -35,7 +39,7 @@ def test_complete_han_tang_song_roster_is_screened_before_selection() -> None:
     assert {"liu_bang", "han_wudi", "han_guangwudi", "tang_gaozu", "tang_taizong", "tang_xuanzong", "song_taizu", "song_renzong", "song_gaozong", "song_bingdi"}.issubset(ids)
 
     eligible = {item.persona_id for item in screened if item.eligible}
-    assert eligible == {"liu_bang", "tang_taizong", "song_taizu"}
+    assert eligible == ELIGIBLE_IDS
     assert all(item.total_score is None for item in screened if not item.eligible)
     assert all("完整知识链" in item.reason for item in screened if not item.eligible)
 
@@ -68,23 +72,31 @@ def test_every_ranked_candidate_has_runtime_valid_reviewed_chain() -> None:
         assert context.life_course_rule == "full_lifetime"
 
 
-def test_han_and_song_candidates_are_not_code_only_placeholders() -> None:
-    han = next(c for c in first_fate_question_candidates() if c.persona_id == "liu_bang")
-    song = next(c for c in first_fate_question_candidates() if c.persona_id == "song_taizu")
-    assert "CN-HAN-0001-V008-P0011" in han.evidence_ids
-    assert "CN-SONG-0001-V001-P0010" in song.evidence_ids
-    assert load_person_experiences("liu_bang")[0].heu_id == "HEU-HAN-000001"
-    assert load_person_experiences("song_taizu")[0].heu_id == "HEU-SONG-000001"
+def test_new_batch_candidates_have_real_canonical_evidence() -> None:
+    candidates = {candidate.persona_id: candidate for candidate in first_fate_question_candidates()}
+    assert "CN-HAN-0002-V004-P0004" in candidates["han_wendi"].evidence_ids
+    assert "CN-TANG-0001-V001-P0004" in candidates["tang_gaozu"].evidence_ids
+    assert "CN-SONG-0001-V010-P0016" in candidates["song_renzong"].evidence_ids
+    assert load_person_experiences("han_wendi")[0].heu_id == "HEU-HAN-000002"
+    assert load_person_experiences("tang_gaozu")[0].heu_id == "HEU-TANG-000004"
+    assert load_person_experiences("song_renzong")[0].heu_id == "HEU-SONG-000002"
 
 
 def test_first_fate_question_selects_tang_taizong_from_scores() -> None:
     ranked = rank_candidates(first_fate_question_candidates())
     assert ranked[0].persona_id == "tang_taizong"
-    assert ranked[0].total_score > ranked[1].total_score > ranked[2].total_score
+    assert [item.persona_id for item in ranked[:4]] == [
+        "tang_taizong",
+        "song_renzong",
+        "tang_gaozu",
+        "han_wendi",
+    ]
+    assert all(a.total_score > b.total_score for a, b in zip(ranked, ranked[1:]))
 
 
 def test_ranking_is_explainable_and_bounded() -> None:
     ranked = rank_candidates(first_fate_question_candidates())
+    assert len(ranked) == 6
     assert all(0 <= candidate.total_score <= 1 for candidate in ranked)
     assert all(candidate.rationale for candidate in ranked)
 
