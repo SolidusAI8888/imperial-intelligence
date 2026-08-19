@@ -15,6 +15,7 @@ class ProblemKnowledgeSpec:
     problem_id: str
     raw_question: str
     normalized_question: str
+    retrieval_dimensions: tuple[str, ...]
     candidate_profile_path: Path
     reusable_layers: tuple[str, ...]
     problem_specific_layers: tuple[str, ...]
@@ -60,10 +61,15 @@ def load_problem_spec(problem_id: str) -> ProblemKnowledgeSpec:
     if not profile_path.exists():
         raise ValueError(f"Problem {problem_id} candidate profile does not exist: {candidate_profile}")
 
+    retrieval_dimensions = tuple(str(item) for item in (raw.get("retrieval_dimensions") or ()))
+    if not retrieval_dimensions:
+        raise ValueError(f"Problem {problem_id} must define retrieval_dimensions")
+
     return ProblemKnowledgeSpec(
         problem_id=problem_id,
         raw_question=str(raw.get("raw_question", "")),
         normalized_question=str(raw.get("normalized_question", "")),
+        retrieval_dimensions=retrieval_dimensions,
         candidate_profile_path=profile_path,
         reusable_layers=reusable,
         problem_specific_layers=problem_specific,
