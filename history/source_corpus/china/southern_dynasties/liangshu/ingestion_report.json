@@ -1,0 +1,464 @@
+{
+  "source_id": "CN-LIANG-0001",
+  "title": "梁書",
+  "expected_range": [
+    1,
+    56
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "梁書/卷01",
+    "梁書/卷02",
+    "梁書/卷03",
+    "梁書/卷04",
+    "梁書/卷05",
+    "梁書/卷06",
+    "梁書/卷07",
+    "梁書/卷08",
+    "梁書/卷09",
+    "梁書/卷10",
+    "梁書/卷11",
+    "梁書/卷12",
+    "梁書/卷13",
+    "梁書/卷14",
+    "梁書/卷15",
+    "梁書/卷16",
+    "梁書/卷17",
+    "梁書/卷18",
+    "梁書/卷19",
+    "梁書/卷20",
+    "梁書/卷21",
+    "梁書/卷22",
+    "梁書/卷23",
+    "梁書/卷24",
+    "梁書/卷25",
+    "梁書/卷26",
+    "梁書/卷27",
+    "梁書/卷28",
+    "梁書/卷29",
+    "梁書/卷30",
+    "梁書/卷31",
+    "梁書/卷32",
+    "梁書/卷33",
+    "梁書/卷34",
+    "梁書/卷35",
+    "梁書/卷36",
+    "梁書/卷37",
+    "梁書/卷38",
+    "梁書/卷39",
+    "梁書/卷40",
+    "梁書/卷41",
+    "梁書/卷42",
+    "梁書/卷43",
+    "梁書/卷44",
+    "梁書/卷45",
+    "梁書/卷46",
+    "梁書/卷47",
+    "梁書/卷48",
+    "梁書/卷49",
+    "梁書/卷50",
+    "梁書/卷51",
+    "梁書/卷52",
+    "梁書/卷53",
+    "梁書/卷54",
+    "梁書/卷55",
+    "梁書/卷56"
+  ],
+  "pages": [
+    {
+      "page": "梁書/卷01",
+      "file": "001.txt",
+      "blocks": 75,
+      "revid": 1729539,
+      "sha256": "2172d60a13cdda498e23c0872534b682027bf9fcb179a32c40f802e61e554497"
+    },
+    {
+      "page": "梁書/卷02",
+      "file": "002.txt",
+      "blocks": 170,
+      "revid": 2401748,
+      "sha256": "f42b505f3cd1b206f2efb5cbeec28780a75863de1bdc87d0848f43e72a9b1c67"
+    },
+    {
+      "page": "梁書/卷03",
+      "file": "003.txt",
+      "blocks": 240,
+      "revid": 2401780,
+      "sha256": "78d22b570ba4fd4dbebb9f61ad7aff7245da8db1e3a21a9bbb9d106b7fe13ea7"
+    },
+    {
+      "page": "梁書/卷04",
+      "file": "004.txt",
+      "blocks": 29,
+      "revid": 2311627,
+      "sha256": "0dc05562f6ffe47f03ece7ce7b7e5c515504fc68c0d8c9068115748a89891228"
+    },
+    {
+      "page": "梁書/卷05",
+      "file": "005.txt",
+      "blocks": 59,
+      "revid": 2312810,
+      "sha256": "8c8bc161795f84f0879189230b91b2bb13233df446235f8e384bc045f2b98894"
+    },
+    {
+      "page": "梁書/卷06",
+      "file": "006.txt",
+      "blocks": 34,
+      "revid": 2311629,
+      "sha256": "a72271ef404f10e20c0922c562adfce13a58be3ef357fc60db4f7592610eda6c"
+    },
+    {
+      "page": "梁書/卷07",
+      "file": "007.txt",
+      "blocks": 35,
+      "revid": 1566494,
+      "sha256": "8cd0348d0a2a9f51e07bc4ad69640e579c4c6fce0ea7adc95c7d6ba8e34e3a60"
+    },
+    {
+      "page": "梁書/卷08",
+      "file": "008.txt",
+      "blocks": 34,
+      "revid": 1538023,
+      "sha256": "7a205464c677993c671091ef2ccc1b345fa49cf5f8d8af810ba8ffde89ccec1b"
+    },
+    {
+      "page": "梁書/卷09",
+      "file": "009.txt",
+      "blocks": 27,
+      "revid": 1508511,
+      "sha256": "4e82a6e4b9f38e28e970031886d46a93954a6ded89cbfd7e98b03070d7e2ef51"
+    },
+    {
+      "page": "梁書/卷10",
+      "file": "010.txt",
+      "blocks": 49,
+      "revid": 2609316,
+      "sha256": "f1f0f7db93ae22a8b8531d8d53cb137ce7d884822294ba7e6350c30b3383103a"
+    },
+    {
+      "page": "梁書/卷11",
+      "file": "011.txt",
+      "blocks": 28,
+      "revid": 1544245,
+      "sha256": "f6c4159d1c26f4e6d64c87c91c41d78ee2d92a02019b4d8f7b3291d5579a382c"
+    },
+    {
+      "page": "梁書/卷12",
+      "file": "012.txt",
+      "blocks": 35,
+      "revid": 1514504,
+      "sha256": "62c6dd12353a85e4c998f074ac899ae1b097ed5409947b70ca8d4a8f843ebbf9"
+    },
+    {
+      "page": "梁書/卷13",
+      "file": "013.txt",
+      "blocks": 32,
+      "revid": 1494993,
+      "sha256": "0f5199343d83646034318cb719e37027e8fee65959713015e6e2c64f89dcf21f"
+    },
+    {
+      "page": "梁書/卷14",
+      "file": "014.txt",
+      "blocks": 39,
+      "revid": 1494991,
+      "sha256": "f1a8b8753730af0c8f0bcee6c67e4bfa4612e471cebdd9c5decf43e932e6686a"
+    },
+    {
+      "page": "梁書/卷15",
+      "file": "015.txt",
+      "blocks": 16,
+      "revid": 1506954,
+      "sha256": "a952fc03ac6c74c93bc8f75769a3e573fb4f1f7f415366b6ec4475b1d10d6385"
+    },
+    {
+      "page": "梁書/卷16",
+      "file": "016.txt",
+      "blocks": 25,
+      "revid": 1508503,
+      "sha256": "182a0824fc36e2c06f00d699beaac6c0b62d6ea48b292a81f1c3f6d31ec3dccd"
+    },
+    {
+      "page": "梁書/卷17",
+      "file": "017.txt",
+      "blocks": 21,
+      "revid": 1508017,
+      "sha256": "b8fa596d1f047acc2f8782b66fbee8aebe2225702fb010c7e60ebc725ecd6aa6"
+    },
+    {
+      "page": "梁書/卷18",
+      "file": "018.txt",
+      "blocks": 29,
+      "revid": 1508501,
+      "sha256": "ed7ee1aede09143150524c02fca0bee06184e875451626f90fc6a0a488c2748f"
+    },
+    {
+      "page": "梁書/卷19",
+      "file": "019.txt",
+      "blocks": 21,
+      "revid": 2063232,
+      "sha256": "24b3fa42d729225817df40cffab50f525df5628d5fec1c9ec7c50bb91a6c4014"
+    },
+    {
+      "page": "梁書/卷20",
+      "file": "020.txt",
+      "blocks": 27,
+      "revid": 1506948,
+      "sha256": "081fbc8cc9cd54b821ae66996f64a0df4f2b93ce4fc981ee637607786dd31b71"
+    },
+    {
+      "page": "梁書/卷21",
+      "file": "021.txt",
+      "blocks": 63,
+      "revid": 1544250,
+      "sha256": "dd45816ae4cb2845121f6b8c2e35a8ca1b67b2d144e1561f04059e57e0bdf8f0"
+    },
+    {
+      "page": "梁書/卷22",
+      "file": "022.txt",
+      "blocks": 43,
+      "revid": 1513347,
+      "sha256": "4119a363ca298f4e99dd53eab834098ab724cfa75c1750b89b85f5af34209888"
+    },
+    {
+      "page": "梁書/卷23",
+      "file": "023.txt",
+      "blocks": 17,
+      "revid": 1537050,
+      "sha256": "c1e68b987eeb3cdaa2d62dfe18e1d2ed6c74b54a0d238af487a71dbc0496c66c"
+    },
+    {
+      "page": "梁書/卷24",
+      "file": "024.txt",
+      "blocks": 15,
+      "revid": 1552296,
+      "sha256": "98a4543f78f9bf796376f016d7eb5dcce00c9520bc4b3bec6f9cdf1ac973c74a"
+    },
+    {
+      "page": "梁書/卷25",
+      "file": "025.txt",
+      "blocks": 32,
+      "revid": 1506949,
+      "sha256": "4f948e016dafab9cbec066fd29180874983e5762034d7f8ab570d0c57d1ebf3f"
+    },
+    {
+      "page": "梁書/卷26",
+      "file": "026.txt",
+      "blocks": 34,
+      "revid": 1511476,
+      "sha256": "1c37b74032f2c810bb2821f46437b02d67d7efd4b297d1fc1ec8515fe9b765ed"
+    },
+    {
+      "page": "梁書/卷27",
+      "file": "027.txt",
+      "blocks": 31,
+      "revid": 1511478,
+      "sha256": "a21fc337358eeb3940a9952e0267193f78ad989dcf7db1aaafd39dd0cbc5e743"
+    },
+    {
+      "page": "梁書/卷28",
+      "file": "028.txt",
+      "blocks": 35,
+      "revid": 1511902,
+      "sha256": "16febc4412309a38c4e5e2ad02f216420e6f1a3930f881859e436e1789210189"
+    },
+    {
+      "page": "梁書/卷29",
+      "file": "029.txt",
+      "blocks": 27,
+      "revid": 1538079,
+      "sha256": "47d3ec11f9a6d67f656c707c41ccecaf115cc2a8e54af0fc10979b747c209042"
+    },
+    {
+      "page": "梁書/卷30",
+      "file": "030.txt",
+      "blocks": 25,
+      "revid": 1508510,
+      "sha256": "a824a6adf30a2db9c493138f51e541003da23464c5f23c038279c916944b6ffd"
+    },
+    {
+      "page": "梁書/卷31",
+      "file": "031.txt",
+      "blocks": 13,
+      "revid": 1530926,
+      "sha256": "2b8fc634b182ff3d92a0bee1b7fbd613ecd8f700510cfd3ac696c2cd254f94c6"
+    },
+    {
+      "page": "梁書/卷32",
+      "file": "032.txt",
+      "blocks": 23,
+      "revid": 1506956,
+      "sha256": "6a83be707ae7395af578d41ebcaf0ce6f3215d6d8388a8b26ec5577847804175"
+    },
+    {
+      "page": "梁書/卷33",
+      "file": "033.txt",
+      "blocks": 47,
+      "revid": 1514481,
+      "sha256": "42abb8056f8ded853280a4a021e6d0b43b2925c1221f29383d40cdd210b061ca"
+    },
+    {
+      "page": "梁書/卷34",
+      "file": "034.txt",
+      "blocks": 34,
+      "revid": 1511900,
+      "sha256": "120bff212d8af249d13c4f6465eed74004422de2f4be4951cc840b4e91a65c77"
+    },
+    {
+      "page": "梁書/卷35",
+      "file": "035.txt",
+      "blocks": 26,
+      "revid": 1552297,
+      "sha256": "00e4c51b7a4c2ba0dcb59e05760db73618ebb5547fb7f0b86c8cd7838e55010d"
+    },
+    {
+      "page": "梁書/卷36",
+      "file": "036.txt",
+      "blocks": 24,
+      "revid": 1506951,
+      "sha256": "5b21a219be0adf66786b3baf9842f8746363953641c7394dc1a2f4e36850a524"
+    },
+    {
+      "page": "梁書/卷37",
+      "file": "037.txt",
+      "blocks": 19,
+      "revid": 1506955,
+      "sha256": "4431e43a7c838dc70214e0e617ffb2ee8f49f93372d541003691b2c21b7c9bf6"
+    },
+    {
+      "page": "梁書/卷38",
+      "file": "038.txt",
+      "blocks": 39,
+      "revid": 1508285,
+      "sha256": "f6127b11d3679f6bb38f34228649f18ef45b45f6be37d6d37d4ba03f77574552"
+    },
+    {
+      "page": "梁書/卷39",
+      "file": "039.txt",
+      "blocks": 28,
+      "revid": 2063601,
+      "sha256": "f993697f8603e082eb5cc4796bb8f1b318cb3f2a4696350623436f6c875318d4"
+    },
+    {
+      "page": "梁書/卷40",
+      "file": "040.txt",
+      "blocks": 39,
+      "revid": 1498627,
+      "sha256": "2633eea9233298b5b7659f666ef58d8accab4ad799a8076a7a7855dd8e9dd2a3"
+    },
+    {
+      "page": "梁書/卷41",
+      "file": "041.txt",
+      "blocks": 55,
+      "revid": 1512987,
+      "sha256": "a90b38afca0d68956074fb6eb61a9f653abc60d45eb9234d9072591a45fbcb07"
+    },
+    {
+      "page": "梁書/卷42",
+      "file": "042.txt",
+      "blocks": 17,
+      "revid": 1506958,
+      "sha256": "e62b3d68860c171750b163795bfc8dd5fd35256b0dc77383684e2d456c05e4c6"
+    },
+    {
+      "page": "梁書/卷43",
+      "file": "043.txt",
+      "blocks": 19,
+      "revid": 2087360,
+      "sha256": "a04ccfe6de9c985f3af010b932162e2e9f0e4a9c8654ce0029ec4b4505144787"
+    },
+    {
+      "page": "梁書/卷44",
+      "file": "044.txt",
+      "blocks": 21,
+      "revid": 2376749,
+      "sha256": "774657789a312ed0d0f7b8bad50227f3b476512b55659da2608a2f0f253e81d7"
+    },
+    {
+      "page": "梁書/卷45",
+      "file": "045.txt",
+      "blocks": 21,
+      "revid": 1530927,
+      "sha256": "2bde605a785a374f9cd1bee460bbf36d4faf591b337fe29e06423a6bbc92b9de"
+    },
+    {
+      "page": "梁書/卷46",
+      "file": "046.txt",
+      "blocks": 19,
+      "revid": 2197034,
+      "sha256": "3efb11538605d6fe7f415832aecdf80108e8e04e10ffe390216b9833967abda6"
+    },
+    {
+      "page": "梁書/卷47",
+      "file": "047.txt",
+      "blocks": 26,
+      "revid": 2083834,
+      "sha256": "22ca4f9d019780b9b1468a05dacd24d77d91fc7a5427a90beb46540478442770"
+    },
+    {
+      "page": "梁書/卷48",
+      "file": "048.txt",
+      "blocks": 74,
+      "revid": 1442756,
+      "sha256": "71fa428f21c26af019e9070c0dc93a1efce2a4504260dee90316771d3f5e8ab8"
+    },
+    {
+      "page": "梁書/卷49",
+      "file": "049.txt",
+      "blocks": 37,
+      "revid": 1500650,
+      "sha256": "67b20ed8622b63c62d15f8ecf6490f6c6bea155dea02b98a2a76b44b88e0b069"
+    },
+    {
+      "page": "梁書/卷50",
+      "file": "050.txt",
+      "blocks": 78,
+      "revid": 1514482,
+      "sha256": "271f34eaaebfe26bc00fee4ffe9210acc75531d0191e74191e36986865756c4e"
+    },
+    {
+      "page": "梁書/卷51",
+      "file": "051.txt",
+      "blocks": 76,
+      "revid": 1504714,
+      "sha256": "282832d5a3aec17425f45f11974d140389cc79491ec554803983e129ad39cf26"
+    },
+    {
+      "page": "梁書/卷52",
+      "file": "052.txt",
+      "blocks": 22,
+      "revid": 1442753,
+      "sha256": "3e7520bd55785424625cf0b79dad98c29e3db651f9a31e23c715ad5baf96d253"
+    },
+    {
+      "page": "梁書/卷53",
+      "file": "053.txt",
+      "blocks": 47,
+      "revid": 1339157,
+      "sha256": "a1fb4474a66f6ed8750c1ae5a795cb76f70e153e3b542d6a19f87517273bfc99"
+    },
+    {
+      "page": "梁書/卷54",
+      "file": "054.txt",
+      "blocks": 84,
+      "revid": 2642025,
+      "sha256": "178b99b0066c67a8fc479095ac1249da278a43db7f49bdad7372c1b8b83c6e7a"
+    },
+    {
+      "page": "梁書/卷55",
+      "file": "055.txt",
+      "blocks": 26,
+      "revid": 1530936,
+      "sha256": "f363058f391e16a84b741fde273188dad957a4b86a566b4dee6b2f5856d7dc05"
+    },
+    {
+      "page": "梁書/卷56",
+      "file": "056.txt",
+      "blocks": 128,
+      "revid": 1531129,
+      "sha256": "0a7bd320c54e50d5b5d9d546fef51fb983fb08ff12e17cf0b1f922b799c4b5e4"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 56
+}
