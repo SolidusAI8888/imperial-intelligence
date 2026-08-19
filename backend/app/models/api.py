@@ -66,3 +66,15 @@ class AutoConsultationResponse(BaseModel):
     screened_emperors: list[CandidateScreening]
     rankings: list[CandidateRanking]
     consultation: ConsultationResponse
+
+
+class ProblemGroundedAnswerResponse(BaseModel):
+    problem_id: str
+    person_id: str
+    question: str
+    historical_voice: str
+    modern_translation: str
+    cautions: list[str]
+    evidence_ids: list[str]
+    insight_ids: list[str]
+    status: Literal["rendered_from_reviewed_grounded_bundle"]
