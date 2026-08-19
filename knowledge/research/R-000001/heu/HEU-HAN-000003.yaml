@@ -1,0 +1,24 @@
+heu_id: HEU-HAN-000003
+research_id: R-000001
+title: "最高身份之下仍受既有权力结构约束"
+experience_owner: han_wudi
+record_links:
+  - HER-HAN-000004
+challenge: >-
+  刘彻少年即位，名义上已处于帝国最高政治位置，但建元初年的实际政治空间仍受到太皇太后、
+  外戚与既有朝廷结构影响；推动新的政见并不意味着可以立即绕开这些约束。
+response_or_choice:
+  - "即位后参与建元初年的政治调整与用人尝试。"
+  - "赵绾、王臧事件后，相关人事布局遭到逆转，显示现实政治必须在既有权力结构中继续展开。"
+experienced_outcome:
+  - "少年皇帝的制度身份与实际可支配空间并不一致；个人能动性存在，但受到继承结构和宫廷权力关系的显著限制。"
+explicit_reflection: []
+interpretation:
+  - "这段经历支持：一个人即使获得看似最高的身份，也不等于能够单独决定环境和结果；能动性总是在既有结构中展开。"
+source_references:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V006-P0001
+      - CN-HAN-0002-V006-P0002
+      - CN-HAN-0002-V006-P0009
+status: reviewed
