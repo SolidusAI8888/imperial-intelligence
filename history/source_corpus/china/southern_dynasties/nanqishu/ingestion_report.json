@@ -1,0 +1,488 @@
+{
+  "source_id": "CN-NANQI-0001",
+  "title": "南齊書",
+  "expected_range": [
+    1,
+    59
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "南齊書/卷1",
+    "南齊書/卷2",
+    "南齊書/卷3",
+    "南齊書/卷4",
+    "南齊書/卷5",
+    "南齊書/卷6",
+    "南齊書/卷7",
+    "南齊書/卷8",
+    "南齊書/卷9",
+    "南齊書/卷10",
+    "南齊書/卷11",
+    "南齊書/卷12",
+    "南齊書/卷13",
+    "南齊書/卷14",
+    "南齊書/卷15",
+    "南齊書/卷16",
+    "南齊書/卷17",
+    "南齊書/卷18",
+    "南齊書/卷19",
+    "南齊書/卷20",
+    "南齊書/卷21",
+    "南齊書/卷22",
+    "南齊書/卷23",
+    "南齊書/卷24",
+    "南齊書/卷25",
+    "南齊書/卷26",
+    "南齊書/卷27",
+    "南齊書/卷28",
+    "南齊書/卷29",
+    "南齊書/卷30",
+    "南齊書/卷31",
+    "南齊書/卷32",
+    "南齊書/卷33",
+    "南齊書/卷34",
+    "南齊書/卷35",
+    "南齊書/卷36",
+    "南齊書/卷37",
+    "南齊書/卷38",
+    "南齊書/卷39",
+    "南齊書/卷40",
+    "南齊書/卷41",
+    "南齊書/卷42",
+    "南齊書/卷43",
+    "南齊書/卷44",
+    "南齊書/卷45",
+    "南齊書/卷46",
+    "南齊書/卷47",
+    "南齊書/卷48",
+    "南齊書/卷49",
+    "南齊書/卷50",
+    "南齊書/卷51",
+    "南齊書/卷52",
+    "南齊書/卷53",
+    "南齊書/卷54",
+    "南齊書/卷55",
+    "南齊書/卷56",
+    "南齊書/卷57",
+    "南齊書/卷58",
+    "南齊書/卷59"
+  ],
+  "pages": [
+    {
+      "page": "南齊書/卷1",
+      "file": "001.txt",
+      "blocks": 59,
+      "revid": 1966967,
+      "sha256": "38cbe7edecd3e0fb46d216c196e29f607edabb7e04e54e8a839c96d7ca62420d"
+    },
+    {
+      "page": "南齊書/卷2",
+      "file": "002.txt",
+      "blocks": 36,
+      "revid": 2312009,
+      "sha256": "d0b3f2599ccca36bf418ede1c38ef9087291336bea7618e547f523ffd535e5b1"
+    },
+    {
+      "page": "南齊書/卷3",
+      "file": "003.txt",
+      "blocks": 109,
+      "revid": 2312008,
+      "sha256": "28f7c12fc66f1e6cc74a3acbf1ea36ec075144391ef381538e53a427d7ead953"
+    },
+    {
+      "page": "南齊書/卷4",
+      "file": "004.txt",
+      "blocks": 19,
+      "revid": 1767523,
+      "sha256": "300be3b847f1c4fdc898c23e874598c24d4c449b29608eaf74b25bc7de172212"
+    },
+    {
+      "page": "南齊書/卷5",
+      "file": "005.txt",
+      "blocks": 11,
+      "revid": 1767525,
+      "sha256": "5f3c23b00e0034281e2158f99c5b349e427aefa17141cd139bf3a034b616b845"
+    },
+    {
+      "page": "南齊書/卷6",
+      "file": "006.txt",
+      "blocks": 40,
+      "revid": 2311630,
+      "sha256": "05e8a5149daaeae71832ef972e2d43caf1ea02f10894d2ab3bdab208821dda70"
+    },
+    {
+      "page": "南齊書/卷7",
+      "file": "007.txt",
+      "blocks": 54,
+      "revid": 2438183,
+      "sha256": "2a45a79fc0a01c7fd8c8990056022c34912b51b496d8e1221b84e246744fd012"
+    },
+    {
+      "page": "南齊書/卷8",
+      "file": "008.txt",
+      "blocks": 17,
+      "revid": 2312010,
+      "sha256": "d7276c082ffb63d7151325386afcc0d8e9188ee1d9064c94a1883ad94b98672d"
+    },
+    {
+      "page": "南齊書/卷9",
+      "file": "009.txt",
+      "blocks": 68,
+      "revid": 1767530,
+      "sha256": "b0175c7652eba1ec8d0286703f0830f6b0e89ed8064f1d4402c4fde92783fae8"
+    },
+    {
+      "page": "南齊書/卷10",
+      "file": "010.txt",
+      "blocks": 24,
+      "revid": 1767531,
+      "sha256": "4ec072bfb16ea8eb1e4cba2997ab2ceaa59b7671c48c437b4338c0eb82bfa169"
+    },
+    {
+      "page": "南齊書/卷11",
+      "file": "011.txt",
+      "blocks": 235,
+      "revid": 2180632,
+      "sha256": "393671b1b6a6d830de6f82ddc40714ae6548fc3c7fd6fc3171e8b9d5d5aa1744"
+    },
+    {
+      "page": "南齊書/卷12",
+      "file": "012.txt",
+      "blocks": 170,
+      "revid": 1768714,
+      "sha256": "d3fb9dd4b79f8827ead18a137d78dc05b47ceffe8e9eb734d7f63fd66de28b4b"
+    },
+    {
+      "page": "南齊書/卷13",
+      "file": "013.txt",
+      "blocks": 214,
+      "revid": 1768715,
+      "sha256": "eb371e1f607f7616544fa01fb76e61b822ae421f34bf615f33f36f109bc4981a"
+    },
+    {
+      "page": "南齊書/卷14",
+      "file": "014.txt",
+      "blocks": 271,
+      "revid": 2258397,
+      "sha256": "1d1d5b8ce6103ec4e62e33df45f069e369d8590fc644a2f737646396bfef6f67"
+    },
+    {
+      "page": "南齊書/卷15",
+      "file": "015.txt",
+      "blocks": 441,
+      "revid": 2197335,
+      "sha256": "8c54c8508cd6abed8bf2bd68eb3b1d34a6a70efe25b04901f17954844f300deb"
+    },
+    {
+      "page": "南齊書/卷16",
+      "file": "016.txt",
+      "blocks": 223,
+      "revid": 2082910,
+      "sha256": "44f750ae0c052d965bd061d82edc86aa5d4796a2d11297a0a474bb77972971e0"
+    },
+    {
+      "page": "南齊書/卷17",
+      "file": "017.txt",
+      "blocks": 61,
+      "revid": 2082909,
+      "sha256": "3d21b548c32882538a508efce29c77d0dcd3c49af96ac2f88dacbddec0860fae"
+    },
+    {
+      "page": "南齊書/卷18",
+      "file": "018.txt",
+      "blocks": 163,
+      "revid": 2308565,
+      "sha256": "9c8bb34b4d99248d6c77bef6a6c906faffc6ee4dda136855f5511be70816f36b"
+    },
+    {
+      "page": "南齊書/卷19",
+      "file": "019.txt",
+      "blocks": 156,
+      "revid": 1773596,
+      "sha256": "667376a2d549fb54c6570ed5167bae3ee77aee3d377bf05e73f7f045f7f6aa44"
+    },
+    {
+      "page": "南齊書/卷20",
+      "file": "020.txt",
+      "blocks": 21,
+      "revid": 2074177,
+      "sha256": "a201c4e0676ac659511556a9b29dce53a0fbb237fc249eb6d245e3f78f5b0009"
+    },
+    {
+      "page": "南齊書/卷21",
+      "file": "021.txt",
+      "blocks": 13,
+      "revid": 1773848,
+      "sha256": "7ebac8471c873ded0157790ba1dfe27fdad996d40ac0a702c90ec84c161b6895"
+    },
+    {
+      "page": "南齊書/卷22",
+      "file": "022.txt",
+      "blocks": 38,
+      "revid": 1773849,
+      "sha256": "6eb8502c2676fa9729fc56043fa31620774bddce0c2b15a9302b2e8ff72de533"
+    },
+    {
+      "page": "南齊書/卷23",
+      "file": "023.txt",
+      "blocks": 43,
+      "revid": 1545488,
+      "sha256": "c256d91abe4c0e77ddd647f74208f9534fde2d1c051f79838a02bcaf2ef53162"
+    },
+    {
+      "page": "南齊書/卷24",
+      "file": "024.txt",
+      "blocks": 35,
+      "revid": 1507882,
+      "sha256": "2f1462dc3dc6f3556fd9aafda5a2b39e27128215841bb56d935688624259bec9"
+    },
+    {
+      "page": "南齊書/卷25",
+      "file": "025.txt",
+      "blocks": 40,
+      "revid": 2516294,
+      "sha256": "c89e32608382a07e00dd7a8e71b199857d50eeb1dd9ee7f4668ff4db9f20ba06"
+    },
+    {
+      "page": "南齊書/卷26",
+      "file": "026.txt",
+      "blocks": 56,
+      "revid": 1492450,
+      "sha256": "a8bbb411a521051466c68652680ebbb58edf4df08eedffcf2e52a533177bab0f"
+    },
+    {
+      "page": "南齊書/卷27",
+      "file": "027.txt",
+      "blocks": 51,
+      "revid": 1508012,
+      "sha256": "2a8c7e7acd7d9f4cda7ea6258dd521d9f8bdc050abf4219b25c79d33dda80c64"
+    },
+    {
+      "page": "南齊書/卷28",
+      "file": "028.txt",
+      "blocks": 47,
+      "revid": 1513915,
+      "sha256": "23ee405b8fdd090a6278e00b2c9d716da36d1752cc293b13dbd155d5981c276b"
+    },
+    {
+      "page": "南齊書/卷29",
+      "file": "029.txt",
+      "blocks": 38,
+      "revid": 2378849,
+      "sha256": "b0e3c54a89d3cb52203f4193bf5e543a9ccfcd898b9d75f4a3adc420db38636b"
+    },
+    {
+      "page": "南齊書/卷30",
+      "file": "030.txt",
+      "blocks": 37,
+      "revid": 1513917,
+      "sha256": "3f599a59ed5abec11a67b46bdd50487fff5c2e0c52b37b70f33dfd8be331bfb4"
+    },
+    {
+      "page": "南齊書/卷31",
+      "file": "031.txt",
+      "blocks": 19,
+      "revid": 2062531,
+      "sha256": "76312de696d0d18d67a9650eef3a07c2207938a6dfb9c98b7c397fbfa6f7eafb"
+    },
+    {
+      "page": "南齊書/卷32",
+      "file": "032.txt",
+      "blocks": 44,
+      "revid": 1513918,
+      "sha256": "f773812f85ac58f5747642d43f82f25bc7dee5605809e08fcc91258472d7780d"
+    },
+    {
+      "page": "南齊書/卷33",
+      "file": "033.txt",
+      "blocks": 37,
+      "revid": 1492444,
+      "sha256": "3bbc45af6c3ff9a4fcb342d187ee7ccdd10dddeed832624d0a59d54f0e026937"
+    },
+    {
+      "page": "南齊書/卷34",
+      "file": "034.txt",
+      "blocks": 35,
+      "revid": 1514487,
+      "sha256": "e5bf9c5ed2ca09f0dc5dfed55dfa5e838d4330ab2a53a7a1eb9f8bbd7f2d0ae0"
+    },
+    {
+      "page": "南齊書/卷35",
+      "file": "035.txt",
+      "blocks": 30,
+      "revid": 2401782,
+      "sha256": "f6a33aaffebe63f96e8582a45af3e33e83d5eb08969c6d0ecf370b68273bc9b6"
+    },
+    {
+      "page": "南齊書/卷36",
+      "file": "036.txt",
+      "blocks": 46,
+      "revid": 1492438,
+      "sha256": "50b3ca6e659ce8f1d61b91bbbdd6cc803363fd3ef864d6a3b1c055baf98fd71a"
+    },
+    {
+      "page": "南齊書/卷37",
+      "file": "037.txt",
+      "blocks": 43,
+      "revid": 2180629,
+      "sha256": "78571de50aed25f7f947dd6ea1532778a3635b610bb79e79ebaa5c252fedd1b9"
+    },
+    {
+      "page": "南齊書/卷38",
+      "file": "038.txt",
+      "blocks": 43,
+      "revid": 2273226,
+      "sha256": "21f0056cea3b165fe6afea6a21ad1a16d426e10b828667827a70b38f0eeb4137"
+    },
+    {
+      "page": "南齊書/卷39",
+      "file": "039.txt",
+      "blocks": 37,
+      "revid": 1545485,
+      "sha256": "e912523c7ea427633ddb9a918599304857e85ffdf3849f31cf497908fb1345fd"
+    },
+    {
+      "page": "南齊書/卷40",
+      "file": "040.txt",
+      "blocks": 76,
+      "revid": 2272748,
+      "sha256": "b7c147d5b2f1ca9f58ceaa9fc1cc9adc8685e9b91da8315b10fa443826179060"
+    },
+    {
+      "page": "南齊書/卷41",
+      "file": "041.txt",
+      "blocks": 44,
+      "revid": 2044621,
+      "sha256": "fbe86e4eca4e2fcd5e12a1792169cac57f63377ed93e2c80e50974b2548cc6db"
+    },
+    {
+      "page": "南齊書/卷42",
+      "file": "042.txt",
+      "blocks": 39,
+      "revid": 1507997,
+      "sha256": "effa9f4452ceb3ed3be66c5b100db948da5c508fccd0f521dee49f9f30417b4b"
+    },
+    {
+      "page": "南齊書/卷43",
+      "file": "043.txt",
+      "blocks": 43,
+      "revid": 2400356,
+      "sha256": "7ab711c65011158e575b2838d6a9d825d07c6398073cdf6b8a12cd9cb34850c1"
+    },
+    {
+      "page": "南齊書/卷44",
+      "file": "044.txt",
+      "blocks": 29,
+      "revid": 1507959,
+      "sha256": "fccfc5ebf572cf37da1714c507e4759f519056466fbc5b308646ce4652414d21"
+    },
+    {
+      "page": "南齊書/卷45",
+      "file": "045.txt",
+      "blocks": 28,
+      "revid": 2273185,
+      "sha256": "ea4d7fd2d29690bc78903cf52aaecbca52cf0e84e87797d2b23049adfd93fc3d"
+    },
+    {
+      "page": "南齊書/卷46",
+      "file": "046.txt",
+      "blocks": 39,
+      "revid": 1511897,
+      "sha256": "87ef2993bfa75786286562daec198106d35b4061c2db266dc40e7beae4d3b2f5"
+    },
+    {
+      "page": "南齊書/卷47",
+      "file": "047.txt",
+      "blocks": 35,
+      "revid": 1492435,
+      "sha256": "1139f0dacbe973a8debf3d656dd6093dcfbc24b668a5a2bfceae0af1c36c5a95"
+    },
+    {
+      "page": "南齊書/卷48",
+      "file": "048.txt",
+      "blocks": 36,
+      "revid": 1511898,
+      "sha256": "5b08df21fa2ac2f37a7e1a7925a8d00ad54a40b158a9faa9dd4925c365cdb54c"
+    },
+    {
+      "page": "南齊書/卷49",
+      "file": "049.txt",
+      "blocks": 35,
+      "revid": 2261984,
+      "sha256": "731a19a3b19f65070c02c1c99d989feb5fb07987af571faac439df5581f6b69a"
+    },
+    {
+      "page": "南齊書/卷50",
+      "file": "050.txt",
+      "blocks": 19,
+      "revid": 2272731,
+      "sha256": "dbf1a8804e70713f221dbeacc05d4c7c8d034740577f375c4d600a138f6702e8"
+    },
+    {
+      "page": "南齊書/卷51",
+      "file": "051.txt",
+      "blocks": 50,
+      "revid": 1504716,
+      "sha256": "1bddce07934894ea22f918e5265513624f49a9a0b71217d4e37ab83e58975f17"
+    },
+    {
+      "page": "南齊書/卷52",
+      "file": "052.txt",
+      "blocks": 82,
+      "revid": 2371079,
+      "sha256": "5e7b8d9bd4557603ebf18f3a0367c45f0a1595bf9d855d77bea3cd1504b22cef"
+    },
+    {
+      "page": "南齊書/卷53",
+      "file": "053.txt",
+      "blocks": 44,
+      "revid": 1501803,
+      "sha256": "5f105ac594ecba7d374dbec520475fdda7f8e30c2e404c6f6e0677d8048d7812"
+    },
+    {
+      "page": "南齊書/卷54",
+      "file": "054.txt",
+      "blocks": 87,
+      "revid": 1762878,
+      "sha256": "9b5f8b1612d41f30659a5238cd2a788dc10ce726686130d96497936e070d9010"
+    },
+    {
+      "page": "南齊書/卷55",
+      "file": "055.txt",
+      "blocks": 45,
+      "revid": 1545598,
+      "sha256": "d54531a47aee698f894c8aeb6377f7e3ae94377c94fb6662cb9c43b98c11266f"
+    },
+    {
+      "page": "南齊書/卷56",
+      "file": "056.txt",
+      "blocks": 27,
+      "revid": 1504717,
+      "sha256": "28daab17053324425e7f6135e9576f8332961b52ad5bbbc988f3557ed8d0f747"
+    },
+    {
+      "page": "南齊書/卷57",
+      "file": "057.txt",
+      "blocks": 50,
+      "revid": 1999801,
+      "sha256": "84169150f0e973b11d0488cc46ddc988b0c0095cc70b3c832ea10c01b75fd334"
+    },
+    {
+      "page": "南齊書/卷58",
+      "file": "058.txt",
+      "blocks": 40,
+      "revid": 2638629,
+      "sha256": "b960fd0add61505f1e7feb63c6a960adff5df264593889360494a2b96c6930d8"
+    },
+    {
+      "page": "南齊書/卷59",
+      "file": "059.txt",
+      "blocks": 38,
+      "revid": 1748911,
+      "sha256": "83a6db22f3c54154d97d2b756ef5ed16bc1faeac1d8a7ce161c964df6230f237"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 59
+}
