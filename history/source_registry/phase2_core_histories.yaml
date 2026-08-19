@@ -1,0 +1,28 @@
+version: 1
+order:
+  - sanguo
+  - jin
+  - southern_dynasties
+  - northern_dynasties
+  - sui
+  - five_dynasties
+  - liao_jin_yuan_ming
+sources:
+  - {source_id: CN-SANGUO-0001, dynasty_group: sanguo, title: 三國志, root_page: 三國志, corpus_key: sanguozhi, volume_min: 1, volume_max: 65}
+  - {source_id: CN-JIN-0001, dynasty_group: jin, title: 晉書, root_page: 晉書, corpus_key: jinshu, volume_min: 1, volume_max: 130}
+  - {source_id: CN-LIUSONG-0001, dynasty_group: southern_dynasties, title: 宋書, root_page: 宋書, corpus_key: songshu, volume_min: 1, volume_max: 100}
+  - {source_id: CN-NANQI-0001, dynasty_group: southern_dynasties, title: 南齊書, root_page: 南齊書, corpus_key: nanqishu, volume_min: 1, volume_max: 59}
+  - {source_id: CN-LIANG-0001, dynasty_group: southern_dynasties, title: 梁書, root_page: 梁書, corpus_key: liangshu, volume_min: 1, volume_max: 56}
+  - {source_id: CN-CHEN-0001, dynasty_group: southern_dynasties, title: 陳書, root_page: 陳書, corpus_key: chenshu, volume_min: 1, volume_max: 36}
+  - {source_id: CN-BEIWEI-0001, dynasty_group: northern_dynasties, title: 魏書, root_page: 魏書, corpus_key: weishu, volume_min: 1, volume_max: 114}
+  - {source_id: CN-BEIQI-0001, dynasty_group: northern_dynasties, title: 北齊書, root_page: 北齊書, corpus_key: beinqishu, volume_min: 1, volume_max: 50}
+  - {source_id: CN-BEIZHOU-0001, dynasty_group: northern_dynasties, title: 周書, root_page: 周書, corpus_key: zhoushu, volume_min: 1, volume_max: 50}
+  - {source_id: CN-SUI-0001, dynasty_group: sui, title: 隋書, root_page: 隋書, corpus_key: suishu, volume_min: 1, volume_max: 85}
+  - {source_id: CN-NANSHI-0001, dynasty_group: southern_dynasties, title: 南史, root_page: 南史, corpus_key: nanshi, volume_min: 1, volume_max: 80}
+  - {source_id: CN-BEISHI-0001, dynasty_group: northern_dynasties, title: 北史, root_page: 北史, corpus_key: beishi, volume_min: 1, volume_max: 100}
+  - {source_id: CN-WUDAI-0001, dynasty_group: five_dynasties, title: 舊五代史, root_page: 舊五代史, corpus_key: jiuwudaishi, volume_min: 1, volume_max: 150}
+  - {source_id: CN-WUDAI-0002, dynasty_group: five_dynasties, title: 新五代史, root_page: 新五代史, corpus_key: xinwudaishi, volume_min: 1, volume_max: 74}
+  - {source_id: CN-LIAO-0001, dynasty_group: liao_jin_yuan_ming, title: 遼史, root_page: 遼史, corpus_key: liaoshi, volume_min: 1, volume_max: 116}
+  - {source_id: CN-JINJURCHEN-0001, dynasty_group: liao_jin_yuan_ming, title: 金史, root_page: 金史, corpus_key: jinshi, volume_min: 1, volume_max: 135}
+  - {source_id: CN-YUAN-0001, dynasty_group: liao_jin_yuan_ming, title: 元史, root_page: 元史, corpus_key: yuanshi, volume_min: 1, volume_max: 210}
+  - {source_id: CN-MING-0001, dynasty_group: liao_jin_yuan_ming, title: 明史, root_page: 明史, corpus_key: mingshi, volume_min: 1, volume_max: 332}
