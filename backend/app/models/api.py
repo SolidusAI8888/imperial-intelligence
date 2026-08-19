@@ -2,11 +2,17 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 
+class ConversationMessage(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=8000)
+
+
 class ConsultationRequest(BaseModel):
     question: str = Field(min_length=2, max_length=4000)
     user_context: str | None = Field(default=None, max_length=8000)
     emperor_stage_id: str | None = None
     response_mode: Literal["concise", "standard", "detailed"] = "standard"
+    conversation_history: list[ConversationMessage] = Field(default_factory=list, max_length=20)
 
 
 class EvidenceReference(BaseModel):
