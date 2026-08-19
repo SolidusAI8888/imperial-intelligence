@@ -8,7 +8,7 @@ dynasties:
   han:
     display_name: 漢
     emperors:
-      - {persona_id: han_gaozu, name: 劉邦, temple_or_posthumous: 漢高祖}
+      - {persona_id: liu_bang, name: 劉邦, temple_or_posthumous: 漢高祖}
       - {persona_id: han_huidi, name: 劉盈, temple_or_posthumous: 漢惠帝}
       - {persona_id: han_qianshaodi, name: 劉恭, temple_or_posthumous: 前少帝}
       - {persona_id: han_houshaodi, name: 劉弘, temple_or_posthumous: 後少帝}
