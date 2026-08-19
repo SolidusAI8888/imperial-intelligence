@@ -41,3 +41,17 @@ class ConsultationResponse(BaseModel):
     overall_confidence: float = Field(ge=0, le=1)
     avatar_directive: AvatarDirective
     status: Literal["prototype", "evidence_grounded"]
+
+
+class CandidateRanking(BaseModel):
+    emperor_id: str
+    dynasty: Literal["han", "tang", "song"]
+    score: float = Field(ge=0, le=1)
+    rationale: str
+    evidence_ids: list[str]
+
+
+class AutoConsultationResponse(BaseModel):
+    selected_emperor_id: str
+    rankings: list[CandidateRanking]
+    consultation: ConsultationResponse
