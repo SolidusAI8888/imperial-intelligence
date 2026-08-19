@@ -1,3 +1,5 @@
+from dataclasses import asdict
+
 from fastapi import FastAPI, HTTPException
 
 from app.models.api import (
@@ -89,7 +91,7 @@ def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPack
             request.question,
             candidate_limit=request.candidate_limit,
         )
-        return ProblemResearchPackageResponse.model_validate(package.__dict__)
+        return ProblemResearchPackageResponse.model_validate(asdict(package))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
