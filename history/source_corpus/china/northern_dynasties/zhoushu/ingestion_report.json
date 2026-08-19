@@ -1,0 +1,416 @@
+{
+  "source_id": "CN-BEIZHOU-0001",
+  "title": "周書",
+  "expected_range": [
+    1,
+    50
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "周書/卷01",
+    "周書/卷02",
+    "周書/卷03",
+    "周書/卷04",
+    "周書/卷05",
+    "周書/卷06",
+    "周書/卷07",
+    "周書/卷08",
+    "周書/卷09",
+    "周書/卷10",
+    "周書/卷11",
+    "周書/卷12",
+    "周書/卷13",
+    "周書/卷14",
+    "周書/卷15",
+    "周書/卷16",
+    "周書/卷17",
+    "周書/卷18",
+    "周書/卷19",
+    "周書/卷20",
+    "周書/卷21",
+    "周書/卷22",
+    "周書/卷23",
+    "周書/卷24",
+    "周書/卷25",
+    "周書/卷26",
+    "周書/卷27",
+    "周書/卷28",
+    "周書/卷29",
+    "周書/卷30",
+    "周書/卷31",
+    "周書/卷32",
+    "周書/卷33",
+    "周書/卷34",
+    "周書/卷35",
+    "周書/卷36",
+    "周書/卷37",
+    "周書/卷38",
+    "周書/卷39",
+    "周書/卷40",
+    "周書/卷41",
+    "周書/卷42",
+    "周書/卷43",
+    "周書/卷44",
+    "周書/卷45",
+    "周書/卷46",
+    "周書/卷47",
+    "周書/卷48",
+    "周書/卷49",
+    "周書/卷50"
+  ],
+  "pages": [
+    {
+      "page": "周書/卷01",
+      "file": "001.txt",
+      "blocks": 40,
+      "revid": 2432581,
+      "sha256": "dd06d94181225339fea5acd9b9f4cfb4120dd89130beb59974f809395caa1fe8"
+    },
+    {
+      "page": "周書/卷02",
+      "file": "002.txt",
+      "blocks": 89,
+      "revid": 2432557,
+      "sha256": "b762a80d8f7e9233ce67e2d2c2980d30c2cbd4af715f080cab1e2229ddcaecf1"
+    },
+    {
+      "page": "周書/卷03",
+      "file": "003.txt",
+      "blocks": 19,
+      "revid": 2432563,
+      "sha256": "9f32b2b28dfcb6bef2e85d0b9f62f6dc4caab1e6f28238587a39d048928f0fb2"
+    },
+    {
+      "page": "周書/卷04",
+      "file": "004.txt",
+      "blocks": 34,
+      "revid": 2432565,
+      "sha256": "45c3edf87ba465cdeba32a8e363421be8f6d266574e92ad50f42a4a09e065c4a"
+    },
+    {
+      "page": "周書/卷05",
+      "file": "005.txt",
+      "blocks": 162,
+      "revid": 2432569,
+      "sha256": "3096c9536f625063617c7462056eec2e55d119a411e5923ad8d5522a37b7399b"
+    },
+    {
+      "page": "周書/卷06",
+      "file": "006.txt",
+      "blocks": 66,
+      "revid": 2589015,
+      "sha256": "571702b8fcd2833ca786cb551078cb7b4760fb2e62cd1cc87d55b1d51687eb5d"
+    },
+    {
+      "page": "周書/卷07",
+      "file": "007.txt",
+      "blocks": 39,
+      "revid": 2589010,
+      "sha256": "06d08c6f9a681c75323813e1f76f51cd46c58232a446b4ad29f11427bada6d3f"
+    },
+    {
+      "page": "周書/卷08",
+      "file": "008.txt",
+      "blocks": 15,
+      "revid": 2589012,
+      "sha256": "0a4cb773787eed813e6e05704477f66240b3d8afb55b6147d9a9053d462dae73"
+    },
+    {
+      "page": "周書/卷09",
+      "file": "009.txt",
+      "blocks": 20,
+      "revid": 2432580,
+      "sha256": "69988add28cd3b2a10975c1106d9ef81aaf040e231f7f00602c766e824c2b4ea"
+    },
+    {
+      "page": "周書/卷10",
+      "file": "010.txt",
+      "blocks": 25,
+      "revid": 2432561,
+      "sha256": "c88c46393675583947d15327e4a3e7c2607e0708cd3366cec848ea03ba1321c1"
+    },
+    {
+      "page": "周書/卷11",
+      "file": "011.txt",
+      "blocks": 44,
+      "revid": 2432574,
+      "sha256": "90c7ca1af57d5710603d8fc8395bc2598566e0869e0492eed2223e32a2dcd061"
+    },
+    {
+      "page": "周書/卷12",
+      "file": "012.txt",
+      "blocks": 27,
+      "revid": 2432545,
+      "sha256": "1b0c3476e8fb1ccb7173dffd4cbb4a4c29dd10e8d22a5cd1a8667d9b396adcac"
+    },
+    {
+      "page": "周書/卷13",
+      "file": "013.txt",
+      "blocks": 33,
+      "revid": 2432582,
+      "sha256": "da4205d4f2db849d5aae1f994d45aa51c652accdbdb81676738798286c4c7eb5"
+    },
+    {
+      "page": "周書/卷14",
+      "file": "014.txt",
+      "blocks": 29,
+      "revid": 2432552,
+      "sha256": "110bb734929099a4e9301597a6d1a619d015284fb7251d06ae38b611e021488a"
+    },
+    {
+      "page": "周書/卷15",
+      "file": "015.txt",
+      "blocks": 37,
+      "revid": 2432558,
+      "sha256": "929ac5fe95df33ac44ab40283db0ff8da2debea609d707bd4f7ef00a9f8723d7"
+    },
+    {
+      "page": "周書/卷16",
+      "file": "016.txt",
+      "blocks": 53,
+      "revid": 2432549,
+      "sha256": "d411344fa68a7699242f08f1f28ecd83d914525a405566aab81b226ef368718c"
+    },
+    {
+      "page": "周書/卷17",
+      "file": "017.txt",
+      "blocks": 28,
+      "revid": 2432570,
+      "sha256": "42ba9614494a901c3534598a4d4efa3bf089b92dc6fcf9e5c493f0f002032a10"
+    },
+    {
+      "page": "周書/卷18",
+      "file": "018.txt",
+      "blocks": 18,
+      "revid": 2432566,
+      "sha256": "108346ab8b865efc2a905384262278490f0ec88183528cd6b15273d0336da9ff"
+    },
+    {
+      "page": "周書/卷19",
+      "file": "019.txt",
+      "blocks": 50,
+      "revid": 2432578,
+      "sha256": "3267301ecae513e510e1644b39c4a80dc6e8a6748dece2c4e107761fc90c8186"
+    },
+    {
+      "page": "周書/卷20",
+      "file": "020.txt",
+      "blocks": 37,
+      "revid": 2432562,
+      "sha256": "f4a900dfb0e358c4a608d982854fc24cd1472871111306851932a656dba2cd00"
+    },
+    {
+      "page": "周書/卷21",
+      "file": "021.txt",
+      "blocks": 16,
+      "revid": 2432556,
+      "sha256": "8f4f95d618424c4fa0eadb721a372d19a1289a92e88ebfe03d35a3c8b2179a3d"
+    },
+    {
+      "page": "周書/卷22",
+      "file": "022.txt",
+      "blocks": 43,
+      "revid": 2432547,
+      "sha256": "15ce1204c42c5827789dbd85a4f79b7cfb3228d92baf3cf090ed6efc52058fb2"
+    },
+    {
+      "page": "周書/卷23",
+      "file": "023.txt",
+      "blocks": 55,
+      "revid": 2432550,
+      "sha256": "52d1935ca47423b7c5e42459209e13ebf2642bb3c0c7179b3e1515cc1082be11"
+    },
+    {
+      "page": "周書/卷24",
+      "file": "024.txt",
+      "blocks": 25,
+      "revid": 2432554,
+      "sha256": "5017cb154fe14632dbdd9e1ee76dd6117c432bc5b78ff60e7da0267df9bd8f4b"
+    },
+    {
+      "page": "周書/卷25",
+      "file": "025.txt",
+      "blocks": 33,
+      "revid": 2432555,
+      "sha256": "39deeaccadc70e8869c9937ef135b2d59328f3b1bcc3d6c6768bda4b795931e6"
+    },
+    {
+      "page": "周書/卷26",
+      "file": "026.txt",
+      "blocks": 22,
+      "revid": 2432551,
+      "sha256": "06210eb96545380c75a9bec297bf228829d8583b59a21292ede3fe6492ea51bb"
+    },
+    {
+      "page": "周書/卷27",
+      "file": "027.txt",
+      "blocks": 62,
+      "revid": 2564926,
+      "sha256": "dc29b7c8cc784a9461ade12b8da3b8ab4fd74f10e1b1999a2192c888f022dbc2"
+    },
+    {
+      "page": "周書/卷28",
+      "file": "028.txt",
+      "blocks": 52,
+      "revid": 2432564,
+      "sha256": "7d75ff9ca36514a756cf90446b1559175e3922a86f7aed471ac474fa502a8d92"
+    },
+    {
+      "page": "周書/卷29",
+      "file": "029.txt",
+      "blocks": 61,
+      "revid": 2432571,
+      "sha256": "664cc7f0546b45dd0bd4eb7254669f351020b9a75c1d6925c02d11b707e7931f"
+    },
+    {
+      "page": "周書/卷30",
+      "file": "030.txt",
+      "blocks": 46,
+      "revid": 2174762,
+      "sha256": "0262e32332c6198e4f0a4ca38b78434d3b91fcdc87846c750ce784a207a96ae6"
+    },
+    {
+      "page": "周書/卷31",
+      "file": "031.txt",
+      "blocks": 48,
+      "revid": 2074189,
+      "sha256": "d7c57b11e780bba30118d6d86b86306c7ad74b31084445fb59747e94378449d6"
+    },
+    {
+      "page": "周書/卷32",
+      "file": "032.txt",
+      "blocks": 35,
+      "revid": 2432576,
+      "sha256": "57f33c780db662e518d9cd46feeb32d90d697c1430f018399db36745adaeee9f"
+    },
+    {
+      "page": "周書/卷33",
+      "file": "033.txt",
+      "blocks": 46,
+      "revid": 2578842,
+      "sha256": "0d0e636d21c6479607183f3ec9b942b9574fefedcdef52ed249f6e7701d6c9c2"
+    },
+    {
+      "page": "周書/卷34",
+      "file": "034.txt",
+      "blocks": 42,
+      "revid": 2432540,
+      "sha256": "47d2b46d295f89a2e133f3b3bdbf86001721c87e930f275edbbef7586f701fb8"
+    },
+    {
+      "page": "周書/卷35",
+      "file": "035.txt",
+      "blocks": 56,
+      "revid": 2432543,
+      "sha256": "72a667f612a0a0a3bbc94201bf66c5465ab50ba787bc8b35ab7edfd4bf5dcf39"
+    },
+    {
+      "page": "周書/卷36",
+      "file": "036.txt",
+      "blocks": 57,
+      "revid": 2432568,
+      "sha256": "e0bfe2ee016f20a83cbc1fe65ed8a15a5e19419c29f5aea4d49ffd635d0f072a"
+    },
+    {
+      "page": "周書/卷37",
+      "file": "037.txt",
+      "blocks": 58,
+      "revid": 2432548,
+      "sha256": "3979d0ce6e915e1650af36092b208d8bf95087310368913a5d9be580f291dbf0"
+    },
+    {
+      "page": "周書/卷38",
+      "file": "038.txt",
+      "blocks": 54,
+      "revid": 2432559,
+      "sha256": "da913f603d8da238bd7fc7de1c48bf0e1cbdfbf638a1b39e6f3ef62ac8be9362"
+    },
+    {
+      "page": "周書/卷39",
+      "file": "039.txt",
+      "blocks": 36,
+      "revid": 2578841,
+      "sha256": "a9cc5047c3e56d6eedcf2f01bfb6acd8ebdb647b2c1b5e1237f044a71c620737"
+    },
+    {
+      "page": "周書/卷40",
+      "file": "040.txt",
+      "blocks": 51,
+      "revid": 2432537,
+      "sha256": "3377e2f16701c7aab3ebd10ae30cbd6fdaf7489850d4ec90d6eec9ba19efe87b"
+    },
+    {
+      "page": "周書/卷41",
+      "file": "041.txt",
+      "blocks": 50,
+      "revid": 2432538,
+      "sha256": "aa363afa43f4b24373c1d06cff19dc9956cc09516d3b449d5ed8bdafd0458534"
+    },
+    {
+      "page": "周書/卷42",
+      "file": "042.txt",
+      "blocks": 63,
+      "revid": 2432539,
+      "sha256": "6edae8ad9925865f03f0c66827b275a6e353ae936a41a1edfd5dbb3c5e266fc1"
+    },
+    {
+      "page": "周書/卷43",
+      "file": "043.txt",
+      "blocks": 22,
+      "revid": 2432542,
+      "sha256": "d4fdd15d692e6c66fb672f23fdadceb81c77f2334d54b8b9727fb27249cddb33"
+    },
+    {
+      "page": "周書/卷44",
+      "file": "044.txt",
+      "blocks": 45,
+      "revid": 2432575,
+      "sha256": "f655038dd20157004b1c4d3929087ab7436bcd677071289d1c5c0243ab56b662"
+    },
+    {
+      "page": "周書/卷45",
+      "file": "045.txt",
+      "blocks": 46,
+      "revid": 2432573,
+      "sha256": "2c132be79dbbc15cbe5a310560de2327b8b8838530c60c76e58eb275becd5dfd"
+    },
+    {
+      "page": "周書/卷46",
+      "file": "046.txt",
+      "blocks": 26,
+      "revid": 2432536,
+      "sha256": "e9a66e884b27e48b2ae75ebd7ba7ac12ea54800d6d0f58044ef278dc9bd146b5"
+    },
+    {
+      "page": "周書/卷47",
+      "file": "047.txt",
+      "blocks": 49,
+      "revid": 2432541,
+      "sha256": "8f35579d5ba2ba71847092f55c98a7794b63f99e19bfaebdaac8027290909923"
+    },
+    {
+      "page": "周書/卷48",
+      "file": "048.txt",
+      "blocks": 74,
+      "revid": 2432546,
+      "sha256": "471f44509f0f4e33af078da7f1ab002d96ba95fd4fcacc50817395c9b7bd8e1b"
+    },
+    {
+      "page": "周書/卷49",
+      "file": "049.txt",
+      "blocks": 44,
+      "revid": 2432579,
+      "sha256": "63bd1a34583f29e11034bd9f14596c2283f3f03a63456ec4307410c360a600d4"
+    },
+    {
+      "page": "周書/卷50",
+      "file": "050.txt",
+      "blocks": 43,
+      "revid": 2432583,
+      "sha256": "e21ecc356dde10c42c062f9aa6e0dc9682e230198a7d52954504dcd192cb1c69"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 50
+}
