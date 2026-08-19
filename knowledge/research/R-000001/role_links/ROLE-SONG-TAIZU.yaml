@@ -1,0 +1,13 @@
+person_id: song_taizu
+research_id: R-000001
+life_course_rule: full_lifetime
+links:
+  - heu_id: HEU-SONG-000001
+    relation: experience_owner
+    responder_eligible: true
+    personal_experience_strength: primary
+source_support:
+  - CN-SONG-0001-V001-P0004
+  - CN-SONG-0001-V001-P0005
+  - CN-SONG-0001-V001-P0010
+status: reviewed
