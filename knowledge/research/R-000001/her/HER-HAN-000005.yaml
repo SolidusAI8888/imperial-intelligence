@@ -1,0 +1,27 @@
+record_id: HER-HAN-000005
+research_id: R-000001
+title: "七国之乱：斩晁错未能终止叛乱"
+record_type: event
+dynasty: Han
+time_label: "汉景帝三年"
+participants:
+  - han_jingdi
+historical_record: >-
+  景帝三年，吴王刘濞等七国举兵反。朝廷大赦并遣周亚夫、窦婴等领兵，同时斩御史大夫晁错以谢七国。
+  但叛乱并未因此立即停止，最终仍由诸将军事击破七国，吴王被追斩，其余主要叛王相继自杀。
+  这一事件显示，危机中的一项重大决策并不能自动控制对手选择或保证预期结果。
+sources:
+  - source_id: CN-HAN-0002
+    canonical_ids:
+      - CN-HAN-0002-V005-P0015
+      - CN-HAN-0002-V005-P0017
+supported_claims:
+  - "景帝在七国叛乱中同时采取军事处置与斩晁错的政治让步。"
+  - "斩晁错之后叛乱仍需通过军事行动才能结束，因此该决定并未单独终止危机。"
+  - "重大局势的结果由皇帝决策、叛军选择、将领行动和军事结果共同塑造。"
+unsupported_claims:
+  - "斩晁错必然是错误决定，且没有任何当时政治理由。"
+  - "周亚夫一人决定了七国之乱的全部结果。"
+  - "一次决策未达到预期即可证明个人在任何历史局势中都没有能动性。"
+derived_from_candidate_evidence_ids: []
+status: reviewed
