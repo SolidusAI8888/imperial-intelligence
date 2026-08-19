@@ -37,6 +37,24 @@ def _dump_yaml(data: dict) -> str:
     return yaml.safe_dump(data, allow_unicode=True, sort_keys=False, width=100)
 
 
+def _registration_candidate_placeholder(candidate) -> dict:
+    return {
+        "dynasty": None,
+        "evidence_ids": [],
+        "heu_ids": [],
+        "insight_ids": [],
+        "scores": {
+            "experience_similarity": None,
+            "evidence_strength": None,
+            "stage_relevance": None,
+            "lesson_clarity": None,
+            "transferability": None,
+            "counterevidence_quality": None,
+        },
+        "rationale": None,
+    }
+
+
 def build_problem_draft_package(
     question: str,
     *,
@@ -55,6 +73,7 @@ def build_problem_draft_package(
         "problem_id": problem_id,
         "raw_question": research.raw_question,
         "normalized_question": research.normalized_question,
+        "retrieval_dimensions": [],
         "status": "draft_requires_problem_specific_review",
         "knowledge_policy": {
             "reusable_layers": ["HER", "HEU"],
@@ -90,6 +109,7 @@ def build_problem_draft_package(
                 "review_priority": candidate.review_priority,
                 "selected_insight_ids": [],
                 "candidate_score": None,
+                "registration_candidate": _registration_candidate_placeholder(candidate),
                 "status": "requires_problem_specific_review",
                 "responder_eligible": False,
             }
