@@ -1,0 +1,14 @@
+version: 1
+problem_id: Q-FATE-AGENCY-001
+status: reviewed_process_policy
+purpose: >-
+  Prioritize the remaining Han/Tang/Song emperor research workload using canonical source evidence
+  already present in the archived corpus, without promoting discovery hits into reviewed knowledge.
+minimum_candidate_hits_for_review: 2
+hit_count_weight: 10
+rules:
+  - Discovery hits are candidate evidence only and cannot make an emperor responder-eligible.
+  - A reviewed knowledge chain still requires HER -> HEU -> Insight -> Role Link.
+  - Canonical IDs must resolve to archived extractor-v3 source passages before use in a HER.
+  - Reviewers must reject name/title mentions that do not support the specific research question.
+  - Ranking is a workload-prioritization aid, not a historical-quality score or ruler ranking.
