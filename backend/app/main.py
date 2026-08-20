@@ -6,6 +6,8 @@ from app.models.api import (
     AutoConsultationResponse,
     ConsultationRequest,
     ConsultationResponse,
+    ProblemDraftRequest,
+    ProblemDraftResponse,
     ProblemGroundedAnswerResponse,
     ProblemResearchPackageResponse,
     ProblemResearchRequest,
@@ -14,6 +16,10 @@ from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
+from app.services.problem_draft_package import (
+    build_problem_draft_package,
+    persist_problem_draft_package,
+)
 from app.services.problem_research_package import build_problem_research_package
 
 app = FastAPI(
@@ -92,6 +98,43 @@ def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPack
             candidate_limit=request.candidate_limit,
         )
         return ProblemResearchPackageResponse.model_validate(asdict(package))
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/drafts", response_model=ProblemDraftResponse)
+def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
+    """Create a reviewable Problem draft without granting answer permission.
+
+    Persistence, when explicitly requested, is restricted to the dedicated draft
+    area. The endpoint never writes into the registered Problem directories and
+    never changes review, eligibility, or answer-permission flags.
+    """
+    try:
+        package = build_problem_draft_package(
+            request.question,
+            candidate_limit=request.candidate_limit,
+        )
+        manifest_path = package.manifest.relative_path
+        profile_path = package.candidate_profile.relative_path
+        persisted = False
+        if request.persist:
+            written_manifest, written_profile = persist_problem_draft_package(package)
+            manifest_path = str(written_manifest)
+            profile_path = str(written_profile)
+            persisted = True
+        return ProblemDraftResponse(
+            problem_id=package.problem_id,
+            manifest_path=manifest_path,
+            candidate_profile_path=profile_path,
+            status=package.status,
+            responder_eligible=package.responder_eligible,
+            can_render_answer=package.can_render_answer,
+            required_next_gate=package.required_next_gate,
+            persisted=persisted,
+        )
+    except FileExistsError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
