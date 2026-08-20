@@ -77,7 +77,10 @@ class ProblemGroundedAnswerResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
-    status: Literal["rendered_from_reviewed_grounded_bundle"]
+    status: Literal[
+        "rendered_from_reviewed_grounded_bundle",
+        "rendered_from_runtime_reviewed_grounded_bundle",
+    ]
 
 
 class ProblemResearchRequest(BaseModel):
