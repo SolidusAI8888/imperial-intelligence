@@ -33,3 +33,8 @@ jobs:
         env:
           PYTHONPATH: backend
         run: python backend/run_first_answer.py
+
+      - name: Run second Problem E2E acceptance CLI
+        env:
+          PYTHONPATH: backend
+        run: python backend/report_second_problem_e2e.py
