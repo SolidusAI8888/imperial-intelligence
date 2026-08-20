@@ -31,6 +31,7 @@ from app.services.problem_draft_readiness_service import inspect_problem_draft_r
 from app.services.problem_draft_review_packet import build_problem_draft_review_packet
 from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
+from app.services.runtime_candidate_assessment import assess_runtime_problem
 
 app = FastAPI(
     title="帝王智库 API",
@@ -107,6 +108,20 @@ def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPack
             candidate_limit=request.candidate_limit,
         )
         return ProblemResearchPackageResponse.model_validate(asdict(package))
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/assess")
+def assess_new_problem(request: ProblemResearchRequest) -> dict:
+    """Score recalled reviewed chains and recommend an evidence-gated runtime responder."""
+    try:
+        return asdict(
+            assess_runtime_problem(
+                request.question,
+                candidate_limit=request.candidate_limit,
+            )
+        )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
