@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 
 import yaml
 
@@ -55,7 +56,7 @@ class ProblemDraftReviewPacket:
     status: str
 
 
-def _load_yaml(path) -> dict:
+def _load_yaml(path: Path) -> dict:
     with path.open("r", encoding="utf-8") as handle:
         data = yaml.safe_load(handle)
     if not isinstance(data, dict):
@@ -71,8 +72,8 @@ def build_problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftRevi
     an Insight, assigns a score, changes responder eligibility, or approves an answer.
     """
     readiness = inspect_problem_draft_readiness(draft_problem_id)
-    manifest = _load_yaml(__import__("pathlib").Path(readiness.manifest_path))
-    profile = _load_yaml(__import__("pathlib").Path(readiness.candidate_profile_path))
+    manifest = _load_yaml(Path(readiness.manifest_path))
+    profile = _load_yaml(Path(readiness.candidate_profile_path))
 
     packets: list[DraftCandidateReviewPacket] = []
     for row in profile.get("candidates") or []:
