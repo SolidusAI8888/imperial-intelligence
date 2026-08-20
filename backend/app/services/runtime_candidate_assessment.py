@@ -79,12 +79,13 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             and set(insight.derived_from_heus).issubset(heu_ids)
         ]
 
-        record_ids = {record_id for heu in heus for record_id in heu.record_links}
+        required_record_ids = {record_id for heu in heus for record_id in heu.record_links}
         records = [
             record
             for record in load_person_records(person_id)
-            if record.record_id in record_ids and record.status in _REVIEWED
+            if record.record_id in required_record_ids and record.status in _REVIEWED
         ]
+        loaded_record_ids = {record.record_id for record in records}
         canonical_ids = sorted(
             {
                 canonical_id
@@ -142,7 +143,14 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             )
         )
 
-        chain_complete = bool(records and canonical_ids and insights and role_links and dynasty != "Unknown")
+        all_required_records_reviewed = bool(required_record_ids) and required_record_ids == loaded_record_ids
+        chain_complete = bool(
+            all_required_records_reviewed
+            and canonical_ids
+            and insights
+            and role_links
+            and dynasty != "Unknown"
+        )
         recommended = bool(chain_complete and recalled.retrieval_score >= 0.35 and scored.total_score >= 0.6)
         answer_ready = bool(
             recommended
