@@ -1,0 +1,103 @@
+name: Phase 3 Numbered Source Ingestion
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_id:
+        description: Optional Phase 3 numbered-volume source ID; blank selects the next compatible source
+        required: false
+        type: string
+  schedule:
+    - cron: "37 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/phase3-numbered-source-ingestion.yml"
+      - "history/source_registry/phase3_primary_sources.yaml"
+      - "history/tools/select_next_phase3_source.py"
+      - "history/tools/ingest_wikisource_manifest.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase3-numbered-source-ingestion
+  cancel-in-progress: false
+
+jobs:
+  ingest-next-compatible-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ingestion dependencies
+        run: pip install requests beautifulsoup4 PyYAML
+
+      - name: Select compatible source
+        id: select
+        env:
+          REQUESTED_SOURCE: ${{ inputs.source_id }}
+        run: |
+          if [ -n "$REQUESTED_SOURCE" ]; then
+            SOURCE_ID="$REQUESTED_SOURCE"
+          else
+            SOURCE_ID="$(python history/tools/select_next_phase3_source.py --next-numbered)"
+          fi
+          echo "source_id=$SOURCE_ID" >> "$GITHUB_OUTPUT"
+          echo "Selected source: ${SOURCE_ID:-<none>}"
+
+      - name: Validate requested source strategy
+        if: steps.select.outputs.source_id != ''
+        env:
+          SOURCE_ID: ${{ steps.select.outputs.source_id }}
+        run: |
+          python - <<'PY'
+          import os, yaml
+          from pathlib import Path
+          manifest = yaml.safe_load(Path('history/source_registry/phase3_primary_sources.yaml').read_text(encoding='utf-8'))
+          matches = [s for s in manifest['sources'] if s['source_id'] == os.environ['SOURCE_ID']]
+          if len(matches) != 1:
+              raise SystemExit(f"unknown Phase 3 source: {os.environ['SOURCE_ID']}")
+          if matches[0].get('acquisition_strategy') != 'wikisource_numbered_volumes':
+              raise SystemExit(f"source requires catalog-aware acquisition: {os.environ['SOURCE_ID']}")
+          PY
+
+      - name: Ingest selected source
+        id: ingest
+        if: steps.select.outputs.source_id != ''
+        continue-on-error: true
+        run: |
+          python history/tools/ingest_wikisource_manifest.py \
+            --manifest history/source_registry/phase3_primary_sources.yaml \
+            --source-id "${{ steps.select.outputs.source_id }}"
+
+      - name: Commit archival progress
+        if: steps.select.outputs.source_id != ''
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add history/source_corpus/china
+          if git diff --cached --quiet; then
+            echo "No corpus changes to commit"
+          else
+            git commit -m "Archive Phase 3 source ${{ steps.select.outputs.source_id }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Show Phase 3 status
+        run: python history/tools/select_next_phase3_source.py --json
+
+      - name: Fail if ingestion had errors
+        if: steps.select.outputs.source_id != '' && steps.ingest.outcome == 'failure'
+        run: exit 1
