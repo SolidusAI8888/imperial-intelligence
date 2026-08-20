@@ -134,12 +134,17 @@ def test_auto_consult_screens_all_emperors_and_selects_best_grounded_role() -> N
     assert data["consultation"]["emperor_id"] == "tang_taizong"
 
 
-def test_auto_consult_rejects_question_without_reviewed_cross_dynasty_chain() -> None:
+def test_auto_consult_starts_research_for_question_without_reviewed_cross_dynasty_chain() -> None:
     response = client.post(
         "/consult/auto",
         json={"question": "我是否应该与别人合伙创业？"},
     )
-    assert response.status_code == 422
+    assert response.status_code == 200
+    data = response.json()
+    assert data["proposed_problem_id"].startswith("Q-RESEARCH-")
+    assert data["status"] == "research_package_requires_human_review"
+    assert data["can_render_answer"] is False
+    assert all(item["responder_eligible"] is False for item in data["candidates"])
 
 
 def test_problem_draft_api_builds_non_answerable_review_package() -> None:
