@@ -191,6 +191,7 @@ class ProblemPromotionResponse(BaseModel):
 class ProblemConversationRequest(BaseModel):
     question: str = Field(min_length=2, max_length=4000)
     conversation_history: list[ConversationMessage] = Field(default_factory=list, max_length=20)
+    candidate_limit: int = Field(default=20, ge=1, le=50)
 
 
 class ProblemConversationResponse(BaseModel):
@@ -205,6 +206,7 @@ class ProblemConversationResponse(BaseModel):
     evidence_ids: list[str]
     insight_ids: list[str]
     requires_new_problem: bool
+    research_package: ProblemResearchPackageResponse | None = None
     status: Literal[
         "continued_with_reviewed_problem_responder",
         "problem_drift_requires_new_problem_research",
