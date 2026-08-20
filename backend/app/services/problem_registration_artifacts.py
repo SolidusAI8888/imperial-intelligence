@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 import re
+import tempfile
 
 import yaml
 
@@ -17,6 +19,7 @@ from app.services.knowledge_runtime import build_runtime_context
 from app.services.problem_promotion_readiness import assess_problem_draft_promotion
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 _PROBLEM_ID_RE = re.compile(r"^Q-[A-Z0-9][A-Z0-9-]{2,63}$")
 
 
@@ -220,3 +223,60 @@ def build_problem_registration_package(
         candidate_profile=RegistrationArtifact(profile_rel, _dump_yaml(profile), "ready_to_persist"),
         status="registration_artifacts_ready_explicit_write_required",
     )
+
+
+def _stage_text(target: Path, content: str) -> Path:
+    target.parent.mkdir(parents=True, exist_ok=True)
+    handle = tempfile.NamedTemporaryFile(
+        mode="w",
+        encoding="utf-8",
+        dir=target.parent,
+        prefix=f".{target.name}.",
+        suffix=".tmp",
+        delete=False,
+    )
+    try:
+        with handle:
+            handle.write(content)
+            handle.flush()
+            os.fsync(handle.fileno())
+        return Path(handle.name)
+    except Exception:
+        Path(handle.name).unlink(missing_ok=True)
+        raise
+
+
+def persist_problem_registration_package(
+    package: ProblemRegistrationPackage,
+    *,
+    project_root: Path = PROJECT_ROOT,
+) -> tuple[Path, Path]:
+    """Explicitly persist reviewed registration artifacts with collision protection.
+
+    The candidate profile is installed before the manifest so the repository never
+    exposes a registered manifest that points to a profile that has not yet been
+    written. Existing registered paths are never overwritten by this operation.
+    """
+    manifest_path = project_root / package.manifest.relative_path
+    profile_path = project_root / package.candidate_profile.relative_path
+
+    collisions = [path for path in (manifest_path, profile_path) if path.exists()]
+    if collisions:
+        joined = ", ".join(str(path) for path in collisions)
+        raise FileExistsError(f"Registration target already exists: {joined}")
+
+    staged_profile = _stage_text(profile_path, package.candidate_profile.content)
+    staged_manifest = _stage_text(manifest_path, package.manifest.content)
+    try:
+        os.replace(staged_profile, profile_path)
+        os.replace(staged_manifest, manifest_path)
+    except Exception:
+        staged_profile.unlink(missing_ok=True)
+        staged_manifest.unlink(missing_ok=True)
+        # A profile installed before a manifest is an inert orphan; remove it when
+        # possible so a failed registration leaves no misleading residue.
+        if profile_path.exists() and not manifest_path.exists():
+            profile_path.unlink(missing_ok=True)
+        raise
+
+    return manifest_path, profile_path
