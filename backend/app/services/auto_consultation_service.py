@@ -7,6 +7,7 @@ from app.models.api import (
     CandidateRanking,
     CandidateScreening,
     ConsultationRequest,
+    ProblemGroundedAnswerResponse,
     ProblemResearchPackageResponse,
 )
 from app.services.consultation_service import ConsultationService
@@ -16,6 +17,8 @@ from app.services.cross_dynasty_selector import (
     screen_all_han_tang_song_emperors,
 )
 from app.services.problem_research_package import build_problem_research_package
+from app.services.runtime_candidate_assessment import assess_runtime_problem
+from app.services.runtime_grounded_answer import render_runtime_grounded_answer
 
 
 class AutoConsultationService:
@@ -29,15 +32,20 @@ class AutoConsultationService:
 
     def consult(
         self, request: ConsultationRequest
-    ) -> AutoConsultationResponse | ProblemResearchPackageResponse:
-        """Answer a registered grounded question or automatically start research for an unseen one.
+    ) -> AutoConsultationResponse | ProblemGroundedAnswerResponse | ProblemResearchPackageResponse:
+        """Answer a registered question or run an unseen question through the runtime evidence gate.
 
-        An unseen question is no longer rejected merely because it lacks a hand-written Problem
-        manifest. The runtime creates a deterministic provisional Problem ID and recalls reviewed
-        reusable HEUs into a research package. This route deliberately does not grant responder
-        eligibility or render an answer: problem-specific review gates remain authoritative.
+        For an unseen question, reviewed reusable knowledge is automatically recalled and scored. If
+        the selected candidate passes the automatic evidence gate, a grounded answer is rendered
+        without requiring a hand-written Problem file. Otherwise the request safely stops at the
+        research package and no responder eligibility is granted.
         """
         if not self._supports(request.question):
+            assessment = assess_runtime_problem(request.question)
+            if assessment.auto_answer_ready:
+                rendered = render_runtime_grounded_answer(request.question)
+                return ProblemGroundedAnswerResponse.model_validate(asdict(rendered))
+
             package = build_problem_research_package(request.question)
             return ProblemResearchPackageResponse.model_validate(asdict(package))
 
