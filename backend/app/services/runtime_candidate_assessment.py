@@ -49,6 +49,22 @@ def _clamp(value: float) -> float:
     return round(max(0.0, min(1.0, value)), 4)
 
 
+def _select_runtime_candidate(
+    candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...],
+) -> RuntimeCandidateAssessment | None:
+    """Select the strongest candidate that can actually cross the requested gate.
+
+    Ranking remains score-first. When any candidate is fully answer-ready, prefer the highest-ranked
+    answer-ready candidate instead of letting a higher-scoring but incomplete evidence chain block
+    the entire runtime Problem. If nobody can answer yet, retain the highest-ranked eligible
+    candidate for explainability/research handoff.
+    """
+    answer_ready = next((item for item in candidates if item.auto_answer_ready), None)
+    if answer_ready is not None:
+        return answer_ready
+    return next((item for item in candidates if item.recommended_eligible), None)
+
+
 def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> RuntimeProblemAssessment:
     """Automatically assess an unregistered problem using only reviewed knowledge.
 
@@ -173,7 +189,7 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
         )
 
     assessed.sort(key=lambda item: (-item.candidate_score, -item.retrieval_score, item.person_id))
-    selected = next((item for item in assessed if item.recommended_eligible), None)
+    selected = _select_runtime_candidate(assessed)
     ready = bool(selected and selected.auto_answer_ready)
     return RuntimeProblemAssessment(
         problem_id=research.proposed_problem_id,
