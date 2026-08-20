@@ -1,0 +1,138 @@
+version: 1
+status: active_collection
+policy: >-
+  Phase 3 expands beyond the completed core dynastic histories into high-value primary and
+  near-primary governance corpora. A source is not considered ingested merely because it is
+  registered here. Every source must end in one of: ingested, documented_unavailable, or
+  blocked_with_reason. Qing and Ming institutional/imperial records are prioritized before
+  lower-priority auxiliary compilations.
+priority_order:
+  - qing_core
+  - ming_core
+  - comprehensive_chronology
+  - huiyao_and_institutional
+  - auxiliary_qing
+sources:
+  - source_id: CN-QING-0001
+    source_key: qing_shilu
+    title: 清實錄
+    coverage: 清
+    priority_group: qing_core
+    evidence_tier: primary_imperial_record
+    acquisition_strategy: catalog_required
+    corpus_key: qing_shilu
+    status: pending_catalog_resolution
+    note: >-
+      Multi-reign imperial veritable records require catalog-aware acquisition; do not force the
+      numbered-volume Wikisource extractor until a stable edition/index mapping is verified.
+  - source_id: CN-QING-0002
+    source_key: daqing_huidian
+    title: 大清會典
+    coverage: 清
+    priority_group: qing_core
+    evidence_tier: primary_institutional_record
+    acquisition_strategy: catalog_required
+    corpus_key: daqing_huidian
+    status: pending_catalog_resolution
+  - source_id: CN-MING-0002
+    source_key: ming_shilu
+    title: 明實錄
+    coverage: 明
+    priority_group: ming_core
+    evidence_tier: primary_imperial_record
+    acquisition_strategy: catalog_required
+    corpus_key: ming_shilu
+    status: pending_catalog_resolution
+  - source_id: CN-MING-0003
+    source_key: daming_huidian
+    title: 大明會典
+    coverage: 明
+    priority_group: ming_core
+    evidence_tier: primary_institutional_record
+    acquisition_strategy: catalog_required
+    corpus_key: daming_huidian
+    status: pending_catalog_resolution
+  - source_id: CN-TONGJIAN-0001
+    source_key: zizhitongjian_full
+    title: 資治通鑑
+    coverage: 戰國至五代
+    priority_group: comprehensive_chronology
+    evidence_tier: chronological_compilation
+    acquisition_strategy: wikisource_numbered_volumes
+    root_page: 資治通鑑
+    dynasty_group: comprehensive
+    corpus_key: zizhitongjian
+    volume_min: 1
+    volume_max: 294
+    status: ready_for_ingestion
+    note: Replaces partial problem-era use with a complete corpus archive; existing partial IDs remain immutable.
+  - source_id: CN-TANG-0005
+    source_key: tanghuiyao
+    title: 唐會要
+    coverage: 唐
+    priority_group: huiyao_and_institutional
+    evidence_tier: institutional_compilation
+    acquisition_strategy: wikisource_numbered_volumes
+    root_page: 唐會要
+    dynasty_group: tang
+    corpus_key: tanghuiyao
+    volume_min: 1
+    volume_max: 100
+    status: ready_for_ingestion
+  - source_id: CN-WUDAI-0003
+    source_key: wudaihuiyao
+    title: 五代會要
+    coverage: 五代
+    priority_group: huiyao_and_institutional
+    evidence_tier: institutional_compilation
+    acquisition_strategy: wikisource_numbered_volumes
+    root_page: 五代會要
+    dynasty_group: five_dynasties
+    corpus_key: wudaihuiyao
+    volume_min: 1
+    volume_max: 30
+    status: ready_for_ingestion
+  - source_id: CN-SONG-0003
+    source_key: songhuiyaojigao
+    title: 宋會要輯稿
+    coverage: 宋
+    priority_group: huiyao_and_institutional
+    evidence_tier: institutional_compilation
+    acquisition_strategy: catalog_required
+    corpus_key: songhuiyaojigao
+    status: pending_catalog_resolution
+  - source_id: CN-TONGKAO-0001
+    source_key: wenxian_tongkao
+    title: 文獻通考
+    coverage: 上古至宋
+    priority_group: huiyao_and_institutional
+    evidence_tier: institutional_compilation
+    acquisition_strategy: wikisource_numbered_volumes
+    root_page: 文獻通考
+    dynasty_group: comprehensive
+    corpus_key: wenxian_tongkao
+    volume_min: 1
+    volume_max: 348
+    status: ready_for_ingestion
+  - source_id: CN-YUAN-0002
+    source_key: yuan_dianzhang
+    title: 元典章
+    coverage: 元
+    priority_group: huiyao_and_institutional
+    evidence_tier: primary_institutional_record
+    acquisition_strategy: catalog_required
+    corpus_key: yuan_dianzhang
+    status: pending_catalog_resolution
+  - source_id: CN-QING-0003
+    source_key: qing_shigao
+    title: 清史稿
+    coverage: 清
+    priority_group: auxiliary_qing
+    evidence_tier: later_compiled_auxiliary
+    acquisition_strategy: catalog_required
+    corpus_key: qing_shigao
+    status: pending_catalog_resolution
+    note: Use below 清實錄 and 大清會典 in evidence ranking.
+completion_rule: >-
+  Phase 3 is complete only when every registered source is ingested or has an explicit
+  documented_unavailable/blocked_with_reason status with provenance. Registration alone is never completion.
