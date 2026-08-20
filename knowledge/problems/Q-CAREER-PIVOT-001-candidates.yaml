@@ -1,0 +1,71 @@
+problem_id: Q-CAREER-PIVOT-001
+status: reviewed
+candidates:
+  - persona_id: tang_gaozu
+    dynasty: tang
+    evidence_ids:
+      - CN-TANG-0001-V001-P0002
+      - CN-TANG-0001-V001-P0003
+      - CN-TANG-0001-V001-P0004
+    heu_ids:
+      - HEU-TANG-000004
+    insight_ids:
+      - INS-TANG-000003
+    scores:
+      experience_similarity: 0.94
+      evidence_strength: 0.90
+      stage_relevance: 0.95
+      lesson_clarity: 0.88
+      transferability: 0.88
+      counterevidence_quality: 0.72
+    rationale: >-
+      本题需要判断“继续原路径、修正还是转向”。唐高祖现有 reviewed HEU 直接覆盖外部秩序变化使原路径失效、
+      已作决定后又根据新信息修正行动的过程；INS-TANG-000003 对“路径转换与修正”有最直接的适配性。
+
+  - persona_id: tang_taizong
+    dynasty: tang
+    evidence_ids:
+      - CN-TANG-0001-V002-P0004
+      - CN-TANG-0002-V002-P0004
+      - CN-TANG-0004-V001-P0003
+      - CN-TANG-0004-V001-P0010
+      - CN-TANG-0004-V001-P0013
+      - CN-TANG-0004-V001-P0014
+    heu_ids:
+      - HEU-TANG-000001
+      - HEU-TANG-000002
+      - HEU-TANG-000003
+    insight_ids:
+      - INS-TANG-000001
+      - INS-TANG-000002
+    scores:
+      experience_similarity: 0.84
+      evidence_strength: 0.95
+      stage_relevance: 0.90
+      lesson_clarity: 0.92
+      transferability: 0.86
+      counterevidence_quality: 0.82
+    rationale: >-
+      唐太宗现有 reviewed 经验能够说明人生阶段变化后旧方法不再充分，以及持续获得反馈和修正判断的重要性；
+      对职业低谷中的“不要机械坚持”很有价值，但与职业路径转换本身的相似度略低于唐高祖。
+
+  - persona_id: liu_bang
+    dynasty: han
+    evidence_ids:
+      - CN-HAN-0001-V008-P0009
+      - CN-HAN-0001-V008-P0010
+      - CN-HAN-0001-V008-P0011
+    heu_ids:
+      - HEU-HAN-000001
+    insight_ids:
+      - INS-HAN-000001
+    scores:
+      experience_similarity: 0.90
+      evidence_strength: 0.86
+      stage_relevance: 0.90
+      lesson_clarity: 0.80
+      transferability: 0.82
+      counterevidence_quality: 0.65
+    rationale: >-
+      刘邦现有 reviewed HEU 包含失败后重新组织资源并继续调整行动的经验，适合反驳“遇到低谷就一定放弃”；
+      但其秦末军事政治环境与现代职业情境的迁移距离更大，因此不作为第一回答者。
