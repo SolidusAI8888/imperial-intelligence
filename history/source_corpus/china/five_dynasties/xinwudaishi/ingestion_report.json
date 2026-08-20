@@ -1,0 +1,608 @@
+{
+  "source_id": "CN-WUDAI-0002",
+  "title": "新五代史",
+  "expected_range": [
+    1,
+    74
+  ],
+  "extractor_version": 3,
+  "expected_titles": [
+    "新五代史/卷01",
+    "新五代史/卷02",
+    "新五代史/卷03",
+    "新五代史/卷04",
+    "新五代史/卷05",
+    "新五代史/卷06",
+    "新五代史/卷07",
+    "新五代史/卷08",
+    "新五代史/卷09",
+    "新五代史/卷10",
+    "新五代史/卷11",
+    "新五代史/卷12",
+    "新五代史/卷13",
+    "新五代史/卷14",
+    "新五代史/卷15",
+    "新五代史/卷16",
+    "新五代史/卷17",
+    "新五代史/卷18",
+    "新五代史/卷19",
+    "新五代史/卷20",
+    "新五代史/卷21",
+    "新五代史/卷22",
+    "新五代史/卷23",
+    "新五代史/卷24",
+    "新五代史/卷25",
+    "新五代史/卷26",
+    "新五代史/卷27",
+    "新五代史/卷28",
+    "新五代史/卷29",
+    "新五代史/卷30",
+    "新五代史/卷31",
+    "新五代史/卷32",
+    "新五代史/卷33",
+    "新五代史/卷34",
+    "新五代史/卷35",
+    "新五代史/卷36",
+    "新五代史/卷37",
+    "新五代史/卷38",
+    "新五代史/卷39",
+    "新五代史/卷40",
+    "新五代史/卷41",
+    "新五代史/卷42",
+    "新五代史/卷43",
+    "新五代史/卷44",
+    "新五代史/卷45",
+    "新五代史/卷46",
+    "新五代史/卷47",
+    "新五代史/卷48",
+    "新五代史/卷49",
+    "新五代史/卷50",
+    "新五代史/卷51",
+    "新五代史/卷52",
+    "新五代史/卷53",
+    "新五代史/卷54",
+    "新五代史/卷55",
+    "新五代史/卷56",
+    "新五代史/卷57",
+    "新五代史/卷58",
+    "新五代史/卷59",
+    "新五代史/卷60",
+    "新五代史/卷61",
+    "新五代史/卷62",
+    "新五代史/卷63",
+    "新五代史/卷64",
+    "新五代史/卷65",
+    "新五代史/卷66",
+    "新五代史/卷67",
+    "新五代史/卷68",
+    "新五代史/卷69",
+    "新五代史/卷70",
+    "新五代史/卷71",
+    "新五代史/卷72",
+    "新五代史/卷73",
+    "新五代史/卷74"
+  ],
+  "pages": [
+    {
+      "page": "新五代史/卷01",
+      "file": "001.txt",
+      "blocks": 18,
+      "revid": 1744233,
+      "sha256": "bcbcb87ae53e8a6cc22c66a632fa7286cb01cb3a21399259dd9482bdaaaad313"
+    },
+    {
+      "page": "新五代史/卷02",
+      "file": "002.txt",
+      "blocks": 51,
+      "revid": 2312021,
+      "sha256": "42c571bf7fbb864324a9b919b8a2e0c066d4b6760d6c211df85ab84bebb6052f"
+    },
+    {
+      "page": "新五代史/卷03",
+      "file": "003.txt",
+      "blocks": 44,
+      "revid": 2312022,
+      "sha256": "edb429d0f23c2f1b486a8f3c09535c83b0ccb9a3f1b3510428e8e92fb7e400a9"
+    },
+    {
+      "page": "新五代史/卷04",
+      "file": "004.txt",
+      "blocks": 28,
+      "revid": 1744306,
+      "sha256": "c57d35e3422be5f358045b8ddc26f081adaac62180e14d32544439367df9019d"
+    },
+    {
+      "page": "新五代史/卷05",
+      "file": "005.txt",
+      "blocks": 17,
+      "revid": 1744349,
+      "sha256": "c8e1efaa3c3bbab056950a4b65a7e8977ff36c06f033203041ae536fa8cab683"
+    },
+    {
+      "page": "新五代史/卷06",
+      "file": "006.txt",
+      "blocks": 24,
+      "revid": 1744385,
+      "sha256": "27dc86f1668766cacd419ce9446c1d96e978ae33bce2801cb5e8162912e59d82"
+    },
+    {
+      "page": "新五代史/卷07",
+      "file": "007.txt",
+      "blocks": 13,
+      "revid": 1744386,
+      "sha256": "1a84cbb8342c0d72504753afb78b0531189de1ba2dcce90fd9cc0ecbc5a15994"
+    },
+    {
+      "page": "新五代史/卷08",
+      "file": "008.txt",
+      "blocks": 14,
+      "revid": 1744641,
+      "sha256": "e574a9d68b31c0b798e278ddf4bb4a9ae6d34d7b03797dc0c5d6e3ca8382b41e"
+    },
+    {
+      "page": "新五代史/卷09",
+      "file": "009.txt",
+      "blocks": 11,
+      "revid": 1744642,
+      "sha256": "8893e39200aeccfba87458e0073453b84877e81729f2bdb0072c6bf6d948618b"
+    },
+    {
+      "page": "新五代史/卷10",
+      "file": "010.txt",
+      "blocks": 15,
+      "revid": 1744688,
+      "sha256": "8598ea3dea36e41d3bffc5a6acdc827a6fb0920bbdad2ee56cae2b0784607117"
+    },
+    {
+      "page": "新五代史/卷11",
+      "file": "011.txt",
+      "blocks": 15,
+      "revid": 1745589,
+      "sha256": "e13aa7976a4fb642b2f064f5323e526a0f0991a2f67a136b0d8e9ba693bff963"
+    },
+    {
+      "page": "新五代史/卷12",
+      "file": "012.txt",
+      "blocks": 14,
+      "revid": 1745590,
+      "sha256": "97b1413f393306b0ba0f769db1924c73f92f26a75eeddfd8bf0868835b976c61"
+    },
+    {
+      "page": "新五代史/卷13",
+      "file": "013.txt",
+      "blocks": 40,
+      "revid": 2244561,
+      "sha256": "4c7bb267eba9896a96794cc3e6e28214429f0f4a61d7b09ef37161fa34895162"
+    },
+    {
+      "page": "新五代史/卷14",
+      "file": "014.txt",
+      "blocks": 43,
+      "revid": 2292410,
+      "sha256": "aac63e9a8db25506d63dc63acb192a19a324dd6cd282e5db836b87482f7cf9a8"
+    },
+    {
+      "page": "新五代史/卷15",
+      "file": "015.txt",
+      "blocks": 34,
+      "revid": 1699112,
+      "sha256": "0090229977fa1730c72a202f74115a1c6775abb4f9731bafb69bc5c7d697679a"
+    },
+    {
+      "page": "新五代史/卷16",
+      "file": "016.txt",
+      "blocks": 7,
+      "revid": 2292660,
+      "sha256": "d09a1fb2419e95229c096a7d000a1cdce2d5a9557de347f2ea8509d48d2f3227"
+    },
+    {
+      "page": "新五代史/卷17",
+      "file": "017.txt",
+      "blocks": 45,
+      "revid": 1699172,
+      "sha256": "4176523c173865e9bd5dc0fd26c05034bb344cd71d354037d6561435f1517a27"
+    },
+    {
+      "page": "新五代史/卷18",
+      "file": "018.txt",
+      "blocks": 18,
+      "revid": 1699189,
+      "sha256": "4de5132c42044119dbfc97c1b6a4f39474738ffb36560954eb56e87da90d04d9"
+    },
+    {
+      "page": "新五代史/卷19",
+      "file": "019.txt",
+      "blocks": 14,
+      "revid": 1699202,
+      "sha256": "4187a80fadb7b315fa30c309629e513fb37c37c68ebeba5ddb39558e9e6e6296"
+    },
+    {
+      "page": "新五代史/卷20",
+      "file": "020.txt",
+      "blocks": 12,
+      "revid": 1699231,
+      "sha256": "c97af86042d14cdf0323520b283848b6874244fe7046ce8f76f43beaf5249ea3"
+    },
+    {
+      "page": "新五代史/卷21",
+      "file": "021.txt",
+      "blocks": 50,
+      "revid": 1699252,
+      "sha256": "41cc5a4db73859f948cf6e80ae81c0ae898bf61d94c35c3eeb3df9eb864a1c73"
+    },
+    {
+      "page": "新五代史/卷22",
+      "file": "022.txt",
+      "blocks": 39,
+      "revid": 1699277,
+      "sha256": "f585582dc5662403e817291ce053bbfc5a6eed35efbe24eb2911d01f3031a5cd"
+    },
+    {
+      "page": "新五代史/卷23",
+      "file": "023.txt",
+      "blocks": 28,
+      "revid": 1699313,
+      "sha256": "82747d96d75f0e1d63a22db374c4b2510152ef6626ffaedb66ef81b7d710036d"
+    },
+    {
+      "page": "新五代史/卷24",
+      "file": "024.txt",
+      "blocks": 35,
+      "revid": 1699340,
+      "sha256": "08a991c14a82ed4491dc9699334a3f1a974612327ebb7585f26d88b715be6bf5"
+    },
+    {
+      "page": "新五代史/卷25",
+      "file": "025.txt",
+      "blocks": 49,
+      "revid": 1699382,
+      "sha256": "4e32ef2f58a8484d847d35c74cf0ad2e55470dce32389e799a2ed8b77f22ea25"
+    },
+    {
+      "page": "新五代史/卷26",
+      "file": "026.txt",
+      "blocks": 29,
+      "revid": 1699412,
+      "sha256": "2742d66caf2ea07020d4721f3a94aff264c3e63423e735d4f4772eb2b9bb3cdb"
+    },
+    {
+      "page": "新五代史/卷27",
+      "file": "027.txt",
+      "blocks": 29,
+      "revid": 1699436,
+      "sha256": "6cf6e3895ef1f77d4197fa3b34803325a6ad68f8f8dc1fd0d3605abd70e1d8bd"
+    },
+    {
+      "page": "新五代史/卷28",
+      "file": "028.txt",
+      "blocks": 55,
+      "revid": 1699466,
+      "sha256": "d098036f388700d826da0e2e4311962e843ab0ff08a838acc945b557c6fec94f"
+    },
+    {
+      "page": "新五代史/卷29",
+      "file": "029.txt",
+      "blocks": 19,
+      "revid": 1699482,
+      "sha256": "6cb3f9ec5ab9f4a6140e6de7b0a071bd60c28d5b588ec7b6df7a46546317b064"
+    },
+    {
+      "page": "新五代史/卷30",
+      "file": "030.txt",
+      "blocks": 41,
+      "revid": 1699510,
+      "sha256": "610f5381613dffec4ac6882d159d207b03f7099887e3d9a01b8ea168145aa7bd"
+    },
+    {
+      "page": "新五代史/卷31",
+      "file": "031.txt",
+      "blocks": 19,
+      "revid": 1699528,
+      "sha256": "4b1a963c00cd23ed0db3f52ad8b0fa414454e7c0c50426037d47e42c907df883"
+    },
+    {
+      "page": "新五代史/卷32",
+      "file": "032.txt",
+      "blocks": 17,
+      "revid": 1699549,
+      "sha256": "cdad7f9f412b6c41d0d43e7d1e7a6cb1fd741d9aac296cb5944cb688a8084c7d"
+    },
+    {
+      "page": "新五代史/卷33",
+      "file": "033.txt",
+      "blocks": 32,
+      "revid": 1699593,
+      "sha256": "de757c8a31cc81031e158466e45b2bc19e28a47b5dd3164a3bc387faebeda2f9"
+    },
+    {
+      "page": "新五代史/卷34",
+      "file": "034.txt",
+      "blocks": 15,
+      "revid": 1743721,
+      "sha256": "dfed444ce472fdb2fe22c9dfafe8d74f0d8b591316f6760fe675efc12d68be36"
+    },
+    {
+      "page": "新五代史/卷35",
+      "file": "035.txt",
+      "blocks": 23,
+      "revid": 2112544,
+      "sha256": "3416586d0499371f47ec348db67fec72f18cd1fa61506421f3705e789df2c3de"
+    },
+    {
+      "page": "新五代史/卷36",
+      "file": "036.txt",
+      "blocks": 27,
+      "revid": 2112542,
+      "sha256": "0822a8f9188de66622cf19e1aaea5b7c7f69ff7dc7efe1f5939349ced97ea470"
+    },
+    {
+      "page": "新五代史/卷37",
+      "file": "037.txt",
+      "blocks": 17,
+      "revid": 2522730,
+      "sha256": "607ae795e67890603c07a59d284b9317dee6e0e58e12a7bffb2ec47a1f1cca8c"
+    },
+    {
+      "page": "新五代史/卷38",
+      "file": "038.txt",
+      "blocks": 15,
+      "revid": 2386313,
+      "sha256": "1c80fe49f56207db62ad34fc120523cbdf3e526aa2f42aff141bee706f8b7ba4"
+    },
+    {
+      "page": "新五代史/卷39",
+      "file": "039.txt",
+      "blocks": 47,
+      "revid": 1721611,
+      "sha256": "e0c1c073b5a6a84a4fe4ed4265ae9e73961f3b631b7c80c53e0b1bbad280e968"
+    },
+    {
+      "page": "新五代史/卷40",
+      "file": "040.txt",
+      "blocks": 51,
+      "revid": 1721657,
+      "sha256": "e873294851092954f8ee0404e9bed03d63be94aba4d17bf876bafbcc65fc0483"
+    },
+    {
+      "page": "新五代史/卷41",
+      "file": "041.txt",
+      "blocks": 24,
+      "revid": 1721673,
+      "sha256": "522b75af65479cd45a2f42cdcb61ec61359b5a24a49616a24af49d6620720183"
+    },
+    {
+      "page": "新五代史/卷42",
+      "file": "042.txt",
+      "blocks": 57,
+      "revid": 1721703,
+      "sha256": "0077fac5ee8d83de4f31ef7dab1f9742aa7151f5f8084113a2a818e53e25bb07"
+    },
+    {
+      "page": "新五代史/卷43",
+      "file": "043.txt",
+      "blocks": 42,
+      "revid": 1721733,
+      "sha256": "ced8c779d1dee01528f9518a76700469992fc1620584dd502106c0b96398cc07"
+    },
+    {
+      "page": "新五代史/卷44",
+      "file": "044.txt",
+      "blocks": 30,
+      "revid": 1721755,
+      "sha256": "107b3701c454811e468afc7b5f78e21dfde3344bdbbd6b864a70688a89c89b43"
+    },
+    {
+      "page": "新五代史/卷45",
+      "file": "045.txt",
+      "blocks": 49,
+      "revid": 1727004,
+      "sha256": "9fabe90aecde5ae609b3b35f900a920781f8ce44690c5dd524889b90409adf8b"
+    },
+    {
+      "page": "新五代史/卷46",
+      "file": "046.txt",
+      "blocks": 47,
+      "revid": 1727046,
+      "sha256": "3fe5185fb0d46a134693a76213368c03472bc9e61db224f7901174ab38755675"
+    },
+    {
+      "page": "新五代史/卷47",
+      "file": "047.txt",
+      "blocks": 61,
+      "revid": 1727132,
+      "sha256": "062cc685922564826a028208a57265c2c551771f82706ab799f84086fb22ea2d"
+    },
+    {
+      "page": "新五代史/卷48",
+      "file": "048.txt",
+      "blocks": 45,
+      "revid": 1727162,
+      "sha256": "818e5d1fb426c36814acb9f81e3b4e351a0e3c3bc0baddc2b543647d6207d5b5"
+    },
+    {
+      "page": "新五代史/卷49",
+      "file": "049.txt",
+      "blocks": 23,
+      "revid": 1727178,
+      "sha256": "5f572c1dc2d2f5f4cce019cd6eba5dfda5e687553a21413b75e54acb4d6bfb9d"
+    },
+    {
+      "page": "新五代史/卷50",
+      "file": "050.txt",
+      "blocks": 27,
+      "revid": 1727205,
+      "sha256": "0bf787bb27212742d5d3e26330273df264a115a4301e47669d45a09cc4af0bd0"
+    },
+    {
+      "page": "新五代史/卷51",
+      "file": "051.txt",
+      "blocks": 50,
+      "revid": 1727238,
+      "sha256": "99f249b1eea2a97ca6e5e00e85cf2e6c803b64abadc7eab4a45cc497c8f7aeb7"
+    },
+    {
+      "page": "新五代史/卷52",
+      "file": "052.txt",
+      "blocks": 34,
+      "revid": 1727259,
+      "sha256": "d81af0f95fa817d818d8cc21d1d1d2f514514eeaab4542c962781ff90c8f854e"
+    },
+    {
+      "page": "新五代史/卷53",
+      "file": "053.txt",
+      "blocks": 22,
+      "revid": 1727286,
+      "sha256": "4a273ae8da4a486d687ea940a206627ee2cca9976d7b61a39e46d53495fd15cf"
+    },
+    {
+      "page": "新五代史/卷54",
+      "file": "054.txt",
+      "blocks": 38,
+      "revid": 1727329,
+      "sha256": "03b7029b3168ecb70dd75c9441d433e55a6659bacb8b99d82a22b140f96a29ed"
+    },
+    {
+      "page": "新五代史/卷55",
+      "file": "055.txt",
+      "blocks": 41,
+      "revid": 1727507,
+      "sha256": "041f35d61d0c552603480dcdc9f9a59b754338dab0660e5577769fd26379ac86"
+    },
+    {
+      "page": "新五代史/卷56",
+      "file": "056.txt",
+      "blocks": 40,
+      "revid": 1727534,
+      "sha256": "1eb3bc49eed0156914ca4ab15eab9efe3dff41019496f6957ee2dbd44c630c4b"
+    },
+    {
+      "page": "新五代史/卷57",
+      "file": "057.txt",
+      "blocks": 45,
+      "revid": 1727569,
+      "sha256": "bf623364110e6785ca811b33d3c832e8e0f902d40ee601546cfa45a6cf222b2c"
+    },
+    {
+      "page": "新五代史/卷58",
+      "file": "058.txt",
+      "blocks": 613,
+      "revid": 1674686,
+      "sha256": "e4db894e36fe10834d727dd087cc4721adb84ffb058ecc309e16149b291cf176"
+    },
+    {
+      "page": "新五代史/卷59",
+      "file": "059.txt",
+      "blocks": 21,
+      "revid": 1665200,
+      "sha256": "f3202d3152c06b9306fbb3e34e2bb8d59cf074a7002466a7093d6bc2f4fd581d"
+    },
+    {
+      "page": "新五代史/卷60",
+      "file": "060.txt",
+      "blocks": 1780,
+      "revid": 8730516,
+      "sha256": "44e3f0c06abe928ebbad173585ea46ce63865c0596cc73ff03403afb62e8ecd1"
+    },
+    {
+      "page": "新五代史/卷61",
+      "file": "061.txt",
+      "blocks": 46,
+      "revid": 1674687,
+      "sha256": "ebeb6397e0801f564662dec4295ede4188a73ffea58e0c816d71151a532bbb37"
+    },
+    {
+      "page": "新五代史/卷62",
+      "file": "062.txt",
+      "blocks": 48,
+      "revid": 1674689,
+      "sha256": "5fb20f6db3ef3786a48fbe102204c9146f45587f88d0d8a970b18e2a31cd3039"
+    },
+    {
+      "page": "新五代史/卷63",
+      "file": "063.txt",
+      "blocks": 42,
+      "revid": 1674690,
+      "sha256": "cc515e54d7ece5877cafb7c509e2ddf4aa9d2dbf11b3a968782187871053d2ca"
+    },
+    {
+      "page": "新五代史/卷64",
+      "file": "064.txt",
+      "blocks": 33,
+      "revid": 1674692,
+      "sha256": "55d4c08344ac1666e3ad783669ca8739f2da8f6c38e65dbea3a2edb6b2f3465b"
+    },
+    {
+      "page": "新五代史/卷65",
+      "file": "065.txt",
+      "blocks": 46,
+      "revid": 1674693,
+      "sha256": "5f812f95b3093282253709eb20738eb25d288178585e5c7628880546aeff3747"
+    },
+    {
+      "page": "新五代史/卷66",
+      "file": "066.txt",
+      "blocks": 36,
+      "revid": 2031673,
+      "sha256": "e501ed1f24ddc7943e44d851fb2ede7d56e57b3d109072f5d597cdb32b59bb2f"
+    },
+    {
+      "page": "新五代史/卷67",
+      "file": "067.txt",
+      "blocks": 30,
+      "revid": 1674695,
+      "sha256": "476a71b4cd0d638a7d3b76e7647422724ec12a9c0226a9ed678b3278cd00a377"
+    },
+    {
+      "page": "新五代史/卷68",
+      "file": "068.txt",
+      "blocks": 34,
+      "revid": 1674696,
+      "sha256": "1ac1286bbb31b60113cf78aa148b51355587d7a241732affa20e493241a225e4"
+    },
+    {
+      "page": "新五代史/卷69",
+      "file": "069.txt",
+      "blocks": 21,
+      "revid": 1674698,
+      "sha256": "43d58413c13bee5c8b0cebdfcd92a8055319955fd9f215d970f087d649d94f85"
+    },
+    {
+      "page": "新五代史/卷70",
+      "file": "070.txt",
+      "blocks": 30,
+      "revid": 1674699,
+      "sha256": "ccbaf2a4fcefd0ee907f2b5e39bb030fced8601e417a7abd53dbc0d87d6cca2f"
+    },
+    {
+      "page": "新五代史/卷71",
+      "file": "071.txt",
+      "blocks": 352,
+      "revid": 1674776,
+      "sha256": "1196445120c32c7c3b980a02aa63e097357d012b2895b242e8a9100facf3ef48"
+    },
+    {
+      "page": "新五代史/卷72",
+      "file": "072.txt",
+      "blocks": 23,
+      "revid": 1665076,
+      "sha256": "1720adf097bd76383d7804d0930021cb3d16b7160b96aab0434062235ad02057"
+    },
+    {
+      "page": "新五代史/卷73",
+      "file": "073.txt",
+      "blocks": 14,
+      "revid": 2015482,
+      "sha256": "c67919b753deae4171a03c9a9553257db4127de1d4328fc1ef39628968e3199c"
+    },
+    {
+      "page": "新五代史/卷74",
+      "file": "074.txt",
+      "blocks": 39,
+      "revid": 2543105,
+      "sha256": "0041421f3117f2bfd29b8a425ede3a40dc42c99ff03c3c9bce6851cc7217fbe9"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "archived_file_pairs": 74
+}
