@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import re
 
 from app.services.cross_dynasty_selector import CandidateExperience, score_candidate
 from app.services.knowledge_repository import (
@@ -20,6 +21,8 @@ _ROLE_STRENGTH = {
     "strong": 0.8,
     "primary": 1.0,
 }
+_CJK_RE = re.compile(r"[\u3400-\u9fff]+")
+_LATIN_RE = re.compile(r"[A-Za-z0-9_]+")
 
 
 @dataclass(frozen=True)
@@ -47,6 +50,38 @@ class RuntimeProblemAssessment:
 
 def _clamp(value: float) -> float:
     return round(max(0.0, min(1.0, value)), 4)
+
+
+def _relevance_terms(text: str) -> set[str]:
+    """Return deterministic lexical terms for problem-specific relevance checks."""
+    terms: set[str] = set()
+    for span in _CJK_RE.findall(text):
+        for size in (2, 3):
+            if len(span) >= size:
+                terms.update(span[i : i + size] for i in range(len(span) - size + 1))
+    terms.update(token.lower() for token in _LATIN_RE.findall(text))
+    return terms
+
+
+def _insight_relevant_to_question(question: str, insight: object) -> bool:
+    """Require an Insight to overlap the current problem, not merely a recalled HEU.
+
+    HEU recall is intentionally broad. Without this second gate, any reviewed Insight derived from a
+    recalled HEU could silently become problem-specific evidence for a new question. This check is
+    deliberately lightweight and deterministic: at least one Chinese 2/3-gram or Latin token must
+    overlap between the current question and the Insight statement/application conditions/limits.
+    """
+    query_terms = _relevance_terms(question)
+    if not query_terms:
+        return False
+    insight_text = " ".join(
+        [
+            getattr(insight, "statement", ""),
+            *getattr(insight, "applies_when", ()),
+            *getattr(insight, "limits", ()),
+        ]
+    )
+    return bool(query_terms & _relevance_terms(insight_text))
 
 
 def _select_runtime_candidate(
@@ -87,12 +122,17 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             continue
 
         heu_ids = {heu.heu_id for heu in heus}
-        insights = [
+        derived_insights = [
             insight
             for insight in load_person_insights(person_id)
             if insight.status in _REVIEWED
             and insight.derived_from_heus
             and set(insight.derived_from_heus).issubset(heu_ids)
+        ]
+        insights = [
+            insight
+            for insight in derived_insights
+            if _insight_relevant_to_question(research.normalized_question, insight)
         ]
 
         required_record_ids = {record_id for heu in heus for record_id in heu.record_links}
@@ -141,7 +181,8 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
 
         rationale = (
             f"automatic assessment from {len(heus)} reviewed HEU(s), {len(records)} reviewed HER(s), "
-            f"{len(insights)} reviewed Insight(s), {len(canonical_ids)} canonical evidence id(s), "
+            f"{len(insights)} problem-relevant reviewed Insight(s) out of {len(derived_insights)} "
+            f"derived Insight(s), {len(canonical_ids)} canonical evidence id(s), "
             f"and {len(role_links)} eligible role link(s)"
         )
         scored = score_candidate(
