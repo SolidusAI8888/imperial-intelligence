@@ -5,9 +5,10 @@ import re
 
 from app.services.problem_research_package import ProblemResearchPackage, build_problem_research_package, provisional_problem_id
 from app.services.runtime_candidate_assessment import assess_runtime_problem
-from app.services.runtime_grounded_answer import RuntimeRenderedGroundedAnswer, render_runtime_grounded_answer
+from app.services.runtime_grounded_answer import render_runtime_grounded_answer
 
-_TOKEN_RE = re.compile(r"[A-Za-z0-9_]+|[\u4e00-\u9fff]")
+_WORD_RE = re.compile(r"[A-Za-z0-9_]+")
+_CJK_RUN_RE = re.compile(r"[\u4e00-\u9fff]+")
 
 
 @dataclass(frozen=True)
@@ -30,7 +31,20 @@ class RuntimeConversationTurn:
 
 
 def _tokens(text: str) -> set[str]:
-    return {token.lower() for token in _TOKEN_RE.findall(text or "") if token.strip()}
+    """Return word tokens plus Chinese character bigrams.
+
+    Single-character Chinese overlap badly overestimates semantic continuity because unrelated
+    questions often share generic characters such as 应、该、先. Bigrams preserve lightweight,
+    dependency-free matching while sharply reducing those false positives.
+    """
+    text = text or ""
+    tokens = {word.lower() for word in _WORD_RE.findall(text)}
+    for run in _CJK_RUN_RE.findall(text):
+        if len(run) == 1:
+            tokens.add(run)
+        else:
+            tokens.update(run[index : index + 2] for index in range(len(run) - 1))
+    return tokens
 
 
 def _continuity_score(anchor_question: str, followup: str, history: tuple[str, ...]) -> float:
@@ -90,11 +104,7 @@ def continue_runtime_conversation(
 
     score = _continuity_score(anchor, question, conversation_history)
     if score >= continuity_threshold:
-        answer = render_runtime_grounded_answer(
-            question,
-            anchor_question=anchor,
-            candidate_limit=candidate_limit,
-        )
+        answer = render_runtime_grounded_answer(question, anchor_question=anchor, candidate_limit=candidate_limit)
         return RuntimeConversationTurn(
             original_problem_id=original_problem_id,
             active_problem_id=original_problem_id,
@@ -102,10 +112,7 @@ def continue_runtime_conversation(
             previous_person_id=current_person_id,
             user_question=question,
             route="continue_current_runtime_responder",
-            route_reason=(
-                f"Follow-up continuity score {score:.2f} is within runtime Problem scope; "
-                "the same reviewed evidence bundle remains authoritative."
-            ),
+            route_reason=(f"Follow-up continuity score {score:.2f} is within runtime Problem scope; the same reviewed evidence bundle remains authoritative."),
             responder_switched=False,
             historical_voice=answer.historical_voice,
             modern_translation=answer.modern_translation,
@@ -126,10 +133,7 @@ def continue_runtime_conversation(
             previous_person_id=current_person_id,
             user_question=question,
             route="drift_reselected_runtime_responder",
-            route_reason=(
-                f"Follow-up continuity score {score:.2f} is below {continuity_threshold:.2f}; "
-                "a fresh runtime Problem passed the evidence gate and a responder was reselected."
-            ),
+            route_reason=(f"Follow-up continuity score {score:.2f} is below {continuity_threshold:.2f}; a fresh runtime Problem passed the evidence gate and a responder was reselected."),
             responder_switched=answer.person_id != current_person_id,
             historical_voice=answer.historical_voice,
             modern_translation=answer.modern_translation,
@@ -148,10 +152,7 @@ def continue_runtime_conversation(
         previous_person_id=current_person_id,
         user_question=question,
         route="drift_requires_new_problem_research",
-        route_reason=(
-            f"Follow-up continuity score {score:.2f} is below {continuity_threshold:.2f}; "
-            "fresh runtime assessment did not pass the evidence gate."
-        ),
+        route_reason=(f"Follow-up continuity score {score:.2f} is below {continuity_threshold:.2f}; fresh runtime assessment did not pass the evidence gate."),
         responder_switched=False,
         historical_voice=None,
         modern_translation=None,
