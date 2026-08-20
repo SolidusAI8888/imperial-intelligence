@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+from dataclasses import asdict
+
 from app.models.api import (
     AutoConsultationResponse,
     CandidateRanking,
     CandidateScreening,
     ConsultationRequest,
+    ProblemResearchPackageResponse,
 )
 from app.services.consultation_service import ConsultationService
 from app.services.cross_dynasty_selector import (
@@ -12,10 +15,11 @@ from app.services.cross_dynasty_selector import (
     rank_candidates,
     screen_all_han_tang_song_emperors,
 )
+from app.services.problem_research_package import build_problem_research_package
 
 
 class AutoConsultationService:
-    def __init__(self, consultation_service: ConsultationService) -> None:
+    def __init__(self, consultation_service: ConsultationService | None) -> None:
         self.consultation_service = consultation_service
 
     @staticmethod
@@ -23,9 +27,19 @@ class AutoConsultationService:
         normalized = "".join(question.split())
         return "命运" in normalized and ("主宰" in normalized or "谁决定" in normalized)
 
-    def consult(self, request: ConsultationRequest) -> AutoConsultationResponse:
+    def consult(
+        self, request: ConsultationRequest
+    ) -> AutoConsultationResponse | ProblemResearchPackageResponse:
+        """Answer a registered grounded question or automatically start research for an unseen one.
+
+        An unseen question is no longer rejected merely because it lacks a hand-written Problem
+        manifest. The runtime creates a deterministic provisional Problem ID and recalls reviewed
+        reusable HEUs into a research package. This route deliberately does not grant responder
+        eligibility or render an answer: problem-specific review gates remain authoritative.
+        """
         if not self._supports(request.question):
-            raise ValueError("Cross-dynasty auto selection is not yet grounded for this question")
+            package = build_problem_research_package(request.question)
+            return ProblemResearchPackageResponse.model_validate(asdict(package))
 
         screened = screen_all_han_tang_song_emperors()
         ranked = rank_candidates(first_fate_question_candidates())
@@ -33,6 +47,8 @@ class AutoConsultationService:
             raise ValueError("No reviewed emperor knowledge chain is eligible for this question")
         selected = ranked[0]
 
+        if self.consultation_service is None:
+            raise ValueError("Consultation service is required for a reviewed grounded answer")
         consultation = self.consultation_service.consult(selected.persona_id, request)
 
         return AutoConsultationResponse(
