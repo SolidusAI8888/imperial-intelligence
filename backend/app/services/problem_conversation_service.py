@@ -41,10 +41,14 @@ def _continuity_score(problem_text: str, followup: str, history: tuple[str, ...]
         recent = _tokens(" ".join(history[-4:]))
         overlap = max(overlap, len(recent & follow) / max(1, len(follow)))
 
+    # Only discourse markers that strongly refer back to the existing dialogue may
+    # rescue a low lexical-overlap follow-up. Generic question words such as “如何”
+    # or “为什么” are deliberately excluded because they also occur in new topics.
     continuation_markers = {
-        "你", "你说", "刚才", "前面", "这个", "这些", "为什么", "那", "那么",
-        "但是", "可是", "依据", "证据", "举例", "具体", "怎么办", "意思",
-        "不同意", "反对", "真的吗", "如何", "怎样", "为何",
+        "你刚才", "你前面", "你说", "刚才说", "前面说", "这个观点", "这个判断",
+        "这些经历", "这个例子", "这件事", "但是你", "可是你", "我不同意",
+        "我反对", "你的依据", "你的证据", "具体一点", "再举例", "那你的意思",
+        "那么你的意思", "那我该怎么办", "那具体怎么办",
     }
     if any(marker in followup for marker in continuation_markers):
         overlap = max(overlap, 0.45)
