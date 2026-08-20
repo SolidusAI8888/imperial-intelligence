@@ -31,6 +31,7 @@ from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
 from app.services.runtime_candidate_assessment import assess_runtime_problem
 from app.services.runtime_conversation_service import continue_runtime_conversation
+from app.services.runtime_explainability import explain_runtime_problem
 
 app = FastAPI(title="帝王智库 API", version="0.1.0", description="中国历代帝王历史人格智能顾问平台后端")
 repository = PersonaRepository()
@@ -96,6 +97,15 @@ def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPack
 def assess_new_problem(request: ProblemResearchRequest) -> dict:
     try:
         return asdict(assess_runtime_problem(request.question, candidate_limit=request.candidate_limit))
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/explain")
+def explain_new_problem(request: ProblemResearchRequest) -> dict:
+    """Return a read-only audit trail for automatic runtime responder selection."""
+    try:
+        return asdict(explain_runtime_problem(request.question, candidate_limit=request.candidate_limit))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
