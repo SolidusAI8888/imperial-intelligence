@@ -1,0 +1,22 @@
+problem_id: Q-CAREER-PIVOT-001
+raw_question: 一个人在职业低谷时，是应该坚持原来的方向，还是及时改变？
+normalized_question: 当原有职业路径持续受挫时，如何判断应继续坚持、调整策略，还是转换方向？
+retrieval_dimensions:
+  - 原有路径因外部环境变化而失去稳定性或有效性
+  - 经历失败后重新组织资源、调整行动并继续前进
+  - 已作出的决定因新信息而被修正
+  - 人生阶段变化导致过去有效的方法不再适用
+  - 坚持与转向都存在成本，不能把一次成败当成唯一判断依据
+knowledge_policy:
+  reusable_layers:
+    - HER
+    - HEU
+  problem_specific_layers:
+    - insight_selection
+    - candidate_scoring
+    - responder_eligibility
+  rule: >-
+    本题只复用已经 reviewed/accepted 的人物 HER、HEU 与 Insight；候选评分与回答资格按本题重新判断，
+    不继承 Q-FATE-AGENCY-001 的排名结果。
+candidate_profile: knowledge/problems/Q-CAREER-PIVOT-001-candidates.yaml
+status: reviewed
