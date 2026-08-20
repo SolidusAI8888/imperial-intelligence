@@ -121,6 +121,15 @@ class ProblemDraftResponse(BaseModel):
     persisted: bool
 
 
+class ProblemDraftReadinessResponse(BaseModel):
+    problem_id: str
+    ready: bool
+    blockers: list[str]
+    status: str
+    manifest_path: str
+    candidate_profile_path: str
+
+
 class ProblemPromotionRequest(BaseModel):
     draft_problem_id: str = Field(min_length=1, max_length=64)
     registered_problem_id: str = Field(min_length=4, max_length=66)
