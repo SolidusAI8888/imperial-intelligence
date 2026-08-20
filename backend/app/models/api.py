@@ -102,3 +102,20 @@ class ProblemResearchPackageResponse(BaseModel):
     status: Literal["research_package_requires_human_review"]
     can_render_answer: Literal[False]
     required_next_gate: str
+
+
+class ProblemDraftRequest(BaseModel):
+    question: str = Field(min_length=2, max_length=4000)
+    candidate_limit: int = Field(default=20, ge=1, le=50)
+    persist: bool = False
+
+
+class ProblemDraftResponse(BaseModel):
+    problem_id: str
+    manifest_path: str
+    candidate_profile_path: str
+    status: Literal["draft_package_requires_human_review"]
+    responder_eligible: Literal[False]
+    can_render_answer: Literal[False]
+    required_next_gate: str
+    persisted: bool
