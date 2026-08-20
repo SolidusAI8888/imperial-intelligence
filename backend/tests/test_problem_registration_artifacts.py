@@ -8,7 +8,10 @@ from app.services.problem_draft_package import (
     persist_problem_draft_package,
 )
 from app.services.problem_knowledge_repository import load_problem_candidate_profile
-from app.services.problem_registration_artifacts import build_problem_registration_package
+from app.services.problem_registration_artifacts import (
+    build_problem_registration_package,
+    persist_problem_registration_package,
+)
 
 
 QUESTION = "一个人在职业低谷时，是应该坚持原来的方向，还是及时改变？"
@@ -146,3 +149,48 @@ def test_registration_package_rejects_evidence_outside_reviewed_chain(tmp_path: 
         assert "outside its HER chain" in str(exc)
     else:
         raise AssertionError("out-of-chain evidence must block registration")
+
+
+def test_registration_persistence_writes_profile_then_manifest_targets(tmp_path: Path) -> None:
+    draft_root = tmp_path / "drafts"
+    project_root = tmp_path / "project"
+    manifest_path, profile_path, _ = _review_ready_paths(draft_root)
+    package = build_problem_registration_package(
+        manifest_path,
+        profile_path,
+        registered_problem_id="Q-CAREER-DIRECTION-001",
+    )
+
+    written_manifest, written_profile = persist_problem_registration_package(
+        package,
+        project_root=project_root,
+    )
+
+    assert written_manifest.exists()
+    assert written_profile.exists()
+    assert yaml.safe_load(written_manifest.read_text(encoding="utf-8"))["problem_id"] == package.registered_problem_id
+    assert yaml.safe_load(written_profile.read_text(encoding="utf-8"))["problem_id"] == package.registered_problem_id
+
+
+def test_registration_persistence_never_overwrites_existing_problem(tmp_path: Path) -> None:
+    draft_root = tmp_path / "drafts"
+    project_root = tmp_path / "project"
+    manifest_path, profile_path, _ = _review_ready_paths(draft_root)
+    package = build_problem_registration_package(
+        manifest_path,
+        profile_path,
+        registered_problem_id="Q-CAREER-DIRECTION-001",
+    )
+    target_manifest = project_root / package.manifest.relative_path
+    target_manifest.parent.mkdir(parents=True, exist_ok=True)
+    target_manifest.write_text("existing: true\n", encoding="utf-8")
+
+    try:
+        persist_problem_registration_package(package, project_root=project_root)
+    except FileExistsError as exc:
+        assert "already exists" in str(exc)
+    else:
+        raise AssertionError("existing registered Problems must never be overwritten")
+
+    assert target_manifest.read_text(encoding="utf-8") == "existing: true\n"
+    assert not (project_root / package.candidate_profile.relative_path).exists()
