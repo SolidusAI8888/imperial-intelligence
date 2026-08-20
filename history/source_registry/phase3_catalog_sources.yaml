@@ -1,0 +1,69 @@
+version: 1
+status: active_catalog_acquisition
+policy: >-
+  Catalog-aware corpora must preserve a verified root catalog and child-work identity before
+  any page-level archival ingestion. Host completion and project archival completion are
+  separate states: archiving every currently available host page does not prove that the
+  historical source itself is complete.
+sources:
+  - source_id: CN-QING-0001
+    title: 清實錄
+    root_page: 清實錄
+    dynasty_group: qing
+    corpus_key: qing_shilu
+    acquisition_strategy: wikisource_catalog_children
+    host: zh_wikisource
+    catalog_status: verified_root_catalog
+    host_completeness: explicitly_incomplete
+    historical_extent_note: 維基文庫根頁記載《清實錄》凡四千三百二十六卷，且頁面標示部分原作內容尚未錄入。
+    child_works:
+      - {key: manzhou_shilu, title: 滿洲實錄}
+      - {key: taizu_shilu, title: 太祖實錄}
+      - {key: taizong_shilu, title: 太宗文皇帝實錄}
+      - {key: shizu_shilu, title: 世祖章皇帝實錄}
+      - {key: shengzu_shilu, title: 聖祖仁皇帝實錄}
+      - {key: shizong_shilu, title: 世宗憲皇帝實錄}
+      - {key: gaozong_shilu, title: 高宗純皇帝實錄}
+      - {key: renzong_shilu, title: 仁宗睿皇帝實錄}
+      - {key: xuanzong_shilu, title: 宣宗成皇帝實錄}
+      - {key: wenzong_shilu, title: 文宗顯皇帝實錄}
+      - {key: muzong_shilu, title: 穆宗毅皇帝實錄}
+      - {key: dezong_shilu, title: 德宗景皇帝實錄}
+      - {key: xuantong_zhengji, title: 宣統政紀}
+    completion_semantics:
+      archival_target: all_currently_available_catalog_child_pages
+      source_complete_only_if: independent_extent_check_matches_historical_catalog
+      current_expected_result: partial_host_archive
+  - source_id: CN-MING-0002
+    title: 明實錄
+    root_page: 明實錄
+    dynasty_group: ming
+    corpus_key: ming_shilu
+    acquisition_strategy: wikisource_catalog_children
+    host: zh_wikisource
+    catalog_status: verified_root_catalog
+    host_completeness: explicitly_incomplete
+    historical_extent_note: 維基文庫根頁記載官修十三部、二千九百零九卷，且頁面標示部分原作內容尚未錄入。
+    child_works:
+      - {key: taizu_shilu, title: 太祖高皇帝實錄}
+      - {key: taizong_shilu, title: 太宗文皇帝實錄}
+      - {key: renzong_shilu, title: 仁宗昭皇帝實錄}
+      - {key: xuanzong_shilu, title: 宣宗章皇帝實錄}
+      - {key: yingzong_shilu, title: 英宗睿皇帝實錄}
+      - {key: xianzong_shilu, title: 憲宗純皇帝實錄}
+      - {key: xiaozong_shilu, title: 孝宗敬皇帝實錄}
+      - {key: wuzong_shilu, title: 武宗毅皇帝實錄}
+      - {key: shizong_shilu, title: 世宗肅皇帝實錄}
+      - {key: muzong_shilu, title: 穆宗莊皇帝實錄}
+      - {key: shenzong_shilu, title: 神宗顯皇帝實錄}
+      - {key: guangzong_shilu, title: 光宗貞皇帝實錄}
+      - {key: xizong_shilu, title: 熹宗悊皇帝實錄}
+    excluded_supplemental_works:
+      - 崇禎長編
+      - 弘光實錄鈔
+      - 永曆實錄
+    exclusion_note: 根頁列為「錄外」，不與官修十三部混入 CN-MING-0002；如需使用應另立來源與證據等級。
+    completion_semantics:
+      archival_target: all_currently_available_catalog_child_pages
+      source_complete_only_if: independent_extent_check_matches_historical_catalog
+      current_expected_result: partial_host_archive
