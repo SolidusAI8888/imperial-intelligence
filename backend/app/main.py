@@ -9,6 +9,7 @@ from app.models.api import (
     ProblemDraftReadinessResponse,
     ProblemDraftRequest,
     ProblemDraftResponse,
+    ProblemDraftReviewPacketResponse,
     ProblemGroundedAnswerResponse,
     ProblemPromotionRequest,
     ProblemPromotionResponse,
@@ -24,6 +25,7 @@ from app.services.problem_draft_package import (
     persist_problem_draft_package,
 )
 from app.services.problem_draft_readiness_service import inspect_problem_draft_readiness
+from app.services.problem_draft_review_packet import build_problem_draft_review_packet
 from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
 
@@ -154,6 +156,23 @@ def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessRespo
     try:
         return ProblemDraftReadinessResponse.model_validate(
             asdict(inspect_problem_draft_readiness(draft_problem_id))
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get("/problems/drafts/{draft_problem_id}/review-packet", response_model=ProblemDraftReviewPacketResponse)
+def problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftReviewPacketResponse:
+    """Return reviewed HEU evidence and safe existing-Insight suggestions for human review.
+
+    Suggestions remain non-selected and non-authoritative. The endpoint is read-only
+    and cannot change candidate scores, responder eligibility, or answer permission.
+    """
+    try:
+        return ProblemDraftReviewPacketResponse.model_validate(
+            asdict(build_problem_draft_review_packet(draft_problem_id))
         )
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
