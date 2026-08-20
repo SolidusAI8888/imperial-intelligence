@@ -119,3 +119,18 @@ class ProblemDraftResponse(BaseModel):
     can_render_answer: Literal[False]
     required_next_gate: str
     persisted: bool
+
+
+class ProblemPromotionRequest(BaseModel):
+    draft_problem_id: str = Field(min_length=1, max_length=64)
+    registered_problem_id: str = Field(min_length=4, max_length=66)
+    persist: bool = False
+
+
+class ProblemPromotionResponse(BaseModel):
+    source_draft_problem_id: str
+    registered_problem_id: str
+    manifest_path: str
+    candidate_profile_path: str
+    status: str
+    persisted: bool
