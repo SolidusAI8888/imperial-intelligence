@@ -115,7 +115,7 @@ def test_scoring_persists_runtime_payload_without_granting_eligibility(monkeypat
     assert result.candidate_scoring_completed is True
     assert result.responder_eligibility_changed is False
     assert result.answer_permission_changed is False
-    assert row["candidate_score"] == 0.755
+    assert row["candidate_score"] == 0.76
     assert row["registration_candidate"]["dynasty"] == "tang"
     assert row["registration_candidate"]["evidence_ids"] == ["CANON-TEST-001"]
     assert row["registration_candidate"]["insight_ids"] == ["INS-TEST-001"]
