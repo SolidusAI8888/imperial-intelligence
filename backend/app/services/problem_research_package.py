@@ -39,8 +39,14 @@ def normalize_research_question(question: str) -> str:
 
 
 def provisional_problem_id(question: str) -> str:
+    """Return the canonical provisional Problem ID used by the persisted draft lifecycle.
+
+    Draft lookup validates exactly 16 hexadecimal digest characters. Keeping the
+    research intake and persisted draft stages on the same ID contract prevents a
+    newly created draft from becoming unreadable by readiness/review services.
+    """
     normalized = normalize_research_question(question)
-    digest = sha256(normalized.encode("utf-8")).hexdigest()[:12].upper()
+    digest = sha256(normalized.encode("utf-8")).hexdigest()[:16].upper()
     return f"Q-RESEARCH-{digest}"
 
 
