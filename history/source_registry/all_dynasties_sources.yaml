@@ -32,18 +32,18 @@ source_groups:
     - {source_key: yuanshi, title: 元史, coverage: 元, source_id: CN-YUAN-0001}
     - {source_key: mingshi, title: 明史, coverage: 明, source_id: CN-MING-0001}
   chronological_and_governance_corpora:
-    - {source_key: zizhitongjian, title: 資治通鑑, coverage: 戰國至五代, existing_partial_source_id: CN-TANG-0003}
+    - {source_key: zizhitongjian, title: 資治通鑑, coverage: 戰國至五代, existing_partial_source_id: CN-TANG-0003, full_source_id: CN-TONGJIAN-0001}
     - {source_key: zhenguanzhengyao, title: 貞觀政要, coverage: 唐太宗, existing_source_id: CN-TANG-0004}
-    - {source_key: tanghuiyao, title: 唐會要, coverage: 唐}
-    - {source_key: wudaihuiyao, title: 五代會要, coverage: 五代}
-    - {source_key: songhuiyaojigao, title: 宋會要輯稿, coverage: 宋}
-    - {source_key: wenxian_tongkao, title: 文獻通考, coverage: 上古至宋}
-    - {source_key: yuan_dianzhang, title: 元典章, coverage: 元}
-    - {source_key: daming_huidian, title: 大明會典, coverage: 明}
-    - {source_key: ming_shilu, title: 明實錄, coverage: 明}
-    - {source_key: daqing_huidian, title: 大清會典, coverage: 清}
-    - {source_key: qing_shilu, title: 清實錄, coverage: 清}
-    - {source_key: qing_shigao, title: 清史稿, coverage: 清, source_note: 後世編纂史稿，與實錄類來源分級使用}
+    - {source_key: tanghuiyao, title: 唐會要, coverage: 唐, source_id: CN-TANG-0005}
+    - {source_key: wudaihuiyao, title: 五代會要, coverage: 五代, source_id: CN-WUDAI-0003}
+    - {source_key: songhuiyaojigao, title: 宋會要輯稿, coverage: 宋, source_id: CN-SONG-0003}
+    - {source_key: wenxian_tongkao, title: 文獻通考, coverage: 上古至宋, source_id: CN-TONGKAO-0001}
+    - {source_key: yuan_dianzhang, title: 元典章, coverage: 元, source_id: CN-YUAN-0002}
+    - {source_key: daming_huidian, title: 大明會典, coverage: 明, source_id: CN-MING-0003}
+    - {source_key: ming_shilu, title: 明實錄, coverage: 明, source_id: CN-MING-0002}
+    - {source_key: daqing_huidian, title: 大清會典, coverage: 清, source_id: CN-QING-0002}
+    - {source_key: qing_shilu, title: 清實錄, coverage: 清, source_id: CN-QING-0001}
+    - {source_key: qing_shigao, title: 清史稿, coverage: 清, source_id: CN-QING-0003, source_note: 後世編纂史稿，與實錄類來源分級使用}
 collection_rules:
   - Preserve full source text and source/version metadata before downstream extraction.
   - Assign stable source IDs before ingestion; never recycle an existing source ID.
