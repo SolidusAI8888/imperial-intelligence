@@ -186,3 +186,26 @@ class ProblemPromotionResponse(BaseModel):
     candidate_profile_path: str
     status: str
     persisted: bool
+
+
+class ProblemConversationRequest(BaseModel):
+    question: str = Field(min_length=2, max_length=4000)
+    conversation_history: list[ConversationMessage] = Field(default_factory=list, max_length=20)
+
+
+class ProblemConversationResponse(BaseModel):
+    problem_id: str
+    person_id: str | None = None
+    user_question: str
+    route: Literal["continue_current_responder", "new_problem_required"]
+    route_reason: str
+    historical_voice: str | None = None
+    modern_translation: str | None = None
+    cautions: list[str]
+    evidence_ids: list[str]
+    insight_ids: list[str]
+    requires_new_problem: bool
+    status: Literal[
+        "continued_with_reviewed_problem_responder",
+        "problem_drift_requires_new_problem_research",
+    ]
