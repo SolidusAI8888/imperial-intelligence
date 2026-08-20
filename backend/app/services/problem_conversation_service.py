@@ -5,6 +5,10 @@ import re
 
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.problem_knowledge_repository import load_problem_spec
+from app.services.problem_research_package import (
+    ProblemResearchPackage,
+    build_problem_research_package,
+)
 
 
 _TOKEN_RE = re.compile(r"[A-Za-z0-9_]+|[\u4e00-\u9fff]")
@@ -23,6 +27,7 @@ class ProblemConversationTurn:
     evidence_ids: tuple[str, ...]
     insight_ids: tuple[str, ...]
     requires_new_problem: bool
+    research_package: ProblemResearchPackage | None
     status: str
 
 
@@ -41,9 +46,6 @@ def _continuity_score(problem_text: str, followup: str, history: tuple[str, ...]
         recent = _tokens(" ".join(history[-4:]))
         overlap = max(overlap, len(recent & follow) / max(1, len(follow)))
 
-    # Only discourse markers that strongly refer back to the existing dialogue may
-    # rescue a low lexical-overlap follow-up. Generic question words such as “如何”
-    # or “为什么” are deliberately excluded because they also occur in new topics.
     continuation_markers = {
         "你刚才", "你前面", "你说", "刚才说", "前面说", "这个观点", "这个判断",
         "这些经历", "这个例子", "这件事", "但是你", "可是你", "我不同意",
@@ -61,17 +63,20 @@ def continue_problem_conversation(
     *,
     conversation_history: tuple[str, ...] = (),
     continuity_threshold: float = 0.20,
+    candidate_limit: int = 20,
 ) -> ProblemConversationTurn:
-    """Continue a reviewed Problem only when the follow-up remains inside its scope.
+    """Continue a reviewed Problem or automatically start research on semantic drift.
 
-    The service deliberately refuses to let a materially new question borrow the
-    original Problem's reviewed responder permission. Related follow-ups reuse the
-    same reviewed response pipeline and responder; drifted questions are routed back
-    to new-problem research instead of being answered under stale eligibility.
+    A related follow-up reuses the existing reviewed responder/evidence bundle. A
+    materially different follow-up is never answered under stale permissions; instead
+    this service immediately builds the non-answerable new-Problem research package so
+    the product can continue into fresh role selection without a second client call.
     """
     question = followup_question.strip()
     if len(question) < 2:
         raise ValueError("followup_question must contain at least two characters")
+    if candidate_limit < 1 or candidate_limit > 50:
+        raise ValueError("candidate_limit must be between 1 and 50")
 
     spec = load_problem_spec(problem_id)
     problem_text = " ".join(
@@ -80,6 +85,7 @@ def continue_problem_conversation(
     score = _continuity_score(problem_text, question, conversation_history)
 
     if score < continuity_threshold:
+        research = build_problem_research_package(question, candidate_limit=candidate_limit)
         return ProblemConversationTurn(
             problem_id=problem_id,
             person_id=None,
@@ -87,16 +93,17 @@ def continue_problem_conversation(
             route="new_problem_required",
             route_reason=(
                 f"Follow-up continuity score {score:.2f} is below {continuity_threshold:.2f}; "
-                "the existing Problem's reviewed responder permission cannot be reused."
+                "the existing Problem's reviewed responder permission cannot be reused, so new-Problem research has started."
             ),
             historical_voice=None,
             modern_translation=None,
             cautions=(
-                "This question appears materially different from the reviewed Problem and must re-enter problem research and role selection.",
+                "This question is materially different from the reviewed Problem. The returned research package is recall-only and does not grant answer permission.",
             ),
             evidence_ids=(),
             insight_ids=(),
             requires_new_problem=True,
+            research_package=research,
             status="problem_drift_requires_new_problem_research",
         )
 
@@ -116,5 +123,6 @@ def continue_problem_conversation(
         evidence_ids=answer.evidence_ids,
         insight_ids=answer.insight_ids,
         requires_new_problem=False,
+        research_package=None,
         status="continued_with_reviewed_problem_responder",
     )
