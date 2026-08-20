@@ -6,6 +6,7 @@ from app.models.api import (
     AutoConsultationResponse,
     ConsultationRequest,
     ConsultationResponse,
+    ProblemDraftReadinessResponse,
     ProblemDraftRequest,
     ProblemDraftResponse,
     ProblemGroundedAnswerResponse,
@@ -22,6 +23,7 @@ from app.services.problem_draft_package import (
     build_problem_draft_package,
     persist_problem_draft_package,
 )
+from app.services.problem_draft_readiness_service import inspect_problem_draft_readiness
 from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
 
@@ -138,6 +140,23 @@ def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
         )
     except FileExistsError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get("/problems/drafts/{draft_problem_id}/readiness", response_model=ProblemDraftReadinessResponse)
+def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessResponse:
+    """Report the exact promotion blockers for a persisted Problem draft.
+
+    This endpoint is read-only. It uses the same readiness gate as promotion and
+    never changes review flags, candidate scores, eligibility, or answer permission.
+    """
+    try:
+        return ProblemDraftReadinessResponse.model_validate(
+            asdict(inspect_problem_draft_readiness(draft_problem_id))
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
