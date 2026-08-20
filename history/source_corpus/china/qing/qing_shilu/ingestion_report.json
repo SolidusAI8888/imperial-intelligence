@@ -1,0 +1,588 @@
+{
+  "source_id": "CN-QING-0001",
+  "title": "清實錄",
+  "extractor_version": 3,
+  "acquisition_strategy": "wikisource_catalog_children",
+  "host_completeness": "explicitly_incomplete",
+  "historical_extent_note": "維基文庫根頁記載《清實錄》凡四千三百二十六卷，且頁面標示部分原作內容尚未錄入。",
+  "child_catalog": [
+    {
+      "key": "manzhou_shilu",
+      "title": "滿洲實錄",
+      "discovered_pages": 2
+    },
+    {
+      "key": "taizu_shilu",
+      "title": "太祖實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "taizong_shilu",
+      "title": "太宗文皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "shizu_shilu",
+      "title": "世祖章皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "shengzu_shilu",
+      "title": "聖祖仁皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "shizong_shilu",
+      "title": "世宗憲皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "gaozong_shilu",
+      "title": "高宗純皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "renzong_shilu",
+      "title": "仁宗睿皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xuanzong_shilu",
+      "title": "宣宗成皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "wenzong_shilu",
+      "title": "文宗顯皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "muzong_shilu",
+      "title": "穆宗毅皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "dezong_shilu",
+      "title": "德宗景皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xuantong_zhengji",
+      "title": "宣統政紀",
+      "discovered_pages": 70
+    }
+  ],
+  "pages": [
+    {
+      "page": "滿洲實錄 (標點本)/卷1",
+      "file": "01_manzhou_shilu_0001.txt",
+      "blocks": 2,
+      "revid": 2119759,
+      "sha256": "eaa08c814625407eac820c723af25ecbc530139f15b2644fa6a765cb503e7cff"
+    },
+    {
+      "page": "滿洲實錄 (標點本)/卷2",
+      "file": "01_manzhou_shilu_0002.txt",
+      "blocks": 2,
+      "revid": 2119761,
+      "sha256": "1a7a762f014dddabd477153274be46dfaf05cf7ac8be4d19c40d4b4181432296"
+    },
+    {
+      "page": "宣統政紀/卷1",
+      "file": "13_xuantong_zhengji_0001.txt",
+      "blocks": 78,
+      "revid": 2585134,
+      "sha256": "f4a04ca4da55f54417e6513c4b56746d99c61087ec143fc20299244730bef5e1"
+    },
+    {
+      "page": "宣統政紀/卷2",
+      "file": "13_xuantong_zhengji_0002.txt",
+      "blocks": 79,
+      "revid": 2585192,
+      "sha256": "2f26bd43ce7bbf6978d3412a442bf04d9b483209e0d9492f796cd387922652f9"
+    },
+    {
+      "page": "宣統政紀/卷3",
+      "file": "13_xuantong_zhengji_0003.txt",
+      "blocks": 103,
+      "revid": 2585139,
+      "sha256": "2038eb575c629eccd7bf62bd209ce5772bdc17d505fa04e7399162b63e8ee17e"
+    },
+    {
+      "page": "宣統政紀/卷4",
+      "file": "13_xuantong_zhengji_0004.txt",
+      "blocks": 104,
+      "revid": 2585414,
+      "sha256": "aeeee177284c96fd369a16b56784c6f93929e5e319bda1d8a1c05b8d7b32adb9"
+    },
+    {
+      "page": "宣統政紀/卷5",
+      "file": "13_xuantong_zhengji_0005.txt",
+      "blocks": 130,
+      "revid": 2585194,
+      "sha256": "2d02dabfd46f509f5d188efee23af9148baa5065527ff68007e779d8e8afd663"
+    },
+    {
+      "page": "宣統政紀/卷6",
+      "file": "13_xuantong_zhengji_0006.txt",
+      "blocks": 71,
+      "revid": 2585195,
+      "sha256": "a6f6fdb445e3424ed3a6ef66a76f230f2cb52b14ad0bfe31287aba7feccb0bb0"
+    },
+    {
+      "page": "宣統政紀/卷7",
+      "file": "13_xuantong_zhengji_0007.txt",
+      "blocks": 95,
+      "revid": 2585197,
+      "sha256": "853180a2f64bf9963d78da96a3a8ef8dd40ad6a59190786891b741288f9e8488"
+    },
+    {
+      "page": "宣統政紀/卷8",
+      "file": "13_xuantong_zhengji_0008.txt",
+      "blocks": 133,
+      "revid": 2585415,
+      "sha256": "cff6e143976c0087b27994b297da16b58dc3fa54ba3921f489554cde957feef8"
+    },
+    {
+      "page": "宣統政紀/卷9",
+      "file": "13_xuantong_zhengji_0009.txt",
+      "blocks": 101,
+      "revid": 2585142,
+      "sha256": "cfc6866181974f567714454188d410fd09437ca51e505de11d8fe6518d685981"
+    },
+    {
+      "page": "宣統政紀/卷10",
+      "file": "13_xuantong_zhengji_0010.txt",
+      "blocks": 97,
+      "revid": 2585143,
+      "sha256": "9f75a2bad20b3c5d34f674926b4ca8c3f82170f82ed30aa08da24987e50f2731"
+    },
+    {
+      "page": "宣統政紀/卷11",
+      "file": "13_xuantong_zhengji_0011.txt",
+      "blocks": 150,
+      "revid": 2585198,
+      "sha256": "d681ef32f68e6dab5bb2f21af78716a8397109a27995352b2ab892f9a37fd1b7"
+    },
+    {
+      "page": "宣統政紀/卷12",
+      "file": "13_xuantong_zhengji_0012.txt",
+      "blocks": 104,
+      "revid": 2585199,
+      "sha256": "83e31d74d15a16d8645944ac70e603e09fd1887634957acf4f5719192980518f"
+    },
+    {
+      "page": "宣統政紀/卷13",
+      "file": "13_xuantong_zhengji_0013.txt",
+      "blocks": 86,
+      "revid": 2585099,
+      "sha256": "5e4fb5282a41e73c710abbfe3f94cabd2812db966907b1739bc333c409744b75"
+    },
+    {
+      "page": "宣統政紀/卷14",
+      "file": "13_xuantong_zhengji_0014.txt",
+      "blocks": 83,
+      "revid": 2585069,
+      "sha256": "0037ae29320a6701c8995781c7171a57acb503e084bc5c7c51e33c2ecb16d5c8"
+    },
+    {
+      "page": "宣統政紀/卷15",
+      "file": "13_xuantong_zhengji_0015.txt",
+      "blocks": 102,
+      "revid": 2585200,
+      "sha256": "870602c59358d8cd0fb5a7e26f97f968e92b37d622f5fd8c9ba048aaa64f970a"
+    },
+    {
+      "page": "宣統政紀/卷16",
+      "file": "13_xuantong_zhengji_0016.txt",
+      "blocks": 111,
+      "revid": 2585416,
+      "sha256": "a1208b2a275a93c3e4327f7a22a0dae68b8d44a50491c1cd43bf1ca0bfe2c3e8"
+    },
+    {
+      "page": "宣統政紀/卷17",
+      "file": "13_xuantong_zhengji_0017.txt",
+      "blocks": 77,
+      "revid": 2585348,
+      "sha256": "9b4e7fcf8bce94a9bd24a43162e83c08aaab2630c35f4464131af574925eb312"
+    },
+    {
+      "page": "宣統政紀/卷18",
+      "file": "13_xuantong_zhengji_0018.txt",
+      "blocks": 74,
+      "revid": 2585070,
+      "sha256": "fe1f6aa01d09e9d9370cc0a339dd3832db5dc9529eb92f1daa86270a8c66cf5c"
+    },
+    {
+      "page": "宣統政紀/卷19",
+      "file": "13_xuantong_zhengji_0019.txt",
+      "blocks": 90,
+      "revid": 2585349,
+      "sha256": "0abcd00acc92a0be060e823cc46e114b1ac2226ef9c878a07f17783d26f0db9b"
+    },
+    {
+      "page": "宣統政紀/卷20",
+      "file": "13_xuantong_zhengji_0020.txt",
+      "blocks": 89,
+      "revid": 2585350,
+      "sha256": "e1fcf1e819bead1d5066349278e7f74dbf848c11191cf38720dcb4c83564a50e"
+    },
+    {
+      "page": "宣統政紀/卷21",
+      "file": "13_xuantong_zhengji_0021.txt",
+      "blocks": 66,
+      "revid": 2585002,
+      "sha256": "392ea467e10dcffeea5c35c13d893532d293f840af5a06a14c5c6e3b03f67c35"
+    },
+    {
+      "page": "宣統政紀/卷22",
+      "file": "13_xuantong_zhengji_0022.txt",
+      "blocks": 66,
+      "revid": 2584933,
+      "sha256": "1f4d5d8c2fdf9490478fee07bf09f2bbcbd5a710a8829cab4df1d6d698c0454c"
+    },
+    {
+      "page": "宣統政紀/卷23",
+      "file": "13_xuantong_zhengji_0023.txt",
+      "blocks": 134,
+      "revid": 2585003,
+      "sha256": "2bf9753f0f7d5221410c51d1349ca6cacf515cb26e5d1bdc19333df104bbe682"
+    },
+    {
+      "page": "宣統政紀/卷24",
+      "file": "13_xuantong_zhengji_0024.txt",
+      "blocks": 127,
+      "revid": 2585417,
+      "sha256": "426aee95aa91c2742cfda2ed327dc7b039462ee128d6714a9647fa07e011f76b"
+    },
+    {
+      "page": "宣統政紀/卷25",
+      "file": "13_xuantong_zhengji_0025.txt",
+      "blocks": 94,
+      "revid": 2585351,
+      "sha256": "12fee9562e87e8011d50dae4a7b47daee80ae22e32250e681c3102b6bc4a1664"
+    },
+    {
+      "page": "宣統政紀/卷26",
+      "file": "13_xuantong_zhengji_0026.txt",
+      "blocks": 85,
+      "revid": 2585354,
+      "sha256": "6afec4fc73e4f1527f6c9df6804718849d9d2bba45287039cb67b14e711d3362"
+    },
+    {
+      "page": "宣統政紀/卷27",
+      "file": "13_xuantong_zhengji_0027.txt",
+      "blocks": 84,
+      "revid": 2585355,
+      "sha256": "e4f0ea0bc4d40eb34e96a20b419613f51b9413b7d5259240b14905146ade4f73"
+    },
+    {
+      "page": "宣統政紀/卷28",
+      "file": "13_xuantong_zhengji_0028.txt",
+      "blocks": 124,
+      "revid": 2585356,
+      "sha256": "bb042d5b6ea94739faed67747c188629269e27f9ba2788aefa8ecf8f5e38c5ae"
+    },
+    {
+      "page": "宣統政紀/卷29",
+      "file": "13_xuantong_zhengji_0029.txt",
+      "blocks": 62,
+      "revid": 2584940,
+      "sha256": "09c613d11a9fa8341c3c3078b4b00cda9b6b9fbb755efad2e358d4bd0e1c4359"
+    },
+    {
+      "page": "宣統政紀/卷30",
+      "file": "13_xuantong_zhengji_0030.txt",
+      "blocks": 62,
+      "revid": 2585418,
+      "sha256": "b9177130e631c8851daec9e477a27d7fd6a43278d780f2639ec24ad33d6c9e26"
+    },
+    {
+      "page": "宣統政紀/卷31",
+      "file": "13_xuantong_zhengji_0031.txt",
+      "blocks": 84,
+      "revid": 2585009,
+      "sha256": "8aacbd4d15af5cf9b95416eed5a0673f43e4fc9ddec2857b4851c5d7962d26fb"
+    },
+    {
+      "page": "宣統政紀/卷32",
+      "file": "13_xuantong_zhengji_0032.txt",
+      "blocks": 75,
+      "revid": 2585357,
+      "sha256": "df4b8b5af362339a19e8ca7237746d4468cf566d65a89d78f490c7734f36c0ff"
+    },
+    {
+      "page": "宣統政紀/卷33",
+      "file": "13_xuantong_zhengji_0033.txt",
+      "blocks": 155,
+      "revid": 2585358,
+      "sha256": "95879fd5ca3ac39b4937fcfcdc10ff099e9eebe0af97700195abfa30e5bbe6e3"
+    },
+    {
+      "page": "宣統政紀/卷34",
+      "file": "13_xuantong_zhengji_0034.txt",
+      "blocks": 77,
+      "revid": 2585419,
+      "sha256": "93c44eb6e541c79f975498706e49f9f6e0b96afc880ae5e32691e86fd72f46a3"
+    },
+    {
+      "page": "宣統政紀/卷35",
+      "file": "13_xuantong_zhengji_0035.txt",
+      "blocks": 84,
+      "revid": 2585360,
+      "sha256": "0698f068412ab37a52c04ea411225f5ac1170df84a24f1c1e0054d7f73b767cb"
+    },
+    {
+      "page": "宣統政紀/卷36",
+      "file": "13_xuantong_zhengji_0036.txt",
+      "blocks": 146,
+      "revid": 2585412,
+      "sha256": "8e9af5c26c83fa240ec31b82775b937f8a12e5a133235ad9d2338934e8c6d1a7"
+    },
+    {
+      "page": "宣統政紀/卷37",
+      "file": "13_xuantong_zhengji_0037.txt",
+      "blocks": 79,
+      "revid": 2585361,
+      "sha256": "7b1285a530ba83d504c0fb2d617c1b8110b0e91d72a97f1b9ba1d54107d02cdc"
+    },
+    {
+      "page": "宣統政紀/卷38",
+      "file": "13_xuantong_zhengji_0038.txt",
+      "blocks": 100,
+      "revid": 2585362,
+      "sha256": "cb547611d346ace004a4071a4f41ff8c6bd651a37c189f35cfdddccc71b057dd"
+    },
+    {
+      "page": "宣統政紀/卷39",
+      "file": "13_xuantong_zhengji_0039.txt",
+      "blocks": 92,
+      "revid": 2585363,
+      "sha256": "b37ba04b92be319d6bfcd31fa4614b58d53f975d43cb2aa7347e3901ebfd2818"
+    },
+    {
+      "page": "宣統政紀/卷40",
+      "file": "13_xuantong_zhengji_0040.txt",
+      "blocks": 87,
+      "revid": 2585397,
+      "sha256": "6847d9a5669135dae689a06a424c85ae62d8c8fe895f7ad224b51285b5cf28b3"
+    },
+    {
+      "page": "宣統政紀/卷41",
+      "file": "13_xuantong_zhengji_0041.txt",
+      "blocks": 122,
+      "revid": 2585015,
+      "sha256": "6c3017be6927a04cd74cd0cdfa094c9a5bd131796f506ea2802f124b1a178348"
+    },
+    {
+      "page": "宣統政紀/卷42",
+      "file": "13_xuantong_zhengji_0042.txt",
+      "blocks": 154,
+      "revid": 2585170,
+      "sha256": "789692b9aff82e17626934bded2a79dc946463982811b0bf5f74ea26fa7d679d"
+    },
+    {
+      "page": "宣統政紀/卷43",
+      "file": "13_xuantong_zhengji_0043.txt",
+      "blocks": 150,
+      "revid": 2585154,
+      "sha256": "872d34a1762242c958fe20302f12dd0c4bb65c295e5812250ec61c2023340860"
+    },
+    {
+      "page": "宣統政紀/卷44",
+      "file": "13_xuantong_zhengji_0044.txt",
+      "blocks": 89,
+      "revid": 2585382,
+      "sha256": "9dffdf1d00684c1829aa91b818f1f2297b4de759dc97fdb788698d5c70ddddfd"
+    },
+    {
+      "page": "宣統政紀/卷45",
+      "file": "13_xuantong_zhengji_0045.txt",
+      "blocks": 83,
+      "revid": 2585394,
+      "sha256": "2221448b1e0bc589d94cc335ba66ff1aac39290052997c6a8f76c3bc71737232"
+    },
+    {
+      "page": "宣統政紀/卷46",
+      "file": "13_xuantong_zhengji_0046.txt",
+      "blocks": 98,
+      "revid": 2584957,
+      "sha256": "848254ef350deb8d3a61a5fba6d772ee9d2d66db1e416902cfd2773dd92f9aa4"
+    },
+    {
+      "page": "宣統政紀/卷47",
+      "file": "13_xuantong_zhengji_0047.txt",
+      "blocks": 121,
+      "revid": 2585156,
+      "sha256": "a906073399d99b94148cf702285672568c6671ef9c39ba4aa567c85769b62f65"
+    },
+    {
+      "page": "宣統政紀/卷48",
+      "file": "13_xuantong_zhengji_0048.txt",
+      "blocks": 143,
+      "revid": 2585157,
+      "sha256": "51e8e32ccdbdc783fa56c9e175d009f6466bf174a29958260107a67248751eee"
+    },
+    {
+      "page": "宣統政紀/卷49",
+      "file": "13_xuantong_zhengji_0049.txt",
+      "blocks": 150,
+      "revid": 2585117,
+      "sha256": "ef833ac1d4452fa762749a9bd2221d80b0515184e49100c1c5b2d1b363c2a656"
+    },
+    {
+      "page": "宣統政紀/卷50",
+      "file": "13_xuantong_zhengji_0050.txt",
+      "blocks": 129,
+      "revid": 2585179,
+      "sha256": "69a83fcb6d84532e40719b1ba56f51e475e8286d403c6aaa1fb468c56d67a9dc"
+    },
+    {
+      "page": "宣統政紀/卷51",
+      "file": "13_xuantong_zhengji_0051.txt",
+      "blocks": 85,
+      "revid": 2585083,
+      "sha256": "d4a465869ffba1ef73b02abb703eb8725c2f7823fa3494335db3f0aa4f8e37d1"
+    },
+    {
+      "page": "宣統政紀/卷52",
+      "file": "13_xuantong_zhengji_0052.txt",
+      "blocks": 113,
+      "revid": 2585421,
+      "sha256": "6786f176f5642c79d0ddefbaa37aa3d7da1a681e4488945715a8f48688e0e635"
+    },
+    {
+      "page": "宣統政紀/卷53",
+      "file": "13_xuantong_zhengji_0053.txt",
+      "blocks": 100,
+      "revid": 2585120,
+      "sha256": "21a82f5c01962cf04e673064b9c14a38ba629512f9dfec5001981153817bd370"
+    },
+    {
+      "page": "宣統政紀/卷54",
+      "file": "13_xuantong_zhengji_0054.txt",
+      "blocks": 130,
+      "revid": 2585384,
+      "sha256": "d18a15251c84d95c2c6cd4a8479c58a546796e8008580ad8e2d96e22ac51dfda"
+    },
+    {
+      "page": "宣統政紀/卷55",
+      "file": "13_xuantong_zhengji_0055.txt",
+      "blocks": 87,
+      "revid": 2585161,
+      "sha256": "a3e0e24b1b90d0f7f733ce086906f41b35c96cb317e149eef7af76eee237dd92"
+    },
+    {
+      "page": "宣統政紀/卷56",
+      "file": "13_xuantong_zhengji_0056.txt",
+      "blocks": 80,
+      "revid": 2585190,
+      "sha256": "ba7279371c55857f329df68c802ec600b02dffc8b1c126a183bc65af7234b757"
+    },
+    {
+      "page": "宣統政紀/卷57",
+      "file": "13_xuantong_zhengji_0057.txt",
+      "blocks": 156,
+      "revid": 2585386,
+      "sha256": "e0322dd21f557771e54d82da32a7e5c468fe47cb79e849c7621fb80e32d45752"
+    },
+    {
+      "page": "宣統政紀/卷58",
+      "file": "13_xuantong_zhengji_0058.txt",
+      "blocks": 79,
+      "revid": 2584969,
+      "sha256": "37798ba9b645b408c629153ef3568de7795917c57ff9c56c79754a2137f1dd55"
+    },
+    {
+      "page": "宣統政紀/卷59",
+      "file": "13_xuantong_zhengji_0059.txt",
+      "blocks": 79,
+      "revid": 2585422,
+      "sha256": "8217df90b5b774fad8e383771a987bc224e188c8be1ae713539d85a210a2a7d2"
+    },
+    {
+      "page": "宣統政紀/卷60",
+      "file": "13_xuantong_zhengji_0060.txt",
+      "blocks": 93,
+      "revid": 2585180,
+      "sha256": "c36543ef3d02ee706b549fb0982af149873f274eaa93e029febccd4b49c9c6e6"
+    },
+    {
+      "page": "宣統政紀/卷61",
+      "file": "13_xuantong_zhengji_0061.txt",
+      "blocks": 177,
+      "revid": 2585423,
+      "sha256": "9c493e1e6271c9adb4ca1b4e2aba44e0ec5f7828c7e4fcc3249e92c715e3cfc8"
+    },
+    {
+      "page": "宣統政紀/卷62",
+      "file": "13_xuantong_zhengji_0062.txt",
+      "blocks": 155,
+      "revid": 2585163,
+      "sha256": "9faeb29c600d26b9504f6b0dfe12c5d746a6f5f24ab109ec3d29ddc018d8c504"
+    },
+    {
+      "page": "宣統政紀/卷63",
+      "file": "13_xuantong_zhengji_0063.txt",
+      "blocks": 143,
+      "revid": 2585088,
+      "sha256": "40153ed8a180a6f6b69cc88fc2084f5bee3fcb5efb298d6aab5e0c0a05c6a68b"
+    },
+    {
+      "page": "宣統政紀/卷64",
+      "file": "13_xuantong_zhengji_0064.txt",
+      "blocks": 102,
+      "revid": 2585031,
+      "sha256": "26c15c390f5471d29f3511799f0a9b760b6507cee1d742b6e3177a1d86967ccc"
+    },
+    {
+      "page": "宣統政紀/卷65",
+      "file": "13_xuantong_zhengji_0065.txt",
+      "blocks": 166,
+      "revid": 2585425,
+      "sha256": "ddec33233936bc2cc299ad859782afaeac613895a81eb0859dcde9ceb8889abd"
+    },
+    {
+      "page": "宣統政紀/卷66",
+      "file": "13_xuantong_zhengji_0066.txt",
+      "blocks": 94,
+      "revid": 2585426,
+      "sha256": "b20142e8cda97f97fc173ba31c54f9fe2dd8b0bfc2c2b2de9aa8b3efaafab771"
+    },
+    {
+      "page": "宣統政紀/卷67",
+      "file": "13_xuantong_zhengji_0067.txt",
+      "blocks": 67,
+      "revid": 2585033,
+      "sha256": "0aa15c72103752cff524761a1d02628f0b8d3cf7201b965713a66ad2a8c9f131"
+    },
+    {
+      "page": "宣統政紀/卷68",
+      "file": "13_xuantong_zhengji_0068.txt",
+      "blocks": 93,
+      "revid": 2585034,
+      "sha256": "3b369a6c61a7afee2f45417b0885bc5c582f8a6f80cc59c0452b6b9aa65180fb"
+    },
+    {
+      "page": "宣統政紀/卷69",
+      "file": "13_xuantong_zhengji_0069.txt",
+      "blocks": 120,
+      "revid": 2585130,
+      "sha256": "fdcd50539854e1683f6dc1d6ee8abd485d2971897acb445d57a9415fe9ab322e"
+    },
+    {
+      "page": "宣統政紀/卷70",
+      "file": "13_xuantong_zhengji_0070.txt",
+      "blocks": 61,
+      "revid": 7910287,
+      "sha256": "20e2b0e1bff1aacaea949f96c6e21b279c4c1631cc66648e9d39818073c634fc"
+    }
+  ],
+  "skipped_current": [],
+  "errors": [],
+  "source_complete": false,
+  "archive_scope_status": "host_catalog_archived",
+  "archived_file_pairs": 72,
+  "discovered_page_count": 72,
+  "archive_scope_complete": true
+}
