@@ -1,0 +1,88 @@
+name: Phase 3 Daqing Huidian Ingestion
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/phase3-qing-huidian-ingestion.yml"
+      - "history/source_registry/phase3_qing_huidian.yaml"
+      - "history/tools/ingest_wikisource_manifest.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: phase3-qing-huidian-ingestion
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ingestion dependencies
+        run: pip install requests beautifulsoup4 PyYAML
+
+      - name: Build compatible manifest wrapper
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import yaml
+          src = yaml.safe_load(Path('history/source_registry/phase3_qing_huidian.yaml').read_text(encoding='utf-8'))
+          row = {k: src[k] for k in ['source_id','title','root_page','dynasty_group','corpus_key','volume_min','volume_max']}
+          Path('/tmp/daqing_huidian_manifest.yaml').write_text(yaml.safe_dump({'version': 1, 'sources': [row]}, allow_unicode=True, sort_keys=False), encoding='utf-8')
+          PY
+
+      - name: Archive Daqing Huidian
+        id: ingest
+        continue-on-error: true
+        run: |
+          python history/tools/ingest_wikisource_manifest.py \
+            --manifest /tmp/daqing_huidian_manifest.yaml \
+            --source-id CN-QING-0002
+
+      - name: Commit archival progress
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add history/source_corpus/china/qing/daqing_huidian_siku
+          if git diff --cached --quiet; then
+            echo "No Daqing Huidian corpus changes to commit"
+          else
+            git commit -m "Archive Phase 3 source CN-QING-0002"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Verify edition completion semantics
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = Path('history/source_corpus/china/qing/daqing_huidian_siku/ingestion_report.json')
+          if not report.exists():
+              raise SystemExit('missing Daqing Huidian ingestion report')
+          d = json.loads(report.read_text(encoding='utf-8'))
+          expected = d.get('expected_titles') or []
+          archived = int(d.get('archived_file_pairs', 0))
+          errors = d.get('errors') or []
+          if errors or len(expected) < 100 or archived < len(expected):
+              raise SystemExit(f'incomplete Daqing Huidian edition archive: expected={len(expected)} archived={archived} errors={len(errors)}')
+          print({'edition_complete': True, 'expected_titles': len(expected), 'archived_file_pairs': archived})
+          PY
+
+      - name: Fail if ingestion had errors
+        if: steps.ingest.outcome == 'failure'
+        run: exit 1
