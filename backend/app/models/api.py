@@ -130,6 +130,49 @@ class ProblemDraftReadinessResponse(BaseModel):
     candidate_profile_path: str
 
 
+class ReviewHEUSummaryResponse(BaseModel):
+    heu_id: str
+    title: str
+    challenge: str
+    response_or_choice: list[str]
+    experienced_outcome: list[str]
+    explicit_reflection: list[str]
+    interpretation: list[str]
+    status: str
+
+
+class ExistingInsightSuggestionResponse(BaseModel):
+    insight_id: str
+    statement: str
+    derived_from_heus: list[str]
+    applies_when: list[str]
+    limits: list[str]
+    status: Literal["suggestion_only_requires_problem_specific_review"]
+
+
+class DraftCandidateReviewPacketResponse(BaseModel):
+    person_id: str
+    review_priority: int
+    retrieval_score: float = Field(ge=0, le=1)
+    recalled_heus: list[ReviewHEUSummaryResponse]
+    existing_insight_suggestions: list[ExistingInsightSuggestionResponse]
+    selected_insight_ids: list[str]
+    candidate_score: float | None = None
+    responder_eligible: bool
+    status: Literal["review_packet_only_no_approval_side_effects"]
+
+
+class ProblemDraftReviewPacketResponse(BaseModel):
+    problem_id: str
+    raw_question: str
+    normalized_question: str
+    retrieval_dimensions: list[str]
+    candidates: list[DraftCandidateReviewPacketResponse]
+    readiness_status: str
+    readiness_blockers: list[str]
+    status: Literal["human_review_packet_no_automatic_approval"]
+
+
 class ProblemPromotionRequest(BaseModel):
     draft_problem_id: str = Field(min_length=1, max_length=64)
     registered_problem_id: str = Field(min_length=4, max_length=66)
