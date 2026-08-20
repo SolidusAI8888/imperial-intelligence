@@ -11,10 +11,26 @@ from urllib.parse import quote
 
 import yaml
 
-from ingest_wikisource_phase1 import API, EXTRACTOR_VERSION, SESSION, api, clean_original_blocks, fetch_rendered
-
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_MANIFEST = ROOT / "history/source_registry/phase3_catalog_sources.yaml"
+EXTRACTOR_VERSION = 3
+
+
+def _phase1_module():
+    import ingest_wikisource_phase1 as phase1
+    return phase1
+
+
+def api(params: dict) -> dict:
+    return _phase1_module().api(params)
+
+
+def fetch_rendered(title: str):
+    return _phase1_module().fetch_rendered(title)
+
+
+def clean_original_blocks(html: str) -> list[str]:
+    return _phase1_module().clean_original_blocks(html)
 
 
 def load_manifest(path: Path) -> dict:
@@ -54,12 +70,7 @@ def _volume_number(title: str) -> tuple[int, str] | None:
 
 
 def discover_child_pages(child_title: str) -> list[str]:
-    """Discover direct and one-level-deep volume pages beneath one catalog child work.
-
-    Qing/Ming shilu pages are not guaranteed to share one root/卷NNN namespace. We therefore
-    inspect the child work itself and, when it links to intermediate section pages, inspect
-    those pages once more. Only titles that contain a final /卷N segment are archivable.
-    """
+    """Discover direct and one-level-deep volume pages beneath one catalog child work."""
     candidates: set[str] = set()
     first = page_links(child_title)
     for title in first:
@@ -170,7 +181,6 @@ def archive_catalog_source(source: dict) -> dict:
     report["archive_scope_complete"] = (
         not report["errors"] and report["discovered_page_count"] > 0 and report["archived_file_pairs"] >= report["discovered_page_count"]
     )
-    # Host explicitly says this source is incomplete; archive completion must never be promoted to source completion.
     report["source_complete"] = bool(report["archive_scope_complete"] and source.get("host_completeness") == "verified_complete")
     report["archive_scope_status"] = "host_catalog_archived" if report["archive_scope_complete"] else "partial_host_archive"
     (base / "ingestion_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
