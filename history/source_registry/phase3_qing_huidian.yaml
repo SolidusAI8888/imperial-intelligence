@@ -1,0 +1,27 @@
+version: 1
+status: ready_for_ingestion
+source_id: CN-QING-0002
+source_key: daqing_huidian
+title: 大清會典
+edition_title: 欽定大清會典 (四庫全書本)
+coverage: 清
+priority_group: qing_core
+evidence_tier: primary_institutional_record
+acquisition_strategy: wikisource_numbered_volumes
+host: zh_wikisource
+root_page: 欽定大清會典 (四庫全書本)
+dynasty_group: qing
+corpus_key: daqing_huidian_siku
+volume_min: 1
+volume_max: 100
+edition_scope:
+  status: verified_numbered_edition
+  expected_volumes: 100
+  completion_claim: edition_complete_only
+  note: >-
+    This manifest archives the verified 100-volume Siku edition exposed on zh.wikisource.org.
+    Completion of this ingestion proves completeness of this registered edition, not of every
+    historical revision of the Qing Huidian family.
+provenance_note: >-
+  Public Wikisource volume pages use the root 欽定大清會典 (四庫全書本) with numbered /卷NNN pages;
+  individual pages such as 卷034 and 卷100 are publicly exposed with revision histories.
