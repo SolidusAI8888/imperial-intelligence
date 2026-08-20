@@ -85,8 +85,14 @@ def consult(emperor_id: str, request: ConsultationRequest) -> ConsultationRespon
     return consultation_service.consult(emperor_id, request)
 
 
-@app.post("/consult/auto", response_model=AutoConsultationResponse)
-def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse:
+@app.post(
+    "/consult/auto",
+    response_model=AutoConsultationResponse | ProblemResearchPackageResponse,
+)
+def auto_consult(
+    request: ConsultationRequest,
+) -> AutoConsultationResponse | ProblemResearchPackageResponse:
+    """Answer a grounded registered question or start runtime research for an unseen question."""
     try:
         return auto_consultation_service.consult(request)
     except ValueError as exc:
