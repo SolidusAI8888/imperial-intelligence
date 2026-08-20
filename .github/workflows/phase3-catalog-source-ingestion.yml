@@ -4,9 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       source_id:
-        description: Catalog-aware source ID
+        description: Optional catalog-aware source ID; blank selects the next incomplete host archive
         required: false
-        default: CN-QING-0001
         type: string
   schedule:
     - cron: "43 2 * * *"
@@ -16,6 +15,7 @@ on:
       - ".github/workflows/phase3-catalog-source-ingestion.yml"
       - "history/source_registry/phase3_catalog_sources.yaml"
       - "history/tools/ingest_wikisource_catalog.py"
+      - "history/tools/select_next_phase3_catalog_source.py"
 
 permissions:
   contents: write
@@ -48,12 +48,17 @@ jobs:
         env:
           REQUESTED: ${{ inputs.source_id }}
         run: |
-          SOURCE_ID="${REQUESTED:-CN-QING-0001}"
+          if [ -n "$REQUESTED" ]; then
+            SOURCE_ID="$REQUESTED"
+          else
+            SOURCE_ID="$(python history/tools/select_next_phase3_catalog_source.py)"
+          fi
           echo "source_id=$SOURCE_ID" >> "$GITHUB_OUTPUT"
-          echo "Selected catalog-aware source: $SOURCE_ID"
+          echo "Selected catalog-aware source: ${SOURCE_ID:-<none>}"
 
       - name: Archive catalog-aware source
         id: ingest
+        if: steps.source.outputs.source_id != ''
         continue-on-error: true
         run: |
           python history/tools/ingest_wikisource_catalog.py \
@@ -61,6 +66,7 @@ jobs:
             --source-id "${{ steps.source.outputs.source_id }}"
 
       - name: Commit archival progress
+        if: steps.source.outputs.source_id != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -73,22 +79,29 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Show catalog archive status
+        if: always()
+        run: python history/tools/select_next_phase3_catalog_source.py --json
+
       - name: Preserve incomplete-host safety
         if: always()
         run: |
-          REPORT="history/source_corpus/china/qing/qing_shilu/ingestion_report.json"
-          if [ -f "$REPORT" ]; then
-            python - <<'PY'
+          python - <<'PY'
           import json
           from pathlib import Path
-          p = Path("history/source_corpus/china/qing/qing_shilu/ingestion_report.json")
-          d = json.loads(p.read_text(encoding="utf-8"))
-          print(json.dumps({k: d.get(k) for k in ["discovered_page_count", "archived_file_pairs", "archive_scope_complete", "source_complete", "host_completeness"]}, ensure_ascii=False, indent=2))
-          if d.get("host_completeness") == "explicitly_incomplete" and d.get("source_complete"):
-              raise SystemExit("Safety violation: incomplete host was promoted to source_complete")
+          root = Path("history/source_corpus/china")
+          for p in root.glob("*/**/ingestion_report.json"):
+              try:
+                  d = json.loads(p.read_text(encoding="utf-8"))
+              except Exception:
+                  continue
+              if d.get("acquisition_strategy") != "wikisource_catalog_children":
+                  continue
+              print(p, {k: d.get(k) for k in ["discovered_page_count", "archived_file_pairs", "archive_scope_complete", "source_complete", "host_completeness"]})
+              if d.get("host_completeness") == "explicitly_incomplete" and d.get("source_complete"):
+                  raise SystemExit(f"Safety violation: incomplete host promoted to source_complete: {p}")
           PY
-          fi
 
       - name: Fail if ingestion had errors
-        if: steps.ingest.outcome == 'failure'
+        if: steps.source.outputs.source_id != '' && steps.ingest.outcome == 'failure'
         run: exit 1
