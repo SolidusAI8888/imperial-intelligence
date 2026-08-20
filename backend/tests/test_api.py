@@ -140,3 +140,30 @@ def test_auto_consult_rejects_question_without_reviewed_cross_dynasty_chain() ->
         json={"question": "我是否应该与别人合伙创业？"},
     )
     assert response.status_code == 422
+
+
+def test_problem_draft_api_builds_non_answerable_review_package() -> None:
+    response = client.post(
+        "/problems/drafts",
+        json={
+            "question": "一个人在职业低谷时，是应该坚持原来的方向，还是及时改变？",
+            "candidate_limit": 10,
+        },
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["problem_id"].startswith("Q-RESEARCH-")
+    assert data["status"] == "draft_package_requires_human_review"
+    assert data["responder_eligible"] is False
+    assert data["can_render_answer"] is False
+    assert data["persisted"] is False
+    assert "knowledge/problem_drafts/" in data["manifest_path"]
+    assert "knowledge/problem_drafts/" in data["candidate_profile_path"]
+
+
+def test_problem_draft_api_validates_request_bounds() -> None:
+    response = client.post(
+        "/problems/drafts",
+        json={"question": "职业方向怎么选？", "candidate_limit": 0},
+    )
+    assert response.status_code == 422
