@@ -18,27 +18,21 @@ from app.models.api import (
     ProblemResearchPackageResponse,
     ProblemResearchRequest,
 )
+from app.models.runtime_conversation import RuntimeConversationRequest, RuntimeConversationResponse
 from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
 from app.services.problem_conversation_service import continue_problem_conversation
-from app.services.problem_draft_package import (
-    build_problem_draft_package,
-    persist_problem_draft_package,
-)
+from app.services.problem_draft_package import build_problem_draft_package, persist_problem_draft_package
 from app.services.problem_draft_readiness_service import inspect_problem_draft_readiness
 from app.services.problem_draft_review_packet import build_problem_draft_review_packet
 from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
 from app.services.runtime_candidate_assessment import assess_runtime_problem
+from app.services.runtime_conversation_service import continue_runtime_conversation
 
-app = FastAPI(
-    title="帝王智库 API",
-    version="0.1.0",
-    description="中国历代帝王历史人格智能顾问平台后端",
-)
-
+app = FastAPI(title="帝王智库 API", version="0.1.0", description="中国历代帝王历史人格智能顾问平台后端")
 repository = PersonaRepository()
 consultation_service = ConsultationService(repository)
 auto_consultation_service = AutoConsultationService(consultation_service)
@@ -46,11 +40,7 @@ auto_consultation_service = AutoConsultationService(consultation_service)
 
 @app.get("/")
 def root() -> dict:
-    return {
-        "name": "Imperial Intelligence",
-        "version": "0.1.0",
-        "status": "running",
-    }
+    return {"name": "Imperial Intelligence", "version": "0.1.0", "status": "running"}
 
 
 @app.get("/health")
@@ -86,16 +76,8 @@ def consult(emperor_id: str, request: ConsultationRequest) -> ConsultationRespon
     return consultation_service.consult(emperor_id, request)
 
 
-@app.post(
-    "/consult/auto",
-    response_model=(
-        AutoConsultationResponse | ProblemGroundedAnswerResponse | ProblemResearchPackageResponse
-    ),
-)
-def auto_consult(
-    request: ConsultationRequest,
-) -> AutoConsultationResponse | ProblemGroundedAnswerResponse | ProblemResearchPackageResponse:
-    """Answer a registered question or run an unseen question through automatic evidence gating."""
+@app.post("/consult/auto", response_model=AutoConsultationResponse | ProblemGroundedAnswerResponse | ProblemResearchPackageResponse)
+def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse | ProblemGroundedAnswerResponse | ProblemResearchPackageResponse:
     try:
         return auto_consultation_service.consult(request)
     except ValueError as exc:
@@ -105,25 +87,15 @@ def auto_consult(
 @app.post("/problems/research", response_model=ProblemResearchPackageResponse)
 def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPackageResponse:
     try:
-        package = build_problem_research_package(
-            request.question,
-            candidate_limit=request.candidate_limit,
-        )
-        return ProblemResearchPackageResponse.model_validate(asdict(package))
+        return ProblemResearchPackageResponse.model_validate(asdict(build_problem_research_package(request.question, candidate_limit=request.candidate_limit)))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 @app.post("/problems/assess")
 def assess_new_problem(request: ProblemResearchRequest) -> dict:
-    """Score recalled reviewed chains and recommend an evidence-gated runtime responder."""
     try:
-        return asdict(
-            assess_runtime_problem(
-                request.question,
-                candidate_limit=request.candidate_limit,
-            )
-        )
+        return asdict(assess_runtime_problem(request.question, candidate_limit=request.candidate_limit))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
@@ -131,28 +103,12 @@ def assess_new_problem(request: ProblemResearchRequest) -> dict:
 @app.post("/problems/drafts", response_model=ProblemDraftResponse)
 def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
     try:
-        package = build_problem_draft_package(
-            request.question,
-            candidate_limit=request.candidate_limit,
-        )
-        manifest_path = package.manifest.relative_path
-        profile_path = package.candidate_profile.relative_path
-        persisted = False
+        package = build_problem_draft_package(request.question, candidate_limit=request.candidate_limit)
+        manifest_path, profile_path, persisted = package.manifest.relative_path, package.candidate_profile.relative_path, False
         if request.persist:
             written_manifest, written_profile = persist_problem_draft_package(package)
-            manifest_path = str(written_manifest)
-            profile_path = str(written_profile)
-            persisted = True
-        return ProblemDraftResponse(
-            problem_id=package.problem_id,
-            manifest_path=manifest_path,
-            candidate_profile_path=profile_path,
-            status=package.status,
-            responder_eligible=package.responder_eligible,
-            can_render_answer=package.can_render_answer,
-            required_next_gate=package.required_next_gate,
-            persisted=persisted,
-        )
+            manifest_path, profile_path, persisted = str(written_manifest), str(written_profile), True
+        return ProblemDraftResponse(problem_id=package.problem_id, manifest_path=manifest_path, candidate_profile_path=profile_path, status=package.status, responder_eligible=package.responder_eligible, can_render_answer=package.can_render_answer, required_next_gate=package.required_next_gate, persisted=persisted)
     except FileExistsError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
     except ValueError as exc:
@@ -162,9 +118,7 @@ def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
 @app.get("/problems/drafts/{draft_problem_id}/readiness", response_model=ProblemDraftReadinessResponse)
 def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessResponse:
     try:
-        return ProblemDraftReadinessResponse.model_validate(
-            asdict(inspect_problem_draft_readiness(draft_problem_id))
-        )
+        return ProblemDraftReadinessResponse.model_validate(asdict(inspect_problem_draft_readiness(draft_problem_id)))
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
@@ -174,9 +128,7 @@ def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessRespo
 @app.get("/problems/drafts/{draft_problem_id}/review-packet", response_model=ProblemDraftReviewPacketResponse)
 def problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftReviewPacketResponse:
     try:
-        return ProblemDraftReviewPacketResponse.model_validate(
-            asdict(build_problem_draft_review_packet(draft_problem_id))
-        )
+        return ProblemDraftReviewPacketResponse.model_validate(asdict(build_problem_draft_review_packet(draft_problem_id)))
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
@@ -186,15 +138,7 @@ def problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftReviewPack
 @app.post("/problems/promote", response_model=ProblemPromotionResponse)
 def promote_reviewed_problem(request: ProblemPromotionRequest) -> ProblemPromotionResponse:
     try:
-        return ProblemPromotionResponse.model_validate(
-            asdict(
-                promote_problem_draft(
-                    request.draft_problem_id,
-                    request.registered_problem_id,
-                    persist=request.persist,
-                )
-            )
-        )
+        return ProblemPromotionResponse.model_validate(asdict(promote_problem_draft(request.draft_problem_id, request.registered_problem_id, persist=request.persist)))
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except FileExistsError as exc:
@@ -206,28 +150,29 @@ def promote_reviewed_problem(request: ProblemPromotionRequest) -> ProblemPromoti
 @app.get("/problems/{problem_id}/answer", response_model=ProblemGroundedAnswerResponse)
 def grounded_problem_answer(problem_id: str) -> ProblemGroundedAnswerResponse:
     try:
-        return ProblemGroundedAnswerResponse.model_validate(
-            render_grounded_answer(problem_id).__dict__
-        )
+        return ProblemGroundedAnswerResponse.model_validate(render_grounded_answer(problem_id).__dict__)
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
-@app.post("/problems/{problem_id}/continue", response_model=ProblemConversationResponse)
-def continue_reviewed_problem(
-    problem_id: str, request: ProblemConversationRequest
-) -> ProblemConversationResponse:
-    """Continue a reviewed problem or start fresh research when the topic drifts."""
+@app.post("/problems/runtime/{problem_id}/continue", response_model=RuntimeConversationResponse)
+def continue_runtime_problem(problem_id: str, request: RuntimeConversationRequest) -> RuntimeConversationResponse:
+    """Continue an unpersisted runtime Problem or automatically reselect after topic drift."""
     try:
         history = tuple(message.content for message in request.conversation_history)
-        result = continue_problem_conversation(
-            problem_id,
-            request.question,
-            conversation_history=history,
-            candidate_limit=request.candidate_limit,
-        )
+        result = continue_runtime_conversation(problem_id, request.original_question, request.question, previous_person_id=request.previous_person_id, conversation_history=history, candidate_limit=request.candidate_limit)
+        return RuntimeConversationResponse.model_validate(asdict(result))
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/{problem_id}/continue", response_model=ProblemConversationResponse)
+def continue_reviewed_problem(problem_id: str, request: ProblemConversationRequest) -> ProblemConversationResponse:
+    try:
+        history = tuple(message.content for message in request.conversation_history)
+        result = continue_problem_conversation(problem_id, request.question, conversation_history=history, candidate_limit=request.candidate_limit)
         return ProblemConversationResponse.model_validate(asdict(result))
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
