@@ -9,6 +9,8 @@ from app.models.api import (
     ProblemDraftRequest,
     ProblemDraftResponse,
     ProblemGroundedAnswerResponse,
+    ProblemPromotionRequest,
+    ProblemPromotionResponse,
     ProblemResearchPackageResponse,
     ProblemResearchRequest,
 )
@@ -20,6 +22,7 @@ from app.services.problem_draft_package import (
     build_problem_draft_package,
     persist_problem_draft_package,
 )
+from app.services.problem_promotion_service import promote_problem_draft
 from app.services.problem_research_package import build_problem_research_package
 
 app = FastAPI(
@@ -133,6 +136,32 @@ def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
             required_next_gate=package.required_next_gate,
             persisted=persisted,
         )
+    except FileExistsError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/promote", response_model=ProblemPromotionResponse)
+def promote_reviewed_problem(request: ProblemPromotionRequest) -> ProblemPromotionResponse:
+    """Validate a reviewed draft and optionally persist registered Problem artifacts.
+
+    The operation never changes review flags. A default request is dry-run only;
+    `persist=true` writes only after the existing readiness, evidence-chain, candidate
+    score, and responder-eligibility validation succeeds.
+    """
+    try:
+        return ProblemPromotionResponse.model_validate(
+            asdict(
+                promote_problem_draft(
+                    request.draft_problem_id,
+                    request.registered_problem_id,
+                    persist=request.persist,
+                )
+            )
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
     except FileExistsError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
     except ValueError as exc:
