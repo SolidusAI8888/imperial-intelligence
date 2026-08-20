@@ -196,13 +196,14 @@ def grounded_problem_answer(problem_id: str) -> ProblemGroundedAnswerResponse:
 def continue_reviewed_problem(
     problem_id: str, request: ProblemConversationRequest
 ) -> ProblemConversationResponse:
-    """Continue a reviewed problem or route semantic drift back to new-problem research."""
+    """Continue a reviewed problem or start fresh research when the topic drifts."""
     try:
         history = tuple(message.content for message in request.conversation_history)
         result = continue_problem_conversation(
             problem_id,
             request.question,
             conversation_history=history,
+            candidate_limit=request.candidate_limit,
         )
         return ProblemConversationResponse.model_validate(asdict(result))
     except KeyError as exc:
