@@ -6,6 +6,8 @@ from app.models.api import (
     AutoConsultationResponse,
     ConsultationRequest,
     ConsultationResponse,
+    ProblemConversationRequest,
+    ProblemConversationResponse,
     ProblemDraftReadinessResponse,
     ProblemDraftRequest,
     ProblemDraftResponse,
@@ -20,6 +22,7 @@ from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.consultation_service import ConsultationService
+from app.services.problem_conversation_service import continue_problem_conversation
 from app.services.problem_draft_package import (
     build_problem_draft_package,
     persist_problem_draft_package,
@@ -92,13 +95,6 @@ def auto_consult(request: ConsultationRequest) -> AutoConsultationResponse:
 
 @app.post("/problems/research", response_model=ProblemResearchPackageResponse)
 def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPackageResponse:
-    """Build a research-only package for an arbitrary new user question.
-
-    The result is deliberately non-persistent and non-answerable. It may recall
-    already reviewed HER/HEU experience and prioritize people for review, but it
-    cannot register a Problem, approve an Insight, grant responder eligibility, or
-    render a historical-persona answer.
-    """
     try:
         package = build_problem_research_package(
             request.question,
@@ -111,12 +107,6 @@ def research_new_problem(request: ProblemResearchRequest) -> ProblemResearchPack
 
 @app.post("/problems/drafts", response_model=ProblemDraftResponse)
 def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
-    """Create a reviewable Problem draft without granting answer permission.
-
-    Persistence, when explicitly requested, is restricted to the dedicated draft
-    area. The endpoint never writes into the registered Problem directories and
-    never changes review, eligibility, or answer-permission flags.
-    """
     try:
         package = build_problem_draft_package(
             request.question,
@@ -148,11 +138,6 @@ def create_problem_draft(request: ProblemDraftRequest) -> ProblemDraftResponse:
 
 @app.get("/problems/drafts/{draft_problem_id}/readiness", response_model=ProblemDraftReadinessResponse)
 def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessResponse:
-    """Report the exact promotion blockers for a persisted Problem draft.
-
-    This endpoint is read-only. It uses the same readiness gate as promotion and
-    never changes review flags, candidate scores, eligibility, or answer permission.
-    """
     try:
         return ProblemDraftReadinessResponse.model_validate(
             asdict(inspect_problem_draft_readiness(draft_problem_id))
@@ -165,11 +150,6 @@ def problem_draft_readiness(draft_problem_id: str) -> ProblemDraftReadinessRespo
 
 @app.get("/problems/drafts/{draft_problem_id}/review-packet", response_model=ProblemDraftReviewPacketResponse)
 def problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftReviewPacketResponse:
-    """Return reviewed HEU evidence and safe existing-Insight suggestions for human review.
-
-    Suggestions remain non-selected and non-authoritative. The endpoint is read-only
-    and cannot change candidate scores, responder eligibility, or answer permission.
-    """
     try:
         return ProblemDraftReviewPacketResponse.model_validate(
             asdict(build_problem_draft_review_packet(draft_problem_id))
@@ -182,12 +162,6 @@ def problem_draft_review_packet(draft_problem_id: str) -> ProblemDraftReviewPack
 
 @app.post("/problems/promote", response_model=ProblemPromotionResponse)
 def promote_reviewed_problem(request: ProblemPromotionRequest) -> ProblemPromotionResponse:
-    """Validate a reviewed draft and optionally persist registered Problem artifacts.
-
-    The operation never changes review flags. A default request is dry-run only;
-    `persist=true` writes only after the existing readiness, evidence-chain, candidate
-    score, and responder-eligibility validation succeeds.
-    """
     try:
         return ProblemPromotionResponse.model_validate(
             asdict(
@@ -208,16 +182,29 @@ def promote_reviewed_problem(request: ProblemPromotionRequest) -> ProblemPromoti
 
 @app.get("/problems/{problem_id}/answer", response_model=ProblemGroundedAnswerResponse)
 def grounded_problem_answer(problem_id: str) -> ProblemGroundedAnswerResponse:
-    """Render only a registered problem that has passed the evidence/eligibility gates.
-
-    The endpoint intentionally does not accept an arbitrary question override. A new
-    user question must first become its own reviewed Problem manifest/profile rather
-    than borrowing another problem's approval and responder eligibility.
-    """
     try:
         return ProblemGroundedAnswerResponse.model_validate(
             render_grounded_answer(problem_id).__dict__
         )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post("/problems/{problem_id}/continue", response_model=ProblemConversationResponse)
+def continue_reviewed_problem(
+    problem_id: str, request: ProblemConversationRequest
+) -> ProblemConversationResponse:
+    """Continue a reviewed problem or route semantic drift back to new-problem research."""
+    try:
+        history = tuple(message.content for message in request.conversation_history)
+        result = continue_problem_conversation(
+            problem_id,
+            request.question,
+            conversation_history=history,
+        )
+        return ProblemConversationResponse.model_validate(asdict(result))
     except KeyError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
