@@ -80,7 +80,7 @@ def _insight_relevant_to_question(question: str, insight: object) -> bool:
     evidence when its statement or application conditions share informative lexical content with the
     current question. Generic advisory fragments such as ``应该``/``问题`` are ignored because they
     otherwise create false relevance between unrelated topics. ``limits`` remain deliberately
-    excluded from positive matching and are available downstream only as counter-evidence metadata.
+    excluded from positive matching and are evaluated separately as negative applicability evidence.
     """
     query_terms = _relevance_terms(question)
     if not query_terms:
@@ -92,6 +92,24 @@ def _insight_relevant_to_question(question: str, insight: object) -> bool:
         ]
     )
     return bool(query_terms & _relevance_terms(positive_text))
+
+
+def _insight_conflicts_with_question(question: str, insight: object) -> bool:
+    """Return True when an Insight explicitly limits itself away from this problem.
+
+    ``limits`` are counter-evidence. If they share informative topic terms with the current
+    question, the Insight must not be used as positive problem-specific evidence even when its
+    statement or ``applies_when`` also overlap the question. This prevents a reviewed Insight such
+    as “制度调整经验” with a limit like “不适用于团队管理” from crossing the automatic answer gate
+    for a team-management question.
+    """
+    query_terms = _relevance_terms(question)
+    if not query_terms:
+        return False
+    limits_text = " ".join(getattr(insight, "limits", ()))
+    if not limits_text:
+        return False
+    return bool(query_terms & _relevance_terms(limits_text))
 
 
 def _select_runtime_candidate(
@@ -132,6 +150,7 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             insight
             for insight in derived_insights
             if _insight_relevant_to_question(research.normalized_question, insight)
+            and not _insight_conflicts_with_question(research.normalized_question, insight)
         ]
 
         required_record_ids = {record_id for heu in heus for record_id in heu.record_links}
