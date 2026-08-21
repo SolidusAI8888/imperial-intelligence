@@ -120,13 +120,19 @@ def archive_catalog_source(source: dict) -> dict:
 
     for child_index, child in enumerate(source.get("child_works") or [], 1):
         child_title = child["title"]
+        host_title = child.get("host_title", child_title)
         child_key = safe_slug(child["key"])
         try:
-            titles = discover_child_pages(child_title)
+            titles = discover_child_pages(host_title)
         except Exception as exc:
             report["errors"].append({"child": child_title, "error_type": type(exc).__name__, "error": str(exc)})
             titles = []
-        report["child_catalog"].append({"key": child["key"], "title": child_title, "discovered_pages": len(titles)})
+        report["child_catalog"].append({
+            "key": child["key"],
+            "title": child_title,
+            "host_title": host_title,
+            "discovered_pages": len(titles),
+        })
 
         for idx, title in enumerate(titles, 1):
             volume = _volume_number(title)
@@ -178,6 +184,12 @@ def archive_catalog_source(source: dict) -> dict:
 
     report["archived_file_pairs"] = sum(1 for p in text_dir.glob("*.txt") if (prov_dir / f"{p.stem}.yaml").exists())
     report["discovered_page_count"] = sum(item["discovered_pages"] for item in report["child_catalog"])
+    if not report["discovered_page_count"]:
+        report["errors"].append({
+            "source": source["title"],
+            "error_type": "CatalogDiscoveryError",
+            "error": "no catalog child pages discovered for a registered catalog source",
+        })
     report["archive_scope_complete"] = (
         not report["errors"] and report["discovered_page_count"] > 0 and report["archived_file_pairs"] >= report["discovered_page_count"]
     )
@@ -205,7 +217,13 @@ def main() -> None:
         for source in sources:
             children = []
             for child in source.get("child_works") or []:
-                children.append({"key": child["key"], "title": child["title"], "pages": discover_child_pages(child["title"])})
+                host_title = child.get("host_title", child["title"])
+                children.append({
+                    "key": child["key"],
+                    "title": child["title"],
+                    "host_title": host_title,
+                    "pages": discover_child_pages(host_title),
+                })
             out.append({"source_id": source["source_id"], "children": children})
         print(json.dumps(out, ensure_ascii=False, indent=2))
         return

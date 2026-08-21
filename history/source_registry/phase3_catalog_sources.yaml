@@ -45,19 +45,19 @@ sources:
     host_completeness: explicitly_incomplete
     historical_extent_note: 維基文庫根頁記載官修十三部、二千九百零九卷，且頁面標示部分原作內容尚未錄入。
     child_works:
-      - {key: taizu_shilu, title: 太祖高皇帝實錄}
-      - {key: taizong_shilu, title: 太宗文皇帝實錄}
-      - {key: renzong_shilu, title: 仁宗昭皇帝實錄}
-      - {key: xuanzong_shilu, title: 宣宗章皇帝實錄}
-      - {key: yingzong_shilu, title: 英宗睿皇帝實錄}
-      - {key: xianzong_shilu, title: 憲宗純皇帝實錄}
-      - {key: xiaozong_shilu, title: 孝宗敬皇帝實錄}
-      - {key: wuzong_shilu, title: 武宗毅皇帝實錄}
-      - {key: shizong_shilu, title: 世宗肅皇帝實錄}
-      - {key: muzong_shilu, title: 穆宗莊皇帝實錄}
-      - {key: shenzong_shilu, title: 神宗顯皇帝實錄}
-      - {key: guangzong_shilu, title: 光宗貞皇帝實錄}
-      - {key: xizong_shilu, title: 熹宗悊皇帝實錄}
+      - {key: taizu_shilu, title: 太祖高皇帝實錄, host_title: 明實錄/太祖高皇帝實錄}
+      - {key: taizong_shilu, title: 太宗文皇帝實錄, host_title: 明實錄/成祖文皇帝實錄}
+      - {key: renzong_shilu, title: 仁宗昭皇帝實錄, host_title: 明實錄/仁宗昭皇帝實錄}
+      - {key: xuanzong_shilu, title: 宣宗章皇帝實錄, host_title: 明實錄/宣宗章皇帝實錄}
+      - {key: yingzong_shilu, title: 英宗睿皇帝實錄, host_title: 明實錄/英宗睿皇帝實錄}
+      - {key: xianzong_shilu, title: 憲宗純皇帝實錄, host_title: 明實錄/大明純皇帝實錄}
+      - {key: xiaozong_shilu, title: 孝宗敬皇帝實錄, host_title: 明實錄/大明敬皇帝實錄}
+      - {key: wuzong_shilu, title: 武宗毅皇帝實錄, host_title: 明實錄/大明毅皇帝實錄}
+      - {key: shizong_shilu, title: 世宗肅皇帝實錄, host_title: 明實錄/大明肅皇帝實錄}
+      - {key: muzong_shilu, title: 穆宗莊皇帝實錄, host_title: 明實錄/大明莊皇帝實錄}
+      - {key: shenzong_shilu, title: 神宗顯皇帝實錄, host_title: 明實錄/神宗顯皇帝實錄}
+      - {key: guangzong_shilu, title: 光宗貞皇帝實錄, host_title: 明實錄/光宗貞皇帝實錄}
+      - {key: xizong_shilu, title: 熹宗悊皇帝實錄, host_title: 明實錄/熹宗悊皇帝實錄}
     excluded_supplemental_works:
       - 崇禎長編
       - 弘光實錄鈔

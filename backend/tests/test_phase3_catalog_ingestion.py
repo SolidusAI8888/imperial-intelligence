@@ -47,6 +47,10 @@ def test_ming_shilu_catalog_keeps_luwai_supplements_separate():
     assert titles[-1] == "熹宗悊皇帝實錄"
     assert set(source["excluded_supplemental_works"]) == {"崇禎長編", "弘光實錄鈔", "永曆實錄"}
     assert not set(source["excluded_supplemental_works"]) & set(titles)
+    host_titles = [item["host_title"] for item in source["child_works"]]
+    assert all(title.startswith("明實錄/") for title in host_titles)
+    assert "明實錄/成祖文皇帝實錄" in host_titles
+    assert "明實錄/大明純皇帝實錄" in host_titles
 
 
 def test_catalog_volume_parser_accepts_nested_shilu_titles():
@@ -54,6 +58,29 @@ def test_catalog_volume_parser_accepts_nested_shilu_titles():
     assert module._volume_number("聖祖仁皇帝實錄/卷123") == (123, "")
     assert module._volume_number("某實錄/第一部/卷004上") == (4, "上")
     assert module._volume_number("清實錄") is None
+
+
+def test_ming_catalog_uses_host_title_for_discovery(tmp_path, monkeypatch):
+    module = _load_script()
+    source = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))["sources"][1]
+    requested = []
+
+    def discover(title):
+        requested.append(title)
+        return ["大明太祖高皇帝實錄/卷001"] if title.endswith("太祖高皇帝實錄") else []
+
+    monkeypatch.setattr(module, "ROOT", tmp_path)
+    monkeypatch.setattr(module, "discover_child_pages", discover)
+    monkeypatch.setattr(module, "fetch_rendered", lambda title: ("<p>史料正文</p>", 1, title))
+    monkeypatch.setattr(module, "clean_original_blocks", lambda html: ["史料正文"])
+    monkeypatch.setattr(module.time, "sleep", lambda _: None)
+
+    report = module.archive_catalog_source(source)
+
+    assert requested[0] == "明實錄/太祖高皇帝實錄"
+    assert "明實錄/成祖文皇帝實錄" in requested
+    assert report["child_catalog"][0]["host_title"] == requested[0]
+    assert report["archived_file_pairs"] == 1
 
 
 def test_catalog_ingestor_never_claims_incomplete_host_is_full_source(tmp_path, monkeypatch):
@@ -69,3 +96,19 @@ def test_catalog_ingestor_never_claims_incomplete_host_is_full_source(tmp_path, 
     assert report["source_complete"] is False
     assert report["archive_scope_status"] == "host_catalog_archived"
     assert report["archived_file_pairs"] == 13
+
+
+def test_catalog_ingestor_rejects_silent_zero_page_success(tmp_path, monkeypatch):
+    module = _load_script()
+    source = yaml.safe_load(CATALOG.read_text(encoding="utf-8"))["sources"][1]
+    monkeypatch.setattr(module, "ROOT", tmp_path)
+    monkeypatch.setattr(module, "discover_child_pages", lambda title: [])
+
+    report = module.archive_catalog_source(source)
+
+    assert report["archive_scope_complete"] is False
+    assert report["errors"] == [{
+        "source": "明實錄",
+        "error_type": "CatalogDiscoveryError",
+        "error": "no catalog child pages discovered for a registered catalog source",
+    }]
