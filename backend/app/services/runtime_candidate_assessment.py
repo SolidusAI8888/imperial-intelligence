@@ -112,6 +112,28 @@ def _insight_conflicts_with_question(question: str, insight: object) -> bool:
     return bool(query_terms & _relevance_terms(limits_text))
 
 
+def _partition_problem_insights(
+    question: str,
+    insights: list[object] | tuple[object, ...],
+) -> tuple[list[object], list[object]]:
+    """Split reviewed derived Insights into usable support and direct counter-evidence.
+
+    A conflicting Insight must not simply disappear from the runtime evidence picture. If an
+    Insight is positively relevant to the current problem but its reviewed ``limits`` also match
+    that problem, it represents direct counter-evidence. The supporting side may still be useful for
+    candidate ranking and human review, but automatic answer rendering must stop until that conflict
+    is reviewed explicitly.
+    """
+    relevant = [insight for insight in insights if _insight_relevant_to_question(question, insight)]
+    conflicting = [
+        insight for insight in relevant if _insight_conflicts_with_question(question, insight)
+    ]
+    supporting = [
+        insight for insight in relevant if not _insight_conflicts_with_question(question, insight)
+    ]
+    return supporting, conflicting
+
+
 def _select_runtime_candidate(
     candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...],
 ) -> RuntimeCandidateAssessment | None:
@@ -146,12 +168,10 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             and insight.derived_from_heus
             and set(insight.derived_from_heus).issubset(heu_ids)
         ]
-        insights = [
-            insight
-            for insight in derived_insights
-            if _insight_relevant_to_question(research.normalized_question, insight)
-            and not _insight_conflicts_with_question(research.normalized_question, insight)
-        ]
+        insights, conflicting_insights = _partition_problem_insights(
+            research.normalized_question,
+            derived_insights,
+        )
 
         required_record_ids = {record_id for heu in heus for record_id in heu.record_links}
         records = [
@@ -194,13 +214,16 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
             0.35 + 0.08 * len(insights) + 0.03 * sum(len(insight.applies_when) for insight in insights)
         )
         counterevidence_quality = _clamp(
-            0.3 + 0.15 * sum(bool(insight.limits) for insight in insights)
+            0.3
+            + 0.15 * sum(bool(insight.limits) for insight in insights)
+            + 0.2 * bool(conflicting_insights)
         )
 
         rationale = (
             f"automatic assessment from {len(heus)} reviewed HEU(s), {len(records)} reviewed HER(s), "
-            f"{len(insights)} problem-relevant reviewed Insight(s) out of {len(derived_insights)} "
-            f"derived Insight(s), {len(canonical_ids)} canonical evidence id(s), "
+            f"{len(insights)} problem-relevant reviewed supporting Insight(s), "
+            f"{len(conflicting_insights)} directly conflicting reviewed Insight(s) out of "
+            f"{len(derived_insights)} derived Insight(s), {len(canonical_ids)} canonical evidence id(s), "
             f"and {len(role_links)} eligible role link(s)"
         )
         scored = score_candidate(
@@ -229,6 +252,7 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
         recommended = bool(chain_complete and recalled.retrieval_score >= 0.35 and scored.total_score >= 0.6)
         answer_ready = bool(
             recommended
+            and not conflicting_insights
             and scored.total_score >= 0.72
             and len(canonical_ids) >= 2
             and len(insights) >= 1
