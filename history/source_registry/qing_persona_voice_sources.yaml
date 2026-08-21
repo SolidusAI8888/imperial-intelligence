@@ -1,0 +1,86 @@
+version: 1
+scope: qing_persona_voice_primary_records
+status: active_source_discovery
+policy: >-
+  Register stable source-family identities before acquisition. These archival families may span
+  reigns, repositories, editions, catalog systems, and digitization projects, so registration
+  never implies that a stable acquisition target or complete digital corpus has been found.
+priority_order:
+  - direct_imperial_words
+  - court_witness
+  - administrative_process
+completion_rule: >-
+  A source is complete only after an ingestion report points to archived canonical passages, or
+  after a provenance-backed documented_unavailable decision. Planned, discovered, cataloged, and
+  blocked states are never counted as collected.
+sources:
+  - source_id: CN-QING-VOICE-0001
+    source_key: qing_shangyu_dang
+    title: 上諭檔
+    coverage: 清
+    priority_group: direct_imperial_words
+    evidence_tier: A_plus
+    source_kinds: [imperial_edict, imperial_verbatim]
+    preferred_for: [persona_voice, decision_style, rhetorical_style]
+    acquisition_strategy: source_discovery_required
+    status: pending_source_discovery
+    resolution_requirements:
+      - collection_scope
+      - authoritative_holding_institution
+      - edition_or_catalog_identity
+      - stable_item_or_page_locator
+      - reuse_rights
+      - digitization_completeness
+  - source_id: CN-QING-VOICE-0002
+    source_key: qing_zhupi_zouzhe
+    title: 朱批奏摺
+    coverage: 清
+    priority_group: direct_imperial_words
+    evidence_tier: A_plus
+    source_kinds: [vermilion_rescript, memorial_response]
+    preferred_for: [persona_voice, decision_style, rhetorical_style]
+    acquisition_strategy: source_discovery_required
+    status: pending_source_discovery
+    resolution_requirements:
+      - collection_scope
+      - emperor_and_reign_partition
+      - authoritative_holding_institution
+      - edition_or_catalog_identity
+      - stable_item_or_page_locator
+      - reuse_rights
+      - digitization_completeness
+  - source_id: CN-QING-VOICE-0003
+    source_key: qing_qiju_zhu
+    title: 起居注
+    coverage: 清
+    priority_group: court_witness
+    evidence_tier: A_plus
+    source_kinds: [court_diary, imperial_verbatim]
+    preferred_for: [persona_voice, decision_context, rhetorical_style]
+    acquisition_strategy: source_discovery_required
+    status: pending_source_discovery
+    resolution_requirements:
+      - collection_scope
+      - emperor_and_reign_partition
+      - authoritative_holding_institution
+      - edition_or_catalog_identity
+      - stable_item_or_page_locator
+      - reuse_rights
+      - digitization_completeness
+  - source_id: CN-QING-VOICE-0004
+    source_key: qing_junjichu_dang
+    title: 軍機處檔
+    coverage: 清
+    priority_group: administrative_process
+    evidence_tier: A
+    source_kinds: [institutional_record, memorial_response]
+    preferred_for: [decision_context, institutional_context]
+    acquisition_strategy: source_discovery_required
+    status: pending_source_discovery
+    resolution_requirements:
+      - collection_scope
+      - authoritative_holding_institution
+      - catalog_identity
+      - stable_item_locator
+      - reuse_rights
+      - digitization_completeness
