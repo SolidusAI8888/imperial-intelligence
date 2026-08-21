@@ -1,0 +1,83 @@
+{
+  "source_id": "CN-MING-0002",
+  "title": "明實錄",
+  "extractor_version": 3,
+  "acquisition_strategy": "wikisource_catalog_children",
+  "host_completeness": "explicitly_incomplete",
+  "historical_extent_note": "維基文庫根頁記載官修十三部、二千九百零九卷，且頁面標示部分原作內容尚未錄入。",
+  "child_catalog": [
+    {
+      "key": "taizu_shilu",
+      "title": "太祖高皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "taizong_shilu",
+      "title": "太宗文皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "renzong_shilu",
+      "title": "仁宗昭皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xuanzong_shilu",
+      "title": "宣宗章皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "yingzong_shilu",
+      "title": "英宗睿皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xianzong_shilu",
+      "title": "憲宗純皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xiaozong_shilu",
+      "title": "孝宗敬皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "wuzong_shilu",
+      "title": "武宗毅皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "shizong_shilu",
+      "title": "世宗肅皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "muzong_shilu",
+      "title": "穆宗莊皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "shenzong_shilu",
+      "title": "神宗顯皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "guangzong_shilu",
+      "title": "光宗貞皇帝實錄",
+      "discovered_pages": 0
+    },
+    {
+      "key": "xizong_shilu",
+      "title": "熹宗悊皇帝實錄",
+      "discovered_pages": 0
+    }
+  ],
+  "pages": [],
+  "skipped_current": [],
+  "errors": [],
+  "source_complete": false,
+  "archive_scope_status": "partial_host_archive",
+  "archived_file_pairs": 0,
+  "discovered_page_count": 0,
+  "archive_scope_complete": false
+}
