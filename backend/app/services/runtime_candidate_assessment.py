@@ -94,6 +94,19 @@ def _partition_problem_insights(question: str, insights: list[object] | tuple[ob
     return supporting, conflicting
 
 
+def _has_independent_record_support(records: list[object] | tuple[object, ...]) -> bool:
+    """Automatic answers require support from at least two reviewed HER objects.
+
+    Multiple canonical passages attached to one HER are useful traceability, but they
+    do not constitute independent historical-record support. Keeping this distinction
+    at the final answer gate prevents one synthesized record from satisfying the
+    apparent evidence-count requirement by carrying several citations.
+    """
+    record_ids = {getattr(record, "record_id", "") for record in records}
+    record_ids.discard("")
+    return len(record_ids) >= 2
+
+
 def _select_runtime_candidate(candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...]) -> RuntimeCandidateAssessment | None:
     answer_ready = next((item for item in candidates if item.auto_answer_ready), None)
     if answer_ready is not None:
@@ -142,7 +155,11 @@ def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runti
         all_required_records_reviewed = bool(required_record_ids) and required_record_ids == loaded_record_ids
         chain_complete = bool(all_required_records_reviewed and canonical_ids and insights and role_links and dynasty != "Unknown")
         recommended = bool(chain_complete and recalled.retrieval_score >= 0.35 and scored.total_score >= 0.6)
-        answer_ready = bool(recommended and not conflicting_insights and scored.total_score >= 0.72 and len(canonical_ids) >= 2 and len(insights) >= 1)
+        independent_record_support = _has_independent_record_support(records)
+        answer_ready = bool(
+            recommended and not conflicting_insights and scored.total_score >= 0.72
+            and len(canonical_ids) >= 2 and independent_record_support and len(insights) >= 1
+        )
         assessed.append(RuntimeCandidateAssessment(
             person_id=person_id, retrieval_score=recalled.retrieval_score, candidate_score=scored.total_score,
             evidence_ids=tuple(canonical_ids), heu_ids=tuple(sorted(heu_ids)),
