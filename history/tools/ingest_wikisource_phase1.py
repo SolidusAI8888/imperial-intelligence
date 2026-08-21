@@ -9,17 +9,14 @@ import time
 from pathlib import Path
 from urllib.parse import quote
 
-import requests
 import yaml
-from bs4 import BeautifulSoup, Tag
 
 API = "https://zh.wikisource.org/w/api.php"
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "history/source_registry/phase1_sources.yaml"
 UA = "ImperialIntelligenceHistoricalCorpus/3.0 (research archival ingestion; GitHub project)"
 EXTRACTOR_VERSION = 3
-SESSION = requests.Session()
-SESSION.headers.update({"User-Agent": UA})
+SESSION = None
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 EDITORIAL_MARKERS = (
@@ -38,13 +35,30 @@ EDITORIAL_SELECTORS = [
     ".noprint", ".nomobile", ".plainlinks.navigation-not-searchable", ".sisterproject",
 ]
 
+CN_DIGITS = {
+    "零": 0, "〇": 0, "一": 1, "二": 2, "兩": 2, "两": 2,
+    "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9,
+}
+CN_UNITS = {"十": 10, "百": 100, "千": 1000}
+VOLUME_NUMBER_PATTERN = r"[0-9零〇一二兩两三四五六七八九十百千]+"
+
+
+def _session():
+    global SESSION
+    if SESSION is None:
+        import requests
+
+        SESSION = requests.Session()
+        SESSION.headers.update({"User-Agent": UA})
+    return SESSION
+
 
 def api(params: dict) -> dict:
     params = {**params, "format": "json", "formatversion": 2, "maxlag": 5}
     last_error: Exception | None = None
     for attempt in range(16):
         try:
-            r = SESSION.get(API, params=params, timeout=120)
+            r = _session().get(API, params=params, timeout=120)
             if r.status_code in RETRYABLE_STATUS:
                 retry_after = r.headers.get("Retry-After", "")
                 if retry_after.isdigit():
@@ -89,6 +103,56 @@ def existing_titles(candidates: list[str]) -> set[str]:
     return out
 
 
+def parse_chinese_number(value: str) -> int:
+    if value.isdigit():
+        return int(value)
+    total = 0
+    digit = 0
+    for char in value:
+        if char in CN_DIGITS:
+            digit = CN_DIGITS[char]
+        elif char in CN_UNITS:
+            total += (digit or 1) * CN_UNITS[char]
+            digit = 0
+        else:
+            raise ValueError(f"unsupported Chinese numeral: {value}")
+    return total + digit
+
+
+def format_chinese_number(value: int) -> str:
+    if value < 1 or value > 9999:
+        raise ValueError("Chinese volume number must be between 1 and 9999")
+    digits = "零一二三四五六七八九"
+    units = ("", "十", "百", "千")
+    result: list[str] = []
+    pending_zero = False
+    text = str(value)
+    for index, char in enumerate(text):
+        digit = int(char)
+        position = len(text) - index - 1
+        if digit == 0:
+            if result and any(next_char != "0" for next_char in text[index + 1:]):
+                pending_zero = True
+            continue
+        if pending_zero:
+            result.append("零")
+            pending_zero = False
+        if not (digit == 1 and position == 1 and not result):
+            result.append(digits[digit])
+        result.append(units[position])
+    return "".join(result)
+
+
+def parse_volume_title(title: str, root_page: str) -> tuple[int, str] | None:
+    match = re.match(
+        rf"^{re.escape(root_page)}/卷(?P<number>{VOLUME_NUMBER_PATTERN})(?P<suffix>.*)$",
+        title,
+    )
+    if not match:
+        return None
+    return parse_chinese_number(match.group("number")), match.group("suffix")
+
+
 def discover_volume_titles(root_page: str, vmin: int, vmax: int) -> list[str]:
     found: set[str] = set()
     plcontinue = None
@@ -100,19 +164,19 @@ def discover_volume_titles(root_page: str, vmin: int, vmax: int) -> list[str]:
         page = data["query"]["pages"][0]
         for link in page.get("links", []):
             title = link["title"]
-            m = re.match(rf"^{re.escape(root_page)}/卷0*(\d+)(.*)$", title)
-            if m and vmin <= int(m.group(1)) <= vmax:
+            volume = parse_volume_title(title, root_page)
+            if volume and vmin <= volume[0] <= vmax:
                 found.add(title)
         cont = data.get("continue")
         if not cont:
             break
         plcontinue = cont.get("plcontinue")
 
-    by_num = {int(re.match(rf"^{re.escape(root_page)}/卷0*(\d+)", t).group(1)) for t in found}
+    by_num = {parse_volume_title(title, root_page)[0] for title in found}
     for n in range(vmin, vmax + 1):
         if n in by_num:
             continue
-        nums = list(dict.fromkeys([f"{n:03d}", f"{n:02d}", str(n)]))
+        nums = list(dict.fromkeys([f"{n:03d}", f"{n:02d}", str(n), format_chinese_number(n)]))
         candidates = [f"{root_page}/卷{num}{suffix}" for num in nums for suffix in ["", "上", "中", "下"]]
         existing = existing_titles(candidates)
         parts = [t for t in existing if t.endswith(("上", "中", "下"))]
@@ -122,9 +186,8 @@ def discover_volume_titles(root_page: str, vmin: int, vmax: int) -> list[str]:
             found.add(sorted(existing, key=len)[0])
 
     def key(title: str):
-        m = re.match(rf"^{re.escape(root_page)}/卷0*(\d+)(.*)$", title)
-        suffix = m.group(2)
-        return int(m.group(1)), {"": 0, "上": 1, "中": 2, "下": 3}.get(suffix, 9), suffix
+        number, suffix = parse_volume_title(title, root_page)
+        return number, {"": 0, "上": 1, "中": 2, "下": 3}.get(suffix, 9), suffix
 
     return sorted(found, key=key)
 
@@ -161,6 +224,8 @@ def clean_original_blocks(html: str) -> list[str]:
     V3 keeps historical table cells but rejects known Wikisource UI containers and
     obvious navigation/editorial strings such as sister-project links and arrows.
     """
+    from bs4 import BeautifulSoup, Tag
+
     soup = BeautifulSoup(html, "html.parser")
     root = soup.select_one(".mw-parser-output") or soup
 
@@ -207,11 +272,10 @@ def clean_original_blocks(html: str) -> list[str]:
 
 
 def suffix_code(title: str, root_page: str) -> tuple[int, str]:
-    m = re.match(rf"^{re.escape(root_page)}/卷0*(\d+)(.*)$", title)
-    if not m:
+    volume = parse_volume_title(title, root_page)
+    if not volume:
         raise ValueError(f"unrecognized volume title: {title}")
-    n = int(m.group(1))
-    suffix = m.group(2)
+    n, suffix = volume
     code = {"": "", "上": "a", "中": "b", "下": "c", "a": "a", "b": "b", "c": "c"}.get(
         suffix, "x" + hashlib.sha1(suffix.encode()).hexdigest()[:4]
     )
@@ -250,6 +314,12 @@ def archive_source(src: dict) -> dict:
         "skipped_current": [],
         "errors": [],
     }
+    if not titles:
+        report["errors"].append({
+            "source": root_page,
+            "error_type": "VolumeDiscoveryError",
+            "error": "no volume pages discovered for a registered numbered source",
+        })
 
     for idx, title in enumerate(titles, 1):
         n, part = suffix_code(title, root_page)
