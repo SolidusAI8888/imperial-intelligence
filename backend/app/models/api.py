@@ -137,6 +137,10 @@ class PersonaVoiceReviewPacketResponse(BaseModel):
             "feature_tags_reviewed",
         ]
     ]
+    conflicting_candidate_ids: list[str]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
     approval_ready: bool
     blockers: list[str]
     next_action: Literal[
@@ -152,6 +156,9 @@ class PersonaVoiceReviewPacketResponse(BaseModel):
 class PersonaVoiceReviewDecisionRequest(BaseModel):
     reviewer: str = Field(min_length=1, max_length=200)
     decision: Literal["approved", "rejected"]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
     passage_link_verified: bool = False
     person_identity_verified: bool = False
     transcription_checked: bool = False
@@ -164,6 +171,10 @@ class PersonaVoiceReviewDecisionResponse(BaseModel):
     voice_evidence_id: str
     reviewer: str
     decision: Literal["approved", "rejected"]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
+    fingerprint_verified: Literal[True]
     resulting_status: Literal["reviewed", "rejected"]
     persisted: bool
     runtime_eligible_after_persist: bool
@@ -226,6 +237,10 @@ class PersonaVoiceReviewQueueItemResponse(BaseModel):
     archived_file_integrity_verified: bool
     candidate_text_matches_archive: bool
     required_attestations: list[str]
+    conflicting_candidate_ids: list[str]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
     approval_ready: bool
     blockers: list[str]
     review_attested: bool

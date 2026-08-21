@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
+import hashlib
+import hmac
 from pathlib import Path
 import re
 
@@ -17,6 +19,11 @@ from app.services.source_corpus_passage import (
 
 
 _VOICE_ID_RE = re.compile(r"^PVC-[A-Z0-9][A-Z0-9-]{2,63}$")
+_REVIEW_FINGERPRINT_RE = re.compile(r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$")
+
+
+class StalePersonaVoiceReviewError(ValueError):
+    """Raised when a decision targets an older candidate or archive state."""
 
 
 @dataclass(frozen=True)
@@ -41,6 +48,8 @@ class PersonaVoiceReviewPacket:
     feature_tag_count: int
     requires_person_identity_review: bool
     required_attestations: tuple[str, ...]
+    conflicting_candidate_ids: tuple[str, ...]
+    review_fingerprint: str
     approval_ready: bool
     blockers: tuple[str, ...]
     next_action: str
@@ -52,6 +61,8 @@ class PersonaVoiceReviewDecisionResult:
     voice_evidence_id: str
     reviewer: str
     decision: str
+    review_fingerprint: str
+    fingerprint_verified: bool
     resulting_status: str
     persisted: bool
     runtime_eligible_after_persist: bool
@@ -102,6 +113,60 @@ def _archive_context_excerpt(
     return excerpt
 
 
+def _conflicting_candidate_ids(
+    *,
+    current_path: Path,
+    person_id: str,
+    passage_id: str,
+    root: Path,
+) -> tuple[str, ...]:
+    conflicts: list[str] = []
+    for path in sorted(root.rglob("*.yaml")) if root.exists() else ():
+        if path == current_path:
+            continue
+        raw = _load_yaml(path)
+        if (
+            raw.get("status") == "candidate"
+            and raw.get("person_id") == person_id
+            and raw.get("passage_id") == passage_id
+            and raw.get("voice_evidence_id")
+        ):
+            conflicts.append(str(raw["voice_evidence_id"]))
+    return tuple(sorted(conflicts))
+
+
+def _stable_review_fingerprint(
+    raw: dict,
+    *,
+    archived_text: str | None,
+    integrity_verified: bool,
+    blockers: tuple[str, ...],
+    conflicting_candidate_ids: tuple[str, ...],
+) -> str:
+    candidate_state = {key: value for key, value in raw.items() if key != "review"}
+    payload = "\n".join(
+        (
+            "persona_voice_review_fingerprint_v1",
+            yaml.safe_dump(
+                candidate_state,
+                allow_unicode=True,
+                sort_keys=True,
+                width=100,
+            ),
+            (
+                hashlib.sha256(archived_text.encode("utf-8")).hexdigest()
+                if archived_text is not None
+                else "canonical_passage_not_found"
+            ),
+            "integrity_verified" if integrity_verified else "integrity_not_verified",
+            "|".join(blockers),
+            "|".join(conflicting_candidate_ids),
+        )
+    )
+    digest = hashlib.sha256(payload.encode("utf-8")).hexdigest().upper()
+    return f"PVC-REVIEW-SHA256-{digest}"
+
+
 def build_persona_voice_review_packet(
     voice_evidence_id: str,
     *,
@@ -110,7 +175,8 @@ def build_persona_voice_review_packet(
 ) -> PersonaVoiceReviewPacket:
     """Validate a PVC candidate against immutable archived source text."""
 
-    record_path = _find_record_path(voice_evidence_id, voice_root or VOICE_EVIDENCE_ROOT)
+    resolved_voice_root = voice_root or VOICE_EVIDENCE_ROOT
+    record_path = _find_record_path(voice_evidence_id, resolved_voice_root)
     raw = _load_yaml(record_path)
     evidence = parse_persona_voice_evidence(raw)
     blockers: list[str] = []
@@ -118,6 +184,14 @@ def build_persona_voice_review_packet(
         blockers.append("voice_evidence_status_is_not_candidate")
     if not evidence.passage_id.startswith(f"{evidence.source_id}-"):
         blockers.append("passage_id_does_not_match_source_id")
+    conflicting_candidate_ids = _conflicting_candidate_ids(
+        current_path=record_path,
+        person_id=evidence.person_id,
+        passage_id=evidence.passage_id,
+        root=resolved_voice_root,
+    )
+    if conflicting_candidate_ids:
+        blockers.append("duplicate_candidates_for_person_and_passage")
 
     archived = find_archived_passage(
         evidence.source_id,
@@ -157,6 +231,13 @@ def build_persona_voice_review_packet(
         blockers.append("candidate_has_no_voice_or_decision_or_rhetoric_features")
     if len(normalized_source_text(evidence.text).replace(" ", "")) < 12:
         blockers.append("candidate_text_too_short_for_voice_review")
+    review_fingerprint = _stable_review_fingerprint(
+        raw,
+        archived_text=archived.text if archived is not None else None,
+        integrity_verified=integrity_verified,
+        blockers=tuple(blockers),
+        conflicting_candidate_ids=conflicting_candidate_ids,
+    )
 
     return PersonaVoiceReviewPacket(
         voice_evidence_id=evidence.voice_evidence_id,
@@ -184,6 +265,8 @@ def build_persona_voice_review_packet(
             "transcription_checked",
             "feature_tags_reviewed",
         ),
+        conflicting_candidate_ids=conflicting_candidate_ids,
+        review_fingerprint=review_fingerprint,
         approval_ready=not blockers,
         blockers=tuple(blockers),
         next_action=(
@@ -204,6 +287,7 @@ def apply_persona_voice_review_decision(
     *,
     reviewer: str,
     decision: str,
+    review_fingerprint: str,
     passage_link_verified: bool,
     person_identity_verified: bool,
     transcription_checked: bool,
@@ -222,6 +306,9 @@ def apply_persona_voice_review_decision(
         raise ValueError("decision must be approved or rejected")
     if decision == "rejected" and not (note or "").strip():
         raise ValueError("rejected voice evidence requires a review note")
+    normalized_fingerprint = review_fingerprint.strip()
+    if not _REVIEW_FINGERPRINT_RE.fullmatch(normalized_fingerprint):
+        raise ValueError("review_fingerprint must be a packet SHA-256 fingerprint")
 
     resolved_voice_root = voice_root or VOICE_EVIDENCE_ROOT
     record_path = _find_record_path(voice_evidence_id, resolved_voice_root)
@@ -230,6 +317,10 @@ def apply_persona_voice_review_decision(
         voice_root=resolved_voice_root,
         corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
     )
+    if not hmac.compare_digest(normalized_fingerprint, packet.review_fingerprint):
+        raise StalePersonaVoiceReviewError(
+            "review fingerprint is stale; reload the review packet before deciding"
+        )
     checks_complete = bool(
         passage_link_verified
         and person_identity_verified
@@ -247,6 +338,7 @@ def apply_persona_voice_review_decision(
         "reviewer": normalized_reviewer,
         "reviewed_at": datetime.now(timezone.utc).isoformat(),
         "decision": decision,
+        "review_fingerprint": normalized_fingerprint,
         "passage_link_verified": bool(passage_link_verified),
         "person_identity_verified": bool(person_identity_verified),
         "transcription_checked": bool(transcription_checked),
@@ -269,6 +361,8 @@ def apply_persona_voice_review_decision(
         voice_evidence_id=voice_evidence_id,
         reviewer=normalized_reviewer,
         decision=decision,
+        review_fingerprint=normalized_fingerprint,
+        fingerprint_verified=True,
         resulting_status=reviewed.status,
         persisted=persist,
         runtime_eligible_after_persist=bool(persist and reviewed.runtime_eligible),

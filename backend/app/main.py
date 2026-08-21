@@ -33,6 +33,7 @@ from app.services.persona_repository import PersonaRepository
 from app.services.persona_voice_readiness import inspect_persona_voice_readiness
 from app.services.persona_voice_candidate import create_persona_voice_candidate
 from app.services.persona_voice_review import (
+    StalePersonaVoiceReviewError,
     apply_persona_voice_review_decision,
     build_persona_voice_review_packet,
 )
@@ -171,6 +172,7 @@ def review_persona_voice_candidate(
             voice_evidence_id,
             reviewer=request.reviewer,
             decision=request.decision,
+            review_fingerprint=request.review_fingerprint,
             passage_link_verified=request.passage_link_verified,
             person_identity_verified=request.person_identity_verified,
             transcription_checked=request.transcription_checked,
@@ -179,6 +181,8 @@ def review_persona_voice_candidate(
             persist=request.persist,
         )
         return PersonaVoiceReviewDecisionResponse.model_validate(asdict(result))
+    except StalePersonaVoiceReviewError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:

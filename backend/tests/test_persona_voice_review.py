@@ -2,6 +2,7 @@ import hashlib
 import json
 
 from fastapi.testclient import TestClient
+import pytest
 import yaml
 
 from app.main import app
@@ -9,6 +10,7 @@ from app.services.persona_voice_evidence import parse_persona_voice_evidence
 from app.services.persona_voice_review import (
     PersonaVoiceReviewDecisionResult,
     PersonaVoiceReviewPacket,
+    StalePersonaVoiceReviewError,
     apply_persona_voice_review_decision,
     build_persona_voice_review_packet,
 )
@@ -92,6 +94,14 @@ def test_review_packet_requires_exact_archived_passage_trace(tmp_path) -> None:
         "transcription_checked",
         "feature_tags_reviewed",
     )
+    assert packet.conflicting_candidate_ids == ()
+    assert packet.review_fingerprint.startswith("PVC-REVIEW-SHA256-")
+    assert len(packet.review_fingerprint) == len("PVC-REVIEW-SHA256-") + 64
+    assert build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    ).review_fingerprint == packet.review_fingerprint
     assert packet.approval_ready is True
     assert packet.blockers == ()
     assert packet.next_action == (
@@ -121,6 +131,11 @@ def test_review_packet_blocks_transcription_not_present_in_archive(tmp_path) -> 
 
 def test_review_packet_blocks_archived_file_changed_after_ingestion(tmp_path) -> None:
     voice_root, corpus_root, _candidate_path = _roots(tmp_path)
+    original = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
     passage_path = corpus_root / "tang" / "text" / "001.txt"
     passage_path.write_text(
         passage_path.read_text(encoding="utf-8") + "被修改",
@@ -137,16 +152,80 @@ def test_review_packet_blocks_archived_file_changed_after_ingestion(tmp_path) ->
     assert packet.archived_file_integrity_verified is False
     assert packet.approval_ready is False
     assert packet.blockers == ("archived_file_not_verified_by_ingestion_report",)
+    assert packet.review_fingerprint != original.review_fingerprint
+
+
+def test_review_fingerprint_changes_when_candidate_features_change(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    original = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+    raw = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    raw["voice_features"].append("concise")
+    candidate_path.write_text(
+        yaml.safe_dump(raw, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+
+    changed = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+
+    assert original.approval_ready is True
+    assert changed.approval_ready is True
+    assert changed.voice_features == ("direct", "concise")
+    assert changed.review_fingerprint != original.review_fingerprint
+
+
+def test_duplicate_candidate_is_blocked_in_packet_and_decision_service(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    duplicate = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    duplicate["voice_evidence_id"] = "PVC-TANG-REVIEW-0002"
+    candidate_path.with_name("PVC-TANG-REVIEW-0002.yaml").write_text(
+        yaml.safe_dump(duplicate, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+
+    packet = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+
+    assert packet.approval_ready is False
+    assert packet.conflicting_candidate_ids == ("PVC-TANG-REVIEW-0002",)
+    assert "duplicate_candidates_for_person_and_passage" in packet.blockers
+    with pytest.raises(ValueError, match="duplicate_candidates_for_person_and_passage"):
+        apply_persona_voice_review_decision(
+            "PVC-TANG-REVIEW-0001",
+            reviewer="historian@example",
+            decision="approved",
+            review_fingerprint=packet.review_fingerprint,
+            passage_link_verified=True,
+            person_identity_verified=True,
+            transcription_checked=True,
+            feature_tags_reviewed=True,
+            voice_root=voice_root,
+            corpus_root=corpus_root,
+        )
 
 
 def test_status_only_approval_is_rejected(tmp_path) -> None:
     voice_root, corpus_root, _candidate_path = _roots(tmp_path)
+    packet = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
 
     try:
         apply_persona_voice_review_decision(
             "PVC-TANG-REVIEW-0001",
             reviewer="historian@example",
             decision="approved",
+            review_fingerprint=packet.review_fingerprint,
             passage_link_verified=True,
             person_identity_verified=True,
             transcription_checked=False,
@@ -160,13 +239,47 @@ def test_status_only_approval_is_rejected(tmp_path) -> None:
         raise AssertionError("status-only approval should be rejected")
 
 
+def test_stale_review_fingerprint_is_rejected_after_candidate_change(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    packet = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+    raw = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    raw["rhetoric_features"] = ["uses_historical_examples"]
+    candidate_path.write_text(
+        yaml.safe_dump(raw, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+
+    with pytest.raises(StalePersonaVoiceReviewError, match="fingerprint is stale"):
+        apply_persona_voice_review_decision(
+            "PVC-TANG-REVIEW-0001",
+            reviewer="historian@example",
+            decision="approved",
+            review_fingerprint=packet.review_fingerprint,
+            passage_link_verified=True,
+            person_identity_verified=True,
+            transcription_checked=True,
+            feature_tags_reviewed=True,
+            voice_root=voice_root,
+            corpus_root=corpus_root,
+        )
+
+
 def test_explicit_review_persists_attestation_and_unlocks_runtime_record(tmp_path) -> None:
     voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    packet = build_persona_voice_review_packet(
+        "PVC-TANG-REVIEW-0001",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
 
     result = apply_persona_voice_review_decision(
         "PVC-TANG-REVIEW-0001",
         reviewer="historian@example",
         decision="approved",
+        review_fingerprint=packet.review_fingerprint,
         passage_link_verified=True,
         person_identity_verified=True,
         transcription_checked=True,
@@ -183,6 +296,9 @@ def test_explicit_review_persists_attestation_and_unlocks_runtime_record(tmp_pat
     assert result.runtime_eligible_after_persist is True
     assert raw["status"] == "reviewed"
     assert raw["review"]["decision"] == "approved"
+    assert raw["review"]["review_fingerprint"] == packet.review_fingerprint
+    assert result.review_fingerprint == packet.review_fingerprint
+    assert result.fingerprint_verified is True
     assert evidence.review_attested is True
     assert evidence.runtime_eligible is True
 
@@ -214,6 +330,8 @@ def test_review_packet_api_is_read_only_and_typed(monkeypatch) -> None:
             "transcription_checked",
             "feature_tags_reviewed",
         ),
+        conflicting_candidate_ids=(),
+        review_fingerprint="PVC-REVIEW-SHA256-" + "A" * 64,
         approval_ready=True,
         blockers=(),
         next_action="record_explicit_human_review_with_all_attestations",
@@ -234,6 +352,10 @@ def test_review_packet_api_is_read_only_and_typed(monkeypatch) -> None:
         "transcription_checked",
         "feature_tags_reviewed",
     ]
+    assert response.json()["conflicting_candidate_ids"] == []
+    assert response.json()["review_fingerprint"] == (
+        "PVC-REVIEW-SHA256-" + "A" * 64
+    )
 
 
 def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch) -> None:
@@ -241,6 +363,8 @@ def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch)
         voice_evidence_id="PVC-TANG-REVIEW-0001",
         reviewer="historian@example",
         decision="approved",
+        review_fingerprint="PVC-REVIEW-SHA256-" + "A" * 64,
+        fingerprint_verified=True,
         resulting_status="reviewed",
         persisted=False,
         runtime_eligible_after_persist=False,
@@ -255,6 +379,7 @@ def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch)
         json={
             "reviewer": "historian@example",
             "decision": "approved",
+            "review_fingerprint": "PVC-REVIEW-SHA256-" + "A" * 64,
             "passage_link_verified": True,
             "person_identity_verified": True,
             "transcription_checked": True,
@@ -266,3 +391,28 @@ def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch)
     assert response.status_code == 200
     assert response.json()["persisted"] is False
     assert response.json()["runtime_eligible_after_persist"] is False
+    assert response.json()["fingerprint_verified"] is True
+
+
+def test_review_decision_api_returns_conflict_for_stale_packet(monkeypatch) -> None:
+    def _raise_stale(*_args, **_kwargs):
+        raise StalePersonaVoiceReviewError("review fingerprint is stale; reload")
+
+    monkeypatch.setattr("app.main.apply_persona_voice_review_decision", _raise_stale)
+
+    response = client.post(
+        "/persona-voice/PVC-TANG-REVIEW-0001/review",
+        json={
+            "reviewer": "historian@example",
+            "decision": "approved",
+            "review_fingerprint": "PVC-REVIEW-SHA256-" + "A" * 64,
+            "passage_link_verified": True,
+            "person_identity_verified": True,
+            "transcription_checked": True,
+            "feature_tags_reviewed": True,
+            "persist": False,
+        },
+    )
+
+    assert response.status_code == 409
+    assert "fingerprint is stale" in response.json()["detail"]

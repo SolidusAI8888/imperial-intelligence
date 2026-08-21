@@ -31,6 +31,8 @@ class PersonaVoiceReviewQueueItem:
     archived_file_integrity_verified: bool
     candidate_text_matches_archive: bool
     required_attestations: tuple[str, ...]
+    conflicting_candidate_ids: tuple[str, ...]
+    review_fingerprint: str
     approval_ready: bool
     blockers: tuple[str, ...]
     review_attested: bool
@@ -112,7 +114,10 @@ def build_persona_voice_review_queue(
                 corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
             )
             blockers = list(packet.blockers)
-            if candidate_keys[(record.person_id, record.passage_id)] > 1:
+            if (
+                candidate_keys[(record.person_id, record.passage_id)] > 1
+                and "duplicate_candidates_for_person_and_passage" not in blockers
+            ):
                 blockers.append("duplicate_candidates_for_person_and_passage")
             items.append(
                 PersonaVoiceReviewQueueItem(
@@ -137,6 +142,8 @@ def build_persona_voice_review_queue(
                         packet.candidate_text_matches_archive
                     ),
                     required_attestations=packet.required_attestations,
+                    conflicting_candidate_ids=packet.conflicting_candidate_ids,
+                    review_fingerprint=packet.review_fingerprint,
                     approval_ready=not blockers,
                     blockers=tuple(blockers),
                     review_attested=False,
@@ -192,6 +199,8 @@ def build_persona_voice_review_queue(
                         packet.candidate_text_matches_archive
                     ),
                     required_attestations=packet.required_attestations,
+                    conflicting_candidate_ids=packet.conflicting_candidate_ids,
+                    review_fingerprint=packet.review_fingerprint,
                     approval_ready=False,
                     blockers=tuple(repair_blockers),
                     review_attested=record.review_attested,

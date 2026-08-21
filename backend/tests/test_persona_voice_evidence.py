@@ -26,6 +26,7 @@ def _record(**overrides):
             "reviewer": "historian@example",
             "reviewed_at": "2026-08-21T00:00:00+00:00",
             "decision": "approved",
+            "review_fingerprint": "PVC-REVIEW-SHA256-" + "A" * 64,
             "passage_link_verified": True,
             "person_identity_verified": True,
             "transcription_checked": True,
@@ -53,6 +54,24 @@ def test_reviewed_label_without_complete_attestation_cannot_affect_runtime():
     assert evidence.status == "reviewed"
     assert evidence.review_attested is False
     assert evidence.runtime_eligible is False
+
+
+def test_legacy_review_without_packet_fingerprint_cannot_affect_runtime():
+    review = dict(_record()["review"])
+    review.pop("review_fingerprint")
+    evidence = parse_persona_voice_evidence(_record(review=review))
+
+    assert evidence.status == "reviewed"
+    assert evidence.review_attested is False
+    assert evidence.runtime_eligible is False
+
+
+def test_review_fingerprint_must_have_the_packet_hash_format():
+    review = dict(_record()["review"])
+    review["review_fingerprint"] = "stale-or-manual-value"
+
+    with pytest.raises(ValueError, match="packet SHA-256 fingerprint"):
+        parse_persona_voice_evidence(_record(review=review))
 
 
 def test_rejected_review_decision_cannot_be_hidden_by_reviewed_status():

@@ -81,6 +81,7 @@ def test_queue_surfaces_verified_candidate_without_approving_it(tmp_path) -> Non
         "transcription_checked",
         "feature_tags_reviewed",
     )
+    assert queue.items[0].review_fingerprint.startswith("PVC-REVIEW-SHA256-")
     assert queue.items[0].review_packet_endpoint.endswith("/review-packet")
     assert queue.items[0].next_action == (
         "record_explicit_human_review_with_all_attestations"
@@ -108,6 +109,12 @@ def test_queue_blocks_multiple_candidates_for_same_person_and_passage(tmp_path) 
         "duplicate_candidates_for_person_and_passage" in item.blockers
         for item in queue.items
     )
+    assert all(len(item.conflicting_candidate_ids) == 1 for item in queue.items)
+    assert {
+        conflict_id
+        for item in queue.items
+        for conflict_id in item.conflicting_candidate_ids
+    } == {item.voice_evidence_id for item in queue.items}
     assert all(
         item.next_action == "resolve_review_packet_blockers_before_decision"
         for item in queue.items

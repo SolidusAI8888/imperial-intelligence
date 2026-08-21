@@ -54,6 +54,21 @@ the four required attestations, and a deterministic next action. This makes one 
 for an operator to understand the review task while preserving the separate explicit decision
 endpoint.
 
+Every review packet and queue item now includes a `review_fingerprint`. The SHA-256 fingerprint
+binds the candidate record, proposed feature tags, canonical passage content, ingestion-integrity
+state, and current blockers. `POST /persona-voice/{voice_evidence_id}/review` requires the exact
+fingerprint that the reviewer saw. If any bound state changes before submission, the endpoint
+returns `409 Conflict` and requires the packet to be reloaded. Persisted approvals record the
+verified fingerprint, and reviewed records without one remain runtime-ineligible as legacy
+attestation repairs. A fingerprint proves state continuity only; it does not replace any of the
+four human attestations or grant factual answer permission.
+
+Duplicate candidates for the same person and canonical passage are now detected inside the
+review-packet and decision services, not merely displayed as a queue warning. The packet lists
+the conflicting PVC identifiers, folds that conflict into its fingerprint and blockers, and
+refuses approval until the duplicate records are resolved. Calling the decision endpoint
+directly therefore cannot bypass the queue's duplicate guard.
+
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage
 and source counts, the weighted score, and any style-gate blockers. It distinguishes

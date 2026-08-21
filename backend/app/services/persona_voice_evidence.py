@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime
+import re
 from typing import Iterable, Mapping
 
 
@@ -18,6 +19,7 @@ _SOURCE_KIND_WEIGHTS = {
 
 _MIN_STYLE_PASSAGES = 2
 _MIN_STYLE_EVIDENCE_WEIGHT = 1.20
+_REVIEW_FINGERPRINT_RE = re.compile(r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$")
 
 
 @dataclass(frozen=True)
@@ -37,6 +39,7 @@ class PersonaVoiceEvidence:
     reviewer: str | None
     reviewed_at: str | None
     review_decision: str | None
+    review_fingerprint: str | None
     passage_link_verified: bool
     person_identity_verified: bool
     transcription_checked: bool
@@ -48,6 +51,7 @@ class PersonaVoiceEvidence:
             self.reviewer
             and self.reviewed_at
             and self.review_decision == "approved"
+            and self.review_fingerprint is not None
             and self.passage_link_verified
             and self.person_identity_verified
             and self.transcription_checked
@@ -159,6 +163,9 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
             datetime.fromisoformat(reviewed_at.replace("Z", "+00:00"))
         except ValueError as exc:
             raise ValueError("reviewed_at must be an ISO-8601 datetime") from exc
+    review_fingerprint = str(review.get("review_fingerprint", "")).strip() or None
+    if review_fingerprint and not _REVIEW_FINGERPRINT_RE.fullmatch(review_fingerprint):
+        raise ValueError("review_fingerprint must be a packet SHA-256 fingerprint")
 
     evidence = PersonaVoiceEvidence(
         voice_evidence_id=str(record["voice_evidence_id"]).strip(),
@@ -176,6 +183,7 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
         reviewer=(str(review.get("reviewer", "")).strip() or None),
         reviewed_at=reviewed_at,
         review_decision=review_decision,
+        review_fingerprint=review_fingerprint,
         passage_link_verified=review.get("passage_link_verified") is True,
         person_identity_verified=review.get("person_identity_verified") is True,
         transcription_checked=review.get("transcription_checked") is True,
