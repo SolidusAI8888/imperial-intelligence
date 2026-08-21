@@ -1,0 +1,17 @@
+status: reviewed_sample
+passages:
+  - passage_id: ZGZY-V02-P-WZ-REF-001
+    source_id: SRC-ZGZY
+    chronology: 贞观十七年
+    topic_hint: wei_zheng_death_and_taizong_reflection
+    original_text: >-
+      太宗后尝谓侍臣曰：“夫以铜为镜，可以正衣冠；以古为镜，可以知兴替；以人为镜，可以明得失。朕常保此三镜，以防己过。今魏徵殂逝，遂亡一镜矣！”因泣下久之。乃诏曰：“昔惟魏徵，每显予过。自其逝也，虽过莫彰。朕岂独有非于往时，而皆是于兹日？故亦庶僚苟顺，难触龙鳞者欤！所以虚己外求，披迷内省。言而不用，朕所甘心。用而不言，谁之责也？自斯已后，各悉乃诚。若有是非，直言无隐。”
+    locator:
+      digital_witness: Wikisource 贞观政要/卷02
+      section_hint: 任贤
+    evidentiary_role:
+      - direct_attributed_reflection
+      - later_outcome
+    caution: >-
+      《贞观政要》是后出的政治史料汇编，适合支持太宗对魏徵作用的后期公开评价，但不等同于可证明其武德九年最初任用魏徵时已经形成完全相同的思考。
+    extraction_status: reviewed_for_heu

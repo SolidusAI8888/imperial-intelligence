@@ -1,0 +1,17 @@
+source_id: SRC-ZGZY
+title: 贞观政要
+source_class: historical_compilation
+author: 吴兢
+period: 唐
+language: Classical Chinese
+primary_role:
+  - political_dialogue
+  - ruler_reflection
+  - governance_practice
+reliability_notes:
+  - 以贞观君臣言论与政事为核心，但成书晚于部分事件，应与正史及编年史交叉核验。
+  - 特别适合支持太宗本人后来的反思、纳谏观念与治国经验，但不应自动视为逐字实录。
+digital_witness:
+  provider: Wikisource
+  title: 贞观政要/卷02
+review_status: sample_reviewed

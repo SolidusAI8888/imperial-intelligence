@@ -1,0 +1,21 @@
+source_id: SRC-ZZTJ
+title: 资治通鉴
+author_attribution:
+  - 司马光等
+source_class: chronological_history
+completion_period: 北宋
+language: classical_chinese
+source_role:
+  - chronological_context
+  - decision_process_cross_check
+  - event_sequence_reconstruction
+authority_tier: A
+edition_status: public_domain_text_verified_against_wikisource
+public_reference:
+  provider: Wikisource
+  urls:
+    - https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7191
+    - https://zh.wikisource.org/wiki/%E8%B3%87%E6%B2%BB%E9%80%9A%E9%91%91/%E5%8D%B7193
+notes:
+  - 长于事件时序、决策过程和多方互动的重建。
+  - 对其引用的更早材料仍需记录可能的史源依赖关系。

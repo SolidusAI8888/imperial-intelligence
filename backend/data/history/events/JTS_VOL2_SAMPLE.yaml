@@ -1,0 +1,69 @@
+status: sample_ingestion
+events:
+  - event_id: EVT-TTZ-0001
+    title: 反对因突厥压力迁都
+    chronology: 武德七年
+    participants:
+      - 李世民
+      - 李淵
+      - 蕭瑀
+      - 宇文士及
+    claim_ids:
+      - CLM-JTS-0001
+      - CLM-JTS-0002
+    source_ids:
+      - SRC-JTS
+    event_type:
+      - strategic_decision
+      - frontier_policy
+      - dissent_to_superior
+    factual_summary: >-
+      面对突厥压力及迁都建议，李世民主张不应因边患放弃长安，并提出由自己承担解决突厥威胁的责任。
+    interpretation_status: facts_only
+    cross_source_review_status: pending
+
+  - event_id: EVT-TTZ-0002
+    title: 玄武门之变后接掌政务
+    chronology: 武德九年六月
+    participants:
+      - 李世民
+      - 李建成
+      - 李元吉
+      - 長孫無忌
+      - 尉遲敬德
+      - 房玄齡
+      - 杜如晦
+    claim_ids:
+      - CLM-JTS-0003
+      - CLM-JTS-0004
+    source_ids:
+      - SRC-JTS
+    event_type:
+      - succession_conflict
+      - power_transition
+      - governance_transition
+    factual_summary: >-
+      玄武门冲突后，李世民被立为皇太子并接掌政务，随后采取若干简肃和征求治国意见的措施。
+    interpretation_status: facts_only
+    cross_source_review_status: pending
+
+  - event_id: EVT-TTZ-0003
+    title: 贞观三年中枢用人配置
+    chronology: 貞觀三年二月
+    participants:
+      - 李世民
+      - 房玄齡
+      - 杜如晦
+      - 李靖
+      - 魏徵
+    claim_ids:
+      - CLM-JTS-0005
+    source_ids:
+      - SRC-JTS
+    event_type:
+      - appointments
+      - governing_team
+    factual_summary: >-
+      贞观三年，房玄龄、杜如晦、李靖、魏徵等人分别担任关键职位，构成当时中枢治理班底的重要组成部分。
+    interpretation_status: facts_only
+    cross_source_review_status: pending

@@ -1,0 +1,32 @@
+case_id: FOUNDATION-0001-history-and-destiny
+status: draft_claims
+claims:
+  - claim_id: CLM-FND-0001
+    statement: >-
+      在晋阳起兵前，李世民已与刘文静讨论乘隋末秩序崩解之机入关，并明确表示刘文静的方案“正合吾意”。
+    support_passage_ids:
+      - ZZTJ-V183-P-JINYANG-001
+    confidence: high
+
+  - claim_id: CLM-FND-0002
+    statement: >-
+      李世民虽然赞同起兵方案，但对李渊是否接受长期犹豫，说明时代机会并未消除个人决策的不确定性与风险。
+    support_passage_ids:
+      - ZZTJ-V183-P-JINYANG-001
+    confidence: medium
+    note: >-
+      “机会并未消除风险”属于对记载结构的谨慎抽象；史料直接支持的是李世民赞同方案且“恐淵不从，犹豫久之”。
+
+  - claim_id: CLM-FND-0003
+    statement: >-
+      唐太宗在贞观三年明确把隋朝灭亡解释为君主暴虐与臣下噤声共同导致的政治失败，并要求自己与群臣以前事为戒。
+    support_passage_ids:
+      - ZGZY-V03-P-SUIFALL-001
+    confidence: high
+
+  - claim_id: CLM-FND-0004
+    statement: >-
+      唐太宗把国家倾危与长期积累的小错联系起来，并以隋亡提醒群臣不要因问题看似微小而停止纠错。
+    support_passage_ids:
+      - ZGZY-V01-P-SUIFALL-002
+    confidence: high

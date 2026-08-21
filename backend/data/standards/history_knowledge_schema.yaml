@@ -1,0 +1,123 @@
+schema_name: history_knowledge_layer
+schema_version: "1.0.0"
+status: draft
+
+purpose: >
+  Define the minimum machine-readable structures connecting authoritative source material
+  to passages, claims, events and derived experiences under the History First architecture.
+
+id_patterns:
+  source: "^SRC-[A-Z0-9-]+$"
+  passage: "^PAS-[A-Z0-9-]+-[0-9]{4,}$"
+  claim: "^CLM-[A-Z0-9-]+-[0-9]{4,}$"
+  event: "^EVT-[A-Z0-9-]+-[0-9]{4,}$"
+  experience: "^EXP-[A-Z0-9-]+-[0-9]{4,}$"
+
+source:
+  required:
+    - source_id
+    - title
+    - source_class
+    - evidence_tier
+    - evidence_grade
+    - digitization_status
+    - cautions
+  evidence_tier_allowed:
+    - A
+    - B
+    - C
+    - D
+
+passage:
+  required:
+    - passage_id
+    - source_id
+    - locator
+    - text_or_pointer
+    - verification_status
+  optional:
+    - edition
+    - normalized_text
+    - translation
+    - notes
+
+claim:
+  required:
+    - claim_id
+    - passage_ids
+    - claim_type
+    - statement
+    - confidence
+  claim_type_allowed:
+    - fact
+    - attributed_statement
+    - compiler_interpretation
+    - modern_inference
+  confidence:
+    minimum: 0.0
+    maximum: 1.0
+
+historical_event:
+  required:
+    - event_id
+    - title
+    - participant_ids
+    - claim_ids
+    - chronology
+    - background
+    - actions
+    - outcomes
+    - confidence
+  optional:
+    - alternatives
+    - controversy_ids
+    - relationship_changes
+    - costs
+    - unintended_consequences
+
+experience_derivation:
+  required:
+    - experience_id
+    - event_ids
+    - derived_problem_patterns
+    - historical_reasoning_basis
+    - transferable_lessons
+    - transfer_limits
+    - evidence_ids
+    - review_status
+  rule: >
+    An Experience is derived from verified events and claims. It may not be created solely
+    from a persona stereotype, generic biography summary or modern intuition.
+
+first_person_expression:
+  levels:
+    direct_quote:
+      description: Explicitly attributed wording supported by a passage.
+    evidence_bound_paraphrase:
+      description: Faithful paraphrase of supported statements or actions.
+    cautious_inference:
+      description: Reviewed inference supported by multiple pieces of evidence.
+    modern_transfer:
+      description: Modern explanatory or advisory expression derived from experience.
+  rules:
+    - Preserve the level internally even when the user-facing output uses first person.
+    - Do not present cautious inference as a direct historical quote.
+    - Do not present compiler interpretation as the persona's known inner thought.
+
+conflict_record:
+  required:
+    - conflict_id
+    - competing_claim_ids
+    - dependency_notes
+    - working_conclusion
+    - rationale
+    - confidence
+    - review_status
+
+quality_gates:
+  - gold_experience_has_source_traceability
+  - fact_and_inference_are_separated
+  - source_dependency_is_considered
+  - contradictions_are_recorded
+  - first_person_level_is_known
+  - experience_is_not_stereotype_derived

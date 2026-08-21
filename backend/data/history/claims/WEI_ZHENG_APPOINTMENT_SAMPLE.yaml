@@ -1,0 +1,36 @@
+status: sample_ingestion
+claims:
+  - claim_id: CLM-WZ-0001
+    statement: 魏徵曾任太子李建成属官，并曾劝李建成及早对秦王李世民采取行动。
+    support_passage_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+    confidence: high
+    interpretation_level: factual
+
+  - claim_id: CLM-WZ-0002
+    statement: 李建成败亡后，李世民召见魏徵并质问其曾离间兄弟，魏徵仍以原先立场作答。
+    support_passage_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+    confidence: high
+    interpretation_level: factual
+
+  - claim_id: CLM-WZ-0003
+    statement: 李世民没有因魏徵曾为敌对阵营谋划而弃用或杀害他，而是因重其才或直而礼遇、任用。
+    support_passage_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+    confidence: high
+    interpretation_level: factual_with_source_wording_variation
+
+  - claim_id: CLM-WZ-0004
+    statement: 李世民即位后继续提升魏徵，使其担任谏议大夫等重要职务。
+    support_passage_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+    confidence: high
+    interpretation_level: factual

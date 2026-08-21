@@ -1,0 +1,183 @@
+heu_id: HEU-TTZ-WEI-ZHENG-001
+persona_id: tang_taizong
+title: 任用曾属敌对阵营且敢于直言的人
+related_event_ids:
+  - EVT-TTZ-WZ-0001
+
+historical_question: >-
+  在刚经历激烈继承冲突之后，是否应当任用一个曾效力于对手、并曾建议对手及早对自己采取行动的人？
+
+historical_context: >-
+  魏徵曾任太子李建成属官，并曾劝李建成及早对秦王李世民采取行动。玄武门之变后，李建成败亡，魏徵被李世民召见并被当面质问。此时李世民正从夺取最高权力转入建立新的治理班底。
+
+options_considered:
+  - option: 惩处或排斥魏徵
+    evidence_level: uncertain
+    support_ids: []
+  - option: 不予重用，仅作一般安置
+    evidence_level: uncertain
+    support_ids: []
+  - option: 接纳并任用魏徵
+    evidence_level: direct
+    support_ids:
+      - CLM-WZ-0003
+      - CLM-WZ-0004
+
+chosen_action: >-
+  李世民选择礼遇并任用魏徵，先引为詹事主簿，随后在即位后继续提升其职务。
+
+reasoning:
+  summary: >-
+    现有史料一致表明李世民重视魏徵的个人价值，但不同来源分别强调其“才”“直”以及此前已有的器重。可以谨慎推断，李世民没有把“曾效力于敌对阵营”本身作为否决魏徵的充分理由，而更重视其可用于新政权的能力与直率。
+  evidence_level: supported_inference
+  support_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
+  caution: >-
+    这里重建的是最初任用阶段可能的判断逻辑。不能把魏徵后来二十余年的表现以及唐太宗贞观十七年的总结反向写成武德九年已经掌握的知识。
+
+outcome:
+  immediate: >-
+    魏徵进入李世民新的政治团队，并获得正式任用。
+  later: >-
+    李世民即位后继续提升魏徵，使其担任谏议大夫等重要职务；魏徵后来成为贞观时期最重要的谏臣之一。贞观十七年魏徵去世后，唐太宗公开把魏徵比作能够“明得失”的一面镜子，并再次要求群臣就政治得失直言无隐。
+  costs_or_tradeoffs:
+    - 接纳前敌对阵营人物意味着需要承担忠诚与政治信任风险。
+    - 重用敢于直言者意味着君主必须容忍持续的反对意见和不舒适信息。
+  support_ids:
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
+
+historical_interpretation:
+  summary: >-
+    这段经历的意义不能只概括为“宽恕旧敌”。从可核实材料看，更稳妥的理解是：李世民在政权转换后把魏徵从旧阵营身份重新评价为可用于治理、能够直言纠错的人才；魏徵长期的政治作用随后又强化了这种判断的价值。
+  interpretation_type: system_synthesis
+  evidence_strength: medium
+  support_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
+    - ZGZY-V02-P-WZ-REF-001
+  source_scope_note: >-
+    该解释综合正史、编年史和《贞观政要》中的直接记载，不把后世流行的“宽恕”“忠诚管理”等现代概念当作史料原话。
+  caution: >-
+    史料足以证明任用事实和后期评价，但不足以完整重建武德九年李世民全部内心动机。
+
+reflections:
+  - reflection_type: immediate
+    chronology: 武德九年以后、初次任用阶段
+    summary: >-
+      现有材料只能支持李世民愿意接纳并任用魏徵，不能直接证明他当时已经形成了后来关于“以人为镜”的完整认识。
+    evidence_level: supported_inference
+    support_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+    hindsight_boundary: >-
+      不得把魏徵后来的长期表现、去世后的评价或贞观十七年的反思写成武德九年当时已经知道的结果。
+  - reflection_type: retrospective
+    chronology: 贞观十七年魏徵去世后
+    summary: >-
+      唐太宗公开将魏徵称为能够帮助自己“明得失”的镜子，并明确说魏徵在世时经常指出自己的过失；魏徵去世后，他担心其他臣僚趋于顺从、不再直言，因此再次要求群臣有是非便直言无隐。
+    evidence_level: direct
+    support_ids:
+      - ZGZY-V02-P-WZ-REF-001
+      - CLM-WZ-REF-0001
+      - CLM-WZ-REF-0002
+      - CLM-WZ-REF-0003
+    hindsight_boundary: >-
+      该反思能够说明唐太宗后来如何评价魏徵的价值，但不能反向证明他在最初任用魏徵时已经完整预见了这一长期价值。
+  - reflection_type: lifetime
+    chronology: complete_life_perspective
+    summary: >-
+      在完整人生视角下，这段经历可以同时包含最初接纳魏徵时的不确定性、长期共事产生的纠错价值，以及魏徵去世后唐太宗本人公开表达的失落与总结；咨询时必须保留这些时间层次，而不能把它们压缩成一个“当时就知道”的故事。
+    evidence_level: supported_inference
+    support_ids:
+      - JTS-V71-P001
+      - XTS-V97-P001
+      - ZZTJ-V191-P-WZ001
+      - ZGZY-V02-P-WZ-REF-001
+    hindsight_boundary: >-
+      lifetime 视角允许综合一生经验进行回望，但只能以“后来我才看见/后来我才明白”的方式表达后见之明。
+
+historical_insight:
+  statement: >-
+    在高冲突之后选择人才时，过去站在哪一边并不必然比其能力、原则性和是否能为新的共同目标发挥作用更重要；对于掌握重大决策权的人而言，能够持续指出自己错误的人，可能具有难以替代的价值。
+  derivation: >-
+    第一部分来自三种史料交叉支持的任用事实结构：魏徵曾为李建成谋划对付李世民；冲突结束后魏徵并未回避自己的旧立场；李世民仍加以任用并继续提升。第二部分由贞观十七年唐太宗在魏徵去世后的直接公开反思支持。洞察是对这些历史结构的谨慎抽象，并非把现代管理语言冒充为史书原话。
+  confidence: high
+  supporting_event_ids:
+    - EVT-TTZ-WZ-0001
+  supporting_claim_ids:
+    - CLM-WZ-0001
+    - CLM-WZ-0002
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
+  supporting_interpretation_ids: []
+
+modern_applicable_scenarios:
+  - scenario: 是否任用或合作一个曾经属于竞争对手阵营、但能力突出的人
+    transferable_structure: >-
+      过去阵营关系与当前可贡献价值之间的权衡。
+    caution: >-
+      现代组织应额外评估合同义务、利益冲突、保密责任与治理机制。
+  - scenario: 是否继续使用一个曾公开反对自己、但能提供真实意见的团队成员
+    transferable_structure: >-
+      个人忠诚与建设性异议之间的权衡。
+    caution: >-
+      反对意见本身不等同于能力、诚信或对组织目标的忠诚。
+  - scenario: 经历严重冲突后是否可能与原对立方建立新的工作关系
+    transferable_structure: >-
+      从旧冲突身份转向新合作目标的可能性。
+    caution: >-
+      不应直接迁移到涉及暴力、虐待、亲密关系背叛或持续安全风险的情境。
+  - scenario: 身处管理或决策岗位时，是否应主动保留敢于指出错误的反对声音
+    transferable_structure: >-
+      权力越集中，越需要可靠的纠错渠道。
+    caution: >-
+      现代组织中的异议机制还应依赖制度、流程与心理安全，而不能只依赖领导者个人气度。
+
+limitations:
+  - 该经历不能简单推导出“所有敌人都值得原谅或重用”。
+  - 政治阵营转换与现代亲密关系中的背叛不是同一种问题结构。
+  - 史料支持魏徵长期具有纠错价值，但不能高置信度重建李世民最初任用时的完整内心推理过程。
+  - 用户具体情境中的法律、伦理、安全和专业因素必须由现代层单独判断。
+
+evidence_chain:
+  source_ids:
+    - SRC-JTS
+    - SRC-XTS
+    - SRC-ZZTJ
+    - SRC-ZGZY
+  passage_ids:
+    - JTS-V71-P001
+    - XTS-V97-P001
+    - ZZTJ-V191-P-WZ001
+    - ZGZY-V02-P-WZ-REF-001
+  claim_ids:
+    - CLM-WZ-0001
+    - CLM-WZ-0002
+    - CLM-WZ-0003
+    - CLM-WZ-0004
+    - CLM-WZ-REF-0001
+    - CLM-WZ-REF-0002
+    - CLM-WZ-REF-0003
+  event_ids:
+    - EVT-TTZ-WZ-0001
+  interpretation_ids: []
+
+confidence:
+  factual: high
+  reasoning: medium
+  interpretation: medium
+  reflection: high
+  transferability: medium
+
+review_status: draft

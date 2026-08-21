@@ -1,0 +1,18 @@
+source_id: SRC-XTS
+title: 新唐书
+author_attribution:
+  - 欧阳修等
+source_class: official_history
+completion_period: 北宋
+language: classical_chinese
+source_role:
+  - official_history_cross_check
+  - biographical_and_annalistic_context
+authority_tier: A
+edition_status: public_domain_text_verified_against_wikisource
+public_reference:
+  provider: Wikisource
+  url: https://zh.wikisource.org/wiki/%E6%96%B0%E5%94%90%E6%9B%B8/%E5%8D%B7002
+notes:
+  - 与旧唐书存在继承、改写和再编纂关系，不应机械视为完全独立证据。
+  - 适用于对太宗本纪相关事实进行交叉核验，并记录叙事差异。

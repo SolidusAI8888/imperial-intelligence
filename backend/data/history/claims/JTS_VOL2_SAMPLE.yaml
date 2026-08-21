@@ -1,0 +1,32 @@
+source_id: SRC-JTS
+status: sample_ingestion
+claims:
+  - claim_id: CLM-JTS-0001
+    statement: 武德七年，高祖一度考虑因突厥压力迁都，李世民明确反对，并主张先解决突厥威胁。
+    passage_ids: [JTS-V02-P001]
+    claim_type: historical_fact
+    confidence: 0.95
+
+  - claim_id: CLM-JTS-0002
+    statement: 李世民在反对迁都时，将边患责任部分归于自身，并承诺若短期内不能解决颉利，再讨论迁都。
+    passage_ids: [JTS-V02-P001]
+    claim_type: attributed_reasoning
+    confidence: 0.9
+
+  - claim_id: CLM-JTS-0003
+    statement: 武德九年六月，李世民集团在玄武门杀李建成、李元吉，随后李世民被立为皇太子并开始总理政务。
+    passage_ids: [JTS-V02-P002]
+    claim_type: historical_fact
+    confidence: 0.98
+
+  - claim_id: CLM-JTS-0004
+    statement: 李世民成为皇太子后采取简肃政策，并要求百官上封事讨论安民治国之策。
+    passage_ids: [JTS-V02-P002]
+    claim_type: historical_fact
+    confidence: 0.95
+
+  - claim_id: CLM-JTS-0005
+    statement: 贞观三年，房玄龄、杜如晦、李靖、魏徵等人分别进入重要中枢或参与朝政职位。
+    passage_ids: [JTS-V02-P003]
+    claim_type: historical_fact
+    confidence: 0.98

@@ -1,0 +1,32 @@
+case_id: FOUNDATION-0001-history-and-destiny
+status: sample_ingestion
+passages:
+  - passage_id: ZZTJ-V183-P-JINYANG-001
+    source_id: SRC-ZZTJ
+    chronology: 隋大业十三年（617）
+    topic_hint: jinyang_uprising_personal_agency
+    original_text: >-
+      太原百姓皆避盗入城，文静为令数年，知其豪杰，一旦收拾，可得十万人，尊公所将之兵复且数万，一言出口，谁敢不从！以此乘虚入关，号令天下，不过半年，帝业成矣。世民笑曰：“君言正合吾意。”乃阴部署宾客，淵不之知也。世民恐淵不从，犹豫久之，不敢言。
+    locator:
+      digital_witness: Wikisource 資治通鑑（胡三省音注）/卷183
+    extraction_status: reviewed_for_foundation_case
+
+  - passage_id: ZGZY-V03-P-SUIFALL-001
+    source_id: SRC-ZGZY
+    chronology: 贞观三年
+    topic_hint: sui_fall_and_ruler_responsibility
+    original_text: >-
+      太宗谓侍臣曰：“君臣本同治乱，共安危，若主纳忠谏，臣进直言，斯故君臣合契，古来所重。若君自贤，臣不匡正，欲不危亡，不可得也。君失其国，臣亦不能独全其家。至如隋炀帝暴虐，臣下钳口，卒令不闻其过，遂至灭亡，虞世基等寻亦诛死。前事不远，朕与卿等可得不慎，无为后所嗤！”
+    locator:
+      digital_witness: Wikisource 貞觀政要/卷03
+    extraction_status: reviewed_for_foundation_case
+
+  - passage_id: ZGZY-V01-P-SUIFALL-002
+    source_id: SRC-ZGZY
+    chronology: 贞观年间
+    topic_hint: small_errors_and_dynastic_collapse
+    original_text: >-
+      朕比来临朝断决，亦有乖于律令者。公等以为小事，遂不执言。凡大事皆起于小事，小事不论，大事又将不可救，社稷倾危，莫不由此。隋主残暴，身死匹夫之手，率土苍生，罕闻嗟痛。公等为朕思隋氏灭亡之事，朕为公等思龙逄、晁错之诛，君臣保全，岂不美哉！
+    locator:
+      digital_witness: Wikisource 貞觀政要/卷01
+    extraction_status: reviewed_for_foundation_case
