@@ -15,6 +15,9 @@ _SOURCE_KIND_WEIGHTS = {
     "later_compilation": 0.45,
 }
 
+_MIN_STYLE_PASSAGES = 2
+_MIN_STYLE_EVIDENCE_WEIGHT = 1.20
+
 
 @dataclass(frozen=True)
 class PersonaVoiceEvidence:
@@ -51,6 +54,18 @@ class PersonaVoiceProfile:
     voice_features: tuple[str, ...]
     decision_features: tuple[str, ...]
     rhetoric_features: tuple[str, ...]
+    evidence_count: int = 0
+    distinct_passage_count: int = 0
+    distinct_source_count: int = 0
+    total_evidence_weight: float = 0.0
+    runtime_style_ready: bool = False
+    gate_blockers: tuple[str, ...] = ()
+
+    @property
+    def applied_voice_evidence_ids(self) -> tuple[str, ...]:
+        """Return only evidence IDs that actually affected runtime wording."""
+
+        return self.voice_evidence_ids if self.runtime_style_ready else ()
 
 
 def _string_tuple(value: object, field: str) -> tuple[str, ...]:
@@ -135,12 +150,24 @@ def select_runtime_voice_evidence(
 
 
 def _rank_features(
-    records: tuple[PersonaVoiceEvidence, ...], field: str, *, limit: int = 3
+    records: tuple[PersonaVoiceEvidence, ...],
+    field: str,
+    *,
+    limit: int = 3,
+    minimum_passages: int = _MIN_STYLE_PASSAGES,
 ) -> tuple[str, ...]:
-    scores: dict[str, float] = defaultdict(float)
+    passage_scores: dict[str, dict[str, float]] = defaultdict(dict)
     for record in records:
         for feature in getattr(record, field):
-            scores[feature] += record.evidence_weight
+            passage_scores[feature][record.passage_id] = max(
+                record.evidence_weight,
+                passage_scores[feature].get(record.passage_id, 0.0),
+            )
+    scores = {
+        feature: sum(weights.values())
+        for feature, weights in passage_scores.items()
+        if len(weights) >= minimum_passages
+    }
     return tuple(
         feature
         for feature, _score in sorted(scores.items(), key=lambda item: (-item[1], item[0]))[:limit]
@@ -157,19 +184,43 @@ def build_persona_voice_profile(
     selected = select_runtime_voice_evidence(records, person_id=person_id, limit=evidence_limit)
     if not selected:
         return None
+    distinct_passages = {record.passage_id for record in selected}
+    distinct_sources = {record.source_id for record in selected}
+    passage_weights: dict[str, float] = {}
+    for record in selected:
+        passage_weights[record.passage_id] = max(
+            record.evidence_weight, passage_weights.get(record.passage_id, 0.0)
+        )
+    total_evidence_weight = round(sum(passage_weights.values()), 4)
+    voice_features = _rank_features(selected, "voice_features")
+    decision_features = _rank_features(selected, "decision_features")
+    rhetoric_features = _rank_features(selected, "rhetoric_features")
+    blockers: list[str] = []
+    if len(distinct_passages) < _MIN_STYLE_PASSAGES:
+        blockers.append("fewer_than_2_independent_voice_passages")
+    if total_evidence_weight < _MIN_STYLE_EVIDENCE_WEIGHT:
+        blockers.append("voice_evidence_weight_below_1.20")
+    if not (voice_features or decision_features or rhetoric_features):
+        blockers.append("no_style_features_corroborated_by_2_passages")
     return PersonaVoiceProfile(
         person_id=person_id,
         voice_evidence_ids=tuple(record.voice_evidence_id for record in selected),
-        voice_features=_rank_features(selected, "voice_features"),
-        decision_features=_rank_features(selected, "decision_features"),
-        rhetoric_features=_rank_features(selected, "rhetoric_features"),
+        voice_features=voice_features,
+        decision_features=decision_features,
+        rhetoric_features=rhetoric_features,
+        evidence_count=len(selected),
+        distinct_passage_count=len(distinct_passages),
+        distinct_source_count=len(distinct_sources),
+        total_evidence_weight=total_evidence_weight,
+        runtime_style_ready=not blockers,
+        gate_blockers=tuple(blockers),
     )
 
 
 def style_answer_opening(default: str, profile: PersonaVoiceProfile | None) -> str:
     """Apply conservative structural style; never copy evidence text or add historical facts."""
 
-    if profile is None:
+    if profile is None or not profile.runtime_style_ready:
         return default
     features = set(profile.voice_features)
     if "terse" in features or "direct" in features:

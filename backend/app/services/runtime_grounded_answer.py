@@ -97,4 +97,4 @@ def render_runtime_grounded_answer(question: str, *, anchor_question: str | None
         "运行时自动通过证据门不等于创建或批准新的永久 Problem 文件；其结论仍受当前知识覆盖范围限制。",
         "现代迁移属于解释层，不把帝王治理经验直接视为现代个人生活的等价处方。",
     )
-    return RuntimeRenderedGroundedAnswer(problem_id=context.problem_id, person_id=context.person_id, question=question, historical_voice=historical_voice, modern_translation=modern_translation, cautions=cautions, evidence_ids=evidence_ids, insight_ids=insight_ids, status="rendered_from_runtime_reviewed_grounded_bundle", voice_evidence_ids=voice_profile.voice_evidence_ids if voice_profile else ())
+    return RuntimeRenderedGroundedAnswer(problem_id=context.problem_id, person_id=context.person_id, question=question, historical_voice=historical_voice, modern_translation=modern_translation, cautions=cautions, evidence_ids=evidence_ids, insight_ids=insight_ids, status="rendered_from_runtime_reviewed_grounded_bundle", voice_evidence_ids=voice_profile.applied_voice_evidence_ids if voice_profile else ())

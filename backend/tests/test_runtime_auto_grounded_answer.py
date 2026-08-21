@@ -84,10 +84,15 @@ def test_runtime_renderer_applies_audited_voice_profile_without_using_it_as_fact
     )
     profile = PersonaVoiceProfile(
         person_id="tang_taizong",
-        voice_evidence_ids=("PVC-TANG-0001",),
+        voice_evidence_ids=("PVC-TANG-0001", "PVC-TANG-0002"),
         voice_features=("direct",),
         decision_features=("demands_specifics",),
         rhetoric_features=(),
+        evidence_count=2,
+        distinct_passage_count=2,
+        distinct_source_count=1,
+        total_evidence_weight=1.9,
+        runtime_style_ready=True,
     )
     monkeypatch.setattr(
         "app.services.runtime_grounded_answer._build_runtime_context",
@@ -98,5 +103,5 @@ def test_runtime_renderer_applies_audited_voice_profile_without_using_it_as_fact
 
     assert answer.historical_voice.startswith("先说要害")
     assert "先查明可验证的原因" in answer.historical_voice
-    assert answer.voice_evidence_ids == ("PVC-TANG-0001",)
+    assert answer.voice_evidence_ids == ("PVC-TANG-0001", "PVC-TANG-0002")
     assert answer.evidence_ids == ("E-1", "E-2")

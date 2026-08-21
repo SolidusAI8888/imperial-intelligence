@@ -49,15 +49,33 @@ def test_renderer_applies_only_reviewed_selected_person_voice_metadata(monkeypat
             "status": "reviewed",
         }
     )
+    corroborating = parse_persona_voice_evidence(
+        {
+            "voice_evidence_id": "PVC-TANG-0002",
+            "person_id": "tang_taizong",
+            "source_id": "CN-TANG-0004",
+            "passage_id": "CN-TANG-0004-P000002",
+            "source_kind": "imperial_verbatim",
+            "contemporaneous": True,
+            "text": "A separate reviewed passage that must not be copied either.",
+            "voice_features": ["direct", "terse"],
+            "decision_features": ["requests_counterargument"],
+            "rhetoric_features": ["asks_questions"],
+            "confidence": 0.90,
+            "status": "reviewed",
+        }
+    )
     monkeypatch.setattr(
         "app.services.grounded_answer_renderer.load_person_voice_evidence",
-        lambda person_id: [evidence] if person_id == "tang_taizong" else [],
+        lambda person_id: [evidence, corroborating]
+        if person_id == "tang_taizong"
+        else [],
     )
 
     answer = render_grounded_answer(FIRST_PROBLEM_ID)
 
     assert answer.historical_voice.startswith("先说要害")
-    assert answer.voice_evidence_ids == ("PVC-TANG-0001",)
+    assert answer.voice_evidence_ids == ("PVC-TANG-0001", "PVC-TANG-0002")
     assert evidence.text not in answer.historical_voice
     assert answer.evidence_ids
 

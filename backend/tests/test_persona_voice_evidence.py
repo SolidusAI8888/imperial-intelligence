@@ -79,6 +79,13 @@ def test_runtime_selection_cannot_mix_another_persons_voice() -> None:
 
 def test_profile_aggregates_weighted_features_without_copying_source_text() -> None:
     direct = parse_persona_voice_evidence(_record(text="reviewed words must not be copied"))
+    corroborating = parse_persona_voice_evidence(
+        _record(
+            voice_evidence_id="PVC-QING-0003",
+            passage_id="CN-QING-VOICE-0002-P000002",
+            text="separate reviewed passage",
+        )
+    )
     candidate = parse_persona_voice_evidence(
         _record(
             voice_evidence_id="PVC-QING-0002",
@@ -87,14 +94,77 @@ def test_profile_aggregates_weighted_features_without_copying_source_text() -> N
         )
     )
 
-    profile = build_persona_voice_profile("qing_yongzheng", [candidate, direct])
+    profile = build_persona_voice_profile(
+        "qing_yongzheng", [candidate, direct, corroborating]
+    )
 
     assert profile is not None
-    assert profile.voice_evidence_ids == ("PVC-QING-0001",)
+    assert profile.voice_evidence_ids == ("PVC-QING-0001", "PVC-QING-0003")
     assert profile.voice_features == ("direct", "terse")
+    assert profile.distinct_passage_count == 2
+    assert profile.distinct_source_count == 1
+    assert profile.total_evidence_weight == 1.92
+    assert profile.runtime_style_ready is True
+    assert profile.gate_blockers == ()
     opening = style_answer_opening("default", profile)
     assert opening.startswith("先说要害")
     assert "reviewed words must not be copied" not in opening
+
+
+def test_single_reviewed_passage_cannot_define_general_persona_style() -> None:
+    profile = build_persona_voice_profile(
+        "qing_yongzheng", [parse_persona_voice_evidence(_record())]
+    )
+
+    assert profile is not None
+    assert profile.runtime_style_ready is False
+    assert profile.applied_voice_evidence_ids == ()
+    assert profile.gate_blockers == (
+        "fewer_than_2_independent_voice_passages",
+        "voice_evidence_weight_below_1.20",
+        "no_style_features_corroborated_by_2_passages",
+    )
+    assert style_answer_opening("neutral opening", profile) == "neutral opening"
+
+
+def test_duplicate_annotations_of_one_passage_do_not_bypass_style_gate() -> None:
+    duplicate = parse_persona_voice_evidence(
+        _record(voice_evidence_id="PVC-QING-0002")
+    )
+    profile = build_persona_voice_profile(
+        "qing_yongzheng", [parse_persona_voice_evidence(_record()), duplicate]
+    )
+
+    assert profile is not None
+    assert profile.evidence_count == 2
+    assert profile.distinct_passage_count == 1
+    assert profile.total_evidence_weight == 0.96
+    assert profile.runtime_style_ready is False
+
+
+def test_uncorroborated_feature_does_not_change_persona_style() -> None:
+    second_passage = parse_persona_voice_evidence(
+        _record(
+            voice_evidence_id="PVC-QING-0002",
+            passage_id="CN-QING-VOICE-0002-P000002",
+            voice_features=["conciliatory"],
+            decision_features=[],
+            rhetoric_features=[],
+        )
+    )
+    profile = build_persona_voice_profile(
+        "qing_yongzheng", [parse_persona_voice_evidence(_record()), second_passage]
+    )
+
+    assert profile is not None
+    assert profile.distinct_passage_count == 2
+    assert profile.total_evidence_weight == 1.92
+    assert profile.voice_features == ()
+    assert profile.runtime_style_ready is False
+    assert profile.gate_blockers == (
+        "no_style_features_corroborated_by_2_passages",
+    )
+    assert style_answer_opening("neutral opening", profile) == "neutral opening"
 
 
 def test_blank_identity_fields_are_rejected() -> None:

@@ -88,5 +88,7 @@ def render_grounded_answer(problem_id: str, question: str | None = None) -> Rend
         evidence_ids=bundle.evidence_ids,
         insight_ids=bundle.plan.insight_ids,
         status="rendered_from_reviewed_grounded_bundle",
-        voice_evidence_ids=voice_profile.voice_evidence_ids if voice_profile else (),
+        voice_evidence_ids=(
+            voice_profile.applied_voice_evidence_ids if voice_profile else ()
+        ),
     )

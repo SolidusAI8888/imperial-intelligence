@@ -19,9 +19,13 @@ by the read-only runtime explanation endpoint.
 PVC is optional and style-only. It does not improve candidate scores, grant responder
 eligibility, override counterevidence, or replace factual HER/HEU/Insight grounding.
 Candidate, rejected, untraceable, or another person's voice records cannot affect an
-answer. Source text is never copied into first-person prose as a fabricated quotation.
+answer. A style change also requires at least two independently traceable passages and
+a combined weighted evidence score of 1.20; one vivid passage or duplicated annotation
+therefore cannot define a person's general voice. Source text is never copied into
+first-person prose as a fabricated quotation.
 
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
-the evidence IDs and feature tags selected for runtime style, or the exact neutral-style
-fallback reason. This endpoint is observational: voice readiness never grants factual
-answer permission.
+the evidence IDs and feature tags selected for runtime style, the independent-passage
+and source counts, the weighted score, and any style-gate blockers. It distinguishes
+selected records from evidence actually applied to wording. This endpoint is
+observational: voice readiness never grants factual answer permission.

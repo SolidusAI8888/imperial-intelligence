@@ -29,6 +29,13 @@ These are discovery facts, not corpus-ingestion results. The archive's current o
 resource page identifies only 《清实录》 and 《清会典》 as freely available website
 full-text databases; the archival databases require a separate access and reuse review.
 
+The first access review is now recorded for `CN-QING-VOICE-0001`. Official appointment
+rules allow registered on-site consultation, but prohibit laptops and cameras in the
+reading room, prohibit recording digital archives, and require written permission
+before excerpts or copies are publicly disseminated. The source therefore remains
+fail-closed: catalog verification is recorded, while automated ingestion and PVC
+creation are both explicitly unauthorized.
+
 Before a source can move to `catalog_verified_ready_for_manifest`, discovery must record:
 
 - the exact collection scope and, where needed, emperor/reign partition;
@@ -45,6 +52,8 @@ Run the current status selector with:
 
 ```bash
 python history/tools/select_next_qing_persona_voice_source.py --json
+python history/tools/build_qing_persona_voice_access_review.py \
+  --source-id CN-QING-VOICE-0001 --json
 ```
 
 Registration and catalog discovery are not collection completion. Only an ingestion

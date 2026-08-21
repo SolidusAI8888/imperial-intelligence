@@ -32,8 +32,12 @@ def test_readiness_reports_selected_reviewed_traceable_voice_evidence(
 ) -> None:
     records = [
         _record(),
-        _record(voice_evidence_id="PVC-QING-0002", status="candidate"),
-        _record(voice_evidence_id="PVC-QING-0003", status="rejected"),
+        _record(
+            voice_evidence_id="PVC-QING-0002",
+            passage_id="CN-QING-VOICE-0002-P000002",
+        ),
+        _record(voice_evidence_id="PVC-QING-0003", status="candidate"),
+        _record(voice_evidence_id="PVC-QING-0004", status="rejected"),
     ]
     monkeypatch.setattr(
         "app.services.persona_voice_readiness.load_person_voice_evidence",
@@ -42,13 +46,20 @@ def test_readiness_reports_selected_reviewed_traceable_voice_evidence(
 
     result = inspect_persona_voice_readiness("qing_yongzheng")
 
-    assert result.total_records == 3
-    assert result.reviewed_records == 1
+    assert result.total_records == 4
+    assert result.reviewed_records == 2
     assert result.candidate_records == 1
     assert result.rejected_records == 1
-    assert result.traceable_reviewed_records == 1
+    assert result.traceable_reviewed_records == 2
     assert result.runtime_style_ready is True
-    assert result.selected_voice_evidence_ids == ("PVC-QING-0001",)
+    assert result.selected_voice_evidence_ids == (
+        "PVC-QING-0001",
+        "PVC-QING-0002",
+    )
+    assert result.applied_voice_evidence_ids == result.selected_voice_evidence_ids
+    assert result.distinct_passage_count == 2
+    assert result.total_evidence_weight == 1.92
+    assert result.gate_blockers == ()
     assert result.fallback_reason is None
     assert result.status == "runtime_voice_style_ready"
 
@@ -68,6 +79,28 @@ def test_untraceable_reviewed_evidence_reports_neutral_fallback(monkeypatch) -> 
     assert result.status == "neutral_voice_fallback_required"
 
 
+def test_single_traceable_passage_reports_independent_evidence_blocker(
+    monkeypatch,
+) -> None:
+    monkeypatch.setattr(
+        "app.services.persona_voice_readiness.load_person_voice_evidence",
+        lambda _person_id: [_record()],
+    )
+
+    result = inspect_persona_voice_readiness("qing_yongzheng")
+
+    assert result.traceable_reviewed_records == 1
+    assert result.selected_voice_evidence_ids == ("PVC-QING-0001",)
+    assert result.applied_voice_evidence_ids == ()
+    assert result.runtime_style_ready is False
+    assert result.fallback_reason == "fewer_than_2_independent_voice_passages"
+    assert result.gate_blockers == (
+        "fewer_than_2_independent_voice_passages",
+        "voice_evidence_weight_below_1.20",
+        "no_style_features_corroborated_by_2_passages",
+    )
+
+
 def test_voice_readiness_endpoint_exposes_honest_empty_corpus_fallback() -> None:
     response = client.get("/personas/tang_taizong/voice-readiness")
 
@@ -77,5 +110,8 @@ def test_voice_readiness_endpoint_exposes_honest_empty_corpus_fallback() -> None
     assert data["total_records"] == 0
     assert data["runtime_style_ready"] is False
     assert data["selected_voice_evidence_ids"] == []
+    assert data["applied_voice_evidence_ids"] == []
+    assert data["distinct_passage_count"] == 0
+    assert data["gate_blockers"] == []
     assert data["fallback_reason"] == "no_voice_evidence_records"
     assert data["status"] == "neutral_voice_fallback_required"

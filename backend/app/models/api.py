@@ -93,6 +93,11 @@ class PersonaVoiceReadinessResponse(BaseModel):
     traceable_reviewed_records: int = Field(ge=0)
     runtime_style_ready: bool
     selected_voice_evidence_ids: list[str]
+    applied_voice_evidence_ids: list[str]
+    distinct_passage_count: int = Field(ge=0)
+    distinct_source_count: int = Field(ge=0)
+    total_evidence_weight: float = Field(ge=0)
+    gate_blockers: list[str]
     voice_features: list[str]
     decision_features: list[str]
     rhetoric_features: list[str]

@@ -60,7 +60,7 @@ def _voice_evidence_ids(person_id: str) -> tuple[str, ...]:
     profile = build_persona_voice_profile(
         person_id, load_person_voice_evidence(person_id)
     )
-    return profile.voice_evidence_ids if profile else ()
+    return profile.applied_voice_evidence_ids if profile else ()
 
 
 def explain_runtime_problem(question: str, *, candidate_limit: int = 20) -> RuntimeProblemExplanation:

@@ -16,6 +16,11 @@ class PersonaVoiceReadiness:
     traceable_reviewed_records: int
     runtime_style_ready: bool
     selected_voice_evidence_ids: tuple[str, ...]
+    applied_voice_evidence_ids: tuple[str, ...]
+    distinct_passage_count: int
+    distinct_source_count: int
+    total_evidence_weight: float
+    gate_blockers: tuple[str, ...]
     voice_features: tuple[str, ...]
     decision_features: tuple[str, ...]
     rhetoric_features: tuple[str, ...]
@@ -34,10 +39,7 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
     reviewed = [record for record in records if record.status == "reviewed"]
     traceable = [record for record in reviewed if record.runtime_eligible]
     profile = build_persona_voice_profile(normalized_person_id, traceable)
-    has_features = bool(
-        profile
-        and (profile.voice_features or profile.decision_features or profile.rhetoric_features)
-    )
+    runtime_style_ready = bool(profile and profile.runtime_style_ready)
 
     if not records:
         fallback_reason = "no_voice_evidence_records"
@@ -45,8 +47,8 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
         fallback_reason = "no_reviewed_voice_evidence"
     elif not traceable:
         fallback_reason = "no_traceable_reviewed_voice_evidence"
-    elif not has_features:
-        fallback_reason = "reviewed_voice_evidence_has_no_style_features"
+    elif profile and profile.gate_blockers:
+        fallback_reason = profile.gate_blockers[0]
     else:
         fallback_reason = None
 
@@ -57,15 +59,22 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
         reviewed_records=len(reviewed),
         rejected_records=sum(record.status == "rejected" for record in records),
         traceable_reviewed_records=len(traceable),
-        runtime_style_ready=has_features,
+        runtime_style_ready=runtime_style_ready,
         selected_voice_evidence_ids=(profile.voice_evidence_ids if profile else ()),
+        applied_voice_evidence_ids=(
+            profile.applied_voice_evidence_ids if profile else ()
+        ),
+        distinct_passage_count=(profile.distinct_passage_count if profile else 0),
+        distinct_source_count=(profile.distinct_source_count if profile else 0),
+        total_evidence_weight=(profile.total_evidence_weight if profile else 0.0),
+        gate_blockers=(profile.gate_blockers if profile else ()),
         voice_features=(profile.voice_features if profile else ()),
         decision_features=(profile.decision_features if profile else ()),
         rhetoric_features=(profile.rhetoric_features if profile else ()),
         fallback_reason=fallback_reason,
         status=(
             "runtime_voice_style_ready"
-            if has_features
+            if runtime_style_ready
             else "neutral_voice_fallback_required"
         ),
     )
