@@ -35,6 +35,12 @@ class PersonaVoiceReviewQueue:
     unattested_reviewed_records: int
     runtime_eligible_reviewed_records: int
     rejected_records: int
+    queue_state: str
+    filtered_records: int
+    returned_records: int
+    offset: int
+    limit: int
+    has_more: bool
     items: tuple[PersonaVoiceReviewQueueItem, ...]
     status: str
 
@@ -52,6 +58,9 @@ def _load_records(root: Path):
 def build_persona_voice_review_queue(
     *,
     person_id: str | None = None,
+    queue_state: str = "all",
+    offset: int = 0,
+    limit: int = 50,
     voice_root: Path | None = None,
     corpus_root: Path | None = None,
 ) -> PersonaVoiceReviewQueue:
@@ -59,6 +68,16 @@ def build_persona_voice_review_queue(
 
     root = voice_root or VOICE_EVIDENCE_ROOT
     records = _load_records(root)
+    normalized_queue_state = queue_state.strip()
+    allowed_queue_states = {"all", "ready", "blocked", "attestation_repair"}
+    if normalized_queue_state not in allowed_queue_states:
+        raise ValueError(
+            "queue_state must be one of: all, ready, blocked, attestation_repair"
+        )
+    if offset < 0:
+        raise ValueError("offset must be greater than or equal to 0")
+    if limit < 1 or limit > 100:
+        raise ValueError("limit must be between 1 and 100")
     if person_id is not None:
         normalized_person_id = person_id.strip()
         if not normalized_person_id:
@@ -124,6 +143,23 @@ def build_persona_voice_review_queue(
     )
     candidate_count = sum(record.status == "candidate" for record in records)
     ready_count = sum(item.approval_ready for item in items)
+    if normalized_queue_state == "ready":
+        filtered_items = [item for item in items if item.approval_ready]
+    elif normalized_queue_state == "blocked":
+        filtered_items = [
+            item
+            for item in items
+            if item.current_status == "candidate" and not item.approval_ready
+        ]
+    elif normalized_queue_state == "attestation_repair":
+        filtered_items = [
+            item
+            for item in items
+            if item.status == "reviewed_record_requires_attestation_repair"
+        ]
+    else:
+        filtered_items = items
+    page = filtered_items[offset : offset + limit]
     return PersonaVoiceReviewQueue(
         total_records=len(records),
         candidate_records=candidate_count,
@@ -138,6 +174,12 @@ def build_persona_voice_review_queue(
             for record in records
         ),
         rejected_records=sum(record.status == "rejected" for record in records),
-        items=tuple(items),
+        queue_state=normalized_queue_state,
+        filtered_records=len(filtered_items),
+        returned_records=len(page),
+        offset=offset,
+        limit=limit,
+        has_more=offset + len(page) < len(filtered_items),
+        items=tuple(page),
         status="persona_voice_review_queue_read_only_no_automatic_approval",
     )

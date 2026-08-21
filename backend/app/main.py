@@ -1,6 +1,7 @@
 from dataclasses import asdict
+from typing import Literal
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 
 from app.models.api import (
     AutoConsultationResponse,
@@ -121,10 +122,20 @@ def create_voice_candidate(
 )
 def persona_voice_review_queue(
     person_id: str | None = None,
+    queue_state: Literal["all", "ready", "blocked", "attestation_repair"] = "all",
+    offset: int = Query(default=0, ge=0),
+    limit: int = Query(default=50, ge=1, le=100),
 ) -> PersonaVoiceReviewQueueResponse:
     try:
         return PersonaVoiceReviewQueueResponse.model_validate(
-            asdict(build_persona_voice_review_queue(person_id=person_id))
+            asdict(
+                build_persona_voice_review_queue(
+                    person_id=person_id,
+                    queue_state=queue_state,
+                    offset=offset,
+                    limit=limit,
+                )
+            )
         )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc

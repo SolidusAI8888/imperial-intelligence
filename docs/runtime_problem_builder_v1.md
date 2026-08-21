@@ -44,6 +44,11 @@ checksum-verified 唐太宗 candidates from 《贞观政要》 as the first real
 three remain excluded from runtime style until an explicit human decision records every
 required attestation.
 
+The queue accepts `queue_state=ready|blocked|attestation_repair`, plus bounded `offset` and
+`limit` parameters. Its response separates corpus-wide status counts from the filtered and
+returned record counts, so an operator can page through a stable view without mistaking a
+partial page for total coverage. Filtering and paging remain observational operations.
+
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage
 and source counts, the weighted score, and any style-gate blockers. It distinguishes

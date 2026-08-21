@@ -213,6 +213,12 @@ class PersonaVoiceReviewQueueResponse(BaseModel):
     unattested_reviewed_records: int = Field(ge=0)
     runtime_eligible_reviewed_records: int = Field(ge=0)
     rejected_records: int = Field(ge=0)
+    queue_state: Literal["all", "ready", "blocked", "attestation_repair"]
+    filtered_records: int = Field(ge=0)
+    returned_records: int = Field(ge=0)
+    offset: int = Field(ge=0)
+    limit: int = Field(ge=1, le=100)
+    has_more: bool
     items: list[PersonaVoiceReviewQueueItemResponse]
     status: Literal["persona_voice_review_queue_read_only_no_automatic_approval"]
 

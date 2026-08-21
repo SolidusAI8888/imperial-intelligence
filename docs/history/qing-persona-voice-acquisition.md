@@ -43,6 +43,12 @@ as collected or unavailable. The internal acquisition selector therefore has no 
 source at present; the next progress condition is external permission or a permitted research
 export, not repeated automated discovery against the same catalog pages.
 
+The project now emits one unsent permission-request packet covering all four source families.
+For each source it carries the verified catalog scope, current consultation restrictions,
+remaining requirements, requested locator/export/reuse terms, and provenance links. Packet
+creation is preparation only: `sent_to_archive`, `authorization_received`, automated ingestion,
+and PVC creation all remain false until an external decision is explicitly recorded.
+
 Official collection descriptions now also verify that the First Historical Archives has
 opened about 814,000 Grand Council archival items and exposes catalog series for Chinese
 and Manchu copies of memorials, Manchu deliberation files, special files, and edict/message
@@ -72,6 +78,7 @@ python history/tools/select_next_qing_persona_voice_source.py --json
 python history/tools/build_qing_persona_voice_access_review.py \
   --source-id CN-QING-VOICE-0001 --json
 python history/tools/audit_qing_persona_voice_overlap.py --json
+python history/tools/build_qing_persona_voice_permission_packet.py --json
 ```
 
 Registration and catalog discovery are not collection completion. Only an ingestion
