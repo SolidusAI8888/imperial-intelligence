@@ -71,6 +71,20 @@ def test_queue_surfaces_verified_candidate_without_approving_it(tmp_path) -> Non
     assert queue.blocked_candidate_records == 0
     assert queue.items[0].approval_ready is True
     assert queue.items[0].runtime_eligible is False
+    assert queue.items[0].archived_file_integrity_verified is True
+    assert queue.items[0].candidate_text_matches_archive is True
+    assert queue.items[0].candidate_text in queue.items[0].archive_context_excerpt
+    assert queue.items[0].voice_features == ("direct",)
+    assert queue.items[0].required_attestations == (
+        "passage_link_verified",
+        "person_identity_verified",
+        "transcription_checked",
+        "feature_tags_reviewed",
+    )
+    assert queue.items[0].review_packet_endpoint.endswith("/review-packet")
+    assert queue.items[0].next_action == (
+        "record_explicit_human_review_with_all_attestations"
+    )
     assert queue.items[0].status == "candidate_ready_for_explicit_human_review"
 
 
@@ -94,6 +108,10 @@ def test_queue_blocks_multiple_candidates_for_same_person_and_passage(tmp_path) 
         "duplicate_candidates_for_person_and_passage" in item.blockers
         for item in queue.items
     )
+    assert all(
+        item.next_action == "resolve_review_packet_blockers_before_decision"
+        for item in queue.items
+    )
 
 
 def test_queue_repairs_reviewed_label_without_attestation(tmp_path) -> None:
@@ -113,7 +131,43 @@ def test_queue_repairs_reviewed_label_without_attestation(tmp_path) -> None:
     assert queue.items[0].blockers == (
         "reviewed_record_missing_complete_attestation",
     )
+    assert queue.items[0].archived_file_integrity_verified is True
+    assert queue.items[0].candidate_text_matches_archive is True
+    assert queue.items[0].next_action == (
+        "repair_review_attestations_before_runtime_use"
+    )
     assert queue.items[0].status == "reviewed_record_requires_attestation_repair"
+
+
+def test_reviewed_attestation_repair_also_fails_on_changed_archive(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    raw = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    raw["status"] = "reviewed"
+    candidate_path.write_text(
+        yaml.safe_dump(raw, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+    passage_path = corpus_root / "tang" / "text" / "001.txt"
+    passage_path.write_text(
+        passage_path.read_text(encoding="utf-8") + "归档已变化",
+        encoding="utf-8",
+    )
+
+    queue = build_persona_voice_review_queue(
+        queue_state="attestation_repair",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+
+    assert queue.filtered_records == 1
+    assert queue.items[0].archived_file_integrity_verified is False
+    assert queue.items[0].blockers == (
+        "reviewed_record_missing_complete_attestation",
+        "archived_file_not_verified_by_ingestion_report",
+    )
+    assert queue.items[0].next_action == (
+        "resolve_review_packet_blockers_before_decision"
+    )
+    assert queue.items[0].runtime_eligible is False
 
 
 def test_queue_person_filter_is_exact(tmp_path) -> None:
@@ -261,3 +315,6 @@ def test_review_queue_endpoint_exposes_page_metadata() -> None:
     assert data["returned_records"] == 2
     assert data["has_more"] is True
     assert len(data["items"]) == 2
+    assert all(item["candidate_text"] for item in data["items"])
+    assert all(item["archive_context_excerpt"] for item in data["items"])
+    assert all(item["archived_file_integrity_verified"] for item in data["items"])

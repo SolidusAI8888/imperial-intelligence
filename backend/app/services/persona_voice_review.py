@@ -25,15 +25,25 @@ class PersonaVoiceReviewPacket:
     person_id: str
     source_id: str
     passage_id: str
+    source_kind: str
+    contemporaneous: bool
     current_status: str
+    candidate_text: str
+    archive_context_excerpt: str | None
+    voice_features: tuple[str, ...]
+    decision_features: tuple[str, ...]
+    rhetoric_features: tuple[str, ...]
+    confidence: float
     canonical_passage_found: bool
     archived_file_integrity_verified: bool
     candidate_text_matches_archive: bool
     archived_passage_path: str | None
     feature_tag_count: int
     requires_person_identity_review: bool
+    required_attestations: tuple[str, ...]
     approval_ready: bool
     blockers: tuple[str, ...]
+    next_action: str
     status: str
 
 
@@ -74,6 +84,24 @@ def _find_record_path(voice_evidence_id: str, root: Path) -> Path:
     return matches[0]
 
 
+def _archive_context_excerpt(
+    archived_text: str, candidate_text: str, *, context_characters: int = 160
+) -> str | None:
+    """Return bounded source context only when the stored excerpt matches exactly."""
+
+    index = archived_text.find(candidate_text)
+    if index < 0:
+        return None
+    start = max(0, index - context_characters)
+    end = min(len(archived_text), index + len(candidate_text) + context_characters)
+    excerpt = archived_text[start:end].strip()
+    if start:
+        excerpt = f"…{excerpt}"
+    if end < len(archived_text):
+        excerpt = f"{excerpt}…"
+    return excerpt
+
+
 def build_persona_voice_review_packet(
     voice_evidence_id: str,
     *,
@@ -97,12 +125,16 @@ def build_persona_voice_review_packet(
         corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
     )
     archived_path: str | None = None
+    archive_context_excerpt: str | None = None
     integrity_verified = False
     text_matches = False
     if archived is None:
         blockers.append("canonical_passage_not_found_in_source_corpus")
     else:
         archived_path = str(archived.path)
+        archive_context_excerpt = _archive_context_excerpt(
+            archived.text, evidence.text
+        )
         integrity_verified = archived.integrity_verified
         if not integrity_verified:
             blockers.append("archived_file_not_verified_by_ingestion_report")
@@ -131,15 +163,34 @@ def build_persona_voice_review_packet(
         person_id=evidence.person_id,
         source_id=evidence.source_id,
         passage_id=evidence.passage_id,
+        source_kind=evidence.source_kind,
+        contemporaneous=evidence.contemporaneous,
         current_status=evidence.status,
+        candidate_text=evidence.text,
+        archive_context_excerpt=archive_context_excerpt,
+        voice_features=evidence.voice_features,
+        decision_features=evidence.decision_features,
+        rhetoric_features=evidence.rhetoric_features,
+        confidence=evidence.confidence,
         canonical_passage_found=archived is not None,
         archived_file_integrity_verified=integrity_verified,
         candidate_text_matches_archive=text_matches,
         archived_passage_path=archived_path,
         feature_tag_count=feature_tag_count,
         requires_person_identity_review=True,
+        required_attestations=(
+            "passage_link_verified",
+            "person_identity_verified",
+            "transcription_checked",
+            "feature_tags_reviewed",
+        ),
         approval_ready=not blockers,
         blockers=tuple(blockers),
+        next_action=(
+            "record_explicit_human_review_with_all_attestations"
+            if not blockers
+            else "resolve_review_packet_blockers_before_decision"
+        ),
         status=(
             "ready_for_explicit_human_voice_review"
             if not blockers

@@ -114,15 +114,35 @@ class PersonaVoiceReviewPacketResponse(BaseModel):
     person_id: str
     source_id: str
     passage_id: str
+    source_kind: str
+    contemporaneous: bool
     current_status: Literal["candidate", "reviewed", "rejected"]
+    candidate_text: str
+    archive_context_excerpt: str | None = None
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    confidence: float = Field(ge=0, le=1)
     canonical_passage_found: bool
     archived_file_integrity_verified: bool
     candidate_text_matches_archive: bool
     archived_passage_path: str | None = None
     feature_tag_count: int = Field(ge=0)
     requires_person_identity_review: Literal[True]
+    required_attestations: list[
+        Literal[
+            "passage_link_verified",
+            "person_identity_verified",
+            "transcription_checked",
+            "feature_tags_reviewed",
+        ]
+    ]
     approval_ready: bool
     blockers: list[str]
+    next_action: Literal[
+        "record_explicit_human_review_with_all_attestations",
+        "resolve_review_packet_blockers_before_decision",
+    ]
     status: Literal[
         "ready_for_explicit_human_voice_review",
         "blocked_before_human_voice_approval",
@@ -193,11 +213,29 @@ class PersonaVoiceReviewQueueItemResponse(BaseModel):
     person_id: str
     source_id: str
     passage_id: str
+    source_kind: str
+    contemporaneous: bool
     current_status: Literal["candidate", "reviewed"]
+    candidate_text: str
+    archive_context_excerpt: str | None = None
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    confidence: float = Field(ge=0, le=1)
+    canonical_passage_found: bool
+    archived_file_integrity_verified: bool
+    candidate_text_matches_archive: bool
+    required_attestations: list[str]
     approval_ready: bool
     blockers: list[str]
     review_attested: bool
     runtime_eligible: bool
+    review_packet_endpoint: str
+    next_action: Literal[
+        "record_explicit_human_review_with_all_attestations",
+        "resolve_review_packet_blockers_before_decision",
+        "repair_review_attestations_before_runtime_use",
+    ]
     status: Literal[
         "candidate_ready_for_explicit_human_review",
         "candidate_blocked_before_human_review",

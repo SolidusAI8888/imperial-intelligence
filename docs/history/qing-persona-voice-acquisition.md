@@ -48,6 +48,10 @@ For each source it carries the verified catalog scope, current consultation rest
 remaining requirements, requested locator/export/reuse terms, and provenance links. Packet
 creation is preparation only: `sent_to_archive`, `authorization_received`, automated ingestion,
 and PVC creation all remain false until an external decision is explicitly recorded.
+The same tool also audits the generated packet against the live registry: every source must
+appear exactly once, every unresolved requirement must map to an authorization question, and
+no source or top-level flag may imply collection permission. Passing this structural audit still
+does not send the packet or authorize ingestion.
 
 Official collection descriptions now also verify that the First Historical Archives has
 opened about 814,000 Grand Council archival items and exposes catalog series for Chinese
@@ -79,6 +83,7 @@ python history/tools/build_qing_persona_voice_access_review.py \
   --source-id CN-QING-VOICE-0001 --json
 python history/tools/audit_qing_persona_voice_overlap.py --json
 python history/tools/build_qing_persona_voice_permission_packet.py --json
+python history/tools/build_qing_persona_voice_permission_packet.py --audit --json
 ```
 
 Registration and catalog discovery are not collection completion. Only an ingestion

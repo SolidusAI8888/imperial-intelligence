@@ -77,10 +77,26 @@ def test_review_packet_requires_exact_archived_passage_trace(tmp_path) -> None:
     assert packet.canonical_passage_found is True
     assert packet.archived_file_integrity_verified is True
     assert packet.candidate_text_matches_archive is True
+    assert packet.candidate_text == "太宗問魏徵曰：「何謂為明君暗君？」"
+    assert packet.archive_context_excerpt is not None
+    assert packet.candidate_text in packet.archive_context_excerpt
+    assert packet.voice_features == ("direct",)
+    assert packet.decision_features == ("requests_counterargument",)
+    assert packet.rhetoric_features == ("asks_questions",)
+    assert packet.confidence == 0.9
     assert packet.feature_tag_count == 3
     assert packet.requires_person_identity_review is True
+    assert packet.required_attestations == (
+        "passage_link_verified",
+        "person_identity_verified",
+        "transcription_checked",
+        "feature_tags_reviewed",
+    )
     assert packet.approval_ready is True
     assert packet.blockers == ()
+    assert packet.next_action == (
+        "record_explicit_human_review_with_all_attestations"
+    )
 
 
 def test_review_packet_blocks_transcription_not_present_in_archive(tmp_path) -> None:
@@ -99,6 +115,8 @@ def test_review_packet_blocks_transcription_not_present_in_archive(tmp_path) -> 
 
     assert packet.approval_ready is False
     assert packet.blockers == ("candidate_text_not_found_in_canonical_passage",)
+    assert packet.archive_context_excerpt is None
+    assert packet.next_action == "resolve_review_packet_blockers_before_decision"
 
 
 def test_review_packet_blocks_archived_file_changed_after_ingestion(tmp_path) -> None:
@@ -175,15 +193,30 @@ def test_review_packet_api_is_read_only_and_typed(monkeypatch) -> None:
         person_id="tang_taizong",
         source_id="CN-TANG-0004",
         passage_id="CN-TANG-0004-V001-P0002",
+        source_kind="imperial_verbatim",
+        contemporaneous=False,
         current_status="candidate",
+        candidate_text="太宗問魏徵曰：「何謂為明君暗君？」",
+        archive_context_excerpt="太宗問魏徵曰：「何謂為明君暗君？」徵曰……",
+        voice_features=("direct",),
+        decision_features=("requests_counterargument",),
+        rhetoric_features=("asks_questions",),
+        confidence=0.9,
         canonical_passage_found=True,
         archived_file_integrity_verified=True,
         candidate_text_matches_archive=True,
         archived_passage_path="history/source_corpus/example.txt",
         feature_tag_count=3,
         requires_person_identity_review=True,
+        required_attestations=(
+            "passage_link_verified",
+            "person_identity_verified",
+            "transcription_checked",
+            "feature_tags_reviewed",
+        ),
         approval_ready=True,
         blockers=(),
+        next_action="record_explicit_human_review_with_all_attestations",
         status="ready_for_explicit_human_voice_review",
     )
     monkeypatch.setattr(
@@ -194,6 +227,13 @@ def test_review_packet_api_is_read_only_and_typed(monkeypatch) -> None:
 
     assert response.status_code == 200
     assert response.json()["approval_ready"] is True
+    assert response.json()["candidate_text"] == "太宗問魏徵曰：「何謂為明君暗君？」"
+    assert response.json()["required_attestations"] == [
+        "passage_link_verified",
+        "person_identity_verified",
+        "transcription_checked",
+        "feature_tags_reviewed",
+    ]
 
 
 def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch) -> None:

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import json
 from pathlib import Path
 
@@ -116,15 +117,129 @@ def build_permission_packet() -> dict:
     }
 
 
+def audit_permission_packet(packet: dict | None = None) -> dict:
+    """Check packet coverage and safety without authorizing or submitting it."""
+
+    resolved_packet = packet or build_permission_packet()
+    data = _load_manifest()
+    sources = tuple(data["sources"])
+    expected_ids = tuple(source["source_id"] for source in sources)
+    expected_by_id = {source["source_id"]: source for source in sources}
+    raw_requests = resolved_packet.get("permission_requests") or ()
+    requests = tuple(item for item in raw_requests if isinstance(item, dict))
+    request_ids = [request.get("source_id") for request in requests]
+    counts = Counter(request_ids)
+    missing_ids = tuple(source_id for source_id in expected_ids if counts[source_id] == 0)
+    duplicate_ids = tuple(
+        sorted(str(source_id) for source_id, count in counts.items() if count > 1)
+    )
+    unexpected_ids = tuple(
+        sorted(
+            str(source_id)
+            for source_id in counts
+            if source_id not in expected_by_id
+        )
+    )
+    incomplete_ids: list[str] = []
+    authorization_mismatch_ids: list[str] = []
+    unsafe_ids: list[str] = []
+    required_fields = (
+        "source_id",
+        "title",
+        "holding_institution",
+        "catalogue_scope",
+        "requested_authorizations",
+        "unresolved_requirements",
+        "current_access_mode",
+        "current_restrictions",
+        "decision",
+        "provenance",
+    )
+    for request in requests:
+        source_id = str(request.get("source_id") or "")
+        source = expected_by_id.get(source_id)
+        if source is None:
+            continue
+        if not request.get("request_ready") or any(
+            not request.get(field) for field in required_fields
+        ):
+            incomplete_ids.append(source_id)
+        expected_authorizations = {
+            AUTHORIZATION_BY_REQUIREMENT.get(item, f"resolution_for_{item}")
+            for item in source.get("remaining_requirements") or ()
+        }
+        if set(request.get("requested_authorizations") or ()) != expected_authorizations:
+            authorization_mismatch_ids.append(source_id)
+        if request.get("automated_ingestion_allowed") or request.get(
+            "pvc_creation_allowed"
+        ):
+            unsafe_ids.append(source_id)
+
+    questions = tuple(resolved_packet.get("questions_for_archive") or ())
+    questions_complete = len(questions) >= 4 and all(
+        isinstance(question, str) and question.strip() for question in questions
+    )
+    top_level_safety_preserved = bool(
+        resolved_packet.get("sent_to_archive") is False
+        and resolved_packet.get("authorization_received") is False
+        and resolved_packet.get("automated_ingestion_allowed") is False
+        and resolved_packet.get("pvc_creation_allowed") is False
+    )
+    audit_passed = bool(
+        expected_ids
+        and len(requests) == len(expected_ids)
+        and not missing_ids
+        and not duplicate_ids
+        and not unexpected_ids
+        and not incomplete_ids
+        and not authorization_mismatch_ids
+        and not unsafe_ids
+        and questions_complete
+        and top_level_safety_preserved
+    )
+    return {
+        "packet_id": resolved_packet.get("packet_id"),
+        "expected_source_count": len(expected_ids),
+        "request_count": len(requests),
+        "missing_source_ids": missing_ids,
+        "duplicate_source_ids": duplicate_ids,
+        "unexpected_source_ids": unexpected_ids,
+        "incomplete_request_source_ids": tuple(sorted(incomplete_ids)),
+        "authorization_mismatch_source_ids": tuple(
+            sorted(authorization_mismatch_ids)
+        ),
+        "unsafe_request_source_ids": tuple(sorted(unsafe_ids)),
+        "questions_complete": questions_complete,
+        "top_level_safety_preserved": top_level_safety_preserved,
+        "audit_passed": audit_passed,
+        "automatic_submission_allowed": False,
+        "automated_ingestion_allowed": False,
+        "pvc_creation_allowed": False,
+        "status": (
+            "permission_packet_structure_valid_no_authorization"
+            if audit_passed
+            else "permission_packet_structure_requires_repair"
+        ),
+        "safety_note": (
+            "a valid packet remains unsent and cannot grant archive, ingestion, or PVC permission"
+        ),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--json", action="store_true")
+    parser.add_argument("--audit", action="store_true")
     args = parser.parse_args()
-    packet = build_permission_packet()
+    result = (
+        audit_permission_packet()
+        if args.audit
+        else build_permission_packet()
+    )
     print(
-        json.dumps(packet, ensure_ascii=False, indent=2)
+        json.dumps(result, ensure_ascii=False, indent=2)
         if args.json
-        else packet["status"]
+        else result["status"]
     )
 
 

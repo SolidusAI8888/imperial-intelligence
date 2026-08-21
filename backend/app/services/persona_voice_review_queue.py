@@ -18,11 +18,25 @@ class PersonaVoiceReviewQueueItem:
     person_id: str
     source_id: str
     passage_id: str
+    source_kind: str
+    contemporaneous: bool
     current_status: str
+    candidate_text: str
+    archive_context_excerpt: str | None
+    voice_features: tuple[str, ...]
+    decision_features: tuple[str, ...]
+    rhetoric_features: tuple[str, ...]
+    confidence: float
+    canonical_passage_found: bool
+    archived_file_integrity_verified: bool
+    candidate_text_matches_archive: bool
+    required_attestations: tuple[str, ...]
     approval_ready: bool
     blockers: tuple[str, ...]
     review_attested: bool
     runtime_eligible: bool
+    review_packet_endpoint: str
+    next_action: str
     status: str
 
 
@@ -106,11 +120,35 @@ def build_persona_voice_review_queue(
                     person_id=record.person_id,
                     source_id=record.source_id,
                     passage_id=record.passage_id,
+                    source_kind=packet.source_kind,
+                    contemporaneous=packet.contemporaneous,
                     current_status=record.status,
+                    candidate_text=packet.candidate_text,
+                    archive_context_excerpt=packet.archive_context_excerpt,
+                    voice_features=packet.voice_features,
+                    decision_features=packet.decision_features,
+                    rhetoric_features=packet.rhetoric_features,
+                    confidence=packet.confidence,
+                    canonical_passage_found=packet.canonical_passage_found,
+                    archived_file_integrity_verified=(
+                        packet.archived_file_integrity_verified
+                    ),
+                    candidate_text_matches_archive=(
+                        packet.candidate_text_matches_archive
+                    ),
+                    required_attestations=packet.required_attestations,
                     approval_ready=not blockers,
                     blockers=tuple(blockers),
                     review_attested=False,
                     runtime_eligible=False,
+                    review_packet_endpoint=(
+                        f"/persona-voice/{record.voice_evidence_id}/review-packet"
+                    ),
+                    next_action=(
+                        packet.next_action
+                        if not blockers
+                        else "resolve_review_packet_blockers_before_decision"
+                    ),
                     status=(
                         "candidate_ready_for_explicit_human_review"
                         if not blockers
@@ -119,17 +157,53 @@ def build_persona_voice_review_queue(
                 )
             )
         elif record.status == "reviewed" and not record.runtime_eligible:
+            packet = build_persona_voice_review_packet(
+                record.voice_evidence_id,
+                voice_root=root,
+                corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
+            )
+            repair_blockers = ["reviewed_record_missing_complete_attestation"]
+            repair_blockers.extend(
+                blocker
+                for blocker in packet.blockers
+                if blocker != "voice_evidence_status_is_not_candidate"
+            )
+            archive_repair_required = len(repair_blockers) > 1
             items.append(
                 PersonaVoiceReviewQueueItem(
                     voice_evidence_id=record.voice_evidence_id,
                     person_id=record.person_id,
                     source_id=record.source_id,
                     passage_id=record.passage_id,
+                    source_kind=packet.source_kind,
+                    contemporaneous=packet.contemporaneous,
                     current_status=record.status,
+                    candidate_text=packet.candidate_text,
+                    archive_context_excerpt=packet.archive_context_excerpt,
+                    voice_features=packet.voice_features,
+                    decision_features=packet.decision_features,
+                    rhetoric_features=packet.rhetoric_features,
+                    confidence=packet.confidence,
+                    canonical_passage_found=packet.canonical_passage_found,
+                    archived_file_integrity_verified=(
+                        packet.archived_file_integrity_verified
+                    ),
+                    candidate_text_matches_archive=(
+                        packet.candidate_text_matches_archive
+                    ),
+                    required_attestations=packet.required_attestations,
                     approval_ready=False,
-                    blockers=("reviewed_record_missing_complete_attestation",),
+                    blockers=tuple(repair_blockers),
                     review_attested=record.review_attested,
                     runtime_eligible=False,
+                    review_packet_endpoint=(
+                        f"/persona-voice/{record.voice_evidence_id}/review-packet"
+                    ),
+                    next_action=(
+                        "resolve_review_packet_blockers_before_decision"
+                        if archive_repair_required
+                        else "repair_review_attestations_before_runtime_use"
+                    ),
                     status="reviewed_record_requires_attestation_repair",
                 )
             )

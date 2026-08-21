@@ -48,6 +48,11 @@ The queue accepts `queue_state=ready|blocked|attestation_repair`, plus bounded `
 `limit` parameters. Its response separates corpus-wide status counts from the filtered and
 returned record counts, so an operator can page through a stable view without mistaking a
 partial page for total coverage. Filtering and paging remain observational operations.
+Each queue item also carries the candidate text, a bounded exact-match archive context,
+proposed voice/decision/rhetoric tags, confidence, archive-integrity and text-match signals,
+the four required attestations, and a deterministic next action. This makes one item sufficient
+for an operator to understand the review task while preserving the separate explicit decision
+endpoint.
 
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage

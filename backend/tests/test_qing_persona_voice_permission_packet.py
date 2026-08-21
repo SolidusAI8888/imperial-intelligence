@@ -1,4 +1,5 @@
 import importlib.util
+from copy import deepcopy
 from pathlib import Path
 
 
@@ -78,3 +79,57 @@ def test_packet_creation_never_grants_or_sends_permission() -> None:
         "permission_packet_ready_for_external_submission_not_authorized"
     )
     assert "does not contact" in packet["safety_note"]
+
+
+def test_permission_packet_audit_confirms_exact_registry_coverage() -> None:
+    audit = _module().audit_permission_packet()
+
+    assert audit["expected_source_count"] == 4
+    assert audit["request_count"] == 4
+    assert audit["missing_source_ids"] == ()
+    assert audit["duplicate_source_ids"] == ()
+    assert audit["unexpected_source_ids"] == ()
+    assert audit["incomplete_request_source_ids"] == ()
+    assert audit["authorization_mismatch_source_ids"] == ()
+    assert audit["unsafe_request_source_ids"] == ()
+    assert audit["questions_complete"] is True
+    assert audit["top_level_safety_preserved"] is True
+    assert audit["audit_passed"] is True
+    assert audit["status"] == "permission_packet_structure_valid_no_authorization"
+
+
+def test_permission_packet_audit_fails_closed_on_omission_or_unsafe_flag() -> None:
+    module = _module()
+    packet = deepcopy(module.build_permission_packet())
+    packet["permission_requests"] = list(packet["permission_requests"])[1:]
+    packet["permission_requests"][0]["automated_ingestion_allowed"] = True
+    packet["automated_ingestion_allowed"] = True
+
+    audit = module.audit_permission_packet(packet)
+
+    assert audit["missing_source_ids"] == ("CN-QING-VOICE-0001",)
+    assert audit["unsafe_request_source_ids"] == ("CN-QING-VOICE-0002",)
+    assert audit["top_level_safety_preserved"] is False
+    assert audit["audit_passed"] is False
+    assert audit["automatic_submission_allowed"] is False
+    assert audit["automated_ingestion_allowed"] is False
+    assert audit["pvc_creation_allowed"] is False
+    assert audit["status"] == "permission_packet_structure_requires_repair"
+
+
+def test_permission_packet_audit_detects_changed_authorization_questions() -> None:
+    module = _module()
+    packet = deepcopy(module.build_permission_packet())
+    request = list(packet["permission_requests"])[0]
+    request["requested_authorizations"] = tuple(
+        authorization
+        for authorization in request["requested_authorizations"]
+        if authorization != "research_storage_quotation_and_publication_reuse_terms"
+    )
+
+    audit = module.audit_permission_packet(packet)
+
+    assert audit["authorization_mismatch_source_ids"] == (
+        "CN-QING-VOICE-0001",
+    )
+    assert audit["audit_passed"] is False
