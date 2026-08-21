@@ -36,3 +36,25 @@ def test_runtime_insight_gate_uses_application_conditions_not_only_statement() -
     )
 
     assert _insight_relevant_to_question(question, insight) is True
+
+
+def test_runtime_insight_gate_does_not_treat_negative_limit_as_positive_relevance() -> None:
+    question = "团队管理出现问题时，应该先换人还是先改制度？"
+    insight = _insight(
+        "边疆战事中应先稳定粮道，再决定是否继续进兵。",
+        applies_when=("军事补给与边疆战争",),
+        limits=("不适用于团队管理、组织制度或人员调整问题",),
+    )
+
+    assert _insight_relevant_to_question(question, insight) is False
+
+
+def test_runtime_insight_gate_keeps_relevant_insight_even_when_limits_are_present() -> None:
+    question = "团队管理出现问题时，应该先换人还是先改制度？"
+    insight = _insight(
+        "团队管理反复失灵时，应先检查制度与反馈机制，再判断是否需要换人。",
+        applies_when=("组织治理与人员调整",),
+        limits=("不适用于紧急军事指挥",),
+    )
+
+    assert _insight_relevant_to_question(question, insight) is True
