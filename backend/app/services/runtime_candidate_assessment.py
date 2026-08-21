@@ -14,19 +14,9 @@ from app.services.problem_research_package import build_problem_research_package
 
 
 _REVIEWED = {"reviewed", "accepted"}
-_ROLE_STRENGTH = {
-    "none": 0.0,
-    "weak": 0.3,
-    "medium": 0.55,
-    "strong": 0.8,
-    "primary": 1.0,
-}
+_ROLE_STRENGTH = {"none": 0.0, "weak": 0.3, "medium": 0.55, "strong": 0.8, "primary": 1.0}
 _CJK_RE = re.compile(r"[\u3400-\u9fff]+")
 _LATIN_RE = re.compile(r"[A-Za-z0-9_]+")
-# High-frequency connective/advisory fragments must never be enough by themselves to
-# establish problem-specific relevance. These caused false positives such as two
-# unrelated texts matching only on “应该” or “问题”. Three-character topical terms are
-# still retained, so informative phrases such as “团队管理” continue to match.
 _NONINFORMATIVE_CJK_TERMS = {
     "一个", "个人", "时候", "如果", "因为", "所以", "但是", "还是", "是否",
     "应该", "应该先", "该先", "可以", "需要", "如何", "怎么", "怎样", "什么", "问题", "事情",
@@ -42,6 +32,7 @@ class RuntimeCandidateAssessment:
     evidence_ids: tuple[str, ...]
     heu_ids: tuple[str, ...]
     insight_ids: tuple[str, ...]
+    conflicting_insight_ids: tuple[str, ...]
     recommended_eligible: bool
     auto_answer_ready: bool
     rationale: str
@@ -62,7 +53,6 @@ def _clamp(value: float) -> float:
 
 
 def _relevance_terms(text: str) -> set[str]:
-    """Return deterministic informative lexical terms for relevance checks."""
     terms: set[str] = set()
     for span in _CJK_RE.findall(text):
         for size in (2, 3):
@@ -74,70 +64,29 @@ def _relevance_terms(text: str) -> set[str]:
 
 
 def _insight_relevant_to_question(question: str, insight: object) -> bool:
-    """Require positive, informative Insight content to overlap the current problem.
-
-    HEU recall is intentionally broad. A reviewed Insight may only become positive problem-specific
-    evidence when its statement or application conditions share informative lexical content with the
-    current question. Generic advisory fragments such as ``应该``/``问题`` are ignored because they
-    otherwise create false relevance between unrelated topics. ``limits`` remain deliberately
-    excluded from positive matching and are evaluated separately as negative applicability evidence.
-    """
     query_terms = _relevance_terms(question)
     if not query_terms:
         return False
-    positive_text = " ".join(
-        [
-            getattr(insight, "statement", ""),
-            *getattr(insight, "applies_when", ()),
-        ]
-    )
+    positive_text = " ".join([getattr(insight, "statement", ""), *getattr(insight, "applies_when", ())])
     return bool(query_terms & _relevance_terms(positive_text))
 
 
 def _insight_conflicts_with_question(question: str, insight: object) -> bool:
-    """Return True when an Insight explicitly limits itself away from this problem.
-
-    ``limits`` are counter-evidence. If they share informative topic terms with the current
-    question, the Insight must not be used as positive problem-specific evidence even when its
-    statement or ``applies_when`` also overlap the question. This prevents a reviewed Insight such
-    as “制度调整经验” with a limit like “不适用于团队管理” from crossing the automatic answer gate
-    for a team-management question.
-    """
     query_terms = _relevance_terms(question)
     if not query_terms:
         return False
     limits_text = " ".join(getattr(insight, "limits", ()))
-    if not limits_text:
-        return False
-    return bool(query_terms & _relevance_terms(limits_text))
+    return bool(limits_text and query_terms & _relevance_terms(limits_text))
 
 
-def _partition_problem_insights(
-    question: str,
-    insights: list[object] | tuple[object, ...],
-) -> tuple[list[object], list[object]]:
-    """Split reviewed derived Insights into usable support and direct counter-evidence.
-
-    A conflicting Insight must not simply disappear from the runtime evidence picture. If an
-    Insight is positively relevant to the current problem but its reviewed ``limits`` also match
-    that problem, it represents direct counter-evidence. The supporting side may still be useful for
-    candidate ranking and human review, but automatic answer rendering must stop until that conflict
-    is reviewed explicitly.
-    """
+def _partition_problem_insights(question: str, insights: list[object] | tuple[object, ...]) -> tuple[list[object], list[object]]:
     relevant = [insight for insight in insights if _insight_relevant_to_question(question, insight)]
-    conflicting = [
-        insight for insight in relevant if _insight_conflicts_with_question(question, insight)
-    ]
-    supporting = [
-        insight for insight in relevant if not _insight_conflicts_with_question(question, insight)
-    ]
+    conflicting = [insight for insight in relevant if _insight_conflicts_with_question(question, insight)]
+    supporting = [insight for insight in relevant if not _insight_conflicts_with_question(question, insight)]
     return supporting, conflicting
 
 
-def _select_runtime_candidate(
-    candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...],
-) -> RuntimeCandidateAssessment | None:
-    """Select the strongest candidate that can actually cross the requested gate."""
+def _select_runtime_candidate(candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...]) -> RuntimeCandidateAssessment | None:
     answer_ready = next((item for item in candidates if item.auto_answer_ready), None)
     if answer_ready is not None:
         return answer_ready
@@ -145,144 +94,59 @@ def _select_runtime_candidate(
 
 
 def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> RuntimeProblemAssessment:
-    """Automatically assess an unregistered problem using only reviewed knowledge."""
     research = build_problem_research_package(question, candidate_limit=candidate_limit)
     assessed: list[RuntimeCandidateAssessment] = []
-
     for recalled in research.candidates:
         person_id = recalled.person_id
         recalled_heu_ids = set(recalled.heu_ids)
-        heus = [
-            heu
-            for heu in load_person_experiences(person_id)
-            if heu.heu_id in recalled_heu_ids and heu.status in _REVIEWED
-        ]
+        heus = [heu for heu in load_person_experiences(person_id) if heu.heu_id in recalled_heu_ids and heu.status in _REVIEWED]
         if not heus:
             continue
-
         heu_ids = {heu.heu_id for heu in heus}
         derived_insights = [
-            insight
-            for insight in load_person_insights(person_id)
-            if insight.status in _REVIEWED
-            and insight.derived_from_heus
-            and set(insight.derived_from_heus).issubset(heu_ids)
+            insight for insight in load_person_insights(person_id)
+            if insight.status in _REVIEWED and insight.derived_from_heus and set(insight.derived_from_heus).issubset(heu_ids)
         ]
-        insights, conflicting_insights = _partition_problem_insights(
-            research.normalized_question,
-            derived_insights,
-        )
-
+        insights, conflicting_insights = _partition_problem_insights(research.normalized_question, derived_insights)
         required_record_ids = {record_id for heu in heus for record_id in heu.record_links}
-        records = [
-            record
-            for record in load_person_records(person_id)
-            if record.record_id in required_record_ids and record.status in _REVIEWED
-        ]
+        records = [record for record in load_person_records(person_id) if record.record_id in required_record_ids and record.status in _REVIEWED]
         loaded_record_ids = {record.record_id for record in records}
-        canonical_ids = sorted(
-            {
-                canonical_id
-                for record in records
-                for source in record.sources
-                for canonical_id in source.canonical_ids
-            }
-        )
-
-        role_links = [
-            link
-            for link in load_person_role_links(person_id)
-            if link.heu_id in heu_ids and link.responder_eligible
-        ]
-        role_relevance = max(
-            (_ROLE_STRENGTH.get(link.personal_experience_strength, 0.0) for link in role_links),
-            default=0.0,
-        )
-
+        canonical_ids = sorted({canonical_id for record in records for source in record.sources for canonical_id in source.canonical_ids})
+        role_links = [link for link in load_person_role_links(person_id) if link.heu_id in heu_ids and link.responder_eligible]
+        role_relevance = max((_ROLE_STRENGTH.get(link.personal_experience_strength, 0.0) for link in role_links), default=0.0)
         dynasties = {record.dynasty for record in records if record.dynasty and record.dynasty != "Unknown"}
         dynasty = next(iter(dynasties)) if len(dynasties) == 1 else "Unknown"
-
-        experience_similarity = _clamp(recalled.retrieval_score)
         evidence_strength = _clamp(0.4 + 0.08 * len(records) + 0.04 * len(canonical_ids))
-        lesson_clarity = _clamp(
-            0.35
-            + 0.08 * sum(bool(heu.explicit_reflection) for heu in heus)
-            + 0.05 * sum(bool(heu.interpretation) for heu in heus)
-            + 0.06 * len(insights)
-        )
-        transferability = _clamp(
-            0.35 + 0.08 * len(insights) + 0.03 * sum(len(insight.applies_when) for insight in insights)
-        )
-        counterevidence_quality = _clamp(
-            0.3
-            + 0.15 * sum(bool(insight.limits) for insight in insights)
-            + 0.2 * bool(conflicting_insights)
-        )
-
+        lesson_clarity = _clamp(0.35 + 0.08 * sum(bool(heu.explicit_reflection) for heu in heus) + 0.05 * sum(bool(heu.interpretation) for heu in heus) + 0.06 * len(insights))
+        transferability = _clamp(0.35 + 0.08 * len(insights) + 0.03 * sum(len(insight.applies_when) for insight in insights))
+        counterevidence_quality = _clamp(0.3 + 0.15 * sum(bool(insight.limits) for insight in insights) + 0.2 * bool(conflicting_insights))
         rationale = (
             f"automatic assessment from {len(heus)} reviewed HEU(s), {len(records)} reviewed HER(s), "
-            f"{len(insights)} problem-relevant reviewed supporting Insight(s), "
-            f"{len(conflicting_insights)} directly conflicting reviewed Insight(s) out of "
-            f"{len(derived_insights)} derived Insight(s), {len(canonical_ids)} canonical evidence id(s), "
-            f"and {len(role_links)} eligible role link(s)"
+            f"{len(insights)} problem-relevant reviewed supporting Insight(s), {len(conflicting_insights)} directly conflicting reviewed Insight(s) out of "
+            f"{len(derived_insights)} derived Insight(s), {len(canonical_ids)} canonical evidence id(s), and {len(role_links)} eligible role link(s)"
         )
-        scored = score_candidate(
-            CandidateExperience(
-                persona_id=person_id,
-                dynasty=dynasty,
-                evidence_ids=tuple(canonical_ids),
-                experience_similarity=experience_similarity,
-                evidence_strength=evidence_strength,
-                stage_relevance=_clamp(role_relevance),
-                lesson_clarity=lesson_clarity,
-                transferability=transferability,
-                counterevidence_quality=counterevidence_quality,
-                rationale=rationale,
-            )
-        )
-
+        scored = score_candidate(CandidateExperience(
+            persona_id=person_id, dynasty=dynasty, evidence_ids=tuple(canonical_ids),
+            experience_similarity=_clamp(recalled.retrieval_score), evidence_strength=evidence_strength,
+            stage_relevance=_clamp(role_relevance), lesson_clarity=lesson_clarity,
+            transferability=transferability, counterevidence_quality=counterevidence_quality, rationale=rationale,
+        ))
         all_required_records_reviewed = bool(required_record_ids) and required_record_ids == loaded_record_ids
-        chain_complete = bool(
-            all_required_records_reviewed
-            and canonical_ids
-            and insights
-            and role_links
-            and dynasty != "Unknown"
-        )
+        chain_complete = bool(all_required_records_reviewed and canonical_ids and insights and role_links and dynasty != "Unknown")
         recommended = bool(chain_complete and recalled.retrieval_score >= 0.35 and scored.total_score >= 0.6)
-        answer_ready = bool(
-            recommended
-            and not conflicting_insights
-            and scored.total_score >= 0.72
-            and len(canonical_ids) >= 2
-            and len(insights) >= 1
-        )
-        assessed.append(
-            RuntimeCandidateAssessment(
-                person_id=person_id,
-                retrieval_score=recalled.retrieval_score,
-                candidate_score=scored.total_score,
-                evidence_ids=tuple(canonical_ids),
-                heu_ids=tuple(sorted(heu_ids)),
-                insight_ids=tuple(sorted(insight.insight_id for insight in insights)),
-                recommended_eligible=recommended,
-                auto_answer_ready=answer_ready,
-                rationale=rationale,
-            )
-        )
-
+        answer_ready = bool(recommended and not conflicting_insights and scored.total_score >= 0.72 and len(canonical_ids) >= 2 and len(insights) >= 1)
+        assessed.append(RuntimeCandidateAssessment(
+            person_id=person_id, retrieval_score=recalled.retrieval_score, candidate_score=scored.total_score,
+            evidence_ids=tuple(canonical_ids), heu_ids=tuple(sorted(heu_ids)),
+            insight_ids=tuple(sorted(insight.insight_id for insight in insights)),
+            conflicting_insight_ids=tuple(sorted(insight.insight_id for insight in conflicting_insights)),
+            recommended_eligible=recommended, auto_answer_ready=answer_ready, rationale=rationale,
+        ))
     assessed.sort(key=lambda item: (-item.candidate_score, -item.retrieval_score, item.person_id))
     selected = _select_runtime_candidate(assessed)
     ready = bool(selected and selected.auto_answer_ready)
     return RuntimeProblemAssessment(
-        problem_id=research.proposed_problem_id,
-        question=research.normalized_question,
-        candidates=tuple(assessed),
-        selected_person_id=selected.person_id if selected else None,
-        auto_answer_ready=ready,
-        status=(
-            "automatic_candidate_selected_evidence_gate_ready"
-            if ready
-            else "automatic_assessment_complete_evidence_gate_not_ready"
-        ),
+        problem_id=research.proposed_problem_id, question=research.normalized_question, candidates=tuple(assessed),
+        selected_person_id=selected.person_id if selected else None, auto_answer_ready=ready,
+        status="automatic_candidate_selected_evidence_gate_ready" if ready else "automatic_assessment_complete_evidence_gate_not_ready",
     )

@@ -16,10 +16,9 @@ def test_runtime_explanation_exposes_ranked_evidence_gate_decision() -> None:
     assert result.status == "runtime_selection_explanation_read_only"
     assert result.candidates
     assert [item.rank for item in result.candidates] == list(range(1, len(result.candidates) + 1))
-    assert [item.candidate_score for item in result.candidates] == sorted(
-        [item.candidate_score for item in result.candidates], reverse=True
-    )
+    assert [item.candidate_score for item in result.candidates] == sorted([item.candidate_score for item in result.candidates], reverse=True)
     assert all(item.selection_reason for item in result.candidates)
+    assert all(isinstance(item.conflicting_insight_ids, tuple) for item in result.candidates)
     assert result.decision_summary
     if result.selected_person_id is not None:
         selected = next(item for item in result.candidates if item.person_id == result.selected_person_id)
@@ -41,3 +40,4 @@ def test_runtime_explanation_endpoint_is_read_only_and_auditable() -> None:
     assert all("evidence_ids" in candidate for candidate in data["candidates"])
     assert all("heu_ids" in candidate for candidate in data["candidates"])
     assert all("insight_ids" in candidate for candidate in data["candidates"])
+    assert all("conflicting_insight_ids" in candidate for candidate in data["candidates"])
