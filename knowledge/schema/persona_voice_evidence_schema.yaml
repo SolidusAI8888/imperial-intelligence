@@ -1,0 +1,65 @@
+schema_version: 1
+record_type: persona_voice_evidence
+purpose: >-
+  Store auditable first-person or near-first-person historical language evidence for persona voice,
+  decision style, and rhetorical behavior. A record may influence generated persona style only after review.
+required_fields:
+  - voice_evidence_id
+  - person_id
+  - source_id
+  - passage_id
+  - source_kind
+  - contemporaneous
+  - text
+  - voice_features
+  - decision_features
+  - rhetoric_features
+  - confidence
+  - status
+fields:
+  voice_evidence_id:
+    type: string
+    description: Stable identifier for this voice-evidence record.
+  person_id:
+    type: string
+  source_id:
+    type: string
+  passage_id:
+    type: string
+    description: Canonical archived passage identifier. Voice evidence must remain traceable to source text.
+  source_kind:
+    type: enum
+    values:
+      - imperial_verbatim
+      - vermilion_rescript
+      - imperial_edict
+      - court_diary
+      - memorial_response
+      - institutional_record
+      - later_compilation
+  contemporaneous:
+    type: boolean
+  text:
+    type: string
+    description: Reviewed excerpt or faithful normalized transcription; never synthetic persona prose.
+  voice_features:
+    type: list[string]
+    examples: [terse, direct, admonitory, conciliatory, self_correcting]
+  decision_features:
+    type: list[string]
+    examples: [requests_counterargument, demands_specifics, revises_prior_judgment]
+  rhetoric_features:
+    type: list[string]
+    examples: [asks_questions, cites_classics, contrasts_alternatives, gives_concrete_orders]
+  confidence:
+    type: number
+    minimum: 0
+    maximum: 1
+  status:
+    type: enum
+    values: [candidate, reviewed, rejected]
+constraints:
+  - Only status=reviewed records may affect Runtime persona voice.
+  - passage_id must point to archived evidence; summaries alone are insufficient.
+  - Later compilations may support background style analysis but must not outweigh direct imperial words.
+  - Voice evidence controls expression style only; factual claims still require ordinary HER/HEU/Insight grounding.
