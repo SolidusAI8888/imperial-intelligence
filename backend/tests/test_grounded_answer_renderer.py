@@ -1,6 +1,7 @@
 import pytest
 
 from app.services.grounded_answer_renderer import render_grounded_answer
+from app.services.persona_voice_evidence import parse_persona_voice_evidence
 
 
 FIRST_PROBLEM_ID = "Q-FATE-AGENCY-001"
@@ -29,6 +30,36 @@ def test_renderer_does_not_invent_direct_quote_markers() -> None:
     assert "朕曰" not in answer.historical_voice
     assert "我曾说" not in answer.historical_voice
     assert "据《" not in answer.historical_voice
+
+
+def test_renderer_applies_only_reviewed_selected_person_voice_metadata(monkeypatch) -> None:
+    evidence = parse_persona_voice_evidence(
+        {
+            "voice_evidence_id": "PVC-TANG-0001",
+            "person_id": "tang_taizong",
+            "source_id": "CN-TANG-0004",
+            "passage_id": "CN-TANG-0004-P000001",
+            "source_kind": "imperial_verbatim",
+            "contemporaneous": True,
+            "text": "This reviewed source text must not be copied into the answer.",
+            "voice_features": ["direct", "terse"],
+            "decision_features": ["requests_counterargument"],
+            "rhetoric_features": ["asks_questions"],
+            "confidence": 0.95,
+            "status": "reviewed",
+        }
+    )
+    monkeypatch.setattr(
+        "app.services.grounded_answer_renderer.load_person_voice_evidence",
+        lambda person_id: [evidence] if person_id == "tang_taizong" else [],
+    )
+
+    answer = render_grounded_answer(FIRST_PROBLEM_ID)
+
+    assert answer.historical_voice.startswith("先说要害")
+    assert answer.voice_evidence_ids == ("PVC-TANG-0001",)
+    assert evidence.text not in answer.historical_voice
+    assert answer.evidence_ids
 
 
 def test_unknown_problem_cannot_be_rendered() -> None:

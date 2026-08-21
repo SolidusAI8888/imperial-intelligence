@@ -10,10 +10,15 @@ from app.models.knowledge import (
     Insight,
     RoleExperienceLink,
 )
+from app.services.persona_voice_evidence import (
+    PersonaVoiceEvidence,
+    parse_persona_voice_evidence,
+)
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 RESEARCH_ROOT = PROJECT_ROOT / "knowledge" / "research" / "R-000001"
+VOICE_EVIDENCE_ROOT = PROJECT_ROOT / "knowledge" / "persona_voice"
 _ALLOWED_RECORD_TYPES = {
     "discussion",
     "memorial",
@@ -151,6 +156,25 @@ def load_person_role_links(person_id: str) -> list[RoleExperienceLink]:
             life_course_rule=life_course_rule,
         )
         for raw in data["links"]
+    ]
+
+
+def load_all_persona_voice_evidence() -> list[PersonaVoiceEvidence]:
+    """Load auditable PVC records; an absent corpus is a valid empty state."""
+
+    if not VOICE_EVIDENCE_ROOT.exists():
+        return []
+    return [
+        parse_persona_voice_evidence(_load_yaml(path))
+        for path in sorted(VOICE_EVIDENCE_ROOT.rglob("*.yaml"))
+    ]
+
+
+def load_person_voice_evidence(person_id: str) -> list[PersonaVoiceEvidence]:
+    return [
+        evidence
+        for evidence in load_all_persona_voice_evidence()
+        if evidence.person_id == person_id
     ]
 
 

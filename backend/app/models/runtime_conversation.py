@@ -30,6 +30,7 @@ class RuntimeConversationResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
+    voice_evidence_ids: list[str] = Field(default_factory=list)
     research_package: ProblemResearchPackageResponse | None = None
     status: Literal[
         "continued_with_runtime_grounded_responder",

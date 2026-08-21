@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from app.services.problem_response_pipeline import build_grounded_response_bundle
+from app.services.knowledge_repository import load_person_voice_evidence
+from app.services.persona_voice_evidence import build_persona_voice_profile, style_answer_opening
 
 
 @dataclass(frozen=True)
@@ -16,6 +18,7 @@ class RenderedGroundedAnswer:
     evidence_ids: tuple[str, ...]
     insight_ids: tuple[str, ...]
     status: str
+    voice_evidence_ids: tuple[str, ...] = ()
 
 
 def _join_items(items: list[str]) -> str:
@@ -34,6 +37,9 @@ def render_grounded_answer(problem_id: str, question: str | None = None) -> Rend
     """
     bundle = build_grounded_response_bundle(problem_id, question)
     context = bundle.context
+    voice_profile = build_persona_voice_profile(
+        context.person_id, load_person_voice_evidence(context.person_id)
+    )
 
     experience_paragraphs: list[str] = []
     for heu in context.experiences:
@@ -52,7 +58,10 @@ def render_grounded_answer(problem_id: str, question: str | None = None) -> Rend
     insight_text = "；".join(bundle.insight_statements)
     historical_voice = "\n\n".join(
         [
-            "若只依据我一生中已经有史料支持的经历来回答，我不会把这个问题归结为一个简单因素。",
+            style_answer_opening(
+                "若只依据我一生中已经有史料支持的经历来回答，我不会把这个问题归结为一个简单因素。",
+                voice_profile,
+            ),
             *experience_paragraphs,
             f"从这些经历中，当前经过审核、可以支持的判断是：{insight_text}。",
         ]
@@ -79,4 +88,5 @@ def render_grounded_answer(problem_id: str, question: str | None = None) -> Rend
         evidence_ids=bundle.evidence_ids,
         insight_ids=bundle.plan.insight_ids,
         status="rendered_from_reviewed_grounded_bundle",
+        voice_evidence_ids=voice_profile.voice_evidence_ids if voice_profile else (),
     )

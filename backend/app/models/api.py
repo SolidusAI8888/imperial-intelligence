@@ -77,6 +77,7 @@ class ProblemGroundedAnswerResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
+    voice_evidence_ids: list[str] = Field(default_factory=list)
     status: Literal[
         "rendered_from_reviewed_grounded_bundle",
         "rendered_from_runtime_reviewed_grounded_bundle",
@@ -208,6 +209,7 @@ class ProblemConversationResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
+    voice_evidence_ids: list[str] = Field(default_factory=list)
     requires_new_problem: bool
     research_package: ProblemResearchPackageResponse | None = None
     status: Literal[

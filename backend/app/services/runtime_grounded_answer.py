@@ -8,8 +8,14 @@ from app.services.knowledge_repository import (
     load_person_insights,
     load_person_records,
     load_person_role_links,
+    load_person_voice_evidence,
 )
 from app.services.knowledge_runtime import build_runtime_context
+from app.services.persona_voice_evidence import (
+    PersonaVoiceProfile,
+    build_persona_voice_profile,
+    style_answer_opening,
+)
 from app.services.runtime_candidate_assessment import assess_runtime_problem
 
 
@@ -24,6 +30,7 @@ class RuntimeRenderedGroundedAnswer:
     evidence_ids: tuple[str, ...]
     insight_ids: tuple[str, ...]
     status: str
+    voice_evidence_ids: tuple[str, ...] = ()
 
 
 def _join_items(items: list[str]) -> str:
@@ -31,7 +38,7 @@ def _join_items(items: list[str]) -> str:
     return "；".join(cleaned)
 
 
-def _build_runtime_context(question: str, *, candidate_limit: int = 20) -> tuple[RuntimeContext, tuple[str, ...], tuple[str, ...]]:
+def _build_runtime_context(question: str, *, candidate_limit: int = 20) -> tuple[RuntimeContext, tuple[str, ...], tuple[str, ...], PersonaVoiceProfile | None]:
     assessment = assess_runtime_problem(question, candidate_limit=candidate_limit)
     if not assessment.auto_answer_ready or not assessment.selected_person_id:
         raise ValueError("Runtime problem has not passed the automatic evidence gate")
@@ -48,7 +55,10 @@ def _build_runtime_context(question: str, *, candidate_limit: int = 20) -> tuple
     evidence_ids = tuple(sorted({cid for r in context.records for s in r.sources for cid in s.canonical_ids}))
     if evidence_ids != selected.evidence_ids:
         raise ValueError("Runtime answer evidence diverges from automatic candidate assessment")
-    return context, evidence_ids, tuple(sorted(insight_ids))
+    voice_profile = build_persona_voice_profile(
+        selected.person_id, load_person_voice_evidence(selected.person_id)
+    )
+    return context, evidence_ids, tuple(sorted(insight_ids)), voice_profile
 
 
 def render_runtime_grounded_answer(question: str, *, anchor_question: str | None = None, candidate_limit: int = 20) -> RuntimeRenderedGroundedAnswer:
@@ -58,7 +68,7 @@ def render_runtime_grounded_answer(question: str, *, anchor_question: str | None
     authoritative while the visible answer addresses the new turn. No permanent Problem is created.
     """
     anchor = anchor_question or question
-    context, evidence_ids, insight_ids = _build_runtime_context(anchor, candidate_limit=candidate_limit)
+    context, evidence_ids, insight_ids, voice_profile = _build_runtime_context(anchor, candidate_limit=candidate_limit)
     experience_paragraphs: list[str] = []
     for heu in context.experiences:
         parts = [f"我曾面对这样的处境：{heu.challenge.strip()}"]
@@ -74,7 +84,10 @@ def render_runtime_grounded_answer(question: str, *, anchor_question: str | None
         experience_paragraphs.append("。".join(parts) + "。")
     insight_text = "；".join(insight.statement for insight in context.insights)
     historical_voice = "\n\n".join([
-        "若只依据我一生中已经有史料支持的经历来回答，我不会把这个问题归结为一个简单因素。",
+        style_answer_opening(
+            "若只依据我一生中已经有史料支持的经历来回答，我不会把这个问题归结为一个简单因素。",
+            voice_profile,
+        ),
         *experience_paragraphs,
         f"从这些经历中，当前经过审核、可以支持的判断是：{insight_text}。",
     ])
@@ -84,4 +97,4 @@ def render_runtime_grounded_answer(question: str, *, anchor_question: str | None
         "运行时自动通过证据门不等于创建或批准新的永久 Problem 文件；其结论仍受当前知识覆盖范围限制。",
         "现代迁移属于解释层，不把帝王治理经验直接视为现代个人生活的等价处方。",
     )
-    return RuntimeRenderedGroundedAnswer(problem_id=context.problem_id, person_id=context.person_id, question=question, historical_voice=historical_voice, modern_translation=modern_translation, cautions=cautions, evidence_ids=evidence_ids, insight_ids=insight_ids, status="rendered_from_runtime_reviewed_grounded_bundle")
+    return RuntimeRenderedGroundedAnswer(problem_id=context.problem_id, person_id=context.person_id, question=question, historical_voice=historical_voice, modern_translation=modern_translation, cautions=cautions, evidence_ids=evidence_ids, insight_ids=insight_ids, status="rendered_from_runtime_reviewed_grounded_bundle", voice_evidence_ids=voice_profile.voice_evidence_ids if voice_profile else ())
