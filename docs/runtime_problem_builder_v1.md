@@ -36,6 +36,14 @@ excerpt is present in a checksum-verified archived passage. Persisted artifacts 
 start as `candidate`, remain runtime-ineligible, and require the separate review flow;
 candidate creation cannot directly write `reviewed` evidence.
 
+`GET /persona-voice/review-queue` turns those records into a read-only human work queue.
+It checks each candidate against the archived passage and ingestion hash, blocks duplicate
+candidates for the same person and passage, and surfaces old `reviewed` labels that lack a
+complete attestation. It never approves or edits a record. The repository now includes three
+checksum-verified 唐太宗 candidates from 《贞观政要》 as the first real queue fixtures; all
+three remain excluded from runtime style until an explicit human decision records every
+required attestation.
+
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage
 and source counts, the weighted score, and any style-gate blockers. It distinguishes

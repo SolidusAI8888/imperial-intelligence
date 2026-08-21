@@ -174,8 +174,12 @@ sources:
     evidence_tier: A
     source_kinds: [institutional_record, memorial_response]
     preferred_for: [decision_context, institutional_context]
-    acquisition_strategy: archival_access_review_required
-    status: catalog_verified_access_review_required
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      Official consultation rules permit catalog search and registered on-site research, but do
+      not authorize automated capture, reusable export, or publication. Written archive
+      permission and stable series-specific locators are required before ingestion.
     holding_institution: 中国第一历史档案馆
     discovered_scope:
       fonds: 军机处
@@ -187,14 +191,72 @@ sources:
         - 满文议复档
         - 满文专档
         - 满文上谕档寄信档大本
+      normalized_subseries:
+        - 汉文录副奏折
+        - 满文录副奏折
+        - 满文议复档
+        - 满文专档
+        - 满文上谕档
+        - 满文寄信档
       scope_warning: 本来源是全宗级伞形范围，与上谕档等独立来源存在重叠，必须按系列去重
     provenance:
       - https://fhac.com.cn/consult.html
       - https://fhac.com.cn/detail/1259.html
+      - https://fhac.com.cn/detail/6657.html
+      - https://fhac.com.cn/search_catalogues.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 在线目录检索；馆内实名预约查阅数字化档案
+      online_catalogue_access: true
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 复制件限申请用途使用；公开发表须另行取得书面许可
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
+    overlap_review:
+      reviewed_at: '2026-08-21'
+      policy: 原始奏折、录副抄件与独立档簿按来源关系链接，不跨系列合并文本
+      rules:
+        - subseries: 汉文录副奏折
+          classification: derived_copy_link
+          related_source_id: CN-QING-VOICE-0002
+          action: link_not_merge
+          rationale: 军机处将朱批奏折抄录为录副奏折，二者保留各自来源身份
+        - subseries: 满文录副奏折
+          classification: derived_copy_link
+          related_source_id: CN-QING-VOICE-0002
+          action: link_not_merge
+          rationale: 满文录副仍是奏折流程中的抄录系列，不作为朱批原件合并采集
+        - subseries: 满文议复档
+          classification: unique_administrative_series
+          action: retain_under_source
+        - subseries: 满文专档
+          classification: unique_administrative_series
+          action: retain_under_source
+        - subseries: 满文上谕档
+          classification: registered_separate_source
+          related_source_id: CN-QING-VOICE-0001
+          action: exclude_from_source
+        - subseries: 满文寄信档
+          classification: unique_administrative_series
+          action: retain_under_source
+      provenance:
+        - https://fhac.com.cn/consult.html
+        - https://fhac.com.cn/detail/6657.html
+        - https://fhac.com.cn/search_catalogues.html
     remaining_requirements:
-      - series_partition_and_overlap_control
       - emperor_and_reign_partition
       - stable_item_locator
       - machine_access_or_permitted_research_export
       - reuse_rights
       - digitization_completeness
+    note: >-
+      The series overlap review is complete, but it resolves identity and deduplication only. It
+      does not grant access or reuse rights, so no military-grand-council series may yet enter an
+      ingestion manifest or create PVC evidence.

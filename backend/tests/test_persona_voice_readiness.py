@@ -126,11 +126,11 @@ def test_single_traceable_passage_reports_independent_evidence_blocker(
 
 
 def test_voice_readiness_endpoint_exposes_honest_empty_corpus_fallback() -> None:
-    response = client.get("/personas/tang_taizong/voice-readiness")
+    response = client.get("/personas/qing_kangxi/voice-readiness")
 
     assert response.status_code == 200
     data = response.json()
-    assert data["person_id"] == "tang_taizong"
+    assert data["person_id"] == "qing_kangxi"
     assert data["total_records"] == 0
     assert data["runtime_style_ready"] is False
     assert data["attested_reviewed_records"] == 0

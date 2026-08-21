@@ -1,0 +1,168 @@
+import hashlib
+import json
+
+from fastapi.testclient import TestClient
+import yaml
+
+from app.main import app
+from app.services.persona_voice_candidate import create_persona_voice_candidate
+from app.services.persona_voice_review_queue import (
+    PersonaVoiceReviewQueue,
+    build_persona_voice_review_queue,
+)
+
+
+client = TestClient(app)
+
+
+def _roots(tmp_path):
+    voice_root = tmp_path / "persona_voice"
+    corpus_root = tmp_path / "source_corpus"
+    passage_path = corpus_root / "tang" / "text" / "001.txt"
+    passage_path.parent.mkdir(parents=True)
+    passage_path.write_text(
+        "[CN-TANG-0004-V001-P0002]\n"
+        "貞觀二年，太宗問魏徵曰：「何謂為明君暗君？」徵曰：「兼聽則明。」\n",
+        encoding="utf-8",
+    )
+    report = {
+        "source_id": "CN-TANG-0004",
+        "pages": [
+            {
+                "file": passage_path.name,
+                "sha256": hashlib.sha256(passage_path.read_bytes()).hexdigest(),
+            }
+        ],
+    }
+    (passage_path.parent.parent / "ingestion_report.json").write_text(
+        json.dumps(report), encoding="utf-8"
+    )
+    result = create_persona_voice_candidate(
+        person_id="tang_taizong",
+        source_id="CN-TANG-0004",
+        passage_id="CN-TANG-0004-V001-P0002",
+        source_kind="imperial_verbatim",
+        contemporaneous=False,
+        text="太宗問魏徵曰：「何謂為明君暗君？」",
+        voice_features=["direct"],
+        decision_features=["requests_counterargument"],
+        rhetoric_features=["asks_questions"],
+        confidence=0.9,
+        proposed_by="researcher@example",
+        persist=True,
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+    candidate_path = voice_root / "tang_taizong" / f"{result.voice_evidence_id}.yaml"
+    return voice_root, corpus_root, candidate_path
+
+
+def test_queue_surfaces_verified_candidate_without_approving_it(tmp_path) -> None:
+    voice_root, corpus_root, _candidate_path = _roots(tmp_path)
+
+    queue = build_persona_voice_review_queue(
+        voice_root=voice_root, corpus_root=corpus_root
+    )
+
+    assert queue.total_records == 1
+    assert queue.candidate_records == 1
+    assert queue.ready_candidate_records == 1
+    assert queue.blocked_candidate_records == 0
+    assert queue.items[0].approval_ready is True
+    assert queue.items[0].runtime_eligible is False
+    assert queue.items[0].status == "candidate_ready_for_explicit_human_review"
+
+
+def test_queue_blocks_multiple_candidates_for_same_person_and_passage(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    duplicate = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    duplicate["voice_evidence_id"] = "PVC-TANG-DUPLICATE-0001"
+    duplicate_path = candidate_path.with_name("PVC-TANG-DUPLICATE-0001.yaml")
+    duplicate_path.write_text(
+        yaml.safe_dump(duplicate, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+
+    queue = build_persona_voice_review_queue(
+        voice_root=voice_root, corpus_root=corpus_root
+    )
+
+    assert queue.candidate_records == 2
+    assert queue.ready_candidate_records == 0
+    assert queue.blocked_candidate_records == 2
+    assert all(
+        "duplicate_candidates_for_person_and_passage" in item.blockers
+        for item in queue.items
+    )
+
+
+def test_queue_repairs_reviewed_label_without_attestation(tmp_path) -> None:
+    voice_root, corpus_root, candidate_path = _roots(tmp_path)
+    raw = yaml.safe_load(candidate_path.read_text(encoding="utf-8"))
+    raw["status"] = "reviewed"
+    candidate_path.write_text(
+        yaml.safe_dump(raw, allow_unicode=True, sort_keys=False), encoding="utf-8"
+    )
+
+    queue = build_persona_voice_review_queue(
+        voice_root=voice_root, corpus_root=corpus_root
+    )
+
+    assert queue.candidate_records == 0
+    assert queue.unattested_reviewed_records == 1
+    assert queue.items[0].blockers == (
+        "reviewed_record_missing_complete_attestation",
+    )
+    assert queue.items[0].status == "reviewed_record_requires_attestation_repair"
+
+
+def test_queue_person_filter_is_exact(tmp_path) -> None:
+    voice_root, corpus_root, _candidate_path = _roots(tmp_path)
+
+    queue = build_persona_voice_review_queue(
+        person_id="qing_yongzheng",
+        voice_root=voice_root,
+        corpus_root=corpus_root,
+    )
+
+    assert queue.total_records == 0
+    assert queue.items == ()
+
+
+def test_review_queue_endpoint_returns_typed_empty_queue(monkeypatch) -> None:
+    queue = PersonaVoiceReviewQueue(
+        total_records=0,
+        candidate_records=0,
+        ready_candidate_records=0,
+        blocked_candidate_records=0,
+        unattested_reviewed_records=0,
+        runtime_eligible_reviewed_records=0,
+        rejected_records=0,
+        items=(),
+        status="persona_voice_review_queue_read_only_no_automatic_approval",
+    )
+    monkeypatch.setattr(
+        "app.main.build_persona_voice_review_queue", lambda **_kwargs: queue
+    )
+
+    response = client.get("/persona-voice/review-queue")
+
+    assert response.status_code == 200
+    assert response.json()["items"] == []
+    assert response.json()["candidate_records"] == 0
+
+
+def test_repository_candidates_are_ready_for_review_but_never_runtime_eligible() -> None:
+    queue = build_persona_voice_review_queue(person_id="tang_taizong")
+
+    assert queue.total_records == 3
+    assert queue.candidate_records == 3
+    assert queue.ready_candidate_records == 3
+    assert queue.blocked_candidate_records == 0
+    assert {item.passage_id for item in queue.items} == {
+        "CN-TANG-0004-V001-P0002",
+        "CN-TANG-0004-V001-P0003",
+        "CN-TANG-0004-V001-P0013",
+    }
+    assert all(item.approval_ready for item in queue.items)
+    assert all(not item.review_attested for item in queue.items)
+    assert all(not item.runtime_eligible for item in queue.items)

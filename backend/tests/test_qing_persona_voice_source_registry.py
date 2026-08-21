@@ -45,15 +45,17 @@ def test_discovered_voice_sources_are_not_falsely_marked_collectable_or_complete
         "blocked_with_reason",
         "blocked_with_reason",
         "blocked_with_reason",
-        "catalog_verified_access_review_required",
+        "blocked_with_reason",
     ]
-    for source in sources[:3]:
+    for source in sources:
         assert source["holding_institution"] == "中国第一历史档案馆"
         assert source["provenance"]
+        assert source["access_review"]
         assert source["remaining_requirements"]
     assert sources[3]["discovered_scope"]["fonds"] == "军机处"
     assert sources[3]["discovered_scope"]["opened_archival_items_announced"] == 814000
-    assert "series_partition_and_overlap_control" in sources[3]["remaining_requirements"]
+    assert "series_partition_and_overlap_control" not in sources[3]["remaining_requirements"]
+    assert sources[3]["overlap_review"]["rules"]
 
 
 def test_registry_matches_knowledge_policy_and_project_wide_registry() -> None:
@@ -82,21 +84,22 @@ def test_selector_reports_discovery_as_pending_not_complete() -> None:
     assert result["total"] == 4
     assert result["complete"] == 0
     assert result["pending"] == 4
-    assert result["blocked"] == 3
+    assert result["blocked"] == 4
     assert result["discovery_required_source_ids"] == []
-    assert result["access_review_required_source_ids"] == [
-        "CN-QING-VOICE-0004",
-    ]
+    assert result["access_review_required_source_ids"] == []
     assert result["permission_required_source_ids"] == [
         "CN-QING-VOICE-0001",
         "CN-QING-VOICE-0002",
         "CN-QING-VOICE-0003",
+        "CN-QING-VOICE-0004",
     ]
     assert result["blocked_source_ids"] == [
         "CN-QING-VOICE-0001",
         "CN-QING-VOICE-0002",
         "CN-QING-VOICE-0003",
+        "CN-QING-VOICE-0004",
     ]
-    assert result["next_source_id"] == "CN-QING-VOICE-0004"
-    assert result["next_source_strategy"] == "archival_access_review_required"
+    assert result["next_source_id"] is None
+    assert result["next_source_title"] is None
+    assert result["next_source_strategy"] is None
     assert "never implies" in result["completion_warning"]

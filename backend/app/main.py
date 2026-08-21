@@ -19,6 +19,7 @@ from app.models.api import (
     PersonaVoiceReviewDecisionRequest,
     PersonaVoiceReviewDecisionResponse,
     PersonaVoiceReviewPacketResponse,
+    PersonaVoiceReviewQueueResponse,
     ProblemPromotionRequest,
     ProblemPromotionResponse,
     ProblemResearchPackageResponse,
@@ -34,6 +35,7 @@ from app.services.persona_voice_review import (
     apply_persona_voice_review_decision,
     build_persona_voice_review_packet,
 )
+from app.services.persona_voice_review_queue import build_persona_voice_review_queue
 from app.services.consultation_service import ConsultationService
 from app.services.problem_conversation_service import continue_problem_conversation
 from app.services.problem_draft_package import build_problem_draft_package, persist_problem_draft_package
@@ -109,6 +111,21 @@ def create_voice_candidate(
         return PersonaVoiceCandidateResponse.model_validate(asdict(result))
     except FileExistsError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get(
+    "/persona-voice/review-queue",
+    response_model=PersonaVoiceReviewQueueResponse,
+)
+def persona_voice_review_queue(
+    person_id: str | None = None,
+) -> PersonaVoiceReviewQueueResponse:
+    try:
+        return PersonaVoiceReviewQueueResponse.model_validate(
+            asdict(build_persona_voice_review_queue(person_id=person_id))
+        )
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 

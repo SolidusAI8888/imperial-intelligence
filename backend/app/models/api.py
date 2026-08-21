@@ -188,6 +188,35 @@ class PersonaVoiceCandidateResponse(BaseModel):
     status: Literal["persona_voice_candidate_requires_explicit_human_review"]
 
 
+class PersonaVoiceReviewQueueItemResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    current_status: Literal["candidate", "reviewed"]
+    approval_ready: bool
+    blockers: list[str]
+    review_attested: bool
+    runtime_eligible: bool
+    status: Literal[
+        "candidate_ready_for_explicit_human_review",
+        "candidate_blocked_before_human_review",
+        "reviewed_record_requires_attestation_repair",
+    ]
+
+
+class PersonaVoiceReviewQueueResponse(BaseModel):
+    total_records: int = Field(ge=0)
+    candidate_records: int = Field(ge=0)
+    ready_candidate_records: int = Field(ge=0)
+    blocked_candidate_records: int = Field(ge=0)
+    unattested_reviewed_records: int = Field(ge=0)
+    runtime_eligible_reviewed_records: int = Field(ge=0)
+    rejected_records: int = Field(ge=0)
+    items: list[PersonaVoiceReviewQueueItemResponse]
+    status: Literal["persona_voice_review_queue_read_only_no_automatic_approval"]
+
+
 class ProblemResearchRequest(BaseModel):
     question: str = Field(min_length=2, max_length=4000)
     candidate_limit: int = Field(default=20, ge=1, le=50)
