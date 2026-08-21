@@ -20,3 +20,8 @@ PVC is optional and style-only. It does not improve candidate scores, grant resp
 eligibility, override counterevidence, or replace factual HER/HEU/Insight grounding.
 Candidate, rejected, untraceable, or another person's voice records cannot affect an
 answer. Source text is never copied into first-person prose as a fabricated quotation.
+
+`GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
+the evidence IDs and feature tags selected for runtime style, or the exact neutral-style
+fallback reason. This endpoint is observational: voice readiness never grants factual
+answer permission.

@@ -13,6 +13,7 @@ from app.models.api import (
     ProblemDraftResponse,
     ProblemDraftReviewPacketResponse,
     ProblemGroundedAnswerResponse,
+    PersonaVoiceReadinessResponse,
     ProblemPromotionRequest,
     ProblemPromotionResponse,
     ProblemResearchPackageResponse,
@@ -22,6 +23,7 @@ from app.models.runtime_conversation import RuntimeConversationRequest, RuntimeC
 from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
+from app.services.persona_voice_readiness import inspect_persona_voice_readiness
 from app.services.consultation_service import ConsultationService
 from app.services.problem_conversation_service import continue_problem_conversation
 from app.services.problem_draft_package import build_problem_draft_package, persist_problem_draft_package
@@ -68,6 +70,21 @@ def get_persona(emperor_id: str) -> dict:
     if persona is None:
         raise HTTPException(status_code=404, detail="Emperor not found")
     return persona
+
+
+@app.get(
+    "/personas/{person_id}/voice-readiness",
+    response_model=PersonaVoiceReadinessResponse,
+)
+def persona_voice_readiness(person_id: str) -> PersonaVoiceReadinessResponse:
+    """Expose optional PVC coverage without granting factual answer permission."""
+
+    try:
+        return PersonaVoiceReadinessResponse.model_validate(
+            asdict(inspect_persona_voice_readiness(person_id))
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 @app.post("/emperors/{emperor_id}/consult", response_model=ConsultationResponse)

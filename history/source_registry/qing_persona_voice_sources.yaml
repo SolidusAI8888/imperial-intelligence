@@ -22,15 +22,30 @@ sources:
     evidence_tier: A_plus
     source_kinds: [imperial_edict, imperial_verbatim]
     preferred_for: [persona_voice, decision_style, rhetorical_style]
-    acquisition_strategy: source_discovery_required
-    status: pending_source_discovery
-    resolution_requirements:
-      - collection_scope
-      - authoritative_holding_institution
-      - edition_or_catalog_identity
-      - stable_item_or_page_locator
+    acquisition_strategy: archival_access_review_required
+    status: catalog_verified_access_review_required
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 军机处
+      series: 满文档簿
+      catalogue_node: 009满文上谕档 寄信档大本
+      language: 满文
+      coverage_start: 雍正八年（1730年）
+      coverage_end: 宣统三年（1911年）
+      extent: 613册
+      full_text_access: 馆内档案信息化管理平台
+      online_catalogue: true
+    provenance:
+      - https://fhac.com.cn/detail/5414.html
+      - https://fhac.com.cn/search_catalogues.html
+    remaining_requirements:
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
       - reuse_rights
-      - digitization_completeness
+      - transcription_and_language_handling
+    note: >-
+      Verified scope covers the Manchu Grand Council edict-register database, not every Chinese
+      and Manchu 上諭檔 edition or archival family. On-site searchable access is not bulk-ingestion permission.
   - source_id: CN-QING-VOICE-0002
     source_key: qing_zhupi_zouzhe
     title: 朱批奏摺
@@ -39,16 +54,30 @@ sources:
     evidence_tier: A_plus
     source_kinds: [vermilion_rescript, memorial_response]
     preferred_for: [persona_voice, decision_style, rhetorical_style]
-    acquisition_strategy: source_discovery_required
-    status: pending_source_discovery
-    resolution_requirements:
-      - collection_scope
+    acquisition_strategy: archival_access_review_required
+    status: catalog_verified_access_review_required
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 宫中
+      series: 朱批奏折
+      catalogue_node: 01朱批奏折
+      online_catalogue: true
+      han_catalogue_entries_announced: 425780
+      manchu_full_text_database_announced: true
+      archive_access: 对外开放利用；批量在线全文与复用条件未确认
+    provenance:
+      - https://fhac.com.cn/detail/6657.html
+      - https://fhac.com.cn/detail/5414.html
+      - https://fhac.com.cn/search_catalogues.html
+    remaining_requirements:
       - emperor_and_reign_partition
-      - authoritative_holding_institution
-      - edition_or_catalog_identity
-      - stable_item_or_page_locator
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
       - reuse_rights
-      - digitization_completeness
+      - image_and_transcription_availability
+    note: >-
+      The online catalogue and announced Manchu full-text database prove discoverability, not a
+      reusable complete digital corpus. Chinese and Manchu subsets must remain separately auditable.
   - source_id: CN-QING-VOICE-0003
     source_key: qing_qiju_zhu
     title: 起居注
@@ -57,16 +86,29 @@ sources:
     evidence_tier: A_plus
     source_kinds: [court_diary, imperial_verbatim]
     preferred_for: [persona_voice, decision_context, rhetorical_style]
-    acquisition_strategy: source_discovery_required
-    status: pending_source_discovery
-    resolution_requirements:
-      - collection_scope
+    acquisition_strategy: archival_access_review_required
+    status: catalog_verified_access_review_required
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 内阁
+      series: 满文起居注
+      language: 满文
+      coverage_start: 康熙十三年（1674年）
+      coverage_end: 宣统元年（1909年）
+      extent: 700册
+      full_text_access: 馆内档案信息化管理平台
+      holding_note: 馆藏满文起居注版本唯一
+    provenance:
+      - https://fhac.com.cn/detail/5414.html
+    remaining_requirements:
       - emperor_and_reign_partition
-      - authoritative_holding_institution
-      - edition_or_catalog_identity
-      - stable_item_or_page_locator
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
       - reuse_rights
-      - digitization_completeness
+      - transcription_and_language_handling
+    note: >-
+      This verified scope is the Manchu court-diary corpus. Chinese-language 起居注 holdings and
+      editions require separate discovery and must not be silently merged into this scope.
   - source_id: CN-QING-VOICE-0004
     source_key: qing_junjichu_dang
     title: 軍機處檔

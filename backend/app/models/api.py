@@ -84,6 +84,25 @@ class ProblemGroundedAnswerResponse(BaseModel):
     ]
 
 
+class PersonaVoiceReadinessResponse(BaseModel):
+    person_id: str
+    total_records: int = Field(ge=0)
+    candidate_records: int = Field(ge=0)
+    reviewed_records: int = Field(ge=0)
+    rejected_records: int = Field(ge=0)
+    traceable_reviewed_records: int = Field(ge=0)
+    runtime_style_ready: bool
+    selected_voice_evidence_ids: list[str]
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    fallback_reason: str | None = None
+    status: Literal[
+        "runtime_voice_style_ready",
+        "neutral_voice_fallback_required",
+    ]
+
+
 class ProblemResearchRequest(BaseModel):
     question: str = Field(min_length=2, max_length=4000)
     candidate_limit: int = Field(default=20, ge=1, le=50)

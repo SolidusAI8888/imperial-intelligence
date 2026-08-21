@@ -34,15 +34,24 @@ def test_qing_voice_registry_has_stable_prioritized_source_ids() -> None:
     assert data["priority_order"][0] == "direct_imperial_words"
 
 
-def test_planned_voice_sources_are_not_falsely_marked_collectable_or_complete() -> None:
+def test_discovered_voice_sources_are_not_falsely_marked_collectable_or_complete() -> None:
     sources = yaml.safe_load(MANIFEST.read_text(encoding="utf-8"))["sources"]
     for source in sources:
-        assert source["status"] == "pending_source_discovery"
-        assert source["acquisition_strategy"] == "source_discovery_required"
-        assert source["resolution_requirements"]
+        assert source["status"] != "ingested"
         assert "host" not in source
         assert "volume_min" not in source
         assert "volume_max" not in source
+    assert [source["status"] for source in sources] == [
+        "catalog_verified_access_review_required",
+        "catalog_verified_access_review_required",
+        "catalog_verified_access_review_required",
+        "pending_source_discovery",
+    ]
+    for source in sources[:3]:
+        assert source["holding_institution"] == "中国第一历史档案馆"
+        assert source["provenance"]
+        assert source["remaining_requirements"]
+    assert sources[3]["resolution_requirements"]
 
 
 def test_registry_matches_knowledge_policy_and_project_wide_registry() -> None:
@@ -72,6 +81,12 @@ def test_selector_reports_discovery_as_pending_not_complete() -> None:
     assert result["complete"] == 0
     assert result["pending"] == 4
     assert result["blocked"] == 0
+    assert result["discovery_required_source_ids"] == ["CN-QING-VOICE-0004"]
+    assert result["access_review_required_source_ids"] == [
+        "CN-QING-VOICE-0001",
+        "CN-QING-VOICE-0002",
+        "CN-QING-VOICE-0003",
+    ]
     assert result["next_source_id"] == "CN-QING-VOICE-0001"
-    assert result["next_source_strategy"] == "source_discovery_required"
+    assert result["next_source_strategy"] == "archival_access_review_required"
     assert "never implies" in result["completion_warning"]

@@ -14,6 +14,7 @@ COMPLETE_STATUSES = {"ingested", "documented_unavailable"}
 BLOCKED_STATUS = "blocked_with_reason"
 ACTIONABLE_STATUSES = {
     "pending_source_discovery",
+    "catalog_verified_access_review_required",
     "catalog_verified_ready_for_manifest",
     "ready_for_ingestion",
 }
@@ -53,6 +54,16 @@ def load_sources() -> list[dict]:
                 raise ValueError(f"pending discovery strategy mismatch for {source_id}")
             if not source.get("resolution_requirements"):
                 raise ValueError(f"pending discovery requirements missing for {source_id}")
+        if source["status"] == "catalog_verified_access_review_required":
+            if source["acquisition_strategy"] != "archival_access_review_required":
+                raise ValueError(f"verified catalog strategy mismatch for {source_id}")
+            if not (
+                source.get("holding_institution")
+                and source.get("discovered_scope")
+                and source.get("provenance")
+                and source.get("remaining_requirements")
+            ):
+                raise ValueError(f"verified catalog evidence incomplete for {source_id}")
         if source["status"] == BLOCKED_STATUS and not (
             source.get("block_reason") and source.get("provenance")
         ):
@@ -91,6 +102,11 @@ def status() -> dict:
     discovery = [
         source for source in sources if source["status"] == "pending_source_discovery"
     ]
+    access_review = [
+        source
+        for source in sources
+        if source["status"] == "catalog_verified_access_review_required"
+    ]
     next_source = next_actionable_source()
     return {
         "total": len(sources),
@@ -98,6 +114,9 @@ def status() -> dict:
         "pending": len(pending),
         "blocked": len(blocked),
         "discovery_required_source_ids": [source["source_id"] for source in discovery],
+        "access_review_required_source_ids": [
+            source["source_id"] for source in access_review
+        ],
         "complete_source_ids": [source["source_id"] for source in complete],
         "blocked_source_ids": [source["source_id"] for source in blocked],
         "next_source_id": next_source["source_id"] if next_source else None,

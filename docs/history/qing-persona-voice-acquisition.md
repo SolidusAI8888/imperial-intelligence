@@ -10,10 +10,24 @@ The first acquisition order is:
 3. `CN-QING-VOICE-0003` — 起居注
 4. `CN-QING-VOICE-0004` — 軍機處檔
 
-All four initially remain `pending_source_discovery`. This is deliberate: these names
-describe archival source families rather than a verified single online edition. The
-project must not invent a host, volume range, stable catalog, reuse permission, or
-digitization-completeness claim merely to make ingestion appear ready.
+Initial official-source discovery verified catalog/access scopes for the first three
+families at the First Historical Archives of China. They now remain
+`catalog_verified_access_review_required`, while 軍機處檔 remains
+`pending_source_discovery`. The project must not invent a host, volume range, reuse
+permission, or machine-access claim merely to make ingestion appear ready.
+
+Verified findings:
+
+- the on-site Manchu 上諭檔 full-text database contains 613 volumes, spanning 1730–1911;
+- the on-site Manchu 起居注 full-text database contains 700 volumes, spanning 1674–1909;
+- the official online catalog exposes the Grand Council Manchu edict-register node and
+  the Grand Secretariat 朱批奏折 hierarchy;
+- the archive announced 425,780 open Chinese 朱批奏折 catalog entries and a separate
+  Manchu full-text database.
+
+These are discovery facts, not corpus-ingestion results. The archive's current online
+resource page identifies only 《清实录》 and 《清会典》 as freely available website
+full-text databases; the archival databases require a separate access and reuse review.
 
 Before a source can move to `catalog_verified_ready_for_manifest`, discovery must record:
 
