@@ -23,6 +23,15 @@ _ROLE_STRENGTH = {
 }
 _CJK_RE = re.compile(r"[\u3400-\u9fff]+")
 _LATIN_RE = re.compile(r"[A-Za-z0-9_]+")
+# High-frequency connective/advisory fragments must never be enough by themselves to
+# establish problem-specific relevance. These caused false positives such as two
+# unrelated texts matching only on “应该” or “问题”. Three-character topical terms are
+# still retained, so informative phrases such as “团队管理” continue to match.
+_NONINFORMATIVE_CJK_TERMS = {
+    "一个", "个人", "时候", "如果", "因为", "所以", "但是", "还是", "是否",
+    "应该", "应该先", "该先", "可以", "需要", "如何", "怎么", "怎样", "什么", "问题", "事情",
+    "自己", "他们", "我们", "这个", "那个", "进行", "面对", "已经", "可能",
+}
 
 
 @dataclass(frozen=True)
@@ -53,24 +62,25 @@ def _clamp(value: float) -> float:
 
 
 def _relevance_terms(text: str) -> set[str]:
-    """Return deterministic lexical terms for problem-specific relevance checks."""
+    """Return deterministic informative lexical terms for relevance checks."""
     terms: set[str] = set()
     for span in _CJK_RE.findall(text):
         for size in (2, 3):
             if len(span) >= size:
                 terms.update(span[i : i + size] for i in range(len(span) - size + 1))
+    terms.difference_update(_NONINFORMATIVE_CJK_TERMS)
     terms.update(token.lower() for token in _LATIN_RE.findall(text))
     return terms
 
 
 def _insight_relevant_to_question(question: str, insight: object) -> bool:
-    """Require positive Insight content to overlap the current problem.
+    """Require positive, informative Insight content to overlap the current problem.
 
     HEU recall is intentionally broad. A reviewed Insight may only become positive problem-specific
-    evidence when its statement or application conditions overlap the current question. ``limits``
-    are deliberately excluded from this positive match: a phrase such as "not applicable to team
-    management" must not make an otherwise unrelated Insight relevant to a team-management problem.
-    Limits remain available downstream as counter-evidence metadata after relevance is established.
+    evidence when its statement or application conditions share informative lexical content with the
+    current question. Generic advisory fragments such as ``应该``/``问题`` are ignored because they
+    otherwise create false relevance between unrelated topics. ``limits`` remain deliberately
+    excluded from positive matching and are available downstream only as counter-evidence metadata.
     """
     query_terms = _relevance_terms(question)
     if not query_terms:
@@ -87,13 +97,7 @@ def _insight_relevant_to_question(question: str, insight: object) -> bool:
 def _select_runtime_candidate(
     candidates: list[RuntimeCandidateAssessment] | tuple[RuntimeCandidateAssessment, ...],
 ) -> RuntimeCandidateAssessment | None:
-    """Select the strongest candidate that can actually cross the requested gate.
-
-    Ranking remains score-first. When any candidate is fully answer-ready, prefer the highest-ranked
-    answer-ready candidate instead of letting a higher-scoring but incomplete evidence chain block
-    the entire runtime Problem. If nobody can answer yet, retain the highest-ranked eligible
-    candidate for explainability/research handoff.
-    """
+    """Select the strongest candidate that can actually cross the requested gate."""
     answer_ready = next((item for item in candidates if item.auto_answer_ready), None)
     if answer_ready is not None:
         return answer_ready
@@ -101,12 +105,7 @@ def _select_runtime_candidate(
 
 
 def assess_runtime_problem(question: str, *, candidate_limit: int = 20) -> RuntimeProblemAssessment:
-    """Automatically assess an unregistered problem using only reviewed knowledge.
-
-    This stage is advisory and deterministic: it computes problem-aware candidate scores and an
-    eligibility recommendation from recalled reviewed HER/HEU/Insight/role-link chains. It does not
-    mutate reviewed Problem files or grant answer permission by itself.
-    """
+    """Automatically assess an unregistered problem using only reviewed knowledge."""
     research = build_problem_research_package(question, candidate_limit=candidate_limit)
     assessed: list[RuntimeCandidateAssessment] = []
 
