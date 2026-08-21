@@ -16,6 +16,7 @@ def test_reviewed_problem_answer_endpoint_uses_grounded_renderer() -> None:
     assert data["modern_translation"]
     assert data["evidence_ids"]
     assert data["insight_ids"]
+    assert data["voice_evidence_ids"] == []
     assert data["status"] == "rendered_from_reviewed_grounded_bundle"
     assert "CN-" not in data["historical_voice"]
 

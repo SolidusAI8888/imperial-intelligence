@@ -29,6 +29,7 @@ class ProblemConversationTurn:
     requires_new_problem: bool
     research_package: ProblemResearchPackage | None
     status: str
+    voice_evidence_ids: tuple[str, ...] = ()
 
 
 def _tokens(text: str) -> set[str]:
@@ -105,6 +106,7 @@ def continue_problem_conversation(
             requires_new_problem=True,
             research_package=research,
             status="problem_drift_requires_new_problem_research",
+            voice_evidence_ids=(),
         )
 
     answer = render_grounded_answer(problem_id, question=question)
@@ -125,4 +127,5 @@ def continue_problem_conversation(
         requires_new_problem=False,
         research_package=None,
         status="continued_with_reviewed_problem_responder",
+        voice_evidence_ids=getattr(answer, "voice_evidence_ids", ()),
     )

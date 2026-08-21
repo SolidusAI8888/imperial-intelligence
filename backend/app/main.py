@@ -1,6 +1,7 @@
 from dataclasses import asdict
+from typing import Literal
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 
 from app.models.api import (
     AutoConsultationResponse,
@@ -13,6 +14,13 @@ from app.models.api import (
     ProblemDraftResponse,
     ProblemDraftReviewPacketResponse,
     ProblemGroundedAnswerResponse,
+    PersonaVoiceReadinessResponse,
+    PersonaVoiceCandidateRequest,
+    PersonaVoiceCandidateResponse,
+    PersonaVoiceReviewDecisionRequest,
+    PersonaVoiceReviewDecisionResponse,
+    PersonaVoiceReviewPacketResponse,
+    PersonaVoiceReviewQueueResponse,
     ProblemPromotionRequest,
     ProblemPromotionResponse,
     ProblemResearchPackageResponse,
@@ -22,6 +30,14 @@ from app.models.runtime_conversation import RuntimeConversationRequest, RuntimeC
 from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
+from app.services.persona_voice_readiness import inspect_persona_voice_readiness
+from app.services.persona_voice_candidate import create_persona_voice_candidate
+from app.services.persona_voice_review import (
+    StalePersonaVoiceReviewError,
+    apply_persona_voice_review_decision,
+    build_persona_voice_review_packet,
+)
+from app.services.persona_voice_review_queue import build_persona_voice_review_queue
 from app.services.consultation_service import ConsultationService
 from app.services.problem_conversation_service import continue_problem_conversation
 from app.services.problem_draft_package import build_problem_draft_package, persist_problem_draft_package
@@ -68,6 +84,109 @@ def get_persona(emperor_id: str) -> dict:
     if persona is None:
         raise HTTPException(status_code=404, detail="Emperor not found")
     return persona
+
+
+@app.get(
+    "/personas/{person_id}/voice-readiness",
+    response_model=PersonaVoiceReadinessResponse,
+)
+def persona_voice_readiness(person_id: str) -> PersonaVoiceReadinessResponse:
+    """Expose optional PVC coverage without granting factual answer permission."""
+
+    try:
+        return PersonaVoiceReadinessResponse.model_validate(
+            asdict(inspect_persona_voice_readiness(person_id))
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post(
+    "/persona-voice/candidates",
+    response_model=PersonaVoiceCandidateResponse,
+)
+def create_voice_candidate(
+    request: PersonaVoiceCandidateRequest,
+) -> PersonaVoiceCandidateResponse:
+    try:
+        result = create_persona_voice_candidate(**request.model_dump())
+        return PersonaVoiceCandidateResponse.model_validate(asdict(result))
+    except FileExistsError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get(
+    "/persona-voice/review-queue",
+    response_model=PersonaVoiceReviewQueueResponse,
+)
+def persona_voice_review_queue(
+    person_id: str | None = None,
+    queue_state: Literal["all", "ready", "blocked", "attestation_repair"] = "all",
+    offset: int = Query(default=0, ge=0),
+    limit: int = Query(default=50, ge=1, le=100),
+) -> PersonaVoiceReviewQueueResponse:
+    try:
+        return PersonaVoiceReviewQueueResponse.model_validate(
+            asdict(
+                build_persona_voice_review_queue(
+                    person_id=person_id,
+                    queue_state=queue_state,
+                    offset=offset,
+                    limit=limit,
+                )
+            )
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get(
+    "/persona-voice/{voice_evidence_id}/review-packet",
+    response_model=PersonaVoiceReviewPacketResponse,
+)
+def persona_voice_review_packet(
+    voice_evidence_id: str,
+) -> PersonaVoiceReviewPacketResponse:
+    try:
+        return PersonaVoiceReviewPacketResponse.model_validate(
+            asdict(build_persona_voice_review_packet(voice_evidence_id))
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post(
+    "/persona-voice/{voice_evidence_id}/review",
+    response_model=PersonaVoiceReviewDecisionResponse,
+)
+def review_persona_voice_candidate(
+    voice_evidence_id: str,
+    request: PersonaVoiceReviewDecisionRequest,
+) -> PersonaVoiceReviewDecisionResponse:
+    try:
+        result = apply_persona_voice_review_decision(
+            voice_evidence_id,
+            reviewer=request.reviewer,
+            decision=request.decision,
+            review_fingerprint=request.review_fingerprint,
+            passage_link_verified=request.passage_link_verified,
+            person_identity_verified=request.person_identity_verified,
+            transcription_checked=request.transcription_checked,
+            feature_tags_reviewed=request.feature_tags_reviewed,
+            note=request.note,
+            persist=request.persist,
+        )
+        return PersonaVoiceReviewDecisionResponse.model_validate(asdict(result))
+    except StalePersonaVoiceReviewError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
 @app.post("/emperors/{emperor_id}/consult", response_model=ConsultationResponse)

@@ -44,6 +44,11 @@ source_groups:
     - {source_key: daqing_huidian, title: 大清會典, coverage: 清, source_id: CN-QING-0002}
     - {source_key: qing_shilu, title: 清實錄, coverage: 清, source_id: CN-QING-0001}
     - {source_key: qing_shigao, title: 清史稿, coverage: 清, source_id: CN-QING-0003, source_note: 後世編纂史稿，與實錄類來源分級使用}
+  persona_voice_primary_records:
+    - {source_key: qing_shangyu_dang, title: 上諭檔, coverage: 清, source_id: CN-QING-VOICE-0001}
+    - {source_key: qing_zhupi_zouzhe, title: 朱批奏摺, coverage: 清, source_id: CN-QING-VOICE-0002}
+    - {source_key: qing_qiju_zhu, title: 起居注, coverage: 清, source_id: CN-QING-VOICE-0003}
+    - {source_key: qing_junjichu_dang, title: 軍機處檔, coverage: 清, source_id: CN-QING-VOICE-0004}
 collection_rules:
   - Preserve full source text and source/version metadata before downstream extraction.
   - Assign stable source IDs before ingestion; never recycle an existing source ID.

@@ -1,0 +1,22 @@
+voice_evidence_id: PVC-TANG-4C4F192737D0
+person_id: tang_taizong
+source_id: CN-TANG-0004
+passage_id: CN-TANG-0004-V001-P0002
+source_kind: imperial_verbatim
+contemporaneous: false
+text: 太宗問魏徵曰：「何謂為明君暗君？」
+voice_features:
+  - direct
+decision_features:
+  - requests_counterargument
+rhetoric_features:
+  - asks_questions
+confidence: 0.9
+status: candidate
+candidate:
+  proposed_by: codex_source_candidate_pipeline
+  proposed_at: '2026-08-21T00:00:00+00:00'
+  note: >-
+    Automated candidate draft from checksum-verified archive; requires human speaker and tag
+    review.
+  safety_boundary: Candidate creation never grants runtime style or factual answer permission.

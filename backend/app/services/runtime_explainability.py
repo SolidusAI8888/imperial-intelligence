@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from app.services.knowledge_repository import load_person_voice_evidence
+from app.services.persona_voice_evidence import build_persona_voice_profile
 from app.services.runtime_candidate_assessment import assess_runtime_problem
 
 
@@ -17,6 +19,7 @@ class RuntimeCandidateExplanation:
     heu_ids: tuple[str, ...]
     insight_ids: tuple[str, ...]
     conflicting_insight_ids: tuple[str, ...]
+    voice_evidence_ids: tuple[str, ...]
     gate_blockers: tuple[str, ...]
     selection_reason: str
 
@@ -53,6 +56,13 @@ def _gate_blockers(candidate) -> tuple[str, ...]:
     return tuple(blockers)
 
 
+def _voice_evidence_ids(person_id: str) -> tuple[str, ...]:
+    profile = build_persona_voice_profile(
+        person_id, load_person_voice_evidence(person_id)
+    )
+    return profile.applied_voice_evidence_ids if profile else ()
+
+
 def explain_runtime_problem(question: str, *, candidate_limit: int = 20) -> RuntimeProblemExplanation:
     assessment = assess_runtime_problem(question, candidate_limit=candidate_limit)
     explanations = tuple(
@@ -62,6 +72,7 @@ def explain_runtime_problem(question: str, *, candidate_limit: int = 20) -> Runt
             auto_answer_ready=candidate.auto_answer_ready, evidence_ids=candidate.evidence_ids,
             heu_ids=candidate.heu_ids, insight_ids=candidate.insight_ids,
             conflicting_insight_ids=candidate.conflicting_insight_ids,
+            voice_evidence_ids=_voice_evidence_ids(candidate.person_id),
             gate_blockers=_gate_blockers(candidate),
             selection_reason=(
                 "selected as the highest-ranked evidence-gated responder"

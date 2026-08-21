@@ -28,6 +28,7 @@ class RuntimeConversationTurn:
     insight_ids: tuple[str, ...]
     research_package: ProblemResearchPackage | None
     status: str
+    voice_evidence_ids: tuple[str, ...] = ()
 
 
 def _tokens(text: str) -> set[str]:
@@ -121,6 +122,7 @@ def continue_runtime_conversation(
             insight_ids=answer.insight_ids,
             research_package=None,
             status="continued_with_runtime_grounded_responder",
+            voice_evidence_ids=getattr(answer, "voice_evidence_ids", ()),
         )
 
     drift_assessment = assess_runtime_problem(question, candidate_limit=candidate_limit)
@@ -142,6 +144,7 @@ def continue_runtime_conversation(
             insight_ids=answer.insight_ids,
             research_package=None,
             status="runtime_problem_drift_reselected_and_answered",
+            voice_evidence_ids=getattr(answer, "voice_evidence_ids", ()),
         )
 
     research = build_problem_research_package(question, candidate_limit=candidate_limit)
@@ -161,4 +164,5 @@ def continue_runtime_conversation(
         insight_ids=(),
         research_package=research,
         status="runtime_problem_drift_requires_research",
+        voice_evidence_ids=(),
     )

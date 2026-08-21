@@ -1,0 +1,22 @@
+voice_evidence_id: PVC-TANG-EBFEF1DB5E9F
+person_id: tang_taizong
+source_id: CN-TANG-0004
+passage_id: CN-TANG-0004-V001-P0003
+source_kind: imperial_verbatim
+contemporaneous: false
+text: 太宗謂侍臣曰：「帝王之業，草創與守成孰難？」
+voice_features:
+  - direct
+decision_features:
+  - compares_alternatives
+rhetoric_features:
+  - asks_questions
+confidence: 0.9
+status: candidate
+candidate:
+  proposed_by: codex_source_candidate_pipeline
+  proposed_at: '2026-08-21T00:00:00+00:00'
+  note: >-
+    Automated candidate draft from checksum-verified archive; requires human speaker and tag
+    review.
+  safety_boundary: Candidate creation never grants runtime style or factual answer permission.

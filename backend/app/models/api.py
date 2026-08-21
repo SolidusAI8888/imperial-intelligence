@@ -77,10 +77,203 @@ class ProblemGroundedAnswerResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
+    voice_evidence_ids: list[str] = Field(default_factory=list)
     status: Literal[
         "rendered_from_reviewed_grounded_bundle",
         "rendered_from_runtime_reviewed_grounded_bundle",
     ]
+
+
+class PersonaVoiceReadinessResponse(BaseModel):
+    person_id: str
+    total_records: int = Field(ge=0)
+    candidate_records: int = Field(ge=0)
+    reviewed_records: int = Field(ge=0)
+    rejected_records: int = Field(ge=0)
+    attested_reviewed_records: int = Field(ge=0)
+    traceable_reviewed_records: int = Field(ge=0)
+    runtime_style_ready: bool
+    selected_voice_evidence_ids: list[str]
+    applied_voice_evidence_ids: list[str]
+    distinct_passage_count: int = Field(ge=0)
+    distinct_source_count: int = Field(ge=0)
+    total_evidence_weight: float = Field(ge=0)
+    gate_blockers: list[str]
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    fallback_reason: str | None = None
+    status: Literal[
+        "runtime_voice_style_ready",
+        "neutral_voice_fallback_required",
+    ]
+
+
+class PersonaVoiceReviewPacketResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    source_kind: str
+    contemporaneous: bool
+    current_status: Literal["candidate", "reviewed", "rejected"]
+    candidate_text: str
+    archive_context_excerpt: str | None = None
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    confidence: float = Field(ge=0, le=1)
+    canonical_passage_found: bool
+    archived_file_integrity_verified: bool
+    candidate_text_matches_archive: bool
+    archived_passage_path: str | None = None
+    feature_tag_count: int = Field(ge=0)
+    requires_person_identity_review: Literal[True]
+    required_attestations: list[
+        Literal[
+            "passage_link_verified",
+            "person_identity_verified",
+            "transcription_checked",
+            "feature_tags_reviewed",
+        ]
+    ]
+    conflicting_candidate_ids: list[str]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
+    approval_ready: bool
+    blockers: list[str]
+    next_action: Literal[
+        "record_explicit_human_review_with_all_attestations",
+        "resolve_review_packet_blockers_before_decision",
+    ]
+    status: Literal[
+        "ready_for_explicit_human_voice_review",
+        "blocked_before_human_voice_approval",
+    ]
+
+
+class PersonaVoiceReviewDecisionRequest(BaseModel):
+    reviewer: str = Field(min_length=1, max_length=200)
+    decision: Literal["approved", "rejected"]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
+    passage_link_verified: bool = False
+    person_identity_verified: bool = False
+    transcription_checked: bool = False
+    feature_tags_reviewed: bool = False
+    note: str | None = Field(default=None, max_length=4000)
+    persist: bool = False
+
+
+class PersonaVoiceReviewDecisionResponse(BaseModel):
+    voice_evidence_id: str
+    reviewer: str
+    decision: Literal["approved", "rejected"]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
+    fingerprint_verified: Literal[True]
+    resulting_status: Literal["reviewed", "rejected"]
+    persisted: bool
+    runtime_eligible_after_persist: bool
+    status: Literal[
+        "voice_review_decision_validated_style_only_no_answer_permission_change"
+    ]
+
+
+class PersonaVoiceCandidateRequest(BaseModel):
+    person_id: str = Field(min_length=3, max_length=64)
+    source_id: str = Field(min_length=3, max_length=80)
+    passage_id: str = Field(min_length=5, max_length=120)
+    source_kind: Literal[
+        "imperial_verbatim",
+        "vermilion_rescript",
+        "imperial_edict",
+        "court_diary",
+        "memorial_response",
+        "institutional_record",
+        "later_compilation",
+    ]
+    contemporaneous: bool
+    text: str = Field(min_length=12, max_length=12000)
+    voice_features: list[str] = Field(default_factory=list, max_length=20)
+    decision_features: list[str] = Field(default_factory=list, max_length=20)
+    rhetoric_features: list[str] = Field(default_factory=list, max_length=20)
+    confidence: float = Field(ge=0, le=1)
+    proposed_by: str = Field(min_length=1, max_length=200)
+    note: str | None = Field(default=None, max_length=4000)
+    persist: bool = False
+
+
+class PersonaVoiceCandidateResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    candidate_path: str
+    persisted: bool
+    review_required: Literal[True]
+    runtime_eligible: Literal[False]
+    status: Literal["persona_voice_candidate_requires_explicit_human_review"]
+
+
+class PersonaVoiceReviewQueueItemResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    source_kind: str
+    contemporaneous: bool
+    current_status: Literal["candidate", "reviewed"]
+    candidate_text: str
+    archive_context_excerpt: str | None = None
+    voice_features: list[str]
+    decision_features: list[str]
+    rhetoric_features: list[str]
+    confidence: float = Field(ge=0, le=1)
+    canonical_passage_found: bool
+    archived_file_integrity_verified: bool
+    candidate_text_matches_archive: bool
+    required_attestations: list[str]
+    conflicting_candidate_ids: list[str]
+    review_fingerprint: str = Field(
+        pattern=r"^PVC-REVIEW-SHA256-[A-F0-9]{64}$"
+    )
+    approval_ready: bool
+    blockers: list[str]
+    review_attested: bool
+    runtime_eligible: bool
+    review_packet_endpoint: str
+    next_action: Literal[
+        "record_explicit_human_review_with_all_attestations",
+        "resolve_review_packet_blockers_before_decision",
+        "repair_review_attestations_before_runtime_use",
+    ]
+    status: Literal[
+        "candidate_ready_for_explicit_human_review",
+        "candidate_blocked_before_human_review",
+        "reviewed_record_requires_attestation_repair",
+    ]
+
+
+class PersonaVoiceReviewQueueResponse(BaseModel):
+    total_records: int = Field(ge=0)
+    candidate_records: int = Field(ge=0)
+    ready_candidate_records: int = Field(ge=0)
+    blocked_candidate_records: int = Field(ge=0)
+    unattested_reviewed_records: int = Field(ge=0)
+    runtime_eligible_reviewed_records: int = Field(ge=0)
+    rejected_records: int = Field(ge=0)
+    queue_state: Literal["all", "ready", "blocked", "attestation_repair"]
+    filtered_records: int = Field(ge=0)
+    returned_records: int = Field(ge=0)
+    offset: int = Field(ge=0)
+    limit: int = Field(ge=1, le=100)
+    has_more: bool
+    items: list[PersonaVoiceReviewQueueItemResponse]
+    status: Literal["persona_voice_review_queue_read_only_no_automatic_approval"]
 
 
 class ProblemResearchRequest(BaseModel):
@@ -208,6 +401,7 @@ class ProblemConversationResponse(BaseModel):
     cautions: list[str]
     evidence_ids: list[str]
     insight_ids: list[str]
+    voice_evidence_ids: list[str] = Field(default_factory=list)
     requires_new_problem: bool
     research_package: ProblemResearchPackageResponse | None = None
     status: Literal[

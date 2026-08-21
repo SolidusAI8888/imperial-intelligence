@@ -1,0 +1,262 @@
+version: 1
+scope: qing_persona_voice_primary_records
+status: active_source_discovery
+policy: >-
+  Register stable source-family identities before acquisition. These archival families may span
+  reigns, repositories, editions, catalog systems, and digitization projects, so registration
+  never implies that a stable acquisition target or complete digital corpus has been found.
+priority_order:
+  - direct_imperial_words
+  - court_witness
+  - administrative_process
+completion_rule: >-
+  A source is complete only after an ingestion report points to archived canonical passages, or
+  after a provenance-backed documented_unavailable decision. Planned, discovered, cataloged, and
+  blocked states are never counted as collected.
+sources:
+  - source_id: CN-QING-VOICE-0001
+    source_key: qing_shangyu_dang
+    title: 上諭檔
+    coverage: 清
+    priority_group: direct_imperial_words
+    evidence_tier: A_plus
+    source_kinds: [imperial_edict, imperial_verbatim]
+    preferred_for: [persona_voice, decision_style, rhetorical_style]
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      Official consultation rules do not authorize automated capture or public reuse;
+      written permission and an approved research-export path are required.
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 军机处
+      series: 满文档簿
+      catalogue_node: 009满文上谕档 寄信档大本
+      language: 满文
+      coverage_start: 雍正八年（1730年）
+      coverage_end: 宣统三年（1911年）
+      extent: 613册
+      full_text_access: 馆内档案信息化管理平台
+      online_catalogue: true
+    provenance:
+      - https://fhac.com.cn/detail/5414.html
+      - https://fhac.com.cn/search_catalogues.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 馆内实名预约查档
+      online_catalogue_access: true
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 未经书面许可不得公开传播摘抄或复制的档案内容
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
+    remaining_requirements:
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
+      - reuse_rights
+      - transcription_and_language_handling
+    note: >-
+      Verified scope covers the Manchu Grand Council edict-register database, not every Chinese
+      and Manchu 上諭檔 edition or archival family. The official access review confirms that
+      on-site search is not bulk-ingestion or republication permission.
+  - source_id: CN-QING-VOICE-0002
+    source_key: qing_zhupi_zouzhe
+    title: 朱批奏摺
+    coverage: 清
+    priority_group: direct_imperial_words
+    evidence_tier: A_plus
+    source_kinds: [vermilion_rescript, memorial_response]
+    preferred_for: [persona_voice, decision_style, rhetorical_style]
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      The online catalog is searchable, but bulk machine access and reuse are not authorized;
+      on-site consultation remains subject to capture and publication restrictions.
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 宫中
+      series: 朱批奏折
+      catalogue_node: 01朱批奏折
+      online_catalogue: true
+      han_catalogue_entries_announced: 425780
+      manchu_full_text_database_announced: true
+      archive_access: 对外开放利用；批量在线全文与复用条件未确认
+    provenance:
+      - https://fhac.com.cn/detail/6657.html
+      - https://fhac.com.cn/detail/5414.html
+      - https://fhac.com.cn/search_catalogues.html
+      - https://fhac.com.cn/detail/1259.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 在线目录检索；馆内实名预约查阅数字化档案及满文全文库
+      online_catalogue_access: true
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 未经书面许可不得公开传播摘抄或复制的档案内容
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
+    remaining_requirements:
+      - emperor_and_reign_partition
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
+      - reuse_rights
+      - image_and_transcription_availability
+    note: >-
+      The online catalogue and announced Manchu full-text database prove discoverability, not a
+      reusable complete digital corpus. The access review confirms that Chinese and Manchu subsets
+      must remain separately auditable and cannot yet feed automated ingestion or PVC creation.
+  - source_id: CN-QING-VOICE-0003
+    source_key: qing_qiju_zhu
+    title: 起居注
+    coverage: 清
+    priority_group: court_witness
+    evidence_tier: A_plus
+    source_kinds: [court_diary, imperial_verbatim]
+    preferred_for: [persona_voice, decision_context, rhetorical_style]
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      The verified Manchu court-diary database is available through on-site consultation,
+      but automated capture, reusable transcription, and publication permission are unresolved.
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 内阁
+      series: 满文起居注
+      language: 满文
+      coverage_start: 康熙十三年（1674年）
+      coverage_end: 宣统元年（1909年）
+      extent: 700册
+      full_text_access: 馆内档案信息化管理平台
+      holding_note: 馆藏满文起居注版本唯一
+    provenance:
+      - https://fhac.com.cn/detail/5414.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 馆内实名预约查阅满文起居注全文数据库
+      online_catalogue_access: false
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 未经书面许可不得公开传播摘抄或复制的档案内容
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
+    remaining_requirements:
+      - emperor_and_reign_partition
+      - stable_item_or_page_locator_export
+      - machine_access_or_permitted_research_export
+      - reuse_rights
+      - transcription_and_language_handling
+    note: >-
+      This verified scope is the Manchu court-diary corpus. Chinese-language 起居注 holdings and
+      editions require separate discovery and must not be silently merged into this scope.
+  - source_id: CN-QING-VOICE-0004
+    source_key: qing_junjichu_dang
+    title: 軍機處檔
+    coverage: 清
+    priority_group: administrative_process
+    evidence_tier: A
+    source_kinds: [institutional_record, memorial_response]
+    preferred_for: [decision_context, institutional_context]
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      Official consultation rules permit catalog search and registered on-site research, but do
+      not authorize automated capture, reusable export, or publication. Written archive
+      permission and stable series-specific locators are required before ingestion.
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 军机处
+      opened_archival_items_announced: 814000
+      online_catalogue: true
+      catalogue_series:
+        - 汉文录副奏折
+        - 满文录副奏折
+        - 满文议复档
+        - 满文专档
+        - 满文上谕档寄信档大本
+      normalized_subseries:
+        - 汉文录副奏折
+        - 满文录副奏折
+        - 满文议复档
+        - 满文专档
+        - 满文上谕档
+        - 满文寄信档
+      scope_warning: 本来源是全宗级伞形范围，与上谕档等独立来源存在重叠，必须按系列去重
+    provenance:
+      - https://fhac.com.cn/consult.html
+      - https://fhac.com.cn/detail/1259.html
+      - https://fhac.com.cn/detail/6657.html
+      - https://fhac.com.cn/search_catalogues.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 在线目录检索；馆内实名预约查阅数字化档案
+      online_catalogue_access: true
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 复制件限申请用途使用；公开发表须另行取得书面许可
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
+    overlap_review:
+      reviewed_at: '2026-08-21'
+      policy: 原始奏折、录副抄件与独立档簿按来源关系链接，不跨系列合并文本
+      rules:
+        - subseries: 汉文录副奏折
+          classification: derived_copy_link
+          related_source_id: CN-QING-VOICE-0002
+          action: link_not_merge
+          rationale: 军机处将朱批奏折抄录为录副奏折，二者保留各自来源身份
+        - subseries: 满文录副奏折
+          classification: derived_copy_link
+          related_source_id: CN-QING-VOICE-0002
+          action: link_not_merge
+          rationale: 满文录副仍是奏折流程中的抄录系列，不作为朱批原件合并采集
+        - subseries: 满文议复档
+          classification: unique_administrative_series
+          action: retain_under_source
+        - subseries: 满文专档
+          classification: unique_administrative_series
+          action: retain_under_source
+        - subseries: 满文上谕档
+          classification: registered_separate_source
+          related_source_id: CN-QING-VOICE-0001
+          action: exclude_from_source
+        - subseries: 满文寄信档
+          classification: unique_administrative_series
+          action: retain_under_source
+      provenance:
+        - https://fhac.com.cn/consult.html
+        - https://fhac.com.cn/detail/6657.html
+        - https://fhac.com.cn/search_catalogues.html
+    remaining_requirements:
+      - emperor_and_reign_partition
+      - stable_item_locator
+      - machine_access_or_permitted_research_export
+      - reuse_rights
+      - digitization_completeness
+    note: >-
+      The series overlap review is complete, but it resolves identity and deduplication only. It
+      does not grant access or reuse rights, so no military-grand-council series may yet enter an
+      ingestion manifest or create PVC evidence.
