@@ -80,9 +80,17 @@ def _insight_conflicts_with_question(question: str, insight: object) -> bool:
 
 
 def _partition_problem_insights(question: str, insights: list[object] | tuple[object, ...]) -> tuple[list[object], list[object]]:
-    relevant = [insight for insight in insights if _insight_relevant_to_question(question, insight)]
-    conflicting = [insight for insight in relevant if _insight_conflicts_with_question(question, insight)]
-    supporting = [insight for insight in relevant if not _insight_conflicts_with_question(question, insight)]
+    # Counterevidence is intentionally evaluated independently from positive relevance.
+    # A reviewed Insight may be about another context while its limits explicitly say
+    # that the current problem is outside its safe transfer boundary. Silently dropping
+    # such a limit would allow supporting evidence to overrule known reviewed caution.
+    conflicting = [insight for insight in insights if _insight_conflicts_with_question(question, insight)]
+    conflicting_ids = {getattr(insight, "insight_id", id(insight)) for insight in conflicting}
+    supporting = [
+        insight for insight in insights
+        if _insight_relevant_to_question(question, insight)
+        and getattr(insight, "insight_id", id(insight)) not in conflicting_ids
+    ]
     return supporting, conflicting
 
 
