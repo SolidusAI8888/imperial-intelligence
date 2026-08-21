@@ -64,24 +64,24 @@ def _relevance_terms(text: str) -> set[str]:
 
 
 def _insight_relevant_to_question(question: str, insight: object) -> bool:
-    """Require an Insight to overlap the current problem, not merely a recalled HEU.
+    """Require positive Insight content to overlap the current problem.
 
-    HEU recall is intentionally broad. Without this second gate, any reviewed Insight derived from a
-    recalled HEU could silently become problem-specific evidence for a new question. This check is
-    deliberately lightweight and deterministic: at least one Chinese 2/3-gram or Latin token must
-    overlap between the current question and the Insight statement/application conditions/limits.
+    HEU recall is intentionally broad. A reviewed Insight may only become positive problem-specific
+    evidence when its statement or application conditions overlap the current question. ``limits``
+    are deliberately excluded from this positive match: a phrase such as "not applicable to team
+    management" must not make an otherwise unrelated Insight relevant to a team-management problem.
+    Limits remain available downstream as counter-evidence metadata after relevance is established.
     """
     query_terms = _relevance_terms(question)
     if not query_terms:
         return False
-    insight_text = " ".join(
+    positive_text = " ".join(
         [
             getattr(insight, "statement", ""),
             *getattr(insight, "applies_when", ()),
-            *getattr(insight, "limits", ()),
         ]
     )
-    return bool(query_terms & _relevance_terms(insight_text))
+    return bool(query_terms & _relevance_terms(positive_text))
 
 
 def _select_runtime_candidate(
