@@ -65,6 +65,7 @@ fields:
       reviewer: string
       reviewed_at: ISO-8601 datetime
       passage_link_verified: boolean
+      person_identity_verified: boolean
       transcription_checked: boolean
       feature_tags_reviewed: boolean
       decision: enum[approved, rejected]

@@ -38,6 +38,7 @@ class PersonaVoiceEvidence:
     reviewed_at: str | None
     review_decision: str | None
     passage_link_verified: bool
+    person_identity_verified: bool
     transcription_checked: bool
     feature_tags_reviewed: bool
 
@@ -48,6 +49,7 @@ class PersonaVoiceEvidence:
             and self.reviewed_at
             and self.review_decision == "approved"
             and self.passage_link_verified
+            and self.person_identity_verified
             and self.transcription_checked
             and self.feature_tags_reviewed
         )
@@ -137,6 +139,7 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
         raise ValueError("review must be a mapping")
     review_checks = (
         "passage_link_verified",
+        "person_identity_verified",
         "transcription_checked",
         "feature_tags_reviewed",
     )
@@ -174,6 +177,7 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
         reviewed_at=reviewed_at,
         review_decision=review_decision,
         passage_link_verified=review.get("passage_link_verified") is True,
+        person_identity_verified=review.get("person_identity_verified") is True,
         transcription_checked=review.get("transcription_checked") is True,
         feature_tags_reviewed=review.get("feature_tags_reviewed") is True,
     )

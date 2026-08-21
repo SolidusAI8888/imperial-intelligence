@@ -78,6 +78,7 @@ def test_review_packet_requires_exact_archived_passage_trace(tmp_path) -> None:
     assert packet.archived_file_integrity_verified is True
     assert packet.candidate_text_matches_archive is True
     assert packet.feature_tag_count == 3
+    assert packet.requires_person_identity_review is True
     assert packet.approval_ready is True
     assert packet.blockers == ()
 
@@ -129,13 +130,14 @@ def test_status_only_approval_is_rejected(tmp_path) -> None:
             reviewer="historian@example",
             decision="approved",
             passage_link_verified=True,
+            person_identity_verified=True,
             transcription_checked=False,
             feature_tags_reviewed=True,
             voice_root=voice_root,
             corpus_root=corpus_root,
         )
     except ValueError as exc:
-        assert "all three review attestations" in str(exc)
+        assert "all four review attestations" in str(exc)
     else:
         raise AssertionError("status-only approval should be rejected")
 
@@ -148,6 +150,7 @@ def test_explicit_review_persists_attestation_and_unlocks_runtime_record(tmp_pat
         reviewer="historian@example",
         decision="approved",
         passage_link_verified=True,
+        person_identity_verified=True,
         transcription_checked=True,
         feature_tags_reviewed=True,
         note="Compared against the archived passage.",
@@ -178,6 +181,7 @@ def test_review_packet_api_is_read_only_and_typed(monkeypatch) -> None:
         candidate_text_matches_archive=True,
         archived_passage_path="history/source_corpus/example.txt",
         feature_tag_count=3,
+        requires_person_identity_review=True,
         approval_ready=True,
         blockers=(),
         status="ready_for_explicit_human_voice_review",
@@ -212,6 +216,7 @@ def test_review_decision_api_exposes_dry_run_without_runtime_unlock(monkeypatch)
             "reviewer": "historian@example",
             "decision": "approved",
             "passage_link_verified": True,
+            "person_identity_verified": True,
             "transcription_checked": True,
             "feature_tags_reviewed": True,
             "persist": False,

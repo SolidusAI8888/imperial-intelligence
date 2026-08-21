@@ -27,6 +27,7 @@ def _record(**overrides):
             "reviewed_at": "2026-08-21T00:00:00+00:00",
             "decision": "approved",
             "passage_link_verified": True,
+            "person_identity_verified": True,
             "transcription_checked": True,
             "feature_tags_reviewed": True,
         },

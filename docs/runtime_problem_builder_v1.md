@@ -25,11 +25,16 @@ therefore cannot define a person's general voice. Source text is never copied in
 first-person prose as a fabricated quotation.
 
 A `reviewed` label alone is insufficient. Every runtime-eligible PVC record must carry
-a human attestation that the canonical passage link, transcription, and feature tags
+a human attestation that the canonical passage link, attributed person/speaker, transcription, and feature tags
 were checked. The review-packet endpoint verifies that candidate text is present in the
 immutable archived passage and that the source file still matches the SHA-256 recorded
 by its ingestion report; the decision endpoint supports a dry run and only unlocks the
-record after an explicit persisted approval with all three attestations.
+record after an explicit persisted approval with all four attestations.
+
+`POST /persona-voice/candidates` creates a deterministic candidate only when the supplied
+excerpt is present in a checksum-verified archived passage. Persisted artifacts always
+start as `candidate`, remain runtime-ineligible, and require the separate review flow;
+candidate creation cannot directly write `reviewed` evidence.
 
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage

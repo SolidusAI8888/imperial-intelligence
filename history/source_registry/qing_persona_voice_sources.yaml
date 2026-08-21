@@ -125,8 +125,11 @@ sources:
     evidence_tier: A_plus
     source_kinds: [court_diary, imperial_verbatim]
     preferred_for: [persona_voice, decision_context, rhetorical_style]
-    acquisition_strategy: archival_access_review_required
-    status: catalog_verified_access_review_required
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      The verified Manchu court-diary database is available through on-site consultation,
+      but automated capture, reusable transcription, and publication permission are unresolved.
     holding_institution: 中国第一历史档案馆
     discovered_scope:
       fonds: 内阁
@@ -139,6 +142,21 @@ sources:
       holding_note: 馆藏满文起居注版本唯一
     provenance:
       - https://fhac.com.cn/detail/5414.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 馆内实名预约查阅满文起居注全文数据库
+      online_catalogue_access: false
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 未经书面许可不得公开传播摘抄或复制的档案内容
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
     remaining_requirements:
       - emperor_and_reign_partition
       - stable_item_or_page_locator_export
@@ -156,12 +174,27 @@ sources:
     evidence_tier: A
     source_kinds: [institutional_record, memorial_response]
     preferred_for: [decision_context, institutional_context]
-    acquisition_strategy: source_discovery_required
-    status: pending_source_discovery
-    resolution_requirements:
-      - collection_scope
-      - authoritative_holding_institution
-      - catalog_identity
+    acquisition_strategy: archival_access_review_required
+    status: catalog_verified_access_review_required
+    holding_institution: 中国第一历史档案馆
+    discovered_scope:
+      fonds: 军机处
+      opened_archival_items_announced: 814000
+      online_catalogue: true
+      catalogue_series:
+        - 汉文录副奏折
+        - 满文录副奏折
+        - 满文议复档
+        - 满文专档
+        - 满文上谕档寄信档大本
+      scope_warning: 本来源是全宗级伞形范围，与上谕档等独立来源存在重叠，必须按系列去重
+    provenance:
+      - https://fhac.com.cn/consult.html
+      - https://fhac.com.cn/detail/1259.html
+    remaining_requirements:
+      - series_partition_and_overlap_control
+      - emperor_and_reign_partition
       - stable_item_locator
+      - machine_access_or_permitted_research_export
       - reuse_rights
       - digitization_completeness

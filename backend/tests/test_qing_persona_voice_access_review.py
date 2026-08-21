@@ -44,11 +44,22 @@ def test_zhupi_access_review_also_fails_closed() -> None:
 
 
 def test_source_without_access_review_is_explicitly_unreviewed() -> None:
-    packet = _module().build_access_review_packet("CN-QING-VOICE-0003")
+    packet = _module().build_access_review_packet("CN-QING-VOICE-0004")
 
     assert packet["review_recorded"] is False
     assert packet["decision"] == "access_review_not_recorded"
     assert packet["automated_ingestion_allowed"] is False
+
+
+def test_qiju_access_review_fails_closed() -> None:
+    packet = _module().build_access_review_packet("CN-QING-VOICE-0003")
+
+    assert packet["review_recorded"] is True
+    assert packet["registry_status"] == "blocked_with_reason"
+    assert packet["online_full_text_access"] is False
+    assert packet["reuse_permission"] == "written_archive_permission_required"
+    assert packet["automated_ingestion_allowed"] is False
+    assert packet["pvc_creation_allowed"] is False
 
 
 def test_unknown_source_id_is_rejected() -> None:

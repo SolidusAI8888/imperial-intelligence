@@ -120,6 +120,7 @@ class PersonaVoiceReviewPacketResponse(BaseModel):
     candidate_text_matches_archive: bool
     archived_passage_path: str | None = None
     feature_tag_count: int = Field(ge=0)
+    requires_person_identity_review: Literal[True]
     approval_ready: bool
     blockers: list[str]
     status: Literal[
@@ -132,6 +133,7 @@ class PersonaVoiceReviewDecisionRequest(BaseModel):
     reviewer: str = Field(min_length=1, max_length=200)
     decision: Literal["approved", "rejected"]
     passage_link_verified: bool = False
+    person_identity_verified: bool = False
     transcription_checked: bool = False
     feature_tags_reviewed: bool = False
     note: str | None = Field(default=None, max_length=4000)
@@ -148,6 +150,42 @@ class PersonaVoiceReviewDecisionResponse(BaseModel):
     status: Literal[
         "voice_review_decision_validated_style_only_no_answer_permission_change"
     ]
+
+
+class PersonaVoiceCandidateRequest(BaseModel):
+    person_id: str = Field(min_length=3, max_length=64)
+    source_id: str = Field(min_length=3, max_length=80)
+    passage_id: str = Field(min_length=5, max_length=120)
+    source_kind: Literal[
+        "imperial_verbatim",
+        "vermilion_rescript",
+        "imperial_edict",
+        "court_diary",
+        "memorial_response",
+        "institutional_record",
+        "later_compilation",
+    ]
+    contemporaneous: bool
+    text: str = Field(min_length=12, max_length=12000)
+    voice_features: list[str] = Field(default_factory=list, max_length=20)
+    decision_features: list[str] = Field(default_factory=list, max_length=20)
+    rhetoric_features: list[str] = Field(default_factory=list, max_length=20)
+    confidence: float = Field(ge=0, le=1)
+    proposed_by: str = Field(min_length=1, max_length=200)
+    note: str | None = Field(default=None, max_length=4000)
+    persist: bool = False
+
+
+class PersonaVoiceCandidateResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    candidate_path: str
+    persisted: bool
+    review_required: Literal[True]
+    runtime_eligible: Literal[False]
+    status: Literal["persona_voice_candidate_requires_explicit_human_review"]
 
 
 class ProblemResearchRequest(BaseModel):

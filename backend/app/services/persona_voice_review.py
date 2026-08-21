@@ -2,18 +2,20 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime, timezone
-import hashlib
-import json
 from pathlib import Path
 import re
 
 import yaml
 
-from app.services.knowledge_repository import PROJECT_ROOT, VOICE_EVIDENCE_ROOT
+from app.services.knowledge_repository import VOICE_EVIDENCE_ROOT
 from app.services.persona_voice_evidence import parse_persona_voice_evidence
+from app.services.source_corpus_passage import (
+    SOURCE_CORPUS_ROOT,
+    find_archived_passage,
+    normalized_source_text,
+)
 
 
-SOURCE_CORPUS_ROOT = PROJECT_ROOT / "history" / "source_corpus"
 _VOICE_ID_RE = re.compile(r"^PVC-[A-Z0-9][A-Z0-9-]{2,63}$")
 
 
@@ -29,6 +31,7 @@ class PersonaVoiceReviewPacket:
     candidate_text_matches_archive: bool
     archived_passage_path: str | None
     feature_tag_count: int
+    requires_person_identity_review: bool
     approval_ready: bool
     blockers: tuple[str, ...]
     status: str
@@ -71,50 +74,6 @@ def _find_record_path(voice_evidence_id: str, root: Path) -> Path:
     return matches[0]
 
 
-def _normalized_text(value: str) -> str:
-    return " ".join(value.split())
-
-
-def _find_archived_passage(passage_id: str, root: Path) -> tuple[Path, str] | None:
-    marker = f"[{passage_id}]"
-    for path in sorted(root.rglob("*.txt")) if root.exists() else ():
-        text = path.read_text(encoding="utf-8")
-        marker_start = text.find(marker)
-        if marker_start < 0:
-            continue
-        if marker_start > 0 and text[marker_start - 1] != "\n":
-            continue
-        content_start = marker_start + len(marker)
-        next_marker = text.find("\n[CN-", content_start)
-        passage = text[content_start : next_marker if next_marker >= 0 else None].strip()
-        return path, passage
-    return None
-
-
-def _archive_file_integrity_verified(path: Path, source_id: str) -> bool:
-    report_path = path.parent.parent / "ingestion_report.json"
-    if not report_path.exists():
-        return False
-    try:
-        report = json.loads(report_path.read_text(encoding="utf-8"))
-    except (json.JSONDecodeError, OSError):
-        return False
-    if report.get("source_id") != source_id:
-        return False
-    page = next(
-        (
-            item
-            for item in report.get("pages") or ()
-            if item.get("file") == path.name and item.get("sha256")
-        ),
-        None,
-    )
-    if page is None:
-        return False
-    actual_hash = hashlib.sha256(path.read_bytes()).hexdigest()
-    return actual_hash == page["sha256"]
-
-
 def build_persona_voice_review_packet(
     voice_evidence_id: str,
     *,
@@ -132,8 +91,10 @@ def build_persona_voice_review_packet(
     if not evidence.passage_id.startswith(f"{evidence.source_id}-"):
         blockers.append("passage_id_does_not_match_source_id")
 
-    archived = _find_archived_passage(
-        evidence.passage_id, corpus_root or SOURCE_CORPUS_ROOT
+    archived = find_archived_passage(
+        evidence.source_id,
+        evidence.passage_id,
+        corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
     )
     archived_path: str | None = None
     integrity_verified = False
@@ -141,14 +102,13 @@ def build_persona_voice_review_packet(
     if archived is None:
         blockers.append("canonical_passage_not_found_in_source_corpus")
     else:
-        path, passage_text = archived
-        archived_path = str(path)
-        integrity_verified = _archive_file_integrity_verified(path, evidence.source_id)
+        archived_path = str(archived.path)
+        integrity_verified = archived.integrity_verified
         if not integrity_verified:
             blockers.append("archived_file_not_verified_by_ingestion_report")
-        candidate_text = _normalized_text(evidence.text)
-        text_matches = bool(candidate_text) and candidate_text in _normalized_text(
-            passage_text
+        candidate_text = normalized_source_text(evidence.text)
+        text_matches = bool(candidate_text) and candidate_text in normalized_source_text(
+            archived.text
         )
         if not text_matches:
             blockers.append("candidate_text_not_found_in_canonical_passage")
@@ -163,7 +123,7 @@ def build_persona_voice_review_packet(
     )
     if not feature_tag_count:
         blockers.append("candidate_has_no_voice_or_decision_or_rhetoric_features")
-    if len(_normalized_text(evidence.text).replace(" ", "")) < 12:
+    if len(normalized_source_text(evidence.text).replace(" ", "")) < 12:
         blockers.append("candidate_text_too_short_for_voice_review")
 
     return PersonaVoiceReviewPacket(
@@ -177,6 +137,7 @@ def build_persona_voice_review_packet(
         candidate_text_matches_archive=text_matches,
         archived_passage_path=archived_path,
         feature_tag_count=feature_tag_count,
+        requires_person_identity_review=True,
         approval_ready=not blockers,
         blockers=tuple(blockers),
         status=(
@@ -193,6 +154,7 @@ def apply_persona_voice_review_decision(
     reviewer: str,
     decision: str,
     passage_link_verified: bool,
+    person_identity_verified: bool,
     transcription_checked: bool,
     feature_tags_reviewed: bool,
     note: str | None = None,
@@ -218,12 +180,15 @@ def apply_persona_voice_review_decision(
         corpus_root=corpus_root or SOURCE_CORPUS_ROOT,
     )
     checks_complete = bool(
-        passage_link_verified and transcription_checked and feature_tags_reviewed
+        passage_link_verified
+        and person_identity_verified
+        and transcription_checked
+        and feature_tags_reviewed
     )
     if decision == "approved" and not packet.approval_ready:
         raise ValueError(f"voice evidence approval blocked: {list(packet.blockers)}")
     if decision == "approved" and not checks_complete:
-        raise ValueError("approved voice evidence requires all three review attestations")
+        raise ValueError("approved voice evidence requires all four review attestations")
 
     raw = _load_yaml(record_path)
     raw["status"] = "reviewed" if decision == "approved" else "rejected"
@@ -232,6 +197,7 @@ def apply_persona_voice_review_decision(
         "reviewed_at": datetime.now(timezone.utc).isoformat(),
         "decision": decision,
         "passage_link_verified": bool(passage_link_verified),
+        "person_identity_verified": bool(person_identity_verified),
         "transcription_checked": bool(transcription_checked),
         "feature_tags_reviewed": bool(feature_tags_reviewed),
         "note": (note or "").strip() or None,

@@ -14,6 +14,8 @@ from app.models.api import (
     ProblemDraftReviewPacketResponse,
     ProblemGroundedAnswerResponse,
     PersonaVoiceReadinessResponse,
+    PersonaVoiceCandidateRequest,
+    PersonaVoiceCandidateResponse,
     PersonaVoiceReviewDecisionRequest,
     PersonaVoiceReviewDecisionResponse,
     PersonaVoiceReviewPacketResponse,
@@ -27,6 +29,7 @@ from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.persona_voice_readiness import inspect_persona_voice_readiness
+from app.services.persona_voice_candidate import create_persona_voice_candidate
 from app.services.persona_voice_review import (
     apply_persona_voice_review_decision,
     build_persona_voice_review_packet,
@@ -94,6 +97,22 @@ def persona_voice_readiness(person_id: str) -> PersonaVoiceReadinessResponse:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
 
+@app.post(
+    "/persona-voice/candidates",
+    response_model=PersonaVoiceCandidateResponse,
+)
+def create_voice_candidate(
+    request: PersonaVoiceCandidateRequest,
+) -> PersonaVoiceCandidateResponse:
+    try:
+        result = create_persona_voice_candidate(**request.model_dump())
+        return PersonaVoiceCandidateResponse.model_validate(asdict(result))
+    except FileExistsError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
 @app.get(
     "/persona-voice/{voice_evidence_id}/review-packet",
     response_model=PersonaVoiceReviewPacketResponse,
@@ -125,6 +144,7 @@ def review_persona_voice_candidate(
             reviewer=request.reviewer,
             decision=request.decision,
             passage_link_verified=request.passage_link_verified,
+            person_identity_verified=request.person_identity_verified,
             transcription_checked=request.transcription_checked,
             feature_tags_reviewed=request.feature_tags_reviewed,
             note=request.note,

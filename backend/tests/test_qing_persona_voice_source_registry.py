@@ -44,14 +44,16 @@ def test_discovered_voice_sources_are_not_falsely_marked_collectable_or_complete
     assert [source["status"] for source in sources] == [
         "blocked_with_reason",
         "blocked_with_reason",
+        "blocked_with_reason",
         "catalog_verified_access_review_required",
-        "pending_source_discovery",
     ]
     for source in sources[:3]:
         assert source["holding_institution"] == "中国第一历史档案馆"
         assert source["provenance"]
         assert source["remaining_requirements"]
-    assert sources[3]["resolution_requirements"]
+    assert sources[3]["discovered_scope"]["fonds"] == "军机处"
+    assert sources[3]["discovered_scope"]["opened_archival_items_announced"] == 814000
+    assert "series_partition_and_overlap_control" in sources[3]["remaining_requirements"]
 
 
 def test_registry_matches_knowledge_policy_and_project_wide_registry() -> None:
@@ -80,19 +82,21 @@ def test_selector_reports_discovery_as_pending_not_complete() -> None:
     assert result["total"] == 4
     assert result["complete"] == 0
     assert result["pending"] == 4
-    assert result["blocked"] == 2
-    assert result["discovery_required_source_ids"] == ["CN-QING-VOICE-0004"]
+    assert result["blocked"] == 3
+    assert result["discovery_required_source_ids"] == []
     assert result["access_review_required_source_ids"] == [
-        "CN-QING-VOICE-0003",
+        "CN-QING-VOICE-0004",
     ]
     assert result["permission_required_source_ids"] == [
         "CN-QING-VOICE-0001",
         "CN-QING-VOICE-0002",
+        "CN-QING-VOICE-0003",
     ]
     assert result["blocked_source_ids"] == [
         "CN-QING-VOICE-0001",
         "CN-QING-VOICE-0002",
+        "CN-QING-VOICE-0003",
     ]
-    assert result["next_source_id"] == "CN-QING-VOICE-0003"
+    assert result["next_source_id"] == "CN-QING-VOICE-0004"
     assert result["next_source_strategy"] == "archival_access_review_required"
     assert "never implies" in result["completion_warning"]
