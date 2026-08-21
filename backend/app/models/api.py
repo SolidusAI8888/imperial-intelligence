@@ -90,6 +90,7 @@ class PersonaVoiceReadinessResponse(BaseModel):
     candidate_records: int = Field(ge=0)
     reviewed_records: int = Field(ge=0)
     rejected_records: int = Field(ge=0)
+    attested_reviewed_records: int = Field(ge=0)
     traceable_reviewed_records: int = Field(ge=0)
     runtime_style_ready: bool
     selected_voice_evidence_ids: list[str]
@@ -105,6 +106,47 @@ class PersonaVoiceReadinessResponse(BaseModel):
     status: Literal[
         "runtime_voice_style_ready",
         "neutral_voice_fallback_required",
+    ]
+
+
+class PersonaVoiceReviewPacketResponse(BaseModel):
+    voice_evidence_id: str
+    person_id: str
+    source_id: str
+    passage_id: str
+    current_status: Literal["candidate", "reviewed", "rejected"]
+    canonical_passage_found: bool
+    archived_file_integrity_verified: bool
+    candidate_text_matches_archive: bool
+    archived_passage_path: str | None = None
+    feature_tag_count: int = Field(ge=0)
+    approval_ready: bool
+    blockers: list[str]
+    status: Literal[
+        "ready_for_explicit_human_voice_review",
+        "blocked_before_human_voice_approval",
+    ]
+
+
+class PersonaVoiceReviewDecisionRequest(BaseModel):
+    reviewer: str = Field(min_length=1, max_length=200)
+    decision: Literal["approved", "rejected"]
+    passage_link_verified: bool = False
+    transcription_checked: bool = False
+    feature_tags_reviewed: bool = False
+    note: str | None = Field(default=None, max_length=4000)
+    persist: bool = False
+
+
+class PersonaVoiceReviewDecisionResponse(BaseModel):
+    voice_evidence_id: str
+    reviewer: str
+    decision: Literal["approved", "rejected"]
+    resulting_status: Literal["reviewed", "rejected"]
+    persisted: bool
+    runtime_eligible_after_persist: bool
+    status: Literal[
+        "voice_review_decision_validated_style_only_no_answer_permission_change"
     ]
 
 

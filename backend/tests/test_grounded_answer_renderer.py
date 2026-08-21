@@ -47,6 +47,14 @@ def test_renderer_applies_only_reviewed_selected_person_voice_metadata(monkeypat
             "rhetoric_features": ["asks_questions"],
             "confidence": 0.95,
             "status": "reviewed",
+            "review": {
+                "reviewer": "historian@example",
+                "reviewed_at": "2026-08-21T00:00:00+00:00",
+                "decision": "approved",
+                "passage_link_verified": True,
+                "transcription_checked": True,
+                "feature_tags_reviewed": True,
+            },
         }
     )
     corroborating = parse_persona_voice_evidence(
@@ -63,6 +71,14 @@ def test_renderer_applies_only_reviewed_selected_person_voice_metadata(monkeypat
             "rhetoric_features": ["asks_questions"],
             "confidence": 0.90,
             "status": "reviewed",
+            "review": {
+                "reviewer": "historian@example",
+                "reviewed_at": "2026-08-21T00:00:00+00:00",
+                "decision": "approved",
+                "passage_link_verified": True,
+                "transcription_checked": True,
+                "feature_tags_reviewed": True,
+            },
         }
     )
     monkeypatch.setattr(

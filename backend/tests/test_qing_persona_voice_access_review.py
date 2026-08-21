@@ -31,8 +31,20 @@ def test_shangyu_access_review_fails_closed_until_permission_is_resolved() -> No
     assert len(packet["provenance"]) >= 4
 
 
-def test_source_without_access_review_is_explicitly_unreviewed() -> None:
+def test_zhupi_access_review_also_fails_closed() -> None:
     packet = _module().build_access_review_packet("CN-QING-VOICE-0002")
+
+    assert packet["review_recorded"] is True
+    assert packet["online_catalogue_access"] is True
+    assert packet["online_full_text_access"] is False
+    assert packet["reuse_permission"] == "written_archive_permission_required"
+    assert packet["decision"] == "automated_ingestion_not_authorized"
+    assert packet["automated_ingestion_allowed"] is False
+    assert packet["pvc_creation_allowed"] is False
+
+
+def test_source_without_access_review_is_explicitly_unreviewed() -> None:
+    packet = _module().build_access_review_packet("CN-QING-VOICE-0003")
 
     assert packet["review_recorded"] is False
     assert packet["decision"] == "access_review_not_recorded"

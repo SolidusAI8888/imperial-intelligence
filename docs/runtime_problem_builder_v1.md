@@ -24,6 +24,13 @@ a combined weighted evidence score of 1.20; one vivid passage or duplicated anno
 therefore cannot define a person's general voice. Source text is never copied into
 first-person prose as a fabricated quotation.
 
+A `reviewed` label alone is insufficient. Every runtime-eligible PVC record must carry
+a human attestation that the canonical passage link, transcription, and feature tags
+were checked. The review-packet endpoint verifies that candidate text is present in the
+immutable archived passage and that the source file still matches the SHA-256 recorded
+by its ingestion report; the decision endpoint supports a dry run and only unlocks the
+record after an explicit persisted approval with all three attestations.
+
 `GET /personas/{person_id}/voice-readiness` reports reviewed and traceable PVC coverage,
 the evidence IDs and feature tags selected for runtime style, the independent-passage
 and source counts, the weighted score, and any style-gate blockers. It distinguishes

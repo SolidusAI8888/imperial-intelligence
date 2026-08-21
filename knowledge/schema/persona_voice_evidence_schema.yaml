@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 record_type: persona_voice_evidence
 purpose: >-
   Store auditable first-person or near-first-person historical language evidence for persona voice,
@@ -58,8 +58,19 @@ fields:
   status:
     type: enum
     values: [candidate, reviewed, rejected]
+  review:
+    type: mapping
+    required_when: status=reviewed
+    fields:
+      reviewer: string
+      reviewed_at: ISO-8601 datetime
+      passage_link_verified: boolean
+      transcription_checked: boolean
+      feature_tags_reviewed: boolean
+      decision: enum[approved, rejected]
+      note: string_or_null
 constraints:
-  - Only status=reviewed records may affect Runtime persona voice.
+  - Only status=reviewed records with a complete human review attestation may affect Runtime persona voice.
   - passage_id must point to archived evidence; summaries alone are insufficient.
   - Later compilations may support background style analysis but must not outweigh direct imperial words.
   - Voice evidence controls expression style only; factual claims still require ordinary HER/HEU/Insight grounding.

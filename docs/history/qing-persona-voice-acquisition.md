@@ -11,9 +11,10 @@ The first acquisition order is:
 4. `CN-QING-VOICE-0004` — 軍機處檔
 
 Initial official-source discovery verified catalog/access scopes for the first three
-families at the First Historical Archives of China. They now remain
-`catalog_verified_access_review_required`, while 軍機處檔 remains
-`pending_source_discovery`. The project must not invent a host, volume range, reuse
+families at the First Historical Archives of China. Access reviews for 上諭檔 and
+朱批奏摺 are complete and both are now `blocked_with_reason` pending written permission
+and a permitted export path. 起居注 remains `catalog_verified_access_review_required`,
+while 軍機處檔 remains `pending_source_discovery`. The project must not invent a host, volume range, reuse
 permission, or machine-access claim merely to make ingestion appear ready.
 
 Verified findings:
@@ -29,12 +30,17 @@ These are discovery facts, not corpus-ingestion results. The archive's current o
 resource page identifies only 《清实录》 and 《清会典》 as freely available website
 full-text databases; the archival databases require a separate access and reuse review.
 
-The first access review is now recorded for `CN-QING-VOICE-0001`. Official appointment
+Access reviews are now recorded for `CN-QING-VOICE-0001` and
+`CN-QING-VOICE-0002`. Official appointment
 rules allow registered on-site consultation, but prohibit laptops and cameras in the
 reading room, prohibit recording digital archives, and require written permission
 before excerpts or copies are publicly disseminated. The source therefore remains
 fail-closed: catalog verification is recorded, while automated ingestion and PVC
 creation are both explicitly unauthorized.
+
+This state is non-terminal. A provenance-backed block remains pending and does not count
+as collected or unavailable; it simply lets the acquisition queue advance to the next
+reviewable source instead of repeatedly selecting an already-reviewed access question.
 
 Before a source can move to `catalog_verified_ready_for_manifest`, discovery must record:
 

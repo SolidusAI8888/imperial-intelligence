@@ -22,6 +22,14 @@ def _record(**overrides):
         "rhetoric_features": ["gives_concrete_orders"],
         "confidence": 0.96,
         "status": "reviewed",
+        "review": {
+            "reviewer": "historian@example",
+            "reviewed_at": "2026-08-21T00:00:00+00:00",
+            "decision": "approved",
+            "passage_link_verified": True,
+            "transcription_checked": True,
+            "feature_tags_reviewed": True,
+        },
     }
     record.update(overrides)
     return parse_persona_voice_evidence(record)
@@ -50,6 +58,7 @@ def test_readiness_reports_selected_reviewed_traceable_voice_evidence(
     assert result.reviewed_records == 2
     assert result.candidate_records == 1
     assert result.rejected_records == 1
+    assert result.attested_reviewed_records == 2
     assert result.traceable_reviewed_records == 2
     assert result.runtime_style_ready is True
     assert result.selected_voice_evidence_ids == (
@@ -77,6 +86,20 @@ def test_untraceable_reviewed_evidence_reports_neutral_fallback(monkeypatch) -> 
     assert result.runtime_style_ready is False
     assert result.fallback_reason == "no_traceable_reviewed_voice_evidence"
     assert result.status == "neutral_voice_fallback_required"
+
+
+def test_unattested_reviewed_label_reports_neutral_fallback(monkeypatch) -> None:
+    monkeypatch.setattr(
+        "app.services.persona_voice_readiness.load_person_voice_evidence",
+        lambda _person_id: [_record(review={})],
+    )
+
+    result = inspect_persona_voice_readiness("qing_yongzheng")
+
+    assert result.reviewed_records == 1
+    assert result.attested_reviewed_records == 0
+    assert result.runtime_style_ready is False
+    assert result.fallback_reason == "no_attested_reviewed_voice_evidence"
 
 
 def test_single_traceable_passage_reports_independent_evidence_blocker(
@@ -109,6 +132,7 @@ def test_voice_readiness_endpoint_exposes_honest_empty_corpus_fallback() -> None
     assert data["person_id"] == "tang_taizong"
     assert data["total_records"] == 0
     assert data["runtime_style_ready"] is False
+    assert data["attested_reviewed_records"] == 0
     assert data["selected_voice_evidence_ids"] == []
     assert data["applied_voice_evidence_ids"] == []
     assert data["distinct_passage_count"] == 0

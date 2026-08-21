@@ -107,6 +107,11 @@ def status() -> dict:
         for source in sources
         if source["status"] == "catalog_verified_access_review_required"
     ]
+    permission_required = [
+        source
+        for source in sources
+        if source.get("acquisition_strategy") == "archival_permission_required"
+    ]
     next_source = next_actionable_source()
     return {
         "total": len(sources),
@@ -116,6 +121,9 @@ def status() -> dict:
         "discovery_required_source_ids": [source["source_id"] for source in discovery],
         "access_review_required_source_ids": [
             source["source_id"] for source in access_review
+        ],
+        "permission_required_source_ids": [
+            source["source_id"] for source in permission_required
         ],
         "complete_source_ids": [source["source_id"] for source in complete],
         "blocked_source_ids": [source["source_id"] for source in blocked],

@@ -13,6 +13,7 @@ class PersonaVoiceReadiness:
     candidate_records: int
     reviewed_records: int
     rejected_records: int
+    attested_reviewed_records: int
     traceable_reviewed_records: int
     runtime_style_ready: bool
     selected_voice_evidence_ids: tuple[str, ...]
@@ -37,6 +38,7 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
 
     records = load_person_voice_evidence(normalized_person_id)
     reviewed = [record for record in records if record.status == "reviewed"]
+    attested = [record for record in reviewed if record.review_attested]
     traceable = [record for record in reviewed if record.runtime_eligible]
     profile = build_persona_voice_profile(normalized_person_id, traceable)
     runtime_style_ready = bool(profile and profile.runtime_style_ready)
@@ -45,6 +47,8 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
         fallback_reason = "no_voice_evidence_records"
     elif not reviewed:
         fallback_reason = "no_reviewed_voice_evidence"
+    elif not attested:
+        fallback_reason = "no_attested_reviewed_voice_evidence"
     elif not traceable:
         fallback_reason = "no_traceable_reviewed_voice_evidence"
     elif profile and profile.gate_blockers:
@@ -58,6 +62,7 @@ def inspect_persona_voice_readiness(person_id: str) -> PersonaVoiceReadiness:
         candidate_records=sum(record.status == "candidate" for record in records),
         reviewed_records=len(reviewed),
         rejected_records=sum(record.status == "rejected" for record in records),
+        attested_reviewed_records=len(attested),
         traceable_reviewed_records=len(traceable),
         runtime_style_ready=runtime_style_ready,
         selected_voice_evidence_ids=(profile.voice_evidence_ids if profile else ()),

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 from dataclasses import dataclass
+from datetime import datetime
 from typing import Iterable, Mapping
 
 
@@ -33,10 +34,32 @@ class PersonaVoiceEvidence:
     rhetoric_features: tuple[str, ...]
     confidence: float
     status: str
+    reviewer: str | None
+    reviewed_at: str | None
+    review_decision: str | None
+    passage_link_verified: bool
+    transcription_checked: bool
+    feature_tags_reviewed: bool
+
+    @property
+    def review_attested(self) -> bool:
+        return bool(
+            self.reviewer
+            and self.reviewed_at
+            and self.review_decision == "approved"
+            and self.passage_link_verified
+            and self.transcription_checked
+            and self.feature_tags_reviewed
+        )
 
     @property
     def runtime_eligible(self) -> bool:
-        return self.status == "reviewed" and bool(self.passage_id.strip()) and bool(self.text.strip())
+        return bool(
+            self.status == "reviewed"
+            and self.review_attested
+            and self.passage_id.strip()
+            and self.text.strip()
+        )
 
     @property
     def evidence_weight(self) -> float:
@@ -109,6 +132,31 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
     if not isinstance(contemporaneous, bool):
         raise ValueError("contemporaneous must be boolean")
 
+    review = record.get("review") or {}
+    if not isinstance(review, Mapping):
+        raise ValueError("review must be a mapping")
+    review_checks = (
+        "passage_link_verified",
+        "transcription_checked",
+        "feature_tags_reviewed",
+    )
+    invalid_checks = [
+        field
+        for field in review_checks
+        if field in review and not isinstance(review[field], bool)
+    ]
+    if invalid_checks:
+        raise ValueError(f"review checks must be boolean: {', '.join(invalid_checks)}")
+    review_decision = str(review.get("decision", "")).strip() or None
+    if review_decision not in {None, "approved", "rejected"}:
+        raise ValueError("review decision must be approved or rejected")
+    reviewed_at = str(review.get("reviewed_at", "")).strip() or None
+    if reviewed_at:
+        try:
+            datetime.fromisoformat(reviewed_at.replace("Z", "+00:00"))
+        except ValueError as exc:
+            raise ValueError("reviewed_at must be an ISO-8601 datetime") from exc
+
     evidence = PersonaVoiceEvidence(
         voice_evidence_id=str(record["voice_evidence_id"]).strip(),
         person_id=str(record["person_id"]).strip(),
@@ -122,6 +170,12 @@ def parse_persona_voice_evidence(record: Mapping[str, object]) -> PersonaVoiceEv
         rhetoric_features=_string_tuple(record.get("rhetoric_features"), "rhetoric_features"),
         confidence=confidence,
         status=status,
+        reviewer=(str(review.get("reviewer", "")).strip() or None),
+        reviewed_at=reviewed_at,
+        review_decision=review_decision,
+        passage_link_verified=review.get("passage_link_verified") is True,
+        transcription_checked=review.get("transcription_checked") is True,
+        feature_tags_reviewed=review.get("feature_tags_reviewed") is True,
     )
     required_nonempty = {
         "voice_evidence_id": evidence.voice_evidence_id,

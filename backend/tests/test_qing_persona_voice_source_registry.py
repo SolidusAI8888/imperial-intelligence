@@ -42,8 +42,8 @@ def test_discovered_voice_sources_are_not_falsely_marked_collectable_or_complete
         assert "volume_min" not in source
         assert "volume_max" not in source
     assert [source["status"] for source in sources] == [
-        "catalog_verified_access_review_required",
-        "catalog_verified_access_review_required",
+        "blocked_with_reason",
+        "blocked_with_reason",
         "catalog_verified_access_review_required",
         "pending_source_discovery",
     ]
@@ -80,13 +80,19 @@ def test_selector_reports_discovery_as_pending_not_complete() -> None:
     assert result["total"] == 4
     assert result["complete"] == 0
     assert result["pending"] == 4
-    assert result["blocked"] == 0
+    assert result["blocked"] == 2
     assert result["discovery_required_source_ids"] == ["CN-QING-VOICE-0004"]
     assert result["access_review_required_source_ids"] == [
-        "CN-QING-VOICE-0001",
-        "CN-QING-VOICE-0002",
         "CN-QING-VOICE-0003",
     ]
-    assert result["next_source_id"] == "CN-QING-VOICE-0001"
+    assert result["permission_required_source_ids"] == [
+        "CN-QING-VOICE-0001",
+        "CN-QING-VOICE-0002",
+    ]
+    assert result["blocked_source_ids"] == [
+        "CN-QING-VOICE-0001",
+        "CN-QING-VOICE-0002",
+    ]
+    assert result["next_source_id"] == "CN-QING-VOICE-0003"
     assert result["next_source_strategy"] == "archival_access_review_required"
     assert "never implies" in result["completion_warning"]

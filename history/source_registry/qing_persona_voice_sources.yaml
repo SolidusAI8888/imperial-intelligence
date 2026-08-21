@@ -22,8 +22,11 @@ sources:
     evidence_tier: A_plus
     source_kinds: [imperial_edict, imperial_verbatim]
     preferred_for: [persona_voice, decision_style, rhetorical_style]
-    acquisition_strategy: archival_access_review_required
-    status: catalog_verified_access_review_required
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      Official consultation rules do not authorize automated capture or public reuse;
+      written permission and an approved research-export path are required.
     holding_institution: 中国第一历史档案馆
     discovered_scope:
       fonds: 军机处
@@ -70,8 +73,11 @@ sources:
     evidence_tier: A_plus
     source_kinds: [vermilion_rescript, memorial_response]
     preferred_for: [persona_voice, decision_style, rhetorical_style]
-    acquisition_strategy: archival_access_review_required
-    status: catalog_verified_access_review_required
+    acquisition_strategy: archival_permission_required
+    status: blocked_with_reason
+    block_reason: >-
+      The online catalog is searchable, but bulk machine access and reuse are not authorized;
+      on-site consultation remains subject to capture and publication restrictions.
     holding_institution: 中国第一历史档案馆
     discovered_scope:
       fonds: 宫中
@@ -85,6 +91,22 @@ sources:
       - https://fhac.com.cn/detail/6657.html
       - https://fhac.com.cn/detail/5414.html
       - https://fhac.com.cn/search_catalogues.html
+      - https://fhac.com.cn/detail/1259.html
+    access_review:
+      reviewed_at: '2026-08-21'
+      access_mode: 在线目录检索；馆内实名预约查阅数字化档案及满文全文库
+      online_catalogue_access: true
+      online_full_text_access: false
+      bulk_machine_access_confirmed: false
+      restrictions:
+        - 阅览室禁止携带笔记本电脑和照相机
+        - 严禁使用摄录设备拍摄数字化档案
+        - 未经书面许可不得公开传播摘抄或复制的档案内容
+      reuse_permission: written_archive_permission_required
+      decision: automated_ingestion_not_authorized
+      provenance:
+        - https://fhac.com.cn/reservation/consult.html
+        - https://fhac.com.cn/consult.html
     remaining_requirements:
       - emperor_and_reign_partition
       - stable_item_or_page_locator_export
@@ -93,7 +115,8 @@ sources:
       - image_and_transcription_availability
     note: >-
       The online catalogue and announced Manchu full-text database prove discoverability, not a
-      reusable complete digital corpus. Chinese and Manchu subsets must remain separately auditable.
+      reusable complete digital corpus. The access review confirms that Chinese and Manchu subsets
+      must remain separately auditable and cannot yet feed automated ingestion or PVC creation.
   - source_id: CN-QING-VOICE-0003
     source_key: qing_qiju_zhu
     title: 起居注

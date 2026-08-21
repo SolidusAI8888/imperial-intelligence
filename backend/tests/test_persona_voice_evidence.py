@@ -22,6 +22,14 @@ def _record(**overrides):
         "rhetoric_features": ["gives_concrete_orders"],
         "confidence": 0.96,
         "status": "reviewed",
+        "review": {
+            "reviewer": "historian@example",
+            "reviewed_at": "2026-08-21T00:00:00+00:00",
+            "decision": "approved",
+            "passage_link_verified": True,
+            "transcription_checked": True,
+            "feature_tags_reviewed": True,
+        },
     }
     record.update(overrides)
     return record
@@ -36,6 +44,32 @@ def test_reviewed_direct_voice_evidence_is_runtime_eligible():
 def test_candidate_voice_evidence_cannot_affect_runtime():
     evidence = parse_persona_voice_evidence(_record(status="candidate"))
     assert evidence.runtime_eligible is False
+
+
+def test_reviewed_label_without_complete_attestation_cannot_affect_runtime():
+    evidence = parse_persona_voice_evidence(_record(review={}))
+
+    assert evidence.status == "reviewed"
+    assert evidence.review_attested is False
+    assert evidence.runtime_eligible is False
+
+
+def test_rejected_review_decision_cannot_be_hidden_by_reviewed_status():
+    review = dict(_record()["review"])
+    review["decision"] = "rejected"
+    evidence = parse_persona_voice_evidence(_record(review=review))
+
+    assert evidence.status == "reviewed"
+    assert evidence.review_attested is False
+    assert evidence.runtime_eligible is False
+
+
+def test_review_timestamp_must_be_machine_parseable():
+    review = dict(_record()["review"])
+    review["reviewed_at"] = "not-a-timestamp"
+
+    with pytest.raises(ValueError, match="ISO-8601"):
+        parse_persona_voice_evidence(_record(review=review))
 
 
 def test_direct_imperial_words_outweigh_later_compilation():

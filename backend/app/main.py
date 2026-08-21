@@ -14,6 +14,9 @@ from app.models.api import (
     ProblemDraftReviewPacketResponse,
     ProblemGroundedAnswerResponse,
     PersonaVoiceReadinessResponse,
+    PersonaVoiceReviewDecisionRequest,
+    PersonaVoiceReviewDecisionResponse,
+    PersonaVoiceReviewPacketResponse,
     ProblemPromotionRequest,
     ProblemPromotionResponse,
     ProblemResearchPackageResponse,
@@ -24,6 +27,10 @@ from app.services.auto_consultation_service import AutoConsultationService
 from app.services.grounded_answer_renderer import render_grounded_answer
 from app.services.persona_repository import PersonaRepository
 from app.services.persona_voice_readiness import inspect_persona_voice_readiness
+from app.services.persona_voice_review import (
+    apply_persona_voice_review_decision,
+    build_persona_voice_review_packet,
+)
 from app.services.consultation_service import ConsultationService
 from app.services.problem_conversation_service import continue_problem_conversation
 from app.services.problem_draft_package import build_problem_draft_package, persist_problem_draft_package
@@ -83,6 +90,49 @@ def persona_voice_readiness(person_id: str) -> PersonaVoiceReadinessResponse:
         return PersonaVoiceReadinessResponse.model_validate(
             asdict(inspect_persona_voice_readiness(person_id))
         )
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.get(
+    "/persona-voice/{voice_evidence_id}/review-packet",
+    response_model=PersonaVoiceReviewPacketResponse,
+)
+def persona_voice_review_packet(
+    voice_evidence_id: str,
+) -> PersonaVoiceReviewPacketResponse:
+    try:
+        return PersonaVoiceReviewPacketResponse.model_validate(
+            asdict(build_persona_voice_review_packet(voice_evidence_id))
+        )
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except ValueError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@app.post(
+    "/persona-voice/{voice_evidence_id}/review",
+    response_model=PersonaVoiceReviewDecisionResponse,
+)
+def review_persona_voice_candidate(
+    voice_evidence_id: str,
+    request: PersonaVoiceReviewDecisionRequest,
+) -> PersonaVoiceReviewDecisionResponse:
+    try:
+        result = apply_persona_voice_review_decision(
+            voice_evidence_id,
+            reviewer=request.reviewer,
+            decision=request.decision,
+            passage_link_verified=request.passage_link_verified,
+            transcription_checked=request.transcription_checked,
+            feature_tags_reviewed=request.feature_tags_reviewed,
+            note=request.note,
+            persist=request.persist,
+        )
+        return PersonaVoiceReviewDecisionResponse.model_validate(asdict(result))
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
