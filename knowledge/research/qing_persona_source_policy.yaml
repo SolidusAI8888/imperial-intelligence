@@ -1,0 +1,49 @@
+policy_id: QING-PERSONA-SOURCES-V1
+scope: qing
+purpose: Prioritize first-person and near-first-person records for persona construction while preserving ordinary factual evidence rules.
+priority_order:
+  - group: direct_imperial_words
+    evidence_level: A_plus
+    preferred_for: [persona_voice, decision_style, rhetorical_style]
+    sources:
+      - title: 清实录
+        source_id: CN-QING-0001
+        source_kinds: [imperial_verbatim, imperial_edict, institutional_record]
+        ingestion_status: partial_host_archive
+      - title: 上谕档
+        source_id: CN-QING-VOICE-0001
+        source_kinds: [imperial_edict, imperial_verbatim]
+        ingestion_status: planned
+      - title: 朱批奏折
+        source_id: CN-QING-VOICE-0002
+        source_kinds: [vermilion_rescript, memorial_response]
+        ingestion_status: planned
+      - title: 起居注
+        source_id: CN-QING-VOICE-0003
+        source_kinds: [court_diary, imperial_verbatim]
+        ingestion_status: planned
+  - group: administrative_process
+    evidence_level: A
+    preferred_for: [decision_context, institutional_context]
+    sources:
+      - title: 军机处档
+        source_id: CN-QING-VOICE-0004
+        source_kinds: [institutional_record, memorial_response]
+        ingestion_status: planned
+      - title: 大清会典
+        source_id: CN-QING-0002
+        source_kinds: [institutional_record]
+        ingestion_status: ingestion_enabled
+  - group: later_synthesis
+    evidence_level: B
+    preferred_for: [cross_check, chronology_support]
+    sources:
+      - title: 清史稿
+        source_id: CN-QING-0003
+        source_kinds: [later_compilation]
+        ingestion_status: planned
+runtime_rules:
+  - reviewed direct imperial words outrank later compilations for persona voice.
+  - voice evidence never substitutes for factual HER/HEU/Insight grounding.
+  - a source being high priority does not make an unreviewed passage runtime eligible.
+  - ingestion_status must reflect actual archive state and must not imply historical completeness.
